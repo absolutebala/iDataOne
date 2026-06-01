@@ -110,8 +110,8 @@ width:100%;
 }
 
 .logo{
-width:450px;
-max-width:90%;
+width:270px;
+max-width:80%;
 margin-bottom:45px;
 animation:float 5s ease-in-out infinite;
 filter:drop-shadow(0px 15px 40px rgba(99,102,241,0.12)) drop-shadow(0px 10px 20px rgba(0,0,0,0.06));
@@ -349,12 +349,13 @@ transform:scale(1.4);
 }
 
 /* Top-left logo */
-.site-logo{position:fixed;top:22px;left:32px;z-index:100}
+.site-logo{position:fixed;top:22px;left:32px;z-index:100;transition:opacity 0.4s,transform 0.4s}
 .site-logo img{height:36px;width:auto;opacity:0.92}
+.site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
 
 /* Tamil signature */
-.tamil-sig{position:fixed;bottom:20px;right:28px;z-index:100;font-size:26px;color:rgba(99,102,241,0.3);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
-.tamil-sig:hover{color:rgba(99,102,241,0.7);transform:scale(1.15)}
+.tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;color:rgba(99,102,241,0.55);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
+.tamil-sig:hover{color:rgba(99,102,241,0.9);transform:scale(1.15)}
 
 /* Footer */
 .footer{
@@ -628,6 +629,13 @@ dots.forEach(d => d.classList.remove('active'));
 dots[4].classList.add('active');
 <?php endif; ?>
 
+const siteLogo = document.querySelector('.site-logo');
+
+function updateLogo(index) {
+  if (index === 0) siteLogo.classList.add('hidden');
+  else siteLogo.classList.remove('hidden');
+}
+
 function showScreen(index) {
   if (index < 0 || index >= screens.length) return;
   screens[current].classList.remove('active');
@@ -635,7 +643,10 @@ function showScreen(index) {
   current = index;
   screens[current].classList.add('active');
   dots[current].classList.add('active');
+  updateLogo(index);
 }
+
+updateLogo(current);
 
 window.addEventListener('wheel', (e) => {
   if (locked) return;
