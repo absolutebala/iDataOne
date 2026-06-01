@@ -650,10 +650,11 @@ updateLogo(current);
 
 window.addEventListener('wheel', (e) => {
   if (locked) return;
+  if (Math.abs(e.deltaY) < 30) return;
   locked = true;
   if (e.deltaY > 0) showScreen(Math.min(current + 1, screens.length - 1));
   else              showScreen(Math.max(current - 1, 0));
-  setTimeout(() => locked = false, 800);
+  setTimeout(() => locked = false, 1000);
 }, { passive: true });
 
 dots.forEach((dot, i) => dot.addEventListener('click', () => showScreen(i)));
