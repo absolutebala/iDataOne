@@ -202,44 +202,41 @@ font-weight:600;
 font-size:14px;
 }
 
-/* Capability Cards */
-.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:22px;padding:32px 30px 28px;position:relative;overflow:hidden;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;cursor:default}
-.cap-card.teal:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(20,184,166,0.12);border-color:rgba(20,184,166,0.35)}
-.cap-card.violet:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(124,58,237,0.12);border-color:rgba(124,58,237,0.35)}
-.cap-card.amber:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.35)}
-.cap-card.coral:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(239,68,68,0.10);border-color:rgba(239,68,68,0.3)}
-.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}
-.icon-teal{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+/* Capability Cards — 3 rectangular columns */
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
+.cap-card{background:rgba(255,255,255,0.55);border:1px solid rgba(226,232,240,0.85);border-radius:20px;padding:28px 24px 24px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;cursor:default}
+/* Glossy sheen pseudo-element */
+.cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
+.cap-card:hover::before{left:130%}
+.cap-card.teal:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(20,184,166,0.14),0 4px 16px rgba(20,184,166,0.06);border-color:rgba(20,184,166,0.4)}
+.cap-card.violet:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(124,58,237,0.14),0 4px 16px rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.4)}
+.cap-card.amber:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(245,158,11,0.14),0 4px 16px rgba(245,158,11,0.06);border-color:rgba(245,158,11,0.4)}
+.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
+.icon-teal{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-teal svg{stroke:#0d9488}
-.icon-violet{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-violet{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-violet svg{stroke:#7c3aed}
-.icon-amber{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-amber{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-amber svg{stroke:#d97706}
-.icon-coral{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#fff5f5,#ffe4e6);border:1px solid rgba(239,68,68,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.icon-coral svg{stroke:#ef4444}
-.cap-icon-wrap svg{width:22px;height:22px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cap-icon-wrap svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#cbd5e1;padding-top:4px}
-.cap-card-title{font-size:19px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;line-height:1.25;margin-bottom:5px}
-.cap-card-outcome{font-size:12.5px;font-weight:600;letter-spacing:0.2px;margin-bottom:14px}
+.cap-card-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;line-height:1.25;margin-bottom:5px}
+.cap-card-outcome{font-size:12px;font-weight:600;letter-spacing:0.2px;margin-bottom:12px}
 .teal .cap-card-outcome{color:#0d9488}
 .violet .cap-card-outcome{color:#7c3aed}
 .amber .cap-card-outcome{color:#d97706}
-.coral .cap-card-outcome{color:#ef4444}
-.cap-card-desc{font-size:13.5px;color:#64748b;line-height:1.72;margin-bottom:20px}
-.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(226,232,240,0.8)}
-.cap-tags{display:flex;flex-wrap:wrap;gap:6px}
-.cap-tag{font-size:10.5px;font-weight:600;letter-spacing:0.3px;border-radius:999px;padding:4px 10px}
+.cap-card-desc{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:18px}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-tags{display:flex;flex-wrap:wrap;gap:5px}
+.cap-tag{font-size:10px;font-weight:600;letter-spacing:0.3px;border-radius:999px;padding:3px 9px}
 .teal .cap-tag{color:#0d9488;background:#f0fdfa}
 .violet .cap-tag{color:#7c3aed;background:#f5f3ff}
 .amber .cap-tag{color:#d97706;background:#fffbeb}
-.coral .cap-tag{color:#dc2626;background:#fff5f5}
-.cap-arrow{width:30px;height:30px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:10px;transition:background 0.2s,border-color 0.2s}
-.cap-arrow svg{width:13px;height:13px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
+.cap-arrow{width:28px;height:28px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:8px;transition:background 0.25s,border-color 0.25s}
+.cap-arrow svg{width:12px;height:12px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.25s}
 .cap-card.teal:hover .cap-arrow{background:#0d9488;border-color:#0d9488}
 .cap-card.violet:hover .cap-arrow{background:#7c3aed;border-color:#7c3aed}
 .cap-card.amber:hover .cap-arrow{background:#d97706;border-color:#d97706}
-.cap-card.coral:hover .cap-arrow{background:#ef4444;border-color:#ef4444}
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 @media(max-width:768px){.cap-grid{grid-template-columns:1fr}}
 
@@ -387,15 +384,22 @@ background:#4f46e5;
 transform:scale(1.4);
 }
 
+/* Top-left logo */
+.site-logo{position:fixed;top:22px;left:32px;z-index:100}
+.site-logo img{height:36px;width:auto;opacity:0.92}
+
+/* Tamil signature */
+.tamil-sig{position:fixed;bottom:20px;right:28px;z-index:100;font-size:26px;color:rgba(99,102,241,0.3);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
+.tamil-sig:hover{color:rgba(99,102,241,0.7);transform:scale(1.15)}
+
 /* Footer */
 .footer{
 position:fixed;
-bottom:0;left:0;right:0;
-text-align:center;
-padding:14px;
-font-size:12px;
-color:#94a3b8;
+bottom:16px;left:32px;
+font-size:11px;
+color:#cbd5e1;
 z-index:10;
+letter-spacing:0.3px;
 }
 
 @keyframes float{
@@ -423,6 +427,14 @@ p{font-size:17px}
 </style>
 </head>
 <body>
+
+<!-- Top-left logo (all screens) -->
+<div class="site-logo">
+  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne">
+</div>
+
+<!-- Tamil signature -->
+<div class="tamil-sig">ஐ</div>
 
 <div id="presentation">
 
@@ -481,20 +493,6 @@ p{font-size:17px}
 <div class="cap-card-desc">Unify fragmented data sources into a single trusted layer — then turn it into insights that drive real action.</div>
 <div class="cap-footer">
 <div class="cap-tags"><span class="cap-tag">Data Pipelines</span><span class="cap-tag">Dashboards</span><span class="cap-tag">BI Platforms</span></div>
-<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
-</div>
-
-<div class="cap-card coral">
-<div class="cap-card-top">
-<div class="cap-icon-wrap icon-coral"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-<span class="cap-number">04</span>
-</div>
-<div class="cap-card-title">Digital Transformation</div>
-<div class="cap-card-outcome">Modernise fast. Operate leaner.</div>
-<div class="cap-card-desc">Replace legacy systems with cloud-native architecture — giving your team speed and flexibility to move at market pace.</div>
-<div class="cap-footer">
-<div class="cap-tags"><span class="cap-tag">Cloud Migration</span><span class="cap-tag">Modernisation</span><span class="cap-tag">Automation</span></div>
 <div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
 </div>
 </div>
