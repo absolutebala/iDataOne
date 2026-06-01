@@ -202,6 +202,47 @@ font-weight:600;
 font-size:14px;
 }
 
+/* Capability Cards */
+.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;text-align:left;margin-top:36px}
+.cap-card{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:22px;padding:32px 30px 28px;position:relative;overflow:hidden;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;cursor:default}
+.cap-card.teal:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(20,184,166,0.12);border-color:rgba(20,184,166,0.35)}
+.cap-card.violet:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(124,58,237,0.12);border-color:rgba(124,58,237,0.35)}
+.cap-card.amber:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.35)}
+.cap-card.coral:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(239,68,68,0.10);border-color:rgba(239,68,68,0.3)}
+.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}
+.icon-teal{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-teal svg{stroke:#0d9488}
+.icon-violet{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-violet svg{stroke:#7c3aed}
+.icon-amber{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-amber svg{stroke:#d97706}
+.icon-coral{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#fff5f5,#ffe4e6);border:1px solid rgba(239,68,68,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-coral svg{stroke:#ef4444}
+.cap-icon-wrap svg{width:22px;height:22px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#cbd5e1;padding-top:4px}
+.cap-card-title{font-size:19px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;line-height:1.25;margin-bottom:5px}
+.cap-card-outcome{font-size:12.5px;font-weight:600;letter-spacing:0.2px;margin-bottom:14px}
+.teal .cap-card-outcome{color:#0d9488}
+.violet .cap-card-outcome{color:#7c3aed}
+.amber .cap-card-outcome{color:#d97706}
+.coral .cap-card-outcome{color:#ef4444}
+.cap-card-desc{font-size:13.5px;color:#64748b;line-height:1.72;margin-bottom:20px}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-tags{display:flex;flex-wrap:wrap;gap:6px}
+.cap-tag{font-size:10.5px;font-weight:600;letter-spacing:0.3px;border-radius:999px;padding:4px 10px}
+.teal .cap-tag{color:#0d9488;background:#f0fdfa}
+.violet .cap-tag{color:#7c3aed;background:#f5f3ff}
+.amber .cap-tag{color:#d97706;background:#fffbeb}
+.coral .cap-tag{color:#dc2626;background:#fff5f5}
+.cap-arrow{width:30px;height:30px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:10px;transition:background 0.2s,border-color 0.2s}
+.cap-arrow svg{width:13px;height:13px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
+.cap-card.teal:hover .cap-arrow{background:#0d9488;border-color:#0d9488}
+.cap-card.violet:hover .cap-arrow{background:#7c3aed;border-color:#7c3aed}
+.cap-card.amber:hover .cap-arrow{background:#d97706;border-color:#d97706}
+.cap-card.coral:hover .cap-arrow{background:#ef4444;border-color:#ef4444}
+.cap-card:hover .cap-arrow svg{stroke:#fff}
+@media(max-width:768px){.cap-grid{grid-template-columns:1fr}}
+
 /* Products */
 .products{
 display:flex;
@@ -399,13 +440,66 @@ p{font-size:17px}
 <section class="screen">
 <div class="container">
 <div class="section-label">What We Build</div>
-<div class="capability">
-<span>Custom Software</span>
-<span>AI Solutions</span>
-<span>Data Intelligence</span>
-<span>Digital Transformation</span>
+<h2>Our <span class="highlight">Capabilities</span></h2>
+<div class="cap-grid">
+
+<div class="cap-card teal">
+<div class="cap-card-top">
+<div class="cap-icon-wrap icon-teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+<span class="cap-number">01</span>
 </div>
-<p style="margin-top:40px;">Helping businesses modernize operations, unify data,<br>and build intelligent digital products.</p>
+<div class="cap-card-title">Custom Software</div>
+<div class="cap-card-outcome">Ship faster. Scale without limits.</div>
+<div class="cap-card-desc">Web, mobile, and enterprise applications built precisely for your workflows — not off-the-shelf compromises.</div>
+<div class="cap-footer">
+<div class="cap-tags"><span class="cap-tag">Web Apps</span><span class="cap-tag">Mobile</span><span class="cap-tag">Enterprise</span></div>
+<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+</div>
+</div>
+
+<div class="cap-card violet">
+<div class="cap-card-top">
+<div class="cap-icon-wrap icon-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+<span class="cap-number">02</span>
+</div>
+<div class="cap-card-title">AI Solutions</div>
+<div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
+<div class="cap-card-desc">From LLM integrations to intelligent automation — we build AI that works in production, not just in demos.</div>
+<div class="cap-footer">
+<div class="cap-tags"><span class="cap-tag">LLM Integration</span><span class="cap-tag">AI Agents</span><span class="cap-tag">Automation</span></div>
+<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+</div>
+</div>
+
+<div class="cap-card amber">
+<div class="cap-card-top">
+<div class="cap-icon-wrap icon-amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
+<span class="cap-number">03</span>
+</div>
+<div class="cap-card-title">Data Intelligence</div>
+<div class="cap-card-outcome">One truth. Instant clarity.</div>
+<div class="cap-card-desc">Unify fragmented data sources into a single trusted layer — then turn it into insights that drive real action.</div>
+<div class="cap-footer">
+<div class="cap-tags"><span class="cap-tag">Data Pipelines</span><span class="cap-tag">Dashboards</span><span class="cap-tag">BI Platforms</span></div>
+<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+</div>
+</div>
+
+<div class="cap-card coral">
+<div class="cap-card-top">
+<div class="cap-icon-wrap icon-coral"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+<span class="cap-number">04</span>
+</div>
+<div class="cap-card-title">Digital Transformation</div>
+<div class="cap-card-outcome">Modernise fast. Operate leaner.</div>
+<div class="cap-card-desc">Replace legacy systems with cloud-native architecture — giving your team speed and flexibility to move at market pace.</div>
+<div class="cap-footer">
+<div class="cap-tags"><span class="cap-tag">Cloud Migration</span><span class="cap-tag">Modernisation</span><span class="cap-tag">Automation</span></div>
+<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+</div>
+</div>
+
+</div>
 </div>
 </section>
 
