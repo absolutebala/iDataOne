@@ -286,79 +286,43 @@ letter-spacing:1px;
 text-transform:uppercase;
 }
 
-/* Contact form */
-.form-wrap{
-max-width:540px;
-margin:0 auto;
-text-align:left;
-}
-
-.form-wrap h2,.form-wrap p{text-align:center}
-.form-wrap p{margin-bottom:28px}
-
-.form-row{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-margin-bottom:10px;
-}
-
-.form-wrap input,
-.form-wrap select,
-.form-wrap textarea{
-width:100%;
-padding:13px 16px;
-border-radius:12px;
-border:1px solid #e2e8f0;
-background:rgba(255,255,255,0.9);
-font-family:'Inter',sans-serif;
-font-size:14px;
-color:#0f172a;
-outline:none;
-transition:border-color .2s,box-shadow .2s;
-}
-
-.form-wrap input::placeholder,
-.form-wrap textarea::placeholder{color:#94a3b8}
-.form-wrap select{color:#64748b;margin-bottom:10px}
-
-.form-wrap input:focus,
-.form-wrap select:focus,
-.form-wrap textarea:focus{
-border-color:#4f46e5;
-box-shadow:0 0 0 3px rgba(79,70,229,0.08);
-}
-
-.form-wrap textarea{resize:none;margin-bottom:14px}
-
-.submit-btn{
-width:100%;
-padding:15px;
-border-radius:12px;
-border:none;
-background:linear-gradient(90deg,#4f46e5,#7c3aed);
-color:#fff;
-font-family:'Inter',sans-serif;
-font-size:15px;
-font-weight:600;
-cursor:pointer;
-letter-spacing:0.3px;
-transition:opacity .2s,transform .2s;
-}
-
-.submit-btn:hover{opacity:0.88;transform:translateY(-1px)}
-
-.form-msg{
-margin-top:12px;
-text-align:center;
-font-size:14px;
-font-weight:500;
-padding:10px 16px;
-border-radius:10px;
-}
-
+/* Contact — elite split panel */
+.contact-inner{position:relative;z-index:2;width:100%;max-width:900px;display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,0.6);border:1px solid rgba(226,232,240,0.9);border-radius:28px;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.contact-left{background:#0f172a;padding:52px 44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.contact-left::before{content:"";position:absolute;top:-60px;left:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(99,102,241,0.25),transparent 70%);pointer-events:none}
+.contact-left::after{content:"";position:absolute;bottom:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(124,58,237,0.2),transparent 70%);pointer-events:none}
+.cl-label{font-size:10px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:rgba(99,102,241,0.8);margin-bottom:20px}
+.cl-heading{font-size:36px;font-weight:700;letter-spacing:-1.5px;line-height:1.15;color:#f1f5f9}
+.cl-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cl-divider{width:36px;height:2px;background:linear-gradient(90deg,#4f46e5,#7c3aed);border-radius:2px;margin:28px 0}
+.cl-info{display:flex;flex-direction:column;gap:18px}
+.cl-info-item{display:flex;align-items:flex-start;gap:12px}
+.cl-info-dot{width:6px;height:6px;border-radius:50%;background:#4f46e5;flex-shrink:0;margin-top:5px}
+.cl-info-text{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5}
+.cl-info-text strong{color:rgba(255,255,255,0.75);font-weight:500;display:block}
+.cl-bottom{margin-top:40px;font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
+.contact-right{padding:44px;display:flex;flex-direction:column;justify-content:center}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.cfield{display:flex;flex-direction:column;gap:7px}
+.cfield label{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8}
+.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
+.cfield input::placeholder,.cfield textarea::placeholder{color:#cbd5e1;font-size:13px}
+.cfield input:focus,.cfield textarea:focus{border-bottom-color:#4f46e5}
+.cfield textarea{resize:none}
+.service-section{margin-bottom:24px}
+.service-section label{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:12px}
+.service-pills{display:flex;gap:8px;flex-wrap:wrap}
+.service-pill{padding:7px 14px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
+.service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
+.service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
+.submit-btn{width:100%;padding:14px 24px;border-radius:10px;border:none;background:#0f172a;color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.25s,transform 0.2s;margin-top:4px}
+.submit-btn:hover{background:#1e293b;transform:translateY(-1px)}
+.submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform 0.2s}
+.submit-btn:hover svg{transform:translateX(3px)}
+.form-msg{margin-top:12px;text-align:center;font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px}
 .form-msg.success{background:#f0fdf4;color:#16a34a}
 .form-msg.error{background:#fef2f2;color:#dc2626}
+@media(max-width:768px){.contact-inner{grid-template-columns:1fr}.contact-left{padding:36px 28px}.contact-right{padding:36px 28px}.form-row-2{grid-template-columns:1fr;gap:16px}}
 
 /* Dots */
 .dots{
@@ -548,38 +512,87 @@ p{font-size:17px}
 <!-- 4: Contact -->
 <section class="screen">
 <div class="container">
-<div class="form-wrap">
-<div class="section-label">Get in Touch</div>
-<h2>Let's Build Something <span class="highlight">Intelligent</span></h2>
-<p>Tell us about your project and we'll set up a free discovery call.</p>
+<div class="contact-inner">
 
-<?php if (!empty($form_success)): ?>
-<div class="form-msg success">✓ Thanks! We'll be in touch within 24 hours.</div>
-<?php elseif (!empty($form_error)): ?>
-<div class="form-msg error">Something went wrong. Please email us directly at info@idataone.com</div>
-<?php endif; ?>
+  <div class="contact-left">
+    <div>
+      <div class="cl-label">Get in Touch</div>
+      <div class="cl-heading">Let's Build<br>Something<br><em>Intelligent</em></div>
+      <div class="cl-divider"></div>
+      <div class="cl-info">
+        <div class="cl-info-item">
+          <div class="cl-info-dot"></div>
+          <div class="cl-info-text"><strong>Response Time</strong>Within 24 hours</div>
+        </div>
+        <div class="cl-info-item">
+          <div class="cl-info-dot"></div>
+          <div class="cl-info-text"><strong>Discovery Call</strong>Free 30-minute session</div>
+        </div>
+        <div class="cl-info-item">
+          <div class="cl-info-dot"></div>
+          <div class="cl-info-text"><strong>Email</strong>info@idataone.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="cl-bottom">© <?php echo date('Y'); ?> iDataOne</div>
+  </div>
 
-<form method="POST" action="#" id="contact-form">
-<input type="hidden" name="form_submit" value="1">
-<div class="form-row">
-<input type="text"  name="name"    placeholder="Full Name"    required>
-<input type="text"  name="company" placeholder="Company Name">
-</div>
-<div class="form-row">
-<input type="email" name="email"   placeholder="Work Email"   required>
-<input type="tel"   name="phone"   placeholder="Phone Number">
-</div>
-<select name="service">
-<option value="" disabled selected>Service Interested In</option>
-<option>Custom Software Development</option>
-<option>AI Solutions</option>
-<option>Data Intelligence</option>
-<option>Digital Transformation</option>
-<option>Other</option>
-</select>
-<textarea name="message" placeholder="Tell us about your project..." rows="3"></textarea>
-<button type="submit" class="submit-btn">Book a Discovery Call →</button>
-</form>
+  <div class="contact-right">
+    <?php if (!empty($form_success)): ?>
+    <div class="form-msg success">✓ Thanks! We'll be in touch within 24 hours.</div>
+    <?php elseif (!empty($form_error)): ?>
+    <div class="form-msg error">Something went wrong. Please email info@idataone.com directly.</div>
+    <?php endif; ?>
+
+    <form method="POST" action="#" id="contact-form">
+    <input type="hidden" name="form_submit" value="1">
+    <input type="hidden" name="service" id="service-val" value="">
+
+    <div class="form-row-2">
+      <div class="cfield">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="John Smith" required>
+      </div>
+      <div class="cfield">
+        <label>Company</label>
+        <input type="text" name="company" placeholder="Acme Corp">
+      </div>
+    </div>
+    <div class="form-row-2">
+      <div class="cfield">
+        <label>Work Email</label>
+        <input type="email" name="email" placeholder="john@acme.com" required>
+      </div>
+      <div class="cfield">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 000 000 0000">
+      </div>
+    </div>
+
+    <div class="service-section">
+      <label>Service</label>
+      <div class="service-pills">
+        <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
+        <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
+        <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
+        <div class="service-pill" onclick="selectService(this,'Other')">Other</div>
+      </div>
+    </div>
+
+    <div class="form-row-2" style="margin-bottom:20px">
+      <div class="cfield" style="grid-column:1/-1">
+        <label>Project Details</label>
+        <textarea name="message" rows="2" placeholder="Briefly describe your project..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">
+      Book a Discovery Call
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+    </form>
+  </div>
+
 </div>
 </div>
 </section>
@@ -595,9 +608,14 @@ p{font-size:17px}
 <div class="dot"></div>
 </div>
 
-<footer class="footer">© <?php echo date('Y'); ?> iDataOne. All rights reserved.</footer>
+<footer class="footer"></footer>
 
 <script>
+function selectService(el, val) {
+  document.querySelectorAll('.service-pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('service-val').value = val;
+}
 const screens = document.querySelectorAll('.screen');
 const dots    = document.querySelectorAll('.dot');
 let current   = <?php echo (!empty($form_success) || !empty($form_error)) ? '4' : '0'; ?>;
