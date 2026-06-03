@@ -485,6 +485,13 @@ p{font-size:17px}
 
 </div>
 </div>
+<div class="why-bottom" style="margin-top:28px">
+  <div class="why-cta" onclick="showScreen(2)">
+    Why iDataOne
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+</div>
+</div>
 </section>
 
 <!-- 2: Why iDataOne -->
@@ -525,7 +532,7 @@ p{font-size:17px}
 </div>
 <div class="why-bottom">
   <div class="why-cta" onclick="showScreen(3)">
-    Work with us
+    In the Lab
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
 </div>
@@ -557,6 +564,13 @@ p{font-size:17px}
 <p>Unified business intelligence — one view of all your data, all the time.</p>
 <span class="badge">Coming Soon</span>
 </div>
+</div>
+</div>
+<div class="why-bottom" style="margin-top:28px">
+  <div class="why-cta" onclick="showScreen(4)">
+    Build Something Intelligent
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
 </div>
 </div>
 </section>
