@@ -490,7 +490,6 @@ p{font-size:17px}
 </div>
 
 </div>
-</div>
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(2)">
     Why iDataOne
@@ -569,7 +568,6 @@ p{font-size:17px}
 <h3>DatInsights</h3>
 <p>Unified business intelligence — one view of all your data, all the time.</p>
 <span class="badge">Coming Soon</span>
-</div>
 </div>
 </div>
 <div class="why-bottom" style="margin-top:20px">
