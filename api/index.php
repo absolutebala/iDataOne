@@ -182,6 +182,8 @@ font-weight:600;
 letter-spacing:3px;
 font-size:14px;
 animation:bounce 2s infinite;
+cursor:pointer;
+user-select:none;
 }
 
 .pills{
@@ -436,7 +438,7 @@ p{font-size:17px}
 <img src="/assets/images/iDataOneLogoNoBG.png" class="logo" alt="iDataOne Logo">
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
-<div class="explore">EXPLORE ↓</div>
+<div class="explore" onclick="showScreen(1)">EXPLORE ↓</div>
 </div>
 </section>
 
