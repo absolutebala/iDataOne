@@ -49,13 +49,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iDataOne | AI-First Products & Intelligent Data Platforms</title>
-<meta name="description" content="iDataOne builds AI-first products, intelligent data platforms and digital transformation solutions.">
+<title>iDataOne | AI-First Products, Data Intelligence & Custom Software</title>
+<meta name="description" content="iDataOne builds AI-first products, custom software, intelligent data platforms and digital transformation solutions. Book a free discovery call today.">
+<meta name="keywords" content="AI solutions, custom software development, data intelligence, digital transformation, AI-first products, intelligent data platforms">
+<meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
 <meta property="og:title" content="iDataOne | AI-First Products & Intelligent Data Platforms">
-<meta property="og:description" content="We help businesses build intelligent digital systems powered by unified data, automation, and AI-driven insights.">
+<meta property="og:description" content="We help businesses build intelligent digital systems powered by unified data, automation, and AI-driven insights. Book a free discovery call.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://idataone.com/">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iDataOne | AI-First Products & Intelligent Data Platforms">
+<meta name="twitter:description" content="Custom software, AI solutions, data intelligence and digital transformation — under one roof.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "iDataOne",
+  "url": "https://idataone.com",
+  "logo": "https://idataone.com/assets/images/iDataOneLogoNoBG.png",
+  "description": "iDataOne builds AI-first products, custom software, intelligent data platforms and digital transformation solutions.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@idataone.com",
+    "contactType": "customer service"
+  },
+  "sameAs": []
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -353,43 +376,52 @@ text-transform:uppercase;
 .product.emerald:hover .product-arrow{background:#10b981;border-color:#10b981}
 .product:hover .product-arrow svg{stroke:#fff}
 
-/* Contact — elite split panel */
-.contact-inner{position:relative;z-index:2;width:100%;max-width:900px;display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,0.6);border:1px solid rgba(226,232,240,0.9);border-radius:28px;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.contact-left{background:#0f172a;padding:52px 44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
-.contact-left::before{content:"";position:absolute;top:-60px;left:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(99,102,241,0.25),transparent 70%);pointer-events:none}
-.contact-left::after{content:"";position:absolute;bottom:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(124,58,237,0.2),transparent 70%);pointer-events:none}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(99,102,241,0.85);margin-bottom:20px}
-.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#f1f5f9}
-.cl-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-divider{width:36px;height:2px;background:linear-gradient(90deg,#4f46e5,#7c3aed);border-radius:2px;margin:28px 0}
-.cl-info{display:flex;flex-direction:column;gap:18px}
-.cl-info-item{display:flex;align-items:flex-start;gap:12px}
-.cl-info-dot{width:6px;height:6px;border-radius:50%;background:#4f46e5;flex-shrink:0;margin-top:5px}
-.cl-info-text{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.5}
-.cl-info-text strong{color:rgba(255,255,255,0.82);font-weight:600;display:block;margin-bottom:2px}
-.cl-bottom{margin-top:40px;font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
-.contact-right{padding:44px;display:flex;flex-direction:column;justify-content:center}
-.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
-.cfield{display:flex;flex-direction:column;gap:7px}
+/* Contact — conversion focused */
+.contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
+.contact-left{text-align:left}
+.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
+.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:12px}
+.cl-heading em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cl-sub{font-size:15px;color:#64748b;line-height:1.7;margin-bottom:36px}
+.cl-trust{display:flex;flex-direction:column;gap:0}
+.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(226,232,240,0.7)}
+.cl-trust-item:first-child{border-top:1px solid rgba(226,232,240,0.7)}
+.cl-trust-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cl-trust-icon svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ti-indigo{background:#eef2ff;border:1px solid rgba(99,102,241,0.15)}
+.ti-indigo svg{stroke:#4f46e5}
+.ti-teal{background:#f0fdfa;border:1px solid rgba(20,184,166,0.15)}
+.ti-teal svg{stroke:#0d9488}
+.ti-amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.15)}
+.ti-amber svg{stroke:#d97706}
+.cl-trust-title{font-size:14px;font-weight:600;color:#0f172a;margin-bottom:2px}
+.cl-trust-desc{font-size:12.5px;color:#94a3b8;line-height:1.5}
+.contact-right{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.form-top{margin-bottom:24px}
+.form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
+.form-top-sub{font-size:13px;color:#94a3b8}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.cfield{display:flex;flex-direction:column;gap:6px}
 .cfield label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8}
-.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
+.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
 .cfield input::placeholder,.cfield textarea::placeholder{color:#cbd5e1;font-size:13px}
 .cfield input:focus,.cfield textarea:focus{border-bottom-color:#4f46e5}
 .cfield textarea{resize:none}
-.service-section{margin-bottom:24px}
-.service-section label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:12px}
-.service-pills{display:flex;gap:8px;flex-wrap:wrap}
-.service-pill{padding:7px 14px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
+.service-section{margin-bottom:16px}
+.service-section label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:10px}
+.service-pills{display:flex;gap:7px;flex-wrap:wrap}
+.service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
 .service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
 .service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
-.submit-btn{width:100%;padding:14px 24px;border-radius:10px;border:none;background:#0f172a;color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.25s,transform 0.2s;margin-top:4px}
-.submit-btn:hover{background:#1e293b;transform:translateY(-1px)}
+.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#4f46e5,#7c3aed);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
+.submit-btn:hover{opacity:0.9;transform:translateY(-1px)}
 .submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform 0.2s}
 .submit-btn:hover svg{transform:translateX(3px)}
+.form-note{text-align:center;font-size:11.5px;color:#cbd5e1;margin-top:10px;letter-spacing:0.2px}
 .form-msg{margin-top:12px;text-align:center;font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px}
 .form-msg.success{background:#f0fdf4;color:#16a34a}
 .form-msg.error{background:#fef2f2;color:#dc2626}
-@media(max-width:768px){.contact-inner{grid-template-columns:1fr}.contact-left{padding:36px 28px}.contact-right{padding:36px 28px}.form-row-2{grid-template-columns:1fr;gap:16px}}
+@media(max-width:768px){.contact-inner{grid-template-columns:1fr;gap:36px}.contact-right{padding:32px 24px}.form-row-2{grid-template-columns:1fr;gap:14px}}
 
 /* Dots */
 .dots{
@@ -462,7 +494,21 @@ p{font-size:17px}
 
 <!-- Top-left logo (all screens) -->
 <div class="site-logo">
-  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne">
+  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+</div>
+
+<!-- SEO content block — visible to crawlers, hidden from users -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;left:-9999px" aria-hidden="true">
+  <h1>iDataOne — Engineering AI-First Products and Intelligent Data Platforms</h1>
+  <p>We help businesses build digital products powered by unified data, automation, and AI-driven insights.</p>
+  <h2>Our Capabilities</h2>
+  <p>Custom Software — Scalable web, mobile and enterprise applications. AI Solutions — LLM integrations and intelligent automation. Data Intelligence — Unified data platforms and business intelligence. Digital Transformation — Cloud-native modernisation of legacy systems.</p>
+  <h2>Why iDataOne</h2>
+  <p>AI-First Architecture. Unified Data Layer. Rapid Execution. Enterprise Grade. Cloud Native.</p>
+  <h2>Products</h2>
+  <p>MealMate — AI-powered meal planning. aiChat — AI agents for websites and operations. DatInsights — Unified business intelligence platform.</p>
+  <h2>Contact iDataOne</h2>
+  <p>Book a free discovery call. Email: info@idataone.com. Response within 24 hours.</p>
 </div>
 
 <!-- Tamil signature -->
@@ -647,29 +693,46 @@ p{font-size:17px}
 <div class="contact-inner">
 
   <div class="contact-left">
-    <div>
-      <div class="cl-label">Get in Touch</div>
-      <div class="cl-heading">Let's Build<br>Something<br><em>Intelligent</em></div>
-      <div class="cl-divider"></div>
-      <div class="cl-info">
-        <div class="cl-info-item">
-          <div class="cl-info-dot"></div>
-          <div class="cl-info-text"><strong>Response Time</strong>Within 24 hours</div>
+    <div class="cl-label">Get in Touch</div>
+    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
+    <p class="cl-sub">Tell us about your project — we'll get back to you within 24 hours.</p>
+    <div class="cl-trust">
+      <div class="cl-trust-item">
+        <div class="cl-trust-icon ti-indigo">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         </div>
-        <div class="cl-info-item">
-          <div class="cl-info-dot"></div>
-          <div class="cl-info-text"><strong>Discovery Call</strong>Free 30-minute session</div>
+        <div>
+          <div class="cl-trust-title">Response within 24 hours</div>
+          <div class="cl-trust-desc">We review every enquiry personally</div>
         </div>
-        <div class="cl-info-item">
-          <div class="cl-info-dot"></div>
-          <div class="cl-info-text"><strong>Email</strong>info@idataone.com</div>
+      </div>
+      <div class="cl-trust-item">
+        <div class="cl-trust-icon ti-teal">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="cl-trust-title">Free 30-min discovery call</div>
+          <div class="cl-trust-desc">No commitment, just a conversation</div>
+        </div>
+      </div>
+      <div class="cl-trust-item">
+        <div class="cl-trust-icon ti-amber">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="cl-trust-title">Your data stays private</div>
+          <div class="cl-trust-desc">We never share your information</div>
         </div>
       </div>
     </div>
-    <div class="cl-bottom">© <?php echo date('Y'); ?> iDataOne</div>
   </div>
 
   <div class="contact-right">
+    <div class="form-top">
+      <div class="form-top-title">Book a Discovery Call</div>
+      <div class="form-top-sub">Takes less than 60 seconds to fill in</div>
+    </div>
+
     <?php if (!empty($form_success)): ?>
     <div class="form-msg success">✓ Thanks! We'll be in touch within 24 hours.</div>
     <?php elseif (!empty($form_error)): ?>
@@ -711,17 +774,18 @@ p{font-size:17px}
       </div>
     </div>
 
-    <div class="form-row-2" style="margin-bottom:20px">
+    <div class="form-row-2" style="margin-bottom:16px">
       <div class="cfield" style="grid-column:1/-1">
         <label>Project Details</label>
-        <textarea name="message" rows="2" placeholder="Briefly describe your project..."></textarea>
+        <textarea name="message" rows="2" placeholder="Briefly describe what you're working on..."></textarea>
       </div>
     </div>
 
     <button type="submit" class="submit-btn">
-      Book a Discovery Call
+      Book Discovery Call
       <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
+    <p class="form-note">No spam. No sales pressure. Just a conversation.</p>
     </form>
   </div>
 
