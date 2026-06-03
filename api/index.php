@@ -127,9 +127,9 @@ font-weight:700;
 }
 
 h2{
-font-size:72px;
+font-size:58px;
 line-height:1.1;
-letter-spacing:-3px;
+letter-spacing:-2.5px;
 color:#0f172a;
 margin-bottom:20px;
 font-weight:700;
@@ -155,7 +155,7 @@ font-weight:600;
 letter-spacing:4px;
 text-transform:uppercase;
 color:#6366f1;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .capability{
@@ -212,8 +212,8 @@ font-size:14px;
 
 /* Why iDataOne screen */
 .why-inner{max-width:780px;margin:0 auto;text-align:center}
-.why-label{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#6366f1;margin-bottom:16px}
-.why-heading{font-size:58px;font-weight:700;letter-spacing:-3px;line-height:1.05;color:#0f172a;margin-bottom:44px}
+.why-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
+.why-heading{font-size:58px;font-weight:700;letter-spacing:-2.5px;line-height:1.1;color:#0f172a;margin-bottom:36px}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left;margin-bottom:0}
 .why-item{padding:32px 28px;display:flex;align-items:flex-start;gap:16px;position:relative;border-radius:16px;background:rgba(255,255,255,0.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);overflow:hidden;transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease}
 .why-item::after{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
@@ -255,7 +255,7 @@ font-size:14px;
 .icon-amber{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-amber svg{stroke:#d97706}
 .cap-icon-wrap svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#cbd5e1;padding-top:4px}
+.cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#94a3b8;padding-top:4px}
 .cap-card-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;line-height:1.25;margin-bottom:5px}
 .cap-card-outcome{font-size:12px;font-weight:600;letter-spacing:0.2px;margin-bottom:12px}
 .teal .cap-card-outcome{color:#0d9488}
