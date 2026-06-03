@@ -202,6 +202,12 @@ font-weight:600;
 font-size:14px;
 }
 
+/* Fixed screen CTA — same position on all screens */
+.screen-cta{position:fixed;bottom:48px;right:72px;z-index:100;display:none;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#4f46e5;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.8}
+.screen-cta:hover{gap:16px;opacity:1}
+.screen-cta.visible{display:inline-flex}
+.screen-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
 /* Why iDataOne screen */
 .why-inner{max-width:780px;margin:0 auto;text-align:center}
 .why-label{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#6366f1;margin-bottom:16px}
@@ -422,6 +428,12 @@ p{font-size:17px}
 <!-- Tamil signature -->
 <div class="tamil-sig">ஐ</div>
 
+<!-- Fixed screen CTA -->
+<div class="screen-cta" id="screen-cta" onclick="ctaClick()">
+  <span id="screen-cta-label"></span>
+  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+</div>
+
 <div id="presentation">
 
 <!-- 0: Hero -->
@@ -485,13 +497,6 @@ p{font-size:17px}
 
 </div>
 </div>
-<div class="why-bottom" style="margin-top:28px">
-  <div class="why-cta" onclick="showScreen(2)">
-    Why iDataOne
-    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </div>
-</div>
-</div>
 </section>
 
 <!-- 2: Why iDataOne -->
@@ -530,11 +535,6 @@ p{font-size:17px}
     </div>
   </div>
 </div>
-<div class="why-bottom">
-  <div class="why-cta" onclick="showScreen(3)">
-    In the Lab
-    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </div>
 </div>
 </div>
 </div>
@@ -564,13 +564,6 @@ p{font-size:17px}
 <p>Unified business intelligence — one view of all your data, all the time.</p>
 <span class="badge">Coming Soon</span>
 </div>
-</div>
-</div>
-<div class="why-bottom" style="margin-top:28px">
-  <div class="why-cta" onclick="showScreen(4)">
-    Build Something Intelligent
-    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </div>
 </div>
 </div>
 </section>
@@ -694,11 +687,32 @@ dots.forEach(d => d.classList.remove('active'));
 dots[4].classList.add('active');
 <?php endif; ?>
 
-const siteLogo = document.querySelector('.site-logo');
+const siteLogo  = document.querySelector('.site-logo');
+const screenCta = document.getElementById('screen-cta');
+const ctaLabel  = document.getElementById('screen-cta-label');
+
+const ctaMap = {
+  1: { label: 'Why iDataOne',           target: 2 },
+  2: { label: 'In the Lab',             target: 3 },
+  3: { label: 'Build Something Intelligent', target: 4 },
+};
 
 function updateLogo(index) {
   if (index === 0) siteLogo.classList.add('hidden');
   else siteLogo.classList.remove('hidden');
+}
+
+function updateCta(index) {
+  if (ctaMap[index]) {
+    ctaLabel.textContent = ctaMap[index].label;
+    screenCta.classList.add('visible');
+  } else {
+    screenCta.classList.remove('visible');
+  }
+}
+
+function ctaClick() {
+  if (ctaMap[current]) showScreen(ctaMap[current].target);
 }
 
 function showScreen(index) {
@@ -709,9 +723,11 @@ function showScreen(index) {
   screens[current].classList.add('active');
   dots[current].classList.add('active');
   updateLogo(index);
+  updateCta(index);
 }
 
 updateLogo(current);
+updateCta(current);
 
 window.addEventListener('wheel', (e) => {
   if (locked) return;
