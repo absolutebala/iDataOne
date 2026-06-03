@@ -314,7 +314,7 @@ transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;
 .icon-emerald{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1px solid rgba(16,185,129,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-emerald svg{stroke:#10b981}
 .product-icon-wrap svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.product-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#cbd5e1;padding-top:4px}
+.product-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#94a3b8;padding-top:4px}
 
 .product h3{
 font-size:18px;
