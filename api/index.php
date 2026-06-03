@@ -358,26 +358,26 @@ text-transform:uppercase;
 .contact-left{background:#0f172a;padding:52px 44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
 .contact-left::before{content:"";position:absolute;top:-60px;left:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(99,102,241,0.25),transparent 70%);pointer-events:none}
 .contact-left::after{content:"";position:absolute;bottom:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(124,58,237,0.2),transparent 70%);pointer-events:none}
-.cl-label{font-size:10px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:rgba(99,102,241,0.8);margin-bottom:20px}
-.cl-heading{font-size:36px;font-weight:700;letter-spacing:-1.5px;line-height:1.15;color:#f1f5f9}
+.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(99,102,241,0.85);margin-bottom:20px}
+.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#f1f5f9}
 .cl-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cl-divider{width:36px;height:2px;background:linear-gradient(90deg,#4f46e5,#7c3aed);border-radius:2px;margin:28px 0}
 .cl-info{display:flex;flex-direction:column;gap:18px}
 .cl-info-item{display:flex;align-items:flex-start;gap:12px}
 .cl-info-dot{width:6px;height:6px;border-radius:50%;background:#4f46e5;flex-shrink:0;margin-top:5px}
-.cl-info-text{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5}
-.cl-info-text strong{color:rgba(255,255,255,0.75);font-weight:500;display:block}
+.cl-info-text{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.5}
+.cl-info-text strong{color:rgba(255,255,255,0.82);font-weight:600;display:block;margin-bottom:2px}
 .cl-bottom{margin-top:40px;font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
 .contact-right{padding:44px;display:flex;flex-direction:column;justify-content:center}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
 .cfield{display:flex;flex-direction:column;gap:7px}
-.cfield label{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8}
+.cfield label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8}
 .cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
 .cfield input::placeholder,.cfield textarea::placeholder{color:#cbd5e1;font-size:13px}
 .cfield input:focus,.cfield textarea:focus{border-bottom-color:#4f46e5}
 .cfield textarea{resize:none}
 .service-section{margin-bottom:24px}
-.service-section label{font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:12px}
+.service-section label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:12px}
 .service-pills{display:flex;gap:8px;flex-wrap:wrap}
 .service-pill{padding:7px 14px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
 .service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
