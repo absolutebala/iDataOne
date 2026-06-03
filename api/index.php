@@ -215,7 +215,7 @@ font-size:14px;
 .why-label{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#6366f1;margin-bottom:16px}
 .why-heading{font-size:58px;font-weight:700;letter-spacing:-3px;line-height:1.05;color:#0f172a;margin-bottom:44px}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;text-align:left;border-radius:20px;overflow:hidden;background:rgba(255,255,255,0.45);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(226,232,240,0.85)}
-.why-item{padding:28px;display:flex;align-items:flex-start;gap:16px;position:relative}
+.why-item{padding:32px 28px;display:flex;align-items:flex-start;gap:16px;position:relative}
 .why-item:nth-child(odd){border-right:1px solid rgba(226,232,240,0.85)}
 .why-item:nth-child(-n+2){border-bottom:1px solid rgba(226,232,240,0.85)}
 .why-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}
@@ -279,13 +279,21 @@ margin-top:40px;
 }
 
 .product{
-background:rgba(255,255,255,0.75);
-border:1px solid rgba(99,102,241,.12);
+background:rgba(255,255,255,0.55);
+border:1px solid rgba(226,232,240,0.85);
 border-radius:20px;
 padding:28px 32px;
 width:260px;
 text-align:left;
+position:relative;
+overflow:hidden;
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;
 }
+.product::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
+.product:hover::before{left:130%}
+.product:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(79,70,229,0.10);border-color:rgba(99,102,241,0.25)}
 
 .product-icon{font-size:28px;margin-bottom:14px}
 
@@ -538,7 +546,7 @@ p{font-size:17px}
   </div>
 </div>
 <div class="why-bottom">
-  <div class="why-cta" id="screen-cta" onclick="ctaClick()">
+  <div class="why-cta" id="screen-cta" onclick="showScreen(3)">
     <span id="screen-cta-label">In the Lab</span>
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
