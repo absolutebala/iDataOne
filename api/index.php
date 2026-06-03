@@ -202,6 +202,27 @@ font-weight:600;
 font-size:14px;
 }
 
+/* Why iDataOne screen */
+.why-inner{max-width:780px;margin:0 auto;text-align:center}
+.why-label{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#6366f1;margin-bottom:16px}
+.why-heading{font-size:58px;font-weight:700;letter-spacing:-3px;line-height:1.05;color:#0f172a;margin-bottom:44px}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;text-align:left;border-radius:20px;overflow:hidden;background:rgba(255,255,255,0.45);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(226,232,240,0.85)}
+.why-item{padding:28px;display:flex;align-items:flex-start;gap:16px;position:relative}
+.why-item:nth-child(odd){border-right:1px solid rgba(226,232,240,0.85)}
+.why-item:nth-child(-n+2){border-bottom:1px solid rgba(226,232,240,0.85)}
+.why-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}
+.why-item:nth-child(1)::before{background:linear-gradient(180deg,#4f46e5,#7c3aed)}
+.why-item:nth-child(2)::before{background:linear-gradient(180deg,#0d9488,#0891b2)}
+.why-item:nth-child(3)::before{background:linear-gradient(180deg,#d97706,#f59e0b)}
+.why-item:nth-child(4)::before{background:linear-gradient(180deg,#7c3aed,#a855f7)}
+.why-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#a5b4fc;min-width:24px;padding-top:4px}
+.why-title{font-size:16px;font-weight:700;color:#0f172a;letter-spacing:-0.3px;margin-bottom:6px}
+.why-desc{font-size:13px;color:#64748b;line-height:1.6}
+.why-bottom{display:flex;justify-content:flex-end;margin-top:28px}
+.why-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#4f46e5;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.8}
+.why-cta:hover{gap:16px;opacity:1}
+.why-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
 .cap-card{background:rgba(255,255,255,0.55);border:1px solid rgba(226,232,240,0.85);border-radius:20px;padding:28px 24px 24px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;cursor:default}
@@ -469,15 +490,45 @@ p{font-size:17px}
 <!-- 2: Why iDataOne -->
 <section class="screen">
 <div class="container">
-<div class="section-label">Why iDataOne</div>
-<h2>Built for the <span class="highlight">AI Era</span></h2>
-<p>We don't just build applications.<br><br>We help businesses transform data into decisions,<br>automation into efficiency, and ideas into scalable products.</p>
-<div class="pills">
-<div class="pill">AI-First</div>
-<div class="pill">Unified Data</div>
-<div class="pill">Rapid Execution</div>
-<div class="pill">Cloud Native</div>
-<div class="pill">Enterprise Grade</div>
+<div class="why-inner">
+<div class="why-label">Why iDataOne</div>
+<div class="why-heading">Built for the <span class="highlight">AI Era</span></div>
+<div class="why-grid">
+  <div class="why-item">
+    <span class="why-num">01</span>
+    <div class="why-content">
+      <div class="why-title">AI-First Architecture</div>
+      <div class="why-desc">Intelligence built into the foundation, not bolted on after.</div>
+    </div>
+  </div>
+  <div class="why-item">
+    <span class="why-num">02</span>
+    <div class="why-content">
+      <div class="why-title">Unified Data Layer</div>
+      <div class="why-desc">One source of truth across every system and team.</div>
+    </div>
+  </div>
+  <div class="why-item">
+    <span class="why-num">03</span>
+    <div class="why-content">
+      <div class="why-title">Enterprise Grade</div>
+      <div class="why-desc">Security, scale, and reliability your business can depend on.</div>
+    </div>
+  </div>
+  <div class="why-item">
+    <span class="why-num">04</span>
+    <div class="why-content">
+      <div class="why-title">Cloud Native</div>
+      <div class="why-desc">Built for modern infrastructure — flexible, resilient, future-proof.</div>
+    </div>
+  </div>
+</div>
+<div class="why-bottom">
+  <div class="why-cta" onclick="showScreen(3)">
+    Work with us
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+</div>
 </div>
 </div>
 </section>
