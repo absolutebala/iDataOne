@@ -413,7 +413,7 @@ text-transform:uppercase;
 .service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
 .service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
 .service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
-.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#4f46e5,#7c3aed);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
+.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
 .submit-btn:hover{opacity:0.9;transform:translateY(-1px)}
 .submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform 0.2s}
 .submit-btn:hover svg{transform:translateX(3px)}
@@ -499,16 +499,40 @@ p{font-size:17px}
 
 <!-- SEO content block — visible to crawlers, hidden from users -->
 <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;left:-9999px" aria-hidden="true">
+
   <h1>iDataOne — Engineering AI-First Products and Intelligent Data Platforms</h1>
-  <p>We help businesses build digital products powered by unified data, automation, and AI-driven insights.</p>
+  <p>We help businesses build digital products powered by unified data, automation, and AI-driven insights. Custom Software. AI Solutions. Data Intelligence. Digital Transformation.</p>
+
   <h2>Our Capabilities</h2>
-  <p>Custom Software — Scalable web, mobile and enterprise applications. AI Solutions — LLM integrations and intelligent automation. Data Intelligence — Unified data platforms and business intelligence. Digital Transformation — Cloud-native modernisation of legacy systems.</p>
-  <h2>Why iDataOne</h2>
-  <p>AI-First Architecture. Unified Data Layer. Rapid Execution. Enterprise Grade. Cloud Native.</p>
-  <h2>Products</h2>
-  <p>MealMate — AI-powered meal planning. aiChat — AI agents for websites and operations. DatInsights — Unified business intelligence platform.</p>
-  <h2>Contact iDataOne</h2>
-  <p>Book a free discovery call. Email: info@idataone.com. Response within 24 hours.</p>
+  <h3>Custom Software Development</h3>
+  <p>Ship faster. Scale without limits. Web, mobile, and enterprise applications built precisely for your workflows — not off-the-shelf compromises. Web Apps, Mobile, Enterprise, API Integration.</p>
+  <h3>AI Solutions</h3>
+  <p>Automate decisions. Eliminate bottlenecks. From LLM integrations to intelligent automation — we build AI that works in production, not just in demos. LLM Integration, AI Agents, Automation, ML Pipelines.</p>
+  <h3>Data Intelligence</h3>
+  <p>One truth. Instant clarity. Unify fragmented data sources into a single trusted layer — then turn it into insights that drive real action. Data Pipelines, Dashboards, BI Platforms, Real-time Analytics.</p>
+
+  <h2>Why iDataOne — Built for the AI Era</h2>
+  <h3>AI-First Architecture</h3>
+  <p>Intelligence built into the foundation, not bolted on after.</p>
+  <h3>Unified Data Layer</h3>
+  <p>One source of truth across every system and team.</p>
+  <h3>Enterprise Grade</h3>
+  <p>Security, scale, and reliability your business can depend on.</p>
+  <h3>Cloud Native</h3>
+  <p>Built for modern infrastructure — flexible, resilient, future-proof.</p>
+
+  <h2>Products from iDataOne</h2>
+  <h3>MealMate</h3>
+  <p>AI-powered meal planning for families — personalised, smart, and effortless. Coming Soon.</p>
+  <h3>aiChat</h3>
+  <p>AI agents for websites and business operations — always on, always intelligent. Coming Soon.</p>
+  <h3>DatInsights</h3>
+  <p>Unified business intelligence — one view of all your data, all the time. Coming Soon.</p>
+
+  <h2>Contact iDataOne — Book a Discovery Call</h2>
+  <p>Let's build something intelligent. Tell us about your project and we'll get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Response within 24 hours. Your data stays private — we never share your information.</p>
+  <p>Services: Custom Software Development, AI Solutions, Data Intelligence, Other.</p>
+
 </div>
 
 <!-- Tamil signature -->
