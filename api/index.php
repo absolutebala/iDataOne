@@ -280,10 +280,9 @@ margin-top:40px;
 
 .product{
 background:rgba(255,255,255,0.55);
-border:1px solid rgba(226,232,240,0.85);
 border-radius:20px;
-padding:28px 32px;
-width:260px;
+padding:28px 28px 24px;
+width:280px;
 text-align:left;
 position:relative;
 overflow:hidden;
@@ -291,37 +290,61 @@ backdrop-filter:blur(20px);
 -webkit-backdrop-filter:blur(20px);
 transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;
 }
+.product.rose{border:1px solid rgba(244,63,94,0.2)}
+.product.sky{border:1px solid rgba(14,165,233,0.2)}
+.product.emerald{border:1px solid rgba(16,185,129,0.2)}
 .product::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .product:hover::before{left:130%}
-.product:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(79,70,229,0.10);border-color:rgba(99,102,241,0.25)}
+.product.rose:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(244,63,94,0.10);border-color:rgba(244,63,94,0.4)}
+.product.sky:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(14,165,233,0.10);border-color:rgba(14,165,233,0.4)}
+.product.emerald:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.4)}
 
-.product-icon{font-size:28px;margin-bottom:14px}
+.product-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px}
+.icon-rose{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#fff1f2,#ffe4e6);border:1px solid rgba(244,63,94,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-rose svg{stroke:#f43f5e}
+.icon-sky{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid rgba(14,165,233,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-sky svg{stroke:#0ea5e9}
+.icon-emerald{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1px solid rgba(16,185,129,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-emerald svg{stroke:#10b981}
+.product-icon-wrap svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.product-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#cbd5e1;padding-top:4px}
 
 .product h3{
-font-size:20px;
+font-size:18px;
 font-weight:700;
 color:#0f172a;
-margin-bottom:8px;
+letter-spacing:-0.4px;
+margin-bottom:6px;
 }
 
 .product p{
-font-size:14px;
-color:#475569;
-line-height:1.6;
-margin-bottom:16px;
+font-size:13px;
+color:#64748b;
+line-height:1.65;
+margin-bottom:18px;
 }
+
+.product-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(226,232,240,0.8)}
 
 .badge{
 display:inline-block;
-padding:5px 12px;
+padding:4px 10px;
 border-radius:999px;
-background:#eef2ff;
-color:#4f46e5;
-font-size:11px;
+font-size:10px;
 font-weight:700;
 letter-spacing:1px;
 text-transform:uppercase;
 }
+.rose .badge{background:#fff1f2;color:#f43f5e}
+.sky .badge{background:#f0f9ff;color:#0ea5e9}
+.emerald .badge{background:#ecfdf5;color:#10b981}
+
+.product-arrow{width:28px;height:28px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.25s,border-color 0.25s}
+.product-arrow svg{width:12px;height:12px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.25s}
+.product.rose:hover .product-arrow{background:#f43f5e;border-color:#f43f5e}
+.product.sky:hover .product-arrow{background:#0ea5e9;border-color:#0ea5e9}
+.product.emerald:hover .product-arrow{background:#10b981;border-color:#10b981}
+.product:hover .product-arrow svg{stroke:#fff}
 
 /* Contact — elite split panel */
 .contact-inner{position:relative;z-index:2;width:100%;max-width:900px;display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,0.6);border:1px solid rgba(226,232,240,0.9);border-radius:28px;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -561,24 +584,46 @@ p{font-size:17px}
 <div class="section-label">In the Lab</div>
 <h2>Products from <span class="highlight">iDataOne</span></h2>
 <div class="products">
-<div class="product">
-<div class="product-icon">🍽️</div>
+
+<div class="product rose">
+<div class="product-top">
+<div class="product-icon-wrap icon-rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="12" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="18" r="1" fill="#f43f5e" stroke="none"/></svg></div>
+<span class="product-num">01</span>
+</div>
 <h3>MealMate</h3>
 <p>AI-powered meal planning for families — personalised, smart, and effortless.</p>
+<div class="product-footer">
 <span class="badge">Coming Soon</span>
+<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
 </div>
-<div class="product">
-<div class="product-icon">💬</div>
+</div>
+
+<div class="product sky">
+<div class="product-top">
+<div class="product-icon-wrap icon-sky"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+<span class="product-num">02</span>
+</div>
 <h3>aiChat</h3>
 <p>AI agents for websites and business operations — always on, always intelligent.</p>
+<div class="product-footer">
 <span class="badge">Coming Soon</span>
+<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
 </div>
-<div class="product">
-<div class="product-icon">📈</div>
+</div>
+
+<div class="product emerald">
+<div class="product-top">
+<div class="product-icon-wrap icon-emerald"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
+<span class="product-num">03</span>
+</div>
 <h3>DatInsights</h3>
 <p>Unified business intelligence — one view of all your data, all the time.</p>
+<div class="product-footer">
 <span class="badge">Coming Soon</span>
+<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
 </div>
+</div>
+
 </div>
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(4)">
