@@ -536,7 +536,6 @@ p{font-size:17px}
     </div>
   </div>
 </div>
-</div>
 <div class="why-bottom">
   <div class="why-cta" id="screen-cta" onclick="ctaClick()">
     <span id="screen-cta-label">In the Lab</span>
