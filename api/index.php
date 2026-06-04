@@ -297,7 +297,6 @@ font-size:14px;
 .cap-card.violet:hover .cap-arrow{background:#7c3aed;border-color:#7c3aed}
 .cap-card.amber:hover .cap-arrow{background:#d97706;border-color:#d97706}
 .cap-card:hover .cap-arrow svg{stroke:#fff}
-@media(max-width:768px){.cap-grid{grid-template-columns:1fr}}
 
 /* Products */
 .products{
@@ -421,7 +420,6 @@ text-transform:uppercase;
 .form-msg{margin-top:12px;text-align:center;font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px}
 .form-msg.success{background:#f0fdf4;color:#16a34a}
 .form-msg.error{background:#fef2f2;color:#dc2626}
-@media(max-width:768px){.contact-inner{grid-template-columns:1fr;gap:36px}.contact-right{padding:32px 24px}.form-row-2{grid-template-columns:1fr;gap:14px}}
 
 /* Dots */
 .dots{
@@ -477,16 +475,63 @@ letter-spacing:0.3px;
 }
 
 @media(max-width:768px){
-.logo{width:280px;margin-bottom:30px}
-h1{font-size:36px;letter-spacing:-1px}
-h2{font-size:42px;letter-spacing:-1.5px}
-.capability{font-size:32px}
-p{font-size:17px}
-.products{flex-direction:column;align-items:center}
-.product{width:100%;max-width:320px}
-.form-row{grid-template-columns:1fr}
-.container{padding:24px 20px}
-.dots{right:14px}
+/* Base */
+html,body{overflow:hidden}
+.container{padding:20px 16px}
+.dots{right:12px}
+.site-logo img{height:28px}
+.tamil-sig{font-size:32px;bottom:14px;right:16px}
+.footer{left:16px;bottom:14px}
+
+/* Screen 1 — Hero */
+.logo{width:200px;margin-bottom:28px}
+h1{font-size:32px;letter-spacing:-1px;line-height:1.15}
+p{font-size:16px;line-height:1.7}
+.pills{gap:7px;margin-top:24px}
+.pill{font-size:12px;padding:7px 14px}
+.explore{margin-top:28px;font-size:12px}
+.scroll-hint{margin-top:28px;font-size:11px}
+
+/* Screen 2 — Capabilities */
+h2{font-size:36px;letter-spacing:-1.5px;margin-bottom:16px}
+.section-label{font-size:12px;margin-bottom:14px}
+.cap-grid{grid-template-columns:1fr;gap:12px;margin-top:20px}
+.cap-card{padding:20px 18px 16px}
+.cap-card-title{font-size:16px}
+.cap-card-desc{font-size:12px}
+.cap-footer{padding-top:12px}
+
+/* Screen 3 — Why iDataOne */
+.why-inner{max-width:100%}
+.why-heading{font-size:36px;letter-spacing:-1.5px;margin-bottom:24px}
+.why-label{font-size:12px;margin-bottom:14px}
+.why-grid{grid-template-columns:1fr;gap:10px}
+.why-item{padding:20px 18px}
+.why-title{font-size:15px}
+.why-desc{font-size:12px}
+.why-bottom{margin-top:16px}
+.why-cta{font-size:10px}
+
+/* Screen 4 — Products */
+.products{flex-direction:column;align-items:center;gap:12px;margin-top:20px}
+.product{width:100%;max-width:100%;padding:20px 18px 16px}
+.product h3{font-size:16px}
+.product p{font-size:12px;margin-bottom:12px}
+
+/* Screen 5 — Contact */
+.contact-inner{grid-template-columns:1fr;gap:24px;max-width:100%}
+.cl-heading{font-size:32px;letter-spacing:-1.5px}
+.cl-sub{font-size:14px;margin-bottom:20px}
+.cl-trust-item{padding:12px 0}
+.cl-trust-title{font-size:13px}
+.cl-trust-desc{font-size:11px}
+.contact-right{padding:24px 20px}
+.form-top-title{font-size:16px}
+.form-row-2{grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+.service-pills{gap:6px}
+.service-pill{font-size:11px;padding:6px 11px}
+.submit-btn{font-size:12px;padding:13px}
+.form-note{font-size:11px}
 }
 </style>
 </head>
