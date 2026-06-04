@@ -479,7 +479,7 @@ letter-spacing:0.3px;
 
 /* Hide desktop presentation, show mobile */
 #presentation{display:none}
-#mobile-deck{display:block}
+#mobile-deck{display:block !important}
 .dots{display:none}
 .why-bottom,.cap-why-cta{display:none}
 
@@ -670,9 +670,10 @@ letter-spacing:0.3px;
 .m-submit{width:100%;padding:15px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;margin-top:4px}
 .m-form-note{text-align:center;font-size:11px;color:#cbd5e1;margin-top:8px}
 
-/* Hide mobile on desktop */
-#mobile-deck{display:none}
 }
+
+/* Hide mobile deck on desktop (outside media query) */
+#mobile-deck{display:none}
 
 </style>
 </head>
