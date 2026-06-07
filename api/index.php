@@ -259,21 +259,12 @@ font-size:14px;
 .why-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* Capability Cards — single card carousel */
-.cap-carousel{position:relative;width:100%;max-width:680px;margin:0 auto}
+.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
 .cap-slides{position:relative;width:100%}
 .cap-slide{display:none;animation:capFadeIn 0.4s ease}
 .cap-slide.active{display:block}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.cap-card{
-  background:rgba(255,255,255,0.65);
-  border-radius:24px;
-  padding:40px 40px 32px;
-  position:relative;
-  overflow:hidden;
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  transition:box-shadow 0.3s;
-}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start}
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
@@ -282,39 +273,38 @@ font-size:14px;
 .cap-card.teal:hover{box-shadow:0 28px 60px rgba(20,184,166,0.12)}
 .cap-card.violet:hover{box-shadow:0 28px 60px rgba(124,58,237,0.12)}
 .cap-card.amber:hover{box-shadow:0 28px 60px rgba(245,158,11,0.12)}
-.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px}
-.icon-teal{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.icon-teal svg{stroke:#0d9488}
-.icon-violet{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.icon-violet svg{stroke:#7c3aed}
-.icon-amber{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.icon-amber svg{stroke:#d97706}
-.cap-icon-wrap svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#94a3b8;padding-top:4px}
 .cap-card-title{font-size:26px;font-weight:700;color:#0f172a;letter-spacing:-0.6px;line-height:1.2;margin-bottom:6px}
 .cap-card-outcome{font-size:13px;font-weight:600;letter-spacing:0.2px;margin-bottom:14px}
 .teal .cap-card-outcome{color:#0d9488}
 .violet .cap-card-outcome{color:#7c3aed}
 .amber .cap-card-outcome{color:#d97706}
-.cap-card-desc{font-size:15px;color:#475569;line-height:1.75;margin-bottom:24px}
-.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin-bottom:28px}
+.cap-card-desc{font-size:14px;color:#475569;line-height:1.75;margin-bottom:22px}
+.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-bottom:28px}
 .cap-checklist li{font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px}
 .cap-checklist li::before{content:"✓";font-weight:700;font-size:12px;flex-shrink:0}
 .teal .cap-checklist li::before{color:#0d9488}
 .violet .cap-checklist li::before{color:#7c3aed}
 .amber .cap-checklist li::before{color:#d97706}
-.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-pips{display:flex;gap:6px;align-items:center}
+.cap-pip{height:3px;border-radius:999px;background:#e2e8f0}
+.cap-pip.active-teal{background:#0d9488;width:28px}
+.cap-pip.active-violet{background:#7c3aed;width:28px}
+.cap-pip.active-amber{background:#d97706;width:28px}
+.cap-pip:not([class*="active"]){width:16px}
 .cap-nav{display:flex;align-items:center;gap:10px}
 .cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
-.cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
+.cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#64748b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
 .cap-nav-btn:hover{background:#0f172a;border-color:#0f172a}
 .cap-nav-btn:hover svg{stroke:#fff}
 .cap-nav-count{font-size:12px;font-weight:600;color:#94a3b8;letter-spacing:1px}
-.cap-progress{display:flex;gap:6px}
-.cap-pip{width:20px;height:3px;border-radius:999px;background:#e2e8f0;transition:background 0.3s,width 0.3s}
-.teal-pip.active{background:#0d9488;width:32px}
-.violet-pip.active{background:#7c3aed;width:32px}
-.amber-pip.active{background:#d97706;width:32px}
+.cap-illus{position:relative;height:280px;display:flex;align-items:center;justify-content:center}
+.cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
+.cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
+.cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
+.cap-tab.t-violet{background:#f5f3ff;border-color:rgba(124,58,237,0.3);color:#7c3aed}
+.cap-tab.t-amber{background:#fffbeb;border-color:rgba(245,158,11,0.3);color:#d97706}
+@media(max-width:768px){.cap-card{grid-template-columns:1fr}.cap-illus{display:none}}
 
 /* Products */
 .products{
@@ -758,100 +748,179 @@ letter-spacing:0.3px;
 <!-- 1: Capabilities -->
 <section class="screen">
 <div class="container">
-<div class="section-label">What We Help Businesses Achieve</div>
 <h2>Build. <span class="highlight">Transform.</span> Scale.</h2>
-<p style="font-size:16px;color:#64748b;margin:8px auto 32px;max-width:560px;line-height:1.7">Helping businesses modernize operations, unify data, and create intelligent digital products powered by AI.</p>
+<p style="font-size:16px;color:#64748b;margin:8px auto 28px;max-width:560px;line-height:1.7;text-align:center">Helping businesses modernize operations, unify data, and create intelligent digital products powered by AI.</p>
 
 <div class="cap-carousel">
+  <div class="cap-tabs">
+    <div class="cap-tab t-teal" onclick="capTab(0,this)">01 Build</div>
+    <div class="cap-tab" onclick="capTab(1,this)">02 AI</div>
+    <div class="cap-tab" onclick="capTab(2,this)">03 Data</div>
+  </div>
   <div class="cap-slides">
 
-    <!-- Card 1 -->
     <div class="cap-slide active">
       <div class="cap-card teal">
-        <div class="cap-card-top">
-          <div class="cap-icon-wrap icon-teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-          <span class="cap-number">01</span>
+        <div class="cap-left">
+          <div class="cap-card-title">Build Digital Products</div>
+          <div class="cap-card-outcome">Ship faster. Scale without limits.</div>
+          <div class="cap-card-desc">From idea to production, we build scalable software products tailored precisely to your workflows and business needs.</div>
+          <ul class="cap-checklist">
+            <li>Web Apps</li><li>Mobile Apps</li>
+            <li>SaaS Platforms</li><li>Enterprise Apps</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips">
+              <div class="cap-pip active-teal"></div><div class="cap-pip"></div><div class="cap-pip"></div>
+            </div>
+            <div class="cap-nav">
+              <span class="cap-nav-count">01 / 03</span>
+              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
         </div>
-        <div class="cap-card-title">Build Digital Products</div>
-        <div class="cap-card-outcome">Ship faster. Scale without limits.</div>
-        <div class="cap-card-desc">From idea to production, we build scalable software products tailored precisely to your workflows and business needs.</div>
-        <ul class="cap-checklist">
-          <li>Web Apps</li>
-          <li>Mobile Apps</li>
-          <li>SaaS Platforms</li>
-          <li>Enterprise Apps</li>
-        </ul>
-        <div class="cap-footer">
-          <div class="cap-progress">
-            <div class="cap-pip teal-pip active"></div>
-            <div class="cap-pip teal-pip"></div>
-            <div class="cap-pip teal-pip"></div>
-          </div>
-          <div class="cap-nav">
-            <span class="cap-nav-count">01 / 03</span>
-            <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-          </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="200" height="140" rx="12" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.25)" stroke-width="1.5"/>
+            <rect x="10" y="10" width="200" height="28" rx="12" fill="rgba(20,184,166,0.12)"/>
+            <rect x="10" y="28" width="200" height="10" fill="rgba(20,184,166,0.12)"/>
+            <circle cx="26" cy="24" r="4" fill="rgba(244,63,94,0.5)"/>
+            <circle cx="40" cy="24" r="4" fill="rgba(245,158,11,0.5)"/>
+            <circle cx="54" cy="24" r="4" fill="rgba(20,184,166,0.5)"/>
+            <rect x="70" y="17" width="100" height="14" rx="7" fill="rgba(255,255,255,0.7)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <rect x="24" y="50" width="80" height="8" rx="4" fill="rgba(20,184,166,0.3)"/>
+            <rect x="24" y="66" width="160" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
+            <rect x="24" y="76" width="140" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="24" y="86" width="120" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="24" y="100" width="50" height="36" rx="8" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
+            <rect x="82" y="100" width="50" height="36" rx="8" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+            <rect x="140" y="100" width="50" height="36" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="160" y="80" width="76" height="140" rx="14" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.3)" stroke-width="1.5"/>
+            <rect x="166" y="95" width="64" height="110" rx="6" fill="rgba(240,253,250,0.8)"/>
+            <rect x="185" y="85" width="26" height="6" rx="3" fill="rgba(20,184,166,0.2)"/>
+            <rect x="172" y="102" width="52" height="7" rx="3" fill="rgba(20,184,166,0.35)"/>
+            <rect x="172" y="114" width="52" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="172" y="122" width="40" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="172" y="134" width="24" height="16" rx="6" fill="rgba(20,184,166,0.3)"/>
+            <rect x="200" y="134" width="24" height="16" rx="6" fill="rgba(99,102,241,0.2)"/>
+            <rect x="172" y="158" width="52" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="172" y="166" width="44" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
+            <circle cx="186" cy="194" r="3" fill="rgba(20,184,166,0.5)"/>
+            <circle cx="198" cy="194" r="3" fill="rgba(15,23,42,0.1)"/>
+            <circle cx="210" cy="194" r="3" fill="rgba(15,23,42,0.1)"/>
+            <rect x="0" y="160" width="100" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
+            <circle cx="14" cy="174" r="5" fill="rgba(20,184,166,0.4)"/>
+            <rect x="24" y="169" width="50" height="4" rx="2" fill="rgba(15,23,42,0.15)"/>
+            <rect x="24" y="177" width="36" height="3" rx="1.5" fill="rgba(20,184,166,0.3)"/>
+          </svg>
         </div>
       </div>
     </div>
 
-    <!-- Card 2 -->
     <div class="cap-slide">
       <div class="cap-card violet">
-        <div class="cap-card-top">
-          <div class="cap-icon-wrap icon-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
-          <span class="cap-number">02</span>
+        <div class="cap-left">
+          <div class="cap-card-title">Enable AI &amp; Automation</div>
+          <div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
+          <div class="cap-card-desc">From AI agents to intelligent workflows, we embed AI into products and operations that work in production, not just in demos.</div>
+          <ul class="cap-checklist">
+            <li>AI Agents</li><li>LLM Integration</li>
+            <li>Automation</li><li>AI Features</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips">
+              <div class="cap-pip"></div><div class="cap-pip active-violet"></div><div class="cap-pip"></div>
+            </div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">02 / 03</span>
+              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
         </div>
-        <div class="cap-card-title">Enable AI & Automation</div>
-        <div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
-        <div class="cap-card-desc">From AI agents to intelligent workflows, we embed AI into products and operations that work in production, not just in demos.</div>
-        <ul class="cap-checklist">
-          <li>AI Agents</li>
-          <li>LLM Integration</li>
-          <li>Automation</li>
-          <li>AI Features</li>
-        </ul>
-        <div class="cap-footer">
-          <div class="cap-progress">
-            <div class="cap-pip violet-pip"></div>
-            <div class="cap-pip violet-pip active"></div>
-            <div class="cap-pip violet-pip"></div>
-          </div>
-          <div class="cap-nav">
-            <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-            <span class="cap-nav-count">02 / 03</span>
-            <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-          </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="100" width="56" height="32" rx="10" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+            <text x="38" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="600">Input</text>
+            <line x1="66" y1="116" x2="90" y2="116" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <polygon points="90,112 98,116 90,120" fill="rgba(124,58,237,0.4)"/>
+            <rect x="98" y="90" width="64" height="52" rx="14" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
+            <text x="130" y="112" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="700">LLM</text>
+            <text x="130" y="126" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Inter">Model</text>
+            <circle cx="130" cy="138" r="3" fill="rgba(124,58,237,0.3)"/>
+            <line x1="162" y1="116" x2="186" y2="116" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <polygon points="186,112 194,116 186,120" fill="rgba(124,58,237,0.4)"/>
+            <rect x="194" y="100" width="56" height="32" rx="10" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+            <text x="222" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="600">Output</text>
+            <rect x="98" y="160" width="60" height="24" rx="8" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
+            <text x="128" y="176" text-anchor="middle" font-size="9" fill="#0d9488" font-family="Inter" font-weight="600">Automate</text>
+            <rect x="166" y="160" width="60" height="24" rx="8" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+            <text x="196" y="176" text-anchor="middle" font-size="9" fill="#d97706" font-family="Inter" font-weight="600">Analyse</text>
+            <line x1="130" y1="142" x2="128" y2="160" stroke="rgba(124,58,237,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+            <line x1="130" y1="142" x2="196" y2="160" stroke="rgba(124,58,237,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+            <circle cx="80" cy="60" r="4" fill="rgba(124,58,237,0.2)"/>
+            <circle cx="180" cy="50" r="6" fill="rgba(124,58,237,0.12)"/>
+            <circle cx="220" cy="70" r="3" fill="rgba(124,58,237,0.15)"/>
+            <circle cx="40" cy="70" r="5" fill="rgba(124,58,237,0.1)"/>
+            <rect x="20" y="190" width="110" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+            <circle cx="34" cy="204" r="5" fill="rgba(124,58,237,0.3)"/>
+            <rect x="44" y="199" width="60" height="4" rx="2" fill="rgba(15,23,42,0.12)"/>
+            <rect x="44" y="207" width="42" height="3" rx="1.5" fill="rgba(124,58,237,0.25)"/>
+          </svg>
         </div>
       </div>
     </div>
 
-    <!-- Card 3 -->
     <div class="cap-slide">
       <div class="cap-card amber">
-        <div class="cap-card-top">
-          <div class="cap-icon-wrap icon-amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-          <span class="cap-number">03</span>
+        <div class="cap-left">
+          <div class="cap-card-title">Transform Data into Decisions</div>
+          <div class="cap-card-outcome">One truth. Instant clarity.</div>
+          <div class="cap-card-desc">Unify fragmented systems into a trusted data layer and generate actionable insights that drive real business decisions.</div>
+          <ul class="cap-checklist">
+            <li>Unified Data</li><li>Dashboards</li>
+            <li>BI &amp; Analytics</li><li>Predictions</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips">
+              <div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-amber"></div>
+            </div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">03 / 03</span>
+            </div>
+          </div>
         </div>
-        <div class="cap-card-title">Transform Data into Decisions</div>
-        <div class="cap-card-outcome">One truth. Instant clarity.</div>
-        <div class="cap-card-desc">Unify fragmented systems into a trusted data layer and generate actionable insights that drive real business decisions.</div>
-        <ul class="cap-checklist">
-          <li>Unified Data</li>
-          <li>Dashboards</li>
-          <li>BI & Analytics</li>
-          <li>Predictions</li>
-        </ul>
-        <div class="cap-footer">
-          <div class="cap-progress">
-            <div class="cap-pip amber-pip"></div>
-            <div class="cap-pip amber-pip"></div>
-            <div class="cap-pip amber-pip active"></div>
-          </div>
-          <div class="cap-nav">
-            <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-            <span class="cap-nav-count">03 / 03</span>
-          </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="220" height="160" rx="14" fill="rgba(255,251,235,0.7)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5"/>
+            <rect x="10" y="20" width="220" height="26" rx="14" fill="rgba(245,158,11,0.12)"/>
+            <rect x="10" y="34" width="220" height="12" fill="rgba(245,158,11,0.12)"/>
+            <rect x="20" y="27" width="60" height="6" rx="3" fill="rgba(217,119,6,0.4)"/>
+            <rect x="20" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="84" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="148" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="26" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="26" y="72" width="40" height="8" rx="3" fill="rgba(217,119,6,0.4)"/>
+            <rect x="90" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="90" y="72" width="40" height="8" rx="3" fill="rgba(20,184,166,0.4)"/>
+            <rect x="154" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="154" y="72" width="40" height="8" rx="3" fill="rgba(99,102,241,0.4)"/>
+            <rect x="20" y="100" width="140" height="68" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+            <rect x="30" y="130" width="12" height="28" rx="3" fill="rgba(245,158,11,0.5)"/>
+            <rect x="48" y="118" width="12" height="40" rx="3" fill="rgba(245,158,11,0.65)"/>
+            <rect x="66" y="122" width="12" height="36" rx="3" fill="rgba(245,158,11,0.45)"/>
+            <rect x="84" y="112" width="12" height="46" rx="3" fill="rgba(245,158,11,0.75)"/>
+            <rect x="102" y="108" width="12" height="50" rx="3" fill="rgba(217,119,6,0.8)"/>
+            <rect x="120" y="116" width="12" height="42" rx="3" fill="rgba(245,158,11,0.6)"/>
+            <rect x="168" y="100" width="52" height="68" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+            <polyline points="174,155 182,145 190,148 198,136 206,130 214,134" stroke="rgba(217,119,6,0.7)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="206" cy="130" r="3" fill="rgba(217,119,6,0.9)"/>
+            <rect x="40" y="185" width="130" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+            <circle cx="54" cy="199" r="5" fill="rgba(245,158,11,0.4)"/>
+            <rect x="64" y="194" width="70" height="4" rx="2" fill="rgba(15,23,42,0.12)"/>
+            <rect x="64" y="202" width="50" height="3" rx="1.5" fill="rgba(217,119,6,0.3)"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -1332,6 +1401,30 @@ document.addEventListener('keydown', (e) => {
   if (current === 1) {
     if (e.key === 'ArrowRight') { e.stopPropagation(); capNext(); }
     if (e.key === 'ArrowLeft')  { e.stopPropagation(); capPrev(); }
+  }
+});
+
+// Capability carousel
+let capCurrent = 0;
+const capSlides = document.querySelectorAll('.cap-slide');
+const capTabEls = document.querySelectorAll('.cap-tab');
+const capTabClasses = ['t-teal','t-violet','t-amber'];
+
+function capTab(index, el) {
+  capSlides.forEach(s => s.classList.remove('active'));
+  capTabEls.forEach(t => t.className = 'cap-tab');
+  capCurrent = index;
+  capSlides[capCurrent].classList.add('active');
+  const activeTab = el || capTabEls[index];
+  activeTab.className = 'cap-tab ' + capTabClasses[index];
+}
+function capNext() { capTab((capCurrent + 1) % capSlides.length, null); }
+function capPrev() { capTab((capCurrent - 1 + capSlides.length) % capSlides.length, null); }
+
+document.addEventListener('keydown', (e) => {
+  if (current === 1) {
+    if (e.key === 'ArrowRight') capNext();
+    if (e.key === 'ArrowLeft')  capPrev();
   }
 });
 
