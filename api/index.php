@@ -258,45 +258,63 @@ font-size:14px;
 .why-cta:hover{gap:16px;opacity:1}
 .why-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-/* Capability Cards — 3 rectangular columns */
-.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.55);border:1px solid rgba(226,232,240,0.85);border-radius:20px;padding:28px 24px 24px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;cursor:default}
-/* Glossy sheen pseudo-element */
+/* Capability Cards — single card carousel */
+.cap-carousel{position:relative;width:100%;max-width:680px;margin:0 auto}
+.cap-slides{position:relative;width:100%}
+.cap-slide{display:none;animation:capFadeIn 0.4s ease}
+.cap-slide.active{display:block}
+@keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.cap-card{
+  background:rgba(255,255,255,0.65);
+  border-radius:24px;
+  padding:40px 40px 32px;
+  position:relative;
+  overflow:hidden;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  transition:box-shadow 0.3s;
+}
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
 .cap-card.amber{border:1px solid rgba(245,158,11,0.22)}
-.cap-card.teal:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(20,184,166,0.14),0 4px 16px rgba(20,184,166,0.06);border-color:rgba(20,184,166,0.4)}
-.cap-card.violet:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(124,58,237,0.14),0 4px 16px rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.4)}
-.cap-card.amber:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(245,158,11,0.14),0 4px 16px rgba(245,158,11,0.06);border-color:rgba(245,158,11,0.4)}
-.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
-.icon-teal{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cap-card.teal:hover{box-shadow:0 28px 60px rgba(20,184,166,0.12)}
+.cap-card.violet:hover{box-shadow:0 28px 60px rgba(124,58,237,0.12)}
+.cap-card.amber:hover{box-shadow:0 28px 60px rgba(245,158,11,0.12)}
+.cap-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px}
+.icon-teal{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-teal svg{stroke:#0d9488}
-.icon-violet{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-violet{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-violet svg{stroke:#7c3aed}
-.icon-amber{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-amber{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .icon-amber svg{stroke:#d97706}
-.cap-icon-wrap svg{width:21px;height:21px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cap-icon-wrap svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .cap-number{font-size:11px;font-weight:700;letter-spacing:2px;color:#94a3b8;padding-top:4px}
-.cap-card-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;line-height:1.25;margin-bottom:5px}
-.cap-card-outcome{font-size:12px;font-weight:600;letter-spacing:0.2px;margin-bottom:12px}
+.cap-card-title{font-size:26px;font-weight:700;color:#0f172a;letter-spacing:-0.6px;line-height:1.2;margin-bottom:6px}
+.cap-card-outcome{font-size:13px;font-weight:600;letter-spacing:0.2px;margin-bottom:14px}
 .teal .cap-card-outcome{color:#0d9488}
 .violet .cap-card-outcome{color:#7c3aed}
 .amber .cap-card-outcome{color:#d97706}
-.cap-card-desc{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:18px}
-.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(226,232,240,0.8)}
-.cap-tags{display:flex;flex-wrap:wrap;gap:5px}
-.cap-tag{font-size:10px;font-weight:600;letter-spacing:0.3px;border-radius:999px;padding:3px 9px}
-.teal .cap-tag{color:#0d9488;background:#f0fdfa}
-.violet .cap-tag{color:#7c3aed;background:#f5f3ff}
-.amber .cap-tag{color:#d97706;background:#fffbeb}
-.cap-arrow{width:28px;height:28px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:8px;transition:background 0.25s,border-color 0.25s}
-.cap-arrow svg{width:12px;height:12px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.25s}
-.cap-card.teal:hover .cap-arrow{background:#0d9488;border-color:#0d9488}
-.cap-card.violet:hover .cap-arrow{background:#7c3aed;border-color:#7c3aed}
-.cap-card.amber:hover .cap-arrow{background:#d97706;border-color:#d97706}
-.cap-card:hover .cap-arrow svg{stroke:#fff}
+.cap-card-desc{font-size:15px;color:#475569;line-height:1.75;margin-bottom:24px}
+.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin-bottom:28px}
+.cap-checklist li{font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px}
+.cap-checklist li::before{content:"✓";font-weight:700;font-size:12px;flex-shrink:0}
+.teal .cap-checklist li::before{color:#0d9488}
+.violet .cap-checklist li::before{color:#7c3aed}
+.amber .cap-checklist li::before{color:#d97706}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-nav{display:flex;align-items:center;gap:10px}
+.cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+.cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
+.cap-nav-btn:hover{background:#0f172a;border-color:#0f172a}
+.cap-nav-btn:hover svg{stroke:#fff}
+.cap-nav-count{font-size:12px;font-weight:600;color:#94a3b8;letter-spacing:1px}
+.cap-progress{display:flex;gap:6px}
+.cap-pip{width:20px;height:3px;border-radius:999px;background:#e2e8f0;transition:background 0.3s,width 0.3s}
+.teal-pip.active{background:#0d9488;width:32px}
+.violet-pip.active{background:#7c3aed;width:32px}
+.amber-pip.active{background:#d97706;width:32px}
 
 /* Products */
 .products{
@@ -740,53 +758,107 @@ letter-spacing:0.3px;
 <!-- 1: Capabilities -->
 <section class="screen">
 <div class="container">
-<div class="section-label">What We Build</div>
-<h2>Our <span class="highlight">Capabilities</span></h2>
-<div class="cap-grid">
+<div class="section-label">What We Help Businesses Achieve</div>
+<h2>Build. <span class="highlight">Transform.</span> Scale.</h2>
+<p style="font-size:16px;color:#64748b;margin:8px auto 32px;max-width:560px;line-height:1.7">Helping businesses modernize operations, unify data, and create intelligent digital products powered by AI.</p>
 
-<div class="cap-card teal">
-<div class="cap-card-top">
-<div class="cap-icon-wrap icon-teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-<span class="cap-number">01</span>
-</div>
-<div class="cap-card-title">Custom Software</div>
-<div class="cap-card-outcome">Ship faster. Scale without limits.</div>
-<div class="cap-card-desc">Web, mobile, and enterprise applications built precisely for your workflows — not off-the-shelf compromises.</div>
-<div class="cap-footer">
-<div class="cap-tags"><span class="cap-tag">Web Apps</span><span class="cap-tag">Mobile</span><span class="cap-tag">Enterprise</span></div>
-<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
+<div class="cap-carousel">
+  <div class="cap-slides">
+
+    <!-- Card 1 -->
+    <div class="cap-slide active">
+      <div class="cap-card teal">
+        <div class="cap-card-top">
+          <div class="cap-icon-wrap icon-teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+          <span class="cap-number">01</span>
+        </div>
+        <div class="cap-card-title">Build Digital Products</div>
+        <div class="cap-card-outcome">Ship faster. Scale without limits.</div>
+        <div class="cap-card-desc">From idea to production, we build scalable software products tailored precisely to your workflows and business needs.</div>
+        <ul class="cap-checklist">
+          <li>Web Apps</li>
+          <li>Mobile Apps</li>
+          <li>SaaS Platforms</li>
+          <li>Enterprise Apps</li>
+        </ul>
+        <div class="cap-footer">
+          <div class="cap-progress">
+            <div class="cap-pip teal-pip active"></div>
+            <div class="cap-pip teal-pip"></div>
+            <div class="cap-pip teal-pip"></div>
+          </div>
+          <div class="cap-nav">
+            <span class="cap-nav-count">01 / 03</span>
+            <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="cap-slide">
+      <div class="cap-card violet">
+        <div class="cap-card-top">
+          <div class="cap-icon-wrap icon-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+          <span class="cap-number">02</span>
+        </div>
+        <div class="cap-card-title">Enable AI & Automation</div>
+        <div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
+        <div class="cap-card-desc">From AI agents to intelligent workflows, we embed AI into products and operations that work in production, not just in demos.</div>
+        <ul class="cap-checklist">
+          <li>AI Agents</li>
+          <li>LLM Integration</li>
+          <li>Automation</li>
+          <li>AI Features</li>
+        </ul>
+        <div class="cap-footer">
+          <div class="cap-progress">
+            <div class="cap-pip violet-pip"></div>
+            <div class="cap-pip violet-pip active"></div>
+            <div class="cap-pip violet-pip"></div>
+          </div>
+          <div class="cap-nav">
+            <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+            <span class="cap-nav-count">02 / 03</span>
+            <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="cap-slide">
+      <div class="cap-card amber">
+        <div class="cap-card-top">
+          <div class="cap-icon-wrap icon-amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
+          <span class="cap-number">03</span>
+        </div>
+        <div class="cap-card-title">Transform Data into Decisions</div>
+        <div class="cap-card-outcome">One truth. Instant clarity.</div>
+        <div class="cap-card-desc">Unify fragmented systems into a trusted data layer and generate actionable insights that drive real business decisions.</div>
+        <ul class="cap-checklist">
+          <li>Unified Data</li>
+          <li>Dashboards</li>
+          <li>BI & Analytics</li>
+          <li>Predictions</li>
+        </ul>
+        <div class="cap-footer">
+          <div class="cap-progress">
+            <div class="cap-pip amber-pip"></div>
+            <div class="cap-pip amber-pip"></div>
+            <div class="cap-pip amber-pip active"></div>
+          </div>
+          <div class="cap-nav">
+            <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+            <span class="cap-nav-count">03 / 03</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="cap-card violet">
-<div class="cap-card-top">
-<div class="cap-icon-wrap icon-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
-<span class="cap-number">02</span>
-</div>
-<div class="cap-card-title">AI Solutions</div>
-<div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
-<div class="cap-card-desc">From LLM integrations to intelligent automation — we build AI that works in production, not just in demos.</div>
-<div class="cap-footer">
-<div class="cap-tags"><span class="cap-tag">LLM Integration</span><span class="cap-tag">AI Agents</span><span class="cap-tag">Automation</span></div>
-<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
-</div>
-
-<div class="cap-card amber">
-<div class="cap-card-top">
-<div class="cap-icon-wrap icon-amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-<span class="cap-number">03</span>
-</div>
-<div class="cap-card-title">Data Intelligence</div>
-<div class="cap-card-outcome">One truth. Instant clarity.</div>
-<div class="cap-card-desc">Unify fragmented data sources into a single trusted layer — then turn it into insights that drive real action.</div>
-<div class="cap-footer">
-<div class="cap-tags"><span class="cap-tag">Data Pipelines</span><span class="cap-tag">Dashboards</span><span class="cap-tag">BI Platforms</span></div>
-<div class="cap-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
-</div>
-
-</div>
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(2)">
     Why iDataOne
@@ -1243,6 +1315,26 @@ letter-spacing:0.3px;
 <footer class="footer"></footer>
 
 <script>
+// Capability carousel
+let capCurrent = 0;
+const capSlides = document.querySelectorAll('.cap-slide');
+
+function capShowSlide(index) {
+  capSlides.forEach(s => s.classList.remove('active'));
+  capCurrent = (index + capSlides.length) % capSlides.length;
+  capSlides[capCurrent].classList.add('active');
+}
+function capNext() { capShowSlide(capCurrent + 1); }
+function capPrev() { capShowSlide(capCurrent - 1); }
+
+// Right/left arrow keys for cap carousel when on screen 1
+document.addEventListener('keydown', (e) => {
+  if (current === 1) {
+    if (e.key === 'ArrowRight') { e.stopPropagation(); capNext(); }
+    if (e.key === 'ArrowLeft')  { e.stopPropagation(); capPrev(); }
+  }
+});
+
 function selectService(el, val) {
   document.querySelectorAll('.service-pill').forEach(p => p.classList.remove('active'));
   el.classList.add('active');
