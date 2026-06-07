@@ -4,12 +4,17 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/robots.txt", "dest": "/robots.txt" },
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
-    { "src": "/favicon.png", "dest": "/favicon.png" },
-    { "src": "/mealmate/(.*)", "dest": "/mealmate/$1" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+  "rewrites": [
+    {
+      "has": [{ "type": "host", "value": "mealmate.idataone.com" }],
+      "source": "/(.*)",
+      "destination": "/mealmate/index.html"
+    },
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/favicon.png", "destination": "/favicon.png" },
+    { "source": "/mealmate/(.*)", "destination": "/mealmate/$1" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
   ]
 }
