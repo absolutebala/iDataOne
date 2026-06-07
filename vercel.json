@@ -10,6 +10,11 @@
   "rewrites": [
     {
       "has": [{ "type": "host", "value": "mealmate.idataone.com" }],
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "has": [{ "type": "host", "value": "mealmate.idataone.com" }],
       "source": "/(.*)",
       "destination": "/api/mealmate.php"
     },
