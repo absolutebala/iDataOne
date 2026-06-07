@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MealMate What Should We Cook Tonight?</title>
+<link rel="icon" type="image/png" href="/assets/images/mealmate-icon.png">
 <meta name="description" content="MealMate answers the question every family asks daily what should we cook? AI-powered meal planning and smart food suggestions for effortless family mealtimes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
