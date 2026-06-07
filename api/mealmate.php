@@ -24,6 +24,11 @@ html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);overflow-x:hidden}
 
 /* ── Hero ── */
+/* Nav */
+.top-nav{position:fixed;top:0;left:0;right:0;padding:16px 28px;z-index:100;display:flex;align-items:center}
+.top-nav a img{height:30px;width:auto;opacity:0.75;transition:opacity 0.2s;filter:brightness(0) invert(1)}
+.top-nav a img:hover{opacity:1}
+
 .hero{
   min-height:100vh;
   position:relative;
@@ -496,6 +501,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 <body>
 
 <!-- ── Hero ── -->
+<a href="https://idataone.com" class="top-nav">
+  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne">
+</a>
+
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
