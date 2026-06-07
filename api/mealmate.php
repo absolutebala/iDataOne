@@ -25,10 +25,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 
 /* ── Hero ── */
 /* Nav */
-.top-nav-link{position:fixed;top:0;left:0;padding:20px 28px;z-index:100;text-decoration:none;display:block}
-.top-nav-logo{font-family:'Sora',sans-serif;font-size:18px;font-weight:800;color:rgba(255,255,255,0.85);letter-spacing:-0.5px}
-.top-nav-logo span{background:linear-gradient(90deg,#8b21e8,#e8217a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.top-nav-link:hover .top-nav-logo{color:#fff}
+.top-nav-link{position:fixed;top:16px;left:24px;z-index:100;text-decoration:none;display:block}
+.top-nav-link:hover img{opacity:1!important}
 
 .hero{
   min-height:100vh;
@@ -503,7 +501,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 
 <!-- ── Hero ── -->
 <a href="https://idataone.com" class="top-nav-link">
-  <span class="top-nav-logo">i<span>Data</span>One</span>
+  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne" style="height:36px;width:auto;filter:brightness(0) invert(1);opacity:0.85;display:block">
 </a>
 
 <section class="hero">
