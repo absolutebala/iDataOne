@@ -260,7 +260,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.55);border:1px solid rgba(226,232,240,0.85);border-radius:20px;padding:28px 24px 24px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease;cursor:default}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start;transition:box-shadow 0.3s}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -297,6 +297,52 @@ font-size:14px;
 .cap-card.violet:hover .cap-arrow{background:#7c3aed;border-color:#7c3aed}
 .cap-card.amber:hover .cap-arrow{background:#d97706;border-color:#d97706}
 .cap-card:hover .cap-arrow svg{stroke:#fff}
+
+/* Capability Carousel */
+.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
+.cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
+.cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
+.cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
+.cap-tab.t-violet{background:#f5f3ff;border-color:rgba(124,58,237,0.3);color:#7c3aed}
+.cap-tab.t-amber{background:#fffbeb;border-color:rgba(245,158,11,0.3);color:#d97706}
+.cap-slides{position:relative;width:100%}
+.cap-slide{display:none;animation:capFadeIn 0.4s ease}
+.cap-slide.active{display:block}
+@keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
+.cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
+.cap-card.amber{border:1px solid rgba(245,158,11,0.22)}
+.cap-card.teal:hover{box-shadow:0 28px 60px rgba(20,184,166,0.12)}
+.cap-card.violet:hover{box-shadow:0 28px 60px rgba(124,58,237,0.12)}
+.cap-card.amber:hover{box-shadow:0 28px 60px rgba(245,158,11,0.12)}
+.cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
+.cap-card:hover::before{left:130%}
+.cap-card-title{font-size:26px;font-weight:700;color:#0f172a;letter-spacing:-0.6px;line-height:1.2;margin-bottom:6px}
+.cap-card-outcome{font-size:13px;font-weight:600;letter-spacing:0.2px;margin-bottom:14px}
+.teal .cap-card-outcome{color:#0d9488}
+.violet .cap-card-outcome{color:#7c3aed}
+.amber .cap-card-outcome{color:#d97706}
+.cap-card-desc{font-size:14px;color:#475569;line-height:1.75;margin-bottom:22px}
+.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-bottom:28px;padding:0}
+.cap-checklist li{font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px}
+.cap-checklist li::before{content:"✓";font-weight:700;font-size:12px;flex-shrink:0}
+.teal .cap-checklist li::before{color:#0d9488}
+.violet .cap-checklist li::before{color:#7c3aed}
+.amber .cap-checklist li::before{color:#d97706}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-pips{display:flex;gap:6px;align-items:center}
+.cap-pip{height:3px;border-radius:999px;background:#e2e8f0;width:16px}
+.cap-pip.active-teal{background:#0d9488;width:28px}
+.cap-pip.active-violet{background:#7c3aed;width:28px}
+.cap-pip.active-amber{background:#d97706;width:28px}
+.cap-nav{display:flex;align-items:center;gap:10px}
+.cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+.cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#64748b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
+.cap-nav-btn:hover{background:#0f172a;border-color:#0f172a}
+.cap-nav-btn:hover svg{stroke:#fff}
+.cap-nav-count{font-size:12px;font-weight:600;color:#94a3b8;letter-spacing:1px}
+.cap-illus{display:flex;align-items:center;justify-content:center}
+@media(max-width:768px){.cap-card{grid-template-columns:1fr!important}.cap-illus{display:none}}
 
 /* Products */
 .products{
