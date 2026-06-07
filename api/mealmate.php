@@ -500,7 +500,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
   <div class="hero-inner">
-    <img src="/assets/images/mealmate-icon.png" alt="MealMate" class="app-icon">
+    <img src="https://idataone.com/assets/images/mealmate-icon.png" alt="MealMate" class="app-icon">
     <div class="hero-tag">AI-Powered Meal Planning</div>
     <h1 class="hero-q">
       "What should we<br>cook <span class="grad-text">tonight?</span>"
@@ -623,7 +623,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 <!-- ── CTA ── -->
 <section class="cta-section">
   <div style="position:relative;z-index:1;max-width:600px;margin:0 auto">
-    <img src="/assets/images/mealmate-icon.png" alt="MealMate" style="width:72px;border-radius:16px;margin:0 auto 28px;display:block;box-shadow:0 16px 40px rgba(139,33,232,0.4)">
+    <img src="https://idataone.com/assets/images/mealmate-icon.png" alt="MealMate" style="width:72px;border-radius:16px;margin:0 auto 28px;display:block;box-shadow:0 16px 40px rgba(139,33,232,0.4)">
     <div class="hero-tag">Available Soon</div>
     <h2 class="hero-q">Never answer<br><span class="grad-text">"what to cook?"</span><br>alone again.</h2>
     <p class="hero-sub">Download MealMate and let AI take the daily stress of meal planning off your plate.</p>
