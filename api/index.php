@@ -735,100 +735,100 @@ letter-spacing:0.3px;
 <!-- Background illustration layer -->
 <svg style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
   <!-- BUILD: Browser + Phone (top left) -->
-  <rect x="30" y="40" width="280" height="190" rx="14" fill="none" stroke="rgba(20,184,166,0.2)" stroke-width="1.5"/>
-  <rect x="30" y="40" width="280" height="32" rx="14" fill="rgba(20,184,166,0.06)"/>
-  <rect x="30" y="58" width="280" height="14" fill="rgba(20,184,166,0.06)"/>
-  <circle cx="50" cy="56" r="5" fill="rgba(20,184,166,0.18)"/>
-  <circle cx="66" cy="56" r="5" fill="rgba(20,184,166,0.14)"/>
-  <circle cx="82" cy="56" r="5" fill="rgba(20,184,166,0.18)"/>
-  <rect x="100" y="49" width="130" height="14" rx="7" fill="rgba(255,255,255,0.5)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
-  <rect x="48" y="86" width="100" height="10" rx="5" fill="rgba(20,184,166,0.18)"/>
-  <rect x="48" y="104" width="220" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-  <rect x="48" y="116" width="190" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-  <rect x="48" y="128" width="160" height="6" rx="3" fill="rgba(15,23,42,0.05)"/>
-  <rect x="48" y="148" width="68" height="48" rx="8" fill="rgba(20,184,166,0.12)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-  <rect x="124" y="148" width="68" height="48" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-  <rect x="200" y="148" width="68" height="48" rx="8" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
-  <rect x="270" y="120" width="90" height="160" rx="16" fill="none" stroke="rgba(20,184,166,0.22)" stroke-width="1.5"/>
-  <rect x="278" y="136" width="74" height="128" rx="8" fill="rgba(240,253,250,0.3)"/>
-  <rect x="295" y="127" width="30" height="7" rx="3.5" fill="rgba(20,184,166,0.15)"/>
-  <rect x="284" y="144" width="62" height="8" rx="4" fill="rgba(20,184,166,0.2)"/>
-  <rect x="284" y="158" width="62" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-  <rect x="284" y="168" width="48" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-  <rect x="284" y="182" width="28" height="18" rx="6" fill="rgba(20,184,166,0.2)"/>
-  <rect x="318" y="182" width="28" height="18" rx="6" fill="rgba(99,102,241,0.12)"/>
-  <circle cx="295" cy="252" r="4" fill="rgba(20,184,166,0.25)"/>
-  <circle cx="310" cy="252" r="4" fill="rgba(15,23,42,0.08)"/>
-  <circle cx="325" cy="252" r="4" fill="rgba(15,23,42,0.08)"/>
+  <rect x="30" y="355.0" width="280" height="190" rx="14" fill="none" stroke="rgba(20,184,166,0.15)" stroke-width="1.5"/>
+  <rect x="30" y="355.0" width="280" height="32" rx="14" fill="rgba(20,184,166,0.045)"/>
+  <rect x="30" y="373.0" width="280" height="14" fill="rgba(20,184,166,0.045)"/>
+  <circle cx="50" cy="371.0" r="5" fill="rgba(20,184,166,0.135)"/>
+  <circle cx="66" cy="371.0" r="5" fill="rgba(20,184,166,0.105)"/>
+  <circle cx="82" cy="371.0" r="5" fill="rgba(20,184,166,0.135)"/>
+  <rect x="100" y="364.0" width="130" height="14" rx="7" fill="rgba(255,255,255,0.375)" stroke="rgba(20,184,166,0.112)" stroke-width="1"/>
+  <rect x="48" y="401.0" width="100" height="10" rx="5" fill="rgba(20,184,166,0.135)"/>
+  <rect x="48" y="419.0" width="220" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
+  <rect x="48" y="431.0" width="190" height="6" rx="3" fill="rgba(15,23,42,0.045)"/>
+  <rect x="48" y="443.0" width="160" height="6" rx="3" fill="rgba(15,23,42,0.038)"/>
+  <rect x="48" y="463.0" width="68" height="48" rx="8" fill="rgba(20,184,166,0.09)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
+  <rect x="124" y="463.0" width="68" height="48" rx="8" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.112)" stroke-width="1"/>
+  <rect x="200" y="463.0" width="68" height="48" rx="8" fill="rgba(245,158,11,0.06)" stroke="rgba(245,158,11,0.112)" stroke-width="1"/>
+  <rect x="270" y="435.0" width="90" height="160" rx="16" fill="none" stroke="rgba(20,184,166,0.165)" stroke-width="1.5"/>
+  <rect x="278" y="451.0" width="74" height="128" rx="8" fill="rgba(240,253,250,0.225)"/>
+  <rect x="295" y="442.0" width="30" height="7" rx="3.5" fill="rgba(20,184,166,0.112)"/>
+  <rect x="284" y="459.0" width="62" height="8" rx="4" fill="rgba(20,184,166,0.15)"/>
+  <rect x="284" y="473.0" width="62" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+  <rect x="284" y="483.0" width="48" height="5" rx="2.5" fill="rgba(15,23,42,0.045)"/>
+  <rect x="284" y="497.0" width="28" height="18" rx="6" fill="rgba(20,184,166,0.15)"/>
+  <rect x="318" y="497.0" width="28" height="18" rx="6" fill="rgba(99,102,241,0.09)"/>
+  <circle cx="295" cy="567.0" r="4" fill="rgba(20,184,166,0.188)"/>
+  <circle cx="310" cy="567.0" r="4" fill="rgba(15,23,42,0.06)"/>
+  <circle cx="325" cy="567.0" r="4" fill="rgba(15,23,42,0.06)"/>
 
   <!-- AI: LLM Flow (top right) -->
-  <rect x="980" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.22)" stroke-width="1.5"/>
-  <rect x="984" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.3)"/>
-  <rect x="992" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.18)"/>
-  <rect x="992" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.12)"/>
-  <line x1="1060" y1="80" x2="1100" y2="80" stroke="rgba(124,58,237,0.22)" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="1100,75 1110,80 1100,85" fill="rgba(124,58,237,0.22)"/>
-  <rect x="1110" y="45" width="100" height="70" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.28)" stroke-width="1.5"/>
-  <circle cx="1160" cy="72" r="14" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-  <circle cx="1160" cy="72" r="6" fill="rgba(124,58,237,0.18)"/>
-  <rect x="1120" y="92" width="60" height="5" rx="2.5" fill="rgba(124,58,237,0.15)"/>
-  <rect x="1128" y="101" width="44" height="4" rx="2" fill="rgba(124,58,237,0.1)"/>
-  <line x1="1210" y1="80" x2="1250" y2="80" stroke="rgba(124,58,237,0.22)" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="1250,75 1260,80 1250,85" fill="rgba(124,58,237,0.22)"/>
-  <rect x="1260" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.22)" stroke-width="1.5"/>
-  <rect x="1264" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.3)"/>
-  <rect x="1272" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.18)"/>
-  <rect x="1272" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.12)"/>
-  <line x1="1160" y1="115" x2="1120" y2="155" stroke="rgba(124,58,237,0.15)" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="1160" y1="115" x2="1200" y2="155" stroke="rgba(124,58,237,0.15)" stroke-width="1" stroke-dasharray="3,3"/>
-  <rect x="1085" y="155" width="70" height="28" rx="8" fill="rgba(240,253,250,0.4)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-  <rect x="1165" y="155" width="70" height="28" rx="8" fill="rgba(255,251,235,0.4)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-  <rect x="1092" y="164" width="40" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-  <rect x="1172" y="164" width="40" height="4" rx="2" fill="rgba(245,158,11,0.2)"/>
-  <circle cx="1050" cy="45" r="5" fill="rgba(124,58,237,0.14)"/>
-  <circle cx="1290" cy="38" r="4" fill="rgba(124,58,237,0.12)"/>
-  <circle cx="1350" cy="110" r="6" fill="rgba(124,58,237,0.1)"/>
+  <rect x="980" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.165)" stroke-width="1.5"/>
+  <rect x="984" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.225)"/>
+  <rect x="992" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.135)"/>
+  <rect x="992" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.09)"/>
+  <line x1="1060" y1="80" x2="1100" y2="80" stroke="rgba(124,58,237,0.165)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="1100,75 1110,80 1100,85" fill="rgba(124,58,237,0.165)"/>
+  <rect x="1110" y="45" width="100" height="70" rx="16" fill="rgba(124,58,237,0.075)" stroke="rgba(124,58,237,0.21)" stroke-width="1.5"/>
+  <circle cx="1160" cy="72" r="14" fill="rgba(124,58,237,0.09)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <circle cx="1160" cy="72" r="6" fill="rgba(124,58,237,0.135)"/>
+  <rect x="1120" y="92" width="60" height="5" rx="2.5" fill="rgba(124,58,237,0.112)"/>
+  <rect x="1128" y="101" width="44" height="4" rx="2" fill="rgba(124,58,237,0.075)"/>
+  <line x1="1210" y1="80" x2="1250" y2="80" stroke="rgba(124,58,237,0.165)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="1250,75 1260,80 1250,85" fill="rgba(124,58,237,0.165)"/>
+  <rect x="1260" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.165)" stroke-width="1.5"/>
+  <rect x="1264" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.225)"/>
+  <rect x="1272" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.135)"/>
+  <rect x="1272" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.09)"/>
+  <line x1="1160" y1="115" x2="1120" y2="155" stroke="rgba(124,58,237,0.112)" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1160" y1="115" x2="1200" y2="155" stroke="rgba(124,58,237,0.112)" stroke-width="1" stroke-dasharray="3,3"/>
+  <rect x="1085" y="155" width="70" height="28" rx="8" fill="rgba(240,253,250,0.3)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
+  <rect x="1165" y="155" width="70" height="28" rx="8" fill="rgba(255,251,235,0.3)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+  <rect x="1092" y="164" width="40" height="4" rx="2" fill="rgba(20,184,166,0.15)"/>
+  <rect x="1172" y="164" width="40" height="4" rx="2" fill="rgba(245,158,11,0.15)"/>
+  <circle cx="1050" cy="45" r="5" fill="rgba(124,58,237,0.105)"/>
+  <circle cx="1290" cy="38" r="4" fill="rgba(124,58,237,0.09)"/>
+  <circle cx="1350" cy="110" r="6" fill="rgba(124,58,237,0.075)"/>
 
   <!-- DATA: Dashboard (bottom right) -->
-  <rect x="980" y="680" width="380" height="200" rx="16" fill="none" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
-  <rect x="980" y="680" width="380" height="30" rx="16" fill="rgba(245,158,11,0.08)"/>
-  <rect x="980" y="696" width="380" height="14" fill="rgba(245,158,11,0.08)"/>
-  <rect x="994" y="689" width="80" height="7" rx="3.5" fill="rgba(217,119,6,0.22)"/>
-  <rect x="994" y="722" width="80" height="44" rx="8" fill="rgba(255,255,255,0.4)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-  <rect x="1084" y="722" width="80" height="44" rx="8" fill="rgba(255,255,255,0.4)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-  <rect x="1174" y="722" width="80" height="44" rx="8" fill="rgba(255,255,255,0.4)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-  <rect x="1000" y="729" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-  <rect x="1000" y="739" width="56" height="10" rx="4" fill="rgba(217,119,6,0.22)"/>
-  <rect x="1090" y="729" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-  <rect x="1090" y="739" width="56" height="10" rx="4" fill="rgba(20,184,166,0.22)"/>
-  <rect x="1180" y="729" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-  <rect x="1180" y="739" width="56" height="10" rx="4" fill="rgba(99,102,241,0.22)"/>
-  <rect x="994" y="778" width="200" height="88" rx="8" fill="rgba(255,255,255,0.35)" stroke="rgba(245,158,11,0.14)" stroke-width="1"/>
-  <rect x="1008" y="830" width="16" height="24" rx="4" fill="rgba(245,158,11,0.35)"/>
-  <rect x="1030" y="816" width="16" height="38" rx="4" fill="rgba(245,158,11,0.45)"/>
-  <rect x="1052" y="822" width="16" height="32" rx="4" fill="rgba(245,158,11,0.32)"/>
-  <rect x="1074" y="808" width="16" height="46" rx="4" fill="rgba(245,158,11,0.5)"/>
-  <rect x="1096" y="802" width="16" height="52" rx="4" fill="rgba(217,119,6,0.5)"/>
-  <rect x="1118" y="812" width="16" height="42" rx="4" fill="rgba(245,158,11,0.4)"/>
-  <rect x="1140" y="820" width="16" height="34" rx="4" fill="rgba(245,158,11,0.35)"/>
-  <rect x="1162" y="810" width="16" height="44" rx="4" fill="rgba(245,158,11,0.45)"/>
-  <rect x="1204" y="778" width="144" height="88" rx="8" fill="rgba(255,255,255,0.35)" stroke="rgba(245,158,11,0.14)" stroke-width="1"/>
-  <polyline points="1212,850 1228,836 1244,842 1260,826 1276,818 1292,824 1308,812 1324,820 1340,808" stroke="rgba(217,119,6,0.45)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="1340" cy="808" r="4" fill="rgba(217,119,6,0.5)"/>
+  <rect x="420.0" y="680" width="380" height="200" rx="-544.0" fill="none" stroke="rgba(245,158,11,0.15)" stroke-width="1.5"/>
+  <rect x="420.0" y="680" width="380" height="30" rx="-544.0" fill="rgba(245,158,11,0.06)"/>
+  <rect x="420.0" y="696" width="380" height="14" fill="rgba(245,158,11,0.06)"/>
+  <rect x="434.0" y="689" width="80" height="7" rx="-556.5" fill="rgba(217,119,6,0.165)"/>
+  <rect x="434.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.3)" stroke="rgba(245,158,11,0.135)" stroke-width="1"/>
+  <rect x="524.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.3)" stroke="rgba(245,158,11,0.135)" stroke-width="1"/>
+  <rect x="614.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.3)" stroke="rgba(245,158,11,0.135)" stroke-width="1"/>
+  <rect x="440.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.075)"/>
+  <rect x="440.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(217,119,6,0.165)"/>
+  <rect x="530.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.075)"/>
+  <rect x="530.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(20,184,166,0.165)"/>
+  <rect x="620.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.075)"/>
+  <rect x="620.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(99,102,241,0.165)"/>
+  <rect x="434.0" y="778" width="200" height="88" rx="-552.0" fill="rgba(255,255,255,0.262)" stroke="rgba(245,158,11,0.105)" stroke-width="1"/>
+  <rect x="448.0" y="830" width="16" height="24" rx="-556.0" fill="rgba(245,158,11,0.262)"/>
+  <rect x="470.0" y="816" width="16" height="38" rx="-556.0" fill="rgba(245,158,11,0.338)"/>
+  <rect x="492.0" y="822" width="16" height="32" rx="-556.0" fill="rgba(245,158,11,0.24)"/>
+  <rect x="514.0" y="808" width="16" height="46" rx="-556.0" fill="rgba(245,158,11,0.375)"/>
+  <rect x="536.0" y="802" width="16" height="52" rx="-556.0" fill="rgba(217,119,6,0.375)"/>
+  <rect x="558.0" y="812" width="16" height="42" rx="-556.0" fill="rgba(245,158,11,0.3)"/>
+  <rect x="580.0" y="820" width="16" height="34" rx="-556.0" fill="rgba(245,158,11,0.262)"/>
+  <rect x="602.0" y="810" width="16" height="44" rx="-556.0" fill="rgba(245,158,11,0.338)"/>
+  <rect x="644.0" y="778" width="144" height="88" rx="-552.0" fill="rgba(255,255,255,0.262)" stroke="rgba(245,158,11,0.105)" stroke-width="1"/>
+  <polyline points="1212,850 1228,836 1244,842 1260,826 1276,818 1292,824 1308,812 1324,820 1340,808" stroke="rgba(217,119,6,0.338)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="780.0" cy="808" r="4" fill="rgba(217,119,6,0.375)"/>
 
   <!-- Connecting lines -->
-  <path d="M320,230 Q500,300 700,300" fill="none" stroke="rgba(99,102,241,0.07)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M1110,200 Q950,350 900,450" fill="none" stroke="rgba(124,58,237,0.06)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M700,600 Q850,650 980,680" fill="none" stroke="rgba(245,158,11,0.07)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M320,230 Q500,300 700,300" fill="none" stroke="rgba(99,102,241,0.053)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M1110,200 Q950,350 900,450" fill="none" stroke="rgba(124,58,237,0.045)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M700,600 Q850,650 980,680" fill="none" stroke="rgba(245,158,11,0.053)" stroke-width="1" stroke-dasharray="6,6"/>
 
   <!-- Scattered dots -->
-  <circle cx="420" cy="50" r="4" fill="rgba(99,102,241,0.14)"/>
-  <circle cx="550" cy="30" r="3" fill="rgba(124,58,237,0.12)"/>
-  <circle cx="680" cy="55" r="5" fill="rgba(99,102,241,0.1)"/>
-  <circle cx="800" cy="35" r="3" fill="rgba(124,58,237,0.12)"/>
-  <circle cx="400" cy="820" r="4" fill="rgba(245,158,11,0.12)"/>
-  <circle cx="500" cy="850" r="3" fill="rgba(217,119,6,0.1)"/>
-  <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.1)"/>
+  <circle cx="420" cy="50" r="4" fill="rgba(99,102,241,0.105)"/>
+  <circle cx="550" cy="30" r="3" fill="rgba(124,58,237,0.09)"/>
+  <circle cx="680" cy="55" r="5" fill="rgba(99,102,241,0.075)"/>
+  <circle cx="800" cy="35" r="3" fill="rgba(124,58,237,0.09)"/>
+  <circle cx="400" cy="820" r="4" fill="rgba(245,158,11,0.09)"/>
+  <circle cx="500" cy="850" r="3" fill="rgba(217,119,6,0.075)"/>
+  <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.075)"/>
 </svg>
 
 <!-- SEO content block — visible to crawlers, hidden from users -->
@@ -888,7 +888,6 @@ letter-spacing:0.3px;
 <section class="screen">
 <div class="container">
 <h2>Build. <span class="highlight">Transform.</span> Scale.</h2>
-<p style="font-size:16px;color:#64748b;margin:8px auto 28px;max-width:560px;line-height:1.7;text-align:center">Helping businesses modernize operations, unify data, and create intelligent digital products powered by AI.</p>
 
 <div class="cap-carousel">
   <div class="cap-tabs">
