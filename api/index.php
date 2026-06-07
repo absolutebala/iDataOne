@@ -849,7 +849,7 @@ letter-spacing:0.3px;
 <h2>Products from <span class="highlight">iDataOne</span></h2>
 <div class="products">
 
-<div class="product rose">
+<div class="product rose" onclick="window.open('https://mealmate.idataone.com','_blank')" style="cursor:pointer">
 <div class="product-top">
 <div class="product-icon-wrap icon-rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="12" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="18" r="1" fill="#f43f5e" stroke="none"/></svg></div>
 <span class="product-num">01</span>

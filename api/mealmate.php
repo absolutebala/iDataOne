@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MealMate — What Should We Cook Tonight?</title>
-<meta name="description" content="MealMate answers the question every family asks daily — what should we cook? AI-powered meal planning, smart food suggestions, and effortless family mealtimes.">
+<title>MealMate What Should We Cook Tonight?</title>
+<meta name="description" content="MealMate answers the question every family asks daily what should we cook? AI-powered meal planning and smart food suggestions for effortless family mealtimes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
@@ -25,8 +25,9 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 
 /* ── Hero ── */
 /* Nav */
-.top-nav{position:fixed;top:0;left:0;right:0;padding:16px 28px;z-index:100;display:flex;align-items:center}
-.top-nav a img{height:30px;width:auto;opacity:0.75;transition:opacity 0.2s;filter:brightness(0) invert(1)}
+.top-nav{position:fixed;top:0;left:0;right:0;padding:18px 28px;z-index:100;display:flex;align-items:center;background:rgba(13,10,20,0.4);backdrop-filter:blur(12px)}
+.top-nav a{display:flex;align-items:center;text-decoration:none}
+.top-nav a img{height:28px;width:auto;opacity:0.8;transition:opacity 0.2s;filter:brightness(0) invert(1)}
 .top-nav a img:hover{opacity:1}
 
 .hero{
@@ -514,7 +515,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     <h1 class="hero-q">
       "What should we<br>cook <span class="grad-text">tonight?</span>"
     </h1>
-    <p class="hero-sub">The question every family asks daily — finally answered. MealMate plans your meals, suggests recipes, and makes family mealtimes effortless.</p>
+    <p class="hero-sub">The question every family asks daily finally answered. MealMate plans your meals, suggests recipes and makes family mealtimes effortless.</p>
     <div class="cta-row">
       <a href="#" class="btn-primary">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -527,7 +528,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     </div>
     <div class="ai-bubble">
       <div class="ai-dot"></div>
-      <div class="ai-bubble-text">MealMate suggests: <strong>"Try a quick Thai basil stir-fry — 20 mins, uses what's in your fridge."</strong></div>
+      <div class="ai-bubble-text">MealMate suggests: <strong>"Try a quick Thai basil stir-fry 20 mins, uses what's in your fridge."</strong></div>
     </div>
   </div>
   <div class="scroll-hint">scroll ↓</div>
@@ -537,7 +538,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 <section class="problem">
   <div class="section-tag">The Daily Struggle</div>
   <h2 class="section-title">Sound familiar?</h2>
-  <p class="section-sub">Every day, millions of families face the same exhausting question — and end up ordering takeout just to avoid answering it.</p>
+  <p class="section-sub">Every day, millions of families face the same exhausting question and end up ordering takeout just to avoid answering it.</p>
   <div class="dilemma-grid">
     <div class="dilemma-card">
       <span class="dilemma-emoji">😩</span>
@@ -547,12 +548,12 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     <div class="dilemma-card">
       <span class="dilemma-emoji">🛒</span>
       <div class="dilemma-q">"I have ingredients but no idea what to make."</div>
-      <div class="dilemma-p">Half your fridge goes to waste because you can't figure out what goes with what.</div>
+      <div class="dilemma-p">Half your fridge goes to waste because you cannot figure out what goes with what.</div>
     </div>
     <div class="dilemma-card">
       <span class="dilemma-emoji">👨‍👩‍👧</span>
       <div class="dilemma-q">"Everyone wants something different."</div>
-      <div class="dilemma-p">Pleasing picky eaters, dietary needs, and preferences all at once feels impossible.</div>
+      <div class="dilemma-p">Pleasing picky eaters while juggling dietary needs and preferences all at once feels impossible.</div>
     </div>
   </div>
 </section>
@@ -563,28 +564,28 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     <div style="text-align:center">
       <div class="section-tag" style="border-color:rgba(139,33,232,0.3);background:rgba(139,33,232,0.12);color:#c084fc">What MealMate Does</div>
       <h2 class="section-title" style="color:#fff">Your AI kitchen<br><span class="grad-text">companion</span></h2>
-      <p class="section-sub" style="color:rgba(255,255,255,0.45)">Smart, personal, and always ready — MealMate takes the stress out of every mealtime.</p>
+      <p class="section-sub" style="color:rgba(255,255,255,0.45)">Smart, personal, and always ready MealMate takes the stress out of every mealtime.</p>
     </div>
     <div class="features-grid">
       <div class="feat-card">
         <div class="feat-icon purple">🤖</div>
         <div class="feat-title">AI Meal Suggestions</div>
-        <div class="feat-desc">Just tell MealMate what's in your fridge, your mood, or how much time you have — and get instant personalised recipe ideas.</div>
+        <div class="feat-desc">Just tell MealMate what's in your fridge, your mood, or how much time you have and get instant personalised recipe ideas.</div>
       </div>
       <div class="feat-card">
         <div class="feat-icon pink">📅</div>
         <div class="feat-title">Weekly Meal Planning</div>
-        <div class="feat-desc">Plan the whole week in minutes. MealMate balances nutrition, variety, and your family's preferences automatically.</div>
+        <div class="feat-desc">Plan the whole week in minutes. MealMate balances nutrition, variety and your family preferences automatically.</div>
       </div>
       <div class="feat-card">
         <div class="feat-icon teal">🛒</div>
         <div class="feat-title">Smart Grocery Lists</div>
-        <div class="feat-desc">Your meal plan automatically generates a smart shopping list — organised by aisle, no duplicates, nothing forgotten.</div>
+        <div class="feat-desc">Your meal plan automatically generates a smart shopping list organised by aisle, no duplicates, nothing forgotten.</div>
       </div>
       <div class="feat-card">
         <div class="feat-icon amber">👨‍👩‍👧‍👦</div>
         <div class="feat-title">Family Preferences</div>
-        <div class="feat-desc">Add each family member's dietary needs, allergies, and favourite foods. MealMate finds meals everyone will love.</div>
+        <div class="feat-desc">Add each family member dietary needs, allergies and favourite foods. MealMate finds meals everyone will love.</div>
       </div>
     </div>
   </div>
@@ -604,7 +605,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     <div class="step">
       <div class="step-num">2</div>
       <div class="step-title">Get Suggestions</div>
-      <div class="step-desc">AI instantly suggests personalised meals tailored to your family's tastes and needs.</div>
+      <div class="step-desc">AI instantly suggests personalised meals tailored to your family tastes and needs.</div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
@@ -618,7 +619,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 <section class="audience">
   <div class="section-tag">Made For</div>
   <h2 class="section-title">MealMate is for <span class="grad-text">everyone</span></h2>
-  <p class="section-sub">Whether you're a busy parent, a health-conscious professional, or just tired of deciding — MealMate has you covered.</p>
+  <p class="section-sub">Whether you're a busy parent, a health-conscious professional, or just tired of deciding MealMate has you covered.</p>
   <div class="audience-grid">
     <div class="aud-pill"><span class="aud-emoji">👩‍👧‍👦</span> Busy Parents</div>
     <div class="aud-pill"><span class="aud-emoji">💪</span> Health Enthusiasts</div>
@@ -635,7 +636,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
     <img src="/assets/images/mealmate-icon.png" alt="MealMate" style="width:72px;border-radius:16px;margin:0 auto 28px;display:block;box-shadow:0 16px 40px rgba(139,33,232,0.4)">
     <div class="hero-tag">Available Soon</div>
     <h2 class="hero-q">Never answer<br><span class="grad-text">"what to cook?"</span><br>alone again.</h2>
-    <p class="hero-sub">Download MealMate and let AI take the daily stress of meal planning off your plate.</p>
+    <p class="hero-sub">Download MealMate and let AI handle the daily stress of meal planning for your family.</p>
     <div class="cta-row">
       <a href="#" class="btn-primary">
         <svg viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
