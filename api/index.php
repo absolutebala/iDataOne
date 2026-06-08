@@ -87,11 +87,12 @@ html,body{height:100%;overflow:hidden;font-family:'Inter',sans-serif}
 
 body{
 background:
-radial-gradient(ellipse at 10% 15%, rgba(99,102,241,0.13), transparent 40%),
-radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.10), transparent 38%),
-radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.07), transparent 40%),
-radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.07), transparent 35%),
-linear-gradient(135deg,#f8fafc 0%,#eef2ff 40%,#f0f4ff 70%,#f1f5f9 100%);
+radial-gradient(ellipse at 10% 15%, rgba(99,102,241,0.22), transparent 40%),
+radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
+radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.12), transparent 40%),
+radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.12), transparent 35%),
+radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.08), transparent 50%),
+linear-gradient(135deg,#eef0fa 0%,#e8ecf8 30%,#e4eaf8 60%,#eaecf5 100%);
 }
 
 body:before{
@@ -267,6 +268,12 @@ font-size:14px;
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
+.cap-card.rose{border:1px solid rgba(244,63,94,0.22)}
+.cap-card.sky{border:1px solid rgba(14,165,233,0.2)}
+.cap-card.emerald{border:1px solid rgba(16,185,129,0.22)}
+.cap-card.rose:hover{box-shadow:0 28px 60px rgba(244,63,94,0.12)}
+.cap-card.sky:hover{box-shadow:0 28px 60px rgba(14,165,233,0.12)}
+.cap-card.emerald:hover{box-shadow:0 28px 60px rgba(16,185,129,0.12)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
 .cap-card.amber{border:1px solid rgba(245,158,11,0.22)}
 .cap-card.teal:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(20,184,166,0.14),0 4px 16px rgba(20,184,166,0.06);border-color:rgba(20,184,166,0.4)}
@@ -286,6 +293,9 @@ font-size:14px;
 .teal .cap-card-outcome{color:#0d9488}
 .violet .cap-card-outcome{color:#7c3aed}
 .amber .cap-card-outcome{color:#d97706}
+.rose .cap-card-outcome{color:#f43f5e}
+.sky .cap-card-outcome{color:#0ea5e9}
+.emerald .cap-card-outcome{color:#10b981}
 .cap-card-desc{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:18px}
 .cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(226,232,240,0.8)}
 .cap-tags{display:flex;flex-wrap:wrap;gap:5px}
@@ -307,6 +317,9 @@ font-size:14px;
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
 .cap-tab.t-violet{background:#f5f3ff;border-color:rgba(124,58,237,0.3);color:#7c3aed}
 .cap-tab.t-amber{background:#fffbeb;border-color:rgba(245,158,11,0.3);color:#d97706}
+.cap-tab.t-rose{background:#fff1f2;border-color:rgba(244,63,94,0.3);color:#f43f5e}
+.cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
+.cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
 .cap-slide{display:none;animation:capFadeIn 0.4s ease}
 .cap-slide.active{display:block}
@@ -331,12 +344,18 @@ font-size:14px;
 .teal .cap-checklist li::before{color:#0d9488}
 .violet .cap-checklist li::before{color:#7c3aed}
 .amber .cap-checklist li::before{color:#d97706}
+.rose .cap-checklist li::before{color:#f43f5e}
+.sky .cap-checklist li::before{color:#0ea5e9}
+.emerald .cap-checklist li::before{color:#10b981}
 .cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(226,232,240,0.8)}
 .cap-pips{display:flex;gap:6px;align-items:center}
 .cap-pip{height:3px;border-radius:999px;background:#e2e8f0;width:16px}
 .cap-pip.active-teal{background:#0d9488;width:28px}
 .cap-pip.active-violet{background:#7c3aed;width:28px}
 .cap-pip.active-amber{background:#d97706;width:28px}
+.cap-pip.active-rose{background:#f43f5e;width:28px}
+.cap-pip.active-sky{background:#0ea5e9;width:28px}
+.cap-pip.active-emerald{background:#10b981;width:28px}
 .cap-nav{display:flex;align-items:center;gap:10px}
 .cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
 .cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#64748b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
@@ -460,6 +479,8 @@ text-transform:uppercase;
 .service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
 .service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
 .service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
+.svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(226,232,240,0.9);background:transparent;color:#64748b;transition:all 0.2s}
+.svc-type-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}
 .submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
 .submit-btn:hover{opacity:0.9;transform:translateY(-1px)}
 .submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform 0.2s}
@@ -735,100 +756,100 @@ letter-spacing:0.3px;
 <!-- Background illustration layer -->
 <svg style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
   <!-- BUILD: Browser + Phone (top left) -->
-  <rect x="30" y="355.0" width="280" height="190" rx="14" fill="none" stroke="rgba(20,184,166,0.054)" stroke-width="1.5"/>
-  <rect x="30" y="355.0" width="280" height="32" rx="14" fill="rgba(20,184,166,0.016)"/>
-  <rect x="30" y="373.0" width="280" height="14" fill="rgba(20,184,166,0.016)"/>
-  <circle cx="50" cy="371.0" r="5" fill="rgba(20,184,166,0.049)"/>
-  <circle cx="66" cy="371.0" r="5" fill="rgba(20,184,166,0.038)"/>
-  <circle cx="82" cy="371.0" r="5" fill="rgba(20,184,166,0.049)"/>
-  <rect x="100" y="364.0" width="130" height="14" rx="7" fill="rgba(255,255,255,0.135)" stroke="rgba(20,184,166,0.04)" stroke-width="1"/>
-  <rect x="48" y="401.0" width="100" height="10" rx="5" fill="rgba(20,184,166,0.049)"/>
-  <rect x="48" y="419.0" width="220" height="6" rx="3" fill="rgba(15,23,42,0.022)"/>
-  <rect x="48" y="431.0" width="190" height="6" rx="3" fill="rgba(15,23,42,0.016)"/>
-  <rect x="48" y="443.0" width="160" height="6" rx="3" fill="rgba(15,23,42,0.014)"/>
-  <rect x="48" y="463.0" width="68" height="48" rx="8" fill="rgba(20,184,166,0.032)" stroke="rgba(20,184,166,0.054)" stroke-width="1"/>
-  <rect x="124" y="463.0" width="68" height="48" rx="8" fill="rgba(99,102,241,0.022)" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <rect x="200" y="463.0" width="68" height="48" rx="8" fill="rgba(245,158,11,0.022)" stroke="rgba(245,158,11,0.04)" stroke-width="1"/>
-  <rect x="270" y="435.0" width="90" height="160" rx="16" fill="none" stroke="rgba(20,184,166,0.059)" stroke-width="1.5"/>
-  <rect x="278" y="451.0" width="74" height="128" rx="8" fill="rgba(240,253,250,0.081)"/>
-  <rect x="295" y="442.0" width="30" height="7" rx="3.5" fill="rgba(20,184,166,0.04)"/>
-  <rect x="284" y="459.0" width="62" height="8" rx="4" fill="rgba(20,184,166,0.054)"/>
-  <rect x="284" y="473.0" width="62" height="5" rx="2.5" fill="rgba(15,23,42,0.022)"/>
-  <rect x="284" y="483.0" width="48" height="5" rx="2.5" fill="rgba(15,23,42,0.016)"/>
-  <rect x="284" y="497.0" width="28" height="18" rx="6" fill="rgba(20,184,166,0.054)"/>
-  <rect x="318" y="497.0" width="28" height="18" rx="6" fill="rgba(99,102,241,0.032)"/>
-  <circle cx="295" cy="567.0" r="4" fill="rgba(20,184,166,0.068)"/>
-  <circle cx="310" cy="567.0" r="4" fill="rgba(15,23,42,0.022)"/>
-  <circle cx="325" cy="567.0" r="4" fill="rgba(15,23,42,0.022)"/>
+  <rect x="30" y="355.0" width="280" height="190" rx="14" fill="none" stroke="rgba(20,184,166,0.068)" stroke-width="1.5"/>
+  <rect x="30" y="355.0" width="280" height="32" rx="14" fill="rgba(20,184,166,0.02)"/>
+  <rect x="30" y="373.0" width="280" height="14" fill="rgba(20,184,166,0.02)"/>
+  <circle cx="50" cy="371.0" r="5" fill="rgba(20,184,166,0.061)"/>
+  <circle cx="66" cy="371.0" r="5" fill="rgba(20,184,166,0.048)"/>
+  <circle cx="82" cy="371.0" r="5" fill="rgba(20,184,166,0.061)"/>
+  <rect x="100" y="364.0" width="130" height="14" rx="7" fill="rgba(255,255,255,0.169)" stroke="rgba(20,184,166,0.05)" stroke-width="1"/>
+  <rect x="48" y="401.0" width="100" height="10" rx="5" fill="rgba(20,184,166,0.061)"/>
+  <rect x="48" y="419.0" width="220" height="6" rx="3" fill="rgba(15,23,42,0.027)"/>
+  <rect x="48" y="431.0" width="190" height="6" rx="3" fill="rgba(15,23,42,0.02)"/>
+  <rect x="48" y="443.0" width="160" height="6" rx="3" fill="rgba(15,23,42,0.018)"/>
+  <rect x="48" y="463.0" width="68" height="48" rx="8" fill="rgba(20,184,166,0.04)" stroke="rgba(20,184,166,0.068)" stroke-width="1"/>
+  <rect x="124" y="463.0" width="68" height="48" rx="8" fill="rgba(99,102,241,0.027)" stroke="rgba(99,102,241,0.05)" stroke-width="1"/>
+  <rect x="200" y="463.0" width="68" height="48" rx="8" fill="rgba(245,158,11,0.027)" stroke="rgba(245,158,11,0.05)" stroke-width="1"/>
+  <rect x="270" y="435.0" width="90" height="160" rx="16" fill="none" stroke="rgba(20,184,166,0.074)" stroke-width="1.5"/>
+  <rect x="278" y="451.0" width="74" height="128" rx="8" fill="rgba(240,253,250,0.101)"/>
+  <rect x="295" y="442.0" width="30" height="7" rx="3.5" fill="rgba(20,184,166,0.05)"/>
+  <rect x="284" y="459.0" width="62" height="8" rx="4" fill="rgba(20,184,166,0.068)"/>
+  <rect x="284" y="473.0" width="62" height="5" rx="2.5" fill="rgba(15,23,42,0.027)"/>
+  <rect x="284" y="483.0" width="48" height="5" rx="2.5" fill="rgba(15,23,42,0.02)"/>
+  <rect x="284" y="497.0" width="28" height="18" rx="6" fill="rgba(20,184,166,0.068)"/>
+  <rect x="318" y="497.0" width="28" height="18" rx="6" fill="rgba(99,102,241,0.04)"/>
+  <circle cx="295" cy="567.0" r="4" fill="rgba(20,184,166,0.085)"/>
+  <circle cx="310" cy="567.0" r="4" fill="rgba(15,23,42,0.027)"/>
+  <circle cx="325" cy="567.0" r="4" fill="rgba(15,23,42,0.027)"/>
 
   <!-- AI: LLM Flow (top right) -->
-  <rect x="980" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.059)" stroke-width="1.5"/>
-  <rect x="984" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.081)"/>
-  <rect x="992" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.049)"/>
-  <rect x="992" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.032)"/>
-  <line x1="1060" y1="80" x2="1100" y2="80" stroke="rgba(124,58,237,0.059)" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="1100,75 1110,80 1100,85" fill="rgba(124,58,237,0.059)"/>
-  <rect x="1110" y="45" width="100" height="70" rx="16" fill="rgba(124,58,237,0.027)" stroke="rgba(124,58,237,0.076)" stroke-width="1.5"/>
-  <circle cx="1160" cy="72" r="14" fill="rgba(124,58,237,0.032)" stroke="rgba(124,58,237,0.054)" stroke-width="1"/>
-  <circle cx="1160" cy="72" r="6" fill="rgba(124,58,237,0.049)"/>
-  <rect x="1120" y="92" width="60" height="5" rx="2.5" fill="rgba(124,58,237,0.04)"/>
-  <rect x="1128" y="101" width="44" height="4" rx="2" fill="rgba(124,58,237,0.027)"/>
-  <line x1="1210" y1="80" x2="1250" y2="80" stroke="rgba(124,58,237,0.059)" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="1250,75 1260,80 1250,85" fill="rgba(124,58,237,0.059)"/>
-  <rect x="1260" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.059)" stroke-width="1.5"/>
-  <rect x="1264" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.081)"/>
-  <rect x="1272" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.049)"/>
-  <rect x="1272" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.032)"/>
-  <line x1="1160" y1="115" x2="1120" y2="155" stroke="rgba(124,58,237,0.04)" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="1160" y1="115" x2="1200" y2="155" stroke="rgba(124,58,237,0.04)" stroke-width="1" stroke-dasharray="3,3"/>
-  <rect x="1085" y="155" width="70" height="28" rx="8" fill="rgba(240,253,250,0.108)" stroke="rgba(20,184,166,0.054)" stroke-width="1"/>
-  <rect x="1165" y="155" width="70" height="28" rx="8" fill="rgba(255,251,235,0.108)" stroke="rgba(245,158,11,0.054)" stroke-width="1"/>
-  <rect x="1092" y="164" width="40" height="4" rx="2" fill="rgba(20,184,166,0.054)"/>
-  <rect x="1172" y="164" width="40" height="4" rx="2" fill="rgba(245,158,11,0.054)"/>
-  <circle cx="1050" cy="45" r="5" fill="rgba(124,58,237,0.038)"/>
-  <circle cx="1290" cy="38" r="4" fill="rgba(124,58,237,0.032)"/>
-  <circle cx="1350" cy="110" r="6" fill="rgba(124,58,237,0.027)"/>
+  <rect x="980" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.074)" stroke-width="1.5"/>
+  <rect x="984" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.101)"/>
+  <rect x="992" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.061)"/>
+  <rect x="992" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.04)"/>
+  <line x1="1060" y1="80" x2="1100" y2="80" stroke="rgba(124,58,237,0.074)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="1100,75 1110,80 1100,85" fill="rgba(124,58,237,0.074)"/>
+  <rect x="1110" y="45" width="100" height="70" rx="16" fill="rgba(124,58,237,0.034)" stroke="rgba(124,58,237,0.095)" stroke-width="1.5"/>
+  <circle cx="1160" cy="72" r="14" fill="rgba(124,58,237,0.04)" stroke="rgba(124,58,237,0.068)" stroke-width="1"/>
+  <circle cx="1160" cy="72" r="6" fill="rgba(124,58,237,0.061)"/>
+  <rect x="1120" y="92" width="60" height="5" rx="2.5" fill="rgba(124,58,237,0.05)"/>
+  <rect x="1128" y="101" width="44" height="4" rx="2" fill="rgba(124,58,237,0.034)"/>
+  <line x1="1210" y1="80" x2="1250" y2="80" stroke="rgba(124,58,237,0.074)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="1250,75 1260,80 1250,85" fill="rgba(124,58,237,0.074)"/>
+  <rect x="1260" y="60" width="80" height="40" rx="12" fill="none" stroke="rgba(124,58,237,0.074)" stroke-width="1.5"/>
+  <rect x="1264" y="64" width="72" height="32" rx="10" fill="rgba(245,243,255,0.101)"/>
+  <rect x="1272" y="72" width="40" height="5" rx="2.5" fill="rgba(124,58,237,0.061)"/>
+  <rect x="1272" y="81" width="28" height="4" rx="2" fill="rgba(124,58,237,0.04)"/>
+  <line x1="1160" y1="115" x2="1120" y2="155" stroke="rgba(124,58,237,0.05)" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1160" y1="115" x2="1200" y2="155" stroke="rgba(124,58,237,0.05)" stroke-width="1" stroke-dasharray="3,3"/>
+  <rect x="1085" y="155" width="70" height="28" rx="8" fill="rgba(240,253,250,0.135)" stroke="rgba(20,184,166,0.068)" stroke-width="1"/>
+  <rect x="1165" y="155" width="70" height="28" rx="8" fill="rgba(255,251,235,0.135)" stroke="rgba(245,158,11,0.068)" stroke-width="1"/>
+  <rect x="1092" y="164" width="40" height="4" rx="2" fill="rgba(20,184,166,0.068)"/>
+  <rect x="1172" y="164" width="40" height="4" rx="2" fill="rgba(245,158,11,0.068)"/>
+  <circle cx="1050" cy="45" r="5" fill="rgba(124,58,237,0.048)"/>
+  <circle cx="1290" cy="38" r="4" fill="rgba(124,58,237,0.04)"/>
+  <circle cx="1350" cy="110" r="6" fill="rgba(124,58,237,0.034)"/>
 
   <!-- DATA: Dashboard (bottom right) -->
-  <rect x="420.0" y="680" width="380" height="200" rx="-544.0" fill="none" stroke="rgba(245,158,11,0.054)" stroke-width="1.5"/>
-  <rect x="420.0" y="680" width="380" height="30" rx="-544.0" fill="rgba(245,158,11,0.022)"/>
-  <rect x="420.0" y="696" width="380" height="14" fill="rgba(245,158,11,0.022)"/>
-  <rect x="434.0" y="689" width="80" height="7" rx="-556.5" fill="rgba(217,119,6,0.059)"/>
-  <rect x="434.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.108)" stroke="rgba(245,158,11,0.049)" stroke-width="1"/>
-  <rect x="524.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.108)" stroke="rgba(245,158,11,0.049)" stroke-width="1"/>
-  <rect x="614.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.108)" stroke="rgba(245,158,11,0.049)" stroke-width="1"/>
-  <rect x="440.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.027)"/>
-  <rect x="440.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(217,119,6,0.059)"/>
-  <rect x="530.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.027)"/>
-  <rect x="530.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(20,184,166,0.059)"/>
-  <rect x="620.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.027)"/>
-  <rect x="620.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(99,102,241,0.059)"/>
-  <rect x="434.0" y="778" width="200" height="88" rx="-552.0" fill="rgba(255,255,255,0.094)" stroke="rgba(245,158,11,0.038)" stroke-width="1"/>
-  <rect x="448.0" y="830" width="16" height="24" rx="-556.0" fill="rgba(245,158,11,0.094)"/>
-  <rect x="470.0" y="816" width="16" height="38" rx="-556.0" fill="rgba(245,158,11,0.122)"/>
-  <rect x="492.0" y="822" width="16" height="32" rx="-556.0" fill="rgba(245,158,11,0.086)"/>
-  <rect x="514.0" y="808" width="16" height="46" rx="-556.0" fill="rgba(245,158,11,0.135)"/>
-  <rect x="536.0" y="802" width="16" height="52" rx="-556.0" fill="rgba(217,119,6,0.135)"/>
-  <rect x="558.0" y="812" width="16" height="42" rx="-556.0" fill="rgba(245,158,11,0.108)"/>
-  <rect x="580.0" y="820" width="16" height="34" rx="-556.0" fill="rgba(245,158,11,0.094)"/>
-  <rect x="602.0" y="810" width="16" height="44" rx="-556.0" fill="rgba(245,158,11,0.122)"/>
-  <rect x="644.0" y="778" width="144" height="88" rx="-552.0" fill="rgba(255,255,255,0.094)" stroke="rgba(245,158,11,0.038)" stroke-width="1"/>
-  <polyline points="1212,850 1228,836 1244,842 1260,826 1276,818 1292,824 1308,812 1324,820 1340,808" stroke="rgba(217,119,6,0.122)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="780.0" cy="808" r="4" fill="rgba(217,119,6,0.135)"/>
+  <rect x="420.0" y="680" width="380" height="200" rx="-544.0" fill="none" stroke="rgba(245,158,11,0.068)" stroke-width="1.5"/>
+  <rect x="420.0" y="680" width="380" height="30" rx="-544.0" fill="rgba(245,158,11,0.027)"/>
+  <rect x="420.0" y="696" width="380" height="14" fill="rgba(245,158,11,0.027)"/>
+  <rect x="434.0" y="689" width="80" height="7" rx="-556.5" fill="rgba(217,119,6,0.074)"/>
+  <rect x="434.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
+  <rect x="524.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
+  <rect x="614.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
+  <rect x="440.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
+  <rect x="440.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(217,119,6,0.074)"/>
+  <rect x="530.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
+  <rect x="530.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(20,184,166,0.074)"/>
+  <rect x="620.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
+  <rect x="620.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(99,102,241,0.074)"/>
+  <rect x="434.0" y="778" width="200" height="88" rx="-552.0" fill="rgba(255,255,255,0.117)" stroke="rgba(245,158,11,0.048)" stroke-width="1"/>
+  <rect x="448.0" y="830" width="16" height="24" rx="-556.0" fill="rgba(245,158,11,0.117)"/>
+  <rect x="470.0" y="816" width="16" height="38" rx="-556.0" fill="rgba(245,158,11,0.152)"/>
+  <rect x="492.0" y="822" width="16" height="32" rx="-556.0" fill="rgba(245,158,11,0.107)"/>
+  <rect x="514.0" y="808" width="16" height="46" rx="-556.0" fill="rgba(245,158,11,0.169)"/>
+  <rect x="536.0" y="802" width="16" height="52" rx="-556.0" fill="rgba(217,119,6,0.169)"/>
+  <rect x="558.0" y="812" width="16" height="42" rx="-556.0" fill="rgba(245,158,11,0.135)"/>
+  <rect x="580.0" y="820" width="16" height="34" rx="-556.0" fill="rgba(245,158,11,0.117)"/>
+  <rect x="602.0" y="810" width="16" height="44" rx="-556.0" fill="rgba(245,158,11,0.152)"/>
+  <rect x="644.0" y="778" width="144" height="88" rx="-552.0" fill="rgba(255,255,255,0.117)" stroke="rgba(245,158,11,0.048)" stroke-width="1"/>
+  <polyline points="1212,850 1228,836 1244,842 1260,826 1276,818 1292,824 1308,812 1324,820 1340,808" stroke="rgba(217,119,6,0.152)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="780.0" cy="808" r="4" fill="rgba(217,119,6,0.169)"/>
 
   <!-- Connecting lines -->
-  <path d="M320,230 Q500,300 700,300" fill="none" stroke="rgba(99,102,241,0.019)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M1110,200 Q950,350 900,450" fill="none" stroke="rgba(124,58,237,0.016)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M700,600 Q850,650 980,680" fill="none" stroke="rgba(245,158,11,0.019)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M320,230 Q500,300 700,300" fill="none" stroke="rgba(99,102,241,0.024)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M1110,200 Q950,350 900,450" fill="none" stroke="rgba(124,58,237,0.02)" stroke-width="1" stroke-dasharray="6,6"/>
+  <path d="M700,600 Q850,650 980,680" fill="none" stroke="rgba(245,158,11,0.024)" stroke-width="1" stroke-dasharray="6,6"/>
 
   <!-- Scattered dots -->
-  <circle cx="420" cy="50" r="4" fill="rgba(99,102,241,0.038)"/>
-  <circle cx="550" cy="30" r="3" fill="rgba(124,58,237,0.032)"/>
-  <circle cx="680" cy="55" r="5" fill="rgba(99,102,241,0.027)"/>
-  <circle cx="800" cy="35" r="3" fill="rgba(124,58,237,0.032)"/>
-  <circle cx="400" cy="820" r="4" fill="rgba(245,158,11,0.032)"/>
-  <circle cx="500" cy="850" r="3" fill="rgba(217,119,6,0.027)"/>
-  <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.027)"/>
+  <circle cx="420" cy="50" r="4" fill="rgba(99,102,241,0.048)"/>
+  <circle cx="550" cy="30" r="3" fill="rgba(124,58,237,0.04)"/>
+  <circle cx="680" cy="55" r="5" fill="rgba(99,102,241,0.034)"/>
+  <circle cx="800" cy="35" r="3" fill="rgba(124,58,237,0.04)"/>
+  <circle cx="400" cy="820" r="4" fill="rgba(245,158,11,0.04)"/>
+  <circle cx="500" cy="850" r="3" fill="rgba(217,119,6,0.034)"/>
+  <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.034)"/>
 </svg>
 
 <!-- SEO content block — visible to crawlers, hidden from users -->
@@ -1062,107 +1083,167 @@ letter-spacing:0.3px;
 
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(2)">
-    Why iDataOne
+    In the Lab
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
 </div>
 </div>
 </section>
 
-<!-- 2: Why iDataOne -->
+<!-- 2: Products -->
 <section class="screen">
 <div class="container">
-<div class="why-inner">
-<div class="why-label">Why iDataOne</div>
-<div class="why-heading">Built for the <span class="highlight">AI Era</span></div>
-<div class="why-grid">
-  <div class="why-item">
-    <span class="why-num">01</span>
-    <div class="why-content">
-      <div class="why-title">AI-First Architecture</div>
-      <div class="why-desc">Intelligence built into the foundation, not bolted on after.</div>
-    </div>
-  </div>
-  <div class="why-item">
-    <span class="why-num">02</span>
-    <div class="why-content">
-      <div class="why-title">Unified Data Layer</div>
-      <div class="why-desc">One source of truth across every system and team.</div>
-    </div>
-  </div>
-  <div class="why-item">
-    <span class="why-num">03</span>
-    <div class="why-content">
-      <div class="why-title">Enterprise Grade</div>
-      <div class="why-desc">Security, scale, and reliability your business can depend on.</div>
-    </div>
-  </div>
-  <div class="why-item">
-    <span class="why-num">04</span>
-    <div class="why-content">
-      <div class="why-title">Cloud Native</div>
-      <div class="why-desc">Built for modern infrastructure — flexible, resilient, future-proof.</div>
-    </div>
-  </div>
-</div>
-<div class="why-bottom">
-  <div class="why-cta" id="screen-cta" onclick="showScreen(3)">
-    <span id="screen-cta-label">In the Lab</span>
-    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 3: Products -->
-<section class="screen">
-<div class="container">
-<div class="section-label">In the Lab</div>
 <h2>Products from <span class="highlight">iDataOne</span></h2>
-<div class="products">
 
-<div class="product rose" onclick="window.open('https://mealmate.idataone.com','_blank')" style="cursor:pointer">
-<div class="product-top">
-<div class="product-icon-wrap icon-rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="12" r="1" fill="#f43f5e" stroke="none"/><circle cx="7" cy="18" r="1" fill="#f43f5e" stroke="none"/></svg></div>
-<span class="product-num">01</span>
-</div>
-<h3>MealMate</h3>
-<p>AI-powered meal planning for families — personalised, smart, and effortless.</p>
-<div class="product-footer">
-<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
+<div class="cap-carousel">
+  <div class="cap-tabs">
+    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 MealMate</div>
+    <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
+    <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
+  </div>
+  <div class="cap-slides" id="prod-slides">
+
+    <div class="cap-slide active">
+      <div class="cap-card rose">
+        <div class="cap-left">
+          <div class="cap-card-title">MealMate</div>
+          <div class="cap-card-outcome">Smart meal planning for every family.</div>
+          <div class="cap-card-desc">AI-powered meal planning that answers the question every family asks daily. Personalised suggestions, smart grocery lists and effortless weekly planning.</div>
+          <ul class="cap-checklist">
+            <li>AI Meal Suggestions</li><li>Weekly Planning</li>
+            <li>Smart Grocery Lists</li><li>Family Preferences</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
+            <div class="cap-nav">
+              <span class="cap-nav-count">01 / 03</span>
+              <button class="cap-nav-btn" onclick="prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="220" height="200" rx="20" fill="rgba(255,241,242,0.7)" stroke="rgba(244,63,94,0.2)" stroke-width="1.5"/>
+            <rect x="20" y="20" width="220" height="36" rx="20" fill="rgba(244,63,94,0.1)"/>
+            <rect x="20" y="42" width="220" height="14" fill="rgba(244,63,94,0.1)"/>
+            <circle cx="90" cy="37" r="8" fill="rgba(244,63,94,0.25)"/>
+            <circle cx="110" cy="37" r="8" fill="rgba(20,184,166,0.25)"/>
+            <circle cx="130" cy="37" r="8" fill="rgba(245,158,11,0.25)"/>
+            <rect x="36" y="72" width="188" height="7" rx="3.5" fill="rgba(244,63,94,0.2)"/>
+            <rect x="36" y="90" width="86" height="56" rx="10" fill="rgba(255,255,255,0.8)" stroke="rgba(244,63,94,0.18)" stroke-width="1"/>
+            <rect x="43" y="98" width="40" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
+            <rect x="43" y="107" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
+            <rect x="43" y="116" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="43" y="128" width="32" height="10" rx="5" fill="rgba(244,63,94,0.2)"/>
+            <rect x="130" y="90" width="94" height="56" rx="10" fill="rgba(255,255,255,0.8)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+            <rect x="137" y="98" width="40" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
+            <rect x="137" y="107" width="74" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
+            <rect x="137" y="116" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="137" y="128" width="32" height="10" rx="5" fill="rgba(20,184,166,0.2)"/>
+            <rect x="36" y="158" width="188" height="48" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(244,63,94,0.12)" stroke-width="1"/>
+            <rect x="44" y="166" width="60" height="4" rx="2" fill="rgba(244,63,94,0.18)"/>
+            <rect x="44" y="175" width="160" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="44" y="184" width="130" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
+            <rect x="44" y="193" width="100" height="4" rx="2" fill="rgba(15,23,42,0.04)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-slide">
+      <div class="cap-card sky">
+        <div class="cap-left">
+          <div class="cap-card-title">aiChat</div>
+          <div class="cap-card-outcome">Always on. Always intelligent.</div>
+          <div class="cap-card-desc">AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock.</div>
+          <ul class="cap-checklist">
+            <li>24/7 AI Agents</li><li>Lead Qualification</li>
+            <li>Auto Responses</li><li>CRM Integration</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-sky"></div><div class="cap-pip"></div></div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">02 / 03</span>
+              <button class="cap-nav-btn" onclick="prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="180" height="48" rx="16" fill="rgba(240,249,255,0.9)" stroke="rgba(14,165,233,0.2)" stroke-width="1.5"/>
+            <rect x="32" y="42" width="120" height="6" rx="3" fill="rgba(15,23,42,0.12)"/>
+            <rect x="32" y="54" width="90" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <circle cx="186" cy="54" r="10" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
+            <rect x="60" y="100" width="180" height="48" rx="16" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.25)" stroke-width="1.5"/>
+            <rect x="72" y="112" width="130" height="6" rx="3" fill="rgba(14,165,233,0.3)"/>
+            <rect x="72" y="124" width="100" height="5" rx="2.5" fill="rgba(14,165,233,0.2)"/>
+            <circle cx="56" cy="124" r="10" fill="rgba(14,165,233,0.2)" stroke="rgba(14,165,233,0.25)" stroke-width="1"/>
+            <rect x="20" y="166" width="180" height="48" rx="16" fill="rgba(240,249,255,0.9)" stroke="rgba(14,165,233,0.2)" stroke-width="1.5"/>
+            <rect x="32" y="178" width="100" height="6" rx="3" fill="rgba(15,23,42,0.12)"/>
+            <rect x="32" y="190" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <circle cx="186" cy="190" r="10" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
+            <circle cx="120" cy="86" r="5" fill="rgba(14,165,233,0.2)"/>
+            <circle cx="132" cy="86" r="5" fill="rgba(14,165,233,0.15)"/>
+            <circle cx="144" cy="86" r="5" fill="rgba(14,165,233,0.1)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-slide">
+      <div class="cap-card emerald">
+        <div class="cap-left">
+          <div class="cap-card-title">DatInsights</div>
+          <div class="cap-card-outcome">One view of all your data.</div>
+          <div class="cap-card-desc">Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights.</div>
+          <ul class="cap-checklist">
+            <li>Unified Data</li><li>Real-time Dashboards</li>
+            <li>BI & Analytics</li><li>Predictions</li>
+          </ul>
+          <div class="cap-footer">
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-emerald"></div></div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">03 / 03</span>
+            </div>
+          </div>
+        </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="240" height="170" rx="14" fill="rgba(236,253,245,0.7)" stroke="rgba(16,185,129,0.2)" stroke-width="1.5"/>
+            <rect x="10" y="20" width="240" height="28" rx="14" fill="rgba(16,185,129,0.1)"/>
+            <rect x="10" y="36" width="240" height="12" fill="rgba(16,185,129,0.1)"/>
+            <rect x="22" y="27" width="70" height="6" rx="3" fill="rgba(5,150,105,0.25)"/>
+            <rect x="22" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+            <rect x="30" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="30" y="74" width="50" height="10" rx="4" fill="rgba(5,150,105,0.25)"/>
+            <rect x="96" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+            <rect x="104" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="104" y="74" width="50" height="10" rx="4" fill="rgba(99,102,241,0.2)"/>
+            <rect x="170" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
+            <rect x="178" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="178" y="74" width="50" height="10" rx="4" fill="rgba(245,158,11,0.25)"/>
+            <rect x="22" y="108" width="148" height="70" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+            <rect x="32" y="148" width="14" height="20" rx="3" fill="rgba(16,185,129,0.4)"/>
+            <rect x="52" y="134" width="14" height="34" rx="3" fill="rgba(16,185,129,0.55)"/>
+            <rect x="72" y="140" width="14" height="28" rx="3" fill="rgba(16,185,129,0.38)"/>
+            <rect x="92" y="128" width="14" height="40" rx="3" fill="rgba(16,185,129,0.6)"/>
+            <rect x="112" y="122" width="14" height="46" rx="3" fill="rgba(5,150,105,0.65)"/>
+            <rect x="132" y="132" width="14" height="36" rx="3" fill="rgba(16,185,129,0.5)"/>
+            <rect x="178" y="108" width="58" height="70" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+            <polyline points="186,162 198,148 210,153 222,140 234,134" stroke="rgba(5,150,105,0.55)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="234" cy="134" r="4" fill="rgba(5,150,105,0.6)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="product sky">
-<div class="product-top">
-<div class="product-icon-wrap icon-sky"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-<span class="product-num">02</span>
-</div>
-<h3>aiChat</h3>
-<p>AI agents for websites and business operations — always on, always intelligent.</p>
-<div class="product-footer">
-<span class="badge">Coming Soon</span>
-<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
-</div>
-
-<div class="product emerald">
-<div class="product-top">
-<div class="product-icon-wrap icon-emerald"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-<span class="product-num">03</span>
-</div>
-<h3>DatInsights</h3>
-<p>Unified business intelligence — one view of all your data, all the time.</p>
-<div class="product-footer">
-<span class="badge">Coming Soon</span>
-<div class="product-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-</div>
-</div>
-
-</div>
 <div class="why-bottom" style="margin-top:20px">
-  <div class="why-cta" onclick="showScreen(4)">
+  <div class="why-cta" onclick="showScreen(3)">
     Build Something Intelligent
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
@@ -1170,7 +1251,7 @@ letter-spacing:0.3px;
 </div>
 </section>
 
-<!-- 4: Contact -->
+<!-- 3: Contact -->
 <section class="screen">
 <div class="container">
 <div class="contact-inner">
@@ -1229,38 +1310,45 @@ letter-spacing:0.3px;
     <div class="form-row-2">
       <div class="cfield">
         <label>Full Name</label>
-        <input type="text" name="name" placeholder="John Smith" required>
+        <input type="text" name="name" placeholder="Full Name" required>
       </div>
       <div class="cfield">
         <label>Company</label>
-        <input type="text" name="company" placeholder="Acme Corp">
+        <input type="text" name="company" placeholder="Company Name">
       </div>
     </div>
     <div class="form-row-2">
       <div class="cfield">
         <label>Work Email</label>
-        <input type="email" name="email" placeholder="john@acme.com" required>
+        <input type="email" name="email" placeholder="Work Email" required>
       </div>
       <div class="cfield">
         <label>Phone</label>
-        <input type="tel" name="phone" placeholder="+1 000 000 0000">
+        <input type="tel" name="phone" placeholder="Phone Number">
       </div>
     </div>
 
     <div class="service-section">
-      <label>Service</label>
-      <div class="service-pills">
+      <div style="display:flex;gap:8px;margin-bottom:12px">
+        <div class="svc-type-tab active" onclick="switchSvcType('service',this)">Service</div>
+        <div class="svc-type-tab" onclick="switchSvcType('product',this)">Products</div>
+      </div>
+      <div class="service-pills" id="svc-services">
         <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
         <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
-        <div class="service-pill" onclick="selectService(this,'Other')">Other</div>
+      </div>
+      <div class="service-pills" id="svc-products" style="display:none">
+        <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
+        <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
+        <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
       </div>
     </div>
 
     <div class="form-row-2" style="margin-bottom:16px">
       <div class="cfield" style="grid-column:1/-1">
         <label>Project Details</label>
-        <textarea name="message" rows="2" placeholder="Briefly describe what you're working on..."></textarea>
+        <textarea name="message" rows="2" placeholder="Project Details"></textarea>
       </div>
     </div>
 
@@ -1510,7 +1598,6 @@ letter-spacing:0.3px;
 <div class="dot"></div>
 <div class="dot"></div>
 <div class="dot"></div>
-<div class="dot"></div>
 </div>
 
 <footer class="footer"></footer>
@@ -1532,6 +1619,34 @@ function capTab(index, el) {
 }
 function capNext() { capTab((capCurrent + 1) % capSlideEls.length, null); }
 function capPrev() { capTab((capCurrent - 1 + capSlideEls.length) % capSlideEls.length, null); }
+
+// Product carousel
+let prodCurrent = 0;
+const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
+const prodTabEls = document.querySelectorAll('#prod-slides').length > 0 ? 
+  document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') : [];
+const prodTabClasses = ['t-rose','t-sky','t-emerald'];
+
+function prodTab(index, el) {
+  prodSlideEls.forEach(s => s.classList.remove('active'));
+  if(prodTabEls.length) prodTabEls.forEach(t => t.className = 'cap-tab');
+  prodCurrent = index;
+  prodSlideEls[prodCurrent].classList.add('active');
+  if(el) el.className = 'cap-tab ' + prodTabClasses[index];
+  else if(prodTabEls[index]) prodTabEls[index].className = 'cap-tab ' + prodTabClasses[index];
+}
+function prodNext() { prodTab((prodCurrent + 1) % prodSlideEls.length, null); }
+function prodPrev() { prodTab((prodCurrent - 1 + prodSlideEls.length) % prodSlideEls.length, null); }
+
+// Service/Product type switcher
+function switchSvcType(type, el) {
+  document.querySelectorAll('.svc-type-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('svc-services').style.display = type === 'service' ? 'flex' : 'none';
+  document.getElementById('svc-products').style.display = type === 'product' ? 'flex' : 'none';
+  document.getElementById('service-val').value = '';
+  document.querySelectorAll('.service-pill').forEach(p => p.classList.remove('active'));
+}
 
 function selectService(el, val) {
   document.querySelectorAll('.service-pill').forEach(p => p.classList.remove('active'));
@@ -1583,6 +1698,10 @@ document.addEventListener('keydown', (e) => {
   if (current === 1) {
     if (e.key === 'ArrowRight') { capNext(); return; }
     if (e.key === 'ArrowLeft')  { capPrev(); return; }
+  }
+  if (current === 2) {
+    if (e.key === 'ArrowRight') { prodNext(); return; }
+    if (e.key === 'ArrowLeft')  { prodPrev(); return; }
   }
   if (e.key === 'ArrowDown' || e.key === 'PageDown') showScreen(Math.min(current + 1, screens.length - 1));
   if (e.key === 'ArrowUp'   || e.key === 'PageUp')   showScreen(Math.max(current - 1, 0));
