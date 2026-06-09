@@ -263,7 +263,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start;transition:box-shadow 0.3s}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -311,7 +311,7 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:880px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:82%;flex-shrink:0;padding-right:20px;opacity:0.35;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
+.cap-carousel{position:relative;width:100%;max-width:920px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:88%;flex-shrink:0;padding-right:24px;opacity:0.35;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -321,8 +321,6 @@ font-size:14px;
 .cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
-.cap-slide{min-width:82%;flex-shrink:0;padding-right:20px;opacity:0.35;transition:opacity 0.4s}
-.cap-slide.active{opacity:1}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
@@ -1288,6 +1286,8 @@ letter-spacing:0.3px;
 <div class="contact-inner">
 
   <div class="contact-left">
+    <div class="cl-label">Get in Touch</div>
+    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
     <p class="cl-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
     <div class="cl-trust">
       <div class="cl-trust-item">

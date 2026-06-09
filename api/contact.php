@@ -141,6 +141,8 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 <div class="contact-inner">
 
   <div class="contact-left">
+    <div class="cl-label">Get in Touch</div>
+    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
     <p class="cl-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
     <div class="cl-trust">
       <div class="cl-trust-item">
