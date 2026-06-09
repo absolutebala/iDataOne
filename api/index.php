@@ -774,7 +774,7 @@ letter-spacing:0.3px;
 </div>
 
 <!-- Hero logo (screen 1 only) -->
-<div class="site-logo hidden" id="hero-logo">
+<div class="site-logo" id="hero-logo">
   <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
 </div>
 
@@ -936,12 +936,12 @@ letter-spacing:0.3px;
 <h2>Build. <span class="highlight">Transform.</span> Scale.</h2>
 
 <div class="cap-carousel">
-  <div class="cap-tabs">
+  <div class="cap-tabs" id="cap-tabs">
     <div class="cap-tab t-teal" onclick="capTab(0,this)">01 Build</div>
     <div class="cap-tab" onclick="capTab(1,this)">02 AI</div>
     <div class="cap-tab" onclick="capTab(2,this)">03 Data</div>
   </div>
-  <div class="cap-slides">
+  <div class="cap-slides" id="cap-slides">
 
     <div class="cap-slide active">
       <div class="cap-card teal">
@@ -1519,8 +1519,8 @@ letter-spacing:0.3px;
 <script>
 // Capability carousel
 let capCurrent = 0;
-const capSlideEls = document.querySelectorAll('.cap-slide');
-const capTabEls = document.querySelectorAll('.cap-tab');
+const capSlideEls = document.querySelectorAll('#cap-slides .cap-slide');
+const capTabEls = document.querySelectorAll('#cap-tabs .cap-tab');
 const capTabClasses = ['t-teal','t-violet','t-amber'];
 
 function capTab(index, el) {
