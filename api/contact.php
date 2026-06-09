@@ -68,7 +68,7 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 
 /* Nav */
 .page-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;padding:0 32px;z-index:100;background:rgba(238,240,250,0.7);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.page-nav img{height:36px;width:auto;opacity:0.92}
+.page-nav img{height:40px;width:auto;opacity:0.92}
 .page-nav-links{display:flex;gap:32px;margin-left:auto}
 .page-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .page-nav-links a:not([href]){cursor:default}
