@@ -5,6 +5,9 @@
     },
     "api/mealmate.php": {
       "runtime": "vercel-php@0.9.0"
+    },
+    "api/contact.php": {
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "rewrites": [
@@ -23,6 +26,7 @@
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/favicon.png", "destination": "/favicon.png" },
     { "source": "/mealmate/(.*)", "destination": "/mealmate/$1" },
+    { "source": "/contact", "destination": "/api/contact.php" },
     { "source": "/(.*)", "destination": "/api/index.php" }
   ]
 }

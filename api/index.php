@@ -515,9 +515,17 @@ transform:scale(1.4);
 }
 
 /* Top-left logo */
-.site-logo{position:fixed;top:22px;left:32px;z-index:100;transition:opacity 0.4s,transform 0.4s}
-.site-logo img{height:36px;width:auto;opacity:0.92}
+.site-logo{position:fixed;top:18px;left:32px;z-index:100;transition:opacity 0.4s,transform 0.4s}
+.site-logo img{height:36px;width:auto;opacity:0.92;transition:height 0.4s}
+.site-logo.large img{height:47px}
 .site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
+/* Top nav */
+.top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;z-index:99;transition:opacity 0.4s}
+.top-nav.hidden{opacity:0;pointer-events:none}
+.top-nav-links{display:flex;gap:32px;margin-left:auto}
+.top-nav-links a{font-size:13px;font-weight:500;color:#64748b;text-decoration:none;letter-spacing:0.2px;cursor:default;transition:color 0.2s}
+.top-nav-links a.active{color:#4f46e5;cursor:pointer}
+.top-nav-links a.active:hover{color:#7c3aed}
 
 /* Tamil signature */
 .tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;color:rgba(99,102,241,0.55);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
@@ -748,8 +756,22 @@ letter-spacing:0.3px;
 </head>
 <body>
 
-<!-- Top-left logo (all screens) -->
-<div class="site-logo hidden">
+<!-- Top nav bar -->
+<div class="top-nav hidden" id="top-nav">
+  <div class="site-logo" id="site-logo">
+    <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+  </div>
+  <div class="top-nav-links">
+    <a>Digital</a>
+    <a>AI</a>
+    <a>Data</a>
+    <a>Case Studies</a>
+    <a class="active" href="/contact">Contact</a>
+  </div>
+</div>
+
+<!-- Hero logo (screen 1 only) -->
+<div class="site-logo hidden" id="hero-logo">
   <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
 </div>
 
@@ -1243,7 +1265,7 @@ letter-spacing:0.3px;
 </div>
 
 <div class="why-bottom" style="margin-top:20px">
-  <div class="why-cta" onclick="showScreen(3)">
+  <div class="why-cta" onclick="window.location.href='/contact'">
     Build Something Intelligent
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
@@ -1597,7 +1619,6 @@ letter-spacing:0.3px;
 <div class="dot active"></div>
 <div class="dot"></div>
 <div class="dot"></div>
-<div class="dot"></div>
 </div>
 
 <footer class="footer"></footer>
@@ -1665,11 +1686,17 @@ dots.forEach(d => d.classList.remove('active'));
 dots[4].classList.add('active');
 <?php endif; ?>
 
-const siteLogo = document.querySelector('.site-logo');
+const topNav   = document.getElementById('top-nav');
+const heroLogo = document.getElementById('hero-logo');
 
 function updateLogo(index) {
-  if (index === 0) siteLogo.classList.add('hidden');
-  else siteLogo.classList.remove('hidden');
+  if (index === 0) {
+    topNav.classList.add('hidden');
+    heroLogo.classList.remove('hidden');
+  } else {
+    topNav.classList.remove('hidden');
+    heroLogo.classList.add('hidden');
+  }
 }
 
 function showScreen(index) {
