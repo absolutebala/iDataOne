@@ -141,8 +141,6 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 <div class="contact-inner">
 
   <div class="contact-left">
-    <div class="cl-label">Get in Touch</div>
-    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
     <p class="cl-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
     <div class="cl-trust">
       <div class="cl-trust-item">
@@ -209,6 +207,7 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
         <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
         <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
+        <div class="service-pill" onclick="selectService(this,'Other')">Other</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
         <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>

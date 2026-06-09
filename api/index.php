@@ -311,7 +311,7 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:80%;flex-shrink:0;padding-right:24px;display:block!important;opacity:0.4;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
+.cap-carousel{position:relative;width:100%;max-width:880px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:82%;flex-shrink:0;padding-right:20px;opacity:0.35;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -321,7 +321,7 @@ font-size:14px;
 .cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
-.cap-slide{min-width:80%;flex-shrink:0;padding-right:24px;opacity:0.4;transition:opacity 0.4s}
+.cap-slide{min-width:82%;flex-shrink:0;padding-right:20px;opacity:0.35;transition:opacity 0.4s}
 .cap-slide.active{opacity:1}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
@@ -521,7 +521,7 @@ transform:scale(1.4);
 /* Top nav */
 .top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;z-index:99;transition:opacity 0.4s}
 .top-nav.hidden{opacity:0;pointer-events:none}
-.top-nav-links{display:flex;gap:32px;margin-left:48px}
+.top-nav-links{display:flex;gap:32px;margin-left:200px}
 .top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
 .top-nav-links a:not([href]):hover{color:#475569}
@@ -1288,8 +1288,6 @@ letter-spacing:0.3px;
 <div class="contact-inner">
 
   <div class="contact-left">
-    <div class="cl-label">Get in Touch</div>
-    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
     <p class="cl-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
     <div class="cl-trust">
       <div class="cl-trust-item">
