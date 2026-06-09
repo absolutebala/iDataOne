@@ -321,6 +321,8 @@ font-size:14px;
 .cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
+.cap-slide{display:none}
+.cap-slide.active{display:block;animation:capFadeIn 0.4s ease}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
@@ -361,6 +363,7 @@ font-size:14px;
 .cap-nav-btn:hover svg{stroke:#fff}
 .cap-nav-count{font-size:12px;font-weight:600;color:#94a3b8;letter-spacing:1px}
 .cap-illus{display:flex;align-items:center;justify-content:center}
+.cap-left{min-width:0}
 @media(max-width:768px){.cap-card{grid-template-columns:1fr!important}.cap-illus{display:none}}
 
 /* Products */
