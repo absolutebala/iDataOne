@@ -1569,14 +1569,11 @@ function selectService(el, val) {
 }
 const screens = document.querySelectorAll('.screen');
 const dots    = document.querySelectorAll('.dot');
-let current   = <?php echo (!empty($form_success) || !empty($form_error)) ? '4' : '0'; ?>;
+let current   = 0;
 let locked    = false;
 
 <?php if (!empty($form_success) || !empty($form_error)): ?>
-screens.forEach(s => s.classList.remove('active'));
-screens[4].classList.add('active');
-dots.forEach(d => d.classList.remove('active'));
-dots[4].classList.add('active');
+window.location.href = '/contact';
 <?php endif; ?>
 
 const topNav   = document.getElementById('top-nav');
