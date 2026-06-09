@@ -761,7 +761,7 @@ letter-spacing:0.3px;
 
 <!-- Top nav bar -->
 <div class="top-nav hidden" id="top-nav">
-  <div class="site-logo" id="site-logo">
+  <div class="site-logo large" id="site-logo">
     <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
   </div>
   <div class="top-nav-links">
@@ -956,6 +956,7 @@ letter-spacing:0.3px;
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-teal"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">01 / 03</span>
               <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
@@ -1066,6 +1067,7 @@ letter-spacing:0.3px;
             <div class="cap-nav">
               <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">03 / 03</span>
+              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
