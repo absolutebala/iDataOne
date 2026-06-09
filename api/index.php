@@ -263,7 +263,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -311,7 +311,7 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:920px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:88%;flex-shrink:0;padding-right:24px;opacity:0.35;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
+.cap-carousel{position:relative;width:100%;max-width:920px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1)}.cap-slides-track .cap-slide{min-width:88%;flex-shrink:0;box-sizing:border-box;padding-right:20px;opacity:0.3;transition:opacity 0.4s;pointer-events:none}.cap-slides-track .cap-slide.active{opacity:1;pointer-events:auto}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -517,9 +517,10 @@ transform:scale(1.4);
 .site-logo img{height:40px;width:auto;opacity:0.92}
 .site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
 /* Top nav */
-.top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;z-index:99;transition:opacity 0.4s}
+.top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;gap:40px;z-index:99;transition:opacity 0.4s}
+.top-nav .site-logo{position:static;transition:none}
 .top-nav.hidden{opacity:0;pointer-events:none}
-.top-nav-links{display:flex;gap:32px;margin-left:200px}
+.top-nav-links{display:flex;gap:28px;align-items:center}
 .top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
 .top-nav-links a:not([href]):hover{color:#475569}
