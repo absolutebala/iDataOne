@@ -523,9 +523,12 @@ transform:scale(1.4);
 .top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;z-index:99;transition:opacity 0.4s}
 .top-nav.hidden{opacity:0;pointer-events:none}
 .top-nav-links{display:flex;gap:32px;margin-left:auto}
-.top-nav-links a{font-size:13px;font-weight:500;color:#64748b;text-decoration:none;letter-spacing:0.2px;cursor:default;transition:color 0.2s}
-.top-nav-links a.active{color:#4f46e5;cursor:pointer}
-.top-nav-links a.active:hover{color:#7c3aed}
+.top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
+.top-nav-links a:not([href]){cursor:default}
+.top-nav-links a:not([href]):hover{color:#475569}
+.top-nav-links a[href]{cursor:pointer;color:#475569}
+.top-nav-links a[href]:hover{color:#4f46e5}
+.top-nav-links a.active{color:#4f46e5;font-weight:600}
 
 /* Tamil signature */
 .tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;color:rgba(99,102,241,0.55);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
@@ -766,7 +769,7 @@ letter-spacing:0.3px;
     <a>AI</a>
     <a>Data</a>
     <a>Case Studies</a>
-    <a class="active" href="/contact">Contact</a>
+    <a href="/contact">Contact</a>
   </div>
 </div>
 
@@ -1273,118 +1276,6 @@ letter-spacing:0.3px;
 </div>
 </section>
 
-<!-- 3: Contact -->
-<section class="screen">
-<div class="container">
-<div class="contact-inner">
-
-  <div class="contact-left">
-    <div class="cl-label">Get in Touch</div>
-    <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
-    <p class="cl-sub">Tell us about your project — we'll get back to you within 24 hours.</p>
-    <div class="cl-trust">
-      <div class="cl-trust-item">
-        <div class="cl-trust-icon ti-indigo">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        </div>
-        <div>
-          <div class="cl-trust-title">Response within 24 hours</div>
-          <div class="cl-trust-desc">We review every enquiry personally</div>
-        </div>
-      </div>
-      <div class="cl-trust-item">
-        <div class="cl-trust-icon ti-teal">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div>
-          <div class="cl-trust-title">Free 30-min discovery call</div>
-          <div class="cl-trust-desc">No commitment, just a conversation</div>
-        </div>
-      </div>
-      <div class="cl-trust-item">
-        <div class="cl-trust-icon ti-amber">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <div class="cl-trust-title">Your data stays private</div>
-          <div class="cl-trust-desc">We never share your information</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-right">
-    <div class="form-top">
-      <div class="form-top-title">Book a Discovery Call</div>
-      <div class="form-top-sub">Takes less than 60 seconds to fill in</div>
-    </div>
-
-    <?php if (!empty($form_success)): ?>
-    <div class="form-msg success">✓ Thanks! We'll be in touch within 24 hours.</div>
-    <?php elseif (!empty($form_error)): ?>
-    <div class="form-msg error">Something went wrong. Please email info@idataone.com directly.</div>
-    <?php endif; ?>
-
-    <form method="POST" action="#" id="contact-form">
-    <input type="hidden" name="form_submit" value="1">
-    <input type="hidden" name="service" id="service-val" value="">
-
-    <div class="form-row-2">
-      <div class="cfield">
-        <label>Full Name</label>
-        <input type="text" name="name" placeholder="Full Name" required>
-      </div>
-      <div class="cfield">
-        <label>Company</label>
-        <input type="text" name="company" placeholder="Company Name">
-      </div>
-    </div>
-    <div class="form-row-2">
-      <div class="cfield">
-        <label>Work Email</label>
-        <input type="email" name="email" placeholder="Work Email" required>
-      </div>
-      <div class="cfield">
-        <label>Phone</label>
-        <input type="tel" name="phone" placeholder="Phone Number">
-      </div>
-    </div>
-
-    <div class="service-section">
-      <div style="display:flex;gap:8px;margin-bottom:12px">
-        <div class="svc-type-tab active" onclick="switchSvcType('service',this)">Service</div>
-        <div class="svc-type-tab" onclick="switchSvcType('product',this)">Products</div>
-      </div>
-      <div class="service-pills" id="svc-services">
-        <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
-        <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
-        <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
-      </div>
-      <div class="service-pills" id="svc-products" style="display:none">
-        <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
-        <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
-        <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
-      </div>
-    </div>
-
-    <div class="form-row-2" style="margin-bottom:16px">
-      <div class="cfield" style="grid-column:1/-1">
-        <label>Project Details</label>
-        <textarea name="message" rows="2" placeholder="Project Details"></textarea>
-      </div>
-    </div>
-
-    <button type="submit" class="submit-btn">
-      Book Discovery Call
-      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </button>
-    <p class="form-note">No spam. No sales pressure. Just a conversation.</p>
-    </form>
-  </div>
-
-</div>
-</div>
-</section>
 
 </div>
 

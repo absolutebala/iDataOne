@@ -70,9 +70,11 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 .page-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;padding:0 32px;z-index:100;background:rgba(238,240,250,0.7);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
 .page-nav img{height:36px;width:auto;opacity:0.92}
 .page-nav-links{display:flex;gap:32px;margin-left:auto}
-.page-nav-links a{font-size:13px;font-weight:500;color:#64748b;text-decoration:none;letter-spacing:0.2px;cursor:default}
-.page-nav-links a.back{color:#4f46e5;cursor:pointer}
-.page-nav-links a.back:hover{color:#7c3aed}
+.page-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
+.page-nav-links a:not([href]){cursor:default}
+.page-nav-links a[href]{cursor:pointer}
+.page-nav-links a[href]:hover{color:#4f46e5}
+.page-nav-links a.active{color:#4f46e5;font-weight:600}
 
 /* Contact layout */
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
@@ -132,7 +134,7 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
     <a>AI</a>
     <a>Data</a>
     <a>Case Studies</a>
-    <a class="back" href="/">← Back</a>
+    <a class="active" href="/contact">Contact</a>
   </div>
 </nav>
 
