@@ -311,7 +311,7 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
+.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto;overflow:hidden}.cap-slides-track{display:flex;transition:transform 0.4s ease}.cap-slides-track .cap-slide{min-width:80%;flex-shrink:0;padding-right:24px;display:block!important;opacity:0.4;transition:opacity 0.4s}.cap-slides-track .cap-slide.active{opacity:1}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -321,8 +321,8 @@ font-size:14px;
 .cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
-.cap-slide{display:none;animation:capFadeIn 0.4s ease}
-.cap-slide.active{display:block}
+.cap-slide{min-width:80%;flex-shrink:0;padding-right:24px;opacity:0.4;transition:opacity 0.4s}
+.cap-slide.active{opacity:1}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
@@ -521,7 +521,7 @@ transform:scale(1.4);
 /* Top nav */
 .top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;z-index:99;transition:opacity 0.4s}
 .top-nav.hidden{opacity:0;pointer-events:none}
-.top-nav-links{display:flex;gap:32px;margin-left:auto}
+.top-nav-links{display:flex;gap:32px;margin-left:48px}
 .top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
 .top-nav-links a:not([href]):hover{color:#475569}
@@ -940,7 +940,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="capTab(1,this)">02 AI</div>
     <div class="cap-tab" onclick="capTab(2,this)">03 Data</div>
   </div>
-  <div class="cap-slides" id="cap-slides">
+  <div class="cap-slides" id="cap-slides"><div class="cap-slides-track" id="cap-track">
 
     <div class="cap-slide active">
       <div class="cap-card teal">
@@ -1104,7 +1104,7 @@ letter-spacing:0.3px;
       </div>
     </div>
 
-  </div>
+  </div></div>
 </div>
 
 <div class="why-bottom" style="margin-top:20px">
@@ -1127,7 +1127,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
-  <div class="cap-slides" id="prod-slides">
+  <div class="cap-slides" id="prod-slides"><div class="cap-slides-track" id="prod-track">
 
     <div class="cap-slide active">
       <div class="cap-card rose">
@@ -1139,6 +1139,9 @@ letter-spacing:0.3px;
             <li>AI Meal Suggestions</li><li>Weekly Planning</li>
             <li>Smart Grocery Lists</li><li>Family Preferences</li>
           </ul>
+          <div style="margin-bottom:16px">
+            <a href="https://mealmate.idataone.com" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore MealMate <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
@@ -1186,6 +1189,7 @@ letter-spacing:0.3px;
             <li>24/7 AI Agents</li><li>Lead Qualification</li>
             <li>Auto Responses</li><li>CRM Integration</li>
           </ul>
+          <div style="margin-bottom:16px"><span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#f0f9ff;color:#0ea5e9;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span></div>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-sky"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
@@ -1227,6 +1231,7 @@ letter-spacing:0.3px;
             <li>Unified Data</li><li>Real-time Dashboards</li>
             <li>BI & Analytics</li><li>Predictions</li>
           </ul>
+          <div style="margin-bottom:16px"><span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#ecfdf5;color:#10b981;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span></div>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-emerald"></div></div>
             <div class="cap-nav">
@@ -1265,7 +1270,7 @@ letter-spacing:0.3px;
       </div>
     </div>
 
-  </div>
+  </div></div>
 </div>
 
 <div class="why-bottom" style="margin-top:20px">
@@ -1622,6 +1627,7 @@ letter-spacing:0.3px;
 let capCurrent = 0;
 const capSlideEls = document.querySelectorAll('#cap-slides .cap-slide');
 const capTabEls = document.querySelectorAll('#cap-tabs .cap-tab');
+const capTrack = document.getElementById('cap-track');
 const capTabClasses = ['t-teal','t-violet','t-amber'];
 
 function capTab(index, el) {
@@ -1629,8 +1635,9 @@ function capTab(index, el) {
   capTabEls.forEach(t => t.className = 'cap-tab');
   capCurrent = index;
   capSlideEls[capCurrent].classList.add('active');
+  capTrack.style.transform = `translateX(calc(-${capCurrent} * 80%))`;
   const activeTab = el || capTabEls[index];
-  activeTab.className = 'cap-tab ' + capTabClasses[index];
+  if(activeTab) activeTab.className = 'cap-tab ' + capTabClasses[index];
 }
 function capNext() { capTab((capCurrent + 1) % capSlideEls.length, null); }
 function capPrev() { capTab((capCurrent - 1 + capSlideEls.length) % capSlideEls.length, null); }
@@ -1638,8 +1645,8 @@ function capPrev() { capTab((capCurrent - 1 + capSlideEls.length) % capSlideEls.
 // Product carousel
 let prodCurrent = 0;
 const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
-const prodTabEls = document.querySelectorAll('#prod-slides').length > 0 ? 
-  document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') : [];
+const prodTrack = document.getElementById('prod-track');
+const prodTabEls = document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') || [];
 const prodTabClasses = ['t-rose','t-sky','t-emerald'];
 
 function prodTab(index, el) {
@@ -1647,6 +1654,7 @@ function prodTab(index, el) {
   if(prodTabEls.length) prodTabEls.forEach(t => t.className = 'cap-tab');
   prodCurrent = index;
   prodSlideEls[prodCurrent].classList.add('active');
+  if(prodTrack) prodTrack.style.transform = `translateX(calc(-${prodCurrent} * 80%))`;
   if(el) el.className = 'cap-tab ' + prodTabClasses[index];
   else if(prodTabEls[index]) prodTabEls[index].className = 'cap-tab ' + prodTabClasses[index];
 }
