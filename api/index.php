@@ -311,7 +311,10 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
+.cap-carousel{position:relative;width:100%;max-width:900px;margin:0 auto;overflow:hidden}
+.cap-carousel::after{content:"";position:absolute;top:0;right:0;bottom:0;width:80px;background:linear-gradient(to right,transparent,rgba(232,236,248,0.97));pointer-events:none;z-index:5}
+.cap-carousel-inner{display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1)}
+.cap-carousel-inner .cap-slides{min-width:88%;flex-shrink:0;box-sizing:border-box;padding-right:16px}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -942,7 +945,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="capTab(1,this)">02 AI</div>
     <div class="cap-tab" onclick="capTab(2,this)">03 Data</div>
   </div>
-  <div class="cap-slides" id="cap-slides">
+  <div class="cap-carousel-inner" id="cap-inner"><div class="cap-slides" id="cap-slides">
 
     <div class="cap-slide active">
       <div class="cap-card teal">
@@ -1107,7 +1110,7 @@ letter-spacing:0.3px;
     </div>
 
   </div>
-</div>
+</div></div>
 
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(2)">
@@ -1129,7 +1132,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
-  <div class="cap-slides" id="prod-slides">
+  <div class="cap-carousel-inner" id="prod-inner"><div class="cap-slides" id="prod-slides">
 
     <div class="cap-slide active">
       <div class="cap-card rose">
@@ -1273,7 +1276,7 @@ letter-spacing:0.3px;
     </div>
 
   </div>
-</div>
+</div></div>
 
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(3)">
@@ -1631,11 +1634,13 @@ const capSlideEls = document.querySelectorAll('#cap-slides .cap-slide');
 const capTabEls = document.querySelectorAll('#cap-tabs .cap-tab');
 const capTabClasses = ['t-teal','t-violet','t-amber'];
 
+const capInner = document.getElementById('cap-inner');
 function capTab(index, el) {
   capSlideEls.forEach(s => s.classList.remove('active'));
   capTabEls.forEach(t => t.className = 'cap-tab');
   capCurrent = index;
   capSlideEls[capCurrent].classList.add('active');
+  if(capInner) capInner.style.transform = 'translateX(calc(-' + capCurrent + ' * 88%))';
   const activeTab = el || capTabEls[index];
   if(activeTab) activeTab.className = 'cap-tab ' + capTabClasses[index];
 }
@@ -1648,11 +1653,13 @@ const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
 const prodTabEls = document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') || [];
 const prodTabClasses = ['t-rose','t-sky','t-emerald'];
 
+const prodInner = document.getElementById('prod-inner');
 function prodTab(index, el) {
   prodSlideEls.forEach(s => s.classList.remove('active'));
   if(prodTabEls.length) prodTabEls.forEach(t => t.className = 'cap-tab');
   prodCurrent = index;
   prodSlideEls[prodCurrent].classList.add('active');
+  if(prodInner) prodInner.style.transform = 'translateX(calc(-' + prodCurrent + ' * 88%))';
   if(el) el.className = 'cap-tab ' + prodTabClasses[index];
   else if(prodTabEls[index]) prodTabEls[index].className = 'cap-tab ' + prodTabClasses[index];
 }
