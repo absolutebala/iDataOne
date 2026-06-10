@@ -263,7 +263,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:28px 32px 20px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:28px 32px 20px;position:relative;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -311,7 +311,11 @@ font-size:14px;
 .cap-card:hover .cap-arrow svg{stroke:#fff}
 
 /* Capability Carousel */
-.cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
+.cap-carousel{position:relative;width:100%;max-width:900px;margin:0 auto}
+.cap-carousel-clip{overflow:hidden;position:relative}
+.cap-carousel-clip::after{content:"";position:absolute;top:0;right:0;bottom:0;width:100px;background:linear-gradient(to right,transparent,rgba(232,236,248,0.97));pointer-events:none;z-index:5}
+.cap-track{display:flex;transition:transform 0.45s cubic-bezier(0.4,0,0.2,1)}
+.cap-track .cap-slides{min-width:85%;flex-shrink:0;box-sizing:border-box;padding-right:16px}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
 .cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
 .cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
@@ -320,9 +324,8 @@ font-size:14px;
 .cap-tab.t-rose{background:#fff1f2;border-color:rgba(244,63,94,0.3);color:#f43f5e}
 .cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
-.cap-slides{position:relative;width:100%}
-.cap-slide{display:none}
-.cap-slide.active{display:block;animation:capFadeIn 0.4s ease}
+.cap-slides{position:relative}
+.cap-slide{display:block;width:100%}
 @keyframes capFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .cap-card.teal{border:1px solid rgba(20,184,166,0.25)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
@@ -942,7 +945,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="capTab(1,this)">02 AI</div>
     <div class="cap-tab" onclick="capTab(2,this)">03 Data</div>
   </div>
-  <div class="cap-slides" id="cap-slides">
+  <div class="cap-carousel-clip"><div class="cap-track" id="cap-track"><div class="cap-slides" id="cap-slides">
 
     <div class="cap-slide active">
       <div class="cap-card teal">
@@ -1107,7 +1110,7 @@ letter-spacing:0.3px;
     </div>
 
   </div>
-</div>
+</div></div></div>
 
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(2)">
@@ -1129,7 +1132,7 @@ letter-spacing:0.3px;
     <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
-  <div class="cap-slides" id="prod-slides">
+  <div class="cap-carousel-clip"><div class="cap-track" id="prod-track"><div class="cap-slides" id="prod-slides">
 
     <div class="cap-slide active">
       <div class="cap-card rose">
@@ -1273,7 +1276,7 @@ letter-spacing:0.3px;
     </div>
 
   </div>
-</div>
+</div></div></div>
 
 <div class="why-bottom" style="margin-top:20px">
   <div class="why-cta" onclick="showScreen(3)">
@@ -1631,11 +1634,13 @@ const capSlideEls = document.querySelectorAll('#cap-slides .cap-slide');
 const capTabEls = document.querySelectorAll('#cap-tabs .cap-tab');
 const capTabClasses = ['t-teal','t-violet','t-amber'];
 
+const capTrackEl = document.getElementById('cap-track');
 function capTab(index, el) {
   capSlideEls.forEach(s => s.classList.remove('active'));
   capTabEls.forEach(t => t.className = 'cap-tab');
   capCurrent = index;
   capSlideEls[capCurrent].classList.add('active');
+  if(capTrackEl) capTrackEl.style.transform = 'translateX(calc(-' + capCurrent + ' * 85%))';
   const activeTab = el || capTabEls[index];
   if(activeTab) activeTab.className = 'cap-tab ' + capTabClasses[index];
 }
@@ -1648,11 +1653,13 @@ const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
 const prodTabEls = document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') || [];
 const prodTabClasses = ['t-rose','t-sky','t-emerald'];
 
+const prodTrackEl = document.getElementById('prod-track');
 function prodTab(index, el) {
   prodSlideEls.forEach(s => s.classList.remove('active'));
   if(prodTabEls.length) prodTabEls.forEach(t => t.className = 'cap-tab');
   prodCurrent = index;
   prodSlideEls[prodCurrent].classList.add('active');
+  if(prodTrackEl) prodTrackEl.style.transform = 'translateX(calc(-' + prodCurrent + ' * 85%))';
   if(el) el.className = 'cap-tab ' + prodTabClasses[index];
   else if(prodTabEls[index]) prodTabEls[index].className = 'cap-tab ' + prodTabClasses[index];
 }
