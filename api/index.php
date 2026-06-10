@@ -263,7 +263,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:36px 36px 28px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
+.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:28px 32px 20px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -297,7 +297,7 @@ font-size:14px;
 .sky .cap-card-outcome{color:#0ea5e9}
 .emerald .cap-card-outcome{color:#10b981}
 .cap-card-desc{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:18px}
-.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(226,232,240,0.8)}
+
 .cap-tags{display:flex;flex-wrap:wrap;gap:5px}
 .cap-tag{font-size:10px;font-weight:600;letter-spacing:0.3px;border-radius:999px;padding:3px 9px}
 .teal .cap-tag{color:#0d9488;background:#f0fdfa}
@@ -337,8 +337,8 @@ font-size:14px;
 .teal .cap-card-outcome{color:#0d9488}
 .violet .cap-card-outcome{color:#7c3aed}
 .amber .cap-card-outcome{color:#d97706}
-.cap-card-desc{font-size:14px;color:#475569;line-height:1.75;margin-bottom:22px}
-.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-bottom:28px;padding:0}
+.cap-card-desc{font-size:14px;color:#475569;line-height:1.7;margin-bottom:14px}
+.cap-checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;margin-bottom:14px;padding:0}
 .cap-checklist li{font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px}
 .cap-checklist li::before{content:"✓";font-weight:700;font-size:12px;flex-shrink:0}
 .teal .cap-checklist li::before{color:#0d9488}
@@ -347,7 +347,7 @@ font-size:14px;
 .rose .cap-checklist li::before{color:#f43f5e}
 .sky .cap-checklist li::before{color:#0ea5e9}
 .emerald .cap-checklist li::before{color:#10b981}
-.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(226,232,240,0.8)}
+.cap-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(226,232,240,0.8)}
 .cap-pips{display:flex;gap:6px;align-items:center}
 .cap-pip{height:3px;border-radius:999px;background:#e2e8f0;width:16px}
 .cap-pip.active-teal{background:#0d9488;width:28px}
