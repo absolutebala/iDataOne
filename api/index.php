@@ -49,20 +49,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iDataOne | AI-First Products, Data Intelligence & Custom Software</title>
-<meta name="description" content="iDataOne builds AI-first products, custom software, intelligent data platforms and digital transformation solutions. Book a free discovery call today.">
-<meta name="keywords" content="AI solutions, custom software development, data intelligence, digital transformation, AI-first products, intelligent data platforms">
+<title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
+<meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, MealMate, aiChat, DatInsights">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
-<meta property="og:title" content="iDataOne | AI-First Products & Intelligent Data Platforms">
-<meta property="og:description" content="We help businesses build intelligent digital systems powered by unified data, automation, and AI-driven insights. Book a free discovery call.">
+<meta property="og:title" content="iDataOne | Build. Transform. Scale. — AI-First Products & Data Intelligence">
+<meta property="og:description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://idataone.com/">
 <meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="iDataOne | AI-First Products & Intelligent Data Platforms">
-<meta name="twitter:description" content="Custom software, AI solutions, data intelligence and digital transformation — under one roof.">
+<meta name="twitter:title" content="iDataOne | Build. Transform. Scale. — AI-First Products & Data Intelligence">
+<meta name="twitter:description" content="Build scalable digital products, integrate AI automation, and turn fragmented data into business intelligence. iDataOne — Built for the AI era.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,11 +70,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
   "name": "iDataOne",
   "url": "https://idataone.com",
   "logo": "https://idataone.com/assets/images/iDataOneLogoNoBG.png",
-  "description": "iDataOne builds AI-first products, custom software, intelligent data platforms and digital transformation solutions.",
+  "description": "iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence.",
+  "slogan": "Build. Transform. Scale.",
   "contactPoint": {
     "@type": "ContactPoint",
     "email": "info@idataone.com",
-    "contactType": "customer service"
+    "contactType": "customer service",
+    "availableLanguage": "English"
+  },
+  "knowsAbout": [
+    "Custom Software Development",
+    "AI Integration",
+    "LLM Integration",
+    "AI Agents",
+    "Data Intelligence",
+    "Business Intelligence",
+    "Web Application Development",
+    "Mobile App Development",
+    "SaaS Platforms",
+    "Digital Transformation"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "iDataOne Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Build Digital Products",
+          "description": "From idea to production, we build scalable software products tailored precisely to your business needs within your budget. Web apps, mobile apps, SaaS platforms and enterprise applications."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enable AI & Automation",
+          "description": "From AI agents to intelligent workflows, we integrate AI into products and operations to improve efficiency, enhance decision-making, and drive business growth."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Transform Data into Decisions",
+          "description": "Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions."
+        }
+      }
+    ]
   },
   "sameAs": []
 }
@@ -879,41 +923,52 @@ letter-spacing:0.3px;
   <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.034)"/>
 </svg>
 
-<!-- SEO content block — visible to crawlers, hidden from users -->
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;left:-9999px" aria-hidden="true">
+<!-- SEO content block — readable by search engines and AI crawlers -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;left:-9999px">
 
-  <h1>iDataOne — Engineering AI-First Products and Intelligent Data Platforms</h1>
-  <p>We help businesses build digital products powered by unified data, automation, and AI-driven insights. Custom Software. AI Solutions. Data Intelligence. Digital Transformation.</p>
+  <h1>iDataOne — Build. Transform. Scale. AI-First Products and Data Intelligence</h1>
+  <p>iDataOne is an AI-first product development and data intelligence company. We help businesses build scalable digital products, integrate AI automation, and transform fragmented data into actionable business intelligence.</p>
 
-  <h2>Our Capabilities</h2>
-  <h3>Custom Software Development</h3>
-  <p>Ship faster. Scale without limits. Web, mobile, and enterprise applications built precisely for your workflows — not off-the-shelf compromises. Web Apps, Mobile, Enterprise, API Integration.</p>
-  <h3>AI Solutions</h3>
-  <p>Automate decisions. Eliminate bottlenecks. From LLM integrations to intelligent automation — we build AI that works in production, not just in demos. LLM Integration, AI Agents, Automation, ML Pipelines.</p>
-  <h3>Data Intelligence</h3>
-  <p>One truth. Instant clarity. Unify fragmented data sources into a single trusted layer — then turn it into insights that drive real action. Data Pipelines, Dashboards, BI Platforms, Real-time Analytics.</p>
+  <h2>Build Digital Products</h2>
+  <p>Ship faster. Scale without limits. From idea to production, we build scalable software products tailored precisely to your business needs within your budget. We deliver web apps, mobile apps, SaaS platforms and enterprise applications.</p>
+  <ul>
+    <li>Web Application Development</li>
+    <li>Mobile App Development</li>
+    <li>SaaS Platform Development</li>
+    <li>Enterprise Application Development</li>
+  </ul>
 
-  <h2>Why iDataOne — Built for the AI Era</h2>
-  <h3>AI-First Architecture</h3>
-  <p>Intelligence built into the foundation, not bolted on after.</p>
-  <h3>Unified Data Layer</h3>
-  <p>One source of truth across every system and team.</p>
-  <h3>Enterprise Grade</h3>
-  <p>Security, scale, and reliability your business can depend on.</p>
-  <h3>Cloud Native</h3>
-  <p>Built for modern infrastructure — flexible, resilient, future-proof.</p>
+  <h2>Enable AI and Automation</h2>
+  <p>Automate decisions. Eliminate bottlenecks. From AI agents to intelligent workflows, we integrate AI into products and operations to improve efficiency, enhance decision-making, and drive business growth.</p>
+  <ul>
+    <li>AI Agents</li>
+    <li>LLM Integration</li>
+    <li>Intelligent Automation</li>
+    <li>AI Feature Development</li>
+  </ul>
+
+  <h2>Transform Data into Decisions</h2>
+  <p>One truth. Instant clarity. Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.</p>
+  <ul>
+    <li>Unified Data Layer</li>
+    <li>Business Intelligence Dashboards</li>
+    <li>BI and Analytics</li>
+    <li>Predictive Analytics</li>
+  </ul>
 
   <h2>Products from iDataOne</h2>
-  <h3>MealMate</h3>
-  <p>AI-powered meal planning for families — personalised, smart, and effortless. Coming Soon.</p>
-  <h3>aiChat</h3>
-  <p>AI agents for websites and business operations — always on, always intelligent. Coming Soon.</p>
-  <h3>DatInsights</h3>
-  <p>Unified business intelligence — one view of all your data, all the time. Coming Soon.</p>
 
-  <h2>Contact iDataOne — Book a Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we'll get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Response within 24 hours. Your data stays private — we never share your information.</p>
-  <p>Services: Custom Software Development, AI Solutions, Data Intelligence, Other.</p>
+  <h3>MealMate — AI Meal Planning App</h3>
+  <p>Never wonder what to cook again. MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
+
+  <h3>aiChat — AI Customer Service Agents</h3>
+  <p>Always on. Always intelligent. AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock. Coming Soon.</p>
+
+  <h3>DatInsights — Business Intelligence Platform</h3>
+  <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
+
+  <h2>Contact iDataOne — Book a Free Discovery Call</h2>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, MealMate, aiChat, DatInsights.</p>
 
 </div>
 
