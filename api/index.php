@@ -1157,7 +1157,10 @@ letter-spacing:0.3px;
                 <div style="font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#fff;line-height:1.3">Google Play</div>
               </div>
             </a>
-          </div> style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore MealMate <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+          <div style="margin-bottom:16px">
+            <a href="https://mealmate.idataone.com" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore MealMate <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
           </div>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
