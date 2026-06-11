@@ -950,7 +950,7 @@ letter-spacing:0.3px;
         <div class="cap-left">
           <div class="cap-card-title">Build Digital Products</div>
           <div class="cap-card-outcome">Ship faster. Scale without limits.</div>
-          <div class="cap-card-desc">From idea to production, we build scalable software products tailored precisely to your workflows and business needs.</div>
+          <div class="cap-card-desc">From idea to production, we build scalable software products tailored precisely to your business needs within your budget.</div>
           <ul class="cap-checklist">
             <li>Web Apps</li><li>Mobile Apps</li>
             <li>SaaS Platforms</li><li>Enterprise Apps</li>
@@ -1007,7 +1007,7 @@ letter-spacing:0.3px;
         <div class="cap-left">
           <div class="cap-card-title">Enable AI &amp; Automation</div>
           <div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
-          <div class="cap-card-desc">From AI agents to intelligent workflows, we embed AI into products and operations that work in production, not just in demos.</div>
+          <div class="cap-card-desc">From AI agents to intelligent workflows, we integrate AI into products and operations to improve efficiency, enhance decision-making, and drive business growth.</div>
           <ul class="cap-checklist">
             <li>AI Agents</li><li>LLM Integration</li>
             <li>Automation</li><li>AI Features</li>
@@ -1059,7 +1059,7 @@ letter-spacing:0.3px;
         <div class="cap-left">
           <div class="cap-card-title">Transform Data into Decisions</div>
           <div class="cap-card-outcome">One truth. Instant clarity.</div>
-          <div class="cap-card-desc">Unify fragmented systems into a trusted data layer and generate actionable insights that drive real business decisions.</div>
+          <div class="cap-card-desc">Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.</div>
           <ul class="cap-checklist">
             <li>Unified Data</li><li>Dashboards</li>
             <li>BI &amp; Analytics</li><li>Predictions</li>
