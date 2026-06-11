@@ -1136,14 +1136,28 @@ letter-spacing:0.3px;
       <div class="cap-card rose">
         <div class="cap-left">
           <div class="cap-card-title">MealMate</div>
-          <div class="cap-card-outcome">Smart meal planning for every family.</div>
-          <div class="cap-card-desc">AI-powered meal planning that answers the question every family asks daily. Personalised suggestions, smart grocery lists and effortless weekly planning.</div>
+          <div class="cap-card-outcome">Never Wonder What to Cook Again.</div>
+          <div class="cap-card-desc">MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs—making everyday cooking simpler and healthier.</div>
           <ul class="cap-checklist">
             <li>AI Meal Suggestions</li><li>Weekly Planning</li>
             <li>Smart Grocery Lists</li><li>Family Preferences</li>
           </ul>
-          <div style="margin-bottom:16px">
-            <a href="https://mealmate.idataone.com" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore MealMate <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:10px;background:#0f172a;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div style="text-align:left">
+                <div style="font-family:'Inter',sans-serif;font-size:9px;color:rgba(255,255,255,0.6);letter-spacing:0.5px;line-height:1">Download on the</div>
+                <div style="font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#fff;line-height:1.3">App Store</div>
+              </div>
+            </a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:10px;background:#0f172a;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M3.18 23.76c.3.17.64.22.97.15l13.1-7.56-2.9-2.9-11.17 10.31zm-1.7-20.3C1.18 3.9 1 4.4 1 5v14c0 .6.18 1.1.48 1.54l.08.08 7.84-7.84v-.18L1.48 3.46zm18.52 8.35l-2.66-1.53-3.16 3.16 3.16 3.16 2.68-1.55c.76-.44.76-1.8-.02-2.24zM4.15.24L17.25 7.8l-2.9 2.9L4.15.24C4.48-.09 4.99-.08 5.35.11z"/></svg>
+              <div style="text-align:left">
+                <div style="font-family:'Inter',sans-serif;font-size:9px;color:rgba(255,255,255,0.6);letter-spacing:0.5px;line-height:1">Get it on</div>
+                <div style="font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#fff;line-height:1.3">Google Play</div>
+              </div>
+            </a>
+          </div> style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore MealMate <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
