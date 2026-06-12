@@ -14,7 +14,15 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 
-/* Nav via _styles.php */
+/* Nav */
+.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
+.site-nav .nav-logo{text-decoration:none;flex-shrink:0}
+.site-nav .nav-logo img{height:40px;width:auto;opacity:0.92}
+.site-nav .nav-links{display:flex;gap:28px;align-items:center}
+.site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
+.site-nav .nav-links a[href]{cursor:pointer}
+.site-nav .nav-links a[href]:hover{color:#4f46e5}
+.site-nav .nav-links a.active{color:#4f46e5;font-weight:600}
 /* ── Banner ── */
 .banner{
   min-height:100vh;
@@ -107,7 +115,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-cta-secondary:hover{color:rgba(255,255,255,0.8)}
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-/* Footer via _styles.php */
 
 /* Responsive */
 @media(max-width:768px){
@@ -123,7 +130,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .cta-btns{align-items:flex-start}
 }
 </style>
-<?php include __DIR__ . "/_styles.php"; ?>
+<?php include __DIR__ . '/_footer_css.php'; ?>
 </head>
 <body>
 
