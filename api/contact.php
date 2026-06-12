@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;font-family:'Inter',sans-serif;color:#0f172a}
 body{
+  padding-top:68px;
   background:
     radial-gradient(ellipse at 10% 15%, rgba(99,102,241,0.22), transparent 40%),
     radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
@@ -67,7 +68,14 @@ body{
 body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(15,23,42,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 
 /* Nav */
-/* Nav via shared _styles.php */
+.page-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
+.page-nav a:first-child{text-decoration:none;flex-shrink:0}
+.page-nav a:first-child img{height:40px;width:auto;opacity:0.92}
+.page-nav-links{display:flex;gap:28px;align-items:center}
+.page-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
+.page-nav-links a[href]{cursor:pointer}
+.page-nav-links a[href]:hover{color:#4f46e5}
+.page-nav-links a.active{color:#4f46e5;font-weight:600}
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{text-align:left}
 .cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
@@ -114,15 +122,32 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 .form-msg.success{background:#f0fdf4;color:#16a34a}
 .form-msg.error{background:#fef2f2;color:#dc2626}
 @media(max-width:768px){.contact-inner{grid-template-columns:1fr;gap:36px}.contact-right{padding:28px 20px}.form-row-2{grid-template-columns:1fr;gap:12px}.page-nav-links{gap:16px}}
+
+/* Footer */
+.site-footer{background:#0a0d18;padding:56px 32px 32px}
+.site-footer .footer-inner{max-width:1140px;margin:0 auto}
+.site-footer .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.site-footer .footer-logo{margin-bottom:12px}
+.site-footer .footer-logo img{height:36px;opacity:0.85;filter:brightness(0) invert(1)}
+.site-footer .footer-tagline{font-size:12.5px;color:rgba(255,255,255,0.3);line-height:1.65}
+.site-footer .footer-col-title{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px}
+.site-footer .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.site-footer .footer-links a{font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;cursor:default}
+.site-footer .footer-links a[href]{cursor:pointer}
+.site-footer .footer-links a[href]:hover{color:rgba(255,255,255,0.8)}
+.site-footer .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.site-footer .footer-copy{font-size:12px;color:rgba(255,255,255,0.2)}
+.site-footer .footer-email{font-size:13px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
+.site-footer .footer-email:hover{color:rgba(255,255,255,0.7)}
+@media(max-width:768px){.page-nav-links{display:none}.site-footer .footer-top{grid-template-columns:1fr 1fr}}
 </style>
-<?php include __DIR__ . '/_styles.php'; ?>
 </head>
 <body>
 
 <nav class="page-nav">
   <a href="/"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></a>
   <div class="page-nav-links">
-    <a>Digital</a>
+    <a href="/digital">Digital</a>
     <a>AI</a>
     <a>Data</a>
     <a>Case Studies</a>
