@@ -811,7 +811,7 @@ letter-spacing:0.3px;
     <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
   </div>
   <div class="top-nav-links">
-    <a>Digital</a>
+    <a href="/digital">Digital</a>
     <a>AI</a>
     <a>Data</a>
     <a>Case Studies</a>

@@ -67,16 +67,7 @@ body{
 body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(15,23,42,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 
 /* Nav */
-.page-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.7);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.page-nav img{height:40px;width:auto;opacity:0.92}
-.page-nav-links{display:flex;gap:28px;align-items:center}
-.page-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
-.page-nav-links a:not([href]){cursor:default}
-.page-nav-links a[href]{cursor:pointer}
-.page-nav-links a[href]:hover{color:#4f46e5}
-.page-nav-links a.active{color:#4f46e5;font-weight:600}
-
-/* Contact layout */
+/* Nav via shared _styles.php */
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{text-align:left}
 .cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
@@ -124,6 +115,7 @@ body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(
 .form-msg.error{background:#fef2f2;color:#dc2626}
 @media(max-width:768px){.contact-inner{grid-template-columns:1fr;gap:36px}.contact-right{padding:28px 20px}.form-row-2{grid-template-columns:1fr;gap:12px}.page-nav-links{gap:16px}}
 </style>
+<?php include __DIR__ . '/_styles.php'; ?>
 </head>
 <body>
 
@@ -250,5 +242,7 @@ function selectService(el, val) {
   document.getElementById('service-val').value = val;
 }
 </script>
+<?php include __DIR__ . '/_footer.php'; ?>
+
 </body>
 </html>

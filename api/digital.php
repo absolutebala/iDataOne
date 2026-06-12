@@ -14,16 +14,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 
-/* ── Nav ── */
-.nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.nav a.logo{text-decoration:none;flex-shrink:0}
-.nav a.logo img{height:40px;width:auto;opacity:0.92}
-.nav-links{display:flex;gap:28px;align-items:center}
-.nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s}
-.nav-links a:not([href]){cursor:default}
-.nav-links a[href]:hover{color:#4f46e5}
-.nav-links a.active{color:#4f46e5;font-weight:600}
-
+/* Nav via _styles.php */
 /* ── Banner ── */
 .banner{
   min-height:100vh;
@@ -100,38 +91,25 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .badge-soon{background:#f8fafc;color:#94a3b8}
 
 /* ── CTA ── */
-.cta-section{background:#0f172a;padding:80px 32px;position:relative;overflow:hidden}
-.cta-section::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(99,102,241,0.2),transparent 65%);pointer-events:none}
-.cta-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
-.cta-icon{width:64px;height:64px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-.cta-icon svg{width:26px;height:26px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.cta-heading{font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:10px;line-height:1.2}
+.cta-section{background:#f8fafc;padding:40px 32px 80px}
+.cta-card{max-width:900px;margin:0 auto;background:#0f172a;border-radius:28px;padding:56px 60px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.cta-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(99,102,241,0.2),transparent 60%);pointer-events:none}
+.cta-card-left{position:relative;z-index:1}
+.cta-icon{width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.cta-icon svg{width:22px;height:22px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cta-heading{font-size:clamp(22px,2.5vw,32px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:10px;line-height:1.2}
 .cta-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cta-sub{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7}
-.cta-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.cta-sub{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7}
+.cta-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-end;position:relative;z-index:1}
 .btn-cta-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#4f46e5,#7c3aed);color:#fff;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:opacity 0.2s}
 .btn-cta-primary:hover{opacity:0.9}
-.btn-cta-secondary{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s}
-.btn-cta-secondary:hover{color:#fff}
+.btn-cta-secondary{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.btn-cta-secondary:hover{color:rgba(255,255,255,0.8)}
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-/* ── Footer ── */
-.footer{background:#0a0d18;padding:56px 32px 32px}
-.footer-inner{max-width:1140px;margin:0 auto}
-.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.footer-logo{margin-bottom:12px}
-.footer-logo img{height:36px;opacity:0.85;filter:brightness(0) invert(1)}
-.footer-tagline{font-size:12.5px;color:rgba(255,255,255,0.3);line-height:1.65}
-.footer-col-title{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
-.footer-links a{font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
-.footer-links a:hover{color:rgba(255,255,255,0.8)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
-.footer-copy{font-size:12px;color:rgba(255,255,255,0.2)}
-.footer-email{font-size:13px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
-.footer-email:hover{color:rgba(255,255,255,0.7)}
+/* Footer via _styles.php */
 
-/* ── Responsive ── */
+/* Responsive */
 @media(max-width:768px){
   .banner-inner{grid-template-columns:1fr}
   .banner-illus{display:none}
@@ -143,24 +121,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .products-grid{grid-template-columns:1fr}
   .cta-inner{grid-template-columns:1fr}
   .cta-btns{align-items:flex-start}
-  .footer-top{grid-template-columns:1fr 1fr}
-  .nav-links{display:none}
 }
 </style>
+<?php include __DIR__ . "/_styles.php"; ?>
 </head>
 <body>
 
 <!-- ── Nav ── -->
-<nav class="nav">
-  <a href="/" class="logo"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></a>
-  <div class="nav-links">
-    <a href="/digital" class="active">Digital</a>
-    <a>AI</a>
-    <a>Data</a>
-    <a>Case Studies</a>
-    <a href="/contact">Contact</a>
-  </div>
-</nav>
+<?php $current_page = 'digital'; include __DIR__ . '/_nav.php'; ?>
 
 <!-- ── Banner ── -->
 <section class="banner">
@@ -461,11 +429,11 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- ── CTA ── -->
 <section class="cta-section">
-  <div class="cta-inner">
-    <div>
+  <div class="cta-card">
+    <div class="cta-card-left">
       <div class="cta-icon"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
       <h2 class="cta-heading">Ready To Build Something <em>Intelligent?</em></h2>
-      <p class="cta-sub">Whether you're launching a startup, modernising an enterprise platform, or building a SaaS product, we can help.</p>
+      <p class="cta-sub">Whether you're launching a startup, modernising an enterprise platform, or building a SaaS product — we can help you get there.</p>
     </div>
     <div class="cta-btns">
       <a href="/contact" class="btn-cta-primary">Talk To Our Experts <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -475,46 +443,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </section>
 
 <!-- ── Footer ── -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-logo"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></div>
-        <p class="footer-tagline">Innovate. Integrate. Elevate.<br>Building intelligent digital products<br>powered by AI and data.</p>
-      </div>
-      <div>
-        <div class="footer-col-title">Services</div>
-        <ul class="footer-links">
-          <li><a href="/digital">Digital Products</a></li>
-          <li><a>AI Solutions</a></li>
-          <li><a>Data Intelligence</a></li>
-          <li><a>Custom Software</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Products</div>
-        <ul class="footer-links">
-          <li><a href="https://mealmate.idataone.com" target="_blank">MealMate</a></li>
-          <li><a>aiChat</a></li>
-          <li><a>DatInsights</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Company</div>
-        <ul class="footer-links">
-          <li><a href="/">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/mealmate/privacy.html">Privacy Policy</a></li>
-          <li><a href="mailto:info@idataone.com" class="footer-email">info@idataone.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© <?php echo date('Y'); ?> iDataOne. All rights reserved.</div>
-      <a href="mailto:info@idataone.com" class="footer-email">info@idataone.com</a>
-    </div>
-  </div>
-</footer>
+<?php include __DIR__ . '/_footer.php'; ?>
 
 </body>
 </html>
