@@ -9,8 +9,8 @@
         <div class="footer-col-title">Services</div>
         <ul class="footer-links">
           <li><a href="/digital">Digital Products</a></li>
-          <li><a>AI Solutions</a></li>
-          <li><a>Data Intelligence</a></li>
+          <li><a href="/ai">AI Solutions</a></li>
+          <li><a href="/data">Data Intelligence</a></li>
           <li><a>Custom Software</a></li>
         </ul>
       </div>
