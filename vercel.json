@@ -6,7 +6,7 @@
     "api/digital.php": { "runtime": "vercel-php@0.9.0" },
     "api/ai.php": { "runtime": "vercel-php@0.9.0" },
     "api/data.php": { "runtime": "vercel-php@0.9.0" },
-    "api/cases.php": { "runtime": "vercel-php@0.9.0" }
+    "api/case-studies.php": { "runtime": "vercel-php@0.9.0" }
   },
   "rewrites": [
     {"has":[{"type":"host","value":"mealmate.idataone.com"}],"source":"/assets/(.*)","destination":"/assets/$1"},
@@ -20,7 +20,7 @@
     {"source":"/digital","destination":"/api/digital.php"},
     {"source":"/ai","destination":"/api/ai.php"},
     {"source":"/data","destination":"/api/data.php"},
-    {"source":"/case-studies","destination":"/api/cases.php"},
+    {"source":"/case-studies","destination":"/api/case-studies.php"},
     {"source":"/(.*)","destination":"/api/index.php"}
   ]
 }
