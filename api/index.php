@@ -812,8 +812,8 @@ letter-spacing:0.3px;
   </div>
   <div class="top-nav-links">
     <a href="/digital">Digital</a>
-    <a>AI</a>
-    <a>Data</a>
+    <a href="/ai">AI</a>
+    <a href="/data">Data</a>
     <a>Case Studies</a>
     <a href="/contact">Contact</a>
   </div>
