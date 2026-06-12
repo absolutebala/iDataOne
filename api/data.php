@@ -94,16 +94,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </head>
 <body>
 
-<nav class="site-nav">
-  <a href="/" class="nav-logo"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></a>
-  <div class="nav-links">
-    <a href="/digital">Digital</a>
-    <a href="/ai">AI</a>
-    <a href="/data" class="active">Data</a>
-    <a>Case Studies</a>
-    <a href="/contact">Contact</a>
-  </div>
-</nav>
+<?php $current_page = 'data'; include __DIR__ . '/_nav.php'; ?>
 
 <!-- Banner -->
 <section class="banner">
