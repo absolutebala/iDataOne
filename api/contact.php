@@ -60,14 +60,7 @@ body{
 }
 
 /* Nav */
-.page-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.page-nav a.logo{text-decoration:none;flex-shrink:0}
-.page-nav a.logo img{height:40px;width:auto;opacity:0.92}
-.page-nav-links{display:flex;gap:28px;align-items:center}
-.page-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
-.page-nav-links a[href]{cursor:pointer}
-.page-nav-links a[href]:hover{color:#4f46e5}
-.page-nav-links a.active{color:#4f46e5;font-weight:600}
+/* Nav via _nav.php */
 
 /* Contact layout */
 .contact-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px}
@@ -125,16 +118,7 @@ body{
 </head>
 <body>
 
-<nav class="page-nav">
-  <a href="/" class="logo"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></a>
-  <div class="page-nav-links">
-    <a href="/digital">Digital</a>
-    <a href="/ai">AI</a>
-    <a href="/data">Data</a>
-    <a>Case Studies</a>
-    <a class="active" href="/contact">Contact</a>
-  </div>
-</nav>
+<?php $current_page = 'contact'; include __DIR__ . '/_nav.php'; ?>
 
 <div class="contact-wrap">
   <div class="contact-inner">
