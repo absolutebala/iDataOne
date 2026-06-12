@@ -100,7 +100,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 /* ── CTA ── */
 .cta-section{background:#f8fafc;padding:40px 32px 80px}
-.cta-card{max-width:900px;margin:0 auto;background:#0f172a;border-radius:28px;padding:56px 60px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.cta-card{max-width:900px;margin:0 auto;background:#0f172a;border-radius:28px;padding:34px 48px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
 .cta-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(99,102,241,0.2),transparent 60%);pointer-events:none}
 .cta-card-left{position:relative;z-index:1}
 .cta-icon{width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
@@ -305,6 +305,63 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           </svg>
         </div>
       </div>
+
+      <div class="story-card">
+        <div>
+          <div class="story-tag">Mobile Application</div>
+          <div class="story-title">Launching a Cross-Platform Mobile App in 90 Days</div>
+          <div class="story-desc">We designed and built a consumer mobile app for iOS and Android, going from wireframes to App Store launch in 90 days with a 4.8 star rating from day one.</div>
+          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="48" y="12" width="64" height="96" rx="10" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+            <rect x="54" y="22" width="52" height="76" rx="6" fill="rgba(248,250,252,0.9)"/>
+            <rect x="70" y="15" width="20" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
+            <rect x="58" y="28" width="44" height="6" rx="3" fill="rgba(124,58,237,0.25)"/>
+            <rect x="58" y="40" width="44" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="58" y="50" width="44" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
+            <rect x="58" y="62" width="20" height="14" rx="5" fill="rgba(124,58,237,0.18)"/>
+            <rect x="82" y="62" width="20" height="14" rx="5" fill="rgba(20,184,166,0.15)"/>
+            <circle cx="72" cy="96" r="4" fill="rgba(124,58,237,0.3)"/>
+            <circle cx="84" cy="96" r="4" fill="rgba(15,23,42,0.08)"/>
+            <circle cx="96" cy="96" r="4" fill="rgba(15,23,42,0.08)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div>
+          <div class="story-tag">Web Application</div>
+          <div class="story-title">Building a Real-Time Analytics Dashboard for a FinTech Startup</div>
+          <div class="story-desc">We built a high-performance web application with real-time data visualisation, role-based access and automated reporting that reduced manual work by 70%.</div>
+          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="8" y="8" width="144" height="20" rx="8" fill="rgba(20,184,166,0.08)"/>
+            <rect x="8" y="18" width="144" height="10" fill="rgba(20,184,166,0.08)"/>
+            <circle cx="20" cy="18" r="3" fill="rgba(244,63,94,0.4)"/>
+            <circle cx="30" cy="18" r="3" fill="rgba(245,158,11,0.4)"/>
+            <circle cx="40" cy="18" r="3" fill="rgba(20,184,166,0.4)"/>
+            <rect x="16" y="36" width="36" height="20" rx="4" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <rect x="18" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="18" y="47" width="28" height="6" rx="2" fill="rgba(20,184,166,0.3)"/>
+            <rect x="58" y="36" width="36" height="20" rx="4" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="60" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="60" y="47" width="28" height="6" rx="2" fill="rgba(99,102,241,0.25)"/>
+            <rect x="100" y="36" width="44" height="20" rx="4" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
+            <rect x="102" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="102" y="47" width="34" height="6" rx="2" fill="rgba(245,158,11,0.3)"/>
+            <rect x="16" y="64" width="128" height="38" rx="4" fill="rgba(248,250,252,0.8)"/>
+            <polyline points="22,92 36,80 50,84 64,72 78,66 92,70 106,60 120,64 134,56" stroke="rgba(20,184,166,0.6)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="22,92 36,80 50,84 64,72 78,66 92,70 106,60 120,64 134,56 134,100 22,100" fill="rgba(20,184,166,0.05)"/>
+          </svg>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
