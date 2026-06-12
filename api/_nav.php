@@ -18,7 +18,7 @@ $current_page = $current_page ?? '';
     <a href="/digital" <?php echo $current_page==='digital'?'class="active"':''; ?>>Digital</a>
     <a href="/ai" <?php echo $current_page==='ai'?'class="active"':''; ?>>AI</a>
     <a href="/data" <?php echo $current_page==='data'?'class="active"':''; ?>>Data</a>
-    <a>Case Studies</a>
+    <a href="/case-studies" <?php echo $current_page==='cases'?'class="active"':''; ?>>Case Studies</a>
     <a href="/contact" <?php echo $current_page==='contact'?'class="active"':''; ?>>Contact</a>
   </div>
 </nav>

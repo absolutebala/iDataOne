@@ -814,7 +814,7 @@ letter-spacing:0.3px;
     <a href="/digital">Digital</a>
     <a href="/ai">AI</a>
     <a href="/data">Data</a>
-    <a>Case Studies</a>
+    <a href="/case-studies">Case Studies</a>
     <a href="/contact">Contact</a>
   </div>
 </div>
