@@ -467,19 +467,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   </div>
 </div>
 
-<!-- ── Mid CTA ── -->
-<section class="mid-cta">
-  <div class="mid-cta-inner">
-    <div class="mid-cta-tag">See Yourself Here?</div>
-    <h2 class="mid-cta-h2">Your Business Could Be<br>Our Next <em>Success Story</em></h2>
-    <p class="mid-cta-sub">Every project starts with a conversation. Tell us about your challenge and we'll show you how we can help — no commitment required.</p>
-    <div class="mid-cta-btns">
-      <a href="/contact" class="btn-primary">Book a Free Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a href="/contact" class="btn-secondary">Talk to Our Team</a>
-    </div>
-  </div>
-</section>
-
 <!-- ── Bottom CTA ── -->
 <section class="bottom-cta">
   <div class="bottom-cta-card">
