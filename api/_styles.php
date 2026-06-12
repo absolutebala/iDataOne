@@ -1,14 +1,4 @@
 <style>
-/* ── Shared Nav ── */
-.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.site-nav .nav-logo{text-decoration:none;flex-shrink:0}
-.site-nav .nav-logo img{height:40px;width:auto;opacity:0.92}
-.site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
-.site-nav .nav-links a[href]{cursor:pointer}
-.site-nav .nav-links a[href]:hover{color:#4f46e5}
-.site-nav .nav-links a.active{color:#4f46e5;font-weight:600;cursor:pointer}
-
 /* ── Shared Footer ── */
 .site-footer{background:#0a0d18;padding:56px 32px 32px}
 .site-footer .footer-inner{max-width:1140px;margin:0 auto}
@@ -25,9 +15,5 @@
 .site-footer .footer-copy{font-size:12px;color:rgba(255,255,255,0.2)}
 .site-footer .footer-email{font-size:13px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
 .site-footer .footer-email:hover{color:rgba(255,255,255,0.7)}
-
-@media(max-width:768px){
-  .site-nav .nav-links{display:none}
-  .site-footer .footer-top{grid-template-columns:1fr 1fr}
-}
+@media(max-width:768px){.site-footer .footer-top{grid-template-columns:1fr 1fr}}
 </style>
