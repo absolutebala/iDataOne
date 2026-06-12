@@ -129,8 +129,8 @@ body{
   <a href="/" class="logo"><img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne"></a>
   <div class="page-nav-links">
     <a href="/digital">Digital</a>
-    <a>AI</a>
-    <a>Data</a>
+    <a href="/ai">AI</a>
+    <a href="/data">Data</a>
     <a>Case Studies</a>
     <a class="active" href="/contact">Contact</a>
   </div>
