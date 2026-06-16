@@ -427,9 +427,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-live">Live</div>
-          <div class="product-card-title">MealMate</div>
-          <div class="product-card-desc">Never wonder what to cook again. AI-powered meal planning personalised to your family's health conditions, dietary preferences and nutritional needs.</div>
-          <a href="https://mealmate.idataone.com" target="_blank" class="product-card-link">Explore MealMate <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="product-card-title">Sportfolio</div>
+          <div class="product-card-desc">Never wonder what to cook again. Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
+          <span style="display:inline-block;padding:4px 12px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
         </div>
       </div>
 
@@ -451,8 +451,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-soon">Coming Soon</div>
-          <div class="product-card-title">aiChat</div>
-          <div class="product-card-desc">Always on. Always intelligent. AI agents for websites and business operations that handle queries, qualify leads and automate support workflows.</div>
+          <div class="product-card-title">aiDesker</div>
+          <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
           <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>

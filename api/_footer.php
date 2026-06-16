@@ -17,8 +17,8 @@
       <div>
         <div class="footer-col-title">Products</div>
         <ul class="footer-links">
-          <li><a href="https://mealmate.idataone.com" target="_blank">MealMate</a></li>
-          <li><a>aiChat</a></li>
+          <li><a>Sportfolio</a></li>
+          <li><a>aiDesker</a></li>
           <li><a>DatInsights</a></li>
         </ul>
       </div>

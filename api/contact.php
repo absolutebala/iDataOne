@@ -175,8 +175,8 @@ body{
             <div class="service-pill" onclick="selectService(this,'Other')">Other</div>
           </div>
           <div class="service-pills" id="svc-products" style="display:none">
-            <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
-            <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
+            <div class="service-pill" onclick="selectService(this,'Sportfolio')">Sportfolio</div>
+            <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
             <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
           </div>
         </div>

@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
 <meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
-<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, MealMate, aiChat, DatInsights">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Sportfolio, aiDesker, DatInsights">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
@@ -958,17 +958,17 @@ letter-spacing:0.3px;
 
   <h2>Products from iDataOne</h2>
 
-  <h3>MealMate — AI Meal Planning App</h3>
-  <p>Never wonder what to cook again. MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
+  <h3>Sportfolio — AI Meal Planning App</h3>
+  <p>Never wonder what to cook again. Sportfolio recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
 
-  <h3>aiChat — AI Customer Service Agents</h3>
-  <p>Always on. Always intelligent. AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock. Coming Soon.</p>
+  <h3>aiDesker — AI Customer Service Agents</h3>
+  <p>Always on. Always intelligent. AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock. Coming Soon.</p>
 
   <h3>DatInsights — Business Intelligence Platform</h3>
   <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
 
   <h2>Contact iDataOne — Book a Free Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, MealMate, aiChat, DatInsights.</p>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Sportfolio, aiDesker, DatInsights.</p>
 
 </div>
 
@@ -1181,8 +1181,8 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 MealMate</div>
-    <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
+    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 Sportfolio</div>
+    <div class="cap-tab" onclick="prodTab(1,this)">02 aiDesker</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
   <div class="cap-slides" id="prod-slides">
@@ -1190,23 +1190,17 @@ letter-spacing:0.3px;
     <div class="cap-slide active">
       <div class="cap-card rose">
         <div class="cap-left">
-          <div class="cap-card-title">MealMate</div>
-          <div class="cap-card-outcome">Never Wonder What to Cook Again.</div>
-          <div class="cap-card-desc">MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs—making everyday cooking simpler and healthier.</div>
+          <div class="cap-card-title">Sportfolio</div>
+          <div class="cap-card-outcome">Your sport. Your story. Forever.</div>
+          <div class="cap-card-desc">Record every match. Build your career profile. Connect with your sports community — for life.</div>
           <ul class="cap-checklist">
-            <li>AI Meal Suggestions</li><li>Weekly Planning</li>
-            <li>Smart Grocery Lists</li><li>Family Preferences</li>
+            <li>Match Records</li><li>Career Profile</li>
+            <li>Community</li><li>Sports Network</li>
           </ul>
-          <div style="display:flex;gap:8px;align-items:center;margin-bottom:14px">
-            <a href="#" title="Download on App Store" style="width:36px;height:36px;border-radius:9px;background:#0f172a;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity 0.2s;flex-shrink:0" onmouseover="this.style.opacity=0.75" onmouseout="this.style.opacity=1">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            </a>
-            <a href="#" title="Get it on Google Play" style="width:36px;height:36px;border-radius:9px;background:#0f172a;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity 0.2s;flex-shrink:0" onmouseover="this.style.opacity=0.75" onmouseout="this.style.opacity=1">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M3.18 23.76c.3.17.64.22.97.15l13.1-7.56-2.9-2.9-11.17 10.31zm-1.7-20.3C1.18 3.9 1 4.4 1 5v14c0 .6.18 1.1.48 1.54l.08.08 7.84-7.84v-.18L1.48 3.46zm18.52 8.35l-2.66-1.53-3.16 3.16 3.16 3.16 2.68-1.55c.76-.44.76-1.8-.02-2.24zM4.15.24L17.25 7.8l-2.9 2.9L4.15.24C4.48-.09 4.99-.08 5.35.11z"/></svg>
-            </a>
-            <a href="https://mealmate.idataone.com" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:9px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div style="margin-bottom:14px">
+            <span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
           </div>
-          <div class="cap-footer">
+                    <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
               <span class="cap-nav-count">01 / 03</span>
@@ -1246,9 +1240,9 @@ letter-spacing:0.3px;
     <div class="cap-slide">
       <div class="cap-card sky">
         <div class="cap-left">
-          <div class="cap-card-title">aiChat</div>
+          <div class="cap-card-title">aiDesker</div>
           <div class="cap-card-outcome">Always on. Always intelligent.</div>
-          <div class="cap-card-desc">AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock.</div>
+          <div class="cap-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
           <ul class="cap-checklist">
             <li>24/7 AI Agents</li><li>Lead Qualification</li>
             <li>Auto Responses</li><li>CRM Integration</li>
@@ -1422,8 +1416,8 @@ letter-spacing:0.3px;
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
-        <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
-        <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
+        <div class="service-pill" onclick="selectService(this,'Sportfolio')">Sportfolio</div>
+        <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
         <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
       </div>
     </div>
@@ -1579,7 +1573,7 @@ letter-spacing:0.3px;
             <div class="m-icon rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
             <span class="m-num">01</span>
           </div>
-          <div class="m-card-title">MealMate</div>
+          <div class="m-card-title">Sportfolio</div>
           <div class="m-card-outcome">Smart meal planning for families.</div>
           <div class="m-card-desc">AI-powered meal planning — personalised, smart, and effortless.</div>
           <div class="m-card-footer">
@@ -1591,7 +1585,7 @@ letter-spacing:0.3px;
             <div class="m-icon sky"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
             <span class="m-num">02</span>
           </div>
-          <div class="m-card-title">aiChat</div>
+          <div class="m-card-title">aiDesker</div>
           <div class="m-card-outcome">Always on. Always intelligent.</div>
           <div class="m-card-desc">AI agents for websites and business operations — 24/7.</div>
           <div class="m-card-footer">
