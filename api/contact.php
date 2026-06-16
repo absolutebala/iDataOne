@@ -156,12 +156,12 @@ body{
         <input type="hidden" name="form_submit" value="1">
         <input type="hidden" name="service" id="service-val" value="">
         <div class="form-row-2">
-          <div class="cfield"><label>Full Name</label><input type="text" name="name" placeholder="Full Name" required></div>
-          <div class="cfield"><label>Company</label><input type="text" name="company" placeholder="Company Name"></div>
+          <div class="cfield"><label></label><input type="text" name="name" placeholder="Full Name" required></div>
+          <div class="cfield"><label></label><input type="text" name="company" placeholder="Company Name"></div>
         </div>
         <div class="form-row-2">
-          <div class="cfield"><label>Work Email</label><input type="email" name="email" placeholder="Work Email" required></div>
-          <div class="cfield"><label>Phone</label><input type="tel" name="phone" placeholder="Phone Number"></div>
+          <div class="cfield"><label></label><input type="email" name="email" placeholder="Work Email" required></div>
+          <div class="cfield"><label></label><input type="tel" name="phone" placeholder="Phone Number"></div>
         </div>
         <div class="service-section">
           <div style="display:flex;gap:8px;margin-bottom:12px">
@@ -172,17 +172,17 @@ body{
             <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
             <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
             <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
-            <div class="service-pill" onclick="selectService(this,'Other')">Other</div>
+            <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
           </div>
           <div class="service-pills" id="svc-products" style="display:none">
-            <div class="service-pill" onclick="selectService(this,'Sportfolio')">Sportfolio</div>
-            <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
+            <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
+            <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
             <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
           </div>
         </div>
         <div class="form-row-2" style="margin-bottom:16px">
           <div class="cfield" style="grid-column:1/-1">
-            <label>Project Details</label>
+            <label></label>
             <textarea name="message" rows="2" placeholder="Project Details"></textarea>
           </div>
         </div>
