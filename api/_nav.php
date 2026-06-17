@@ -8,6 +8,7 @@
 .site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
 .site-nav .nav-links a[href]{cursor:pointer}
 .site-nav .nav-links a[href]:hover{color:#4f46e5}
+.site-nav .nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
 .site-nav .nav-links a.active{color:#4f46e5;font-weight:600}
 .nav-ham{display:none;position:fixed;top:14px;right:16px;z-index:201;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
 .nav-ham span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}

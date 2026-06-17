@@ -575,6 +575,7 @@ transform:scale(1.4);
 .top-nav-links a:not([href]):hover{color:#475569}
 .top-nav-links a[href]{cursor:pointer;color:#475569}
 .top-nav-links a[href]:hover{color:#4f46e5}
+.top-nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
 .top-nav-links a.active{color:#4f46e5;font-weight:600}
 
 /* Tamil signature */
