@@ -114,7 +114,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-cta-secondary{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
 .btn-cta-secondary:hover{color:rgba(255,255,255,0.8)}
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:768px){.cta-card{grid-template-columns:1fr;padding:32px 24px}.cta-btns{align-items:flex-start}}
 
 
 /* Responsive */
@@ -127,7 +126,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .process-steps{flex-direction:column;gap:32px}
   .process-steps::before{display:none}
   .products-grid{grid-template-columns:1fr}
-  .cta-inner{grid-template-columns:1fr}
+  .cta-card{grid-template-columns:1fr;padding:28px 24px}
   .cta-btns{align-items:flex-start}
 }
 </style>
