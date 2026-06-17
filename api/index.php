@@ -601,224 +601,78 @@ letter-spacing:0.3px;
 }
 
 /* ─── MOBILE ─────────────────────────────────────────── */
-@media(max-width:768px){
 
-/* Hide desktop presentation, show mobile */
-#presentation{display:none}
-#mobile-deck{display:block !important}
-.dots{display:none}
-.why-bottom,.cap-why-cta{display:none}
-
-/* Mobile deck base */
-#mobile-deck{
-  position:fixed;
-  inset:0;
-  overflow:hidden;
-}
 
 /* Sticky section label */
-.m-sticky{
-  position:fixed;
-  top:0;left:0;right:0;
-  height:48px;
-  background:rgba(248,250,252,0.92);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(226,232,240,0.7);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index:50;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  color:#6366f1;
-  transition:opacity 0.3s;
-}
-.m-sticky.hidden{opacity:0;pointer-events:none}
 
 /* Mobile slides */
-.m-slides{
-  position:absolute;
-  inset:0;
-}
 
-.m-slide{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:64px 16px 32px;
-  opacity:0;
-  transform:translateY(40px) scale(.98);
-  transition:all .7s ease;
-  pointer-events:none;
-  overflow:hidden;
-}
 
-.m-slide.active{
-  opacity:1;
-  transform:translateY(0) scale(1);
-  pointer-events:auto;
-}
 
 /* Mobile hero */
-.m-hero{text-align:center}
-.m-logo{width:180px;margin-bottom:24px;animation:float 5s ease-in-out infinite;filter:drop-shadow(0 10px 24px rgba(99,102,241,0.12))}
-.m-h1{font-size:30px;font-weight:700;letter-spacing:-1px;line-height:1.15;color:#0f172a;margin-bottom:14px}
-.m-lead{font-size:15px;color:#475569;line-height:1.7;margin-bottom:20px}
-.m-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:24px}
-.m-pill{padding:7px 13px;border-radius:999px;background:rgba(255,255,255,0.85);border:1px solid rgba(99,102,241,0.15);color:#4f46e5;font-size:12px;font-weight:600}
-.m-explore{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366f1;opacity:0.7;animation:bounce 2s ease-in-out infinite;cursor:pointer}
 
 /* Mobile cards container — 2 visible + peek */
-.m-cards{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
 
 /* Individual mobile card */
-.m-card{
-  background:rgba(255,255,255,0.65);
-  border-radius:16px;
-  padding:18px 16px 14px;
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
-  position:relative;
-  overflow:hidden;
-}
 .m-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .m-card:active::before{left:130%}
 
-.m-card.teal{border:1px solid rgba(20,184,166,0.25)}
-.m-card.violet{border:1px solid rgba(124,58,237,0.2)}
-.m-card.amber{border:1px solid rgba(245,158,11,0.22)}
-.m-card.indigo{border:1px solid rgba(79,70,229,0.22)}
-.m-card.sky{border:1px solid rgba(14,165,233,0.2)}
-.m-card.emerald{border:1px solid rgba(16,185,129,0.2)}
-.m-card.rose{border:1px solid rgba(244,63,94,0.2)}
 
-.m-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
-.m-icon{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.m-icon svg{width:18px;height:18px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.m-icon.teal{background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid rgba(20,184,166,0.2)}
-.m-icon.teal svg{stroke:#0d9488}
-.m-icon.violet{background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid rgba(124,58,237,0.18)}
-.m-icon.violet svg{stroke:#7c3aed}
-.m-icon.amber{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid rgba(245,158,11,0.2)}
-.m-icon.amber svg{stroke:#d97706}
-.m-icon.indigo{background:linear-gradient(135deg,#eef2ff,#e0e7ff);border:1px solid rgba(79,70,229,0.18)}
-.m-icon.indigo svg{stroke:#4f46e5}
-.m-icon.sky{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid rgba(14,165,233,0.18)}
-.m-icon.sky svg{stroke:#0ea5e9}
-.m-icon.emerald{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1px solid rgba(16,185,129,0.18)}
-.m-icon.emerald svg{stroke:#10b981}
-.m-icon.rose{background:linear-gradient(135deg,#fff1f2,#ffe4e6);border:1px solid rgba(244,63,94,0.18)}
-.m-icon.rose svg{stroke:#f43f5e}
 
-.m-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#94a3b8}
-.m-card-title{font-size:15px;font-weight:700;color:#0f172a;letter-spacing:-0.3px;margin-bottom:4px}
-.m-card-outcome{font-size:11px;font-weight:600;margin-bottom:8px}
-.teal .m-card-outcome,.m-card.teal .m-card-outcome{color:#0d9488}
-.violet .m-card-outcome,.m-card.violet .m-card-outcome{color:#7c3aed}
-.amber .m-card-outcome,.m-card.amber .m-card-outcome{color:#d97706}
-.indigo .m-card-outcome,.m-card.indigo .m-card-outcome{color:#4f46e5}
-.sky .m-card-outcome,.m-card.sky .m-card-outcome{color:#0ea5e9}
-.emerald .m-card-outcome,.m-card.emerald .m-card-outcome{color:#10b981}
-.rose .m-card-outcome,.m-card.rose .m-card-outcome{color:#f43f5e}
-.m-card-desc{font-size:12px;color:#64748b;line-height:1.6;margin-bottom:10px}
-.m-card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(226,232,240,0.8)}
-.m-tags{display:flex;flex-wrap:wrap;gap:5px}
-.m-tag{font-size:10px;font-weight:600;border-radius:999px;padding:3px 8px}
-.m-card.teal .m-tag{color:#0d9488;background:#f0fdfa}
-.m-card.violet .m-tag{color:#7c3aed;background:#f5f3ff}
-.m-card.amber .m-tag{color:#d97706;background:#fffbeb}
-.m-card.indigo .m-tag{color:#4f46e5;background:#eef2ff}
-.m-card.sky .m-tag{color:#0ea5e9;background:#f0f9ff}
-.m-card.emerald .m-tag{color:#10b981;background:#ecfdf5}
-.m-card.rose .m-tag{color:#f43f5e;background:#fff1f2}
-
+.teal .m-card-outcome,.m-card.teal .violet .m-card-outcome,.m-card.violet .amber .m-card-outcome,.m-card.amber .indigo .m-card-outcome,.m-card.indigo .sky .m-card-outcome,.m-card.sky .emerald .m-card-outcome,.m-card.emerald .rose .m-card-outcome,.m-card.rose .m-card.teal .m-card.violet .m-card.amber .m-card.indigo .m-card.sky .m-card.emerald .m-card.rose 
 /* Peek indicator */
-.m-peek{
-  width:100%;
-  text-align:center;
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#cbd5e1;
-  margin-top:4px;
-}
 
 /* Mobile dots */
-.m-dots{
-  position:fixed;
-  bottom:24px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  gap:8px;
-  z-index:100;
-}
-.m-dot{
-  width:6px;height:6px;
-  border-radius:50%;
-  background:#cbd5e1;
-  transition:background 0.3s,transform 0.3s;
-}
-.m-dot.active{
-  background:#4f46e5;
-  transform:scale(1.4);
-}
 
 /* Mobile contact form */
-.m-contact{width:100%;max-width:400px;text-align:left}
-.m-contact-label{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:12px}
-.m-contact-title{font-size:28px;font-weight:700;letter-spacing:-1px;line-height:1.1;color:#0f172a;margin-bottom:6px}
-.m-contact-title em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.m-contact-sub{font-size:13px;color:#94a3b8;margin-bottom:20px}
-.m-form-panel{background:rgba(255,255,255,0.7);border:1px solid rgba(226,232,240,0.9);border-radius:20px;padding:20px 18px;backdrop-filter:blur(16px)}
-.m-field{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
-.m-field label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8}
-.m-field input,.m-field textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:15px;color:#0f172a;outline:none;-webkit-appearance:none;transition:border-color 0.2s}
-.m-field input:focus,.m-field textarea:focus{border-bottom-color:#4f46e5}
-.m-field input::placeholder,.m-field textarea::placeholder{color:#cbd5e1;font-size:14px}
-.m-field textarea{resize:none}
-.m-svc-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;margin-bottom:8px}
-.m-svc-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-.m-svc-pill{padding:7px 12px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s}
-.m-svc-pill:active,.m-svc-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
-.m-submit{width:100%;padding:15px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;margin-top:4px}
-.m-form-note{text-align:center;font-size:11px;color:#cbd5e1;margin-top:8px}
 
 }
 
 /* Hide mobile deck on desktop (outside media query) */
-#mobile-deck{display:none}
 
 
-/* Hamburger */
-.hamburger{display:none;position:fixed;top:14px;right:16px;z-index:200;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.9);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
+/* ── Mobile Responsive ── */
+@media(max-width:768px){
+  /* Unlock scroll */
+  html,body{height:auto!important;overflow-y:auto!important}
+  /* Stack all screens */
+  #presentation{position:relative!important;height:auto!important}
+  .screen{position:relative!important;inset:auto!important;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100svh;height:auto!important;display:flex!important;padding:80px 20px 60px}
+  /* Hide desktop-only elements */
+  .dots,.site-logo.large,.top-nav-links,.why-bottom,.cap-why-cta,.screen-cta,.cap-illus{display:none!important}
+  /* Top nav */
+  .top-nav{height:56px;padding:0 20px}
+  /* Typography */
+  h1{font-size:clamp(32px,9vw,52px)!important;letter-spacing:-1.5px!important}
+  h2{font-size:clamp(26px,7vw,40px)!important;letter-spacing:-1px!important;text-align:center!important}
+  /* Carousel cards - single column */
+  .cap-carousel{max-width:100%!important}
+  .cap-tabs{flex-wrap:wrap;justify-content:center}
+  .cap-card{grid-template-columns:1fr!important;padding:24px 20px!important}
+  .cap-checklist{grid-template-columns:1fr!important}
+  /* Contact screen */
+  .contact-inner{grid-template-columns:1fr!important;gap:24px!important;padding:0!important}
+  .contact-right{padding:24px 18px!important}
+  .cl-heading{font-size:30px!important;letter-spacing:-1px!important}
+  .form-row-2{grid-template-columns:1fr!important;gap:12px!important}
+}
+
+/* Hamburger for homepage */
+.hamburger{display:none;position:fixed;top:14px;right:16px;z-index:201;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
 .hamburger span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mob-menu{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;z-index:199;box-shadow:-4px 0 40px rgba(15,23,42,0.15);transition:right 0.35s cubic-bezier(0.4,0,0.2,1);padding:80px 32px 40px;display:flex;flex-direction:column;gap:8px}
+.mob-menu{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;z-index:200;box-shadow:-4px 0 40px rgba(15,23,42,0.15);transition:right 0.35s cubic-bezier(0.4,0,0.2,1);padding:80px 32px 40px;display:flex;flex-direction:column;gap:4px}
 .mob-menu.open{right:0}
-.mob-menu a{font-size:16px;font-weight:500;color:#475569;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(226,232,240,0.6);display:block;transition:color 0.2s}
+.mob-menu a{font-size:16px;font-weight:500;color:#475569;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(226,232,240,0.6);display:block;transition:color 0.2s}
 .mob-menu a:hover{color:#4f46e5;font-weight:600}
-.mob-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:198;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.mob-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:199;opacity:0;pointer-events:none;transition:opacity 0.3s}
 .mob-overlay.open{opacity:1;pointer-events:auto}
 @media(max-width:768px){.hamburger{display:flex}}
 </style>
 </head>
 <body>
-
 <!-- Hamburger -->
 <div class="hamburger" id="hamburger" onclick="toggleMobMenu()">
   <span></span><span></span><span></span>
@@ -1477,233 +1331,7 @@ letter-spacing:0.3px;
 
 </div>
 
-<!-- ─── MOBILE DECK ─────────────────────────────────── -->
-<div id="mobile-deck">
 
-  <!-- Sticky section label -->
-  <div class="m-sticky hidden" id="m-sticky"></div>
-
-  <div class="m-slides" id="m-slides">
-
-    <!-- M0: Hero -->
-    <div class="m-slide active" data-section="">
-      <div class="m-hero">
-        <img src="/assets/images/iDataOneLogoNoBG.png" class="m-logo" alt="iDataOne">
-        <div class="m-h1">Engineering <span class="highlight">AI-First Products</span> and Intelligent Data Platforms</div>
-        <p class="m-lead">We help businesses build digital products powered by unified data, automation, and AI-driven insights.</p>
-        <div class="m-pills">
-          <span class="m-pill">Custom Software</span>
-          <span class="m-pill">AI Solutions</span>
-          <span class="m-pill">Data Intelligence</span>
-        </div>
-        <div class="m-explore" onclick="mShowSlide(1)">EXPLORE ↓</div>
-      </div>
-    </div>
-
-    <!-- M1: Capabilities cards 1+2 -->
-    <div class="m-slide" data-section="What We Build">
-      <div class="m-cards">
-        <div class="m-card teal">
-          <div class="m-card-top">
-            <div class="m-icon teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-            <span class="m-num">01</span>
-          </div>
-          <div class="m-card-title">Custom Software</div>
-          <div class="m-card-outcome">Ship faster. Scale without limits.</div>
-          <div class="m-card-desc">Web, mobile, and enterprise applications built precisely for your workflows.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">Web Apps</span><span class="m-tag">Mobile</span><span class="m-tag">Enterprise</span></div>
-          </div>
-        </div>
-        <div class="m-card violet">
-          <div class="m-card-top">
-            <div class="m-icon violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
-            <span class="m-num">02</span>
-          </div>
-          <div class="m-card-title">AI Solutions</div>
-          <div class="m-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
-          <div class="m-card-desc">From LLM integrations to intelligent automation — built for production.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">LLM Integration</span><span class="m-tag">AI Agents</span><span class="m-tag">Automation</span></div>
-          </div>
-        </div>
-        <div class="m-peek">swipe for more ↓</div>
-      </div>
-    </div>
-
-    <!-- M2: Capabilities card 3 -->
-    <div class="m-slide" data-section="What We Build">
-      <div class="m-cards">
-        <div class="m-card amber">
-          <div class="m-card-top">
-            <div class="m-icon amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-            <span class="m-num">03</span>
-          </div>
-          <div class="m-card-title">Data Intelligence</div>
-          <div class="m-card-outcome">One truth. Instant clarity.</div>
-          <div class="m-card-desc">Unify fragmented data sources into a single trusted layer — actionable insights that drive real decisions.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">Data Pipelines</span><span class="m-tag">Dashboards</span><span class="m-tag">BI Platforms</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- M3: Why cards 1+2 -->
-    <div class="m-slide" data-section="Why iDataOne">
-      <div class="m-cards">
-        <div class="m-card indigo">
-          <div class="m-card-top">
-            <div class="m-icon indigo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
-            <span class="m-num">01</span>
-          </div>
-          <div class="m-card-title">AI-First Architecture</div>
-          <div class="m-card-outcome">Built in, not bolted on.</div>
-          <div class="m-card-desc">Intelligence built into the foundation, not added after the fact.</div>
-        </div>
-        <div class="m-card teal">
-          <div class="m-card-top">
-            <div class="m-icon teal"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <span class="m-num">02</span>
-          </div>
-          <div class="m-card-title">Unified Data Layer</div>
-          <div class="m-card-outcome">One source of truth.</div>
-          <div class="m-card-desc">One source of truth across every system and team.</div>
-        </div>
-        <div class="m-peek">swipe for more ↓</div>
-      </div>
-    </div>
-
-    <!-- M4: Why cards 3+4 -->
-    <div class="m-slide" data-section="Why iDataOne">
-      <div class="m-cards">
-        <div class="m-card amber">
-          <div class="m-card-top">
-            <div class="m-icon amber"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <span class="m-num">03</span>
-          </div>
-          <div class="m-card-title">Enterprise Grade</div>
-          <div class="m-card-outcome">Security you can depend on.</div>
-          <div class="m-card-desc">Security, scale, and reliability your business can depend on.</div>
-        </div>
-        <div class="m-card violet">
-          <div class="m-card-top">
-            <div class="m-icon violet"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-            <span class="m-num">04</span>
-          </div>
-          <div class="m-card-title">Cloud Native</div>
-          <div class="m-card-outcome">Flexible. Resilient. Future-proof.</div>
-          <div class="m-card-desc">Built for modern infrastructure — flexible, resilient, future-proof.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- M5: Products cards 1+2 -->
-    <div class="m-slide" data-section="In the Lab">
-      <div class="m-cards">
-        <div class="m-card rose">
-          <div class="m-card-top">
-            <div class="m-icon rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
-            <span class="m-num">01</span>
-          </div>
-          <div class="m-card-title">Sportfolio</div>
-          <div class="m-card-outcome">Your sport. Your story. Forever.</div>
-          <div class="m-card-desc">Record every match. Build your career profile. Connect with your sports community — for life.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
-          </div>
-        </div>
-        <div class="m-card sky">
-          <div class="m-card-top">
-            <div class="m-icon sky"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <span class="m-num">02</span>
-          </div>
-          <div class="m-card-title">aiDesker</div>
-          <div class="m-card-outcome">Always on. Always intelligent.</div>
-          <div class="m-card-desc">AI-powered desk assistant for businesses. Automates workflows and keeps your team productive.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
-          </div>
-        </div>
-        <div class="m-peek">swipe for more ↓</div>
-      </div>
-    </div>
-
-    <!-- M6: Products card 3 -->
-    <div class="m-slide" data-section="In the Lab">
-      <div class="m-cards">
-        <div class="m-card emerald">
-          <div class="m-card-top">
-            <div class="m-icon emerald"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-            <span class="m-num">03</span>
-          </div>
-          <div class="m-card-title">DatInsights</div>
-          <div class="m-card-outcome">One view of all your data.</div>
-          <div class="m-card-desc">Unified business intelligence — one view of all your data, all the time.</div>
-          <div class="m-card-footer">
-            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- M7: Contact -->
-    <div class="m-slide" data-section="">
-      <div class="m-contact">
-        <div class="m-contact-label">Get in Touch</div>
-        <div class="m-contact-title">Let's Build Something <em>Intelligent</em></div>
-        <div class="m-contact-sub">Takes less than 60 seconds</div>
-        <div class="m-form-panel">
-
-          <?php if (!empty($form_success)): ?>
-          <div class="form-msg success" style="margin-bottom:12px">✓ Thanks! We'll be in touch within 24 hours.</div>
-          <?php elseif (!empty($form_error)): ?>
-          <div class="form-msg error" style="margin-bottom:12px">Something went wrong. Email info@idataone.com</div>
-          <?php endif; ?>
-
-          <form method="POST" action="#" id="m-contact-form">
-          <input type="hidden" name="form_submit" value="1">
-          <input type="hidden" name="service" id="m-service-val" value="">
-
-          <div class="m-field">
-            <label></label>
-            <input type="text" name="name" placeholder="John Smith" required>
-          </div>
-          <div class="m-field">
-            <label></label>
-            <input type="email" name="email" placeholder="john@acme.com" required>
-          </div>
-          <div class="m-field">
-            <label></label>
-            <input type="text" name="company" placeholder="Acme Corp">
-          </div>
-
-          <div class="m-svc-label">Service</div>
-          <div class="m-svc-pills">
-            <div class="m-svc-pill" onclick="mSelectSvc(this,'Custom Software')">Custom Software</div>
-            <div class="m-svc-pill" onclick="mSelectSvc(this,'AI Solutions')">AI Solutions</div>
-            <div class="m-svc-pill" onclick="mSelectSvc(this,'Data Intelligence')">Data Intelligence</div>
-            <div class="m-svc-pill" onclick="mSelectSvc(this,'Others')">Others</div>
-          </div>
-
-          <div class="m-field">
-            <label></label>
-            <textarea name="message" rows="2" placeholder="Briefly describe your project..."></textarea>
-          </div>
-
-          <button type="submit" class="m-submit">Book Discovery Call →</button>
-          <p class="m-form-note">No spam. No sales pressure. Just a conversation.</p>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /m-slides -->
-
-  <!-- Mobile dots -->
-  <div class="m-dots" id="m-dots"></div>
-
-</div><!-- /mobile-deck -->
 <div class="dots">
 <div class="dot active"></div>
 <div class="dot"></div>
@@ -1800,13 +1428,13 @@ function showScreen(index) {
 
 updateLogo(current);
 
-window.addEventListener('wheel', (e) => {
+if(window.innerWidth > 768) window.addEventListener('wheel', (e) => {
   if (locked) return;
   locked = true;
   if (e.deltaY > 0) showScreen(Math.min(current + 1, screens.length - 1));
   else              showScreen(Math.max(current - 1, 0));
   setTimeout(() => locked = false, 900);
-}, { passive: true });
+}, { passive: true });}
 
 dots.forEach((dot, i) => dot.addEventListener('click', () => showScreen(i)));
 
@@ -1823,66 +1451,9 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowUp'   || e.key === 'PageUp')   showScreen(Math.max(current - 1, 0));
 });
 
-// ── Mobile deck ──────────────────────────────────────
-const isMobile = () => window.innerWidth <= 768;
 
-if (isMobile()) {
-  const mSlides  = document.querySelectorAll('.m-slide');
-  const mDotsWrap = document.getElementById('m-dots');
-  const mSticky  = document.getElementById('m-sticky');
-  let mCurrent   = 0;
-  let mLocked    = false;
 
-  // Build dots
-  mSlides.forEach((_, i) => {
-    const d = document.createElement('div');
-    d.className = 'm-dot' + (i === 0 ? ' active' : '');
-    d.onclick = () => mShowSlide(i);
-    mDotsWrap.appendChild(d);
-  });
-
-  function mShowSlide(index) {
-    if (index < 0 || index >= mSlides.length) return;
-    mSlides[mCurrent].classList.remove('active');
-    document.querySelectorAll('.m-dot')[mCurrent].classList.remove('active');
-    mCurrent = index;
-    mSlides[mCurrent].classList.add('active');
-    document.querySelectorAll('.m-dot')[mCurrent].classList.add('active');
-
-    // Update sticky label
-    const section = mSlides[mCurrent].dataset.section;
-    if (section) {
-      mSticky.textContent = section;
-      mSticky.classList.remove('hidden');
-    } else {
-      mSticky.classList.add('hidden');
-    }
-  }
-
-  window.mShowSlide = mShowSlide;
-
-  // Touch swipe
-  let mStartY = 0;
-  document.addEventListener('touchstart', e => mStartY = e.touches[0].clientY, { passive: true });
-  document.addEventListener('touchend', e => {
-    if (mLocked) return;
-    const diff = mStartY - e.changedTouches[0].clientY;
-    if (Math.abs(diff) < 40) return;
-    mLocked = true;
-    if (diff > 0) mShowSlide(Math.min(mCurrent + 1, mSlides.length - 1));
-    else          mShowSlide(Math.max(mCurrent - 1, 0));
-    setTimeout(() => mLocked = false, 700);
-  });
-
-  // Mobile service selector
-  window.mSelectSvc = function(el, val) {
-    document.querySelectorAll('.m-svc-pill').forEach(p => p.classList.remove('active'));
-    el.classList.add('active');
-    document.getElementById('m-service-val').value = val;
-  };
-}
-
-function toggleMobMenu() {
+function toggleMobMenu(){
   document.getElementById('hamburger').classList.toggle('open');
   document.getElementById('mob-menu').classList.toggle('open');
   document.getElementById('mob-overlay').classList.toggle('open');
