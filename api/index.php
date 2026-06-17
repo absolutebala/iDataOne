@@ -565,7 +565,7 @@ transform:scale(1.4);
 .site-logo img{height:40px;width:auto;opacity:0.92}
 .site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
 /* Top nav */
-.top-nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;padding:0 32px;gap:40px;z-index:99;transition:opacity 0.4s}
+.top-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;padding:0 32px;gap:40px;z-index:99;transition:opacity 0.4s}
 .top-nav .site-logo{position:static;transition:none}
 .top-nav.hidden{opacity:0;pointer-events:none}
 .top-nav-links{display:flex;gap:28px;align-items:center}
