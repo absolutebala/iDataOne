@@ -103,9 +103,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cta-card{max-width:900px;margin:0 auto;background:#0f172a;border-radius:28px;padding:34px 48px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
 .cta-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(99,102,241,0.2),transparent 60%);pointer-events:none}
 .cta-card-left{position:relative;z-index:1}
-.cta-icon{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.cta-icon svg{width:20px;height:20px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.cta-heading{font-size:clamp(20px,2.5vw,30px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:8px;line-height:1.2}
+.cta-icon{width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.cta-icon svg{width:22px;height:22px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cta-heading{font-size:clamp(22px,2.5vw,32px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:10px;line-height:1.2}
 .cta-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cta-sub{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7}
 .cta-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-end;position:relative;z-index:1}
@@ -126,7 +126,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .process-steps{flex-direction:column;gap:32px}
   .process-steps::before{display:none}
   .products-grid{grid-template-columns:1fr}
-  .cta-card{grid-template-columns:1fr;padding:28px 24px}
+  .cta-inner{grid-template-columns:1fr}
   .cta-btns{align-items:flex-start}
 }
 </style>
@@ -427,9 +427,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-live">Live</div>
-          <div class="product-card-title">MealMate</div>
-          <div class="product-card-desc">Never wonder what to cook again. AI-powered meal planning personalised to your family's health conditions, dietary preferences and nutritional needs.</div>
-          <a href="https://mealmate.idataone.com" target="_blank" class="product-card-link">Explore MealMate <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="product-card-title">Sportfolio</div>
+          <div class="product-card-desc">Never wonder what to cook again. Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
+          <span style="display:inline-block;padding:4px 12px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
         </div>
       </div>
 
@@ -451,8 +451,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-soon">Coming Soon</div>
-          <div class="product-card-title">aiChat</div>
-          <div class="product-card-desc">Always on. Always intelligent. AI agents for websites and business operations that handle queries, qualify leads and automate support workflows.</div>
+          <div class="product-card-title">aiDesker</div>
+          <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
           <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
