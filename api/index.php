@@ -767,8 +767,8 @@ letter-spacing:0.3px;
   .hamburger{display:flex!important}
   /* Show presentation on mobile too */
   #presentation{display:block!important;height:auto;position:relative}
-  .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 20px 60px}
-  .dots{display:none}
+  .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 8px 60px}
+  .container{padding:20px 16px!important}  .dots{display:none}
   .site-logo{display:none}
   /* Top nav on mobile */
   .top-nav{height:56px;padding:0 20px;gap:16px}
