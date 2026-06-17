@@ -762,7 +762,7 @@ letter-spacing:0.3px;
 
 /* ── Mobile Responsive ── */
 @media(max-width:768px){
-  .hamburger{display:flex}
+  .hamburger{display:flex!important}
   /* Show presentation on mobile too */
   #presentation{display:block!important;height:auto;position:relative}
   .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 20px 60px}
