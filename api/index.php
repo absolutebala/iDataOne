@@ -184,7 +184,7 @@ width:100%;
 width:270px;
 max-width:80%;
 margin-bottom:45px;
-animation:float 5s ease-in-out infinite;
+
 filter:drop-shadow(0px 15px 40px rgba(99,102,241,0.12)) drop-shadow(0px 10px 20px rgba(0,0,0,0.06));
 }
 
@@ -627,7 +627,7 @@ letter-spacing:0.3px;
 
 /* Mobile hero */
 .m-hero{text-align:center}
-.m-logo{width:180px;margin-bottom:24px;animation:float 5s ease-in-out infinite;filter:drop-shadow(0 10px 24px rgba(99,102,241,0.12))}
+.m-logo{width:180px;margin-bottom:24px;filter:drop-shadow(0 10px 24px rgba(99,102,241,0.12))}
 .m-h1{font-size:30px;font-weight:700;letter-spacing:-1px;line-height:1.15;color:#0f172a;margin-bottom:14px}
 .m-lead{font-size:15px;color:#475569;line-height:1.7;margin-bottom:20px}
 .m-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:24px}
@@ -998,7 +998,9 @@ letter-spacing:0.3px;
 </div>
 
 <!-- Tamil signature -->
+<a href="mailto:info@idataone.com" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(99,102,241,0.4);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
+<div style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(99,102,241,0.4);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
