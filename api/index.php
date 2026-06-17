@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
 <meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
-<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Sportfolio, aiDesker, DatInsights">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, MealMate, aiChat, DatInsights">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
@@ -600,28 +600,84 @@ letter-spacing:0.3px;
 50%{transform:translateY(8px)}
 }
 
+/* Hamburger for homepage */
+.hp-hamburger{display:none;position:fixed;top:14px;right:16px;z-index:201;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
+.hp-hamburger span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}
+.hp-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hp-hamburger.open span:nth-child(2){opacity:0}
+.hp-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hp-mob-menu{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;z-index:200;box-shadow:-4px 0 40px rgba(15,23,42,0.15);transition:right 0.35s cubic-bezier(0.4,0,0.2,1);padding:80px 32px 40px;display:flex;flex-direction:column;gap:4px}
+.hp-mob-menu.open{right:0}
+.hp-mob-menu a{font-size:16px;font-weight:500;color:#475569;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(226,232,240,0.6);display:block;transition:color 0.2s}
+.hp-mob-menu a:hover{color:#4f46e5}
+.hp-mob-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:199;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.hp-mob-overlay.open{opacity:1;pointer-events:auto}
+@media(max-width:768px){.hp-hamburger{display:flex}}
+
 /* ─── MOBILE ─────────────────────────────────────────── */
 @media(max-width:768px){
 
 /* Hide desktop presentation, show mobile */
 #presentation{display:none}
-
+#mobile-deck{display:block !important}
 .dots{display:none}
 .why-bottom,.cap-why-cta{display:none}
 
 /* Mobile deck base */
-
+#mobile-deck{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+}
 
 /* Sticky section label */
-
-
+.m-sticky{
+  position:fixed;
+  top:0;left:0;right:0;
+  height:48px;
+  background:rgba(248,250,252,0.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(226,232,240,0.7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:50;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#6366f1;
+  transition:opacity 0.3s;
+}
+.m-sticky.hidden{opacity:0;pointer-events:none}
 
 /* Mobile slides */
+.m-slides{
+  position:absolute;
+  inset:0;
+}
 
+.m-slide{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:64px 16px 32px;
+  opacity:0;
+  transform:translateY(40px) scale(.98);
+  transition:all .7s ease;
+  pointer-events:none;
+  overflow:hidden;
+}
 
-
-
-
+.m-slide.active{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  pointer-events:auto;
+}
 
 /* Mobile hero */
 .m-hero{text-align:center}
@@ -691,15 +747,15 @@ letter-spacing:0.3px;
 .rose .m-card-outcome,.m-card.rose .m-card-outcome{color:#f43f5e}
 .m-card-desc{font-size:12px;color:#64748b;line-height:1.6;margin-bottom:10px}
 .m-card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(226,232,240,0.8)}
-
-
-.m-card.teal 
-.m-card.violet 
-.m-card.amber 
-.m-card.indigo 
-.m-card.sky 
-.m-card.emerald 
-.m-card.rose 
+.m-tags{display:flex;flex-wrap:wrap;gap:5px}
+.m-tag{font-size:10px;font-weight:600;border-radius:999px;padding:3px 8px}
+.m-card.teal .m-tag{color:#0d9488;background:#f0fdfa}
+.m-card.violet .m-tag{color:#7c3aed;background:#f5f3ff}
+.m-card.amber .m-tag{color:#d97706;background:#fffbeb}
+.m-card.indigo .m-tag{color:#4f46e5;background:#eef2ff}
+.m-card.sky .m-tag{color:#0ea5e9;background:#f0f9ff}
+.m-card.emerald .m-tag{color:#10b981;background:#ecfdf5}
+.m-card.rose .m-tag{color:#f43f5e;background:#fff1f2}
 
 /* Peek indicator */
 .m-peek{
@@ -740,7 +796,7 @@ letter-spacing:0.3px;
 .m-contact-title{font-size:28px;font-weight:700;letter-spacing:-1px;line-height:1.1;color:#0f172a;margin-bottom:6px}
 .m-contact-title em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .m-contact-sub{font-size:13px;color:#94a3b8;margin-bottom:20px}
-
+.m-form-panel{background:rgba(255,255,255,0.7);border:1px solid rgba(226,232,240,0.9);border-radius:20px;padding:20px 18px;backdrop-filter:blur(16px)}
 .m-field{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
 .m-field label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8}
 .m-field input,.m-field textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:15px;color:#0f172a;outline:none;-webkit-appearance:none;transition:border-color 0.2s}
@@ -748,83 +804,30 @@ letter-spacing:0.3px;
 .m-field input::placeholder,.m-field textarea::placeholder{color:#cbd5e1;font-size:14px}
 .m-field textarea{resize:none}
 .m-svc-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;margin-bottom:8px}
-
-
-
-
-
+.m-svc-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.m-svc-pill{padding:7px 12px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s}
+.m-svc-pill:active,.m-svc-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
+.m-submit{width:100%;padding:15px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;margin-top:4px}
+.m-form-note{text-align:center;font-size:11px;color:#cbd5e1;margin-top:8px}
 
 }
 
 /* Hide mobile deck on desktop (outside media query) */
+#mobile-deck{display:none}
 
-
-
-/* ── Mobile Responsive ── */
-@media(max-width:768px){
-  /* Show presentation on mobile too */
-  #presentation{display:block!important;height:auto;position:relative}
-  .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 20px 60px}
-  .dots{display:none}
-  .site-logo{display:none}
-  /* Top nav on mobile */
-  .top-nav{height:56px;padding:0 20px;gap:16px}
-  .top-nav .site-logo{position:static}
-  .top-nav .site-logo img{height:32px}
-  .top-nav-links{display:none}
-  /* Hero screen */
-  .logo{max-width:200px}
-  h1{font-size:clamp(28px,8vw,48px);letter-spacing:-1.5px}
-  .explore{bottom:24px;right:20px;font-size:10px}
-  /* Capabilities & Products */
-  h2{font-size:clamp(28px,7vw,44px);letter-spacing:-1.5px;text-align:center}
-  .cap-carousel{max-width:100%}
-  .cap-tabs{flex-wrap:wrap;justify-content:center}
-  .cap-card{grid-template-columns:1fr!important;padding:24px 20px 20px}
-  .cap-illus{display:none!important}
-  .cap-card-title{font-size:20px}
-  .cap-card-desc{font-size:13px}
-  .cap-checklist{grid-template-columns:1fr}
-  /* Contact screen */
-  .contact-inner{grid-template-columns:1fr;gap:28px}
-  .contact-right{padding:24px 18px}
-  .cl-heading{font-size:32px;letter-spacing:-1px}
-  .form-row-2{grid-template-columns:1fr;gap:12px}
-  /* Screen CTAs */
-  .screen-cta,.why-cta,.why-bottom{display:none}
-  /* Scrolling — disable snap on mobile, allow natural scroll */
-  body{overflow-y:auto!important}
-}
-
-/* ── Hamburger Menu ── */
-.hamburger{position:fixed;top:16px;right:20px;z-index:200;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.9);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1);transition:all 0.2s}
-.hamburger:hover{background:#fff;box-shadow:0 4px 20px rgba(15,23,42,0.15)}
-.hamburger span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}
-.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mob-menu{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:#fff;z-index:199;box-shadow:-4px 0 40px rgba(15,23,42,0.15);transition:right 0.35s cubic-bezier(0.4,0,0.2,1);padding:80px 32px 40px;display:flex;flex-direction:column;gap:8px}
-.mob-menu.open{right:0}
-.mob-menu a{font-size:16px;font-weight:500;color:#475569;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(226,232,240,0.6);display:block;transition:color 0.2s}
-.mob-menu a:hover{color:#4f46e5}
-.mob-menu a.active{color:#4f46e5;font-weight:600}
-.mob-menu-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:198;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(2px)}
-.mob-menu-overlay.open{opacity:1;pointer-events:auto}
 </style>
 </head>
 <body>
-
-<!-- Hamburger Menu -->
-<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+<div class="hp-hamburger" id="hpHamburger" onclick="toggleHpMenu()">
   <span></span><span></span><span></span>
 </div>
-<div class="mob-menu-overlay" id="mob-overlay" onclick="toggleMenu()"></div>
-<div class="mob-menu" id="mob-menu">
+<div class="hp-mob-overlay" id="hpOverlay" onclick="toggleHpMenu()"></div>
+<div class="hp-mob-menu" id="hpMobMenu">
   <a href="/digital">Digital</a>
   <a href="/ai">AI</a>
   <a href="/data">Data</a>
   <a href="/case-studies">Case Studies</a>
-  <a href="/contact" class="active">Contact</a>
+  <a href="/contact">Contact</a>
 </div>
 
 <!-- Top nav bar -->
@@ -980,17 +983,17 @@ letter-spacing:0.3px;
 
   <h2>Products from iDataOne</h2>
 
-  <h3>Sportfolio — AI Meal Planning App</h3>
-  <p>Never wonder what to cook again. Sportfolio recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
+  <h3>MealMate — AI Meal Planning App</h3>
+  <p>Never wonder what to cook again. MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
 
-  <h3>aiDesker — AI Customer Service Agents</h3>
-  <p>Always on. Always intelligent. AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock. Coming Soon.</p>
+  <h3>aiChat — AI Customer Service Agents</h3>
+  <p>Always on. Always intelligent. AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock. Coming Soon.</p>
 
   <h3>DatInsights — Business Intelligence Platform</h3>
   <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
 
   <h2>Contact iDataOne — Book a Free Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Sportfolio, aiDesker, DatInsights.</p>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, MealMate, aiChat, DatInsights.</p>
 
 </div>
 
@@ -1203,8 +1206,8 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 Sportfolio</div>
-    <div class="cap-tab" onclick="prodTab(1,this)">02 aiDesker</div>
+    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 MealMate</div>
+    <div class="cap-tab" onclick="prodTab(1,this)">02 aiChat</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
   <div class="cap-slides" id="prod-slides">
@@ -1212,17 +1215,23 @@ letter-spacing:0.3px;
     <div class="cap-slide active">
       <div class="cap-card rose">
         <div class="cap-left">
-          <div class="cap-card-title">Sportfolio</div>
-          <div class="cap-card-outcome">Your sport. Your story. Forever.</div>
-          <div class="cap-card-desc">Record every match. Build your career profile. Connect with your sports community — for life.</div>
+          <div class="cap-card-title">MealMate</div>
+          <div class="cap-card-outcome">Never Wonder What to Cook Again.</div>
+          <div class="cap-card-desc">MealMate recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs—making everyday cooking simpler and healthier.</div>
           <ul class="cap-checklist">
-            <li>Match Records</li><li>Career Profile</li>
-            <li>Community</li><li>Sports Network</li>
+            <li>AI Meal Suggestions</li><li>Weekly Planning</li>
+            <li>Smart Grocery Lists</li><li>Family Preferences</li>
           </ul>
-          <div style="margin-bottom:14px">
-            <span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:14px">
+            <a href="#" title="Download on App Store" style="width:36px;height:36px;border-radius:9px;background:#0f172a;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity 0.2s;flex-shrink:0" onmouseover="this.style.opacity=0.75" onmouseout="this.style.opacity=1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </a>
+            <a href="#" title="Get it on Google Play" style="width:36px;height:36px;border-radius:9px;background:#0f172a;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity 0.2s;flex-shrink:0" onmouseover="this.style.opacity=0.75" onmouseout="this.style.opacity=1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M3.18 23.76c.3.17.64.22.97.15l13.1-7.56-2.9-2.9-11.17 10.31zm-1.7-20.3C1.18 3.9 1 4.4 1 5v14c0 .6.18 1.1.48 1.54l.08.08 7.84-7.84v-.18L1.48 3.46zm18.52 8.35l-2.66-1.53-3.16 3.16 3.16 3.16 2.68-1.55c.76-.44.76-1.8-.02-2.24zM4.15.24L17.25 7.8l-2.9 2.9L4.15.24C4.48-.09 4.99-.08 5.35.11z"/></svg>
+            </a>
+            <a href="https://mealmate.idataone.com" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:9px;background:linear-gradient(90deg,#f43f5e,#e11d48);color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s" onmouseover="this.style.opacity=0.85" onmouseout="this.style.opacity=1">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
-                    <div class="cap-footer">
+          <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
               <span class="cap-nav-count">01 / 03</span>
@@ -1262,9 +1271,9 @@ letter-spacing:0.3px;
     <div class="cap-slide">
       <div class="cap-card sky">
         <div class="cap-left">
-          <div class="cap-card-title">aiDesker</div>
+          <div class="cap-card-title">aiChat</div>
           <div class="cap-card-outcome">Always on. Always intelligent.</div>
-          <div class="cap-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
+          <div class="cap-card-desc">AI agents for websites and business operations. Handles customer queries, qualifies leads and automates support workflows around the clock.</div>
           <ul class="cap-checklist">
             <li>24/7 AI Agents</li><li>Lead Qualification</li>
             <li>Auto Responses</li><li>CRM Integration</li>
@@ -1419,12 +1428,12 @@ letter-spacing:0.3px;
     <input type="hidden" name="service" id="service-val" value="">
 
     <div class="form-row-2">
-      <div class="cfield"><label></label><input type="text" name="name" placeholder="Full Name" required></div>
-      <div class="cfield"><label></label><input type="text" name="company" placeholder="Company Name"></div>
+      <div class="cfield"><label>Full Name</label><input type="text" name="name" placeholder="Full Name" required></div>
+      <div class="cfield"><label>Company</label><input type="text" name="company" placeholder="Company Name"></div>
     </div>
     <div class="form-row-2">
-      <div class="cfield"><label></label><input type="email" name="email" placeholder="Work Email" required></div>
-      <div class="cfield"><label></label><input type="tel" name="phone" placeholder="Phone Number"></div>
+      <div class="cfield"><label>Work Email</label><input type="email" name="email" placeholder="Work Email" required></div>
+      <div class="cfield"><label>Phone</label><input type="tel" name="phone" placeholder="Phone Number"></div>
     </div>
 
     <div class="service-section">
@@ -1438,15 +1447,15 @@ letter-spacing:0.3px;
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
-        <div class="service-pill" onclick="selectService(this,'Sportfolio')">Sportfolio</div>
-        <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
+        <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
+        <div class="service-pill" onclick="selectService(this,'aiChat')">aiChat</div>
         <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
       </div>
     </div>
 
     <div class="form-row-2" style="margin-bottom:16px">
       <div class="cfield" style="grid-column:1/-1">
-        <label></label>
+        <label>Project Details</label>
         <textarea name="message" rows="2" placeholder="Project Details"></textarea>
       </div>
     </div>
@@ -1466,7 +1475,233 @@ letter-spacing:0.3px;
 
 </div>
 
+<!-- ─── MOBILE DECK ─────────────────────────────────── -->
+<div id="mobile-deck">
 
+  <!-- Sticky section label -->
+  <div class="m-sticky hidden" id="m-sticky"></div>
+
+  <div class="m-slides" id="m-slides">
+
+    <!-- M0: Hero -->
+    <div class="m-slide active" data-section="">
+      <div class="m-hero">
+        <img src="/assets/images/iDataOneLogoNoBG.png" class="m-logo" alt="iDataOne">
+        <div class="m-h1">Engineering <span class="highlight">AI-First Products</span> and Intelligent Data Platforms</div>
+        <p class="m-lead">We help businesses build digital products powered by unified data, automation, and AI-driven insights.</p>
+        <div class="m-pills">
+          <span class="m-pill">Custom Software</span>
+          <span class="m-pill">AI Solutions</span>
+          <span class="m-pill">Data Intelligence</span>
+        </div>
+        <div class="m-explore" onclick="mShowSlide(1)">EXPLORE ↓</div>
+      </div>
+    </div>
+
+    <!-- M1: Capabilities cards 1+2 -->
+    <div class="m-slide" data-section="What We Build">
+      <div class="m-cards">
+        <div class="m-card teal">
+          <div class="m-card-top">
+            <div class="m-icon teal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+            <span class="m-num">01</span>
+          </div>
+          <div class="m-card-title">Custom Software</div>
+          <div class="m-card-outcome">Ship faster. Scale without limits.</div>
+          <div class="m-card-desc">Web, mobile, and enterprise applications built precisely for your workflows.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">Web Apps</span><span class="m-tag">Mobile</span><span class="m-tag">Enterprise</span></div>
+          </div>
+        </div>
+        <div class="m-card violet">
+          <div class="m-card-top">
+            <div class="m-icon violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+            <span class="m-num">02</span>
+          </div>
+          <div class="m-card-title">AI Solutions</div>
+          <div class="m-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
+          <div class="m-card-desc">From LLM integrations to intelligent automation — built for production.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">LLM Integration</span><span class="m-tag">AI Agents</span><span class="m-tag">Automation</span></div>
+          </div>
+        </div>
+        <div class="m-peek">swipe for more ↓</div>
+      </div>
+    </div>
+
+    <!-- M2: Capabilities card 3 -->
+    <div class="m-slide" data-section="What We Build">
+      <div class="m-cards">
+        <div class="m-card amber">
+          <div class="m-card-top">
+            <div class="m-icon amber"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
+            <span class="m-num">03</span>
+          </div>
+          <div class="m-card-title">Data Intelligence</div>
+          <div class="m-card-outcome">One truth. Instant clarity.</div>
+          <div class="m-card-desc">Unify fragmented data sources into a single trusted layer — actionable insights that drive real decisions.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">Data Pipelines</span><span class="m-tag">Dashboards</span><span class="m-tag">BI Platforms</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- M3: Why cards 1+2 -->
+    <div class="m-slide" data-section="Why iDataOne">
+      <div class="m-cards">
+        <div class="m-card indigo">
+          <div class="m-card-top">
+            <div class="m-icon indigo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+            <span class="m-num">01</span>
+          </div>
+          <div class="m-card-title">AI-First Architecture</div>
+          <div class="m-card-outcome">Built in, not bolted on.</div>
+          <div class="m-card-desc">Intelligence built into the foundation, not added after the fact.</div>
+        </div>
+        <div class="m-card teal">
+          <div class="m-card-top">
+            <div class="m-icon teal"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <span class="m-num">02</span>
+          </div>
+          <div class="m-card-title">Unified Data Layer</div>
+          <div class="m-card-outcome">One source of truth.</div>
+          <div class="m-card-desc">One source of truth across every system and team.</div>
+        </div>
+        <div class="m-peek">swipe for more ↓</div>
+      </div>
+    </div>
+
+    <!-- M4: Why cards 3+4 -->
+    <div class="m-slide" data-section="Why iDataOne">
+      <div class="m-cards">
+        <div class="m-card amber">
+          <div class="m-card-top">
+            <div class="m-icon amber"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <span class="m-num">03</span>
+          </div>
+          <div class="m-card-title">Enterprise Grade</div>
+          <div class="m-card-outcome">Security you can depend on.</div>
+          <div class="m-card-desc">Security, scale, and reliability your business can depend on.</div>
+        </div>
+        <div class="m-card violet">
+          <div class="m-card-top">
+            <div class="m-icon violet"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <span class="m-num">04</span>
+          </div>
+          <div class="m-card-title">Cloud Native</div>
+          <div class="m-card-outcome">Flexible. Resilient. Future-proof.</div>
+          <div class="m-card-desc">Built for modern infrastructure — flexible, resilient, future-proof.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- M5: Products cards 1+2 -->
+    <div class="m-slide" data-section="In the Lab">
+      <div class="m-cards">
+        <div class="m-card rose">
+          <div class="m-card-top">
+            <div class="m-icon rose"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+            <span class="m-num">01</span>
+          </div>
+          <div class="m-card-title">MealMate</div>
+          <div class="m-card-outcome">Smart meal planning for families.</div>
+          <div class="m-card-desc">AI-powered meal planning — personalised, smart, and effortless.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
+          </div>
+        </div>
+        <div class="m-card sky">
+          <div class="m-card-top">
+            <div class="m-icon sky"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <span class="m-num">02</span>
+          </div>
+          <div class="m-card-title">aiChat</div>
+          <div class="m-card-outcome">Always on. Always intelligent.</div>
+          <div class="m-card-desc">AI agents for websites and business operations — 24/7.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
+          </div>
+        </div>
+        <div class="m-peek">swipe for more ↓</div>
+      </div>
+    </div>
+
+    <!-- M6: Products card 3 -->
+    <div class="m-slide" data-section="In the Lab">
+      <div class="m-cards">
+        <div class="m-card emerald">
+          <div class="m-card-top">
+            <div class="m-icon emerald"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
+            <span class="m-num">03</span>
+          </div>
+          <div class="m-card-title">DatInsights</div>
+          <div class="m-card-outcome">One view of all your data.</div>
+          <div class="m-card-desc">Unified business intelligence — one view of all your data, all the time.</div>
+          <div class="m-card-footer">
+            <div class="m-tags"><span class="m-tag">Coming Soon</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- M7: Contact -->
+    <div class="m-slide" data-section="">
+      <div class="m-contact">
+        <div class="m-contact-label">Get in Touch</div>
+        <div class="m-contact-title">Let's Build Something <em>Intelligent</em></div>
+        <div class="m-contact-sub">Takes less than 60 seconds</div>
+        <div class="m-form-panel">
+
+          <?php if (!empty($form_success)): ?>
+          <div class="form-msg success" style="margin-bottom:12px">✓ Thanks! We'll be in touch within 24 hours.</div>
+          <?php elseif (!empty($form_error)): ?>
+          <div class="form-msg error" style="margin-bottom:12px">Something went wrong. Email info@idataone.com</div>
+          <?php endif; ?>
+
+          <form method="POST" action="#" id="m-contact-form">
+          <input type="hidden" name="form_submit" value="1">
+          <input type="hidden" name="service" id="m-service-val" value="">
+
+          <div class="m-field">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="m-field">
+            <label>Work Email</label>
+            <input type="email" name="email" placeholder="john@acme.com" required>
+          </div>
+          <div class="m-field">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Acme Corp">
+          </div>
+
+          <div class="m-svc-label">Service</div>
+          <div class="m-svc-pills">
+            <div class="m-svc-pill" onclick="mSelectSvc(this,'Custom Software')">Custom Software</div>
+            <div class="m-svc-pill" onclick="mSelectSvc(this,'AI Solutions')">AI Solutions</div>
+            <div class="m-svc-pill" onclick="mSelectSvc(this,'Data Intelligence')">Data Intelligence</div>
+            <div class="m-svc-pill" onclick="mSelectSvc(this,'Others')">Others</div>
+          </div>
+
+          <div class="m-field">
+            <label>Project Details</label>
+            <textarea name="message" rows="2" placeholder="Briefly describe your project..."></textarea>
+          </div>
+
+          <button type="submit" class="m-submit">Book Discovery Call →</button>
+          <p class="m-form-note">No spam. No sales pressure. Just a conversation.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /m-slides -->
+
+  <!-- Mobile dots -->
+  <div class="m-dots" id="m-dots"></div>
+
+</div><!-- /mobile-deck -->
 <div class="dots">
 <div class="dot active"></div>
 <div class="dot"></div>
@@ -1563,17 +1798,6 @@ function showScreen(index) {
 
 updateLogo(current);
 
-// Mobile: show all screens stacked
-if(window.innerWidth <= 768) {
-  screens.forEach(s => {
-    s.style.opacity = '1';
-    s.style.transform = 'none';
-    s.style.pointerEvents = 'auto';
-  });
-}
-
-// Disable slide scroll on mobile
-if(window.innerWidth > 768) {
 window.addEventListener('wheel', (e) => {
   if (locked) return;
   locked = true;
@@ -1581,7 +1805,6 @@ window.addEventListener('wheel', (e) => {
   else              showScreen(Math.max(current - 1, 0));
   setTimeout(() => locked = false, 900);
 }, { passive: true });
-} // end mobile check
 
 dots.forEach((dot, i) => dot.addEventListener('click', () => showScreen(i)));
 
@@ -1599,15 +1822,68 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ── Mobile deck ──────────────────────────────────────
+const isMobile = () => window.innerWidth <= 768;
 
+if (isMobile()) {
+  const mSlides  = document.querySelectorAll('.m-slide');
+  const mDotsWrap = document.getElementById('m-dots');
+  const mSticky  = document.getElementById('m-sticky');
+  let mCurrent   = 0;
+  let mLocked    = false;
 
-function toggleMenu() {
-  const h = document.getElementById('hamburger');
-  const m = document.getElementById('mob-menu');
-  const o = document.getElementById('mob-overlay');
-  h.classList.toggle('open');
-  m.classList.toggle('open');
-  o.classList.toggle('open');
+  // Build dots
+  mSlides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'm-dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => mShowSlide(i);
+    mDotsWrap.appendChild(d);
+  });
+
+  function mShowSlide(index) {
+    if (index < 0 || index >= mSlides.length) return;
+    mSlides[mCurrent].classList.remove('active');
+    document.querySelectorAll('.m-dot')[mCurrent].classList.remove('active');
+    mCurrent = index;
+    mSlides[mCurrent].classList.add('active');
+    document.querySelectorAll('.m-dot')[mCurrent].classList.add('active');
+
+    // Update sticky label
+    const section = mSlides[mCurrent].dataset.section;
+    if (section) {
+      mSticky.textContent = section;
+      mSticky.classList.remove('hidden');
+    } else {
+      mSticky.classList.add('hidden');
+    }
+  }
+
+  window.mShowSlide = mShowSlide;
+
+  // Touch swipe
+  let mStartY = 0;
+  document.addEventListener('touchstart', e => mStartY = e.touches[0].clientY, { passive: true });
+  document.addEventListener('touchend', e => {
+    if (mLocked) return;
+    const diff = mStartY - e.changedTouches[0].clientY;
+    if (Math.abs(diff) < 40) return;
+    mLocked = true;
+    if (diff > 0) mShowSlide(Math.min(mCurrent + 1, mSlides.length - 1));
+    else          mShowSlide(Math.max(mCurrent - 1, 0));
+    setTimeout(() => mLocked = false, 700);
+  });
+
+  // Mobile service selector
+  window.mSelectSvc = function(el, val) {
+    document.querySelectorAll('.m-svc-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('m-service-val').value = val;
+  };
+}
+
+function toggleHpMenu(){
+  document.getElementById('hpHamburger').classList.toggle('open');
+  document.getElementById('hpMobMenu').classList.toggle('open');
+  document.getElementById('hpOverlay').classList.toggle('open');
 }
 </script>
 

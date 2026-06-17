@@ -130,15 +130,27 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 @media(max-width:900px){
   .featured-card{grid-template-columns:1fr}
-  .featured-visual{min-height:240px}
-  .featured-body{padding:36px 28px}
+  .featured-visual{min-height:200px;padding:24px}
+  .featured-body{padding:28px 24px}
   .cases-grid{grid-template-columns:1fr 1fr}
   .bottom-cta-card{grid-template-columns:1fr;padding:40px}
   .hero-stats{gap:32px}
 }
 @media(max-width:600px){
+  .featured-card{grid-template-columns:1fr;border-radius:20px}
+  .featured-visual{min-height:140px;padding:16px;border-radius:20px 20px 0 0}
+  .featured-visual svg{width:100%;max-width:300px;height:auto}
+  .featured-body{padding:24px 20px}
+  .case-metric{font-size:36px;letter-spacing:-2px}
+  .case-title{font-size:17px}
+  .case-desc{font-size:13px}
+  .case-tags{gap:6px}
+  .case-tag{font-size:10px;padding:3px 10px}
   .cases-grid{grid-template-columns:1fr}
   .hero-stats{flex-wrap:wrap;gap:24px}
+  .bottom-cta-card{padding:28px 20px;border-radius:20px}
+  .bcta-h2{font-size:24px}
+  .filter-btn{padding:14px 16px;font-size:12px}
 }
 </style>
 </head>
