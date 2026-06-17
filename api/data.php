@@ -178,6 +178,47 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">Data Intelligence. Real Clarity.</h2>
     <p class="section-sub">Businesses that unified their data and unlocked real competitive advantage.</p>
     <div class="stories-grid">
+      <div class="story-card">
+        <div>
+          <div class="story-tag">Risk Analytics</div>
+          <div class="story-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
+          <div class="story-desc">We built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking, department-level breakdowns and automated compliance scoring across 8 risk categories.</div>
+          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(217,119,6,0.08)"/>
+            <rect x="16" y="34" width="128" height="34" rx="5" fill="rgba(255,251,235,0.6)"/>
+            <rect x="22" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.4)"/>
+            <rect x="28" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
+            <rect x="34" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
+            <rect x="40" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
+            <rect x="46" y="40" width="4" height="4" rx="1" fill="rgba(244,63,94,0.4)"/>
+            <rect x="22" y="48" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
+            <rect x="28" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
+            <rect x="34" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
+            <rect x="40" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
+            <rect x="46" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.5)"/>
+            <rect x="22" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.2)"/>
+            <rect x="28" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
+            <rect x="34" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
+            <rect x="40" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
+            <rect x="46" y="56" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
+            <rect x="70" y="38" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="70" y="46" width="60" height="8" rx="3" fill="rgba(217,119,6,0.25)"/>
+            <rect x="70" y="58" width="40" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="16" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <polyline points="22,96 32,88 42,91 52,82 62,78 68,80" stroke="rgba(217,119,6,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <rect x="84" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="90" y="82" width="8" height="16" rx="2" fill="rgba(217,119,6,0.3)"/>
+            <rect x="102" y="88" width="8" height="10" rx="2" fill="rgba(217,119,6,0.45)"/>
+            <rect x="114" y="84" width="8" height="14" rx="2" fill="rgba(217,119,6,0.35)"/>
+            <rect x="126" y="80" width="8" height="18" rx="2" fill="rgba(217,119,6,0.55)"/>
+          </svg>
+        </div>
+      </div>
+
 
       <div class="story-card">
         <div>
@@ -207,33 +248,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Dashboards</div>
-          <div class="story-title">Real-Time Executive Dashboards That Replaced Weekly Reports</div>
-          <div class="story-desc">We replaced a manual weekly reporting process with live executive dashboards, giving leadership instant visibility into KPIs and reducing reporting effort by 90%.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="20" rx="8" fill="rgba(217,119,6,0.08)"/>
-            <rect x="16" y="36" width="56" height="30" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="22" y="43" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="22" y="51" width="38" height="8" rx="3" fill="rgba(217,119,6,0.3)"/>
-            <rect x="80" y="36" width="64" height="30" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <polyline points="86,58 96,50 106,53 116,46 126,42 136,46" stroke="rgba(217,119,6,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <circle cx="126" cy="42" r="3" fill="rgba(217,119,6,0.6)"/>
-            <rect x="16" y="76" width="128" height="26" rx="5" fill="rgba(255,251,235,0.6)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-            <rect x="24" y="82" width="16" height="12" rx="2" fill="rgba(217,119,6,0.35)"/>
-            <rect x="44" y="78" width="16" height="16" rx="2" fill="rgba(217,119,6,0.5)"/>
-            <rect x="64" y="80" width="16" height="14" rx="2" fill="rgba(217,119,6,0.4)"/>
-            <rect x="84" y="76" width="16" height="18" rx="2" fill="rgba(217,119,6,0.6)"/>
-            <rect x="104" y="75" width="16" height="19" rx="2" fill="rgba(217,119,6,0.65)"/>
-            <rect x="124" y="78" width="12" height="16" rx="2" fill="rgba(217,119,6,0.45)"/>
-          </svg>
-        </div>
-      </div>
 
       <div class="story-card">
         <div>
@@ -291,46 +305,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Risk Analytics</div>
-          <div class="story-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
-          <div class="story-desc">We built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking, department-level breakdowns and automated compliance scoring across 8 risk categories.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(217,119,6,0.08)"/>
-            <rect x="16" y="34" width="128" height="34" rx="5" fill="rgba(255,251,235,0.6)"/>
-            <rect x="22" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.4)"/>
-            <rect x="28" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="34" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="40" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="46" y="40" width="4" height="4" rx="1" fill="rgba(244,63,94,0.4)"/>
-            <rect x="22" y="48" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="28" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="34" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="40" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
-            <rect x="46" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.5)"/>
-            <rect x="22" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.2)"/>
-            <rect x="28" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="34" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="40" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="46" y="56" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
-            <rect x="70" y="38" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="70" y="46" width="60" height="8" rx="3" fill="rgba(217,119,6,0.25)"/>
-            <rect x="70" y="58" width="40" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="16" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <polyline points="22,96 32,88 42,91 52,82 62,78 68,80" stroke="rgba(217,119,6,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <rect x="84" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="90" y="82" width="8" height="16" rx="2" fill="rgba(217,119,6,0.3)"/>
-            <rect x="102" y="88" width="8" height="10" rx="2" fill="rgba(217,119,6,0.45)"/>
-            <rect x="114" y="84" width="8" height="14" rx="2" fill="rgba(217,119,6,0.35)"/>
-            <rect x="126" y="80" width="8" height="18" rx="2" fill="rgba(217,119,6,0.55)"/>
-          </svg>
-        </div>
-      </div>
 
     </div>
   </div>

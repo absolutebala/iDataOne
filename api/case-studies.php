@@ -188,10 +188,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">10</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">3</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">8</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">2</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">4</span></button>
-    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">3</span></button>
+    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
 </div>
 
@@ -251,6 +251,93 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
 
+<!-- Digital: Enterprise Risk Platform -->
+      <div class="case-card" data-cat="digital">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.06)"/>
+            <rect x="28" y="56" width="56" height="40" rx="6" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="34" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="34" y="72" width="40" height="10" rx="3" fill="rgba(99,102,241,0.25)"/>
+            <rect x="90" y="56" width="56" height="40" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+            <rect x="96" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="96" y="72" width="40" height="10" rx="3" fill="rgba(20,184,166,0.25)"/>
+            <rect x="152" y="56" width="56" height="40" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
+            <rect x="158" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="158" y="72" width="40" height="10" rx="3" fill="rgba(245,158,11,0.25)"/>
+            <rect x="214" y="56" width="40" height="40" rx="6" fill="rgba(244,63,94,0.08)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
+            <rect x="220" y="64" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="220" y="72" width="28" height="10" rx="3" fill="rgba(244,63,94,0.2)"/>
+            <rect x="28" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <polyline points="36,140 52,130 68,134 84,124 100,118 116,122 130,114" stroke="rgba(99,102,241,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="148" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="156" y="122" width="10" height="22" rx="3" fill="rgba(99,102,241,0.25)"/>
+            <rect x="170" y="116" width="10" height="28" rx="3" fill="rgba(20,184,166,0.3)"/>
+            <rect x="184" y="120" width="10" height="24" rx="3" fill="rgba(245,158,11,0.3)"/>
+            <rect x="198" y="112" width="10" height="32" rx="3" fill="rgba(99,102,241,0.35)"/>
+            <rect x="212" y="118" width="10" height="26" rx="3" fill="rgba(244,63,94,0.25)"/>
+            <rect x="226" y="114" width="10" height="30" rx="3" fill="rgba(99,102,241,0.4)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">8</div>
+          <div class="case-metric-label">risk categories unified in one platform</div>
+          <div class="case-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
+          <div class="case-desc">We built a full-stack risk assessment platform with severity matrix, real-time dashboards, role-based workflows and threaded communication across departments.</div>
+          <div class="case-tags"><span class="case-tag">Enterprise</span><span class="case-tag">Compliance</span><span class="case-tag">FMCG</span></div>
+          <a href="/contact" class="case-cta">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+<!-- Data: Risk Intelligence Dashboard -->
+      <div class="case-card" data-cat="data">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(217,119,6,0.06)"/>
+            <rect x="28" y="56" width="220" height="50" rx="6" fill="rgba(255,251,235,0.6)"/>
+            <rect x="36" y="64" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.4)"/>
+            <rect x="46" y="64" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
+            <rect x="56" y="64" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.4)"/>
+            <rect x="66" y="64" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.5)"/>
+            <rect x="76" y="64" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.5)"/>
+            <rect x="36" y="76" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
+            <rect x="46" y="76" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.3)"/>
+            <rect x="56" y="76" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.5)"/>
+            <rect x="66" y="76" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.4)"/>
+            <rect x="76" y="76" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.6)"/>
+            <rect x="36" y="88" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.2)"/>
+            <rect x="46" y="88" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
+            <rect x="56" y="88" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.3)"/>
+            <rect x="66" y="88" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.4)"/>
+            <rect x="76" y="88" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.3)"/>
+            <rect x="110" y="62" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="110" y="72" width="100" height="12" rx="4" fill="rgba(217,119,6,0.2)"/>
+            <rect x="110" y="90" width="60" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
+            <rect x="28" y="116" width="100" height="38" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <polyline points="36,144 52,134 68,138 84,128 100,122 116,126" stroke="rgba(217,119,6,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="138" y="116" width="110" height="38" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="146" y="128" width="12" height="18" rx="3" fill="rgba(217,119,6,0.3)"/>
+            <rect x="162" y="122" width="12" height="24" rx="3" fill="rgba(217,119,6,0.45)"/>
+            <rect x="178" y="126" width="12" height="20" rx="3" fill="rgba(217,119,6,0.35)"/>
+            <rect x="194" y="120" width="12" height="26" rx="3" fill="rgba(217,119,6,0.55)"/>
+            <rect x="210" y="124" width="12" height="22" rx="3" fill="rgba(244,63,94,0.3)"/>
+            <rect x="226" y="118" width="12" height="28" rx="3" fill="rgba(217,119,6,0.5)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-data">Data Intelligence</div>
+          <div class="case-metric metric-data">124</div>
+          <div class="case-metric-label">risks tracked in real-time across departments</div>
+          <div class="case-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
+          <div class="case-desc">We built a risk analytics dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring across 8 risk categories.</div>
+          <div class="case-tags"><span class="case-tag">Risk Analytics</span><span class="case-tag">Dashboards</span><span class="case-tag">FMCG</span></div>
+          <a href="/contact" class="case-cta amber">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
       <!-- Digital: SaaS -->
       <div class="case-card" data-cat="digital">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
@@ -283,37 +370,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
       <!-- Digital: Legacy -->
-      <div class="case-card" data-cat="digital">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#f0f9ff,#e0f2fe)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="240" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="28" y="32" width="216" height="20" rx="5" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
-            <rect x="34" y="38" width="60" height="5" rx="2.5" fill="rgba(14,165,233,0.3)"/>
-            <circle cx="232" cy="42" r="5" fill="rgba(52,211,153,0.4)"/>
-            <rect x="28" y="60" width="216" height="20" rx="5" fill="rgba(255,255,255,0.8)" stroke="rgba(14,165,233,0.12)" stroke-width="1"/>
-            <rect x="34" y="66" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <circle cx="232" cy="70" r="5" fill="rgba(52,211,153,0.4)"/>
-            <rect x="28" y="88" width="216" height="20" rx="5" fill="rgba(255,255,255,0.8)" stroke="rgba(14,165,233,0.12)" stroke-width="1"/>
-            <rect x="34" y="94" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <circle cx="232" cy="98" r="5" fill="rgba(52,211,153,0.4)"/>
-            <rect x="28" y="122" width="104" height="28" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
-            <rect x="38" y="130" width="56" height="5" rx="2.5" fill="rgba(14,165,233,0.4)"/>
-            <rect x="140" y="122" width="104" height="28" rx="8" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
-            <rect x="150" y="130" width="56" height="5" rx="2.5" fill="rgba(52,211,153,0.4)"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">60%</div>
-          <div class="case-metric-label">reduction in processing time</div>
-          <div class="case-title">Modernising Legacy Systems for a Global Enterprise</div>
-          <div class="case-desc">We modernised legacy applications and streamlined operations with a unified digital platform, cutting processing time by 60% and reducing operational costs.</div>
-          <div class="case-tags"><span class="case-tag">Enterprise</span><span class="case-tag">Modernisation</span></div>
-          <a href="/contact" class="case-cta">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
-      <!-- AI: LLM -->
+            <!-- AI: LLM -->
       <div class="case-card" data-cat="ai">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
@@ -415,37 +472,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
       <!-- Data: Unified -->
-      <div class="case-card" data-cat="data">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="140" cy="88" r="30" fill="rgba(217,119,6,0.12)" stroke="rgba(217,119,6,0.3)" stroke-width="1.5"/>
-            <circle cx="140" cy="88" r="10" fill="rgba(217,119,6,0.3)"/>
-            <line x1="30" y1="40" x2="114" y2="72" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <line x1="140" y1="24" x2="140" y2="58" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <line x1="250" y1="40" x2="166" y2="72" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <line x1="30" y1="136" x2="114" y2="104" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <line x1="140" y1="152" x2="140" y2="118" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <line x1="250" y1="136" x2="166" y2="104" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <circle cx="30" cy="36" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="20" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="250" cy="36" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="30" cy="140" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="156" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="250" cy="140" r="12" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-data">Data Intelligence</div>
-          <div class="case-metric metric-data">12</div>
-          <div class="case-metric-label">systems unified into one truth</div>
-          <div class="case-title">Unifying Data Across 12 Systems for a Retail Chain</div>
-          <div class="case-desc">We unified data from 12 disconnected systems into a single trusted data layer, giving leadership real-time visibility across all locations for the first time.</div>
-          <div class="case-tags"><span class="case-tag">Data Unification</span><span class="case-tag">Retail</span></div>
-          <a href="/contact" class="case-cta amber">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
-      <!-- Data: Predictions -->
+            <!-- Data: Predictions -->
       <div class="case-card" data-cat="data">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
@@ -473,93 +500,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 
-      <!-- Digital: Enterprise Risk Platform -->
-      <div class="case-card" data-cat="digital">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.06)"/>
-            <rect x="28" y="56" width="56" height="40" rx="6" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="34" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="34" y="72" width="40" height="10" rx="3" fill="rgba(99,102,241,0.25)"/>
-            <rect x="90" y="56" width="56" height="40" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-            <rect x="96" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="96" y="72" width="40" height="10" rx="3" fill="rgba(20,184,166,0.25)"/>
-            <rect x="152" y="56" width="56" height="40" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-            <rect x="158" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="158" y="72" width="40" height="10" rx="3" fill="rgba(245,158,11,0.25)"/>
-            <rect x="214" y="56" width="40" height="40" rx="6" fill="rgba(244,63,94,0.08)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-            <rect x="220" y="64" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="220" y="72" width="28" height="10" rx="3" fill="rgba(244,63,94,0.2)"/>
-            <rect x="28" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <polyline points="36,140 52,130 68,134 84,124 100,118 116,122 130,114" stroke="rgba(99,102,241,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <rect x="148" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="156" y="122" width="10" height="22" rx="3" fill="rgba(99,102,241,0.25)"/>
-            <rect x="170" y="116" width="10" height="28" rx="3" fill="rgba(20,184,166,0.3)"/>
-            <rect x="184" y="120" width="10" height="24" rx="3" fill="rgba(245,158,11,0.3)"/>
-            <rect x="198" y="112" width="10" height="32" rx="3" fill="rgba(99,102,241,0.35)"/>
-            <rect x="212" y="118" width="10" height="26" rx="3" fill="rgba(244,63,94,0.25)"/>
-            <rect x="226" y="114" width="10" height="30" rx="3" fill="rgba(99,102,241,0.4)"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">8</div>
-          <div class="case-metric-label">risk categories unified in one platform</div>
-          <div class="case-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
-          <div class="case-desc">We built a full-stack risk assessment platform with severity matrix, real-time dashboards, role-based workflows and threaded communication across departments.</div>
-          <div class="case-tags"><span class="case-tag">Enterprise</span><span class="case-tag">Compliance</span><span class="case-tag">FMCG</span></div>
-          <a href="/contact" class="case-cta">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
-      <!-- Data: Risk Intelligence Dashboard -->
-      <div class="case-card" data-cat="data">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(217,119,6,0.06)"/>
-            <rect x="28" y="56" width="220" height="50" rx="6" fill="rgba(255,251,235,0.6)"/>
-            <rect x="36" y="64" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.4)"/>
-            <rect x="46" y="64" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
-            <rect x="56" y="64" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.4)"/>
-            <rect x="66" y="64" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.5)"/>
-            <rect x="76" y="64" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.5)"/>
-            <rect x="36" y="76" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
-            <rect x="46" y="76" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.3)"/>
-            <rect x="56" y="76" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.5)"/>
-            <rect x="66" y="76" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.4)"/>
-            <rect x="76" y="76" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.6)"/>
-            <rect x="36" y="88" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.2)"/>
-            <rect x="46" y="88" width="6" height="6" rx="1.5" fill="rgba(20,184,166,0.3)"/>
-            <rect x="56" y="88" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.3)"/>
-            <rect x="66" y="88" width="6" height="6" rx="1.5" fill="rgba(245,158,11,0.4)"/>
-            <rect x="76" y="88" width="6" height="6" rx="1.5" fill="rgba(244,63,94,0.3)"/>
-            <rect x="110" y="62" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="110" y="72" width="100" height="12" rx="4" fill="rgba(217,119,6,0.2)"/>
-            <rect x="110" y="90" width="60" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="28" y="116" width="100" height="38" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <polyline points="36,144 52,134 68,138 84,128 100,122 116,126" stroke="rgba(217,119,6,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <rect x="138" y="116" width="110" height="38" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="146" y="128" width="12" height="18" rx="3" fill="rgba(217,119,6,0.3)"/>
-            <rect x="162" y="122" width="12" height="24" rx="3" fill="rgba(217,119,6,0.45)"/>
-            <rect x="178" y="126" width="12" height="20" rx="3" fill="rgba(217,119,6,0.35)"/>
-            <rect x="194" y="120" width="12" height="26" rx="3" fill="rgba(217,119,6,0.55)"/>
-            <rect x="210" y="124" width="12" height="22" rx="3" fill="rgba(244,63,94,0.3)"/>
-            <rect x="226" y="118" width="12" height="28" rx="3" fill="rgba(217,119,6,0.5)"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-data">Data Intelligence</div>
-          <div class="case-metric metric-data">124</div>
-          <div class="case-metric-label">risks tracked in real-time across departments</div>
-          <div class="case-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
-          <div class="case-desc">We built a risk analytics dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring across 8 risk categories.</div>
-          <div class="case-tags"><span class="case-tag">Risk Analytics</span><span class="case-tag">Dashboards</span><span class="case-tag">FMCG</span></div>
-          <a href="/contact" class="case-cta amber">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
+      
+      
     </div><!-- /cases-grid -->
 
     <div class="no-results" id="no-results">No case studies found for this category.</div>

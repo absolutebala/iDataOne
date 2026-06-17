@@ -259,6 +259,34 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="stories-grid">
       <div class="story-card">
         <div>
+          <div class="story-tag">Enterprise Platform</div>
+          <div class="story-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
+          <div class="story-desc">We designed and built a full-stack risk assessment platform with a 5x5 severity matrix, real-time dashboards, role-based workflows and threaded communication — deployed across multiple departments.</div>
+          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(99,102,241,0.08)"/>
+            <rect x="16" y="34" width="32" height="24" rx="5" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+            <rect x="54" y="34" width="32" height="24" rx="5" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <rect x="92" y="34" width="32" height="24" rx="5" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="130" y="34" width="18" height="24" rx="5" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
+            <rect x="16" y="66" width="60" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="20" y="72" width="24" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="20" y="80" width="20" height="6" rx="2" fill="rgba(99,102,241,0.2)"/>
+            <rect x="20" y="90" width="20" height="6" rx="2" fill="rgba(20,184,166,0.2)"/>
+            <rect x="44" y="80" width="20" height="6" rx="2" fill="rgba(245,158,11,0.2)"/>
+            <rect x="44" y="90" width="20" height="6" rx="2" fill="rgba(244,63,94,0.15)"/>
+            <rect x="84" y="66" width="64" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="90" y="72" width="30" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
+            <polyline points="90,96 100,88 110,91 120,84 130,80 140,83" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div>
           <div class="story-tag">SaaS Platform</div>
           <div class="story-title">Scaling a SaaS Platform from 0 to 100K Users</div>
           <div class="story-desc">We helped a B2B SaaS company build a scalable platform with advanced analytics, automation and a seamless user experience that grew to 100K users in under 12 months.</div>
@@ -323,65 +351,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Web Application</div>
-          <div class="story-title">Building a Real-Time Analytics Dashboard for a FinTech Startup</div>
-          <div class="story-desc">We built a high-performance web application with real-time data visualisation, role-based access and automated reporting that reduced manual work by 70%.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="20" rx="8" fill="rgba(20,184,166,0.08)"/>
-            <rect x="8" y="18" width="144" height="10" fill="rgba(20,184,166,0.08)"/>
-            <circle cx="20" cy="18" r="3" fill="rgba(244,63,94,0.4)"/>
-            <circle cx="30" cy="18" r="3" fill="rgba(245,158,11,0.4)"/>
-            <circle cx="40" cy="18" r="3" fill="rgba(20,184,166,0.4)"/>
-            <rect x="16" y="36" width="36" height="20" rx="4" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="18" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="18" y="47" width="28" height="6" rx="2" fill="rgba(20,184,166,0.3)"/>
-            <rect x="58" y="36" width="36" height="20" rx="4" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="60" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="60" y="47" width="28" height="6" rx="2" fill="rgba(99,102,241,0.25)"/>
-            <rect x="100" y="36" width="44" height="20" rx="4" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-            <rect x="102" y="40" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="102" y="47" width="34" height="6" rx="2" fill="rgba(245,158,11,0.3)"/>
-            <rect x="16" y="64" width="128" height="38" rx="4" fill="rgba(248,250,252,0.8)"/>
-            <polyline points="22,92 36,80 50,84 64,72 78,66 92,70 106,60 120,64 134,56" stroke="rgba(20,184,166,0.6)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <polygon points="22,92 36,80 50,84 64,72 78,66 92,70 106,60 120,64 134,56 134,100 22,100" fill="rgba(20,184,166,0.05)"/>
-          </svg>
-        </div>
-      </div>
 
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Enterprise Platform</div>
-          <div class="story-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
-          <div class="story-desc">We designed and built a full-stack risk assessment platform with a 5x5 severity matrix, real-time dashboards, role-based workflows and threaded communication — deployed across multiple departments.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(99,102,241,0.08)"/>
-            <rect x="16" y="34" width="32" height="24" rx="5" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-            <rect x="54" y="34" width="32" height="24" rx="5" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="92" y="34" width="32" height="24" rx="5" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="130" y="34" width="18" height="24" rx="5" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-            <rect x="16" y="66" width="60" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="20" y="72" width="24" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="20" y="80" width="20" height="6" rx="2" fill="rgba(99,102,241,0.2)"/>
-            <rect x="20" y="90" width="20" height="6" rx="2" fill="rgba(20,184,166,0.2)"/>
-            <rect x="44" y="80" width="20" height="6" rx="2" fill="rgba(245,158,11,0.2)"/>
-            <rect x="44" y="90" width="20" height="6" rx="2" fill="rgba(244,63,94,0.15)"/>
-            <rect x="84" y="66" width="64" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="90" y="72" width="30" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <polyline points="90,96 100,88 110,91 120,84 130,80 140,83" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-      </div>
 
     </div>
   </div>
