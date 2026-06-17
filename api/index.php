@@ -127,7 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%;overflow:hidden;font-family:'Inter',sans-serif}
+html,body{scrollbar-gutter:stable;height:100%;overflow:hidden;font-family:'Inter',sans-serif}
 
 body{
 background:
