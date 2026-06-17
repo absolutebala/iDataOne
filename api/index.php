@@ -762,6 +762,7 @@ letter-spacing:0.3px;
 
 /* ── Mobile Responsive ── */
 @media(max-width:768px){
+  .hamburger{display:flex}
   /* Show presentation on mobile too */
   #presentation{display:block!important;height:auto;position:relative}
   .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 20px 60px}
@@ -797,7 +798,7 @@ letter-spacing:0.3px;
 }
 
 /* ── Hamburger Menu ── */
-.hamburger{position:fixed;top:16px;right:20px;z-index:200;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.9);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1);transition:all 0.2s}
+.hamburger{position:fixed;top:16px;right:20px;z-index:200;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.9);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1);transition:all 0.2s}
 .hamburger:hover{background:#fff;box-shadow:0 4px 20px rgba(15,23,42,0.15)}
 .hamburger span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
