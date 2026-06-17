@@ -768,7 +768,10 @@ letter-spacing:0.3px;
   /* Show presentation on mobile too */
   #presentation{display:block!important;height:auto;position:relative}
   .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 8px 60px}
-  .container{padding:20px 16px!important}  .dots{display:none}
+  .container{padding:20px 16px!important}
+  .hp-btm{display:none!important}
+  html{scroll-snap-type:y mandatory}
+  .screen{scroll-snap-align:start}  .dots{display:none}
   .site-logo{display:none}
   /* Top nav on mobile */
   .top-nav{height:56px;padding:0 20px;gap:16px}
@@ -998,9 +1001,9 @@ letter-spacing:0.3px;
 </div>
 
 <!-- Tamil signature -->
-<a href="mailto:info@idataone.com" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(99,102,241,0.4);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
+<a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(99,102,241,0.4);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
-<div style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(99,102,241,0.4);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
+<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(99,102,241,0.4);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
