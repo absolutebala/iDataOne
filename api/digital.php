@@ -15,15 +15,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 
 /* Nav */
-.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.site-nav .nav-logo{text-decoration:none;flex-shrink:0}
-.site-nav .nav-logo img{height:40px;width:auto;opacity:0.92}
-.site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
-.site-nav .nav-links a[href]{cursor:pointer}
-.site-nav .nav-links a[href]:hover{color:#4f46e5}
-.site-nav .nav-links a.active{color:#4f46e5;font-weight:600}
-/* ── Banner ── */
+/* Nav via _nav.php */
 .banner{
   min-height:100vh;
   display:flex;align-items:center;
@@ -103,9 +95,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cta-card{max-width:900px;margin:0 auto;background:#0f172a;border-radius:28px;padding:34px 48px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
 .cta-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(99,102,241,0.2),transparent 60%);pointer-events:none}
 .cta-card-left{position:relative;z-index:1}
-.cta-icon{width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-.cta-icon svg{width:22px;height:22px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.cta-heading{font-size:clamp(22px,2.5vw,32px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:10px;line-height:1.2}
+.cta-icon{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.cta-icon svg{width:20px;height:20px;fill:none;stroke:rgba(255,255,255,0.6);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cta-heading{font-size:clamp(20px,2.5vw,30px);font-weight:800;letter-spacing:-1px;color:#f1f5f9;margin-bottom:8px;line-height:1.2}
 .cta-heading em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cta-sub{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7}
 .cta-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-end;position:relative;z-index:1}

@@ -139,6 +139,18 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 @media(max-width:600px){
   .cases-grid{grid-template-columns:1fr}
   .hero-stats{flex-wrap:wrap;gap:24px}
+  .featured-card{border-radius:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05)}
+  .featured-visual{max-height:180px;min-height:auto;padding:16px;overflow:hidden}
+  .featured-visual svg{max-width:260px;height:auto}
+  .featured-body{padding:24px 20px}
+  .case-metric{font-size:36px;letter-spacing:-2px}
+  .case-title{font-size:17px}
+  .case-desc{font-size:13px}
+  .case-tags{gap:6px}
+  .case-tag{font-size:10px;padding:3px 10px}
+  .bottom-cta-card{padding:28px 20px;border-radius:20px;grid-template-columns:1fr}
+  .bcta-h2{font-size:24px}
+  .bcta-right{gap:10px}
 }
 </style>
 </head>

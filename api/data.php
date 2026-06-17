@@ -14,14 +14,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
-.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
-.site-nav .nav-logo{text-decoration:none;flex-shrink:0}
-.site-nav .nav-logo img{height:40px;width:auto;opacity:0.92}
-.site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
-.site-nav .nav-links a[href]{cursor:pointer}
-.site-nav .nav-links a[href]:hover{color:#d97706}
-.site-nav .nav-links a.active{color:#d97706;font-weight:600}
+/* Nav via _nav.php */
 .banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(245,158,11,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(217,119,6,0.08),transparent 40%),radial-gradient(ellipse at 60% 90%,rgba(251,191,36,0.06),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#fffbeb 45%,#fef3c7 100%)}
 .banner::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.025) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
