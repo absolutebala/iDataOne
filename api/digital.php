@@ -257,7 +257,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">Digital Products. Real Impact.</h2>
     <p class="section-sub">Real results from businesses that chose to build smarter.</p>
     <div class="stories-grid">
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
         <div>
           <div class="story-tag">Enterprise Platform</div>
           <div class="story-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>

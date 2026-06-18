@@ -73,7 +73,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <a href="/case-studies" class="cs-back"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Case Studies</a>
     <div class="cs-badge">Data Intelligence · Analytics</div>
     <h1 class="cs-hero-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</h1>
     <p class="cs-hero-sub">How we turned fragmented risk data into a unified intelligence layer with real-time visualisation, trend analytics and automated compliance scoring.</p>

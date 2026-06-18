@@ -101,7 +101,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <a href="/case-studies" class="cs-back"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Case Studies</a>
     <div class="cs-badge">Digital Products · Enterprise</div>
     <h1 class="cs-hero-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</h1>
     <p class="cs-hero-sub">How we designed and built a full-stack risk assessment platform that unified compliance workflows, real-time monitoring and team collaboration across an entire enterprise.</p>

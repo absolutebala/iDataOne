@@ -252,7 +252,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="cases-grid" id="cases-grid">
 
 <!-- Digital: Enterprise Risk Platform -->
-      <div class="case-card" data-cat="digital">
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
             <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
@@ -292,7 +292,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 <!-- Data: Risk Intelligence Dashboard -->
-      <div class="case-card" data-cat="data">
+      <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
             <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
@@ -339,7 +339,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
       <!-- Digital: SaaS -->
-      <div class="case-card" data-cat="digital">
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
             <rect x="20" y="16" width="240" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
@@ -473,7 +473,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
       <!-- Data: Unified -->
             <!-- Data: Predictions -->
-      <div class="case-card" data-cat="data">
+      <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
             <rect x="16" y="24" width="248" height="120" rx="10" fill="rgba(255,255,255,0.6)"/>

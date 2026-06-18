@@ -178,7 +178,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">Data Intelligence. Real Clarity.</h2>
     <p class="section-sub">Businesses that unified their data and unlocked real competitive advantage.</p>
     <div class="stories-grid">
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div>
           <div class="story-tag">Risk Analytics</div>
           <div class="story-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
