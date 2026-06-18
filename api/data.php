@@ -4,8 +4,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Intelligence — iDataOne | Build. Transform. Scale.</title>
+<title>Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.</title>
 <meta name="description" content="Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.">
+<meta name="keywords" content="data intelligence, business intelligence, data analytics, real-time dashboards, BI platform, predictive analytics, unified data, iDataOne">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.">
+<meta property="og:description" content="Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.">
+<meta property="og:url" content="https://idataone.com/data">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:site_name" content="iDataOne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.">
+<meta name="twitter:description" content="Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Data Intelligence & Analytics",
+  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "description": "Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.",
+  "serviceType": "Data Intelligence",
+  "areaServed": "Worldwide",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Data Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unified Data Layer"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Intelligence Dashboards"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Predictive Analytics"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "BI Platform Development"}}
+    ]
+  }
+}
+</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/data">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

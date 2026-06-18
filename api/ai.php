@@ -4,8 +4,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI & Automation — iDataOne | Build. Transform. Scale.</title>
-<meta name="description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency and drive business growth.">
+<title>AI Integration & Automation Services | iDataOne — Build. Transform. Scale.</title>
+<meta name="description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.">
+<meta name="keywords" content="AI integration, AI agents, LLM integration, intelligent automation, AI features, machine learning, ChatGPT integration, iDataOne">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Integration & Automation Services | iDataOne — Build. Transform. Scale.">
+<meta property="og:description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.">
+<meta property="og:url" content="https://idataone.com/ai">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:site_name" content="iDataOne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Integration & Automation Services | iDataOne — Build. Transform. Scale.">
+<meta name="twitter:description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Integration & Automation",
+  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "description": "From AI agents to intelligent workflows, iDataOne integrates AI into products and operations to improve efficiency, enhance decision-making, and drive business growth.",
+  "serviceType": "AI Integration",
+  "areaServed": "Worldwide",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Agents"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LLM Integration"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Intelligent Automation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Feature Development"}}
+    ]
+  }
+}
+</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/ai">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

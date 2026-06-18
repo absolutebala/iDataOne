@@ -4,8 +4,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Products — iDataOne | Build. Transform. Scale.</title>
-<meta name="description" content="From web apps to enterprise platforms, iDataOne designs, builds and scales digital products tailored precisely to your business needs.">
+<title>Digital Product Development | iDataOne — Build. Transform. Scale.</title>
+<meta name="description" content="From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.">
+<meta name="keywords" content="digital product development, custom software, web app development, mobile app development, SaaS platform, enterprise software, iDataOne">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Digital Product Development | iDataOne — Build. Transform. Scale.">
+<meta property="og:description" content="From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.">
+<meta property="og:url" content="https://idataone.com/digital">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:site_name" content="iDataOne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Product Development | iDataOne — Build. Transform. Scale.">
+<meta name="twitter:description" content="From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Digital Product Development",
+  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "description": "From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.",
+  "serviceType": "Custom Software Development",
+  "areaServed": "Worldwide",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Digital Products Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Application Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile App Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SaaS Platform Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise Application Development"}}
+    ]
+  }
+}
+</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/digital">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

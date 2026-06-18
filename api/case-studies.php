@@ -4,8 +4,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Studies — iDataOne | Real Results. Real Impact.</title>
+<title>Case Studies — Real Results. Real Impact. | iDataOne</title>
 <meta name="description" content="Explore how iDataOne has helped businesses build digital products, integrate AI and transform data into decisions. Real results across industries.">
+<meta name="keywords" content="iDataOne case studies, AI case study, digital product case study, data intelligence case study, enterprise software results, risk compliance platform">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Case Studies — Real Results. Real Impact. | iDataOne">
+<meta property="og:description" content="Explore how iDataOne has helped businesses build digital products, integrate AI and transform data into decisions. Real results across industries.">
+<meta property="og:url" content="https://idataone.com/case-studies">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:site_name" content="iDataOne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case Studies — Real Results. Real Impact. | iDataOne">
+<meta name="twitter:description" content="Explore how iDataOne has helped businesses build digital products, integrate AI and transform data into decisions. Real results across industries.">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Case Studies — iDataOne",
+  "url": "https://idataone.com/case-studies",
+  "description": "Real results from businesses that built with iDataOne. Digital products, AI integration and data intelligence case studies.",
+  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"}
+}
+</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-studies">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

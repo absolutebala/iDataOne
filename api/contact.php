@@ -38,8 +38,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact iDataOne — Book a Discovery Call</title>
-<meta name="description" content="Book a free discovery call with iDataOne. Tell us about your project and we'll get back to you within 24 hours.">
+<title>Contact iDataOne — Book a Free Discovery Call</title>
+<meta name="description" content="Book a free 30-minute discovery call with iDataOne. Tell us about your project and we will get back to you within 24 hours. No commitment, just a conversation.">
+<meta name="keywords" content="contact iDataOne, book discovery call, AI consultation, digital product consultation, free consultation, iDataOne contact">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact iDataOne — Book a Free Discovery Call">
+<meta property="og:description" content="Book a free 30-minute discovery call with iDataOne. Tell us about your project and we will get back to you within 24 hours. No commitment, just a conversation.">
+<meta property="og:url" content="https://idataone.com/contact">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:site_name" content="iDataOne">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact iDataOne — Book a Free Discovery Call">
+<meta name="twitter:description" content="Book a free 30-minute discovery call with iDataOne. Tell us about your project and we will get back to you within 24 hours. No commitment, just a conversation.">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact iDataOne",
+  "url": "https://idataone.com/contact",
+  "description": "Book a free discovery call with iDataOne. We review every enquiry personally and respond within 24 hours.",
+  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "email": "info@idataone.com"}
+}
+</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/contact">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
