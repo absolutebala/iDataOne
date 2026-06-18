@@ -262,7 +262,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-tag">Enterprise Platform</div>
           <div class="story-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
           <div class="story-desc">We designed and built a full-stack risk assessment platform with a 5x5 severity matrix, real-time dashboards, role-based workflows and threaded communication — deployed across multiple departments.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/risk-platform" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual">
           <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">

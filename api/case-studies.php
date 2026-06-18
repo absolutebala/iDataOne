@@ -287,7 +287,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</div>
           <div class="case-desc">We built a full-stack risk assessment platform with severity matrix, real-time dashboards, role-based workflows and threaded communication across departments.</div>
           <div class="case-tags"><span class="case-tag">Enterprise</span><span class="case-tag">Compliance</span><span class="case-tag">FMCG</span></div>
-          <a href="/contact" class="case-cta">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/risk-platform" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
@@ -334,7 +334,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</div>
           <div class="case-desc">We built a risk analytics dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring across 8 risk categories.</div>
           <div class="case-tags"><span class="case-tag">Risk Analytics</span><span class="case-tag">Dashboards</span><span class="case-tag">FMCG</span></div>
-          <a href="/contact" class="case-cta amber">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/risk-dashboard" class="case-cta amber">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
