@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Case Study: Telecom Infrastructure Project Management Platform | iDataOne</title>
-<meta name="description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy across multiple regions and roles.">
-<meta name="keywords" content="telecom project management software, vendor management platform, infrastructure project tracking, telecom PMS, PO tracking software, Next.js Supabase platform, iDataOne">
+<meta name="description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy, a vendor for Indus Towers, across multiple regions and roles.">
+<meta name="keywords" content="telecom project management software, vendor management platform, infrastructure project tracking, telecom PMS, PO tracking software, Indus Towers vendor, Next.js Supabase platform, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/telecom-pm-platform">
@@ -33,7 +33,8 @@
   "about": [
     {"@type": "Thing", "name": "Telecom Infrastructure Management"},
     {"@type": "Thing", "name": "Project Management Software"},
-    {"@type": "Thing", "name": "Vendor Management Platform"}
+    {"@type": "Thing", "name": "Vendor Management Platform"},
+    {"@type": "Organization", "name": "Indus Towers"}
   ],
   "keywords": "telecom project management, vendor management, PO tracking, infrastructure operations, Next.js, Supabase"
 }
@@ -108,7 +109,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-hero-inner">
     <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
     <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
-    <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.</p>
+    <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
     <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>2,200+</span></div><div class="cs-stat-label">Projects Tracked</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles</div></div>
@@ -123,7 +124,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-inner">
     <div class="cs-tag">The Challenge</div>
     <h2 class="cs-h2">Telecom Project Data Was Fragmented Across Spreadsheets and Manual Trackers</h2>
-    <p class="cs-p">Venus Energy, a telecom infrastructure company, was managing thousands of projects — tower erection, SMPS installation, civil works, and more — across multiple vendors, project managers and regions using disconnected spreadsheets. PO statuses, material movement (STN/SRN), expenses and invoices lived in separate files with no single source of truth, making it hard to track project health, vendor performance or financial exposure in real time.</p>
+    <p class="cs-p">Venus Energy, a telecom infrastructure company executing projects for Indus Towers, was managing thousands of projects — tower erection, SMPS installation, civil works, and more — across multiple vendors, project managers and regions using disconnected spreadsheets. PO statuses, material movement (STN/SRN), expenses and invoices lived in separate files with no single source of truth, making it hard to track project health, vendor performance or financial exposure in real time.</p>
     <p class="cs-p">They needed a centralised platform that could manage the full project lifecycle — from PO creation through vendor assignment, material tracking, permits, expenses, billing and financial reconciliation — with role-based access for super admins, regional managers, project managers and vendors.</p>
   </div>
 </section>

@@ -297,7 +297,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-metric metric-digital">2,200+</div>
           <div class="case-metric-label">projects tracked across 50+ vendors</div>
           <div class="case-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</div>
-          <div class="case-desc">We designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.</div>
+          <div class="case-desc">We designed and built a full-stack project, vendor and financial management platform for a vendor of Indus Towers that unified telecom infrastructure operations across multiple regions and roles.</div>
           <div class="case-tags"><span class="case-tag">Telecom</span><span class="case-tag">Project Management</span><span class="case-tag">Vendor Management</span></div>
           <a href="/case-study/telecom-pm-platform" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>

@@ -295,7 +295,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div>
           <div class="story-tag">Telecom Infrastructure</div>
           <div class="story-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</div>
-          <div class="story-desc">We designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles — tracking 2,200+ projects and ₹7+ Cr in PO value.</div>
+          <div class="story-desc">We designed and built a full-stack project, vendor and financial management platform for a vendor of Indus Towers that unified telecom infrastructure operations across multiple regions and roles — tracking 2,200+ projects and ₹7+ Cr in PO value.</div>
           <a href="/case-study/telecom-pm-platform" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual">
