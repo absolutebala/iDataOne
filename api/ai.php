@@ -288,33 +288,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">AI Features</div>
-          <div class="story-title">Adding Smart AI Recommendations to an E-Commerce Platform</div>
-          <div class="story-desc">We built and shipped AI-powered product recommendation and personalisation features for an e-commerce platform, increasing average order value by 35%.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="14" y="16" width="60" height="40" rx="6" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="20" y="24" width="48" height="20" rx="4" fill="rgba(124,58,237,0.08)"/>
-            <rect x="20" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="20" y="56" width="40" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="86" y="16" width="66" height="40" rx="6" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="92" y="24" width="54" height="20" rx="4" fill="rgba(124,58,237,0.1)"/>
-            <rect x="92" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="92" y="56" width="40" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="14" y="70" width="132" height="32" rx="6" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="20" y="76" width="60" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
-            <rect x="20" y="85" width="100" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <circle cx="134" cy="82" r="5" fill="rgba(124,58,237,0.15)"/>
-          </svg>
-        </div>
-      </div>
-
-    </div>
+          </div>
   </div>
 </section>
 

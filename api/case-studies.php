@@ -211,7 +211,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <div class="filter-wrap">
   <div class="filter-inner">
     <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">8</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">2</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">3</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">4</span></button>
     <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
@@ -272,6 +272,36 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
+
+<!-- Digital: Telecom PM Platform -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.06)"/>
+            <rect x="28" y="56" width="104" height="44" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="36" y="66" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="36" y="78" width="68" height="12" rx="4" fill="rgba(99,102,241,0.3)"/>
+            <rect x="148" y="56" width="104" height="44" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+            <rect x="156" y="66" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="156" y="78" width="68" height="12" rx="4" fill="rgba(20,184,166,0.3)"/>
+            <rect x="28" y="112" width="224" height="42" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="170" y="120" width="68" height="10" rx="4" fill="rgba(99,102,241,0.2)"/>
+            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="170" y="136" width="68" height="10" rx="4" fill="rgba(20,184,166,0.25)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">2,200+</div>
+          <div class="case-metric-label">projects tracked across 50+ vendors</div>
+          <div class="case-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</div>
+          <div class="case-desc">We designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.</div>
+          <div class="case-tags"><span class="case-tag">Telecom</span><span class="case-tag">Project Management</span><span class="case-tag">Vendor Management</span></div>
+          <a href="/case-study/telecom-pm-platform" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
 
 <!-- Digital: Enterprise Risk Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
@@ -464,36 +494,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <!-- AI: Recommendations -->
-      <div class="case-card" data-cat="ai">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="20" width="116" height="80" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="26" y="32" width="96" height="36" rx="6" fill="rgba(124,58,237,0.08)"/>
-            <rect x="26" y="72" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="26" y="81" width="80" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="148" y="20" width="116" height="80" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="158" y="32" width="96" height="36" rx="6" fill="rgba(52,211,153,0.1)"/>
-            <rect x="158" y="72" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="158" y="81" width="80" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="16" y="114" width="248" height="40" rx="10" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="26" y="122" width="80" height="5" rx="2.5" fill="rgba(124,58,237,0.25)"/>
-            <rect x="26" y="132" width="140" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <circle cx="248" cy="134" r="7" fill="rgba(124,58,237,0.15)"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-ai">AI & Automation</div>
-          <div class="case-metric metric-ai">35%</div>
-          <div class="case-metric-label">increase in average order value</div>
-          <div class="case-title">Adding Smart AI Recommendations to an E-Commerce Platform</div>
-          <div class="case-desc">We built AI-powered product recommendation and personalisation features that increased average order value by 35%.</div>
-          <div class="case-tags"><span class="case-tag">E-Commerce</span><span class="case-tag">AI Features</span></div>
-          <a href="/contact" class="case-cta violet">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
-      <!-- Data: Unified -->
+            <!-- Data: Unified -->
             <!-- Data: Predictions -->
       <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
