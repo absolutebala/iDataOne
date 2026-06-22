@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
         <p><strong>Service:</strong> {$service}</p>
         <p><strong>Message:</strong><br>{$message}</p>";
     $payload = json_encode([
-        'from'     => 'iDataOne <onboarding@resend.dev>',
+        'from'     => 'iDataOne <noreply@idataone.com>',
         'to'       => ['info@idataone.com'],
         'subject'  => "Discovery Call Request from {$name}",
         'html'     => $body,
