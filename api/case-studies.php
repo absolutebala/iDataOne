@@ -210,8 +210,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">8</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">3</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">9</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">4</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">4</span></button>
     <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
@@ -344,6 +344,34 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 <!-- Data: Risk Intelligence Dashboard -->
+<!-- Digital: iSportOne -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/isportone'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#fff1f2,#ffe4e6)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(244,63,94,0.06)"/>
+            <circle cx="70" cy="80" r="26" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
+            <circle cx="70" cy="70" r="10" fill="rgba(244,63,94,0.2)"/>
+            <rect x="46" y="116" width="48" height="8" rx="4" fill="rgba(15,23,42,0.08)"/>
+            <rect x="120" y="56" width="124" height="36" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="130" y="66" width="60" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
+            <rect x="130" y="78" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="120" y="100" width="124" height="36" rx="8" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+            <rect x="130" y="110" width="60" height="5" rx="2.5" fill="rgba(20,184,166,0.25)"/>
+            <rect x="130" y="122" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">4</div>
+          <div class="case-metric-label">user roles in one adaptive platform</div>
+          <div class="case-title">Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere</div>
+          <div class="case-desc">We're designing a sports professional network combining a lifelong sports passport, adaptive profiles, club management and safe-by-design parental controls — for athletes of every level.</div>
+          <div class="case-tags"><span class="case-tag">Sports Tech</span><span class="case-tag">Product Design</span><span class="case-tag">Social Platform</span></div>
+          <a href="/case-study/isportone" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
       <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
