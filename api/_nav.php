@@ -1,7 +1,7 @@
 <?php $current_page = $current_page ?? ''; ?>
 <style>
 @view-transition{navigation:auto}
-.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(238,240,250,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
+.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
 .site-nav .nav-logo{text-decoration:none;flex-shrink:0;min-width:160px}
 .site-nav .nav-logo img{height:40px;width:auto;opacity:0.92}
 .site-nav .nav-links{display:flex;gap:28px;align-items:center}
