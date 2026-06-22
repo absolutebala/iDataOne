@@ -32,6 +32,9 @@
     },
     "api/case-isportone.php": {
       "runtime": "vercel-php@0.9.0"
+    },
+    "api/isportone.php": {
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "rewrites": [
@@ -60,6 +63,10 @@
     {
       "source": "/case-study/isportone",
       "destination": "/api/case-isportone.php"
+    },
+    {
+      "source": "/isportone",
+      "destination": "/api/isportone.php"
     },
     {
       "has": [
@@ -126,6 +133,10 @@
     {
       "source": "/case-study/isportone",
       "destination": "/api/case-isportone.php"
+    },
+    {
+      "source": "/isportone",
+      "destination": "/api/isportone.php"
     },
     {
       "source": "/(.*)",

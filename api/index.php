@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
 <meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
-<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Sportfolio, aiDesker, DatInsights">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, iSportOne, aiDesker, DatInsights">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
@@ -986,8 +986,8 @@ letter-spacing:0.3px;
 
   <h2>Products from iDataOne</h2>
 
-  <h3>Sportfolio — AI Meal Planning App</h3>
-  <p>Never wonder what to cook again. Sportfolio recommends healthy, personalised meals based on your family's health conditions, dietary preferences, and nutritional needs — making everyday cooking simpler and healthier. Available on App Store and Google Play.</p>
+  <h3>iSportOne — Lifelong Sports Passport</h3>
+  <p>Your sport. Your story. Forever. Record every match, build your career profile, and connect with your sports community for life. A professional network for athletes of every level. In Development.</p>
 
   <h3>aiDesker — AI Customer Service Agents</h3>
   <p>Always on. Always intelligent. AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock. Coming Soon.</p>
@@ -996,7 +996,7 @@ letter-spacing:0.3px;
   <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
 
   <h2>Contact iDataOne — Book a Free Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Sportfolio, aiDesker, DatInsights.</p>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, iSportOne, aiDesker, DatInsights.</p>
 
 </div>
 
@@ -1211,7 +1211,7 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 Sportfolio</div>
+    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 iSportOne</div>
     <div class="cap-tab" onclick="prodTab(1,this)">02 aiDesker</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
   </div>
@@ -1220,7 +1220,7 @@ letter-spacing:0.3px;
     <div class="cap-slide active">
       <div class="cap-card rose">
         <div class="cap-left">
-          <div class="cap-card-title">Sportfolio</div>
+          <div class="cap-card-title">iSportOne</div>
           <div class="cap-card-outcome">Your sport. Your story. Forever.</div>
           <div class="cap-card-desc">Record every match. Build your career profile. Connect with your sports community — for life.</div>
           <ul class="cap-checklist">
@@ -1228,7 +1228,7 @@ letter-spacing:0.3px;
             <li>Community</li><li>Sports Network</li>
           </ul>
           <div style="margin-bottom:14px">
-            <span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
+            <a href="/isportone" style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none">Learn More →</a>
           </div>
                     <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
@@ -1446,7 +1446,7 @@ letter-spacing:0.3px;
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
-        <div class="service-pill" onclick="selectService(this,'Sportfolio')">Sportfolio</div>
+        <div class="service-pill" onclick="selectService(this,'iSportOne')">iSportOne</div>
         <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
         <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
       </div>

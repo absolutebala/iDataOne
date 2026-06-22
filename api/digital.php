@@ -503,10 +503,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           </svg>
         </div>
         <div class="product-card-body">
-          <div class="product-badge badge-live">Live</div>
-          <div class="product-card-title">Sportfolio</div>
-          <div class="product-card-desc">Never wonder what to cook again. Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
-          <span style="display:inline-block;padding:4px 12px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span>
+          <div class="product-badge badge-soon">In Development</div>
+          <div class="product-card-title">iSportOne</div>
+          <div class="product-card-desc">Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
+          <a href="/isportone" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 

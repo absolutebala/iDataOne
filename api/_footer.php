@@ -17,7 +17,7 @@
       <div>
         <div class="footer-col-title">Products</div>
         <ul class="footer-links">
-          <li><a>Sportfolio</a></li>
+          <li><a href="/isportone">iSportOne</a></li>
           <li><a>aiDesker</a></li>
           <li><a>DatInsights</a></li>
         </ul>
