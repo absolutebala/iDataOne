@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
     ";
 
     $payload = json_encode([
-        'from'     => 'iDataOne <onboarding@resend.dev>',
+        'from'     => 'iDataOne <noreply@idataone.com>',
         'to'       => ['info@idataone.com'],
         'subject'  => "Discovery Call Request from {$name}",
         'html'     => $body,
@@ -38,10 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
     ]);
     $response = curl_exec($ch);
     $status   = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
+    $curl_err = curl_error($ch);
 
     $form_success = ($status === 200);
     $form_error   = !$form_success;
+    if ($form_error) {
+        error_log("Resend API failed (homepage) - Status: {$status}, cURL Error: {$curl_err}, Response: {$response}");
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -1422,7 +1425,7 @@ letter-spacing:0.3px;
     <div class="form-msg error">Something went wrong. Please email info@idataone.com directly.</div>
     <?php endif; ?>
 
-    <form method="POST" action="#" id="contact-form">
+    <form method="POST" action="/" id="contact-form">
     <input type="hidden" name="form_submit" value="1">
     <input type="hidden" name="service" id="service-val" value="">
 
