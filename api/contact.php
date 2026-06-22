@@ -28,9 +28,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . $api_key, 'Content-Type: application/json']);
     $response = curl_exec($ch);
     $status   = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
+    $curl_err = curl_error($ch);
     $form_success = ($status === 200);
     $form_error   = !$form_success;
+    if ($form_error) {
+        error_log("Resend API failed - Status: {$status}, cURL Error: {$curl_err}, Response: {$response}");
+    }
 }
 ?>
 <!DOCTYPE html>
