@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.</title>
@@ -119,6 +120,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </style>
 </head>
 <body>
+<?php include __DIR__ . '/_gtm_body.php'; ?>
 
 <?php $current_page = 'data'; include __DIR__ . '/_nav.php'; ?>
 

@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact iDataOne — Book a Free Discovery Call</title>
@@ -142,6 +143,7 @@ body{
 </style>
 </head>
 <body>
+<?php include __DIR__ . '/_gtm_body.php'; ?>
 
 <?php $current_page = 'contact'; include __DIR__ . '/_nav.php'; ?>
 

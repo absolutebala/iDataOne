@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MealMate What Should We Cook Tonight?</title>
@@ -499,6 +500,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 </style>
 </head>
 <body>
+<?php include __DIR__ . '/_gtm_body.php'; ?>
 
 <!-- ── Hero ── -->
 <a href="https://idataone.com" class="top-nav-link">
