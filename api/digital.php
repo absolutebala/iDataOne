@@ -388,55 +388,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           </svg>
         </div>
       </div>
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Enterprise Modernisation</div>
-          <div class="story-title">Modernising Legacy Systems for a Global Enterprise</div>
-          <div class="story-desc">We modernised legacy applications and streamlined operations with a unified digital platform, cutting processing time by 60% and reducing operational costs significantly.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="16" width="128" height="20" rx="5" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="22" y="22" width="50" height="5" rx="2.5" fill="rgba(20,184,166,0.3)"/>
-            <circle cx="134" cy="26" r="5" fill="rgba(20,184,166,0.2)"/>
-            <rect x="16" y="44" width="128" height="20" rx="5" fill="rgba(99,102,241,0.05)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="22" y="50" width="50" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
-            <circle cx="134" cy="54" r="5" fill="rgba(99,102,241,0.15)"/>
-            <rect x="16" y="72" width="128" height="20" rx="5" fill="rgba(245,158,11,0.05)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
-            <rect x="22" y="78" width="50" height="5" rx="2.5" fill="rgba(245,158,11,0.3)"/>
-            <circle cx="134" cy="82" r="5" fill="rgba(245,158,11,0.2)"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Mobile Application</div>
-          <div class="story-title">Launching a Cross-Platform Mobile App in 90 Days</div>
-          <div class="story-desc">We designed and built a consumer mobile app for iOS and Android, going from wireframes to App Store launch in 90 days with a 4.8 star rating from day one.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="48" y="12" width="64" height="96" rx="10" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-            <rect x="54" y="22" width="52" height="76" rx="6" fill="rgba(248,250,252,0.9)"/>
-            <rect x="70" y="15" width="20" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
-            <rect x="58" y="28" width="44" height="6" rx="3" fill="rgba(124,58,237,0.25)"/>
-            <rect x="58" y="40" width="44" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="58" y="50" width="44" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-            <rect x="58" y="62" width="20" height="14" rx="5" fill="rgba(124,58,237,0.18)"/>
-            <rect x="82" y="62" width="20" height="14" rx="5" fill="rgba(20,184,166,0.15)"/>
-            <circle cx="72" cy="96" r="4" fill="rgba(124,58,237,0.3)"/>
-            <circle cx="84" cy="96" r="4" fill="rgba(15,23,42,0.08)"/>
-            <circle cx="96" cy="96" r="4" fill="rgba(15,23,42,0.08)"/>
-          </svg>
-        </div>
-      </div>
-
-
+            
 
 
     </div>
