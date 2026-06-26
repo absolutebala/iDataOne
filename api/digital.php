@@ -169,8 +169,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="banner-inner">
     <div>
       <div class="banner-tag">Digital Products</div>
-      <h1 class="banner-h1">Build Digital Products<br>Your Business Can<br><em>Depend On</em></h1>
-      <p class="banner-sub">From web apps to enterprise platforms, we design, build and scale software products tailored precisely to your business needs within your budget.</p>
+      <h1 class="banner-h1">Digitalise Your<br>Business <em>with AI</em></h1>
+      <p class="banner-sub">AI-Assisted Engineering. Faster Delivery. Lower Development Costs. Better Outcomes.</p>
       <div class="banner-btns">
         <a href="/contact" class="btn-primary">Start Your Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
