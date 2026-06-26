@@ -1036,7 +1036,7 @@ letter-spacing:0.3px;
   <div class="cap-slides" id="cap-slides">
 
     <div class="cap-slide active">
-      <div class="cap-card teal">
+      <div class="cap-card teal" onclick="window.location.href='/digital'" style="cursor:pointer">
         <div class="cap-left">
           <div class="cap-card-title">Build Digital Products</div>
           <div class="cap-card-outcome">Ship faster. Scale without limits.</div>
@@ -1048,9 +1048,9 @@ letter-spacing:0.3px;
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-teal"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">01 / 03</span>
-              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
@@ -1093,7 +1093,7 @@ letter-spacing:0.3px;
     </div>
 
     <div class="cap-slide">
-      <div class="cap-card violet">
+      <div class="cap-card violet" onclick="window.location.href='/ai'" style="cursor:pointer">
         <div class="cap-left">
           <div class="cap-card-title">Enable AI &amp; Automation</div>
           <div class="cap-card-outcome">Automate decisions. Eliminate bottlenecks.</div>
@@ -1105,9 +1105,9 @@ letter-spacing:0.3px;
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-violet"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">02 / 03</span>
-              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
@@ -1145,7 +1145,7 @@ letter-spacing:0.3px;
     </div>
 
     <div class="cap-slide">
-      <div class="cap-card amber">
+      <div class="cap-card amber" onclick="window.location.href='/data'" style="cursor:pointer">
         <div class="cap-left">
           <div class="cap-card-title">Transform Data into Decisions</div>
           <div class="cap-card-outcome">One truth. Instant clarity.</div>
@@ -1157,9 +1157,9 @@ letter-spacing:0.3px;
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-amber"></div></div>
             <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">03 / 03</span>
-              <button class="cap-nav-btn" onclick="capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();capNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
