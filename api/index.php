@@ -407,7 +407,18 @@ font-size:14px;
 .cap-pip.active-sky{background:#0ea5e9;width:28px}
 .cap-pip.active-emerald{background:#10b981;width:28px}
 .cap-nav{display:flex;align-items:center;gap:10px}
-.cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(203,213,225,0.8);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+.cap-nav-btn{width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(100,116,139,0.35);background:rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+.cap-nav-btn:hover{background:#0f172a;border-color:#0f172a}
+.cap-nav-btn:hover svg{stroke:#fff}
+.cap-explore{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;text-decoration:none;margin-bottom:18px;transition:gap 0.2s}
+.cap-explore:hover{gap:10px}
+.cap-explore svg{width:14px;height:14px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cap-explore.teal{color:#0d9488}
+.cap-explore.teal svg{stroke:#0d9488}
+.cap-explore.violet{color:#7c3aed}
+.cap-explore.violet svg{stroke:#7c3aed}
+.cap-explore.amber{color:#d97706}
+.cap-explore.amber svg{stroke:#d97706}
 .cap-nav-btn svg{width:14px;height:14px;fill:none;stroke:#64748b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke 0.2s}
 .cap-nav-btn:hover{background:#0f172a;border-color:#0f172a}
 .cap-nav-btn:hover svg{stroke:#fff}
@@ -1045,6 +1056,7 @@ letter-spacing:0.3px;
             <li>Web Apps</li><li>Mobile Apps</li>
             <li>SaaS Platforms</li><li>Enterprise Apps</li>
           </ul>
+          <a href="/digital" class="cap-explore teal" onclick="event.stopPropagation()">Explore Digital <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip active-teal"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
@@ -1102,6 +1114,7 @@ letter-spacing:0.3px;
             <li>AI Agents</li><li>LLM Integration</li>
             <li>Automation</li><li>AI Features</li>
           </ul>
+          <a href="/ai" class="cap-explore violet" onclick="event.stopPropagation()">Explore AI <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-violet"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
@@ -1154,6 +1167,7 @@ letter-spacing:0.3px;
             <li>Unified Data</li><li>Dashboards</li>
             <li>BI &amp; Analytics</li><li>Predictions</li>
           </ul>
+          <a href="/data" class="cap-explore amber" onclick="event.stopPropagation()">Explore Data <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-amber"></div></div>
             <div class="cap-nav">
