@@ -129,8 +129,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="banner-inner">
     <div>
       <div class="banner-tag">AI & Automation</div>
-      <h1 class="banner-h1">Integrate AI That<br>Works In <em>Production</em></h1>
-      <p class="banner-sub">From AI agents to intelligent workflows, we integrate AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.</p>
+      <h1 class="banner-h1">Grow Your<br>Business <em>with AI</em></h1>
+      <p class="banner-sub">Automate operations, improve customer experiences, and unlock new opportunities with AI solutions tailored to your business.</p>
       <div class="banner-btns">
         <a href="/contact" class="btn-primary">Start Your AI Journey <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
