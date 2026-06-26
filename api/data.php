@@ -129,8 +129,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="banner-inner">
     <div>
       <div class="banner-tag">Data Intelligence</div>
-      <h1 class="banner-h1">Turn Data Into Your<br>Biggest <em>Advantage</em></h1>
-      <p class="banner-sub">Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.</p>
+      <h1 class="banner-h1">Turn Your Data into Smarter<br>Business Decisions <em>with AI</em></h1>
+      <p class="banner-sub">Connect, analyse, and visualise your business data with AI to uncover insights that drive confident decisions and sustainable growth.</p>
       <div class="banner-btns">
         <a href="/contact" class="btn-primary">Start With Your Data <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
