@@ -290,7 +290,33 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-          </div>
+          
+      <div class="story-card" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">Consumer Mobile App</div>
+          <div class="story-title">Building an AI-Powered Family Meal Planning App</div>
+          <div class="story-desc">We integrated GPT-4o-mini into MealMate, a React Native app, to generate health-aware, personalised meal suggestions for every member of a family.</div>
+          <a href="/case-study/mealmate" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="58" y="14" width="44" height="92" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+            <rect x="64" y="24" width="32" height="8" rx="3" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
+            <circle cx="71" cy="28" r="2.5" fill="rgba(124,58,237,0.3)"/>
+            <rect x="64" y="36" width="32" height="16" rx="3" fill="#fff" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+            <rect x="68" y="40" width="14" height="3" rx="1.5" fill="rgba(124,58,237,0.3)"/>
+            <rect x="68" y="46" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="64" y="56" width="32" height="16" rx="3" fill="rgba(124,58,237,0.06)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+            <rect x="68" y="60" width="14" height="3" rx="1.5" fill="rgba(124,58,237,0.25)"/>
+            <rect x="64" y="78" width="32" height="9" rx="4.5" fill="rgba(124,58,237,0.7)"/>
+            <circle cx="24" cy="40" r="13" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+            <circle cx="24" cy="40" r="5" fill="rgba(124,58,237,0.25)"/>
+            <circle cx="130" cy="55" r="9" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+</div>
   </div>
 </section>
 

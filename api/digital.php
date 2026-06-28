@@ -378,21 +378,28 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
         <div>
-          <div class="story-tag">SaaS Platform</div>
-          <div class="story-title">Scaling a SaaS Platform from 0 to 100K Users</div>
-          <div class="story-desc">We helped a B2B SaaS company build a scalable platform with advanced analytics, automation and a seamless user experience that grew to 100K users in under 12 months.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="story-tag">Consumer Mobile App</div>
+          <div class="story-title">Building an AI-Powered Family Meal Planning App</div>
+          <div class="story-desc">We designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by GPT-4o-mini.</div>
+          <a href="/case-study/mealmate" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual">
           <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="18" width="60" height="6" rx="3" fill="rgba(99,102,241,0.2)"/>
-            <rect x="16" y="30" width="80" height="12" rx="4" fill="rgba(99,102,241,0.35)"/>
-            <rect x="16" y="46" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <polyline points="16,96 36,82 56,86 76,70 96,58 116,62 136,48" stroke="rgba(99,102,241,0.7)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <polygon points="16,96 36,82 56,86 76,70 96,58 116,62 136,48 136,100 16,100" fill="rgba(99,102,241,0.06)"/>
+            <rect x="58" y="14" width="44" height="92" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
+            <rect x="64" y="24" width="32" height="8" rx="3" fill="rgba(245,158,11,0.15)" stroke="rgba(217,119,6,0.18)" stroke-width="1"/>
+            <circle cx="71" cy="28" r="2.5" fill="rgba(217,119,6,0.3)"/>
+            <rect x="64" y="36" width="32" height="16" rx="3" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="68" y="40" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.3)"/>
+            <rect x="68" y="46" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="64" y="56" width="32" height="16" rx="3" fill="rgba(245,158,11,0.08)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="68" y="60" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.25)"/>
+            <rect x="64" y="78" width="32" height="9" rx="4.5" fill="rgba(217,119,6,0.7)"/>
+            <circle cx="24" cy="35" r="11" fill="rgba(217,119,6,0.1)" stroke="rgba(217,119,6,0.22)" stroke-width="1"/>
+            <circle cx="24" cy="55" r="9" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <circle cx="130" cy="40" r="10" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.22)" stroke-width="1"/>
           </svg>
         </div>
       </div>

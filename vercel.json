@@ -35,6 +35,9 @@
     },
     "api/isportone.php": {
       "runtime": "vercel-php@0.9.0"
+    },
+    "api/case-mealmate.php": {
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "rewrites": [
@@ -67,6 +70,10 @@
     {
       "source": "/isportone",
       "destination": "/api/isportone.php"
+    },
+    {
+      "source": "/case-study/mealmate",
+      "destination": "/api/case-mealmate.php"
     },
     {
       "has": [
@@ -137,6 +144,10 @@
     {
       "source": "/isportone",
       "destination": "/api/isportone.php"
+    },
+    {
+      "source": "/case-study/mealmate",
+      "destination": "/api/case-mealmate.php"
     },
     {
       "source": "/(.*)",
