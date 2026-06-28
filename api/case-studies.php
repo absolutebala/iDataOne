@@ -212,9 +212,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">9</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">4</span></button>
-    <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">4</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">12</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">5</span></button>
+    <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">5</span></button>
     <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
 </div>
@@ -275,7 +275,67 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
 
-<!-- Digital: Telecom PM Platform -->
+<!-- Digital: aiDesker SaaS Platform -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#f0f9ff,#e0f2fe)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(14,165,233,0.06)"/>
+            <rect x="28" y="56" width="104" height="44" rx="6" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
+            <circle cx="48" cy="78" r="12" fill="rgba(14,165,233,0.2)"/>
+            <rect x="68" y="68" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="68" y="80" width="40" height="10" rx="3" fill="rgba(14,165,233,0.3)"/>
+            <rect x="148" y="56" width="104" height="44" rx="6" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="156" y="66" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="156" y="78" width="68" height="12" rx="4" fill="rgba(99,102,241,0.25)"/>
+            <rect x="28" y="112" width="224" height="42" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="170" y="120" width="68" height="10" rx="4" fill="rgba(14,165,233,0.2)"/>
+            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="170" y="136" width="68" height="10" rx="4" fill="rgba(20,184,166,0.25)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">1-Line</div>
+          <div class="case-metric-label">embed to go live on any site</div>
+          <div class="case-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</div>
+          <div class="case-desc">We designed and built aiDesker, a full-stack SaaS platform with per-tenant data isolation, Stripe billing, a super admin layer and a one-line embeddable widget.</div>
+          <div class="case-tags"><span class="case-tag">SaaS</span><span class="case-tag">Multi-Tenant</span><span class="case-tag">Embeddable Widget</span></div>
+          <a href="/case-study/aidesker" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+<!-- AI: aiDesker Conversational AI -->
+      <div class="case-card" data-cat="ai" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="60" y="50" width="160" height="60" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
+            <circle cx="140" cy="75" r="16" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+            <circle cx="140" cy="75" r="6" fill="rgba(124,58,237,0.35)"/>
+            <rect x="85" y="97" width="110" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
+            <rect x="20" y="62" width="30" height="38" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+            <rect x="26" y="70" width="18" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
+            <rect x="26" y="78" width="14" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="230" y="62" width="30" height="38" rx="8" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.25)" stroke-width="1"/>
+            <rect x="236" y="70" width="18" height="4" rx="2" fill="rgba(20,184,166,0.3)"/>
+            <rect x="236" y="78" width="14" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
+            <rect x="60" y="126" width="68" height="24" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+            <rect x="152" y="126" width="68" height="24" rx="8" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-ai">AI &amp; Automation</div>
+          <div class="case-metric metric-ai">2</div>
+          <div class="case-metric-label">AI providers, one unified chat proxy</div>
+          <div class="case-title">Building a Knowledge-Grounded AI Chat Assistant Businesses Can Embed in One Line</div>
+          <div class="case-desc">We built aiDesker, a conversational AI platform that grounds every response in a business's own knowledge base and captures leads mid-conversation.</div>
+          <div class="case-tags"><span class="case-tag">Conversational AI</span><span class="case-tag">Lead Capture</span><span class="case-tag">RAG</span></div>
+          <a href="/case-study/aidesker" class="case-cta violet">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">

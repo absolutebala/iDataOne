@@ -204,12 +204,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="section-sub">Businesses that embedded AI into their operations and saw measurable impact.</p>
     <div class="stories-grid">
 
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
         <div>
-          <div class="story-tag">AI Agents</div>
-          <div class="story-title">Deploying AI Agents That Handle 80% of Customer Queries</div>
-          <div class="story-desc">We built and deployed intelligent AI agents for a retail brand that autonomously handled 80% of support queries, reducing response time from hours to seconds.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="story-tag">Conversational AI</div>
+          <div class="story-title">Building a Knowledge-Grounded AI Chat Assistant Businesses Can Embed in One Line</div>
+          <div class="story-desc">We built aiDesker, a conversational AI platform that grounds every response in a business's own knowledge base, captures leads mid-conversation, and runs on the business's own AI key.</div>
+          <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual">
           <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">

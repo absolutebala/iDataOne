@@ -38,6 +38,9 @@
     },
     "api/case-mealmate.php": {
       "runtime": "vercel-php@0.9.0"
+    },
+    "api/case-aidesker.php": {
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "rewrites": [
@@ -74,6 +77,10 @@
     {
       "source": "/case-study/mealmate",
       "destination": "/api/case-mealmate.php"
+    },
+    {
+      "source": "/case-study/aidesker",
+      "destination": "/api/case-aidesker.php"
     },
     {
       "has": [
@@ -148,6 +155,10 @@
     {
       "source": "/case-study/mealmate",
       "destination": "/api/case-mealmate.php"
+    },
+    {
+      "source": "/case-study/aidesker",
+      "destination": "/api/case-aidesker.php"
     },
     {
       "source": "/(.*)",
