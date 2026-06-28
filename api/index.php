@@ -585,6 +585,8 @@ transform:scale(1.4);
 .top-nav .site-logo{position:static;transition:none;min-width:160px}
 .top-nav.hidden{opacity:0;pointer-events:none}
 .top-nav-links{display:flex;gap:28px;align-items:center}
+.nav-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#4f46e5,#7c3aed);z-index:300;transition:width 0.25s ease-out;box-shadow:0 0 8px rgba(99,102,241,0.6)}
+.nav-progress.active{width:75%}
 .top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
 .top-nav-links a:not([href]):hover{color:#475569}
@@ -836,6 +838,8 @@ letter-spacing:0.3px;
 <body>
 <?php include __DIR__ . '/_gtm_body.php'; ?>
 
+<div class="nav-progress" id="navProgress"></div>
+
 <!-- Hamburger Menu -->
 <div class="hamburger" id="hamburger" onclick="toggleMenu()">
   <span></span><span></span><span></span>
@@ -854,7 +858,7 @@ letter-spacing:0.3px;
   <div class="site-logo large" id="site-logo">
     <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
   </div>
-  <div class="top-nav-links">
+  <div class="top-nav-links" id="topNavLinks">
     <a href="/digital">Digital</a>
     <a href="/ai">AI</a>
     <a href="/data">Data</a>
@@ -1636,6 +1640,31 @@ function toggleMenu() {
   m.classList.toggle('open');
   o.classList.toggle('open');
 }
+
+(function(){
+  var navLinks = document.querySelectorAll('#topNavLinks a[href], .mob-menu a[href]');
+  var prefetched = {};
+
+  function prefetch(url){
+    if(prefetched[url]) return;
+    prefetched[url] = true;
+    var link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = url;
+    document.head.appendChild(link);
+  }
+
+  navLinks.forEach(function(a){
+    a.addEventListener('mouseenter', function(){
+      prefetch(a.href);
+    });
+    a.addEventListener('click', function(){
+      if(a.pathname === window.location.pathname) return;
+      var bar = document.getElementById('navProgress');
+      if(bar) bar.classList.add('active');
+    });
+  });
+})();
 </script>
 
 </body>

@@ -23,7 +23,11 @@
 .nav-ov{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:199;opacity:0;pointer-events:none;transition:opacity 0.3s}
 .nav-ov.open{opacity:1;pointer-events:auto}
 @media(max-width:768px){.site-nav .nav-links{display:none}.nav-ham{display:flex}}
+.nav-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#4f46e5,#7c3aed);z-index:300;transition:width 0.25s ease-out;box-shadow:0 0 8px rgba(99,102,241,0.6)}
+.nav-progress.active{width:75%}
 </style>
+
+<div class="nav-progress" id="navProgress"></div>
 
 <div class="nav-ham" id="navHam" onclick="toggleNav()"><span></span><span></span><span></span></div>
 <div class="nav-ov" id="navOv" onclick="toggleNav()"></div>
@@ -48,4 +52,29 @@
 
 <script>
 function toggleNav(){document.getElementById('navHam').classList.toggle('open');document.getElementById('navMob').classList.toggle('open');document.getElementById('navOv').classList.toggle('open')}
+
+(function(){
+  var navLinks = document.querySelectorAll('.site-nav .nav-links a[href], .nav-mob a[href]');
+  var prefetched = {};
+
+  function prefetch(url){
+    if(prefetched[url]) return;
+    prefetched[url] = true;
+    var link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = url;
+    document.head.appendChild(link);
+  }
+
+  navLinks.forEach(function(a){
+    a.addEventListener('mouseenter', function(){
+      prefetch(a.href);
+    });
+    a.addEventListener('click', function(){
+      if(a.pathname === window.location.pathname) return;
+      var bar = document.getElementById('navProgress');
+      bar.classList.add('active');
+    });
+  });
+})();
 </script>
