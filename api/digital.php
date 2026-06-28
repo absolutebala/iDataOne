@@ -149,8 +149,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .stories-grid{grid-template-columns:1fr}
   .story-card{grid-template-columns:1fr}
   .story-visual{display:none}
-  .process-steps{flex-direction:column;gap:32px}
+  .process-steps{flex-direction:column;gap:0;align-items:stretch}
   .process-steps::before{display:none}
+  .process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}
+  .process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}
+  .process-step:last-child::before{display:none}
+  .process-step:last-child{padding-bottom:0}
+  .step-icon{margin:0;flex-shrink:0}
+  .step-title{margin-bottom:6px}
   .products-grid{grid-template-columns:1fr}
   .cta-card{grid-template-columns:1fr;padding:28px 24px}
   .cta-btns{align-items:flex-start}
