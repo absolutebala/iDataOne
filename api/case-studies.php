@@ -420,34 +420,32 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <!-- Digital: SaaS -->
-      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
+      <!-- Digital: MealMate -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
           <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="16" width="240" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="20" y="16" width="240" height="30" rx="12" fill="rgba(99,102,241,0.08)"/>
-            <rect x="20" y="32" width="240" height="14" fill="rgba(99,102,241,0.08)"/>
-            <rect x="32" y="58" width="80" height="40" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="40" y="67" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="40" y="76" width="56" height="10" rx="4" fill="rgba(99,102,241,0.25)"/>
-            <rect x="120" y="58" width="80" height="40" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="128" y="67" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="128" y="76" width="56" height="10" rx="4" fill="rgba(124,58,237,0.2)"/>
-            <rect x="200" y="58" width="48" height="40" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="32" y="110" width="216" height="40" rx="6" fill="rgba(248,250,252,0.8)"/>
-            <polyline points="40,138 60,126 80,130 100,118 120,110 140,116 160,106 180,110 200,100 220,104 240,96" stroke="rgba(99,102,241,0.65)" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <polygon points="40,138 60,126 80,130 100,118 120,110 140,116 160,106 180,110 200,100 220,104 240,96 240,148 40,148" fill="rgba(99,102,241,0.05)"/>
-            <circle cx="240" cy="96" r="5" fill="rgba(99,102,241,0.7)"/>
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="100" y="26" width="80" height="128" rx="14" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
+            <rect x="112" y="42" width="56" height="14" rx="5" fill="rgba(245,158,11,0.15)" stroke="rgba(217,119,6,0.18)" stroke-width="1"/>
+            <rect x="112" y="62" width="56" height="28" rx="5" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="120" y="70" width="24" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
+            <rect x="120" y="78" width="36" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="112" y="96" width="56" height="28" rx="5" fill="rgba(245,158,11,0.08)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="120" y="104" width="24" height="4" rx="2" fill="rgba(217,119,6,0.25)"/>
+            <rect x="112" y="130" width="56" height="14" rx="7" fill="rgba(217,119,6,0.7)"/>
+            <circle cx="50" cy="55" r="18" fill="rgba(217,119,6,0.1)" stroke="rgba(217,119,6,0.22)" stroke-width="1"/>
+            <circle cx="50" cy="90" r="14" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <circle cx="226" cy="65" r="16" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.22)" stroke-width="1"/>
           </svg>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">100K</div>
-          <div class="case-metric-label">users in 12 months</div>
-          <div class="case-title">Scaling a SaaS Platform from 0 to 100K Users</div>
-          <div class="case-desc">We helped a B2B SaaS company build a scalable platform with advanced analytics, automation and a seamless UX that grew to 100K users in under a year.</div>
-          <div class="case-tags"><span class="case-tag">SaaS</span><span class="case-tag">B2B</span><span class="case-tag">Scale</span></div>
-          <a href="/contact" class="case-cta">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="case-metric metric-digital">AI</div>
+          <div class="case-metric-label">powered by GPT-4o-mini</div>
+          <div class="case-title">Building an AI-Powered Family Meal Planning App</div>
+          <div class="case-desc">We designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family.</div>
+          <div class="case-tags"><span class="case-tag">Mobile App</span><span class="case-tag">AI</span><span class="case-tag">Consumer</span></div>
+          <a href="/case-study/mealmate" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
