@@ -41,6 +41,9 @@
     },
     "api/case-aidesker.php": {
       "runtime": "vercel-php@0.9.0"
+    },
+    "api/infra360PMS.php": {
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "rewrites": [
@@ -81,6 +84,10 @@
     {
       "source": "/case-study/aidesker",
       "destination": "/api/case-aidesker.php"
+    },
+    {
+      "source": "/infra360PMS",
+      "destination": "/api/infra360PMS.php"
     },
     {
       "has": [
@@ -159,6 +166,10 @@
     {
       "source": "/case-study/aidesker",
       "destination": "/api/case-aidesker.php"
+    },
+    {
+      "source": "/infra360PMS",
+      "destination": "/api/infra360PMS.php"
     },
     {
       "source": "/(.*)",

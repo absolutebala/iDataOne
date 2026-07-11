@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
 <meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
-<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, iSportOne, aiDesker, DatInsights">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Infra360 PMS, iSportOne, aiDesker">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
@@ -320,9 +320,11 @@ font-size:14px;
 .cap-card.rose{border:1px solid rgba(244,63,94,0.22)}
 .cap-card.sky{border:1px solid rgba(14,165,233,0.2)}
 .cap-card.emerald{border:1px solid rgba(16,185,129,0.22)}
+.cap-card.indigo{border:1px solid rgba(99,102,241,0.22)}
 .cap-card.rose:hover{box-shadow:0 28px 60px rgba(244,63,94,0.12)}
 .cap-card.sky:hover{box-shadow:0 28px 60px rgba(14,165,233,0.12)}
 .cap-card.emerald:hover{box-shadow:0 28px 60px rgba(16,185,129,0.12)}
+.cap-card.indigo:hover{box-shadow:0 28px 60px rgba(99,102,241,0.12)}
 .cap-card.violet{border:1px solid rgba(124,58,237,0.2)}
 .cap-card.amber{border:1px solid rgba(245,158,11,0.22)}
 .cap-card.teal:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(20,184,166,0.14),0 4px 16px rgba(20,184,166,0.06);border-color:rgba(20,184,166,0.4)}
@@ -1016,7 +1018,7 @@ letter-spacing:0.3px;
   <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
 
   <h2>Contact iDataOne — Book a Free Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, iSportOne, aiDesker, DatInsights.</p>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Infra360 PMS, iSportOne, aiDesker.</p>
 
 </div>
 
@@ -1234,13 +1236,70 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-rose" onclick="prodTab(0,this)">01 iSportOne</div>
-    <div class="cap-tab" onclick="prodTab(1,this)">02 aiDesker</div>
-    <div class="cap-tab" onclick="prodTab(2,this)">03 DatInsights</div>
+    <div class="cap-tab t-indigo active" onclick="prodTab(0,this)">01 Infra360</div>
+    <div class="cap-tab" onclick="prodTab(1,this)">02 iSportOne</div>
+    <div class="cap-tab" onclick="prodTab(2,this)">03 aiDesker</div>
   </div>
   <div class="cap-slides" id="prod-slides">
 
     <div class="cap-slide active">
+      <div class="cap-card indigo" onclick="window.location.href='/infra360PMS'" style="cursor:pointer">
+        <div class="cap-left">
+          <div class="cap-card-title">Infra360 PMS</div>
+          <div class="cap-card-outcome">Every site. Every rupee. Accounted for.</div>
+          <div class="cap-card-desc">Track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out.</div>
+          <ul class="cap-checklist">
+            <li>PO to Close-Out</li><li>STN/SRN Tracking</li>
+            <li>GST/TDS Automation</li><li>Live Dashboards</li>
+          </ul>
+          <a href="/infra360PMS" class="cap-explore violet" onclick="event.stopPropagation()">Explore Infra360 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="cap-footer">
+            <div class="cap-pips"><div class="cap-pip active-violet"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">01 / 03</span>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="cap-illus">
+          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="240" height="170" rx="14" fill="rgba(238,242,255,0.7)" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"/>
+            <rect x="10" y="20" width="240" height="28" rx="14" fill="rgba(99,102,241,0.1)"/>
+            <rect x="10" y="36" width="240" height="12" fill="rgba(99,102,241,0.1)"/>
+            <rect x="22" y="27" width="70" height="6" rx="3" fill="rgba(79,70,229,0.3)"/>
+            <rect x="22" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="30" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="30" y="74" width="36" height="8" rx="3" fill="rgba(79,70,229,0.3)"/>
+            <rect x="82" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="90" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="90" y="74" width="36" height="8" rx="3" fill="rgba(20,184,166,0.3)"/>
+            <rect x="142" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="150" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="150" y="74" width="36" height="8" rx="3" fill="rgba(245,158,11,0.3)"/>
+            <rect x="202" y="58" width="38" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
+            <rect x="208" y="65" width="22" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="208" y="74" width="26" height="8" rx="3" fill="rgba(244,63,94,0.25)"/>
+            <rect x="22" y="100" width="134" height="78" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.12)" stroke-width="1"/>
+            <rect x="32" y="110" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
+            <rect x="32" y="122" width="114" height="1" fill="rgba(226,232,240,0.8)"/>
+            <rect x="32" y="130" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="110" y="128" width="36" height="8" rx="3" fill="rgba(20,184,166,0.2)"/>
+            <rect x="32" y="144" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="110" y="142" width="36" height="8" rx="3" fill="rgba(245,158,11,0.2)"/>
+            <rect x="32" y="158" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="110" y="156" width="36" height="8" rx="3" fill="rgba(244,63,94,0.18)"/>
+            <rect x="164" y="100" width="76" height="78" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.12)" stroke-width="1"/>
+            <rect x="172" y="110" width="44" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
+            <rect x="172" y="130" width="16" height="36" rx="4" fill="rgba(99,102,241,0.3)"/>
+            <rect x="192" y="122" width="16" height="44" rx="4" fill="rgba(99,102,241,0.45)"/>
+            <rect x="212" y="128" width="16" height="38" rx="4" fill="rgba(99,102,241,0.35)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-slide">
       <div class="cap-card rose">
         <div class="cap-left">
           <div class="cap-card-title">iSportOne</div>
@@ -1254,7 +1313,7 @@ letter-spacing:0.3px;
             <a href="/isportone" style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none">Learn More →</a>
           </div>
                     <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip active-rose"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-rose"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
               <span class="cap-nav-count">01 / 03</span>
               <button class="cap-nav-btn" onclick="prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
@@ -1302,7 +1361,7 @@ letter-spacing:0.3px;
           </ul>
           <div style="margin-bottom:16px"><span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#f0f9ff;color:#0ea5e9;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span></div>
           <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-sky"></div><div class="cap-pip"></div></div>
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-sky"></div></div>
             <div class="cap-nav">
               <button class="cap-nav-btn" onclick="prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">02 / 03</span>
@@ -1332,54 +1391,6 @@ letter-spacing:0.3px;
       </div>
     </div>
 
-    <div class="cap-slide">
-      <div class="cap-card emerald">
-        <div class="cap-left">
-          <div class="cap-card-title">DatInsights</div>
-          <div class="cap-card-outcome">One view of all your data.</div>
-          <div class="cap-card-desc">Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights.</div>
-          <ul class="cap-checklist">
-            <li>Unified Data</li><li>Real-time Dashboards</li>
-            <li>BI & Analytics</li><li>Predictions</li>
-          </ul>
-          <div style="margin-bottom:16px"><span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#ecfdf5;color:#10b981;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span></div>
-          <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-emerald"></div></div>
-            <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-              <span class="cap-nav-count">03 / 03</span>
-            </div>
-          </div>
-        </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="20" width="240" height="170" rx="14" fill="rgba(236,253,245,0.7)" stroke="rgba(16,185,129,0.2)" stroke-width="1.5"/>
-            <rect x="10" y="20" width="240" height="28" rx="14" fill="rgba(16,185,129,0.1)"/>
-            <rect x="10" y="36" width="240" height="12" fill="rgba(16,185,129,0.1)"/>
-            <rect x="22" y="27" width="70" height="6" rx="3" fill="rgba(5,150,105,0.25)"/>
-            <rect x="22" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
-            <rect x="30" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="30" y="74" width="50" height="10" rx="4" fill="rgba(5,150,105,0.25)"/>
-            <rect x="96" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
-            <rect x="104" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="104" y="74" width="50" height="10" rx="4" fill="rgba(99,102,241,0.2)"/>
-            <rect x="170" y="58" width="66" height="38" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(16,185,129,0.18)" stroke-width="1"/>
-            <rect x="178" y="65" width="36" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="178" y="74" width="50" height="10" rx="4" fill="rgba(245,158,11,0.25)"/>
-            <rect x="22" y="108" width="148" height="70" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
-            <rect x="32" y="148" width="14" height="20" rx="3" fill="rgba(16,185,129,0.4)"/>
-            <rect x="52" y="134" width="14" height="34" rx="3" fill="rgba(16,185,129,0.55)"/>
-            <rect x="72" y="140" width="14" height="28" rx="3" fill="rgba(16,185,129,0.38)"/>
-            <rect x="92" y="128" width="14" height="40" rx="3" fill="rgba(16,185,129,0.6)"/>
-            <rect x="112" y="122" width="14" height="46" rx="3" fill="rgba(5,150,105,0.65)"/>
-            <rect x="132" y="132" width="14" height="36" rx="3" fill="rgba(16,185,129,0.5)"/>
-            <rect x="178" y="108" width="58" height="70" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
-            <polyline points="186,162 198,148 210,153 222,140 234,134" stroke="rgba(5,150,105,0.55)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="234" cy="134" r="4" fill="rgba(5,150,105,0.6)"/>
-          </svg>
-        </div>
-      </div>
-    </div>
 
   </div>
 </div>
@@ -1469,9 +1480,9 @@ letter-spacing:0.3px;
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
+        <div class="service-pill" onclick="selectService(this,'Infra360 PMS')">Infra360 PMS</div>
         <div class="service-pill" onclick="selectService(this,'iSportOne')">iSportOne</div>
         <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
-        <div class="service-pill" onclick="selectService(this,'DatInsights')">DatInsights</div>
       </div>
     </div>
 
@@ -1529,7 +1540,7 @@ function capPrev() { capTab((capCurrent - 1 + capSlideEls.length) % capSlideEls.
 let prodCurrent = 0;
 const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
 const prodTabEls = document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') || [];
-const prodTabClasses = ['t-rose','t-sky','t-emerald'];
+const prodTabClasses = ['t-indigo','t-rose','t-sky'];
 
 function prodTab(index, el) {
   prodSlideEls.forEach(s => s.classList.remove('active'));

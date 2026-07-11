@@ -212,8 +212,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">12</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">5</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">13</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">6</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">5</span></button>
     <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
@@ -274,6 +274,36 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
+
+<!-- Digital: Infra360 PMS -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/infra360PMS'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.07)"/>
+            <rect x="28" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="38" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="38" y="78" width="66" height="12" rx="4" fill="rgba(99,102,241,0.3)"/>
+            <rect x="134" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
+            <rect x="144" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="144" y="78" width="66" height="12" rx="4" fill="rgba(20,184,166,0.3)"/>
+            <rect x="28" y="112" width="224" height="42" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="170" y="120" width="68" height="9" rx="4" fill="rgba(99,102,241,0.2)"/>
+            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="170" y="136" width="68" height="9" rx="4" fill="rgba(245,158,11,0.2)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">6</div>
+          <div class="case-metric-label">roles, one platform, every trade</div>
+          <div class="case-title">Building a Project Management Platform for Infrastructure Contractors</div>
+          <div class="case-desc">We built Infra360 PMS — tracking PO to close-out across telecom, solar and civil sites, with material tracking, GST/TDS automation and live dashboards.</div>
+          <div class="case-tags"><span class="case-tag">Infrastructure</span><span class="case-tag">Multi-Trade</span><span class="case-tag">PMS</span></div>
+          <a href="/infra360PMS" class="case-cta">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
 
 <!-- Digital: aiDesker SaaS Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
