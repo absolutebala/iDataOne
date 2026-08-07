@@ -40,27 +40,30 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 /* ── Hero ── */
 .hero{
-  background:
-    radial-gradient(ellipse at 15% 50%, rgba(99,102,241,0.12), transparent 45%),
-    radial-gradient(ellipse at 85% 20%, rgba(124,58,237,0.09), transparent 40%),
-    radial-gradient(ellipse at 50% 100%, rgba(20,184,166,0.07), transparent 40%),
-    linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#0f172a 100%);
-  padding:80px 32px 60px;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  padding:100px 0 60px;
   position:relative;
   overflow:hidden;
+  background:
+    radial-gradient(ellipse at 10% 30%,rgba(99,102,241,0.09),transparent 45%),
+    radial-gradient(ellipse at 90% 10%,rgba(124,58,237,0.07),transparent 40%),
+    radial-gradient(ellipse at 60% 90%,rgba(20,184,166,0.05),transparent 40%),
+    linear-gradient(135deg,#f8fafc 0%,#eef2ff 45%,#ede9fe 100%);
 }
-.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.hero-inner{max-width:1140px;margin:0 auto;position:relative;z-index:1;text-align:center}
-.hero-tag{display:inline-block;padding:5px 16px;border-radius:999px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:24px}
-.hero-h1{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-3px;line-height:1.02;color:#fff;margin-bottom:20px}
-.hero-h1 em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{font-size:18px;color:rgba(255,255,255,0.45);line-height:1.7;max-width:560px;margin:0 auto 48px}
-/* Stats row */
-.hero-stats{display:flex;justify-content:center;gap:64px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.06)}
-.stat-item{text-align:center}
-.stat-num{font-size:36px;font-weight:800;letter-spacing:-1.5px;color:#fff;line-height:1}
-.stat-num span{background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.stat-label{font-size:12px;color:rgba(255,255,255,0.35);margin-top:6px;letter-spacing:0.5px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.025) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+.hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#4f46e5;margin-bottom:20px}
+.hero-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#0f172a;margin-bottom:20px}
+.hero-h1 em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:16px;color:#64748b;line-height:1.75;max-width:480px}
+/* Stats grid */
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.stat-item{background:#fff;border:1px solid rgba(226,232,240,0.9);border-radius:16px;padding:24px 20px}
+.stat-num{font-size:32px;font-weight:800;letter-spacing:-1.5px;line-height:1;margin-bottom:6px}
+.stat-num span{background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:12px;color:#94a3b8;letter-spacing:0.3px;line-height:1.4}
 
 /* ── Filter tabs ── */
 .filter-wrap{background:#fff;position:sticky;top:68px;z-index:50;border-bottom:1px solid rgba(226,232,240,0.8);padding:0 32px}
@@ -157,11 +160,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .featured-body{padding:36px 28px}
   .cases-grid{grid-template-columns:1fr 1fr}
   .bottom-cta-card{grid-template-columns:1fr;padding:40px}
-  .hero-stats{gap:32px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:16px}
 }
 @media(max-width:600px){
   .cases-grid{grid-template-columns:1fr}
-  .hero-stats{flex-wrap:wrap;gap:24px}
+  /* hero-stats already responsive */
   .featured-card{border-radius:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05)}
   .featured-visual{max-height:180px;min-height:auto;padding:16px;overflow:hidden}
   .featured-visual svg{max-width:260px;height:auto}
@@ -185,9 +189,11 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Hero ── -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-tag">Case Studies</div>
-    <h1 class="hero-h1">Real Results.<br><em>Real Impact.</em></h1>
-    <p class="hero-sub">Explore how we have helped businesses build smarter, move faster and grow with confidence.</p>
+    <div>
+      <div class="hero-tag">Case Studies</div>
+      <h1 class="hero-h1">Real Results.<br><em>Real Impact.</em></h1>
+      <p class="hero-sub">Explore how we have helped businesses build smarter, move faster and grow with confidence.</p>
+    </div>
     <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-num"><span>10+</span></div>
