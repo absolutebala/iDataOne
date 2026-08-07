@@ -218,8 +218,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">13</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">6</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">14</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">7</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">5</span></button>
     <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
@@ -280,6 +280,42 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
+
+<!-- Digital: Knight Ryders -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/knight-ryders'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#fefce8,#fef3c7)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(30,41,59,0.85)"/>
+            <rect x="28" y="24" width="80" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+            <rect x="214" y="20" width="38" height="16" rx="8" fill="rgba(245,158,11,0.7)"/>
+            <rect x="28" y="56" width="108" height="56" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <circle cx="62" cy="76" r="16" fill="rgba(245,158,11,0.15)"/>
+            <rect x="86" y="68" width="40" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
+            <rect x="86" y="80" width="30" height="5" rx="2.5" fill="rgba(245,158,11,0.35)"/>
+            <polygon points="32,100 38,88 46,96 54,82 62,90 70,80 78,88 84,82 90,100" fill="rgba(245,158,11,0.3)" stroke="rgba(217,119,6,0.5)" stroke-width="1"/>
+            <rect x="148" y="56" width="100" height="56" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="158" y="68" width="50" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
+            <rect x="158" y="82" width="80" height="10" rx="5" fill="rgba(245,158,11,0.12)"/>
+            <rect x="158" y="82" width="54" height="10" rx="5" fill="rgba(245,158,11,0.45)"/>
+            <rect x="158" y="98" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="28" y="124" width="220" height="30" rx="8" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <circle cx="50" cy="139" r="10" fill="rgba(245,158,11,0.2)"/>
+            <circle cx="76" cy="139" r="10" fill="rgba(245,158,11,0.15)"/>
+            <circle cx="102" cy="139" r="10" fill="rgba(245,158,11,0.2)"/>
+            <rect x="120" y="134" width="110" height="6" rx="3" fill="rgba(217,119,6,0.2)"/>
+          </svg>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">460+</div>
+          <div class="case-metric-label">members on a living community platform</div>
+          <div class="case-title">From WordPress Blog to a Living Community Platform — The Knight Ryders</div>
+          <div class="case-desc">We rebuilt a Honda CB350 riding club with an inline CMS, live member profiles, gamification and zero separate admin pages.</div>
+          <div class="case-tags"><span class="case-tag">Custom CMS</span><span class="case-tag">Community</span><span class="case-tag">Gamification</span></div>
+          <a href="/case-study/knight-ryders" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
 
 <!-- Digital: Infra360 PMS -->
       <div class="case-card" data-cat="digital" onclick="location.href='/infra360PMS'" style="cursor:pointer">

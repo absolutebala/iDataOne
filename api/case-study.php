@@ -4,6 +4,7 @@ $slug = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $slug = str_replace('case-study/', '', $slug);
 
 $allowed = [
+    'knight-ryders'      => __DIR__ . '/case-knight-ryders.php',
     'risk-platform'       => __DIR__ . '/case-risk-platform.php',
     'risk-dashboard'      => __DIR__ . '/case-risk-dashboard.php',
     'telecom-pm-platform' => __DIR__ . '/case-telecom-pm-platform.php',
