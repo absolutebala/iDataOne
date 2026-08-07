@@ -21,28 +21,13 @@
     "api/case-studies.php": {
       "runtime": "vercel-php@0.9.0"
     },
-    "api/case-risk-platform.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
-    "api/case-risk-dashboard.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
-    "api/case-telecom-pm-platform.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
-    "api/case-isportone.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
     "api/isportone.php": {
       "runtime": "vercel-php@0.9.0"
     },
-    "api/case-mealmate.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
-    "api/case-aidesker.php": {
-      "runtime": "vercel-php@0.9.0"
-    },
     "api/infra360PMS.php": {
+      "runtime": "vercel-php@0.9.0"
+    },
+    "api/case-study.php": {
       "runtime": "vercel-php@0.9.0"
     }
   },
@@ -58,32 +43,12 @@
       "destination": "/assets/$1"
     },
     {
-      "source": "/case-study/risk-platform",
-      "destination": "/api/case-risk-platform.php"
-    },
-    {
-      "source": "/case-study/risk-dashboard",
-      "destination": "/api/case-risk-dashboard.php"
-    },
-    {
-      "source": "/case-study/telecom-pm-platform",
-      "destination": "/api/case-telecom-pm-platform.php"
-    },
-    {
-      "source": "/case-study/isportone",
-      "destination": "/api/case-isportone.php"
+      "source": "/case-study/:slug",
+      "destination": "/api/case-study.php"
     },
     {
       "source": "/isportone",
       "destination": "/api/isportone.php"
-    },
-    {
-      "source": "/case-study/mealmate",
-      "destination": "/api/case-mealmate.php"
-    },
-    {
-      "source": "/case-study/aidesker",
-      "destination": "/api/case-aidesker.php"
     },
     {
       "source": "/infra360PMS",
@@ -140,32 +105,8 @@
       "destination": "/api/case-studies.php"
     },
     {
-      "source": "/case-study/risk-platform",
-      "destination": "/api/case-risk-platform.php"
-    },
-    {
-      "source": "/case-study/risk-dashboard",
-      "destination": "/api/case-risk-dashboard.php"
-    },
-    {
-      "source": "/case-study/telecom-pm-platform",
-      "destination": "/api/case-telecom-pm-platform.php"
-    },
-    {
-      "source": "/case-study/isportone",
-      "destination": "/api/case-isportone.php"
-    },
-    {
       "source": "/isportone",
       "destination": "/api/isportone.php"
-    },
-    {
-      "source": "/case-study/mealmate",
-      "destination": "/api/case-mealmate.php"
-    },
-    {
-      "source": "/case-study/aidesker",
-      "destination": "/api/case-aidesker.php"
     },
     {
       "source": "/infra360PMS",
