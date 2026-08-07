@@ -200,16 +200,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="stat-label">Projects Delivered</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num"><span>300+</span></div>
-        <div class="stat-label">Hours Saved Monthly</div>
+        <div class="stat-num"><span>6</span></div>
+        <div class="stat-label">Digital Products</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num"><span>45%</span></div>
-        <div class="stat-label">Avg. Efficiency Gain</div>
+        <div class="stat-num"><span>4</span></div>
+        <div class="stat-label">AI &amp; Automation</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num"><span>24h</span></div>
-        <div class="stat-label">Discovery Call Response</div>
+        <div class="stat-num"><span>2</span></div>
+        <div class="stat-label">Data Intelligence</div>
       </div>
     </div>
   </div>
