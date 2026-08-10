@@ -138,73 +138,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Purpose-Built Telecom Project Management Platform</h2>
     <p class="cs-p">We designed and built a comprehensive, role-based project management platform from the ground up — covering the complete operational and financial lifecycle of telecom infrastructure projects.</p>
 
-    <div class="cs-visual">
-      <svg viewBox="0 0 720 400" width="720" height="400" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="10" width="680" height="380" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.15)" stroke-width="1.5"/>
-        <rect x="20" y="10" width="680" height="40" rx="16" fill="rgba(99,102,241,0.06)"/>
-        <rect x="20" y="34" width="680" height="16" fill="rgba(99,102,241,0.06)"/>
-        <rect x="36" y="22" width="80" height="10" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <circle cx="672" cy="30" r="10" fill="rgba(99,102,241,0.1)"/>
-        <rect x="20" y="50" width="120" height="340" fill="rgba(248,250,252,0.9)"/>
-        <rect x="36" y="66" width="88" height="8" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <rect x="36" y="86" width="72" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-        <rect x="36" y="100" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="114" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="128" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="142" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="152" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="162" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="162" y="82" width="60" height="14" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="162" y="102" width="30" height="5" rx="2.5" fill="rgba(20,184,166,0.35)"/>
-        <rect x="264" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-        <rect x="274" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="274" y="82" width="60" height="14" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="274" y="102" width="30" height="5" rx="2.5" fill="rgba(245,158,11,0.25)"/>
-        <rect x="376" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-        <rect x="386" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="386" y="82" width="60" height="14" rx="4" fill="rgba(20,184,166,0.3)"/>
-        <rect x="386" y="102" width="30" height="5" rx="2.5" fill="rgba(20,184,166,0.25)"/>
-        <rect x="488" y="62" width="200" height="56" rx="10" fill="#fff" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-        <rect x="498" y="72" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="498" y="82" width="100" height="14" rx="4" fill="rgba(99,102,241,0.3)"/>
-        <rect x="498" y="102" width="50" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
-        <rect x="152" y="132" width="270" height="180" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="162" y="142" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="162" y="160" width="250" height="1" fill="rgba(226,232,240,0.8)"/>
-        <rect x="162" y="170" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="168" width="40" height="8" rx="4" fill="rgba(99,102,241,0.15)"/>
-        <rect x="320" y="170" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="186" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="184" width="40" height="8" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="320" y="186" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="202" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="200" width="40" height="8" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="320" y="202" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="218" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="216" width="40" height="8" rx="4" fill="rgba(244,63,94,0.18)"/>
-        <rect x="320" y="218" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="234" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="232" width="40" height="8" rx="4" fill="rgba(99,102,241,0.15)"/>
-        <rect x="320" y="234" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="250" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="248" width="40" height="8" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="320" y="250" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="266" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="260" y="264" width="40" height="8" rx="4" fill="rgba(99,102,241,0.15)"/>
-        <rect x="320" y="266" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="434" y="132" width="254" height="86" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="444" y="142" width="60" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="444" y="158" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="600" y="156" width="70" height="8" rx="4" fill="rgba(20,184,166,0.25)"/>
-        <rect x="444" y="172" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="600" y="170" width="70" height="8" rx="4" fill="rgba(244,63,94,0.2)"/>
-        <rect x="444" y="186" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="600" y="184" width="70" height="8" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <rect x="434" y="228" width="254" height="84" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="444" y="238" width="60" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <polyline points="450,290 470,278 490,282 510,268 530,260 550,264 570,250 590,244 610,248 630,238" stroke="rgba(99,102,241,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <polygon points="450,290 470,278 490,282 510,268 530,260 550,264 570,250 590,244 610,248 630,238 630,302 450,302" fill="rgba(99,102,241,0.05)"/>
-      </svg>
+    <div class="cs-visual" style="padding:0;background:#f0f4f8">
+      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard" style="width:100%;height:auto;display:block;border-radius:20px"/>
     </div>
 
     <div class="cs-features">
