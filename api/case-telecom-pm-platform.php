@@ -45,7 +45,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden;padding-top:68px}
-.cs-hero{background:radial-gradient(ellipse at 10% 30%,rgba(13,148,136,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(20,184,166,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#f0fdfa 45%,#ccfbf1 100%)}
+.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(13,148,136,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(20,184,166,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#f0fdfa 45%,#ccfbf1 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(99,102,241,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(124,58,237,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .cs-hero-inner{max-width:1140px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:0 32px}
@@ -58,8 +58,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-stat-num span{background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cs-hero-image img{width:100%;height:auto;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,0.12);border:1px solid rgba(0,0,0,0.06)}
 .cs-stat-label{font-size:12px;color:#94a3b8;margin-top:4px}
-.cs-section{padding:72px 32px}
-.cs-inner{max-width:800px;margin:0 auto}
+.cs-section{padding:80px 32px}
+.cs-inner{max-width:1140px;margin:0 auto}
 .cs-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366f1;margin-bottom:14px}
 .cs-h2{font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-1.5px;color:#0f172a;line-height:1.15;margin-bottom:16px}
 .cs-p{font-size:15px;color:#64748b;line-height:1.8;margin-bottom:20px}

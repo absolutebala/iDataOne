@@ -46,10 +46,10 @@
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden;padding-top:68px}
 
 /* Hero */
-.cs-hero{background:radial-gradient(ellipse at 10% 30%,rgba(99,102,241,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(124,58,237,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#eef2ff 45%,#ede9fe 100%)}
+.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(99,102,241,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(124,58,237,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#eef2ff 45%,#ede9fe 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(99,102,241,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(124,58,237,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#4f46e5;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:560px}
@@ -60,8 +60,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-stat-label{font-size:12px;color:#94a3b8;margin-top:4px}
 
 /* Sections */
-.cs-section{padding:72px 32px}
-.cs-inner{max-width:800px;margin:0 auto}
+.cs-section{padding:80px 32px}
+.cs-inner{max-width:1140px;margin:0 auto}
 .cs-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366f1;margin-bottom:14px}
 .cs-h2{font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-1.5px;color:#0f172a;line-height:1.15;margin-bottom:16px}
 .cs-p{font-size:15px;color:#64748b;line-height:1.8;margin-bottom:20px}
