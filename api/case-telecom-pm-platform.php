@@ -48,7 +48,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-hero{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#0f172a 100%);padding:80px 32px 60px;position:relative;overflow:hidden}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(99,102,241,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(124,58,237,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.cs-hero-left{}
+.cs-hero-image{position:relative}
+.cs-hero-image img{width:100%;height:auto;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.08)}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.25);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#818cf8;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#fff;margin-bottom:20px}
 .cs-hero-sub{font-size:17px;color:rgba(255,255,255,0.45);line-height:1.75;margin-bottom:40px;max-width:620px}
@@ -93,6 +96,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-cta-btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#4f46e5,#7c3aed);color:#fff;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:opacity 0.2s;flex-shrink:0}
 .cs-cta-btn:hover{opacity:0.9}
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-image{display:none}
   .cs-hero-stats{gap:24px}
   .cs-grid{grid-template-columns:1fr}
   .cs-features{grid-template-columns:1fr}
@@ -109,14 +114,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
-    <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
-    <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
-    <div class="cs-hero-stats">
+    <div class="cs-hero-left">
+      <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
+      <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
+      <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
+      <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>2,200+</span></div><div class="cs-stat-label">Projects Tracked</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>50+</span></div><div class="cs-stat-label">Vendors Managed</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>₹7+ Cr</span></div><div class="cs-stat-label">Total PO Value Tracked</div></div>
+    </div>
+    </div>
+    <div class="cs-hero-image">
+      <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Platform">
     </div>
   </div>
 </section>
