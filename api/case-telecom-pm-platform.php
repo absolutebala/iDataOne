@@ -110,14 +110,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
-    <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
-    <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
-    <div class="cs-hero-stats">
-      <div class="cs-stat"><div class="cs-stat-num"><span>2,200+</span></div><div class="cs-stat-label">Projects Tracked</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>50+</span></div><div class="cs-stat-label">Vendors Managed</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>₹7+ Cr</span></div><div class="cs-stat-label">Total PO Value Tracked</div></div>
+    <div class="cs-hero-left">
+      <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
+      <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
+      <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
+      <div class="cs-hero-stats">
+        <div class="cs-stat"><div class="cs-stat-num"><span>2,200+</span></div><div class="cs-stat-label">Projects Tracked</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>50+</span></div><div class="cs-stat-label">Vendors Managed</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>₹7+ Cr</span></div><div class="cs-stat-label">Total PO Value Tracked</div></div>
+      </div>
+    </div>
+    <div class="cs-hero-image">
+      <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Platform">
     </div>
   </div>
 </section>
