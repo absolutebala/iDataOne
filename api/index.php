@@ -141,6 +141,7 @@ radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
 radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.12), transparent 40%),
 radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.12), transparent 35%),
 radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.08), transparent 50%),
+url('/assets/images/home-hero-bg.png') right 10% / 55% auto no-repeat,
 linear-gradient(135deg,#eef0fa 0%,#e8ecf8 30%,#e4eaf8 60%,#eaecf5 100%);
 }
 

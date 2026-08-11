@@ -49,19 +49,19 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 /* Nav via _nav.php */
-.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(245,158,11,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(217,119,6,0.08),transparent 40%),radial-gradient(ellipse at 60% 90%,rgba(251,191,36,0.06),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#fffbeb 45%,#fef3c7 100%)}
-.banner::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.025) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:url('/assets/images/data-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#020f0a 0%,#051a10 100%)}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,10,6,0.95) 0%,rgba(2,10,6,0.85) 35%,rgba(2,10,6,0.35) 60%,rgba(2,10,6,0.05) 100%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d97706;margin-bottom:20px}
-.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#0f172a;margin-bottom:20px}
-.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#d97706,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.banner-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:480px}
+.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6ee7b7;margin-bottom:20px}
+.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#fff;margin-bottom:20px}
+.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#6ee7b7,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.banner-sub{font-size:16px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(217,119,6,0.25);color:#d97706;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-secondary:hover{background:rgba(217,119,6,0.06);transform:translateY(-1px)}
-.banner-illus{display:flex;align-items:center;justify-content:center}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-secondary:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}
+.banner-illus{display:none}
 .section{padding:80px 32px}
 .section-inner{max-width:1140px;margin:0 auto}
 .section-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d97706;margin-bottom:12px;text-align:center}
