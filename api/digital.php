@@ -56,7 +56,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   padding:100px 0 60px;
   position:relative;overflow:hidden;
   background:
-    linear-gradient(135deg,rgba(10,15,40,0.72) 0%,rgba(10,20,50,0.58) 50%,rgba(10,15,40,0.65) 100%),
+    linear-gradient(135deg,rgba(10,15,40,0.52) 0%,rgba(10,20,50,0.38) 50%,rgba(10,15,40,0.45) 100%),
     url('/assets/images/digital-hero-bg.png') center/cover no-repeat;
 }
 .banner::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
