@@ -50,14 +50,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#050d1a;overflow-x:
 
 /* Nav */
 /* Nav via _nav.php */
-.banner{
-  min-height:100vh;
-  display:flex;align-items:center;
-  padding:100px 0 60px;
-  position:relative;overflow:hidden;
-  background:url('/assets/images/digital-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#050d1a 0%,#0a1628 100%);
-}
-.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,10,30,0.95) 0%,rgba(5,10,30,0.85) 35%,rgba(5,10,30,0.35) 60%,rgba(5,10,30,0.05) 100%);pointer-events:none}
+.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 0;position:relative;overflow:hidden;background:url('/assets/images/digital-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#050d1a 0%,#0a1628 100%)}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,10,30,0.95) 0%,rgba(5,10,30,0.85) 35%,rgba(5,10,30,0.35) 60%,rgba(5,10,30,0.05) 100%),linear-gradient(to bottom,transparent 70%,#ffffff 100%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6ee7f7;margin-bottom:20px}
 .banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#fff;margin-bottom:20px}
