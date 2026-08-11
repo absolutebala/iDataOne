@@ -836,7 +836,7 @@ letter-spacing:0.3px;
 .mob-menu-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:198;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(2px)}
 .mob-menu-overlay.open{opacity:1;pointer-events:auto}
 
-.screen-hero::after{content:"";position:absolute;inset:0;background:url('/assets/images/home-hero-bg.png') right center / 50% auto no-repeat;z-index:0;pointer-events:none;opacity:0.9}
+.screen-hero::after{content:"";position:absolute;inset:0;background:url('/assets/images/home-hero-bg.png') right center / 65% auto no-repeat;z-index:0;pointer-events:none;opacity:1}
 .screen-hero .container{z-index:2;position:relative}
 </style>
 </head>
