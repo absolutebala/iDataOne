@@ -46,7 +46,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;color:#0f172a;background:#050d1a;overflow-x:hidden}
 
 /* Nav */
 /* Nav via _nav.php */
@@ -71,7 +71,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .banner-illus{display:none}
 
 /* ── Section base ── */
-.section{padding:80px 32px}
+.section{padding:80px 32px;background:#fff}
 .section-inner{max-width:1140px;margin:0 auto}
 .section-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366f1;margin-bottom:12px;text-align:center}
 .section-title{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.5px;color:#0f172a;text-align:center;margin-bottom:12px}
