@@ -136,12 +136,12 @@ html,body{height:100%;overflow:hidden;font-family:'Inter',sans-serif}
 
 body{
 background:
-radial-gradient(ellipse at 10% 15%, rgba(99,102,241,0.22), transparent 40%),
-radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
-radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.12), transparent 40%),
-radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.12), transparent 35%),
-radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.08), transparent 50%),
-linear-gradient(135deg,#eef0fa 0%,#e8ecf8 30%,#e4eaf8 60%,#eaecf5 100%);
+radial-gradient(ellipse at 85% 5%, rgba(180,100,20,0.28), transparent 35%),
+radial-gradient(ellipse at 65% 15%, rgba(100,40,180,0.35), transparent 40%),
+radial-gradient(ellipse at 30% 60%, rgba(60,30,160,0.25), transparent 45%),
+radial-gradient(ellipse at 90% 85%, rgba(25,30,80,0.3), transparent 40%),
+radial-gradient(ellipse at 10% 90%, rgba(20,28,90,0.2), transparent 40%),
+linear-gradient(135deg,#151a3a 0%,#1e1850 25%,#2a1460 50%,#3d1a70 70%,#2a1245 85%,#1a1840 100%);
 }
 
 body:before{
@@ -149,8 +149,8 @@ content:"";
 position:fixed;
 inset:0;
 background-image:
-linear-gradient(rgba(15,23,42,0.03) 1px, transparent 1px),
-linear-gradient(90deg, rgba(15,23,42,0.03) 1px, transparent 1px);
+linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
 background-size:80px 80px;
 pointer-events:none;
 }
@@ -196,7 +196,7 @@ h1{
 font-size:58px;
 line-height:1.12;
 letter-spacing:-2px;
-color:#0f172a;
+color:#fff;
 margin-bottom:24px;
 font-weight:700;
 }
@@ -205,7 +205,7 @@ h2{
 font-size:58px;
 line-height:1.1;
 letter-spacing:-2.5px;
-color:#0f172a;
+color:#fff;
 margin-bottom:20px;
 font-weight:700;
 }
@@ -252,7 +252,7 @@ background:linear-gradient(90deg,#4f46e5,#7c3aed);
 
 .explore{
 margin-top:40px;
-color:#6366f1;
+color:rgba(255,255,255,0.65);
 font-weight:600;
 letter-spacing:3px;
 font-size:14px;
@@ -1119,9 +1119,9 @@ letter-spacing:0.3px;
 </div>
 
 <!-- Tamil signature -->
-<a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(99,102,241,0.4);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
+<a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
-<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(99,102,241,0.4);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
+<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(255,255,255,0.3);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
