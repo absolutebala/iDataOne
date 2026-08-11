@@ -141,7 +141,6 @@ radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
 radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.12), transparent 40%),
 radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.12), transparent 35%),
 radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.08), transparent 50%),
-url('/assets/images/home-hero-bg.png') right 10% / 55% auto no-repeat,
 linear-gradient(135deg,#eef0fa 0%,#e8ecf8 30%,#e4eaf8 60%,#eaecf5 100%);
 }
 
@@ -836,6 +835,8 @@ letter-spacing:0.3px;
 .mob-menu a.active{color:#4f46e5;font-weight:600}
 .mob-menu-overlay{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:198;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(2px)}
 .mob-menu-overlay.open{opacity:1;pointer-events:auto}
+
+.screen-hero{background:url('/assets/images/home-hero-bg.png') right center / 50% auto no-repeat}
 </style>
 </head>
 <body>
@@ -1041,7 +1042,7 @@ letter-spacing:0.3px;
 </section>
 
 <!-- 1: Capabilities -->
-<section class="screen">
+<section class="screen screen-hero">
 <div class="container">
 <h2>Build. <span class="highlight">Transform.</span> Scale.</h2>
 
