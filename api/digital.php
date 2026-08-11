@@ -55,24 +55,20 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   display:flex;align-items:center;
   padding:100px 0 60px;
   position:relative;overflow:hidden;
-  background:
-    radial-gradient(ellipse at 10% 30%, rgba(99,102,241,0.12), transparent 45%),
-    radial-gradient(ellipse at 90% 10%, rgba(124,58,237,0.09), transparent 40%),
-    radial-gradient(ellipse at 60% 90%, rgba(20,184,166,0.07), transparent 40%),
-    linear-gradient(135deg,#f8fafc 0%,#eef2ff 45%,#f0f4ff 100%);
+  background:url('/assets/images/digital-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#050d1a 0%,#0a1628 100%);
 }
-.banner::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.025) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,10,30,0.95) 0%,rgba(5,10,30,0.85) 35%,rgba(5,10,30,0.35) 60%,rgba(5,10,30,0.05) 100%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
-.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#0f172a;margin-bottom:20px}
-.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.banner-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:480px}
+.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6ee7f7;margin-bottom:20px}
+.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#fff;margin-bottom:20px}
+.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.banner-sub{font-size:16px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#4f46e5,#7c3aed);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(99,102,241,0.25);color:#4f46e5;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-secondary:hover{background:rgba(99,102,241,0.06);transform:translateY(-1px)}
-.banner-illus{position:relative;display:flex;align-items:center;justify-content:center}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-secondary:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}
+.banner-illus{display:none}
 
 /* ── Section base ── */
 .section{padding:80px 32px}
@@ -149,8 +145,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .stories-grid{grid-template-columns:1fr}
   .story-card{grid-template-columns:1fr}
   .story-visual{display:none}
-  .process-steps{flex-direction:column;gap:32px}
+  .process-steps{flex-direction:column;gap:0;align-items:stretch}
   .process-steps::before{display:none}
+  .process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}
+  .process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}
+  .process-step:last-child::before{display:none}
+  .process-step:last-child{padding-bottom:0}
+  .step-icon{margin:0;flex-shrink:0}
+  .step-title{margin-bottom:6px}
   .products-grid{grid-template-columns:1fr}
   .cta-card{grid-template-columns:1fr;padding:28px 24px}
   .cta-btns{align-items:flex-start}
@@ -173,7 +175,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <p class="banner-sub">AI-Assisted Engineering. Faster Delivery. Lower Development Costs. Better Outcomes.</p>
       <div class="banner-btns">
         <a href="/contact" class="btn-primary">Start Your Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
     <div class="banner-illus">
@@ -292,6 +294,38 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">Digital Products. Real Impact.</h2>
     <p class="section-sub">Real results from businesses that chose to build smarter.</p>
     <div class="stories-grid">
+      <div class="story-card" onclick="location.href='/case-study/knight-ryders'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">Custom CMS · Community Platform</div>
+          <div class="story-title">From WordPress Blog to a Living Community Platform — The Knight Ryders</div>
+          <div class="story-desc">We rebuilt a 460-member Honda CB350 riding club with an inline CMS, live member profiles, gamification and zero separate admin pages — admins manage everything from the same pages members browse.</div>
+          <a href="/case-study/knight-ryders" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="16" y="16" width="128" height="20" rx="5" fill="rgba(30,41,59,0.85)"/>
+            <rect x="22" y="22" width="50" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+            <rect x="118" y="20" width="20" height="8" rx="4" fill="rgba(245,158,11,0.7)"/>
+            <rect x="16" y="42" width="60" height="32" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <circle cx="36" cy="54" r="9" fill="rgba(245,158,11,0.2)"/>
+            <rect x="50" y="50" width="18" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
+            <rect x="50" y="58" width="14" height="3" rx="1.5" fill="rgba(245,158,11,0.3)"/>
+            <polygon points="22,80 25,74 29,78 33,72 37,76 41,70 45,74 48,80" fill="rgba(245,158,11,0.25)" stroke="rgba(217,119,6,0.4)" stroke-width="1"/>
+            <rect x="84" y="42" width="60" height="32" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="90" y="50" width="16" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="90" y="58" width="44" height="8" rx="4" fill="rgba(245,158,11,0.1)"/>
+            <rect x="90" y="58" width="30" height="8" rx="4" fill="rgba(245,158,11,0.4)"/>
+            <rect x="90" y="70" width="30" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="16" y="82" width="128" height="22" rx="5" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+            <circle cx="30" cy="93" r="7" fill="rgba(245,158,11,0.2)"/>
+            <circle cx="48" cy="93" r="7" fill="rgba(245,158,11,0.15)"/>
+            <circle cx="66" cy="93" r="7" fill="rgba(245,158,11,0.2)"/>
+            <rect x="80" y="89" width="50" height="5" rx="2.5" fill="rgba(217,119,6,0.25)"/>
+          </svg>
+        </div>
+      </div>
+
 
       <div class="story-card" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
         <div>
@@ -372,25 +406,86 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
         <div>
-          <div class="story-tag">SaaS Platform</div>
-          <div class="story-title">Scaling a SaaS Platform from 0 to 100K Users</div>
-          <div class="story-desc">We helped a B2B SaaS company build a scalable platform with advanced analytics, automation and a seamless user experience that grew to 100K users in under 12 months.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="story-tag">Consumer Mobile App</div>
+          <div class="story-title">Building an AI-Powered Family Meal Planning App</div>
+          <div class="story-desc">We designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by GPT-4o-mini.</div>
+          <a href="/case-study/mealmate" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual">
           <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="18" width="60" height="6" rx="3" fill="rgba(99,102,241,0.2)"/>
-            <rect x="16" y="30" width="80" height="12" rx="4" fill="rgba(99,102,241,0.35)"/>
-            <rect x="16" y="46" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <polyline points="16,96 36,82 56,86 76,70 96,58 116,62 136,48" stroke="rgba(99,102,241,0.7)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <polygon points="16,96 36,82 56,86 76,70 96,58 116,62 136,48 136,100 16,100" fill="rgba(99,102,241,0.06)"/>
+            <rect x="58" y="14" width="44" height="92" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
+            <rect x="64" y="24" width="32" height="8" rx="3" fill="rgba(245,158,11,0.15)" stroke="rgba(217,119,6,0.18)" stroke-width="1"/>
+            <circle cx="71" cy="28" r="2.5" fill="rgba(217,119,6,0.3)"/>
+            <rect x="64" y="36" width="32" height="16" rx="3" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="68" y="40" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.3)"/>
+            <rect x="68" y="46" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.07)"/>
+            <rect x="64" y="56" width="32" height="16" rx="3" fill="rgba(245,158,11,0.08)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
+            <rect x="68" y="60" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.25)"/>
+            <rect x="64" y="78" width="32" height="9" rx="4.5" fill="rgba(217,119,6,0.7)"/>
+            <circle cx="24" cy="35" r="11" fill="rgba(217,119,6,0.1)" stroke="rgba(217,119,6,0.22)" stroke-width="1"/>
+            <circle cx="24" cy="55" r="9" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
+            <circle cx="130" cy="40" r="10" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.22)" stroke-width="1"/>
           </svg>
         </div>
       </div>
-            
+
+
+      <div class="story-card" onclick="location.href='/infra360PMS'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">Infrastructure · Multi-Trade</div>
+          <div class="story-title">Building a Project Management Platform for Infrastructure Contractors</div>
+          <div class="story-desc">We built Infra360 PMS — a full-stack platform tracking PO to close-out across telecom, solar and civil sites, with STN/SRN material tracking, GST/TDS automation and live dashboards.</div>
+          <a href="/infra360PMS" class="story-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="16" y="16" width="128" height="18" rx="5" fill="rgba(238,242,255,0.9)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
+            <rect x="22" y="21" width="40" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
+            <rect x="16" y="40" width="60" height="36" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="22" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="22" y="57" width="44" height="10" rx="3" fill="rgba(99,102,241,0.3)"/>
+            <rect x="84" y="40" width="60" height="36" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
+            <rect x="90" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="90" y="57" width="44" height="10" rx="3" fill="rgba(20,184,166,0.3)"/>
+            <rect x="16" y="82" width="128" height="22" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="24" y="90" width="40" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
+            <rect x="104" y="88" width="28" height="8" rx="3" fill="rgba(99,102,241,0.2)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="story-card" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">SaaS · Multi-Tenant Platform</div>
+          <div class="story-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</div>
+          <div class="story-desc">We designed and built aiDesker, a full-stack SaaS platform with per-tenant data isolation, Stripe billing, a super admin layer and a one-line embeddable widget any business can drop onto their site.</div>
+          <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual">
+          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
+            <rect x="16" y="16" width="60" height="40" rx="6" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
+            <circle cx="30" cy="30" r="7" fill="rgba(14,165,233,0.2)"/>
+            <rect x="42" y="26" width="26" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="42" y="34" width="20" height="4" rx="2" fill="rgba(14,165,233,0.25)"/>
+            <rect x="22" y="46" width="44" height="6" rx="3" fill="rgba(14,165,233,0.3)"/>
+            <rect x="84" y="16" width="60" height="40" rx="6" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="92" y="24" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="92" y="34" width="44" height="8" rx="3" fill="rgba(99,102,241,0.25)"/>
+            <rect x="16" y="64" width="128" height="40" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="24" y="72" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="100" y="70" width="36" height="8" rx="3" fill="rgba(14,165,233,0.2)"/>
+            <rect x="24" y="84" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
+            <rect x="100" y="82" width="36" height="8" rx="3" fill="rgba(20,184,166,0.25)"/>
+            <rect x="24" y="94" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
+            <rect x="100" y="92" width="36" height="8" rx="3" fill="rgba(245,158,11,0.2)"/>
+          </svg>
+        </div>
+      </div>
 
 
     </div>
