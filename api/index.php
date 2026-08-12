@@ -282,14 +282,14 @@ font-size:14px;
 }
 
 /* Fixed screen CTA — same position on all screens */
-.screen-cta{position:fixed;bottom:48px;right:72px;z-index:100;display:none;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#4f46e5;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.8}
+.screen-cta{position:fixed;bottom:48px;right:72px;z-index:100;display:none;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#00d4ff;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.8}
 .screen-cta:hover{gap:16px;opacity:1}
 .screen-cta.visible{display:inline-flex}
-.screen-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.screen-cta svg{width:14px;height:14px;stroke:#00d4ff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* Why iDataOne screen */
 .why-inner{max-width:780px;margin:0 auto;text-align:center}
-.why-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
+.why-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
 .why-heading{font-size:58px;font-weight:700;letter-spacing:-2.5px;line-height:1.1;color:#0f172a;margin-bottom:36px}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left;margin-bottom:0}
 .why-item{padding:32px 28px;display:flex;align-items:flex-start;gap:16px;position:relative;border-radius:16px;background:rgba(255,255,255,0.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);overflow:hidden;transition:transform 0.35s ease,box-shadow 0.35s ease,border-color 0.35s ease}
@@ -308,9 +308,9 @@ font-size:14px;
 .why-title{font-size:16px;font-weight:700;color:#0f172a;letter-spacing:-0.3px;margin-bottom:6px}
 .why-desc{font-size:13px;color:#64748b;line-height:1.6}
 .why-bottom{display:flex;justify-content:flex-end;margin-top:28px}
-.why-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#4f46e5;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.8}
+.why-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#f5c518;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.9}
 .why-cta:hover{gap:16px;opacity:1}
-.why-cta svg{width:14px;height:14px;stroke:#4f46e5;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.why-cta svg{width:14px;height:14px;stroke:#f5c518;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
@@ -1434,8 +1434,9 @@ letter-spacing:0.3px;
                     <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-rose"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
-              <span class="cap-nav-count">01 / 03</span>
-              <button class="cap-nav-btn" onclick="prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">02 / 03</span>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
@@ -1482,9 +1483,9 @@ letter-spacing:0.3px;
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-sky"></div></div>
             <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-              <span class="cap-nav-count">02 / 03</span>
-              <button class="cap-nav-btn" onclick="prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">03 / 03</span>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
         </div>
@@ -1585,7 +1586,7 @@ letter-spacing:0.3px;
     </div>
     <div class="form-row-2">
       <div class="cfield"><label></label><input type="email" name="email" placeholder="Work Email" required></div>
-      <div class="cfield"><label></label><input type="tel" name="phone" placeholder="Phone Number"></div>
+      <div class="cfield"><label></label><div style="display:flex;gap:0;align-items:flex-end"><select name="country_code" style="border:none;border-bottom:1.5px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:13px;color:#64748b;outline:none;padding:10px 4px 10px 0;cursor:pointer;min-width:72px;appearance:none;-webkit-appearance:none"><option value="+91">🇮🇳 +91</option><option value="+1">🇺🇸 +1</option><option value="+44">🇬🇧 +44</option><option value="+61">🇦🇺 +61</option><option value="+971">🇦🇪 +971</option><option value="+65">🇸🇬 +65</option><option value="+60">🇲🇾 +60</option><option value="+49">🇩🇪 +49</option><option value="+33">🇫🇷 +33</option><option value="+81">🇯🇵 +81</option></select><input type="tel" name="phone" placeholder="Phone Number" style="flex:1"></div></div>
     </div>
 
     <div class="service-section">

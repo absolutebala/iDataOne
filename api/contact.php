@@ -72,16 +72,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <?php include __DIR__ . '/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{min-height:100%;font-family:'Inter',sans-serif;color:#0f172a}
+html,body{min-height:100%;font-family:'Inter',sans-serif;color:#ffffff}
 body{
   padding-top:68px;
   background:
-    radial-gradient(ellipse at 10% 15%, rgba(99,102,241,0.22), transparent 40%),
-    radial-gradient(ellipse at 88% 12%, rgba(124,58,237,0.18), transparent 38%),
-    radial-gradient(ellipse at 75% 82%, rgba(245,158,11,0.12), transparent 40%),
-    radial-gradient(ellipse at 15% 80%, rgba(20,184,166,0.12), transparent 35%),
-    radial-gradient(ellipse at 50% 50%, rgba(139,92,246,0.08), transparent 50%),
-    linear-gradient(135deg,#eef0fa 0%,#e8ecf8 30%,#e4eaf8 60%,#eaecf5 100%);
+    radial-gradient(ellipse at 80% 10%, rgba(0,212,255,0.12), transparent 40%),
+    radial-gradient(ellipse at 20% 80%, rgba(0,180,220,0.08), transparent 40%),
+    radial-gradient(ellipse at 60% 50%, rgba(245,197,24,0.06), transparent 45%),
+    linear-gradient(135deg,#0a0f1e 0%,#0d1535 50%,#0a0f1e 100%);
   display:flex;flex-direction:column;min-height:100vh;
 }
 
@@ -92,13 +90,13 @@ body{
 .contact-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px}
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
-.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:12px}
-.cl-heading em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:#64748b;line-height:1.7;margin-bottom:36px}
+.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
+.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
+.cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cl-sub{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:36px}
 .cl-trust{display:flex;flex-direction:column}
-.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(226,232,240,0.7)}
-.cl-trust-item:first-child{border-top:1px solid rgba(226,232,240,0.7)}
+.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:none}
+.cl-trust-item:first-child{border-top:none}
 .cl-trust-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .cl-trust-icon svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .ti-indigo{background:#eef2ff;border:1px solid rgba(99,102,241,0.15)}
@@ -107,30 +105,30 @@ body{
 .ti-teal svg{stroke:#0d9488}
 .ti-amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.15)}
 .ti-amber svg{stroke:#d97706}
-.cl-trust-title{font-size:14px;font-weight:600;color:#0f172a;margin-bottom:2px}
-.cl-trust-desc{font-size:12.5px;color:#94a3b8;line-height:1.5}
+.cl-trust-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:2px}
+.cl-trust-desc{font-size:12.5px;color:rgba(0,212,255,0.6);line-height:1.5}
 .contact-right{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px)}
 .form-top{margin-bottom:24px}
 .form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
-.form-top-sub{font-size:13px;color:#94a3b8}
+.form-top-sub{font-size:13px;color:rgba(0,212,255,0.6)}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .cfield{display:flex;flex-direction:column;gap:6px}
 .cfield label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8}
 .cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;transition:border-color 0.25s}
-.cfield input::placeholder,.cfield textarea::placeholder{color:#cbd5e1;font-size:13px}
-.cfield input:focus,.cfield textarea:focus{border-bottom-color:#4f46e5}
+.cfield input::placeholder,.cfield textarea::placeholder{color:rgba(255,255,255,0.35);font-size:13px}
+.cfield input:focus,.cfield textarea:focus{border-bottom-color:#00d4ff}
 .cfield textarea{resize:none}
 .service-section{margin-bottom:16px}
-.svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(226,232,240,0.9);background:transparent;color:#64748b;transition:all 0.2s}
-.svc-type-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}
+.svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(0,212,255,0.3);background:transparent;color:rgba(0,212,255,0.7);transition:all 0.2s}
+.svc-type-tab.active{background:#00d4ff;color:#0a0f1e;border-color:#00d4ff}
 .service-pills{display:flex;gap:7px;flex-wrap:wrap}
 .service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none}
-.service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
-.service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
-.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s;margin-top:6px}
+.service-pill:hover{border-color:#00d4ff;color:#00d4ff;background:rgba(0,212,255,0.08)}
+.service-pill.active{border-color:#00d4ff;background:#00d4ff;color:#0a0f1e}
+.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#0a9eb5,#00d4ff);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s;margin-top:6px}
 .submit-btn:hover{opacity:0.9}
 .submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.form-note{text-align:center;font-size:11.5px;color:#cbd5e1;margin-top:10px}
+.form-note{text-align:center;font-size:11.5px;color:rgba(255,255,255,0.4);margin-top:10px}
 .form-msg{margin-top:12px;text-align:center;font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px}
 .form-msg.success{background:#f0fdf4;color:#16a34a}
 .form-msg.error{background:#fef2f2;color:#dc2626}
@@ -188,7 +186,7 @@ body{
         </div>
         <div class="form-row-2">
           <div class="cfield"><label></label><input type="email" name="email" placeholder="Work Email" required></div>
-          <div class="cfield"><label></label><input type="tel" name="phone" placeholder="Phone Number"></div>
+          <div class="cfield"><label></label><div style="display:flex;gap:0;align-items:flex-end"><select name="country_code" style="border:none;border-bottom:1.5px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:13px;color:rgba(255,255,255,0.6);outline:none;padding:10px 4px 10px 0;cursor:pointer;min-width:72px;appearance:none;-webkit-appearance:none"><option value="+91">🇮🇳 +91</option><option value="+1">🇺🇸 +1</option><option value="+44">🇬🇧 +44</option><option value="+61">🇦🇺 +61</option><option value="+971">🇦🇪 +971</option><option value="+65">🇸🇬 +65</option><option value="+60">🇲🇾 +60</option><option value="+49">🇩🇪 +49</option><option value="+33">🇫🇷 +33</option><option value="+81">🇯🇵 +81</option></select><input type="tel" name="phone" placeholder="Phone Number" style="flex:1"></div></div>
         </div>
         <div class="service-section">
           <div style="display:flex;gap:8px;margin-bottom:12px">
