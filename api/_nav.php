@@ -32,7 +32,8 @@
 <div class="nav-ham" id="navHam" onclick="toggleNav()"><span></span><span></span><span></span></div>
 <div class="nav-ov" id="navOv" onclick="toggleNav()"></div>
 <div class="nav-mob" id="navMob">
-  <a href="/digital" <?php echo $current_page==='digital'?'class="active"':'';?>>Digital</a>
+  <a href="/about" <?php echo $current_page==='about'?'class="active"':''?>>About</a>
+    <a href="/digital" <?php echo $current_page==='digital'?'class="active"':'';?>>Digital</a>
   <a href="/ai" <?php echo $current_page==='ai'?'class="active"':'';?>>AI</a>
   <a href="/data" <?php echo $current_page==='data'?'class="active"':'';?>>Data</a>
   <a href="/case-studies" <?php echo $current_page==='cases'?'class="active"':'';?>>Case Studies</a>
@@ -42,6 +43,7 @@
 <nav class="site-nav">
   <a href="/" class="nav-logo"><img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne"></a>
   <div class="nav-links">
+    <a href="/about" <?php echo $current_page==='about'?'class="active"':''?>>About</a>
     <a href="/digital" <?php echo $current_page==='digital'?'class="active"':'';?>>Digital</a>
     <a href="/ai" <?php echo $current_page==='ai'?'class="active"':'';?>>AI</a>
     <a href="/data" <?php echo $current_page==='data'?'class="active"':'';?>>Data</a>
