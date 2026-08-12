@@ -211,7 +211,7 @@ font-weight:700;
 }
 
 .highlight{
-background:linear-gradient(90deg,#4f46e5,#7c3aed);
+background:linear-gradient(90deg,#c49a1a,#b07d10);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
@@ -221,6 +221,10 @@ max-width:850px;
 margin:auto;
 font-size:20px;
 line-height:1.8;
+color:rgba(220,170,40,0.92);
+}
+
+.cap-card p, .contact-inner p, .why-section p{
 color:#475569;
 }
 
@@ -245,7 +249,7 @@ display:block;
 }
 
 .capability span.highlight{
-background:linear-gradient(90deg,#4f46e5,#7c3aed);
+background:linear-gradient(90deg,#c49a1a,#b07d10);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
@@ -312,7 +316,7 @@ font-size:14px;
 
 /* Capability Cards — 3 rectangular columns */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;margin-top:36px}
-.cap-card{background:rgba(255,255,255,0.72);border-radius:24px;padding:28px 32px 20px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
+.cap-card{background:#ffffff;border-radius:24px;padding:28px 32px 20px;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;transition:box-shadow 0.3s;width:100%;box-sizing:border-box}
 /* Glossy sheen pseudo-element */
 .cap-card::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.55),transparent);transform:skewX(-15deg);transition:left 0.55s ease;pointer-events:none}
 .cap-card:hover::before{left:130%}
@@ -509,9 +513,9 @@ text-transform:uppercase;
 /* Contact — conversion focused */
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{text-align:left}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-bottom:20px}
+.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#c49a1a;margin-bottom:20px}
 .cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:12px}
-.cl-heading em{font-style:normal;background:linear-gradient(90deg,#4f46e5,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cl-heading em{font-style:normal;background:linear-gradient(90deg,#c49a1a,#b07d10);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cl-sub{font-size:15px;color:#64748b;line-height:1.7;margin-bottom:36px}
 .cl-trust{display:flex;flex-direction:column;gap:0}
 .cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(226,232,240,0.7)}
@@ -526,7 +530,7 @@ text-transform:uppercase;
 .ti-amber svg{stroke:#d97706}
 .cl-trust-title{font-size:14px;font-weight:600;color:#0f172a;margin-bottom:2px}
 .cl-trust-desc{font-size:12.5px;color:#94a3b8;line-height:1.5}
-.contact-right{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.contact-right{background:#ffffff;border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .form-top{margin-bottom:24px}
 .form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
 .form-top-sub{font-size:13px;color:#94a3b8}
@@ -1139,7 +1143,7 @@ letter-spacing:0.3px;
 <!-- Tamil signature -->
 <a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
-<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(255,255,255,0.55);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
+<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(212,160,20,0.85);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
