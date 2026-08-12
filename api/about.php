@@ -59,45 +59,34 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
     linear-gradient(135deg,#0a0f1e 0%,#0d1535 60%,#0a0f1e 100%);
 }
 .hero-grid{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.hero-left{}
+.hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-left{max-width:760px}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:28px}
 .hero-tag-dot{width:6px;height:6px;border-radius:50%;background:#00d4ff;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-h1{font-size:clamp(40px,5vw,68px);font-weight:900;letter-spacing:-3px;line-height:1.02;color:#fff;margin-bottom:16px}
-.hero-sub{font-size:19px;font-weight:600;color:rgba(255,255,255,0.6);letter-spacing:-0.3px;margin-bottom:20px}
-.hero-p{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:36px;max-width:480px}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;color:#fff;margin-bottom:16px}
+.hero-sub{font-size:20px;font-weight:600;color:rgba(255,255,255,0.6);letter-spacing:-0.3px;margin-bottom:20px}
+.hero-p{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:36px;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:0.5px;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(245,197,24,0.4);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
 .btn-outline:hover{background:rgba(245,197,24,0.06);transform:translateY(-1px)}
-
-/* Hero right — team illustration placeholder -->
-.hero-visual{position:relative}
-.hero-team-card{
-  background:rgba(255,255,255,0.03);
+/* Hero team image */
+.hero-visual{width:100%;margin-top:48px;position:relative}
+.hero-team-img{
+  width:100%;
+  border-radius:20px;
+  display:block;
   border:1px solid rgba(0,212,255,0.15);
-  border-radius:24px;
-  padding:40px;
-  backdrop-filter:blur(20px);
-  position:relative;overflow:hidden;
+  box-shadow:0 32px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(0,212,255,0.08);
 }
-.hero-team-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(0,212,255,0.08),transparent 60%);pointer-events:none}
-.team-model-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(0,212,255,0.5);margin-bottom:24px}
-.team-head{display:flex;align-items:center;gap:16px;padding:16px 20px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);border-radius:14px;margin-bottom:16px}
-.team-head-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#0891b2,#00d4ff);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#0a0f1e;flex-shrink:0}
-.team-head-name{font-size:15px;font-weight:700;color:#fff}
-.team-head-role{font-size:11px;color:#00d4ff;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-top:2px}
-.team-head-exp{font-size:11px;color:rgba(255,255,255,0.4);margin-top:2px}
-.team-ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.ai-member{padding:14px 16px;background:rgba(245,197,24,0.04);border:1px solid rgba(245,197,24,0.12);border-radius:12px;transition:border-color 0.2s}
-.ai-member:hover{border-color:rgba(245,197,24,0.3)}
-.ai-name{font-size:13px;font-weight:700;color:#f5c518;margin-bottom:2px}
-.ai-role{font-size:10px;color:rgba(255,255,255,0.4);line-height:1.4}
-.ai-badge{display:inline-block;padding:2px 7px;border-radius:4px;background:rgba(245,197,24,0.12);font-size:9px;font-weight:700;color:rgba(245,197,24,0.7);letter-spacing:1px;margin-bottom:6px}
-.team-equation{text-align:center;padding:16px;font-size:12px;color:rgba(0,212,255,0.5);font-weight:600;letter-spacing:1px;margin-top:12px}
-.team-equation span{color:#f5c518}
+.hero-img-fade{
+  position:absolute;bottom:0;left:0;right:0;height:30%;
+  background:linear-gradient(to bottom,transparent,#0a0f1e);
+  border-radius:0 0 20px 20px;
+  pointer-events:none;
+}
 
 /* ── WHY ── */
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
@@ -228,7 +217,8 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
 @media(max-width:768px){
   .section{padding:64px 20px}
   .hero{padding:60px 20px}
-  .hero-inner{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column}
+  .hero-visual{margin-top:32px}
   .why-grid{grid-template-columns:1fr}
   .compare-grid{grid-template-columns:1fr}
   .team-delivery-head{grid-template-columns:1fr;text-align:center}
@@ -264,40 +254,13 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-team-card">
-        <div class="team-model-label">The iDataOne Delivery Team</div>
-        <div class="team-head">
-          <div class="team-head-avatar">B</div>
-          <div>
-            <div class="team-head-name">Bala Kandaswamy</div>
-            <div class="team-head-role">Delivery Head</div>
-            <div class="team-head-exp">20+ years software delivery leadership</div>
-          </div>
-        </div>
-        <div class="ai-team-grid">
-          <div class="ai-member">
-            <div class="ai-badge">AI</div>
-            <div class="ai-name">Pixel</div>
-            <div class="ai-role">Digital Experience Specialist — UI/UX, design systems, user journeys</div>
-          </div>
-          <div class="ai-member">
-            <div class="ai-badge">AI</div>
-            <div class="ai-name">Forge</div>
-            <div class="ai-role">Software Engineering — full-stack, APIs, cloud-native architecture</div>
-          </div>
-          <div class="ai-member">
-            <div class="ai-badge">AI</div>
-            <div class="ai-name">Insight</div>
-            <div class="ai-role">Business Transformation — analysis, product thinking, requirements</div>
-          </div>
-          <div class="ai-member">
-            <div class="ai-badge">AI</div>
-            <div class="ai-name">Sentinel</div>
-            <div class="ai-role">Cloud Platform — DevOps, Kubernetes, CI/CD, security, scalability</div>
-          </div>
-        </div>
-        <div class="team-equation">Human leadership + AI capability = <span>lean, capable delivery</span></div>
-      </div>
+      <img
+        src="/assets/images/team-hero.png"
+        alt="iDataOne delivery team — Bala Kandaswamy (Delivery Head) with AI specialists Pixel, Forge, Insight and Sentinel"
+        class="hero-team-img"
+        loading="eager"
+      />
+      <div class="hero-img-fade"></div>
     </div>
   </div>
 </section>
