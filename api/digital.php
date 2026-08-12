@@ -169,7 +169,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <p class="banner-sub">AI-Assisted Engineering. Faster Delivery. Lower Development Costs. Better Outcomes.</p>
       <div class="banner-btns">
         <a href="/contact" class="btn-primary">Start Your Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#stories" class="btn-secondary">View Case Studies <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
     <div class="banner-illus">
@@ -181,6 +181,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 32px 80px rgba(0,120,180,0.28),0 12px 32px rgba(0,0,0,0.15)'"
         onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 24px 64px rgba(0,120,180,0.2),0 8px 24px rgba(0,0,0,0.12)'"
       />
+    </div>
+  </div>
+</section>
 
 <!-- ── Success Stories ── -->
 <section class="section stories" id="stories">
