@@ -49,19 +49,19 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 /* Nav via _nav.php */
-.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:url('/assets/images/data-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#020f0a 0%,#051a10 100%)}
-.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,10,6,0.95) 0%,rgba(2,10,6,0.85) 35%,rgba(2,10,6,0.35) 60%,rgba(2,10,6,0.05) 100%);pointer-events:none}
+.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:linear-gradient(145deg,#faf4e8 0%,#f5ead4 35%,#ede0c4 60%,#f2ead8 100%)}
+.banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 15% 50%,rgba(180,120,0,0.08),transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(0,160,150,0.06),transparent 50%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6ee7b7;margin-bottom:20px}
-.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#fff;margin-bottom:20px}
-.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#6ee7b7,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.banner-sub{font-size:16px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:36px;max-width:480px}
+.banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#92400e;margin-bottom:20px}
+.banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#1c1008;margin-bottom:20px}
+.banner-h1 em{font-style:normal;background:linear-gradient(90deg,#b45309,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.banner-sub{font-size:16px;color:#57534e;line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#b45309,#d97706);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-secondary:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}
-.banner-illus{display:none}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1.5px solid rgba(180,83,9,0.35);color:#b45309;font-size:14px;font-weight:600;text-decoration:none;background:rgba(180,83,9,0.05);transition:all 0.2s}
+.btn-secondary:hover{background:rgba(180,83,9,0.1);border-color:#b45309;transform:translateY(-1px)}
+.banner-illus{display:flex;align-items:center;justify-content:center}
 .section{padding:80px 32px}
 .section-inner{max-width:1140px;margin:0 auto}
 .section-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d97706;margin-bottom:12px;text-align:center}
@@ -116,7 +116,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-cta-secondary{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
 .btn-cta-secondary:hover{color:rgba(255,255,255,0.8)}
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:768px){.site-nav .nav-links{display:none}.banner-inner{grid-template-columns:1fr}.banner-illus{display:none}.stories-grid{grid-template-columns:1fr}.story-card{grid-template-columns:1fr}.story-visual{display:none}.process-steps{flex-direction:column;gap:0;align-items:stretch}.process-steps::before{display:none}.process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}.process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}.process-step:last-child::before{display:none}.process-step:last-child{padding-bottom:0}.step-icon{margin:0;flex-shrink:0}.step-title{margin-bottom:6px}.products-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-btns{align-items:flex-start}}
+@media(max-width:768px){.site-nav .nav-links{display:none}.banner-inner{grid-template-columns:1fr}.banner-illus{display:flex;align-items:center;justify-content:center}.stories-grid{grid-template-columns:1fr}.story-card{grid-template-columns:1fr}.story-visual{display:none}.process-steps{flex-direction:column;gap:0;align-items:stretch}.process-steps::before{display:none}.process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}.process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}.process-step:last-child::before{display:none}.process-step:last-child{padding-bottom:0}.step-icon{margin:0;flex-shrink:0}.step-title{margin-bottom:6px}.products-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-btns{align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -137,71 +137,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <svg viewBox="0 0 520 400" width="520" height="400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Dashboard frame -->
-        <rect x="40" y="20" width="440" height="300" rx="16" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1.5"/>
-        <rect x="40" y="20" width="440" height="40" rx="16" fill="rgba(245,158,11,0.08)"/>
-        <rect x="40" y="44" width="440" height="16" fill="rgba(245,158,11,0.08)"/>
-        <rect x="56" y="32" width="80" height="8" rx="4" fill="rgba(217,119,6,0.25)"/>
-        <circle cx="452" cy="36" r="8" fill="rgba(217,119,6,0.15)"/>
-        <circle cx="468" cy="36" r="8" fill="rgba(217,119,6,0.1)"/>
-        <!-- Metric cards -->
-        <rect x="56" y="76" width="88" height="54" rx="10" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-        <rect x="64" y="85" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="64" y="96" width="64" height="14" rx="4" fill="rgba(217,119,6,0.25)"/>
-        <rect x="64" y="114" width="36" height="5" rx="2.5" fill="rgba(20,184,166,0.3)"/>
-        <rect x="154" y="76" width="88" height="54" rx="10" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-        <rect x="162" y="85" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="162" y="96" width="64" height="14" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <rect x="162" y="114" width="36" height="5" rx="2.5" fill="rgba(244,63,94,0.3)"/>
-        <rect x="252" y="76" width="88" height="54" rx="10" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-        <rect x="260" y="85" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="260" y="96" width="64" height="14" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="260" y="114" width="36" height="5" rx="2.5" fill="rgba(20,184,166,0.35)"/>
-        <rect x="350" y="76" width="112" height="54" rx="10" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-        <rect x="358" y="85" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="358" y="96" width="64" height="14" rx="4" fill="rgba(245,158,11,0.25)"/>
-        <rect x="358" y="114" width="36" height="5" rx="2.5" fill="rgba(217,119,6,0.3)"/>
-        <!-- Bar chart -->
-        <rect x="56" y="148" width="220" height="100" rx="10" fill="#fff" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-        <rect x="68" y="158" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="68" y="208" width="14" height="28" rx="3" fill="rgba(245,158,11,0.4)"/>
-        <rect x="86" y="194" width="14" height="42" rx="3" fill="rgba(245,158,11,0.55)"/>
-        <rect x="104" y="200" width="14" height="36" rx="3" fill="rgba(245,158,11,0.4)"/>
-        <rect x="122" y="188" width="14" height="48" rx="3" fill="rgba(245,158,11,0.65)"/>
-        <rect x="140" y="182" width="14" height="54" rx="3" fill="rgba(217,119,6,0.7)"/>
-        <rect x="158" y="191" width="14" height="45" rx="3" fill="rgba(245,158,11,0.55)"/>
-        <rect x="176" y="186" width="14" height="50" rx="3" fill="rgba(245,158,11,0.6)"/>
-        <rect x="194" y="178" width="14" height="58" rx="3" fill="rgba(217,119,6,0.75)"/>
-        <rect x="212" y="184" width="14" height="52" rx="3" fill="rgba(245,158,11,0.65)"/>
-        <!-- Line chart -->
-        <rect x="286" y="148" width="176" height="100" rx="10" fill="#fff" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-        <rect x="296" y="158" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <polyline points="296,228 314,214 332,218 350,204 368,196 386,200 404,186 422,180 440,184" stroke="rgba(217,119,6,0.65)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <polygon points="296,228 314,214 332,218 350,204 368,196 386,200 404,186 422,180 440,184 440,240 296,240" fill="rgba(217,119,6,0.05)"/>
-        <circle cx="404" cy="186" r="5" fill="rgba(217,119,6,0.7)"/>
-        <!-- Pie/donut -->
-        <rect x="56" y="260" width="100" height="48" rx="8" fill="rgba(255,251,235,0.6)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-        <circle cx="80" cy="284" r="14" fill="none" stroke="rgba(217,119,6,0.15)" stroke-width="6"/>
-        <circle cx="80" cy="284" r="14" fill="none" stroke="rgba(217,119,6,0.6)" stroke-width="6" stroke-dasharray="44 44" stroke-dashoffset="22"/>
-        <circle cx="80" cy="284" r="14" fill="none" stroke="rgba(20,184,166,0.4)" stroke-width="6" stroke-dasharray="22 66" stroke-dashoffset="-22"/>
-        <rect x="102" y="276" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="102" y="284" width="28" height="4" rx="2" fill="rgba(217,119,6,0.25)"/>
-        <rect x="102" y="292" width="34" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-        <!-- Table -->
-        <rect x="166" y="260" width="296" height="48" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(217,119,6,0.1)" stroke-width="1"/>
-        <rect x="174" y="268" width="60" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="174" y="276" width="270" height="1" fill="rgba(217,119,6,0.1)"/>
-        <rect x="174" y="282" width="100" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-        <rect x="340" y="281" width="40" height="6" rx="3" fill="rgba(217,119,6,0.15)"/>
-        <rect x="174" y="292" width="100" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-        <rect x="340" y="291" width="40" height="6" rx="3" fill="rgba(20,184,166,0.15)"/>
-        <!-- Floating badge -->
-        <rect x="140" y="330" width="200" height="36" rx="18" fill="rgba(255,255,255,0.96)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
-        <circle cx="158" cy="348" r="8" fill="rgba(217,119,6,0.15)"/>
-        <rect x="172" y="342" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="172" y="351" width="70" height="4" rx="2" fill="rgba(217,119,6,0.25)"/>
-      </svg>
+      <img
+        src="/assets/images/data-hero-visual.png"
+        alt="iDataOne Data Intelligence — Business Intelligence, Real-Time Analytics, Predictive Analytics and Actionable Insights"
+        style="width:100%;height:auto;display:block;border-radius:24px;box-shadow:0 24px 64px rgba(180,120,0,0.18),0 8px 24px rgba(0,0,0,0.1);transition:transform 0.4s ease,box-shadow 0.4s ease"
+        loading="eager"
+        onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 32px 80px rgba(180,120,0,0.25),0 12px 32px rgba(0,0,0,0.14)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 24px 64px rgba(180,120,0,0.18),0 8px 24px rgba(0,0,0,0.1)'"
+      />
     </div>
   </div>
 </section>
