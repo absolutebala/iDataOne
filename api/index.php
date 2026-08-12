@@ -259,7 +259,7 @@ font-weight:600;
 letter-spacing:3px;
 font-size:14px;
 animation:bounce 2s infinite;
-cursor:pointer;
+cursor:pointer;display:none;
 user-select:none;
 }
 
@@ -366,12 +366,12 @@ font-size:14px;
 /* Capability Carousel */
 .cap-carousel{position:relative;width:100%;max-width:780px;margin:0 auto}
 .cap-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
-.cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.6);color:#64748b}
-.cap-tab.t-teal{background:#f0fdfa;border-color:rgba(20,184,166,0.3);color:#0d9488}
-.cap-tab.t-violet{background:#f5f3ff;border-color:rgba(124,58,237,0.3);color:#7c3aed}
-.cap-tab.t-amber{background:#fffbeb;border-color:rgba(245,158,11,0.3);color:#d97706}
-.cap-tab.t-rose{background:#fff1f2;border-color:rgba(244,63,94,0.3);color:#f43f5e}
-.cap-tab.t-sky{background:#f0f9ff;border-color:rgba(14,165,233,0.3);color:#0ea5e9}
+.cap-tab{padding:6px 14px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.3px;cursor:pointer;transition:all 0.2s;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);color:rgba(0,212,255,0.6)}
+.cap-tab.t-teal{background:rgba(0,212,255,0.15);border-color:#00d4ff;color:#00d4ff}
+.cap-tab.t-violet{background:rgba(245,197,24,0.12);border-color:#f5c518;color:#f5c518}
+.cap-tab.t-amber{background:rgba(245,197,24,0.12);border-color:#f5c518;color:#f5c518}
+.cap-tab.t-rose{background:rgba(245,197,24,0.12);border-color:#f5c518;color:#f5c518}
+.cap-tab.t-sky{background:rgba(0,212,255,0.12);border-color:rgba(0,212,255,0.7);color:rgba(0,212,255,0.85)}
 .cap-tab.t-emerald{background:#ecfdf5;border-color:rgba(16,185,129,0.3);color:#10b981}
 .cap-slides{position:relative;width:100%}
 
@@ -535,19 +535,19 @@ text-transform:uppercase;
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .cfield{display:flex;flex-direction:column;gap:6px}
 .cfield label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8}
-.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
-.cfield input::placeholder,.cfield textarea::placeholder{color:#cbd5e1;font-size:13px}
-.cfield input:focus,.cfield textarea:focus{border-bottom-color:#4f46e5}
+.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;border-radius:0;transition:border-color 0.25s;-webkit-appearance:none}
+.cfield input::placeholder,.cfield textarea::placeholder{color:#94a3b8;font-size:13px}
+.cfield input:focus,.cfield textarea:focus{border-bottom-color:#00d4ff}
 .cfield textarea{resize:none}
 .service-section{margin-bottom:16px}
 .service-section label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:10px}
 .service-pills{display:flex;gap:7px;flex-wrap:wrap}
-.service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
-.service-pill:hover{border-color:#c7d2fe;color:#4f46e5;background:#f5f3ff}
-.service-pill.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
-.svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(226,232,240,0.9);background:transparent;color:#64748b;transition:all 0.2s}
-.svc-type-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}
-.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
+.service-pill{padding:7px 13px;border-radius:8px;border:1px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#0d9488;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
+.service-pill:hover{border-color:#00d4ff;color:#00d4ff;background:rgba(0,212,255,0.06)}
+.service-pill.active{border-color:#00d4ff;background:#00d4ff;color:#0a0f1e}
+.svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(0,212,255,0.3);background:transparent;color:rgba(0,212,255,0.7);transition:all 0.2s}
+.svc-type-tab.active{background:#0a0f1e;color:#00d4ff;border-color:#00d4ff}
+.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#0a9eb5,#00d4ff);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
 .submit-btn:hover{opacity:0.9;transform:translateY(-1px)}
 .submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform 0.2s}
 .submit-btn:hover svg{transform:translateX(3px)}
@@ -569,14 +569,14 @@ z-index:10;
 width:12px;
 height:12px;
 border-radius:50%;
-background:#cbd5e1;
+background:rgba(0,212,255,0.2);
 margin:14px 0;
 cursor:pointer;
 transition:background .3s,transform .3s;
 }
 
 .dot.active{
-background:#4f46e5;
+background:#00d4ff;
 transform:scale(1.4);
 }
 
@@ -591,7 +591,7 @@ transform:scale(1.4);
 .top-nav-links{display:flex;gap:28px;align-items:center}
 .nav-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#4f46e5,#7c3aed);z-index:300;transition:width 0.25s ease-out;box-shadow:0 0 8px rgba(99,102,241,0.6)}
 .nav-progress.active{width:75%}
-.top-nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
+.top-nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
 .top-nav-links a:not([href]):hover{color:#475569}
 .top-nav-links a[href]{cursor:pointer;color:#475569}
@@ -1139,7 +1139,7 @@ letter-spacing:0.3px;
 </div>
 
 <!-- Tamil signature -->
-<a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
+<a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:#7eefff;text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
 <div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:#7eefff;font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
@@ -1151,7 +1151,10 @@ letter-spacing:0.3px;
 <img src="/assets/images/iDataOneLogoFinal.png" class="logo" alt="iDataOne Logo">
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
-<div class="explore" onclick="showScreen(1)">EXPLORE ↓</div>
+<div style="display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap">
+  <div onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
+  <a href="/case-studies" style="padding:13px 28px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.6);color:#f5c518;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none">CASE STUDIES →</a>
+</div>
 </div>
 </section>
 

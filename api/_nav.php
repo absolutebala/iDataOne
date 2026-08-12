@@ -5,7 +5,7 @@
 .site-nav .nav-logo{text-decoration:none;flex-shrink:0;min-width:160px}
 .site-nav .nav-logo img{height:40px;width:auto;opacity:1}
 .site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s;cursor:default}
+.site-nav .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.82);text-decoration:none;transition:color 0.2s;cursor:default}
 .site-nav .nav-links a[href]{cursor:pointer}
 .site-nav .nav-links a[href]:hover{color:#4f46e5}
 .site-nav .nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
