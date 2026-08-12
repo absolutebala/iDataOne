@@ -26,12 +26,12 @@
 <?php include __DIR__ . '/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hidden;padding-top:68px}
+body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hidden;padding-top:68px}
 .section{padding:88px 32px;position:relative}
 .inner{max-width:1140px;margin:0 auto}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#00d4ff;margin-bottom:14px}
 .gold{background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.alt{background:#060b15}
+.alt{background:#09071200}
 .bar{width:40px;height:2px;background:linear-gradient(90deg,#00d4ff,#f5c518);border-radius:999px;margin-bottom:20px}
 
 /* ── HERO ── */
@@ -40,29 +40,28 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:28px}
-.hero-dot{width:6px;height:6px;border-radius:50%;background:#00d4ff;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
 .hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;margin-bottom:16px}
 .hero-sub{font-size:18px;font-weight:500;color:rgba(255,255,255,0.5);margin-bottom:28px;letter-spacing:-0.2px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
-.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0a0f1e;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0e0c18;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(245,197,24,0.4);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
 .btn-o:hover{background:rgba(245,197,24,0.06);transform:translateY(-1px)}
 .hero-img{width:100%;border-radius:20px;display:block;border:1px solid rgba(0,212,255,0.15);box-shadow:0 32px 80px rgba(0,0,0,0.5);position:relative}
 .hero-img-wrap{position:relative;width:100%}
-.hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0a0f1e);border-radius:0 0 20px 20px;pointer-events:none}
+.hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0e0c18);border-radius:0 0 20px 20px;pointer-events:none}
 
 /* ── STATS BAR ── */
 .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.1);border-radius:20px;overflow:hidden;margin-top:64px}
-.stat{padding:32px 24px;text-align:center;background:#0a0f1e;transition:background 0.3s}
-.stat:hover{background:#0d1535}
+.stat{padding:32px 24px;text-align:center;background:#0e0c18;transition:background 0.3s}
+.stat:hover{background:#130e24}
 .stat-num{font-size:40px;font-weight:900;letter-spacing:-2px;line-height:1;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-label{font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px;line-height:1.4}
 
 /* ── TEAM ── */
 .team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.18);border-radius:20px;margin-bottom:24px}
-.avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#0891b2,#00d4ff);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:900;color:#0a0f1e;flex-shrink:0;border:2px solid rgba(0,212,255,0.3)}
+.avatar{width:88px;height:88px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,212,255,0.35);box-shadow:0 0 24px rgba(0,212,255,0.15)}
 .head-badge{font-size:10px;font-weight:700;letter-spacing:2px;color:#00d4ff;text-transform:uppercase;margin-bottom:6px}
 .head-name{font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px}
 .head-title{font-size:13px;color:rgba(0,212,255,0.7);margin-bottom:8px}
@@ -99,7 +98,7 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
 .wf-steps{display:grid;grid-template-columns:repeat(6,1fr);position:relative}
 .wf-steps::before{content:"";position:absolute;top:35px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.25) 20%,rgba(245,197,24,0.25) 80%,transparent);pointer-events:none}
 .wf-step{text-align:center;padding:0 6px;position:relative;z-index:1}
-.wf-icon{width:70px;height:70px;border-radius:50%;background:#0a0f1e;border:1.5px solid rgba(0,212,255,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;transition:border-color 0.3s,box-shadow 0.3s}
+.wf-icon{width:70px;height:70px;border-radius:50%;background:#0e0c18;border:1.5px solid rgba(0,212,255,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;transition:border-color 0.3s,box-shadow 0.3s}
 .wf-step:hover .wf-icon{border-color:#00d4ff;box-shadow:0 0 20px rgba(0,212,255,0.2)}
 .wf-step.gold-step .wf-icon{border-color:rgba(245,197,24,0.25)}
 .wf-step.gold-step:hover .wf-icon{border-color:#f5c518;box-shadow:0 0 20px rgba(245,197,24,0.2)}
@@ -158,8 +157,43 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
 
 <!-- HERO -->
 <section class="hero">
+  <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.6" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- Subtle tech pattern: nodes + connectors -->
+    <!-- Top left cluster -->
+    <circle cx="120" cy="140" r="3" fill="rgba(0,212,255,0.25)"/>
+    <circle cx="200" cy="100" r="2" fill="rgba(245,197,24,0.2)"/>
+    <circle cx="80" cy="200" r="2" fill="rgba(0,212,255,0.18)"/>
+    <line x1="120" y1="140" x2="200" y2="100" stroke="rgba(0,212,255,0.12)" stroke-width="1"/>
+    <line x1="120" y1="140" x2="80" y2="200" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
+    <!-- Hex outline top centre -->
+    <polygon points="700,40 730,57 730,91 700,108 670,91 670,57" fill="none" stroke="rgba(245,197,24,0.1)" stroke-width="1"/>
+    <polygon points="700,55 720,66 720,88 700,99 680,88 680,66" fill="none" stroke="rgba(245,197,24,0.07)" stroke-width="1"/>
+    <!-- Top right nodes -->
+    <circle cx="1260" cy="80" r="4" fill="rgba(245,197,24,0.2)"/>
+    <circle cx="1320" cy="140" r="2.5" fill="rgba(0,212,255,0.2)"/>
+    <circle cx="1200" cy="120" r="2" fill="rgba(245,197,24,0.15)"/>
+    <line x1="1260" y1="80" x2="1320" y2="140" stroke="rgba(245,197,24,0.1)" stroke-width="1"/>
+    <line x1="1260" y1="80" x2="1200" y2="120" stroke="rgba(245,197,24,0.08)" stroke-width="1"/>
+    <!-- Circuit trace left -->
+    <path d="M40 400 L100 400 L100 460 L160 460" fill="none" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
+    <circle cx="40" cy="400" r="3" fill="rgba(0,212,255,0.2)"/>
+    <circle cx="160" cy="460" r="3" fill="rgba(0,212,255,0.15)"/>
+    <!-- Circuit trace right -->
+    <path d="M1360 300 L1300 300 L1300 360 L1240 360" fill="none" stroke="rgba(245,197,24,0.1)" stroke-width="1"/>
+    <circle cx="1360" cy="300" r="3" fill="rgba(245,197,24,0.2)"/>
+    <circle cx="1240" cy="360" r="3" fill="rgba(245,197,24,0.15)"/>
+    <!-- Bottom scattered -->
+    <circle cx="300" cy="820" r="2.5" fill="rgba(0,212,255,0.15)"/>
+    <circle cx="400" cy="780" r="2" fill="rgba(245,197,24,0.12)"/>
+    <line x1="300" y1="820" x2="400" y2="780" stroke="rgba(0,212,255,0.08)" stroke-width="1"/>
+    <circle cx="1050" cy="800" r="2.5" fill="rgba(245,197,24,0.15)"/>
+    <circle cx="1150" cy="840" r="2" fill="rgba(0,212,255,0.12)"/>
+    <line x1="1050" y1="800" x2="1150" y2="840" stroke="rgba(245,197,24,0.08)" stroke-width="1"/>
+    <!-- Diamond sparkles -->
+    <polygon points="60,600 64,612 60,624 56,612" fill="rgba(245,197,24,0.15)"/>
+    <polygon points="1380,500 1384,512 1380,524 1376,512" fill="rgba(0,212,255,0.15)"/>
+  </svg>
   <div class="hero-inner">
-    <div class="hero-tag"><span class="hero-dot"></span>AI-First Delivery</div>
     <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
     <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
     <div class="hero-ctas">
@@ -193,7 +227,7 @@ body{font-family:'Inter',sans-serif;background:#0a0f1e;color:#fff;overflow-x:hid
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px">One Delivery Head.<br>Four AI Specialists.</h2>
     <p style="font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
     <div class="team-head-card">
-      <div class="avatar">B</div>
+      <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:88px;height:88px;object-fit:cover;object-position:center top">
       <div>
         <div class="head-badge">Delivery Head</div>
         <div class="head-name">Bala Kandaswamy</div>
