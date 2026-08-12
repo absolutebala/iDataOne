@@ -83,60 +83,93 @@ body{
   display:flex;flex-direction:column;min-height:100vh;
 }
 
-/* Nav */
-/* Nav via _nav.php */
-
 /* Contact layout */
-.contact-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px}
-.contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
-.contact-left{}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
-.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
+.contact-wrap{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:calc(100vh - 68px);
+  padding:48px 24px;
+}
+.contact-inner{position:relative;z-index:2;width:100%;max-width:1140px;display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:center}
+/* Left side */
+.cl-label{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
+.cl-heading{font-size:clamp(36px,4vw,52px);font-weight:800;letter-spacing:-2px;line-height:1.08;color:#fff;margin-bottom:16px}
 .cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:36px}
-.cl-trust{display:flex;flex-direction:column}
-.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:none}
+.cl-sub{font-size:16px;color:rgba(255,255,255,0.72);line-height:1.75;margin-bottom:40px}
+.cl-trust{display:flex;flex-direction:column;gap:4px}
+.cl-trust-item{display:flex;align-items:flex-start;gap:16px;padding:14px 0;border-bottom:none}
 .cl-trust-item:first-child{border-top:none}
-.cl-trust-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cl-trust-icon svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.ti-indigo{background:#eef2ff;border:1px solid rgba(99,102,241,0.15)}
-.ti-indigo svg{stroke:#4f46e5}
-.ti-teal{background:#f0fdfa;border:1px solid rgba(20,184,166,0.15)}
-.ti-teal svg{stroke:#0d9488}
-.ti-amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.15)}
-.ti-amber svg{stroke:#d97706}
-.cl-trust-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:2px}
-.cl-trust-desc{font-size:12.5px;color:rgba(0,212,255,0.6);line-height:1.5}
-.contact-right{background:rgba(255,255,255,0.65);border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px)}
-.form-top{margin-bottom:24px}
-.form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
-.form-top-sub{font-size:13px;color:rgba(0,212,255,0.6)}
-.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.cl-trust-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cl-trust-icon svg{width:18px;height:18px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ti-indigo{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2)}
+.ti-indigo svg{stroke:#00d4ff}
+.ti-teal{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2)}
+.ti-teal svg{stroke:#00d4ff}
+.ti-amber{background:rgba(245,197,24,0.1);border:1px solid rgba(245,197,24,0.2)}
+.ti-amber svg{stroke:#f5c518}
+.cl-trust-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:3px}
+.cl-trust-desc{font-size:12.5px;color:rgba(0,212,255,0.55);line-height:1.5}
+/* Form card — glass dark */
+.contact-right{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(0,212,255,0.18);
+  border-radius:24px;
+  padding:40px 36px;
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  box-shadow:0 32px 80px rgba(0,0,0,0.4),inset 0 1px 0 rgba(0,212,255,0.08);
+}
+.form-top{margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid rgba(0,212,255,0.1)}
+.form-top-title{font-size:20px;font-weight:700;color:#fff;letter-spacing:-0.4px;margin-bottom:4px}
+.form-top-sub{font-size:13px;color:rgba(0,212,255,0.55)}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .cfield{display:flex;flex-direction:column;gap:6px}
-.cfield label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8}
-.cfield input,.cfield textarea{width:100%;padding:10px 0;border:none;border-bottom:1.5px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:#0f172a;outline:none;transition:border-color 0.25s}
-.cfield input::placeholder,.cfield textarea::placeholder{color:rgba(255,255,255,0.35);font-size:13px}
+.cfield label{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(0,212,255,0.5)}
+.cfield input,.cfield textarea{
+  width:100%;padding:10px 0;border:none;
+  border-bottom:1px solid rgba(0,212,255,0.2);
+  background:transparent;
+  font-family:'Inter',sans-serif;font-size:14px;
+  color:#fff;outline:none;
+  transition:border-color 0.25s;
+  -webkit-appearance:none;
+}
+.cfield input::placeholder,.cfield textarea::placeholder{color:rgba(255,255,255,0.3);font-size:13px}
 .cfield input:focus,.cfield textarea:focus{border-bottom-color:#00d4ff}
 .cfield textarea{resize:none}
-.service-section{margin-bottom:16px}
+.cfield select{
+  border:none;border-bottom:1px solid rgba(0,212,255,0.2);
+  background:transparent;
+  font-family:'Inter',sans-serif;font-size:13px;
+  color:rgba(255,255,255,0.7);outline:none;
+  padding:10px 4px 10px 0;cursor:pointer;
+  min-width:76px;appearance:none;-webkit-appearance:none;
+}
+.cfield select option{background:#0d1535;color:#fff}
+.service-section{margin-bottom:20px}
+.service-section label{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(0,212,255,0.5);display:block;margin-bottom:12px}
 .svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(0,212,255,0.3);background:transparent;color:rgba(0,212,255,0.7);transition:all 0.2s}
 .svc-type-tab.active{background:#00d4ff;color:#0a0f1e;border-color:#00d4ff}
-.service-pills{display:flex;gap:7px;flex-wrap:wrap}
-.service-pill{padding:7px 13px;border-radius:8px;border:1px solid #e2e8f0;background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#64748b;cursor:pointer;transition:all 0.2s;user-select:none}
+.service-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.service-pill{padding:7px 14px;border-radius:8px;border:1px solid rgba(0,212,255,0.2);background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:rgba(0,212,255,0.65);cursor:pointer;transition:all 0.2s;user-select:none}
 .service-pill:hover{border-color:#00d4ff;color:#00d4ff;background:rgba(0,212,255,0.08)}
-.service-pill.active{border-color:#00d4ff;background:#00d4ff;color:#0a0f1e}
-.submit-btn{width:100%;padding:15px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#0a9eb5,#00d4ff);color:#fff;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s;margin-top:6px}
-.submit-btn:hover{opacity:0.9}
-.submit-btn svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.form-note{text-align:center;font-size:11.5px;color:rgba(255,255,255,0.4);margin-top:10px}
+.service-pill.active{border-color:#00d4ff;background:rgba(0,212,255,0.15);color:#00d4ff}
+.submit-btn{width:100%;padding:16px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0a0f1e;font-family:'Inter',sans-serif;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:8px}
+.submit-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.submit-btn svg{width:14px;height:14px;stroke:#0a0f1e;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.form-note{text-align:center;font-size:11.5px;color:rgba(255,255,255,0.3);margin-top:10px}
 .form-msg{margin-top:12px;text-align:center;font-size:13px;font-weight:500;padding:10px 16px;border-radius:10px}
-.form-msg.success{background:#f0fdf4;color:#16a34a}
-.form-msg.error{background:#fef2f2;color:#dc2626}
-@media(max-width:768px){
-  .page-nav-links{display:none}
+.form-msg.success{background:rgba(0,212,255,0.1);color:#7eefff;border:1px solid rgba(0,212,255,0.2)}
+.form-msg.error{background:rgba(244,63,94,0.1);color:#fca5a5;border:1px solid rgba(244,63,94,0.2)}
+@media(max-width:900px){
   .contact-inner{grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:768px){
   .contact-right{padding:28px 20px}
-  .form-row-2{grid-template-columns:1fr;gap:12px}
+  .form-row-2{grid-template-columns:1fr;gap:14px}
+  .contact-wrap{padding:28px 16px}
 }
 </style>
 </head>
@@ -144,6 +177,112 @@ body{
 <?php include __DIR__ . '/_gtm_body.php'; ?>
 
 <?php $current_page = 'contact'; include __DIR__ . '/_nav.php'; ?>
+
+<!-- Process flow background -->
+<svg style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="cg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(0,212,255,0.14)"/><stop offset="100%" stop-color="rgba(0,212,255,0)"/></radialGradient>
+    <radialGradient id="cg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(245,197,24,0.12)"/><stop offset="100%" stop-color="rgba(245,197,24,0)"/></radialGradient>
+  </defs>
+  <!-- Grid -->
+  <g stroke="rgba(0,212,255,0.045)" stroke-width="1">
+    <line x1="0" y1="90" x2="1400" y2="90"/><line x1="0" y1="180" x2="1400" y2="180"/><line x1="0" y1="270" x2="1400" y2="270"/><line x1="0" y1="360" x2="1400" y2="360"/><line x1="0" y1="450" x2="1400" y2="450"/><line x1="0" y1="540" x2="1400" y2="540"/><line x1="0" y1="630" x2="1400" y2="630"/><line x1="0" y1="720" x2="1400" y2="720"/><line x1="0" y1="810" x2="1400" y2="810"/>
+    <line x1="100" y1="0" x2="100" y2="900"/><line x1="220" y1="0" x2="220" y2="900"/><line x1="340" y1="0" x2="340" y2="900"/><line x1="460" y1="0" x2="460" y2="900"/><line x1="580" y1="0" x2="580" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/><line x1="820" y1="0" x2="820" y2="900"/><line x1="940" y1="0" x2="940" y2="900"/><line x1="1060" y1="0" x2="1060" y2="900"/><line x1="1180" y1="0" x2="1180" y2="900"/><line x1="1300" y1="0" x2="1300" y2="900"/>
+  </g>
+  <!-- Glow halos -->
+  <ellipse cx="160" cy="340" rx="100" ry="80" fill="url(#cg1)" opacity="0.8"/>
+  <ellipse cx="500" cy="260" rx="90" ry="70" fill="url(#cg1)" opacity="0.7"/>
+  <ellipse cx="820" cy="340" rx="90" ry="70" fill="url(#cg1)" opacity="0.7"/>
+  <ellipse cx="1140" cy="260" rx="90" ry="70" fill="url(#cg2)" opacity="0.7"/>
+  <ellipse cx="1300" cy="600" rx="80" ry="70" fill="url(#cg2)" opacity="0.6"/>
+  <!-- Process step labels -->
+  <text x="160" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(0,212,255,0.4)">DISCOVERY</text>
+  <text x="500" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(0,212,255,0.4)">STRATEGY</text>
+  <text x="820" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(0,212,255,0.4)">BUILD</text>
+  <text x="1140" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(245,197,24,0.5)">LAUNCH</text>
+  <text x="1300" y="542" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(245,197,24,0.4)">SCALE</text>
+  <!-- Connector lines -->
+  <line x1="210" y1="322" x2="450" y2="250" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <polygon points="450,245 462,250 450,255" fill="rgba(0,212,255,0.3)"/>
+  <line x1="550" y1="262" x2="765" y2="327" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <polygon points="765,322 778,327 765,332" fill="rgba(0,212,255,0.3)"/>
+  <line x1="870" y1="318" x2="1085" y2="250" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/>
+  <polygon points="1085,245 1097,250 1085,255" fill="rgba(245,197,24,0.35)"/>
+  <line x1="1170" y1="292" x2="1290" y2="554" stroke="rgba(245,197,24,0.16)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="1288,552 1295,565 1282,560" fill="rgba(245,197,24,0.28)"/>
+  <path d="M1250 632 Q700 820 200 662" fill="none" stroke="rgba(0,212,255,0.08)" stroke-width="1" stroke-dasharray="8,5"/>
+  <!-- Node 1: Discovery -->
+  <g opacity="0.72">
+    <circle cx="160" cy="340" r="40" fill="none" stroke="rgba(0,212,255,0.28)" stroke-width="1.5"/>
+    <circle cx="152" cy="328" r="14" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="1.5"/>
+    <line x1="162" y1="338" x2="172" y2="350" stroke="rgba(0,212,255,0.5)" stroke-width="2" stroke-linecap="round"/>
+    <rect x="148" y="346" width="24" height="16" rx="5" fill="none" stroke="rgba(0,212,255,0.32)" stroke-width="1.2"/>
+    <line x1="154" y1="352" x2="166" y2="352" stroke="rgba(0,212,255,0.28)" stroke-width="1"/>
+    <circle cx="160" cy="300" r="3" fill="rgba(0,212,255,0.4)"/>
+    <circle cx="200" cy="340" r="2.5" fill="rgba(0,212,255,0.3)"/>
+    <circle cx="120" cy="340" r="2.5" fill="rgba(0,212,255,0.3)"/>
+    <text x="160" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(0,212,255,0.32)">01</text>
+  </g>
+  <!-- Node 2: Strategy (brain) -->
+  <g opacity="0.7">
+    <circle cx="500" cy="262" r="38" fill="none" stroke="rgba(0,212,255,0.28)" stroke-width="1.5"/>
+    <ellipse cx="500" cy="258" rx="22" ry="17" fill="none" stroke="rgba(0,212,255,0.48)" stroke-width="1.4"/>
+    <ellipse cx="492" cy="255" rx="8" ry="12" fill="none" stroke="rgba(0,212,255,0.32)" stroke-width="1.1"/>
+    <ellipse cx="508" cy="255" rx="8" ry="12" fill="none" stroke="rgba(0,212,255,0.32)" stroke-width="1.1"/>
+    <line x1="500" y1="241" x2="500" y2="275" stroke="rgba(0,212,255,0.18)" stroke-width="0.8"/>
+    <circle cx="500" cy="224" r="3" fill="rgba(0,212,255,0.4)"/>
+    <circle cx="538" cy="262" r="2.5" fill="rgba(0,212,255,0.3)"/>
+    <circle cx="462" cy="262" r="2.5" fill="rgba(0,212,255,0.3)"/>
+    <text x="500" y="320" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(0,212,255,0.32)">02</text>
+  </g>
+  <!-- Node 3: Build (code) -->
+  <g opacity="0.7">
+    <circle cx="820" cy="340" r="40" fill="none" stroke="rgba(0,212,255,0.28)" stroke-width="1.5"/>
+    <text x="800" y="350" font-family="monospace" font-size="20" fill="rgba(0,212,255,0.48)" font-weight="700">&lt;/&gt;</text>
+    <circle cx="852" cy="318" r="11" fill="none" stroke="rgba(0,212,255,0.25)" stroke-width="1.2"/>
+    <circle cx="852" cy="318" r="4" fill="rgba(0,212,255,0.15)"/>
+    <circle cx="852" cy="307" r="2" fill="rgba(0,212,255,0.25)"/>
+    <circle cx="852" cy="329" r="2" fill="rgba(0,212,255,0.25)"/>
+    <circle cx="841" cy="318" r="2" fill="rgba(0,212,255,0.25)"/>
+    <circle cx="820" cy="300" r="3" fill="rgba(0,212,255,0.35)"/>
+    <circle cx="780" cy="340" r="2.5" fill="rgba(0,212,255,0.3)"/>
+    <text x="820" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(0,212,255,0.32)">03</text>
+  </g>
+  <!-- Node 4: Launch (rocket) -->
+  <g opacity="0.68">
+    <circle cx="1140" cy="262" r="38" fill="none" stroke="rgba(245,197,24,0.32)" stroke-width="1.5"/>
+    <ellipse cx="1140" cy="252" rx="10" ry="18" fill="none" stroke="rgba(245,197,24,0.58)" stroke-width="1.4"/>
+    <line x1="1130" y1="266" x2="1124" y2="278" stroke="rgba(245,197,24,0.38)" stroke-width="1.3"/>
+    <line x1="1150" y1="266" x2="1156" y2="278" stroke="rgba(245,197,24,0.38)" stroke-width="1.3"/>
+    <ellipse cx="1140" cy="278" rx="5" ry="7" fill="rgba(245,197,24,0.2)" stroke="rgba(245,197,24,0.38)" stroke-width="1"/>
+    <circle cx="1140" cy="224" r="3" fill="rgba(245,197,24,0.45)"/>
+    <circle cx="1178" cy="262" r="2.5" fill="rgba(245,197,24,0.32)"/>
+    <circle cx="1102" cy="262" r="2.5" fill="rgba(245,197,24,0.32)"/>
+    <polygon points="1108,234 1111,242 1108,250 1105,242" fill="rgba(245,197,24,0.2)"/>
+    <text x="1140" y="320" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(245,197,24,0.38)">04</text>
+  </g>
+  <!-- Node 5: Scale (bar chart) -->
+  <g opacity="0.62">
+    <circle cx="1300" cy="602" r="36" fill="none" stroke="rgba(245,197,24,0.28)" stroke-width="1.5"/>
+    <rect x="1282" y="606" width="8" height="16" rx="2" fill="rgba(245,197,24,0.22)" stroke="rgba(245,197,24,0.38)" stroke-width="1"/>
+    <rect x="1295" y="598" width="8" height="24" rx="2" fill="rgba(245,197,24,0.32)" stroke="rgba(245,197,24,0.4)" stroke-width="1"/>
+    <rect x="1308" y="590" width="8" height="32" rx="2" fill="rgba(245,197,24,0.42)" stroke="rgba(245,197,24,0.5)" stroke-width="1"/>
+    <polyline points="1282,620 1295,611 1308,600" fill="none" stroke="rgba(0,212,255,0.48)" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="1308" cy="600" r="3" fill="rgba(0,212,255,0.5)"/>
+    <circle cx="1300" cy="566" r="3" fill="rgba(245,197,24,0.4)"/>
+    <circle cx="1264" cy="602" r="2.5" fill="rgba(245,197,24,0.28)"/>
+    <text x="1300" y="658" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(245,197,24,0.35)">05</text>
+  </g>
+  <!-- Scattered dots and sparkles -->
+  <circle cx="350" cy="80" r="2" fill="rgba(0,212,255,0.2)"/>
+  <circle cx="680" cy="60" r="2.5" fill="rgba(245,197,24,0.18)"/>
+  <circle cx="990" cy="80" r="2" fill="rgba(0,212,255,0.18)"/>
+  <circle cx="420" cy="820" r="2.5" fill="rgba(0,212,255,0.15)"/>
+  <circle cx="900" cy="840" r="2" fill="rgba(245,197,24,0.15)"/>
+  <polygon points="60,120 65,132 60,144 55,132" fill="rgba(0,212,255,0.18)"/>
+  <polygon points="1360,80 1365,92 1360,104 1355,92" fill="rgba(245,197,24,0.18)"/>
+  <polygon points="700,870 705,882 700,894 695,882" fill="rgba(0,212,255,0.15)"/>
+</svg>
 
 <div class="contact-wrap">
   <div class="contact-inner">
