@@ -877,196 +877,214 @@ letter-spacing:0.3px;
 
 <!-- Background illustration layer -->
 <svg style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-  <!-- BUILD: Browser + Phone (top left) -->
-  <rect x="30" y="355.0" width="280" height="190" rx="14" fill="none" stroke="rgba(20,184,166,0.068)" stroke-width="1.5"/>
-  <rect x="30" y="355.0" width="280" height="32" rx="14" fill="rgba(20,184,166,0.02)"/>
-  <rect x="30" y="373.0" width="280" height="14" fill="rgba(20,184,166,0.02)"/>
-  <circle cx="50" cy="371.0" r="5" fill="rgba(20,184,166,0.061)"/>
-  <circle cx="66" cy="371.0" r="5" fill="rgba(20,184,166,0.048)"/>
-  <circle cx="82" cy="371.0" r="5" fill="rgba(20,184,166,0.061)"/>
-  <rect x="100" y="364.0" width="130" height="14" rx="7" fill="rgba(255,255,255,0.169)" stroke="rgba(20,184,166,0.05)" stroke-width="1"/>
-  <rect x="48" y="401.0" width="100" height="10" rx="5" fill="rgba(20,184,166,0.061)"/>
-  <rect x="48" y="419.0" width="220" height="6" rx="3" fill="rgba(15,23,42,0.027)"/>
-  <rect x="48" y="431.0" width="190" height="6" rx="3" fill="rgba(15,23,42,0.02)"/>
-  <rect x="48" y="443.0" width="160" height="6" rx="3" fill="rgba(15,23,42,0.018)"/>
-  <rect x="48" y="463.0" width="68" height="48" rx="8" fill="rgba(20,184,166,0.04)" stroke="rgba(20,184,166,0.068)" stroke-width="1"/>
-  <rect x="124" y="463.0" width="68" height="48" rx="8" fill="rgba(99,102,241,0.027)" stroke="rgba(99,102,241,0.05)" stroke-width="1"/>
-  <rect x="200" y="463.0" width="68" height="48" rx="8" fill="rgba(245,158,11,0.027)" stroke="rgba(245,158,11,0.05)" stroke-width="1"/>
-  <rect x="270" y="435.0" width="90" height="160" rx="16" fill="none" stroke="rgba(20,184,166,0.074)" stroke-width="1.5"/>
-  <rect x="278" y="451.0" width="74" height="128" rx="8" fill="rgba(240,253,250,0.101)"/>
-  <rect x="295" y="442.0" width="30" height="7" rx="3.5" fill="rgba(20,184,166,0.05)"/>
-  <rect x="284" y="459.0" width="62" height="8" rx="4" fill="rgba(20,184,166,0.068)"/>
-  <rect x="284" y="473.0" width="62" height="5" rx="2.5" fill="rgba(15,23,42,0.027)"/>
-  <rect x="284" y="483.0" width="48" height="5" rx="2.5" fill="rgba(15,23,42,0.02)"/>
-  <rect x="284" y="497.0" width="28" height="18" rx="6" fill="rgba(20,184,166,0.068)"/>
-  <rect x="318" y="497.0" width="28" height="18" rx="6" fill="rgba(99,102,241,0.04)"/>
-  <circle cx="295" cy="567.0" r="4" fill="rgba(20,184,166,0.085)"/>
-  <circle cx="310" cy="567.0" r="4" fill="rgba(15,23,42,0.027)"/>
-  <circle cx="325" cy="567.0" r="4" fill="rgba(15,23,42,0.027)"/>
-
-  <!-- AI: Connected Intelligence (top right) — inspired by data flow diagram -->
   <defs>
-    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(124,58,237,0.15)"/>
-      <stop offset="100%" stop-color="rgba(124,58,237,0)"/>
+    <radialGradient id="gBrain" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(139,92,246,0.18)"/>
+      <stop offset="100%" stop-color="rgba(139,92,246,0)"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(245,158,11,0.12)"/>
-      <stop offset="100%" stop-color="rgba(245,158,11,0)"/>
+    <radialGradient id="gGear" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(99,102,241,0.16)"/>
+      <stop offset="100%" stop-color="rgba(99,102,241,0)"/>
+    </radialGradient>
+    <radialGradient id="gAmber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(217,119,6,0.18)"/>
+      <stop offset="100%" stop-color="rgba(217,119,6,0)"/>
     </radialGradient>
   </defs>
 
-  <!-- Amber glow top-right -->
-  <ellipse cx="1320" cy="80" rx="180" ry="120" fill="url(#glow2)" opacity="0.6"/>
-  <!-- Violet glow centre-right -->
-  <ellipse cx="1050" cy="200" rx="160" ry="140" fill="url(#glow1)" opacity="0.5"/>
+  <!-- Full grid -->
+  <line x1="0" y1="80" x2="1400" y2="80" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="160" x2="1400" y2="160" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="240" x2="1400" y2="240" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="320" x2="1400" y2="320" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="400" x2="1400" y2="400" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1400" y2="480" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="560" x2="1400" y2="560" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="640" x2="1400" y2="640" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="720" x2="1400" y2="720" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="800" x2="1400" y2="800" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="80" y1="0" x2="80" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="160" y1="0" x2="160" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="240" y1="0" x2="240" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="320" y1="0" x2="320" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="480" y1="0" x2="480" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="560" y1="0" x2="560" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="720" y1="0" x2="720" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="880" y1="0" x2="880" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="960" y1="0" x2="960" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="1040" y1="0" x2="1040" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="1120" y1="0" x2="1120" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="1200" y1="0" x2="1200" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="1360" y1="0" x2="1360" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
 
-  <!-- Grid overlay (right half) -->
-  <line x1="800" y1="0" x2="800" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="860" y1="0" x2="860" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="920" y1="0" x2="920" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="980" y1="0" x2="980" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1040" y1="0" x2="1040" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1100" y1="0" x2="1100" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1160" y1="0" x2="1160" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1220" y1="0" x2="1220" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1280" y1="0" x2="1280" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1340" y1="0" x2="1340" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="1400" y1="0" x2="1400" y2="900" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="750" y1="60" x2="1400" y2="60" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="750" y1="120" x2="1400" y2="120" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="750" y1="180" x2="1400" y2="180" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="750" y1="240" x2="1400" y2="240" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
-  <line x1="750" y1="300" x2="1400" y2="300" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
+  <!-- Glow halos behind icons -->
+  <ellipse cx="700" cy="180" rx="120" ry="90" fill="url(#gBrain)" opacity="0.8"/>
+  <ellipse cx="420" cy="380" rx="100" ry="80" fill="url(#gGear)" opacity="0.7"/>
+  <ellipse cx="980" cy="420" rx="110" ry="90" fill="url(#gGear)" opacity="0.6"/>
+  <ellipse cx="1280" cy="160" rx="130" ry="100" fill="url(#gAmber)" opacity="0.7"/>
+  <ellipse cx="200" cy="580" rx="100" ry="80" fill="url(#gBrain)" opacity="0.5"/>
+  <ellipse cx="1100" cy="680" rx="100" ry="80" fill="url(#gAmber)" opacity="0.5"/>
 
-  <!-- Connector lines between nodes -->
-  <line x1="980" y1="140" x2="1080" y2="200" stroke="rgba(124,58,237,0.18)" stroke-width="1.5" stroke-dasharray="0"/>
-  <line x1="1080" y1="200" x2="1180" y2="270" stroke="rgba(124,58,237,0.14)" stroke-width="1.5"/>
-  <line x1="1080" y1="200" x2="1280" y2="120" stroke="rgba(245,158,11,0.14)" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="1280" y1="120" x2="1340" y2="60" stroke="rgba(245,158,11,0.12)" stroke-width="1"/>
-  <line x1="1180" y1="270" x2="1300" y2="290" stroke="rgba(99,102,241,0.12)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- ── CONNECTOR LINES ── -->
+  <!-- Brain → Funnel -->
+  <line x1="700" y1="220" x2="460" y2="360" stroke="rgba(180,140,255,0.22)" stroke-width="1.5"/>
+  <!-- Brain → Gear -->
+  <line x1="700" y1="220" x2="980" y2="400" stroke="rgba(180,140,255,0.2)" stroke-width="1.5"/>
+  <!-- Funnel → Data cluster -->
+  <line x1="390" y1="420" x2="200" y2="560" stroke="rgba(140,120,255,0.18)" stroke-width="1" stroke-dasharray="6,4"/>
+  <!-- Gear → Shield -->
+  <line x1="1020" y1="420" x2="1280" y2="340" stroke="rgba(180,140,255,0.18)" stroke-width="1.5"/>
+  <!-- Shield → Stack -->
+  <line x1="1300" y1="310" x2="1300" y2="180" stroke="rgba(217,160,60,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
+  <!-- Gear → Storage -->
+  <line x1="980" y1="460" x2="1100" y2="660" stroke="rgba(140,120,255,0.15)" stroke-width="1" stroke-dasharray="6,4"/>
+  <!-- Data cluster → Funnel -->
+  <line x1="240" y1="580" x2="400" y2="420" stroke="rgba(120,100,255,0.15)" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Small diagonal on left -->
+  <line x1="150" y1="720" x2="340" y2="560" stroke="rgba(140,120,255,0.12)" stroke-width="1"/>
 
-  <!-- Brain icon (AI node) — centre -->
-  <g opacity="0.75">
-    <ellipse cx="1080" cy="195" rx="28" ry="22" fill="none" stroke="rgba(124,58,237,0.35)" stroke-width="1.5"/>
-    <ellipse cx="1072" cy="191" rx="10" ry="14" fill="none" stroke="rgba(124,58,237,0.28)" stroke-width="1.2"/>
-    <ellipse cx="1088" cy="191" rx="10" ry="14" fill="none" stroke="rgba(124,58,237,0.28)" stroke-width="1.2"/>
-    <line x1="1080" y1="177" x2="1080" y2="209" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-    <line x1="1070" y1="188" x2="1062" y2="182" stroke="rgba(124,58,237,0.15)" stroke-width="0.8"/>
-    <line x1="1090" y1="188" x2="1098" y2="182" stroke="rgba(124,58,237,0.15)" stroke-width="0.8"/>
-    <line x1="1068" y1="200" x2="1060" y2="206" stroke="rgba(124,58,237,0.15)" stroke-width="0.8"/>
-    <line x1="1092" y1="200" x2="1100" y2="206" stroke="rgba(124,58,237,0.15)" stroke-width="0.8"/>
-    <circle cx="1080" cy="195" r="5" fill="rgba(124,58,237,0.15)"/>
+  <!-- ── BRAIN ICON — top centre (AI node) ── -->
+  <g opacity="0.82">
+    <ellipse cx="700" cy="185" rx="34" ry="26" fill="none" stroke="rgba(180,140,255,0.5)" stroke-width="1.6"/>
+    <ellipse cx="690" cy="180" rx="13" ry="18" fill="none" stroke="rgba(180,140,255,0.4)" stroke-width="1.3"/>
+    <ellipse cx="710" cy="180" rx="13" ry="18" fill="none" stroke="rgba(180,140,255,0.4)" stroke-width="1.3"/>
+    <line x1="700" y1="162" x2="700" y2="204" stroke="rgba(180,140,255,0.3)" stroke-width="1"/>
+    <line x1="688" y1="174" x2="678" y2="167" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
+    <line x1="712" y1="174" x2="722" y2="167" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
+    <line x1="686" y1="190" x2="676" y2="197" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
+    <line x1="714" y1="190" x2="724" y2="197" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
+    <line x1="684" y1="182" x2="672" y2="182" stroke="rgba(180,140,255,0.2)" stroke-width="0.9"/>
+    <line x1="716" y1="182" x2="728" y2="182" stroke="rgba(180,140,255,0.2)" stroke-width="0.9"/>
+    <circle cx="700" cy="185" r="6" fill="rgba(160,120,255,0.18)"/>
+    <!-- Dot connectors radiating out -->
+    <circle cx="700" cy="155" r="2.5" fill="rgba(180,140,255,0.35)"/>
+    <circle cx="700" cy="218" r="2" fill="rgba(180,140,255,0.25)"/>
+    <circle cx="668" cy="178" r="2" fill="rgba(180,140,255,0.25)"/>
+    <circle cx="732" cy="178" r="2" fill="rgba(180,140,255,0.25)"/>
   </g>
 
-  <!-- Data funnel icon (ingestion) — left node -->
-  <g opacity="0.7">
-    <rect x="950" y="118" width="44" height="14" rx="4" fill="none" stroke="rgba(99,102,241,0.3)" stroke-width="1.2"/>
-    <polygon points="950,134 972,158 994,134" fill="none" stroke="rgba(99,102,241,0.3)" stroke-width="1.2"/>
-    <line x1="972" y1="158" x2="972" y2="170" stroke="rgba(99,102,241,0.25)" stroke-width="1.5"/>
-    <circle cx="956" cy="125" r="2" fill="rgba(99,102,241,0.3)"/>
-    <circle cx="964" cy="125" r="2" fill="rgba(99,102,241,0.25)"/>
-    <circle cx="972" cy="125" r="2" fill="rgba(99,102,241,0.2)"/>
+  <!-- ── FUNNEL ICON — centre-left (data ingestion) ── -->
+  <g opacity="0.78">
+    <!-- Papers/data sources flowing in -->
+    <rect x="390" y="330" width="30" height="22" rx="3" fill="none" stroke="rgba(140,120,255,0.45)" stroke-width="1.3"/>
+    <line x1="394" y1="337" x2="416" y2="337" stroke="rgba(140,120,255,0.3)" stroke-width="0.9"/>
+    <line x1="394" y1="342" x2="412" y2="342" stroke="rgba(140,120,255,0.25)" stroke-width="0.9"/>
+    <!-- Arrow -->
+    <path d="M408 352 L418 358 L408 364" fill="none" stroke="rgba(140,120,255,0.4)" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Funnel shape -->
+    <polygon points="428,348 472,348 456,378 444,378" fill="none" stroke="rgba(140,120,255,0.5)" stroke-width="1.4"/>
+    <line x1="450" y1="378" x2="450" y2="396" stroke="rgba(140,120,255,0.4)" stroke-width="1.5"/>
+    <circle cx="450" cy="400" r="4" fill="rgba(140,120,255,0.25)" stroke="rgba(140,120,255,0.4)" stroke-width="1"/>
+    <!-- Input dots -->
+    <circle cx="393" cy="326" r="2" fill="rgba(140,120,255,0.3)"/>
+    <circle cx="418" cy="324" r="1.5" fill="rgba(140,120,255,0.25)"/>
   </g>
 
-  <!-- Network/gear node (processing) — bottom centre -->
+  <!-- ── NETWORK GEAR — centre-right (processing) ── -->
+  <g opacity="0.78">
+    <!-- Outer gear ring -->
+    <circle cx="980" cy="430" r="36" fill="none" stroke="rgba(120,100,255,0.35)" stroke-width="1.4"/>
+    <circle cx="980" cy="430" r="26" fill="none" stroke="rgba(120,100,255,0.45)" stroke-width="1.3"/>
+    <circle cx="980" cy="430" r="14" fill="none" stroke="rgba(120,100,255,0.5)" stroke-width="1.3"/>
+    <!-- Gear teeth -->
+    <rect x="977" y="390" width="6" height="10" rx="2" fill="rgba(120,100,255,0.3)"/>
+    <rect x="977" y="460" width="6" height="10" rx="2" fill="rgba(120,100,255,0.3)"/>
+    <rect x="940" y="427" width="10" height="6" rx="2" fill="rgba(120,100,255,0.3)"/>
+    <rect x="1010" y="427" width="10" height="6" rx="2" fill="rgba(120,100,255,0.3)"/>
+    <rect x="954" y="401" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 958 405)"/>
+    <rect x="1002" y="401" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 1006 405)"/>
+    <rect x="954" y="451" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 958 455)"/>
+    <rect x="1002" y="451" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 1006 455)"/>
+    <!-- Centre pulse -->
+    <circle cx="980" cy="430" r="6" fill="rgba(140,120,255,0.3)"/>
+    <circle cx="980" cy="430" r="3" fill="rgba(160,140,255,0.4)"/>
+    <!-- Orbital dots -->
+    <circle cx="980" cy="394" r="3" fill="rgba(120,100,255,0.35)"/>
+    <circle cx="980" cy="466" r="3" fill="rgba(120,100,255,0.35)"/>
+    <circle cx="944" cy="430" r="3" fill="rgba(120,100,255,0.35)"/>
+    <circle cx="1016" cy="430" r="3" fill="rgba(120,100,255,0.35)"/>
+  </g>
+
+  <!-- ── SHIELD ICON — right (governance/security) ── -->
   <g opacity="0.72">
-    <circle cx="1180" cy="270" r="20" fill="none" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
-    <circle cx="1180" cy="270" r="10" fill="none" stroke="rgba(124,58,237,0.35)" stroke-width="1.2"/>
-    <circle cx="1180" cy="270" r="4" fill="rgba(124,58,237,0.2)"/>
-    <circle cx="1180" cy="248" r="3" fill="rgba(124,58,237,0.22)"/>
-    <circle cx="1180" cy="292" r="3" fill="rgba(124,58,237,0.22)"/>
-    <circle cx="1158" cy="270" r="3" fill="rgba(124,58,237,0.22)"/>
-    <circle cx="1202" cy="270" r="3" fill="rgba(124,58,237,0.22)"/>
-    <circle cx="1164" cy="254" r="2.5" fill="rgba(124,58,237,0.16)"/>
-    <circle cx="1196" cy="254" r="2.5" fill="rgba(124,58,237,0.16)"/>
-    <circle cx="1164" cy="286" r="2.5" fill="rgba(124,58,237,0.16)"/>
-    <circle cx="1196" cy="286" r="2.5" fill="rgba(124,58,237,0.16)"/>
-    <line x1="1180" y1="251" x2="1180" y2="260" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-    <line x1="1180" y1="280" x2="1180" y2="289" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-    <line x1="1161" y1="270" x2="1170" y2="270" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-    <line x1="1190" y1="270" x2="1199" y2="270" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <path d="M1270 290 L1310 272 L1350 290 L1350 328 Q1350 352 1310 364 Q1270 352 1270 328 Z" fill="none" stroke="rgba(200,160,255,0.4)" stroke-width="1.5"/>
+    <!-- Inner shield -->
+    <path d="M1280 298 L1310 284 L1340 298 L1340 326 Q1340 344 1310 354 Q1280 344 1280 326 Z" fill="none" stroke="rgba(200,160,255,0.25)" stroke-width="1"/>
+    <!-- Checkmark -->
+    <polyline points="1296,318 1306,328 1326,304" fill="none" stroke="rgba(180,140,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1310" cy="268" r="2.5" fill="rgba(200,160,255,0.35)"/>
   </g>
 
-  <!-- Shield icon (security/governance) — right -->
+  <!-- ── STACK ICON — top right (scalable storage) ── -->
+  <g opacity="0.7">
+    <!-- Three stacked layers -->
+    <ellipse cx="1300" cy="138" rx="30" ry="9" fill="none" stroke="rgba(217,160,60,0.45)" stroke-width="1.4"/>
+    <rect x="1270" y="138" width="60" height="16" rx="2" fill="none" stroke="rgba(217,160,60,0.35)" stroke-width="1.3"/>
+    <ellipse cx="1300" cy="154" rx="30" ry="9" fill="none" stroke="rgba(217,160,60,0.28)" stroke-width="1.2"/>
+    <rect x="1270" y="154" width="60" height="16" rx="2" fill="none" stroke="rgba(217,160,60,0.22)" stroke-width="1.2"/>
+    <ellipse cx="1300" cy="170" rx="30" ry="9" fill="none" stroke="rgba(217,160,60,0.18)" stroke-width="1"/>
+    <!-- Upward arrows -->
+    <line x1="1286" y1="125" x2="1286" y2="112" stroke="rgba(217,160,60,0.35)" stroke-width="1.2"/>
+    <line x1="1300" y1="120" x2="1300" y2="105" stroke="rgba(217,160,60,0.4)" stroke-width="1.4"/>
+    <line x1="1314" y1="125" x2="1314" y2="112" stroke="rgba(217,160,60,0.35)" stroke-width="1.2"/>
+    <polygon points="1296,105 1300,96 1304,105" fill="rgba(217,160,60,0.35)"/>
+    <!-- Lock on top -->
+    <rect x="1292" y="75" width="16" height="14" rx="3" fill="none" stroke="rgba(217,160,60,0.4)" stroke-width="1.3"/>
+    <path d="M1295 75 Q1295 67 1300 67 Q1305 67 1305 75" fill="none" stroke="rgba(217,160,60,0.4)" stroke-width="1.3"/>
+    <circle cx="1300" cy="82" r="2" fill="rgba(217,160,60,0.35)"/>
+  </g>
+
+  <!-- ── DATA CLUSTER — lower left ── -->
   <g opacity="0.68">
-    <path d="M1295 95 L1325 80 L1355 95 L1355 125 Q1355 145 1325 155 Q1295 145 1295 125 Z" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
-    <polyline points="1313,118 1321,126 1337,110" fill="none" stroke="rgba(245,158,11,0.4)" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Server/database -->
+    <rect x="155" y="590" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.4)" stroke-width="1.2"/>
+    <rect x="155" y="605" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.3)" stroke-width="1.2"/>
+    <rect x="155" y="620" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.22)" stroke-width="1.2"/>
+    <circle cx="196" cy="596" r="2" fill="rgba(140,120,255,0.4)"/>
+    <circle cx="196" cy="611" r="2" fill="rgba(140,120,255,0.3)"/>
+    <!-- Scatter dots connected -->
+    <circle cx="140" cy="570" r="5" fill="rgba(120,100,255,0.2)" stroke="rgba(140,120,255,0.4)" stroke-width="1"/>
+    <circle cx="120" cy="545" r="4" fill="rgba(120,100,255,0.15)" stroke="rgba(140,120,255,0.3)" stroke-width="1"/>
+    <circle cx="160" cy="548" r="3.5" fill="rgba(120,100,255,0.15)" stroke="rgba(140,120,255,0.28)" stroke-width="1"/>
+    <circle cx="105" cy="570" r="3" fill="rgba(120,100,255,0.12)" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="120" y2="545" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="160" y2="548" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="105" y2="570" stroke="rgba(140,120,255,0.2)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="155" y2="592" stroke="rgba(140,120,255,0.22)" stroke-width="1"/>
   </g>
 
-  <!-- Layered stack (scalable storage) — top right -->
+  <!-- ── STORAGE NODE — lower centre-right ── -->
   <g opacity="0.65">
-    <ellipse cx="1340" cy="68" rx="22" ry="7" fill="none" stroke="rgba(245,158,11,0.28)" stroke-width="1.2"/>
-    <rect x="1318" y="68" width="44" height="12" rx="2" fill="none" stroke="rgba(245,158,11,0.22)" stroke-width="1.2"/>
-    <rect x="1318" y="80" width="44" height="12" rx="2" fill="none" stroke="rgba(245,158,11,0.16)" stroke-width="1.2"/>
-    <line x1="1330" y1="55" x2="1330" y2="48" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-    <line x1="1340" y1="50" x2="1340" y2="43" stroke="rgba(245,158,11,0.25)" stroke-width="1.2"/>
-    <line x1="1350" y1="55" x2="1350" y2="48" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-    <polygon points="1336,43 1340,35 1344,43" fill="rgba(245,158,11,0.2)"/>
+    <!-- Cylinder storage -->
+    <ellipse cx="1100" cy="672" rx="28" ry="9" fill="none" stroke="rgba(217,160,60,0.38)" stroke-width="1.3"/>
+    <rect x="1072" y="672" width="56" height="28" fill="none" stroke="rgba(217,160,60,0.3)" stroke-width="1.3"/>
+    <ellipse cx="1100" cy="700" rx="28" ry="9" fill="none" stroke="rgba(217,160,60,0.28)" stroke-width="1.2"/>
+    <!-- Rising bar inside -->
+    <line x1="1088" y1="698" x2="1088" y2="678" stroke="rgba(217,160,60,0.3)" stroke-width="1"/>
+    <line x1="1100" y1="698" x2="1100" y2="673" stroke="rgba(217,160,60,0.35)" stroke-width="1"/>
+    <line x1="1112" y1="698" x2="1112" y2="682" stroke="rgba(217,160,60,0.3)" stroke-width="1"/>
+    <circle cx="1100" cy="662" r="2.5" fill="rgba(217,160,60,0.3)"/>
   </g>
 
-  <!-- Data cluster (bottom left of right panel) -->
-  <g opacity="0.6">
-    <circle cx="850" cy="280" r="5" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.35)" stroke-width="1"/>
-    <circle cx="870" cy="265" r="4" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.28)" stroke-width="1"/>
-    <circle cx="835" cy="265" r="3.5" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
-    <circle cx="865" cy="290" r="4" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.28)" stroke-width="1"/>
-    <line x1="850" y1="280" x2="870" y2="265" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-    <line x1="850" y1="280" x2="835" y2="265" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-    <line x1="850" y1="280" x2="865" y2="290" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-  </g>
-
-  <!-- Glowing dots scattered -->
-  <circle cx="920" cy="80" r="3" fill="rgba(99,102,241,0.2)"/>
-  <circle cx="1150" cy="100" r="2.5" fill="rgba(124,58,237,0.18)"/>
-  <circle cx="1260" cy="200" r="2" fill="rgba(124,58,237,0.14)"/>
-  <circle cx="1380" cy="160" r="3" fill="rgba(245,158,11,0.15)"/>
-  <circle cx="810" cy="150" r="2" fill="rgba(99,102,241,0.15)"/>
-  <circle cx="1120" cy="320" r="2.5" fill="rgba(124,58,237,0.12)"/>
-  <circle cx="1390" cy="280" r="2" fill="rgba(245,158,11,0.1)"/>
-  <!-- Diamond sparkle -->
-  <polygon points="1395,360 1399,370 1395,380 1391,370" fill="rgba(245,158,11,0.15)"/>
-
-    <!-- DATA: Dashboard (bottom right) -->
-  <rect x="420.0" y="680" width="380" height="200" rx="-544.0" fill="none" stroke="rgba(245,158,11,0.068)" stroke-width="1.5"/>
-  <rect x="420.0" y="680" width="380" height="30" rx="-544.0" fill="rgba(245,158,11,0.027)"/>
-  <rect x="420.0" y="696" width="380" height="14" fill="rgba(245,158,11,0.027)"/>
-  <rect x="434.0" y="689" width="80" height="7" rx="-556.5" fill="rgba(217,119,6,0.074)"/>
-  <rect x="434.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
-  <rect x="524.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
-  <rect x="614.0" y="722" width="80" height="44" rx="-552.0" fill="rgba(255,255,255,0.135)" stroke="rgba(245,158,11,0.061)" stroke-width="1"/>
-  <rect x="440.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
-  <rect x="440.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(217,119,6,0.074)"/>
-  <rect x="530.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
-  <rect x="530.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(20,184,166,0.074)"/>
-  <rect x="620.0" y="729" width="40" height="5" rx="-557.5" fill="rgba(15,23,42,0.034)"/>
-  <rect x="620.0" y="739" width="56" height="10" rx="-556.0" fill="rgba(99,102,241,0.074)"/>
-  <rect x="434.0" y="778" width="200" height="88" rx="-552.0" fill="rgba(255,255,255,0.117)" stroke="rgba(245,158,11,0.048)" stroke-width="1"/>
-  <rect x="448.0" y="830" width="16" height="24" rx="-556.0" fill="rgba(245,158,11,0.117)"/>
-  <rect x="470.0" y="816" width="16" height="38" rx="-556.0" fill="rgba(245,158,11,0.152)"/>
-  <rect x="492.0" y="822" width="16" height="32" rx="-556.0" fill="rgba(245,158,11,0.107)"/>
-  <rect x="514.0" y="808" width="16" height="46" rx="-556.0" fill="rgba(245,158,11,0.169)"/>
-  <rect x="536.0" y="802" width="16" height="52" rx="-556.0" fill="rgba(217,119,6,0.169)"/>
-  <rect x="558.0" y="812" width="16" height="42" rx="-556.0" fill="rgba(245,158,11,0.135)"/>
-  <rect x="580.0" y="820" width="16" height="34" rx="-556.0" fill="rgba(245,158,11,0.117)"/>
-  <rect x="602.0" y="810" width="16" height="44" rx="-556.0" fill="rgba(245,158,11,0.152)"/>
-  <rect x="644.0" y="778" width="144" height="88" rx="-552.0" fill="rgba(255,255,255,0.117)" stroke="rgba(245,158,11,0.048)" stroke-width="1"/>
-  <polyline points="1212,850 1228,836 1244,842 1260,826 1276,818 1292,824 1308,812 1324,820 1340,808" stroke="rgba(217,119,6,0.152)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="780.0" cy="808" r="4" fill="rgba(217,119,6,0.169)"/>
-
-  <!-- Connecting lines -->
-  <path d="M320,230 Q500,300 700,300" fill="none" stroke="rgba(99,102,241,0.024)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M1110,200 Q950,350 900,450" fill="none" stroke="rgba(124,58,237,0.02)" stroke-width="1" stroke-dasharray="6,6"/>
-  <path d="M700,600 Q850,650 980,680" fill="none" stroke="rgba(245,158,11,0.024)" stroke-width="1" stroke-dasharray="6,6"/>
-
-  <!-- Scattered dots -->
-  <circle cx="420" cy="50" r="4" fill="rgba(99,102,241,0.048)"/>
-  <circle cx="550" cy="30" r="3" fill="rgba(124,58,237,0.04)"/>
-  <circle cx="680" cy="55" r="5" fill="rgba(99,102,241,0.034)"/>
-  <circle cx="800" cy="35" r="3" fill="rgba(124,58,237,0.04)"/>
-  <circle cx="400" cy="820" r="4" fill="rgba(245,158,11,0.04)"/>
-  <circle cx="500" cy="850" r="3" fill="rgba(217,119,6,0.034)"/>
-  <circle cx="600" cy="830" r="5" fill="rgba(245,158,11,0.034)"/>
+  <!-- ── SCATTERED DOTS ── -->
+  <circle cx="100" cy="120" r="2.5" fill="rgba(180,140,255,0.2)"/>
+  <circle cx="300" cy="80" r="2" fill="rgba(160,120,255,0.18)"/>
+  <circle cx="550" cy="60" r="3" fill="rgba(180,140,255,0.15)"/>
+  <circle cx="860" cy="100" r="2" fill="rgba(160,130,255,0.18)"/>
+  <circle cx="1150" cy="50" r="2.5" fill="rgba(217,160,60,0.2)"/>
+  <circle cx="1380" cy="420" r="2" fill="rgba(217,160,60,0.18)"/>
+  <circle cx="60" cy="380" r="2" fill="rgba(140,120,255,0.18)"/>
+  <circle cx="600" cy="800" r="2.5" fill="rgba(140,120,255,0.15)"/>
+  <circle cx="800" cy="820" r="2" fill="rgba(160,130,255,0.15)"/>
+  <circle cx="1350" cy="780" r="2" fill="rgba(217,160,60,0.15)"/>
+  <!-- Diamond sparkle bottom right -->
+  <polygon points="1390,850 1395,862 1390,874 1385,862" fill="rgba(217,160,60,0.2)"/>
+  <!-- Small sparkle top right -->
+  <polygon points="1358,42 1362,52 1358,62 1354,52" fill="rgba(217,160,60,0.18)"/>
 </svg>
 
 <!-- SEO content block — readable by search engines and AI crawlers -->
