@@ -35,22 +35,19 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 .bar{width:40px;height:2px;background:linear-gradient(90deg,#00d4ff,#f5c518);border-radius:999px;margin-bottom:20px}
 
 /* ── HERO ── */
-.hero{min-height:100vh;display:flex;align-items:center;padding:80px 32px 60px;position:relative;overflow:hidden;
-  background:radial-gradient(ellipse at 75% 30%,rgba(0,212,255,0.09),transparent 50%),radial-gradient(ellipse at 20% 70%,rgba(245,197,24,0.07),transparent 45%),linear-gradient(135deg,#0e0c18 0%,#130e24 55%,#0e0c18 100%)}
+.hero{min-height:calc(100vh - 68px);display:flex;align-items:center;padding:72px 32px 64px;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at 75% 30%,rgba(0,212,255,0.1),transparent 50%),radial-gradient(ellipse at 20% 70%,rgba(245,197,24,0.07),transparent 45%),linear-gradient(135deg,#0a0f1e 0%,#0d1535 60%,#0a0f1e 100%)}
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.hero-left{display:flex;flex-direction:column;align-items:flex-start}
+.hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:28px}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-h1{font-size:clamp(38px,5vw,68px);font-weight:900;letter-spacing:-3.5px;line-height:1.02;margin-bottom:16px;text-align:left}
-.hero-sub{font-size:17px;font-weight:500;color:rgba(255,255,255,0.5);margin-bottom:28px;letter-spacing:-0.2px;text-align:left}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start}
+.hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;margin-bottom:16px}
+.hero-sub{font-size:18px;font-weight:500;color:rgba(255,255,255,0.5);margin-bottom:28px;letter-spacing:-0.2px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
 .btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0e0c18;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(245,197,24,0.4);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
 .btn-o:hover{background:rgba(245,197,24,0.06);transform:translateY(-1px)}
-.hero-right{display:flex;align-items:center;justify-content:center}
-.hero-visual-img{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 50px rgba(0,0,0,0.45));transition:transform 0.4s ease}
-.hero-visual-img:hover{transform:scale(1.02)}
 .hero-img{width:100%;border-radius:20px;display:block;border:1px solid rgba(0,212,255,0.15);box-shadow:0 32px 80px rgba(0,0,0,0.5);position:relative}
 .hero-img-wrap{position:relative;width:100%}
 .hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0e0c18);border-radius:0 0 20px 20px;pointer-events:none}
@@ -141,13 +138,7 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 }
 @media(max-width:768px){
   .section{padding:64px 20px}
-  .hero{padding:52px 20px 48px;min-height:auto}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-left{align-items:center;text-align:center}
-  .hero-h1{text-align:center}
-  .hero-sub{text-align:center}
-  .hero-ctas{justify-content:center}
-  .hero-right{margin-top:8px}
+  .hero{padding:52px 20px 48px}
   .team-head-card{grid-template-columns:1fr;text-align:center}
   .avatar{margin:0 auto}
   .compare-wrap{grid-template-columns:1fr}
@@ -203,16 +194,15 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
     <polygon points="1380,500 1384,512 1380,524 1376,512" fill="rgba(0,212,255,0.15)"/>
   </svg>
   <div class="hero-inner">
-    <div class="hero-left">
-      <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
-      <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
-      <div class="hero-ctas">
-        <a href="/contact" class="btn-p">Talk to Our Delivery Team <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="/case-studies" class="btn-o">See What We've Built <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+    <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
+    <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
+    <div class="hero-ctas">
+      <a href="/contact" class="btn-p">Talk to Our Delivery Team <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/case-studies" class="btn-o">See What We've Built <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="hero-right">
-      <img src="/assets/images/about-hero-visual.png" alt="iDataOne — Digital Experiences, Business Applications, Modernisation and Cloud platform delivery" class="hero-visual-img" loading="eager"/>
+    <div class="hero-img-wrap">
+      <img src="/assets/images/team-hero.png" alt="iDataOne delivery team — Bala Kandaswamy (Delivery Head) with AI specialists Pixel, Forge, Insight and Sentinel" class="hero-img" loading="eager"/>
+      <div class="hero-img-fade"></div>
     </div>
   </div>
 </section>
