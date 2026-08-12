@@ -13,12 +13,12 @@
 <meta property="og:title" content="Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.">
 <meta property="og:description" content="Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.">
 <meta property="og:url" content="https://idataone.com/data">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Data Intelligence & Analytics Services | iDataOne — Build. Transform. Scale.">
 <meta name="twitter:description" content="Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

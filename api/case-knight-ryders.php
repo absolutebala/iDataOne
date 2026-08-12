@@ -14,12 +14,12 @@
 <meta property="og:title" content="Case Study: The Knight Ryders — From WordPress Blog to a Living Community Platform | iDataOne">
 <meta property="og:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
 <meta property="og:url" content="https://idataone.com/case-study/knight-ryders">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: The Knight Ryders — From WordPress Blog to a Living Community Platform | iDataOne">
 <meta name="twitter:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,7 +27,7 @@
   "headline": "The Knight Ryders — From WordPress Blog to a Living Community Platform",
   "description": "How iDataOne rebuilt a 460-member Honda CB350 riding club from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNoBG.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
   "url": "https://idataone.com/case-study/knight-ryders",
   "mainEntityOfPage": "https://idataone.com/case-study/knight-ryders",
   "about": [

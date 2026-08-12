@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta property="og:description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://idataone.com/">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="iDataOne | Build. Transform. Scale. — AI-First Products & Data Intelligence">
 <meta name="twitter:description" content="Build scalable digital products, integrate AI automation, and turn fragmented data into business intelligence. iDataOne — Built for the AI era.">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
   "@type": "Organization",
   "name": "iDataOne",
   "url": "https://idataone.com",
-  "logo": "https://idataone.com/assets/images/iDataOneLogoNoBG.png",
+  "logo": "https://idataone.com/assets/images/iDataOneLogoNew.png",
   "description": "iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence.",
   "slogan": "Build. Transform. Scale.",
   "contactPoint": {
@@ -859,7 +859,7 @@ letter-spacing:0.3px;
 <!-- Top nav bar -->
 <div class="top-nav hidden" id="top-nav">
   <div class="site-logo large" id="site-logo">
-    <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+    <img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
   </div>
   <div class="top-nav-links" id="topNavLinks">
     <a href="/digital">Digital</a>
@@ -872,7 +872,7 @@ letter-spacing:0.3px;
 
 <!-- Hero logo (screen 1 only) -->
 <div class="site-logo" id="hero-logo">
-  <img src="/assets/images/iDataOneLogoNoBG.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+  <img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
 </div>
 
 <!-- Background illustration layer -->
@@ -1139,14 +1139,14 @@ letter-spacing:0.3px;
 <!-- Tamil signature -->
 <a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
-<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(255,255,255,0.3);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
+<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(255,255,255,0.55);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
 <!-- 0: Hero -->
 <section class="screen active">
 <div class="container">
-<img src="/assets/images/iDataOneLogoNoBG.png" class="logo" alt="iDataOne Logo">
+<img src="/assets/images/iDataOneLogoNew.png" class="logo" alt="iDataOne Logo">
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
 <div class="explore" onclick="showScreen(1)">EXPLORE ↓</div>

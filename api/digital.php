@@ -13,12 +13,12 @@
 <meta property="og:title" content="Digital Product Development | iDataOne — Build. Transform. Scale.">
 <meta property="og:description" content="From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.">
 <meta property="og:url" content="https://idataone.com/digital">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Digital Product Development | iDataOne — Build. Transform. Scale.">
 <meta name="twitter:description" content="From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

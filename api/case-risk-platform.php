@@ -13,12 +13,12 @@
 <meta property="og:title" content="Case Study: Enterprise Risk & Compliance Platform for FMCG | iDataOne">
 <meta property="og:description" content="How iDataOne built a full-stack enterprise risk assessment and compliance platform with real-time dashboards, 5x5 severity matrix and role-based workflows for an FMCG leader.">
 <meta property="og:url" content="https://idataone.com/case-study/risk-platform">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Enterprise Risk & Compliance Platform for FMCG | iDataOne">
 <meta name="twitter:description" content="How iDataOne built a full-stack enterprise risk assessment and compliance platform with real-time dashboards, 5x5 severity matrix and role-based workflows for an FMCG leader.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,7 +26,7 @@
   "headline": "Building an Enterprise Risk & Compliance Platform for an FMCG Leader",
   "description": "How iDataOne built a full-stack enterprise risk assessment platform with real-time dashboards, 5x5 severity matrix, role-based workflows and threaded communication.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNoBG.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
   "url": "https://idataone.com/case-study/risk-platform",
   "mainEntityOfPage": "https://idataone.com/case-study/risk-platform",
   "about": [

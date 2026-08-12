@@ -15,7 +15,7 @@
 <meta property="og:title" content="iSportOne — Your Lifelong Sports Passport">
 <meta property="og:description" content="The professional network for sport — record every match, build your career profile, and connect with your sports community for life.">
 <meta property="og:url" content="https://idataone.com/isportone">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="iSportOne — Your Lifelong Sports Passport">

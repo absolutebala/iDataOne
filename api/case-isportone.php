@@ -15,12 +15,12 @@
 <meta property="og:title" content="Case Study: A Lifelong Sports Passport Platform for Athletes of Every Level | iDataOne">
 <meta property="og:description" content="How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs — globally.">
 <meta property="og:url" content="https://idataone.com/case-study/isportone">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: A Lifelong Sports Passport Platform for Athletes of Every Level | iDataOne">
 <meta name="twitter:description" content="How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs — globally.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@
   "headline": "Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere",
   "description": "How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNoBG.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
   "url": "https://idataone.com/case-study/isportone",
   "mainEntityOfPage": "https://idataone.com/case-study/isportone",
   "about": [

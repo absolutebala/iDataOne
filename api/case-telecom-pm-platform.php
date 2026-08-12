@@ -15,12 +15,12 @@
 <meta property="og:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
 <meta property="og:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
 <meta property="og:url" content="https://idataone.com/case-study/telecom-pm-platform">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
 <meta name="twitter:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@
   "headline": "Building a Telecom Infrastructure Project Management Platform for Venus Energy",
   "description": "How iDataOne designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNoBG.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
   "url": "https://idataone.com/case-study/telecom-pm-platform",
   "mainEntityOfPage": "https://idataone.com/case-study/telecom-pm-platform",
   "about": [
