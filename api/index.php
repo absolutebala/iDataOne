@@ -512,12 +512,12 @@ text-transform:uppercase;
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{text-align:left}
 .cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
-.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:12px}
+.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
 .cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:#64748b;line-height:1.7;margin-bottom:36px}
+.cl-sub{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:36px}
 .cl-trust{display:flex;flex-direction:column;gap:0}
-.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(226,232,240,0.7)}
-.cl-trust-item:first-child{border-top:1px solid rgba(226,232,240,0.7)}
+.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:none}
+.cl-trust-item:first-child{border-top:none}
 .cl-trust-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .cl-trust-icon svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .ti-indigo{background:#eef2ff;border:1px solid rgba(99,102,241,0.15)}
@@ -526,8 +526,8 @@ text-transform:uppercase;
 .ti-teal svg{stroke:#0d9488}
 .ti-amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.15)}
 .ti-amber svg{stroke:#d97706}
-.cl-trust-title{font-size:14px;font-weight:600;color:#0f172a;margin-bottom:2px}
-.cl-trust-desc{font-size:12.5px;color:#94a3b8;line-height:1.5}
+.cl-trust-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.88);margin-bottom:2px}
+.cl-trust-desc{font-size:12.5px;color:rgba(0,212,255,0.55);line-height:1.5}
 .contact-right{background:#ffffff;border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .form-top{margin-bottom:24px}
 .form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
@@ -593,11 +593,11 @@ transform:scale(1.4);
 .nav-progress.active{width:75%}
 .top-nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
 .top-nav-links a:not([href]){cursor:default}
-.top-nav-links a:not([href]):hover{color:#475569}
-.top-nav-links a[href]{cursor:pointer;color:#475569}
-.top-nav-links a[href]:hover{color:#4f46e5}
+.top-nav-links a:not([href]):hover{color:rgba(255,255,255,0.82)}
+.top-nav-links a[href]{cursor:pointer;color:rgba(255,255,255,0.82)}
+.top-nav-links a[href]:hover{color:#00d4ff}
 .top-nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
-.top-nav-links a.active{color:#4f46e5;font-weight:600}
+.top-nav-links a.active{color:#00d4ff;font-weight:600}
 
 /* Tamil signature */
 .tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;color:rgba(99,102,241,0.55);line-height:1;letter-spacing:0;transition:color 0.3s,transform 0.3s;cursor:default;user-select:none}
@@ -1355,7 +1355,7 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-indigo active" onclick="prodTab(0,this)">01 Infra360</div>
+    <div class="cap-tab t-teal active" onclick="prodTab(0,this)">01 Infra360</div>
     <div class="cap-tab" onclick="prodTab(1,this)">02 iSportOne</div>
     <div class="cap-tab" onclick="prodTab(2,this)">03 aiDesker</div>
   </div>
@@ -1642,7 +1642,7 @@ letter-spacing:0.3px;
 let capCurrent = 0;
 const capSlideEls = document.querySelectorAll('#cap-slides .cap-slide');
 const capTabEls = document.querySelectorAll('#cap-tabs .cap-tab');
-const capTabClasses = ['t-teal','t-violet','t-amber'];
+const capTabClasses = ['t-teal','t-teal','t-teal'];
 
 function capTab(index, el) {
   capSlideEls.forEach(s => s.classList.remove('active'));
@@ -1659,7 +1659,7 @@ function capPrev() { capTab((capCurrent - 1 + capSlideEls.length) % capSlideEls.
 let prodCurrent = 0;
 const prodSlideEls = document.querySelectorAll('#prod-slides .cap-slide');
 const prodTabEls = document.querySelectorAll('.cap-tabs')[1]?.querySelectorAll('.cap-tab') || [];
-const prodTabClasses = ['t-indigo','t-rose','t-sky'];
+const prodTabClasses = ['t-teal','t-teal','t-teal'];
 
 function prodTab(index, el) {
   prodSlideEls.forEach(s => s.classList.remove('active'));
