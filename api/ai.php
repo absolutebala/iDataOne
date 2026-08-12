@@ -49,8 +49,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 /* Nav via _nav.php */
-.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:url('/assets/images/ai-hero-bg.png') right center / 70% auto no-repeat,linear-gradient(135deg,#1a0535 0%,#2d0a5e 100%)}
-.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,3,40,0.95) 0%,rgba(15,3,40,0.85) 35%,rgba(15,3,40,0.35) 60%,rgba(15,3,40,0.05) 100%);pointer-events:none}
+.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:linear-gradient(145deg,#12003a 0%,#1e0050 30%,#2a0068 60%,#1a0040 100%)}
+.banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 15% 50%,rgba(124,58,237,0.15),transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(0,220,255,0.08),transparent 50%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e9d5ff;margin-bottom:20px}
 .banner-h1{font-size:clamp(36px,4.5vw,56px);font-weight:800;letter-spacing:-2px;line-height:1.05;color:#fff;margin-bottom:20px}
@@ -61,7 +61,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
 .btn-secondary:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}
-.banner-illus{display:none}
+.banner-illus{display:flex;align-items:center;justify-content:center}
 .section{padding:80px 32px}
 .section-inner{max-width:1140px;margin:0 auto}
 .section-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#7c3aed;margin-bottom:12px;text-align:center}
@@ -116,7 +116,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-cta-secondary{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
 .btn-cta-secondary:hover{color:rgba(255,255,255,0.8)}
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:768px){.site-nav .nav-links{display:none}.banner-inner{grid-template-columns:1fr}.banner-illus{display:none}.stories-grid{grid-template-columns:1fr}.story-card{grid-template-columns:1fr}.story-visual{display:none}.process-steps{flex-direction:column;gap:0;align-items:stretch}.process-steps::before{display:none}.process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}.process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}.process-step:last-child::before{display:none}.process-step:last-child{padding-bottom:0}.step-icon{margin:0;flex-shrink:0}.step-title{margin-bottom:6px}.products-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-btns{align-items:flex-start}}
+@media(max-width:768px){.site-nav .nav-links{display:none}.banner-inner{grid-template-columns:1fr}.banner-illus{display:flex;align-items:center;justify-content:center}.stories-grid{grid-template-columns:1fr}.story-card{grid-template-columns:1fr}.story-visual{display:none}.process-steps{flex-direction:column;gap:0;align-items:stretch}.process-steps::before{display:none}.process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}.process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}.process-step:last-child::before{display:none}.process-step:last-child{padding-bottom:0}.step-icon{margin:0;flex-shrink:0}.step-title{margin-bottom:6px}.products-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-btns{align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -137,61 +137,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <svg viewBox="0 0 500 400" width="500" height="400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Central LLM node -->
-        <rect x="175" y="150" width="150" height="100" rx="20" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.35)" stroke-width="1.5"/>
-        <circle cx="250" cy="190" r="24" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
-        <circle cx="250" cy="190" r="10" fill="rgba(124,58,237,0.3)"/>
-        <rect x="210" y="222" width="80" height="6" rx="3" fill="rgba(124,58,237,0.2)"/>
-        <rect x="220" y="232" width="60" height="4" rx="2" fill="rgba(124,58,237,0.12)"/>
-        <!-- Input nodes left -->
-        <rect x="20" y="60" width="100" height="50" rx="12" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
-        <rect x="30" y="74" width="50" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
-        <rect x="30" y="84" width="70" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="120" y1="85" x2="175" y2="175" stroke="rgba(124,58,237,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <rect x="20" y="175" width="100" height="50" rx="12" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
-        <rect x="30" y="189" width="50" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
-        <rect x="30" y="199" width="70" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="120" y1="200" x2="175" y2="200" stroke="rgba(124,58,237,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <rect x="20" y="290" width="100" height="50" rx="12" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
-        <rect x="30" y="304" width="50" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
-        <rect x="30" y="314" width="70" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="120" y1="315" x2="175" y2="225" stroke="rgba(124,58,237,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <!-- Arrows -->
-        <polygon points="172,172 180,178 174,182" fill="rgba(124,58,237,0.3)"/>
-        <polygon points="172,198 180,200 172,202" fill="rgba(124,58,237,0.3)"/>
-        <polygon points="172,222 180,220 176,226" fill="rgba(124,58,237,0.3)"/>
-        <!-- Output nodes right -->
-        <rect x="380" y="60" width="110" height="50" rx="12" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.25)" stroke-width="1.5"/>
-        <rect x="390" y="72" width="40" height="5" rx="2.5" fill="rgba(20,184,166,0.3)"/>
-        <rect x="390" y="82" width="80" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="325" y1="175" x2="380" y2="85" stroke="rgba(20,184,166,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <rect x="380" y="175" width="110" height="50" rx="12" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5"/>
-        <rect x="390" y="187" width="40" height="5" rx="2.5" fill="rgba(245,158,11,0.3)"/>
-        <rect x="390" y="197" width="80" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="325" y1="200" x2="380" y2="200" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <rect x="380" y="290" width="110" height="50" rx="12" fill="rgba(239,246,255,0.9)" stroke="rgba(99,102,241,0.25)" stroke-width="1.5"/>
-        <rect x="390" y="302" width="40" height="5" rx="2.5" fill="rgba(99,102,241,0.3)"/>
-        <rect x="390" y="312" width="80" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <line x1="325" y1="225" x2="380" y2="315" stroke="rgba(99,102,241,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <!-- Arrow heads right -->
-        <polygon points="378,83 386,85 380,91" fill="rgba(20,184,166,0.3)"/>
-        <polygon points="378,198 386,200 378,202" fill="rgba(245,158,11,0.3)"/>
-        <polygon points="378,312 386,314 380,320" fill="rgba(99,102,241,0.3)"/>
-        <!-- Input labels -->
-        <text x="70" y="73" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Inter" font-weight="600">AI Agents</text>
-        <text x="70" y="188" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Inter" font-weight="600">LLM Input</text>
-        <text x="70" y="303" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Inter" font-weight="600">Automation</text>
-        <!-- Output labels -->
-        <text x="435" y="71" text-anchor="middle" font-size="9" fill="#0d9488" font-family="Inter" font-weight="600">Decisions</text>
-        <text x="435" y="186" text-anchor="middle" font-size="9" fill="#d97706" font-family="Inter" font-weight="600">Insights</text>
-        <text x="435" y="301" text-anchor="middle" font-size="9" fill="#4f46e5" font-family="Inter" font-weight="600">Actions</text>
-        <!-- Floating dots -->
-        <circle cx="160" cy="120" r="4" fill="rgba(124,58,237,0.15)"/>
-        <circle cx="340" cy="130" r="5" fill="rgba(124,58,237,0.12)"/>
-        <circle cx="250" cy="50" r="5" fill="rgba(124,58,237,0.1)"/>
-        <circle cx="250" cy="360" r="4" fill="rgba(124,58,237,0.1)"/>
-      </svg>
+      <img
+        src="/assets/images/ai-hero-visual.png"
+        alt="iDataOne AI Solutions — AI Agents, LLM Integration, Intelligent Automation and Multi-System Synchronisation"
+        style="width:100%;height:auto;display:block;border-radius:24px;box-shadow:0 24px 64px rgba(100,0,200,0.35),0 8px 24px rgba(0,0,0,0.3);transition:transform 0.4s ease,box-shadow 0.4s ease"
+        loading="eager"
+        onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 32px 80px rgba(120,0,255,0.4),0 12px 32px rgba(0,0,0,0.35)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 24px 64px rgba(100,0,200,0.35),0 8px 24px rgba(0,0,0,0.3)'"
+      />
     </div>
   </div>
 </section>
