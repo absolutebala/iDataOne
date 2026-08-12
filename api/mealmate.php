@@ -504,7 +504,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
 
 <!-- ── Hero ── -->
 <a href="https://idataone.com" class="top-nav-link">
-  <img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne" style="height:36px;width:auto;opacity:0.9;display:block">
+  <img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne" style="height:36px;width:auto;opacity:0.9;display:block">
 </a>
 
 <section class="hero">

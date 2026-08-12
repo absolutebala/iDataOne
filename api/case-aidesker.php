@@ -14,12 +14,12 @@
 <meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
 <meta property="og:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
 <meta property="og:url" content="https://idataone.com/case-study/aidesker">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
 <meta name="twitter:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,7 +27,7 @@
   "headline": "Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line",
   "description": "How iDataOne designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
   "url": "https://idataone.com/case-study/aidesker",
   "mainEntityOfPage": "https://idataone.com/case-study/aidesker",
   "about": [

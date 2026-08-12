@@ -13,12 +13,12 @@
 <meta property="og:title" content="Case Study: Real-Time Risk Intelligence Dashboard for FMCG | iDataOne">
 <meta property="og:description" content="How iDataOne built a real-time risk intelligence dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring for an enterprise FMCG company.">
 <meta property="og:url" content="https://idataone.com/case-study/risk-dashboard">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Real-Time Risk Intelligence Dashboard for FMCG | iDataOne">
 <meta name="twitter:description" content="How iDataOne built a real-time risk intelligence dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring for an enterprise FMCG company.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,7 +26,7 @@
   "headline": "Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company",
   "description": "How iDataOne built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoNew.png"}},
+  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
   "url": "https://idataone.com/case-study/risk-dashboard",
   "mainEntityOfPage": "https://idataone.com/case-study/risk-dashboard",
   "about": [

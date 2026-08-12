@@ -1,16 +1,16 @@
 <?php $current_page = $current_page ?? ''; ?>
 <style>
 @view-transition{navigation:auto}
-.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.08)}
+.site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(10,15,30,0.95);backdrop-filter:blur(12px);border-bottom:0.5px solid rgba(0,212,255,0.12)}
 .site-nav .nav-logo{text-decoration:none;flex-shrink:0;min-width:160px}
 .site-nav .nav-logo img{height:40px;width:auto;opacity:1}
 .site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:#475569;text-decoration:none;transition:color 0.2s;cursor:default}
+.site-nav .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s;cursor:default}
 .site-nav .nav-links a[href]{cursor:pointer}
 .site-nav .nav-links a[href]:hover{color:#4f46e5}
 .site-nav .nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
-.site-nav .nav-links a.active{color:#4f46e5;font-weight:600}
-.nav-ham{display:none;position:fixed;top:14px;right:16px;z-index:201;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
+.site-nav .nav-links a.active{color:#00d4ff;font-weight:600}
+.nav-ham{display:none;position:fixed;top:14px;right:16px;z-index:201;width:40px;height:40px;border-radius:10px;background:rgba(10,15,30,0.95);backdrop-filter:blur(12px);border:1px solid rgba(99,102,241,0.15);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 2px 12px rgba(15,23,42,0.1)}
 .nav-ham span{display:block;width:18px;height:2px;background:#475569;border-radius:2px;transition:all 0.3s}
 .nav-ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-ham.open span:nth-child(2){opacity:0}
@@ -40,7 +40,7 @@
 </div>
 
 <nav class="site-nav">
-  <a href="/" class="nav-logo"><img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne"></a>
+  <a href="/" class="nav-logo"><img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne"></a>
   <div class="nav-links">
     <a href="/digital" <?php echo $current_page==='digital'?'class="active"':'';?>>Digital</a>
     <a href="/ai" <?php echo $current_page==='ai'?'class="active"':'';?>>AI</a>

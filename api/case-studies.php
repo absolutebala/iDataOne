@@ -13,12 +13,12 @@
 <meta property="og:title" content="Case Studies — Real Results. Real Impact. | iDataOne">
 <meta property="og:description" content="Explore how iDataOne has helped businesses build digital products, integrate AI and transform data into decisions. Real results across industries.">
 <meta property="og:url" content="https://idataone.com/case-studies">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Studies — Real Results. Real Impact. | iDataOne">
 <meta name="twitter:description" content="Explore how iDataOne has helped businesses build digital products, integrate AI and transform data into decisions. Real results across industries.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoNoBG.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

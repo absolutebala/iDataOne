@@ -2,7 +2,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div class="footer-logo"><img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne"></div>
+        <div class="footer-logo"><img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne"></div>
         <p class="footer-tagline">Innovate. Integrate. Elevate.<br>Building intelligent digital products<br>powered by AI and data.</p>
       </div>
       <div>

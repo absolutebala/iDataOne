@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta property="og:description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://idataone.com/">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoNew.png">
+<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="iDataOne | Build. Transform. Scale. — AI-First Products & Data Intelligence">
 <meta name="twitter:description" content="Build scalable digital products, integrate AI automation, and turn fragmented data into business intelligence. iDataOne — Built for the AI era.">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
   "@type": "Organization",
   "name": "iDataOne",
   "url": "https://idataone.com",
-  "logo": "https://idataone.com/assets/images/iDataOneLogoNew.png",
+  "logo": "https://idataone.com/assets/images/iDataOneLogoFinal.png",
   "description": "iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence.",
   "slogan": "Build. Transform. Scale.",
   "contactPoint": {
@@ -136,12 +136,10 @@ html,body{height:100%;overflow:hidden;font-family:'Inter',sans-serif}
 
 body{
 background:
-radial-gradient(ellipse at 85% 5%, rgba(180,100,20,0.28), transparent 35%),
-radial-gradient(ellipse at 65% 15%, rgba(100,40,180,0.35), transparent 40%),
-radial-gradient(ellipse at 30% 60%, rgba(60,30,160,0.25), transparent 45%),
-radial-gradient(ellipse at 90% 85%, rgba(25,30,80,0.3), transparent 40%),
-radial-gradient(ellipse at 10% 90%, rgba(20,28,90,0.2), transparent 40%),
-linear-gradient(135deg,#151a3a 0%,#1e1850 25%,#2a1460 50%,#3d1a70 70%,#2a1245 85%,#1a1840 100%);
+radial-gradient(ellipse at 80% 10%, rgba(0,212,255,0.12), transparent 40%),
+radial-gradient(ellipse at 20% 80%, rgba(0,180,220,0.08), transparent 40%),
+radial-gradient(ellipse at 60% 50%, rgba(245,197,24,0.06), transparent 45%),
+linear-gradient(135deg,#0a0f1e 0%,#0d1535 50%,#0a0f1e 100%);
 }
 
 body:before{
@@ -149,8 +147,8 @@ content:"";
 position:fixed;
 inset:0;
 background-image:
-linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+linear-gradient(rgba(0,212,255,0.06) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,212,255,0.06) 1px, transparent 1px);
 background-size:80px 80px;
 pointer-events:none;
 }
@@ -211,7 +209,7 @@ font-weight:700;
 }
 
 .highlight{
-background:linear-gradient(90deg,#c49a1a,#b07d10);
+background:linear-gradient(90deg,#f5c518,#00d4ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
@@ -221,7 +219,7 @@ max-width:850px;
 margin:auto;
 font-size:20px;
 line-height:1.8;
-color:rgba(220,170,40,0.92);
+color:#7eefff;
 }
 
 .cap-card p, .contact-inner p, .why-section p{
@@ -249,14 +247,14 @@ display:block;
 }
 
 .capability span.highlight{
-background:linear-gradient(90deg,#c49a1a,#b07d10);
+background:linear-gradient(90deg,#f5c518,#00d4ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
 
 .explore{
 margin-top:40px;
-color:rgba(255,255,255,0.65);
+color:rgba(0,212,255,0.7);
 font-weight:600;
 letter-spacing:3px;
 font-size:14px;
@@ -513,9 +511,9 @@ text-transform:uppercase;
 /* Contact — conversion focused */
 .contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
 .contact-left{text-align:left}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#c49a1a;margin-bottom:20px}
+.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
 .cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:12px}
-.cl-heading em{font-style:normal;background:linear-gradient(90deg,#c49a1a,#b07d10);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .cl-sub{font-size:15px;color:#64748b;line-height:1.7;margin-bottom:36px}
 .cl-trust{display:flex;flex-direction:column;gap:0}
 .cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid rgba(226,232,240,0.7)}
@@ -863,7 +861,7 @@ letter-spacing:0.3px;
 <!-- Top nav bar -->
 <div class="top-nav hidden" id="top-nav">
   <div class="site-logo large" id="site-logo">
-    <img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+    <img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
   </div>
   <div class="top-nav-links" id="topNavLinks">
     <a href="/digital">Digital</a>
@@ -876,19 +874,19 @@ letter-spacing:0.3px;
 
 <!-- Hero logo (screen 1 only) -->
 <div class="site-logo" id="hero-logo">
-  <img src="/assets/images/iDataOneLogoNew.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+  <img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
 </div>
 
 <!-- Background illustration layer -->
 <svg style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
   <defs>
     <radialGradient id="gBrain" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(139,92,246,0.18)"/>
-      <stop offset="100%" stop-color="rgba(139,92,246,0)"/>
+      <stop offset="0%" stop-color="rgba(0,212,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(0,212,255,0)"/>
     </radialGradient>
     <radialGradient id="gGear" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(99,102,241,0.16)"/>
-      <stop offset="100%" stop-color="rgba(99,102,241,0)"/>
+      <stop offset="0%" stop-color="rgba(0,200,240,0.16)"/>
+      <stop offset="100%" stop-color="rgba(0,200,240,0)"/>
     </radialGradient>
     <radialGradient id="gAmber" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="rgba(217,119,6,0.18)"/>
@@ -897,33 +895,33 @@ letter-spacing:0.3px;
   </defs>
 
   <!-- Full grid -->
-  <line x1="0" y1="80" x2="1400" y2="80" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="160" x2="1400" y2="160" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="240" x2="1400" y2="240" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="320" x2="1400" y2="320" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="400" x2="1400" y2="400" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="480" x2="1400" y2="480" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="560" x2="1400" y2="560" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="640" x2="1400" y2="640" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="720" x2="1400" y2="720" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="0" y1="800" x2="1400" y2="800" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="80" y1="0" x2="80" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="160" y1="0" x2="160" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="240" y1="0" x2="240" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="320" y1="0" x2="320" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="400" y1="0" x2="400" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="480" y1="0" x2="480" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="560" y1="0" x2="560" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="640" y1="0" x2="640" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="720" y1="0" x2="720" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="800" y1="0" x2="800" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="880" y1="0" x2="880" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="960" y1="0" x2="960" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="1040" y1="0" x2="1040" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="1120" y1="0" x2="1120" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="1200" y1="0" x2="1200" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="1280" y1="0" x2="1280" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
-  <line x1="1360" y1="0" x2="1360" y2="900" stroke="rgba(180,160,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="80" x2="1400" y2="80" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="160" x2="1400" y2="160" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="240" x2="1400" y2="240" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="320" x2="1400" y2="320" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="400" x2="1400" y2="400" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1400" y2="480" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="560" x2="1400" y2="560" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="640" x2="1400" y2="640" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="720" x2="1400" y2="720" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="0" y1="800" x2="1400" y2="800" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="80" y1="0" x2="80" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="160" y1="0" x2="160" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="240" y1="0" x2="240" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="320" y1="0" x2="320" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="480" y1="0" x2="480" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="560" y1="0" x2="560" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="720" y1="0" x2="720" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="880" y1="0" x2="880" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="960" y1="0" x2="960" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="1040" y1="0" x2="1040" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="1120" y1="0" x2="1120" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="1200" y1="0" x2="1200" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
+  <line x1="1360" y1="0" x2="1360" y2="900" stroke="rgba(0,212,255,0.07)" stroke-width="1"/>
 
   <!-- Glow halos behind icons -->
   <ellipse cx="700" cy="180" rx="120" ry="90" fill="url(#gBrain)" opacity="0.8"/>
@@ -935,13 +933,13 @@ letter-spacing:0.3px;
 
   <!-- ── CONNECTOR LINES ── -->
   <!-- Brain → Funnel -->
-  <line x1="700" y1="220" x2="460" y2="360" stroke="rgba(180,140,255,0.22)" stroke-width="1.5"/>
+  <line x1="700" y1="220" x2="460" y2="360" stroke="rgba(0,212,255,0.28)" stroke-width="1.5"/>
   <!-- Brain → Gear -->
-  <line x1="700" y1="220" x2="980" y2="400" stroke="rgba(180,140,255,0.2)" stroke-width="1.5"/>
+  <line x1="700" y1="220" x2="980" y2="400" stroke="rgba(0,212,255,0.22)" stroke-width="1.5"/>
   <!-- Funnel → Data cluster -->
   <line x1="390" y1="420" x2="200" y2="560" stroke="rgba(140,120,255,0.18)" stroke-width="1" stroke-dasharray="6,4"/>
   <!-- Gear → Shield -->
-  <line x1="1020" y1="420" x2="1280" y2="340" stroke="rgba(180,140,255,0.18)" stroke-width="1.5"/>
+  <line x1="1020" y1="420" x2="1280" y2="340" stroke="rgba(0,212,255,0.18)" stroke-width="1.5"/>
   <!-- Shield → Stack -->
   <line x1="1300" y1="310" x2="1300" y2="180" stroke="rgba(217,160,60,0.2)" stroke-width="1" stroke-dasharray="5,4"/>
   <!-- Gear → Storage -->
@@ -953,17 +951,17 @@ letter-spacing:0.3px;
 
   <!-- ── BRAIN ICON — top centre (AI node) ── -->
   <g opacity="0.82">
-    <ellipse cx="700" cy="185" rx="34" ry="26" fill="none" stroke="rgba(180,140,255,0.5)" stroke-width="1.6"/>
-    <ellipse cx="690" cy="180" rx="13" ry="18" fill="none" stroke="rgba(180,140,255,0.4)" stroke-width="1.3"/>
-    <ellipse cx="710" cy="180" rx="13" ry="18" fill="none" stroke="rgba(180,140,255,0.4)" stroke-width="1.3"/>
-    <line x1="700" y1="162" x2="700" y2="204" stroke="rgba(180,140,255,0.3)" stroke-width="1"/>
+    <ellipse cx="700" cy="185" rx="34" ry="26" fill="none" stroke="rgba(0,212,255,0.55)" stroke-width="1.6"/>
+    <ellipse cx="690" cy="180" rx="13" ry="18" fill="none" stroke="rgba(0,212,255,0.45)" stroke-width="1.3"/>
+    <ellipse cx="710" cy="180" rx="13" ry="18" fill="none" stroke="rgba(0,212,255,0.45)" stroke-width="1.3"/>
+    <line x1="700" y1="162" x2="700" y2="204" stroke="rgba(0,212,255,0.35)" stroke-width="1"/>
     <line x1="688" y1="174" x2="678" y2="167" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
     <line x1="712" y1="174" x2="722" y2="167" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
     <line x1="686" y1="190" x2="676" y2="197" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
     <line x1="714" y1="190" x2="724" y2="197" stroke="rgba(180,140,255,0.25)" stroke-width="0.9"/>
-    <line x1="684" y1="182" x2="672" y2="182" stroke="rgba(180,140,255,0.2)" stroke-width="0.9"/>
-    <line x1="716" y1="182" x2="728" y2="182" stroke="rgba(180,140,255,0.2)" stroke-width="0.9"/>
-    <circle cx="700" cy="185" r="6" fill="rgba(160,120,255,0.18)"/>
+    <line x1="684" y1="182" x2="672" y2="182" stroke="rgba(0,212,255,0.22)" stroke-width="0.9"/>
+    <line x1="716" y1="182" x2="728" y2="182" stroke="rgba(0,212,255,0.22)" stroke-width="0.9"/>
+    <circle cx="700" cy="185" r="6" fill="rgba(0,212,255,0.15)"/>
     <!-- Dot connectors radiating out -->
     <circle cx="700" cy="155" r="2.5" fill="rgba(180,140,255,0.35)"/>
     <circle cx="700" cy="218" r="2" fill="rgba(180,140,255,0.25)"/>
@@ -974,43 +972,43 @@ letter-spacing:0.3px;
   <!-- ── FUNNEL ICON — centre-left (data ingestion) ── -->
   <g opacity="0.78">
     <!-- Papers/data sources flowing in -->
-    <rect x="390" y="330" width="30" height="22" rx="3" fill="none" stroke="rgba(140,120,255,0.45)" stroke-width="1.3"/>
-    <line x1="394" y1="337" x2="416" y2="337" stroke="rgba(140,120,255,0.3)" stroke-width="0.9"/>
-    <line x1="394" y1="342" x2="412" y2="342" stroke="rgba(140,120,255,0.25)" stroke-width="0.9"/>
+    <rect x="390" y="330" width="30" height="22" rx="3" fill="none" stroke="rgba(0,212,255,0.45)" stroke-width="1.3"/>
+    <line x1="394" y1="337" x2="416" y2="337" stroke="rgba(0,212,255,0.3)" stroke-width="0.9"/>
+    <line x1="394" y1="342" x2="412" y2="342" stroke="rgba(0,212,255,0.25)" stroke-width="0.9"/>
     <!-- Arrow -->
-    <path d="M408 352 L418 358 L408 364" fill="none" stroke="rgba(140,120,255,0.4)" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M408 352 L418 358 L408 364" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.2" stroke-linecap="round"/>
     <!-- Funnel shape -->
-    <polygon points="428,348 472,348 456,378 444,378" fill="none" stroke="rgba(140,120,255,0.5)" stroke-width="1.4"/>
-    <line x1="450" y1="378" x2="450" y2="396" stroke="rgba(140,120,255,0.4)" stroke-width="1.5"/>
-    <circle cx="450" cy="400" r="4" fill="rgba(140,120,255,0.25)" stroke="rgba(140,120,255,0.4)" stroke-width="1"/>
+    <polygon points="428,348 472,348 456,378 444,378" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="1.4"/>
+    <line x1="450" y1="378" x2="450" y2="396" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+    <circle cx="450" cy="400" r="4" fill="rgba(0,212,255,0.2)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
     <!-- Input dots -->
-    <circle cx="393" cy="326" r="2" fill="rgba(140,120,255,0.3)"/>
-    <circle cx="418" cy="324" r="1.5" fill="rgba(140,120,255,0.25)"/>
+    <circle cx="393" cy="326" r="2" fill="rgba(0,212,255,0.25)"/>
+    <circle cx="418" cy="324" r="1.5" fill="rgba(0,212,255,0.2)"/>
   </g>
 
   <!-- ── NETWORK GEAR — centre-right (processing) ── -->
   <g opacity="0.78">
     <!-- Outer gear ring -->
-    <circle cx="980" cy="430" r="36" fill="none" stroke="rgba(120,100,255,0.35)" stroke-width="1.4"/>
-    <circle cx="980" cy="430" r="26" fill="none" stroke="rgba(120,100,255,0.45)" stroke-width="1.3"/>
-    <circle cx="980" cy="430" r="14" fill="none" stroke="rgba(120,100,255,0.5)" stroke-width="1.3"/>
+    <circle cx="980" cy="430" r="36" fill="none" stroke="rgba(0,200,240,0.35)" stroke-width="1.4"/>
+    <circle cx="980" cy="430" r="26" fill="none" stroke="rgba(0,200,240,0.45)" stroke-width="1.3"/>
+    <circle cx="980" cy="430" r="14" fill="none" stroke="rgba(0,200,240,0.5)" stroke-width="1.3"/>
     <!-- Gear teeth -->
-    <rect x="977" y="390" width="6" height="10" rx="2" fill="rgba(120,100,255,0.3)"/>
-    <rect x="977" y="460" width="6" height="10" rx="2" fill="rgba(120,100,255,0.3)"/>
-    <rect x="940" y="427" width="10" height="6" rx="2" fill="rgba(120,100,255,0.3)"/>
-    <rect x="1010" y="427" width="10" height="6" rx="2" fill="rgba(120,100,255,0.3)"/>
+    <rect x="977" y="390" width="6" height="10" rx="2" fill="rgba(0,200,240,0.25)"/>
+    <rect x="977" y="460" width="6" height="10" rx="2" fill="rgba(0,200,240,0.25)"/>
+    <rect x="940" y="427" width="10" height="6" rx="2" fill="rgba(0,200,240,0.25)"/>
+    <rect x="1010" y="427" width="10" height="6" rx="2" fill="rgba(0,200,240,0.25)"/>
     <rect x="954" y="401" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 958 405)"/>
     <rect x="1002" y="401" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 1006 405)"/>
     <rect x="954" y="451" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 958 455)"/>
     <rect x="1002" y="451" width="8" height="8" rx="2" fill="rgba(120,100,255,0.22)" transform="rotate(45 1006 455)"/>
     <!-- Centre pulse -->
-    <circle cx="980" cy="430" r="6" fill="rgba(140,120,255,0.3)"/>
+    <circle cx="980" cy="430" r="6" fill="rgba(0,212,255,0.25)"/>
     <circle cx="980" cy="430" r="3" fill="rgba(160,140,255,0.4)"/>
     <!-- Orbital dots -->
-    <circle cx="980" cy="394" r="3" fill="rgba(120,100,255,0.35)"/>
-    <circle cx="980" cy="466" r="3" fill="rgba(120,100,255,0.35)"/>
-    <circle cx="944" cy="430" r="3" fill="rgba(120,100,255,0.35)"/>
-    <circle cx="1016" cy="430" r="3" fill="rgba(120,100,255,0.35)"/>
+    <circle cx="980" cy="394" r="3" fill="rgba(0,200,240,0.3)"/>
+    <circle cx="980" cy="466" r="3" fill="rgba(0,200,240,0.3)"/>
+    <circle cx="944" cy="430" r="3" fill="rgba(0,200,240,0.3)"/>
+    <circle cx="1016" cy="430" r="3" fill="rgba(0,200,240,0.3)"/>
   </g>
 
   <!-- ── SHIELD ICON — right (governance/security) ── -->
@@ -1045,20 +1043,20 @@ letter-spacing:0.3px;
   <!-- ── DATA CLUSTER — lower left ── -->
   <g opacity="0.68">
     <!-- Server/database -->
-    <rect x="155" y="590" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.4)" stroke-width="1.2"/>
-    <rect x="155" y="605" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.3)" stroke-width="1.2"/>
-    <rect x="155" y="620" width="48" height="12" rx="4" fill="none" stroke="rgba(140,120,255,0.22)" stroke-width="1.2"/>
-    <circle cx="196" cy="596" r="2" fill="rgba(140,120,255,0.4)"/>
-    <circle cx="196" cy="611" r="2" fill="rgba(140,120,255,0.3)"/>
+    <rect x="155" y="590" width="48" height="12" rx="4" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.2"/>
+    <rect x="155" y="605" width="48" height="12" rx="4" fill="none" stroke="rgba(0,212,255,0.3)" stroke-width="1.2"/>
+    <rect x="155" y="620" width="48" height="12" rx="4" fill="none" stroke="rgba(0,212,255,0.22)" stroke-width="1.2"/>
+    <circle cx="196" cy="596" r="2" fill="rgba(0,212,255,0.3)"/>
+    <circle cx="196" cy="611" r="2" fill="rgba(0,212,255,0.25)"/>
     <!-- Scatter dots connected -->
-    <circle cx="140" cy="570" r="5" fill="rgba(120,100,255,0.2)" stroke="rgba(140,120,255,0.4)" stroke-width="1"/>
-    <circle cx="120" cy="545" r="4" fill="rgba(120,100,255,0.15)" stroke="rgba(140,120,255,0.3)" stroke-width="1"/>
-    <circle cx="160" cy="548" r="3.5" fill="rgba(120,100,255,0.15)" stroke="rgba(140,120,255,0.28)" stroke-width="1"/>
-    <circle cx="105" cy="570" r="3" fill="rgba(120,100,255,0.12)" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
-    <line x1="140" y1="570" x2="120" y2="545" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
-    <line x1="140" y1="570" x2="160" y2="548" stroke="rgba(140,120,255,0.25)" stroke-width="1"/>
-    <line x1="140" y1="570" x2="105" y2="570" stroke="rgba(140,120,255,0.2)" stroke-width="1"/>
-    <line x1="140" y1="570" x2="155" y2="592" stroke="rgba(140,120,255,0.22)" stroke-width="1"/>
+    <circle cx="140" cy="570" r="5" fill="rgba(0,200,240,0.18)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
+    <circle cx="120" cy="545" r="4" fill="rgba(0,200,240,0.12)" stroke="rgba(0,212,255,0.3)" stroke-width="1"/>
+    <circle cx="160" cy="548" r="3.5" fill="rgba(0,200,240,0.12)" stroke="rgba(140,120,255,0.28)" stroke-width="1"/>
+    <circle cx="105" cy="570" r="3" fill="rgba(0,200,240,0.1)" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="120" y2="545" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="160" y2="548" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="105" y2="570" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+    <line x1="140" y1="570" x2="155" y2="592" stroke="rgba(0,212,255,0.22)" stroke-width="1"/>
   </g>
 
   <!-- ── STORAGE NODE — lower centre-right ── -->
@@ -1076,7 +1074,7 @@ letter-spacing:0.3px;
 
   <!-- ── SCATTERED DOTS ── -->
   <circle cx="100" cy="120" r="2.5" fill="rgba(180,140,255,0.2)"/>
-  <circle cx="300" cy="80" r="2" fill="rgba(160,120,255,0.18)"/>
+  <circle cx="300" cy="80" r="2" fill="rgba(0,212,255,0.15)"/>
   <circle cx="550" cy="60" r="3" fill="rgba(180,140,255,0.15)"/>
   <circle cx="860" cy="100" r="2" fill="rgba(160,130,255,0.18)"/>
   <circle cx="1150" cy="50" r="2.5" fill="rgba(217,160,60,0.2)"/>
@@ -1143,14 +1141,14 @@ letter-spacing:0.3px;
 <!-- Tamil signature -->
 <a href="mailto:info@idataone.com" class="hp-btm" style="position:fixed;bottom:22px;right:80px;z-index:100;font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);text-decoration:none;font-family:Inter,sans-serif;letter-spacing:0.3px;transition:color 0.3s">info@idataone.com</a>
 <div class="tamil-sig">ஐ</div>
-<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:rgba(212,160,20,0.85);font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
+<div class="hp-btm" style="position:fixed;bottom:22px;left:28px;z-index:100;font-size:11px;font-weight:400;color:#7eefff;font-family:Inter,sans-serif;letter-spacing:0.3px">© 2026 iDataOne. All rights reserved.</div>
 
 <div id="presentation">
 
 <!-- 0: Hero -->
 <section class="screen active">
 <div class="container">
-<img src="/assets/images/iDataOneLogoNew.png" class="logo" alt="iDataOne Logo">
+<img src="/assets/images/iDataOneLogoFinal.png" class="logo" alt="iDataOne Logo">
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
 <div class="explore" onclick="showScreen(1)">EXPLORE ↓</div>
