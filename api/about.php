@@ -130,15 +130,18 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 .cta-alt{font-size:12px;color:rgba(255,255,255,0.2);margin-top:18px;font-style:italic}
 
 /* Case Studies list */
-.cs-list{display:flex;flex-direction:column;gap:2px}
-.cs-item{display:grid;grid-template-columns:48px 1fr 32px;gap:20px;align-items:center;padding:20px 24px;border-radius:14px;border:1px solid rgba(255,255,255,0.05);background:rgba(255,255,255,0.02);text-decoration:none;transition:background 0.2s,border-color 0.2s,transform 0.2s;cursor:pointer}
-.cs-item:hover{background:rgba(var(--c-rgb,0,212,255),0.05);border-color:var(--c);transform:translateX(4px)}
-.cs-item-num{font-size:11px;font-weight:700;color:var(--c);opacity:0.6;letter-spacing:1px}
-.cs-item-label{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
-.cs-item-desc{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.5}
-.cs-item-arrow{color:var(--c);opacity:0;transition:opacity 0.2s}
-.cs-item:hover .cs-item-arrow{opacity:1}
-@media(max-width:600px){.cs-item{grid-template-columns:36px 1fr;}.cs-item-arrow{display:none}}
+.cs-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.cs-item{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:16px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.25s;cursor:pointer;position:relative;overflow:hidden}
+.cs-item::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--c);opacity:0;transition:opacity 0.25s}
+.cs-item:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);transform:translateY(-3px)}
+.cs-item:hover::before{opacity:1}
+.cs-item-num{font-size:10px;font-weight:700;color:var(--c);letter-spacing:1.5px;opacity:0.7}
+.cs-item-label{font-size:13px;font-weight:700;color:#fff;line-height:1.35;flex:1}
+.cs-item-desc{font-size:11px;color:rgba(255,255,255,0.3);line-height:1.55}
+.cs-item-arrow{color:var(--c);opacity:0;transition:opacity 0.2s;align-self:flex-end}
+.cs-item:hover .cs-item-arrow{opacity:0.8}
+@media(max-width:900px){.cs-list{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.cs-list{grid-template-columns:1fr 1fr}.cs-item-desc{display:none}}
 
 @media(max-width:1024px){
   .ai-grid{grid-template-columns:1fr 1fr}
@@ -287,14 +290,10 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
       ];
       foreach($cases as $i => [$cat,$col,$url,$label,$desc]): ?>
       <a href="<?= $url ?>" class="cs-item" style="--c:<?= $col ?>">
-        <div class="cs-item-num"><?= str_pad($i+1,2,'0',STR_PAD_LEFT) ?></div>
-        <div class="cs-item-body">
-          <div class="cs-item-label"><?= $label ?></div>
-          <div class="cs-item-desc"><?= $desc ?></div>
-        </div>
-        <div class="cs-item-arrow">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </div>
+        <div class="cs-item-num"><?= str_pad($i+1,2,'0','0') ?></div>
+        <div class="cs-item-label"><?= $label ?></div>
+        <div class="cs-item-desc"><?= $desc ?></div>
+        <div class="cs-item-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </a>
       <?php endforeach; ?>
     </div>
