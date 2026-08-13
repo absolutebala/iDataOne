@@ -11,7 +11,7 @@
 .site-footer .footer-links a[href]{cursor:pointer}
 .site-footer .footer-links a[href]:hover{color:#00d4ff}
 .site-footer .footer-bottom{border-top:1px solid rgba(0,212,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
-.site-footer .footer-copy{font-size:12px;color:rgba(255,255,255,0.25)}
+.site-footer .footer-copy{font-size:12px;color:rgba(255,255,255,0.55)}
 .site-footer .footer-email{font-size:13px;color:#00d4ff;text-decoration:none;transition:color 0.2s;opacity:0.75}
 .site-footer .footer-email:hover{color:#7eefff;opacity:1}
 @media(max-width:768px){.site-footer .footer-top{grid-template-columns:1fr 1fr}}
