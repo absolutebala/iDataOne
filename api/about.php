@@ -129,6 +129,17 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .cta-alt{font-size:12px;color:rgba(255,255,255,0.2);margin-top:18px;font-style:italic}
 
+/* Case Studies list */
+.cs-list{display:flex;flex-direction:column;gap:2px}
+.cs-item{display:grid;grid-template-columns:48px 1fr 32px;gap:20px;align-items:center;padding:20px 24px;border-radius:14px;border:1px solid rgba(255,255,255,0.05);background:rgba(255,255,255,0.02);text-decoration:none;transition:background 0.2s,border-color 0.2s,transform 0.2s;cursor:pointer}
+.cs-item:hover{background:rgba(var(--c-rgb,0,212,255),0.05);border-color:var(--c);transform:translateX(4px)}
+.cs-item-num{font-size:11px;font-weight:700;color:var(--c);opacity:0.6;letter-spacing:1px}
+.cs-item-label{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
+.cs-item-desc{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.5}
+.cs-item-arrow{color:var(--c);opacity:0;transition:opacity 0.2s}
+.cs-item:hover .cs-item-arrow{opacity:1}
+@media(max-width:600px){.cs-item{grid-template-columns:36px 1fr;}.cs-item-arrow{display:none}}
+
 @media(max-width:1024px){
   .ai-grid{grid-template-columns:1fr 1fr}
   .wf-steps{grid-template-columns:repeat(3,1fr);gap:24px}
@@ -250,6 +261,45 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
         <div class="ai-desc"><?= $m[3] ?></div>
       </div>
       <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section">
+  <div class="inner">
+    <div class="eyebrow">Work</div>
+    <div class="bar"></div>
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px">What We've Built</h2>
+    <p style="font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
+    <div class="cs-list">
+      <?php
+      $cases = [
+        ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','The Knight Ryders — WordPress to a living community platform with inline CMS and gamification.'],
+        ['digital','#00d4ff','/case-study/telecom-pm-platform','Infrastructure PMS','Telecom project management platform for Venus Energy — PO to close-out, multi-trade, live dashboards.'],
+        ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','aiDesker — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
+        ['ai','#a855f7','/case-study/aidesker','Conversational AI','Knowledge-grounded AI chat assistant with lead capture, BYO-key and real-time CRM sync.'],
+        ['digital','#00d4ff','/case-study/risk-platform','Enterprise Platform','Risk &amp; Compliance platform for an FMCG leader — 5×5 matrix, dashboards and workflow automation.'],
+        ['data','#f5c518','/case-study/risk-dashboard','Data Intelligence','Real-time risk intelligence dashboard — live metrics, drill-down and cross-system data integration.'],
+        ['digital','#00d4ff','/case-study/isportone','Sports Platform','iSportOne — a lifelong sports passport for athletes with profiles, stats and club management.'],
+        ['digital','#00d4ff','/case-study/mealmate','Mobile App','MealMate — AI-powered family meal planning app on React Native, GPT-4o-mini powered.'],
+        ['digital','#f59e0b','/infra360PMS','Product Launch','Infra360 PMS — live infrastructure project management product for telecom and civil contractors.'],
+      ];
+      foreach($cases as $i => [$cat,$col,$url,$label,$desc]): ?>
+      <a href="<?= $url ?>" class="cs-item" style="--c:<?= $col ?>">
+        <div class="cs-item-num"><?= str_pad($i+1,2,'0',STR_PAD_LEFT) ?></div>
+        <div class="cs-item-body">
+          <div class="cs-item-label"><?= $label ?></div>
+          <div class="cs-item-desc"><?= $desc ?></div>
+        </div>
+        <div class="cs-item-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="/case-studies" class="btn-p" style="display:inline-flex">View All Case Studies <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
