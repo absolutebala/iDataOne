@@ -196,13 +196,13 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
   <div class="hero-inner">
     <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
     <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
-    <div class="hero-ctas">
-      <a href="/contact" class="btn-p">Talk to Our Delivery Team <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a href="/case-studies" class="btn-o">See What We've Built <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
     <div class="hero-img-wrap">
       <img src="/assets/images/team-hero.png" alt="iDataOne delivery team — Bala Kandaswamy (Delivery Head) with AI specialists Pixel, Forge, Insight and Sentinel" class="hero-img" loading="eager"/>
       <div class="hero-img-fade"></div>
+    </div>
+    <div class="hero-ctas" style="margin-top:32px">
+      <a href="/contact" class="btn-p">Talk to Our Delivery Team <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/case-studies" class="btn-o">See What We've Built <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>

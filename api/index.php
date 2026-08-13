@@ -802,7 +802,7 @@ letter-spacing:0.3px;
   /* Hero screen */
   .logo{max-width:200px}
   h1{font-size:clamp(28px,8vw,48px);letter-spacing:-1.5px}
-  .explore{bottom:24px;right:20px;font-size:10px}
+  .explore{display:none!important}
   /* Capabilities & Products */
   h2{font-size:clamp(28px,7vw,44px);letter-spacing:-1.5px;text-align:center}
   .cap-carousel{max-width:100%}
