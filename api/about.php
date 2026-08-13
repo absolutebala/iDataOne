@@ -62,15 +62,15 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 /* ── TEAM ── */
 .team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.2);border-radius:20px;margin-bottom:24px}
 .avatar{width:88px;height:88px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,212,255,0.35);box-shadow:0 0 24px rgba(0,212,255,0.15)}
-.head-badge{font-size:10px;font-weight:700;letter-spacing:2px;color:#00d4ff;text-transform:uppercase;margin-bottom:6px}
+.head-badge{font-size:10px;font-weight:700;letter-spacing:2px;color:#0891b2;text-transform:uppercase;margin-bottom:6px}
 .head-name{font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;color:#0f172a}
-.head-title{font-size:13px;color:rgba(0,212,255,0.7);margin-bottom:8px}
+.head-title{font-size:13px;color:#0891b2;font-weight:600;margin-bottom:8px}
 .head-bio{font-size:13px;color:#64748b;line-height:1.65}
 .ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .ai-card{padding:24px 20px;background:#fff;border:1px solid rgba(245,197,24,0.2);border-radius:18px;transition:border-color 0.3s,transform 0.3s;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
 .ai-card:hover{border-color:rgba(245,197,24,0.5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
 .ai-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(245,197,24,0.08));border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}.ai-icon svg{width:22px;height:22px;fill:none;stroke:url(#aiGrad);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.ai-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;color:#f5c518;margin-bottom:2px}
+.ai-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;color:#b45309;margin-bottom:2px}
 .ai-role{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:8px}
 .ai-desc{font-size:12px;color:#64748b;line-height:1.6}
 .plus-bar{text-align:center;padding:16px;font-size:12px;color:#94a3b8;letter-spacing:1px;margin:8px 0}
@@ -125,9 +125,9 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 /* ── CTA ── */
 .cta-inner{text-align:center;max-width:600px;margin:0 auto}
 .cta-h{font-size:clamp(32px,4.5vw,56px);font-weight:900;letter-spacing:-3px;line-height:1.05;margin-bottom:16px}
-.cta-p{font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:32px;line-height:1.7}
+.cta-p{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:32px;line-height:1.7}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.cta-alt{font-size:12px;color:rgba(255,255,255,0.35);margin-top:18px;font-style:italic}
+.cta-alt{font-size:12px;color:rgba(255,255,255,0.5);margin-top:18px;font-style:italic}
 
 /* Case Studies list */
 .cs-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
@@ -271,7 +271,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <!-- CASE STUDIES -->
 <section class="section" style="background:#f0f9ff">
   <div class="inner">
-    <div class="eyebrow">Work</div>
+    <div class="eyebrow">Case Studies</div>
     <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
     <p style="font-size:14px;color:#64748b;margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
@@ -332,26 +332,34 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 </section>
 
 <!-- WORKFLOW -->
-<section class="section" style="background:#f8fafc">
-  <div class="inner">
-    <div class="eyebrow" style="text-align:center">How We Deliver</div>
-    <div class="bar" style="margin:12px auto 0"></div>
-    <div class="wf-title" style="margin-top:20px">AI-Assisted. Every Step.</div>
-    <div class="wf-steps">
+<section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none"></div>
+  <div class="inner" style="position:relative;z-index:1">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
+      <div class="bar" style="margin:12px auto 20px"></div>
+      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative">
+      <!-- Connecting line -->
+      <div style="position:absolute;top:36px;left:calc(100%/12);right:calc(100%/12);height:2px;background:linear-gradient(90deg,#00d4ff,#7c3aed,#f5c518);opacity:0.3;pointer-events:none"></div>
       <?php
       $steps = [
-        [false,'M9 9h.01M15 9h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z','Understand','Goals & constraints'],
-        [false,'M12 19l7-7 3 3-7 7-3-3z','Design','UX & architecture'],
-        [false,'M16 18l6-6-6-6M8 6L2 12l6 6','Build','AI-assisted engineering'],
-        [true,'M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','Validate','Quality & testing'],
-        [true,'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5','Deploy','Cloud & DevOps'],
-        [true,'M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4','Evolve','Iterate & improve'],
+        ['01','#00d4ff','M9 9h.01M15 9h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z','Understand','Goals & requirements'],
+        ['02','#00d4ff','M12 19l7-7 3 3-7 7-3-3z','Design','UX & architecture'],
+        ['03','#00d4ff','M16 18l6-6-6-6M8 6L2 12l6 6','Build','AI-assisted dev'],
+        ['04','#a855f7','M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','Validate','QA & testing'],
+        ['05','#f5c518','M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5','Deploy','Cloud & DevOps'],
+        ['06','#f5c518','M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4','Evolve','Iterate & grow'],
       ];
       foreach($steps as $s): ?>
-      <div class="wf-step<?= $s[0]?' gold-step':'' ?>">
-        <div class="wf-icon"><svg viewBox="0 0 24 24"><path d="<?= $s[1] ?>"/></svg></div>
-        <div class="wf-label"><?= $s[2] ?></div>
-        <div class="wf-desc"><?= $s[3] ?></div>
+      <div style="text-align:center;padding:0 8px;position:relative;z-index:1">
+        <div style="width:72px;height:72px;border-radius:50%;background:#0e0c18;border:2px solid <?= $s[1] ?>;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 20px <?= $s[1] ?>30">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="<?= $s[1] ?>" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="<?= $s[2] ?>"/></svg>
+        </div>
+        <div style="font-size:10px;font-weight:700;color:<?= $s[1] ?>;letter-spacing:2px;margin-bottom:6px"><?= $s[0] ?></div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px"><?= $s[3] ?></div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);line-height:1.5"><?= $s[4] ?></div>
       </div>
       <?php endforeach; ?>
     </div>
@@ -390,10 +398,10 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 </section>
 
 <!-- FINAL CTA -->
-<section class="section" style="background:#0a0f1e" style="padding-bottom:120px">
+<section style="background:linear-gradient(135deg,#050d1a,#0d1535);padding:96px 32px;border-top:1px solid rgba(0,212,255,0.15)">
   <div class="inner">
     <div class="cta-inner">
-      <div class="eyebrow">Start Building</div>
+      <div class="eyebrow" style="color:#00d4ff">Start Building</div>
       <h2 class="cta-h">Have a Software<br><span class="gold">Idea?</span></h2>
       <p class="cta-p">Tell us what you're trying to build. We'll match you with the right technology, delivery model and AI team.</p>
       <div class="cta-btns">
