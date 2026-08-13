@@ -46,8 +46,8 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
 .btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0e0c18;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
-.btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(245,197,24,0.4);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-o:hover{background:rgba(245,197,24,0.06);transform:translateY(-1px)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.7);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-o:hover{background:rgba(245,197,24,0.1);border-color:#f5c518;transform:translateY(-1px)}
 .hero-img{width:100%;border-radius:20px;display:block;border:1px solid rgba(0,212,255,0.15);box-shadow:0 32px 80px rgba(0,0,0,0.5);position:relative}
 .hero-img-wrap{position:relative;width:100%}
 .hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0e0c18);border-radius:0 0 20px 20px;pointer-events:none}
@@ -124,7 +124,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 
 /* ── CTA ── */
 .cta-inner{text-align:center;max-width:600px;margin:0 auto}
-.cta-h{font-size:clamp(32px,4.5vw,56px);font-weight:900;letter-spacing:-3px;line-height:1.05;margin-bottom:16px}
+.cta-h{font-size:clamp(32px,4.5vw,56px);font-weight:900;letter-spacing:-3px;line-height:1.05;margin-bottom:16px;color:#ffffff}
 .cta-p{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:32px;line-height:1.7}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .cta-alt{font-size:12px;color:rgba(255,255,255,0.5);margin-top:18px;font-style:italic}
@@ -252,16 +252,27 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div class="plus-bar">Supported by four specialised AI team members — each owning a distinct delivery domain. <em>Together, they cover the full stack.</em></div>
     <div class="ai-grid">
       <?php foreach([
-        ['⚡','Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
-        ['🔧','Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
-        ['🔍','Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.'],
-        ['🛡️','Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.'],
+        ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
+        ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
+        ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.'],
+        ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.'],
       ] as $m): ?>
       <div class="ai-card">
-        <div class="ai-emoji"><?= $m[0] ?></div>
-        <div class="ai-name"><?= $m[1] ?></div>
-        <div class="ai-role"><?= $m[2] ?></div>
-        <div class="ai-desc"><?= $m[3] ?></div>
+        <div class="ai-icon">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="bg<?= $m[0] ?>" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#f5c518"/></linearGradient></defs>
+            <ellipse cx="16" cy="15" rx="7" ry="8" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M9 15c-3 0-4.5 1.3-4.5 3.5S7 22 9 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M23 15c3 0 4.5 1.3 4.5 3.5S25 22 23 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M12 10c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="13" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
+            <circle cx="19" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
+            <path d="M14 19v3M18 19v3M14 22h4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ai-name"><?= $m[0] ?></div>
+        <div class="ai-role"><?= $m[1] ?></div>
+        <div class="ai-desc"><?= $m[2] ?></div>
       </div>
       <?php endforeach; ?>
     </div>
