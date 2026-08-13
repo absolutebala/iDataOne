@@ -26,12 +26,12 @@
 <?php include __DIR__ . '/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hidden;padding-top:68px}
+body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:hidden;padding-top:68px}
 .section{padding:88px 32px;position:relative}
 .inner{max-width:1140px;margin:0 auto}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#00d4ff;margin-bottom:14px}
 .gold{background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.alt{background:#09071200}
+.alt{background:#f8fafc}
 .bar{width:40px;height:2px;background:linear-gradient(90deg,#00d4ff,#f5c518);border-radius:999px;margin-bottom:20px}
 
 /* ── HERO ── */
@@ -60,41 +60,41 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 .stat-label{font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px;line-height:1.4}
 
 /* ── TEAM ── */
-.team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.18);border-radius:20px;margin-bottom:24px}
+.team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.2);border-radius:20px;margin-bottom:24px}
 .avatar{width:88px;height:88px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,212,255,0.35);box-shadow:0 0 24px rgba(0,212,255,0.15)}
 .head-badge{font-size:10px;font-weight:700;letter-spacing:2px;color:#00d4ff;text-transform:uppercase;margin-bottom:6px}
-.head-name{font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px}
+.head-name{font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;color:#0f172a}
 .head-title{font-size:13px;color:rgba(0,212,255,0.7);margin-bottom:8px}
-.head-bio{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.65}
+.head-bio{font-size:13px;color:#64748b;line-height:1.65}
 .ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.ai-card{padding:24px 20px;background:rgba(255,255,255,0.02);border:1px solid rgba(245,197,24,0.12);border-radius:18px;transition:border-color 0.3s,transform 0.3s}
-.ai-card:hover{border-color:rgba(245,197,24,0.3);transform:translateY(-3px)}
+.ai-card{padding:24px 20px;background:#fff;border:1px solid rgba(245,197,24,0.2);border-radius:18px;transition:border-color 0.3s,transform 0.3s;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+.ai-card:hover{border-color:rgba(245,197,24,0.5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
 .ai-emoji{font-size:22px;margin-bottom:12px}
 .ai-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;color:#f5c518;margin-bottom:2px}
-.ai-role{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.35);margin-bottom:8px}
-.ai-desc{font-size:12px;color:rgba(255,255,255,0.38);line-height:1.6}
-.plus-bar{text-align:center;padding:16px;font-size:12px;color:rgba(255,255,255,0.25);letter-spacing:1px;margin:8px 0}
+.ai-role{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:8px}
+.ai-desc{font-size:12px;color:#64748b;line-height:1.6}
+.plus-bar{text-align:center;padding:16px;font-size:12px;color:#94a3b8;letter-spacing:1px;margin:8px 0}
 .plus-bar em{color:#f5c518;font-style:normal}
 
 /* ── COMPARISON ── */
 .compare-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
 .ccard{border-radius:20px;padding:32px}
-.ccard-old{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06)}
-.ccard-new{background:rgba(0,212,255,0.03);border:1px solid rgba(0,212,255,0.18);position:relative;overflow:hidden}
+.ccard-old{background:#f8fafc;border:1px solid rgba(226,232,240,0.8)}
+.ccard-new{background:#f0f9ff;border:1px solid rgba(0,212,255,0.25);position:relative;overflow:hidden}
 .ccard-new::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,212,255,0.07),transparent 60%);pointer-events:none}
 .ctitle{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
 .ccard-old .ctitle{color:rgba(255,255,255,0.3)}
 .ccard-new .ctitle{color:#00d4ff}
-.citem{display:flex;gap:10px;margin-bottom:12px;font-size:13px;color:rgba(255,255,255,0.55);line-height:1.5;align-items:flex-start}
+.citem{display:flex;gap:10px;margin-bottom:12px;font-size:13px;color:#475569;line-height:1.5;align-items:flex-start}
 .citem-x::before{content:"—";color:rgba(255,255,255,0.18);flex-shrink:0}
 .citem-ok::before{content:"✓";color:#00d4ff;font-weight:700;flex-shrink:0}
 .csave{margin-top:24px;padding:20px;background:rgba(245,197,24,0.08);border:1px solid rgba(245,197,24,0.2);border-radius:14px;text-align:center;position:relative;z-index:1}
 .csave-n{font-size:36px;font-weight:900;letter-spacing:-2px;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .csave-l{font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px}
-.cfootnote{font-size:11px;color:rgba(255,255,255,0.2);font-style:italic;margin-top:12px;text-align:center}
+.cfootnote{font-size:11px;color:#94a3b8;font-style:italic;margin-top:12px;text-align:center}
 
 /* ── WORKFLOW ── */
-.wf-title{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.5px;margin-bottom:48px;text-align:center}
+.wf-title{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.5px;margin-bottom:48px;text-align:center;color:#0f172a}
 .wf-steps{display:grid;grid-template-columns:repeat(6,1fr);position:relative}
 .wf-steps::before{content:"";position:absolute;top:35px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.25) 20%,rgba(245,197,24,0.25) 80%,transparent);pointer-events:none}
 .wf-step{text-align:center;padding:0 6px;position:relative;z-index:1}
@@ -104,40 +104,40 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 .wf-step.gold-step:hover .wf-icon{border-color:#f5c518;box-shadow:0 0 20px rgba(245,197,24,0.2)}
 .wf-icon svg{width:22px;height:22px;fill:none;stroke:#00d4ff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .wf-step.gold-step .wf-icon svg{stroke:#f5c518}
-.wf-label{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px}
+.wf-label{font-size:13px;font-weight:700;color:#0f172a;margin-bottom:4px}
 .wf-desc{font-size:11px;color:rgba(255,255,255,0.33);line-height:1.5}
 
 /* ── ECONOMICS ── */
 .econ-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.econ-left h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:12px}
-.econ-left p{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.8;margin-bottom:0}
+.econ-left h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:12px;color:#0f172a}
+.econ-left p{font-size:14px;color:#64748b;line-height:1.8;margin-bottom:0}
 .econ-points{margin-top:32px;display:flex;flex-direction:column;gap:16px}
 .ep{display:flex;gap:14px;align-items:flex-start}
 .ep-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px}
-.ep-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:2px}
-.ep-desc{font-size:12.5px;color:rgba(255,255,255,0.38);line-height:1.6}
-.econ-stat{text-align:center;padding:48px 36px;background:rgba(245,197,24,0.04);border:1px solid rgba(245,197,24,0.18);border-radius:24px}
+.ep-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:2px}
+.ep-desc{font-size:12.5px;color:#64748b;line-height:1.6}
+.econ-stat{text-align:center;padding:48px 36px;background:#fffbeb;border:1px solid rgba(245,197,24,0.3);border-radius:24px;box-shadow:0 4px 16px rgba(245,197,24,0.08)}
 .econ-n{font-size:80px;font-weight:900;letter-spacing:-5px;line-height:1;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .econ-unit{font-size:36px;font-weight:900;letter-spacing:-2px;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.econ-label{font-size:13px;color:rgba(255,255,255,0.4);margin-top:10px;line-height:1.5}
-.econ-note{font-size:11px;color:rgba(255,255,255,0.2);margin-top:10px;font-style:italic}
+.econ-label{font-size:13px;color:#78716c;margin-top:10px;line-height:1.5}
+.econ-note{font-size:11px;color:#94a3b8;margin-top:10px;font-style:italic}
 
 /* ── CTA ── */
 .cta-inner{text-align:center;max-width:600px;margin:0 auto}
 .cta-h{font-size:clamp(32px,4.5vw,56px);font-weight:900;letter-spacing:-3px;line-height:1.05;margin-bottom:16px}
-.cta-p{font-size:15px;color:rgba(255,255,255,0.45);margin-bottom:32px;line-height:1.7}
+.cta-p{font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:32px;line-height:1.7}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.cta-alt{font-size:12px;color:rgba(255,255,255,0.2);margin-top:18px;font-style:italic}
+.cta-alt{font-size:12px;color:rgba(255,255,255,0.35);margin-top:18px;font-style:italic}
 
 /* Case Studies list */
 .cs-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.cs-item{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:16px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.25s;cursor:pointer;position:relative;overflow:hidden}
+.cs-item{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:16px;border:1px solid rgba(226,232,240,0.8);background:#fff;text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.25s;cursor:pointer;position:relative;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
 .cs-item::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--c);opacity:0;transition:opacity 0.25s}
-.cs-item:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);transform:translateY(-3px)}
+.cs-item:hover{background:#fff;border-color:var(--c);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
 .cs-item:hover::before{opacity:1}
 .cs-item-num{font-size:10px;font-weight:700;color:var(--c);letter-spacing:1.5px;opacity:0.7}
-.cs-item-label{font-size:13px;font-weight:700;color:#fff;line-height:1.35;flex:1}
-.cs-item-desc{font-size:11px;color:rgba(255,255,255,0.3);line-height:1.55}
+.cs-item-label{font-size:13px;font-weight:700;color:#0f172a;line-height:1.35;flex:1}
+.cs-item-desc{font-size:11px;color:#94a3b8;line-height:1.55}
 .cs-item-arrow{color:var(--c);opacity:0;transition:opacity 0.2s;align-self:flex-end}
 .cs-item:hover .cs-item-arrow{opacity:0.8}
 @media(max-width:900px){.cs-list{grid-template-columns:repeat(3,1fr)}}
@@ -222,7 +222,7 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- STATS -->
-<section class="section alt" style="padding:0">
+<section class="section" style="background:#0e0c18;padding:0" style="padding:0">
   <div class="inner">
     <div class="stats-bar">
       <div class="stat"><div class="stat-num">70%</div><div class="stat-label">Lower development cost*</div></div>
@@ -234,12 +234,12 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- TEAM -->
-<section class="section">
+<section class="section" style="background:#ffffff">
   <div class="inner">
     <div class="eyebrow">The Team</div>
     <div class="bar"></div>
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px">One Delivery Head.<br>Four AI Specialists.</h2>
-    <p style="font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
     <div class="team-head-card">
       <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:88px;height:88px;object-fit:cover;object-position:center top">
       <div>
@@ -269,12 +269,12 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- CASE STUDIES -->
-<section class="section">
+<section class="section" style="background:#f0f9ff">
   <div class="inner">
     <div class="eyebrow">Work</div>
     <div class="bar"></div>
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px">What We've Built</h2>
-    <p style="font-size:14px;color:rgba(255,255,255,0.4);margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
     <div class="cs-list">
       <?php
       $cases = [
@@ -304,11 +304,11 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- COMPARISON -->
-<section class="section alt">
+<section class="section" style="background:#ffffff">
   <div class="inner">
     <div class="eyebrow">The Difference</div>
     <div class="bar"></div>
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:0">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:0;color:#0f172a">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
     <div class="compare-wrap">
       <div class="ccard ccard-old">
         <div class="ctitle">Traditional Model</div>
@@ -332,7 +332,7 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- WORKFLOW -->
-<section class="section">
+<section class="section" style="background:#f8fafc">
   <div class="inner">
     <div class="eyebrow" style="text-align:center">How We Deliver</div>
     <div class="bar" style="margin:12px auto 0"></div>
@@ -359,7 +359,7 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- ECONOMICS -->
-<section class="section alt">
+<section class="section" style="background:#ffffff">
   <div class="inner">
     <div class="econ-inner">
       <div class="econ-left">
@@ -390,7 +390,7 @@ body{font-family:'Inter',sans-serif;background:#0e0c18;color:#fff;overflow-x:hid
 </section>
 
 <!-- FINAL CTA -->
-<section class="section" style="padding-bottom:120px">
+<section class="section" style="background:#0a0f1e" style="padding-bottom:120px">
   <div class="inner">
     <div class="cta-inner">
       <div class="eyebrow">Start Building</div>
