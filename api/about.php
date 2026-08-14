@@ -343,67 +343,20 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 </section>
 
 <!-- WORKFLOW -->
-<section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px;position:relative;overflow:hidden">
-  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none"></div>
-  <div class="inner" style="position:relative;z-index:1">
-    <div style="text-align:center;margin-bottom:56px">
-      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
-      <div class="bar" style="margin:12px auto 20px"></div>
-      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative">
-      <!-- Connecting line -->
-      <div style="position:absolute;top:36px;left:calc(100%/12);right:calc(100%/12);height:2px;background:linear-gradient(90deg,#00d4ff,#7c3aed,#f5c518);opacity:0.3;pointer-events:none"></div>
-      <?php
-      $steps = [
-        ['01','#00d4ff','M9 9h.01M15 9h.01M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z','Understand','Goals & requirements'],
-        ['02','#00d4ff','M12 19l7-7 3 3-7 7-3-3z','Design','UX & architecture'],
-        ['03','#00d4ff','M16 18l6-6-6-6M8 6L2 12l6 6','Build','AI-assisted dev'],
-        ['04','#a855f7','M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','Validate','QA & testing'],
-        ['05','#f5c518','M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5','Deploy','Cloud & DevOps'],
-        ['06','#f5c518','M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4','Evolve','Iterate & grow'],
-      ];
-      foreach($steps as $s): ?>
-      <div style="text-align:center;padding:0 8px;position:relative;z-index:1">
-        <div style="width:72px;height:72px;border-radius:50%;background:#0e0c18;border:2px solid <?= $s[1] ?>;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 20px <?= $s[1] ?>30">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="<?= $s[1] ?>" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="<?= $s[2] ?>"/></svg>
-        </div>
-        <div style="font-size:10px;font-weight:700;color:<?= $s[1] ?>;letter-spacing:2px;margin-bottom:6px"><?= $s[0] ?></div>
-        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:4px"><?= $s[3] ?></div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.35);line-height:1.5"><?= $s[4] ?></div>
-      </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<!-- ECONOMICS -->
-<section class="section" style="background:#ffffff">
+<section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px">
   <div class="inner">
-    <div class="econ-inner">
-      <div class="econ-left">
-        <div class="eyebrow">Delivery Economics</div>
-        <div class="bar"></div>
-        <h2>More Engineering.<br>Less Overhead.</h2>
-        <p>AI accelerates research, design, development, testing and documentation across the full lifecycle — compressing timelines without compressing quality.</p>
-        <div class="econ-points">
-          <?php foreach([
-            ['#00d4ff','Lean Teams','Only the capability your project needs. No bench, no bloat.'],
-            ['#00d4ff','AI-Accelerated','AI handles and speeds up repetitive engineering work — humans own the decisions.'],
-            ['#f5c518','Senior Oversight','Experienced leadership on every project, every day.'],
-          ] as $ep): ?>
-          <div class="ep">
-            <div class="ep-dot" style="background:<?= $ep[0] ?>"></div>
-            <div><div class="ep-title"><?= $ep[1] ?></div><div class="ep-desc"><?= $ep[2] ?></div></div>
-          </div>
-          <?php endforeach; ?>
-        </div>
-      </div>
-      <div class="econ-stat">
-        <div class="econ-n">70<span class="econ-unit">%</span></div>
-        <div class="econ-label">Up to 70% lower development cost<br>vs. traditional delivery models</div>
-        <div class="econ-note">*Varies by project scope, technology and delivery model.</div>
-      </div>
+    <div style="text-align:center;margin-bottom:40px">
+      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
+      <div class="bar" style="margin:12px auto 0"></div>
+      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
+    </div>
+    <div style="border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.5)">
+      <img
+        src="/assets/images/our-process.png"
+        alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
+        style="width:100%;height:auto;display:block"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>

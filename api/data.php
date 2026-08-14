@@ -291,34 +291,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Process -->
 <section class="section process">
   <div class="section-inner">
-    <div class="section-tag">Our Data Process</div>
-    <h2 class="section-title" style="color:#f1f5f9">From Raw Data To Real Decisions</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <div class="step-title">Audit</div>
-        <div class="step-desc">We map your data sources, quality and gaps across all systems.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></div>
-        <div class="step-title">Unify</div>
-        <div class="step-desc">We build a single trusted data layer from all your sources.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <div class="step-title">Model</div>
-        <div class="step-desc">We structure data models optimised for your business questions.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-        <div class="step-title">Visualise</div>
-        <div class="step-desc">We build dashboards and reports that make data instantly clear.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <div class="step-title">Predict</div>
-        <div class="step-desc">We add predictive models that help you stay ahead of the curve.</div>
-      </div>
+    <div class="section-tag">Our Process</div>
+    <h2 class="section-title">From Idea To Scale</h2>
+    <div style="margin-top:40px;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.35)">
+      <img src="/assets/images/our-process.png" alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve &amp; Launch, Evolve" style="width:100%;height:auto;display:block" loading="lazy"/>
     </div>
   </div>
 </section>

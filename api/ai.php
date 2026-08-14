@@ -276,34 +276,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Process -->
 <section class="section process">
   <div class="section-inner">
-    <div class="section-tag">Our AI Process</div>
-    <h2 class="section-title" style="color:#f1f5f9">From Concept To Intelligence</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <div class="step-title">Assess</div>
-        <div class="step-desc">We identify where AI can create the most value in your business.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <div class="step-title">Model</div>
-        <div class="step-desc">We select and fine-tune the right AI models for your use case.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <div class="step-title">Integrate</div>
-        <div class="step-desc">We embed AI seamlessly into your existing products and workflows.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div>
-        <div class="step-title">Deploy</div>
-        <div class="step-desc">We launch and test AI in production with confidence and safety.</div>
-      </div>
-      <div class="process-step">
-        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <div class="step-title">Optimise</div>
-        <div class="step-desc">We monitor performance and continuously improve your AI systems.</div>
-      </div>
+    <div class="section-tag">Our Process</div>
+    <h2 class="section-title">From Idea To Scale</h2>
+    <div style="margin-top:40px;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.35)">
+      <img src="/assets/images/our-process.png" alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve &amp; Launch, Evolve" style="width:100%;height:auto;display:block" loading="lazy"/>
     </div>
   </div>
 </section>
