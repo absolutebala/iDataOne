@@ -197,28 +197,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We rebuilt a 460-member Honda CB350 riding club with an inline CMS, live member profiles, gamification and zero separate admin pages — admins manage everything from the same pages members browse.</div>
           <a href="/case-study/knight-ryders" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="16" width="128" height="20" rx="5" fill="rgba(30,41,59,0.85)"/>
-            <rect x="22" y="22" width="50" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
-            <rect x="118" y="20" width="20" height="8" rx="4" fill="rgba(245,158,11,0.7)"/>
-            <rect x="16" y="42" width="60" height="32" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <circle cx="36" cy="54" r="9" fill="rgba(245,158,11,0.2)"/>
-            <rect x="50" y="50" width="18" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="50" y="58" width="14" height="3" rx="1.5" fill="rgba(245,158,11,0.3)"/>
-            <polygon points="22,80 25,74 29,78 33,72 37,76 41,70 45,74 48,80" fill="rgba(245,158,11,0.25)" stroke="rgba(217,119,6,0.4)" stroke-width="1"/>
-            <rect x="84" y="42" width="60" height="32" rx="5" fill="rgba(255,255,255,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="90" y="50" width="16" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="90" y="58" width="44" height="8" rx="4" fill="rgba(245,158,11,0.1)"/>
-            <rect x="90" y="58" width="30" height="8" rx="4" fill="rgba(245,158,11,0.4)"/>
-            <rect x="90" y="70" width="30" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="16" y="82" width="128" height="22" rx="5" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <circle cx="30" cy="93" r="7" fill="rgba(245,158,11,0.2)"/>
-            <circle cx="48" cy="93" r="7" fill="rgba(245,158,11,0.15)"/>
-            <circle cx="66" cy="93" r="7" fill="rgba(245,158,11,0.2)"/>
-            <rect x="80" y="89" width="50" height="5" rx="2.5" fill="rgba(217,119,6,0.25)"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
+          <img src="/assets/images/knight-ryders-hero.png" alt="The Knight Ryders" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
       </div>
 

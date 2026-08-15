@@ -282,28 +282,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- Digital: Knight Ryders -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/knight-ryders'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#fefce8,#fef3c7)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(30,41,59,0.85)"/>
-            <rect x="28" y="24" width="80" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
-            <rect x="214" y="20" width="38" height="16" rx="8" fill="rgba(245,158,11,0.7)"/>
-            <rect x="28" y="56" width="108" height="56" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <circle cx="62" cy="76" r="16" fill="rgba(245,158,11,0.15)"/>
-            <rect x="86" y="68" width="40" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-            <rect x="86" y="80" width="30" height="5" rx="2.5" fill="rgba(245,158,11,0.35)"/>
-            <polygon points="32,100 38,88 46,96 54,82 62,90 70,80 78,88 84,82 90,100" fill="rgba(245,158,11,0.3)" stroke="rgba(217,119,6,0.5)" stroke-width="1"/>
-            <rect x="148" y="56" width="100" height="56" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="158" y="68" width="50" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-            <rect x="158" y="82" width="80" height="10" rx="5" fill="rgba(245,158,11,0.12)"/>
-            <rect x="158" y="82" width="54" height="10" rx="5" fill="rgba(245,158,11,0.45)"/>
-            <rect x="158" y="98" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="28" y="124" width="220" height="30" rx="8" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <circle cx="50" cy="139" r="10" fill="rgba(245,158,11,0.2)"/>
-            <circle cx="76" cy="139" r="10" fill="rgba(245,158,11,0.15)"/>
-            <circle cx="102" cy="139" r="10" fill="rgba(245,158,11,0.2)"/>
-            <rect x="120" y="134" width="110" height="6" rx="3" fill="rgba(217,119,6,0.2)"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/knight-ryders-hero.png" alt="The Knight Ryders" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
