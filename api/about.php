@@ -345,12 +345,16 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <!-- WORKFLOW -->
 <section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px">
   <div class="inner">
-
-    <div>
+    <div style="text-align:center;margin-bottom:40px">
+      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
+      <div class="bar" style="margin:12px auto 0"></div>
+      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
+    </div>
+    <div style="border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.5)">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
-        style="width:80%;height:auto;display:block;margin:0 auto"
+        style="width:100%;height:auto;display:block"
         loading="lazy"
       />
     </div>
