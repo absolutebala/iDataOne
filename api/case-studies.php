@@ -374,7 +374,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
         <div class="case-card-visual" style="padding:0;overflow:hidden">
-          <img src="/assets/images/telecom-pm-dashboard.png" alt="Telecom Infrastructure PMS Dashboard" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
+          <img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
