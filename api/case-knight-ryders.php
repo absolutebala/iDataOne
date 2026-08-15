@@ -137,6 +137,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         src="/assets/images/knight-ryders-hero.png"
         alt="The Knight Ryders — Honda CB350 riding community digital platform with member profiles, badges and leaderboard"
         loading="eager"
+        style="cursor:zoom-in"
+        onmouseover="hzOpen(this.src,this.alt)"
       />
     </div>
   </div>

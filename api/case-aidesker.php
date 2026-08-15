@@ -122,6 +122,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         src="/assets/images/aidesker-hero.png"
         alt="aiDesker — AI chat platform with CRM, Lead Capture, Instant Integration and AI providers"
         loading="eager"
+        style="cursor:zoom-in"
+        onmouseover="hzOpen(this.src,this.alt)"
       />
     </div>
   </div>
