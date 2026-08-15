@@ -44,10 +44,10 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;margin-bottom:16px;color:#ffffff}
 .hero-sub{font-size:18px;font-weight:500;color:rgba(255,255,255,0.65);margin-bottom:28px;letter-spacing:-0.2px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
-.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0e0c18;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#0891b2;color:#fff;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
-.btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.7);color:#f5c518;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-o:hover{background:rgba(245,197,24,0.1);border-color:#f5c518;transform:translateY(-1px)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#f5c518;color:#0a0f1e;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-o:hover{opacity:0.9;transform:translateY(-1px)}
 .hero-img{width:100%;border-radius:20px;display:block;border:1px solid rgba(0,212,255,0.15);box-shadow:0 32px 80px rgba(0,0,0,0.5);position:relative}
 .hero-img-wrap{position:relative;width:100%}
 .hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0e0c18);border-radius:0 0 20px 20px;pointer-events:none}
@@ -153,7 +153,8 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 @media(max-width:768px){
   .section{padding:64px 20px}
   .hero{padding:52px 20px 48px}
-  .team-head-card{grid-template-columns:1fr;text-align:center}
+  .team-grid{grid-template-columns:1fr}
+  .team-head-card{text-align:center}
   .avatar{margin:0 auto}
   .compare-wrap{grid-template-columns:1fr}
   .wf-steps{grid-template-columns:1fr 1fr}
@@ -240,17 +241,15 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
     <p style="font-size:14px;color:#64748b;margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
-    <div class="team-head-card">
-      <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:88px;height:88px;object-fit:cover;object-position:center top">
-      <div>
+    <div class="team-grid">
+      <div class="team-head-card">
+        <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top">
         <div class="head-badge">Delivery Head</div>
         <div class="head-name">Bala Kandaswamy</div>
         <div class="head-title">Software Delivery Leader · 20+ Years</div>
         <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
       </div>
-    </div>
-    <div class="plus-bar">Supported by four specialised AI team members — each owning a distinct delivery domain. <em>Together, they cover the full stack.</em></div>
-    <div class="ai-grid">
+      <div class="ai-grid">
       <?php foreach([
         ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
         ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
@@ -350,7 +349,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
       <div class="bar" style="margin:12px auto 0"></div>
       <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
     </div>
-    <div style="border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.5)">
+    <div>
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"

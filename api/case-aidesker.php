@@ -115,7 +115,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <div class="cs-stat"><div class="cs-stat-num"><span>1-Line</span></div><div class="cs-stat-label">Embed to go live</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>2</span></div><div class="cs-stat-label">AI providers supported</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>10+</span></div><div class="cs-stat-label">API endpoints</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>Live</span></div><div class="cs-stat-label">Production status</div></div>
     </div>
     </div>
     <div class="cs-hero-img">

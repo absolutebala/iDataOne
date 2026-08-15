@@ -393,7 +393,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="section-inner">
     <div class="section-tag">Our Process</div>
     <h2 class="section-title">From Idea To Scale</h2>
-    <div style="margin-top:40px;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.35)">
+    <div style="margin-top:40px">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
@@ -407,7 +407,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Products ── -->
 <section class="section products">
   <div class="section-inner">
-    <div class="section-tag">Explore Our Products</div>
     <h2 class="section-title">Built by iDataOne</h2>
     <p class="section-sub">AI-powered products designed to solve real problems for real people.</p>
     <div class="products-grid">
@@ -437,20 +436,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
       <div class="product-card">
-        <div class="product-card-img sky">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="20" width="140" height="40" rx="14" fill="rgba(255,255,255,0.85)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
-            <rect x="32" y="30" width="90" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="32" y="40" width="70" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <circle cx="148" cy="40" r="7" fill="rgba(14,165,233,0.15)"/>
-            <rect x="40" y="76" width="140" height="40" rx="14" fill="rgba(14,165,233,0.1)" stroke="rgba(14,165,233,0.25)" stroke-width="1"/>
-            <rect x="52" y="86" width="100" height="5" rx="2.5" fill="rgba(14,165,233,0.4)"/>
-            <rect x="52" y="96" width="80" height="4" rx="2" fill="rgba(14,165,233,0.25)"/>
-            <circle cx="44" cy="96" r="7" fill="rgba(14,165,233,0.2)"/>
-            <circle cx="96" cy="64" r="4" fill="rgba(14,165,233,0.2)"/>
-            <circle cx="108" cy="64" r="4" fill="rgba(14,165,233,0.15)"/>
-            <circle cx="120" cy="64" r="4" fill="rgba(14,165,233,0.1)"/>
-          </svg>
+        <div class="product-card-img" style="background:#0d0020;padding:0;overflow:hidden">
+          <img src="/assets/images/aidesker-hero.png" alt="aiDesker" style="width:100%;height:160px;object-fit:cover;object-position:center top;display:block"/>
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-soon">Coming Soon</div>
