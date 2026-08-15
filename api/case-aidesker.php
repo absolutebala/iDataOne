@@ -43,10 +43,10 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden;padding-top:68px}
-.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(14,165,233,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(56,189,248,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#f0f9ff 45%,#e0f2fe 100%)}
+.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 40%,rgba(139,92,246,0.12),transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(167,139,250,0.1),transparent 45%),radial-gradient(ellipse at 60% 80%,rgba(99,102,241,0.08),transparent 40%),linear-gradient(135deg,#faf8ff 0%,#f3f0ff 40%,#ede9fe 70%,#f5f3ff 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(14,165,233,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(56,189,248,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.cs-hero-left{}.cs-hero-img{display:flex;align-items:center;justify-content:center}.cs-hero-img img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(109,40,217,0.18),0 8px 24px rgba(0,0,0,0.08);transition:transform 0.4s ease}.cs-hero-img img:hover{transform:translateY(-4px)}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#0ea5e9;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:560px}
@@ -91,6 +91,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-cta-btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0ea5e9,#38bdf8);color:#fff;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:opacity 0.2s;flex-shrink:0}
 .cs-cta-btn:hover{opacity:0.9}
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-img{display:none}
   .cs-hero-stats{gap:24px}
   .cs-grid{grid-template-columns:1fr}
   .cs-features{grid-template-columns:1fr}
@@ -106,14 +108,23 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · SaaS · Conversational AI</div>
-    <h1 class="cs-hero-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</h1>
-    <p class="cs-hero-sub">How we designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.</p>
-    <div class="cs-hero-stats">
+    <div class="cs-hero-left">
+      <div class="cs-badge">Digital Products · SaaS · Conversational AI</div>
+      <h1 class="cs-hero-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</h1>
+      <p class="cs-hero-sub">How we designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.</p>
+      <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>1-Line</span></div><div class="cs-stat-label">Embed to go live</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>2</span></div><div class="cs-stat-label">AI providers supported</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>10+</span></div><div class="cs-stat-label">API endpoints</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>Live</span></div><div class="cs-stat-label">Production status</div></div>
+    </div>
+    </div>
+    <div class="cs-hero-img">
+      <img
+        src="/assets/images/aidesker-hero.png"
+        alt="aiDesker — AI chat platform with CRM, Lead Capture, Instant Integration and AI providers"
+        loading="eager"
+      />
     </div>
   </div>
 </section>
@@ -135,68 +146,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Purpose-Built, Multi-Tenant Conversational AI Platform</h2>
     <p class="cs-p">We built aiDesker from the ground up — a tenant-isolated SaaS platform covering the full lifecycle from knowledge ingestion to embedded widget, lead capture, CRM sync and platform-wide administration.</p>
 
-    <div class="cs-visual">
-      <svg viewBox="0 0 720 380" width="720" height="380" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="10" width="320" height="360" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(14,165,233,0.2)" stroke-width="1.5"/>
-        <rect x="20" y="10" width="320" height="36" rx="16" fill="rgba(14,165,233,0.06)"/>
-        <rect x="36" y="22" width="80" height="8" rx="4" fill="rgba(14,165,233,0.25)"/>
-        <rect x="36" y="60" width="288" height="60" rx="10" fill="rgba(240,249,255,0.7)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
-        <circle cx="58" cy="90" r="14" fill="rgba(14,165,233,0.15)"/>
-        <rect x="80" y="80" width="160" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="80" y="92" width="120" height="5" rx="2.5" fill="rgba(14,165,233,0.25)"/>
-        <rect x="36" y="132" width="200" height="48" rx="10" fill="#fff" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-        <rect x="48" y="144" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="48" y="156" width="160" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="164" width="120" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-        <rect x="246" y="132" width="78" height="48" rx="10" fill="rgba(56,189,248,0.1)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
-        <circle cx="285" cy="156" r="14" fill="rgba(14,165,233,0.2)"/>
-        <rect x="36" y="190" width="288" height="140" rx="10" fill="#fff" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-        <rect x="48" y="202" width="60" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="48" y="220" width="264" height="1" fill="rgba(226,232,240,0.8)"/>
-        <rect x="48" y="230" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="220" y="228" width="50" height="9" rx="4" fill="rgba(34,197,94,0.15)"/>
-        <rect x="48" y="248" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="220" y="246" width="50" height="9" rx="4" fill="rgba(245,158,11,0.18)"/>
-        <rect x="48" y="266" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="220" y="264" width="50" height="9" rx="4" fill="rgba(99,102,241,0.15)"/>
-        <rect x="48" y="284" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="220" y="282" width="50" height="9" rx="4" fill="rgba(34,197,94,0.15)"/>
-        <rect x="48" y="302" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="220" y="300" width="50" height="9" rx="4" fill="rgba(244,63,94,0.15)"/>
-        <rect x="370" y="10" width="330" height="170" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.18)" stroke-width="1.5"/>
-        <rect x="386" y="26" width="80" height="8" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="386" y="44" width="60" height="40" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-        <rect x="394" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="394" y="62" width="40" height="8" rx="3" fill="rgba(99,102,241,0.3)"/>
-        <rect x="456" y="44" width="60" height="40" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-        <rect x="464" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="464" y="62" width="40" height="8" rx="3" fill="rgba(20,184,166,0.3)"/>
-        <rect x="526" y="44" width="60" height="40" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-        <rect x="534" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="534" y="62" width="40" height="8" rx="3" fill="rgba(245,158,11,0.3)"/>
-        <rect x="386" y="96" width="298" height="64" rx="8" fill="rgba(248,250,252,0.9)"/>
-        <circle cx="406" cy="116" r="10" fill="rgba(99,102,241,0.2)"/>
-        <rect x="424" y="110" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="424" y="120" width="140" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <circle cx="406" cy="144" r="10" fill="rgba(20,184,166,0.2)"/>
-        <rect x="424" y="138" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="424" y="148" width="140" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="370" y="196" width="330" height="174" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(14,165,233,0.18)" stroke-width="1.5"/>
-        <rect x="386" y="212" width="90" height="8" rx="4" fill="rgba(14,165,233,0.25)"/>
-        <rect x="386" y="234" width="150" height="62" rx="8" fill="rgba(240,249,255,0.7)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-        <circle cx="402" cy="252" r="8" fill="rgba(14,165,233,0.2)"/>
-        <rect x="416" y="248" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="416" y="258" width="80" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="396" y="272" width="120" height="14" rx="7" fill="rgba(14,165,233,0.6)"/>
-        <rect x="546" y="234" width="138" height="120" rx="8" fill="rgba(240,249,255,0.5)" stroke="rgba(14,165,233,0.12)" stroke-width="1"/>
-        <rect x="558" y="246" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <circle cx="660" cy="248" r="6" fill="rgba(34,197,94,0.3)"/>
-        <rect x="558" y="262" width="114" height="1" fill="rgba(226,232,240,0.6)"/>
-        <rect x="558" y="270" width="50" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="558" y="282" width="70" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="558" y="294" width="60" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="558" y="312" width="114" height="22" rx="6" fill="rgba(14,165,233,0.15)"/>
-      </svg>
+    <div class="cs-visual" style="padding:0;background:transparent;border:none">
+      <img
+        src="/assets/images/aidesker-solution.png"
+        alt="aiDesker architecture — AI Model Layer, Knowledge Base, Multi-Tenant, Embeddable Widget, Lead Capture, CRM Automation"
+        style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(109,40,217,0.15),0 8px 24px rgba(0,0,0,0.1)"
+        loading="lazy"
+      />
     </div>
 
     <div class="cs-features">
