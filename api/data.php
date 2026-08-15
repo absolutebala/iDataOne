@@ -57,7 +57,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .banner-h1 em{font-style:normal;background:linear-gradient(90deg,#b45309,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .banner-sub{font-size:16px;color:#57534e;line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#b45309,#d97706);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#b45309;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1.5px solid rgba(180,83,9,0.35);color:#b45309;font-size:14px;font-weight:600;text-decoration:none;background:rgba(180,83,9,0.05);transition:all 0.2s}
 .btn-secondary:hover{background:rgba(180,83,9,0.1);border-color:#b45309;transform:translateY(-1px)}

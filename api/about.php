@@ -60,7 +60,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .stat-label{font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px;line-height:1.4}
 
 /* ── TEAM ── */
-.team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.2);border-radius:20px;margin-bottom:24px}
+.team-head-card{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:32px 40px;background:#f0f9ff;border:1px solid rgba(8,145,178,0.25);border-radius:20px;margin-bottom:24px}
 .avatar{width:88px;height:88px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(0,212,255,0.35);box-shadow:0 0 24px rgba(0,212,255,0.15)}
 .head-badge{font-size:10px;font-weight:700;letter-spacing:2px;color:#0891b2;text-transform:uppercase;margin-bottom:6px}
 .head-name{font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;color:#0f172a}
@@ -289,7 +289,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div class="cs-list">
       <?php
       $cases = [
-        ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','The Knight Ryders — WordPress to a living community platform with inline CMS and gamification.'],
+        ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','80% less maintenance — custom inline CMS replacing WordPress for a 460-member riding club.'],
         ['digital','#00d4ff','/case-study/telecom-pm-platform','Infrastructure PMS','Telecom project management platform for Venus Energy — PO to close-out, multi-trade, live dashboards.'],
         ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','aiDesker — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
         ['ai','#a855f7','/case-study/aidesker','Conversational AI','Knowledge-grounded AI chat assistant with lead capture, BYO-key and real-time CRM sync.'],

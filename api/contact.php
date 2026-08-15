@@ -337,6 +337,7 @@ body{
             <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
             <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
             <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
+            <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
           </div>
           <div class="service-pills" id="svc-products" style="display:none">
             <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
@@ -351,7 +352,7 @@ body{
           </div>
         </div>
         <button type="submit" class="submit-btn">
-          Book Discovery Call
+          Submit
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
         <p class="form-note">No spam. No sales pressure. Just a conversation.</p>

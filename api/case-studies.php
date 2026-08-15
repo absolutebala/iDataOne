@@ -310,7 +310,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-category cat-digital">Digital Products</div>
           <div class="case-metric metric-digital">460+</div>
           <div class="case-metric-label">members on a living community platform</div>
-          <div class="case-title">From WordPress Blog to a Living Community Platform — The Knight Ryders</div>
+          <div class="case-title">The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%</div>
           <div class="case-desc">We rebuilt a Honda CB350 riding club with an inline CMS, live member profiles, gamification and zero separate admin pages.</div>
           <div class="case-tags"><span class="case-tag">Custom CMS</span><span class="case-tag">Community</span><span class="case-tag">Gamification</span></div>
           <a href="/case-study/knight-ryders" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>

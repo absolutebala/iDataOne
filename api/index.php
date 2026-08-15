@@ -186,7 +186,7 @@ width:100%;
 width:270px;
 max-width:80%;
 margin-bottom:45px;
-
+display:none;
 filter:drop-shadow(0px 15px 40px rgba(99,102,241,0.12)) drop-shadow(0px 10px 20px rgba(0,0,0,0.06));
 }
 
@@ -514,7 +514,7 @@ text-transform:uppercase;
 .cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
 .cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
 .cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:36px}
+.cl-sub{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.7;margin-bottom:36px}
 .cl-trust{display:flex;flex-direction:column;gap:0}
 .cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:none}
 .cl-trust-item:first-child{border-top:none}
@@ -1152,7 +1152,7 @@ letter-spacing:0.3px;
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
 <div style="display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap">
-  <div onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
+  <div onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s,transform 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
   <a href="/case-studies" style="padding:13px 28px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.6);color:#f5c518;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none">CASE STUDIES →</a>
 </div>
 </div>
@@ -1530,7 +1530,6 @@ letter-spacing:0.3px;
 <div class="contact-inner">
 
   <div class="contact-left">
-    <div class="cl-label">Get in Touch</div>
     <div class="cl-heading">Let's Build<br>Something <em>Intelligent</em></div>
     <p class="cl-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
     <div class="cl-trust">
@@ -1598,6 +1597,7 @@ letter-spacing:0.3px;
         <div class="service-pill" onclick="selectService(this,'Custom Software')">Custom Software</div>
         <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
         <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
+        <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
       </div>
       <div class="service-pills" id="svc-products" style="display:none">
         <div class="service-pill" onclick="selectService(this,'Infra360 PMS')">Infra360 PMS</div>
@@ -1614,7 +1614,7 @@ letter-spacing:0.3px;
     </div>
 
     <button type="submit" class="submit-btn">
-      Book Discovery Call
+      Submit
       <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
     <p class="form-note">No spam. No sales pressure. Just a conversation.</p>

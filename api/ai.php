@@ -49,7 +49,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden}
 /* Nav via _nav.php */
-.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:linear-gradient(145deg,#12003a 0%,#1e0050 30%,#2a0068 60%,#1a0040 100%)}
+.banner{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 40%,rgba(139,92,246,0.14),transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(167,139,250,0.1),transparent 45%),linear-gradient(145deg,#1a0535 0%,#220845 30%,#2d0a5e 60%,#1a0535 100%)}
 .banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 15% 50%,rgba(124,58,237,0.15),transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(0,220,255,0.08),transparent 50%);pointer-events:none}
 .banner-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .banner-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e9d5ff;margin-bottom:20px}
@@ -57,7 +57,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .banner-h1 em{font-style:normal;background:linear-gradient(90deg,#e9d5ff,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .banner-sub{font-size:16px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#7c3aed,#a855f7);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#7c3aed;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
 .btn-secondary:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}

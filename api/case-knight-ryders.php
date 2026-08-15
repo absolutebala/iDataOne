@@ -4,27 +4,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: The Knight Ryders — From WordPress Blog to a Living Community Platform | iDataOne</title>
-<meta name="description" content="How iDataOne rebuilt The Knight Ryders, a 460-member Honda CB350 riding club, from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
+<title>Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne</title>
+<meta name="description" content="How iDataOne replaced The Knight Ryders' WordPress site with a custom inline CMS that cut content update and maintenance time by 80%, while adding live member profiles and gamification.">
 <meta name="keywords" content="custom CMS development, community platform, WordPress migration, Next.js Supabase, inline editing, gamification platform, riding club website, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/knight-ryders">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: The Knight Ryders — From WordPress Blog to a Living Community Platform | iDataOne">
+<meta property="og:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
 <meta property="og:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
 <meta property="og:url" content="https://idataone.com/case-study/knight-ryders">
 <meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: The Knight Ryders — From WordPress Blog to a Living Community Platform | iDataOne">
+<meta name="twitter:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
 <meta name="twitter:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Knight Ryders — From WordPress Blog to a Living Community Platform",
+  "headline": "The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%",
   "description": "How iDataOne rebuilt a 460-member Honda CB350 riding club from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
   "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
@@ -121,7 +121,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div class="cs-badge">Digital Products · Custom CMS · Community Platform</div>
-    <h1 class="cs-hero-title">The Knight Ryders — From WordPress Blog to a Living Community Platform</h1>
+    <h1 class="cs-hero-title">The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%</h1>
     <p class="cs-hero-sub">How we rebuilt a 460-member Honda CB350 riding club from a static blog into a fully custom community platform — with an inline CMS, live member profiles, gamification and zero separate admin pages.</p>
     <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>460+</span></div><div class="cs-stat-label">Members Migrated</div></div>

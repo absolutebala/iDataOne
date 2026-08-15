@@ -58,7 +58,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .banner-h1 em{font-style:normal;background:linear-gradient(90deg,#0891b2,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .banner-sub{font-size:16px;color:#334e68;line-height:1.75;margin-bottom:36px;max-width:480px}
 .banner-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#0891b2,#06b6d4);color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#0891b2;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;border:1.5px solid rgba(8,145,178,0.4);color:#0891b2;font-size:14px;font-weight:600;text-decoration:none;background:rgba(8,145,178,0.06);transition:all 0.2s}
 .btn-secondary:hover{background:rgba(8,145,178,0.12);border-color:#0891b2;transform:translateY(-1px)}
@@ -164,7 +164,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="banner">
   <div class="banner-inner">
     <div>
-      <div class="banner-tag">Digital Products</div>
       <h1 class="banner-h1">Digitalise Your<br>Business <em>with AI</em></h1>
       <p class="banner-sub">AI-Assisted Engineering. Faster Delivery. Lower Development Costs. Better Outcomes.</p>
       <div class="banner-btns">
@@ -188,14 +187,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Success Stories ── -->
 <section class="section stories" id="stories">
   <div class="section-inner">
-    <div class="section-tag">Success Stories</div>
     <h2 class="section-title">Digital Products. Real Impact.</h2>
     <p class="section-sub">Real results from businesses that chose to build smarter.</p>
     <div class="stories-grid">
       <div class="story-card" onclick="location.href='/case-study/knight-ryders'" style="cursor:pointer">
         <div>
           <div class="story-tag">Custom CMS · Community Platform</div>
-          <div class="story-title">From WordPress Blog to a Living Community Platform — The Knight Ryders</div>
+          <div class="story-title">The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%</div>
           <div class="story-desc">We rebuilt a 460-member Honda CB350 riding club with an inline CMS, live member profiles, gamification and zero separate admin pages — admins manage everything from the same pages members browse.</div>
           <a href="/case-study/knight-ryders" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
