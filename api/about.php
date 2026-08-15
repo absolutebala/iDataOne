@@ -237,44 +237,45 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <!-- TEAM -->
 <section class="section" style="background:#ffffff">
   <div class="inner">
-    <div class="eyebrow">The Team</div>
-    <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
-    <p style="font-size:14px;color:#64748b;margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
-    <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden">
-      <div class="team-grid" style="padding:32px;gap:0">
-        <div class="team-head-card" style="border-right:1px solid rgba(8,145,178,0.12);padding-right:32px;border-radius:0;background:transparent;border-top:none;border-bottom:none;border-left:none">
-          <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top">
-          <div class="head-badge">Delivery Head</div>
-          <div class="head-name">Bala Kandaswamy</div>
-          <div class="head-title">Software Delivery Leader · 20+ Years</div>
-          <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
-        </div>
-        <div style="padding-left:32px"><div class="ai-grid" style="grid-template-columns:1fr 1fr;gap:16px">
-      <?php foreach([
-        ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
-        ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
-        ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.'],
-        ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.'],
-      ] as $m): ?>
-      <div class="ai-card">
-        <div class="ai-icon">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="bg<?= $m[0] ?>" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#f5c518"/></linearGradient></defs>
-            <ellipse cx="16" cy="15" rx="7" ry="8" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M9 15c-3 0-4.5 1.3-4.5 3.5S7 22 9 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M23 15c3 0 4.5 1.3 4.5 3.5S25 22 23 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M12 10c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="13" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
-            <circle cx="19" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
-            <path d="M14 19v3M18 19v3M14 22h4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="ai-name"><?= $m[0] ?></div>
-        <div class="ai-role"><?= $m[1] ?></div>
-        <div class="ai-desc"><?= $m[2] ?></div>
+    <p style="font-size:14px;color:#64748b;margin-bottom:32px">Senior human leadership + specialised AI capability. End to end.</p>
+    <!-- Outer box -->
+    <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:1fr 1fr">
+      <!-- Left: Bala -->
+      <div style="padding:40px;display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid rgba(8,145,178,0.1)">
+        <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top;margin-bottom:20px">
+        <div class="head-badge">Delivery Head</div>
+        <div class="head-name">Bala Kandaswamy</div>
+        <div class="head-title">Software Delivery Leader · 20+ Years</div>
+        <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
       </div>
-      <?php endforeach; ?>
+      <!-- Right: 2x2 AI grid -->
+      <div style="padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start">
+        <?php foreach([
+          ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
+          ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
+          ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.'],
+          ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.'],
+        ] as $m): ?>
+        <div class="ai-card">
+          <div class="ai-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="bg<?= $m[0] ?>" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#f5c518"/></linearGradient></defs>
+              <ellipse cx="16" cy="15" rx="7" ry="8" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M9 15c-3 0-4.5 1.3-4.5 3.5S7 22 9 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M23 15c3 0 4.5 1.3 4.5 3.5S25 22 23 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 10c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="13" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
+              <circle cx="19" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
+              <path d="M14 19v3M18 19v3M14 22h4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="ai-name"><?= $m[0] ?></div>
+          <div class="ai-role"><?= $m[1] ?></div>
+          <div class="ai-desc"><?= $m[2] ?></div>
+        </div>
+        <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </section>
@@ -282,9 +283,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <!-- CASE STUDIES -->
 <section class="section" style="background:#f0f9ff">
   <div class="inner">
-    <div class="eyebrow">Case Studies</div>
-    <div class="bar"></div>
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
+<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
     <p style="font-size:14px;color:#64748b;margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
     <div class="cs-list">
       <?php
@@ -346,11 +345,9 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px">
   <div class="inner">
     <div style="text-align:center;margin-bottom:40px">
-      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
-      <div class="bar" style="margin:12px auto 0"></div>
-      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
+<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
     </div>
-    <div style="border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.5)">
+    <div style="width:80%;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.4)">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"

@@ -393,7 +393,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="section-inner">
     <div class="section-tag">Our Process</div>
     <h2 class="section-title">From Idea To Scale</h2>
-    <div style="margin-top:40px;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.35)">
+    <div style="margin-top:40px;width:80%;margin-left:auto;margin-right:auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.25)">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
