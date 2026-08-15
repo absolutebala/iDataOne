@@ -150,7 +150,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         alt="aiDesker architecture — AI Model Layer, Knowledge Base, Multi-Tenant, Embeddable Widget, Lead Capture, CRM Automation"
         style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(109,40,217,0.15),0 8px 24px rgba(0,0,0,0.1)"
         loading="lazy"
-      />
+       style="cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)" onmouseout="hzClose(event)"/>
     </div>
 
     <div class="cs-features">
@@ -267,5 +267,46 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <?php include __DIR__ . '/_footer.php'; ?>
 
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out" onmouseout="hzClose(event)">
+  <img id="hz-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+
+  function hzOpen(src,alt){
+    clearTimeout(closeTimer);
+    im.src=src; im.alt=alt||'';
+    ov.style.display='flex';
+    ov.style.background='rgba(0,0,0,0)';
+    im.style.transform='scale(0.85)'; im.style.opacity='0';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        ov.style.background='rgba(0,0,0,0.82)';
+        im.style.transform='scale(1)'; im.style.opacity='1';
+      });
+    });
+  }
+
+  function hzClose(e){
+    if(e && e.relatedTarget && (e.relatedTarget===im || e.relatedTarget===ov || ov.contains(e.relatedTarget))) return;
+    ov.style.background='rgba(0,0,0,0)';
+    im.style.transform='scale(0.85)'; im.style.opacity='0';
+    clearTimeout(closeTimer);
+    closeTimer=setTimeout(function(){ ov.style.display='none'; },350);
+  }
+
+  window.hzOpen=hzOpen;
+  window.hzClose=hzClose;
+
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') hzClose(); });
+  ov.addEventListener('mouseout',hzClose);
+  im.addEventListener('mouseout',hzClose);
+})();
+</script>
 </body>
 </html>
