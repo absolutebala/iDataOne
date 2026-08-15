@@ -45,12 +45,12 @@
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden;padding-top:68px}
 
 /* Hero — dark with amber accent */
-.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(180,83,9,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(217,119,6,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#fefce8 45%,#fef3c7 100%)}
+.cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 40%,rgba(0,180,200,0.12),transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(20,30,80,0.2),transparent 45%),linear-gradient(145deg,#0a0f1e 0%,#0d1a35 40%,#0f1e3a 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(245,158,11,0.12),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(251,191,36,0.08),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
-.cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin-bottom:24px}
-.cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.cs-hero-left{}.cs-hero-img{display:flex;align-items:center;justify-content:center}.cs-hero-img img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(0,180,200,0.18),0 8px 24px rgba(0,0,0,0.4);transition:transform 0.4s ease}.cs-hero-img img:hover{transform:translateY(-4px)}
+.cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:24px}
+.cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:20px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:560px}
 .cs-hero-stats{display:flex;gap:40px;padding-top:28px;border-top:1px solid rgba(0,0,0,0.07);flex-wrap:wrap}
 .cs-stat{text-align:left}
@@ -104,6 +104,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-cta-btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#d97706,#f59e0b);color:#fff;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:opacity 0.2s;flex-shrink:0}
 .cs-cta-btn:hover{opacity:0.9}
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-img{display:none}
   .cs-hero-stats{gap:24px}
   .cs-cms-inner{grid-template-columns:1fr}
   .cs-grid{grid-template-columns:1fr}
@@ -120,6 +122,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
+    <div class="cs-hero-left">
     <h1 class="cs-hero-title">The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%</h1>
     <p class="cs-hero-sub">How we rebuilt a 460-member Honda CB350 riding club from a static blog into a fully custom community platform — with an inline CMS, live member profiles, gamification and zero separate admin pages.</p>
     <div class="cs-hero-stats">
@@ -127,6 +130,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <div class="cs-stat"><div class="cs-stat-num"><span>88+</span></div><div class="cs-stat-label">Rides Logged</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>12</span></div><div class="cs-stat-label">Badge Tiers</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>80%</span></div><div class="cs-stat-label">Less Maintenance</div></div>
+    </div>
+    </div>
+    <div class="cs-hero-img">
+      <img
+        src="/assets/images/knight-ryders-hero.png"
+        alt="The Knight Ryders — Honda CB350 riding community digital platform with member profiles, badges and leaderboard"
+        loading="eager"
+      />
     </div>
   </div>
 </section>
@@ -169,79 +180,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Purpose-Built Community Platform with an Inline CMS</h2>
     <p class="cs-p">We rebuilt the site from the ground up on a modern stack — Next.js, Supabase and Vercel — replacing the WordPress backend entirely while preserving the club's SEO equity and existing content through a careful, verified migration.</p>
 
-    <div class="cs-visual">
-      <svg viewBox="0 0 720 380" width="720" height="380" xmlns="http://www.w3.org/2000/svg">
-        <!-- Main browser frame -->
-        <rect x="20" y="10" width="680" height="360" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
-        <rect x="20" y="10" width="680" height="36" rx="16" fill="rgba(245,158,11,0.07)"/>
-        <rect x="20" y="32" width="680" height="14" fill="rgba(245,158,11,0.07)"/>
-        <circle cx="42" cy="28" r="5" fill="rgba(244,63,94,0.3)"/>
-        <circle cx="58" cy="28" r="5" fill="rgba(245,158,11,0.3)"/>
-        <circle cx="74" cy="28" r="5" fill="rgba(34,197,94,0.3)"/>
-        <rect x="100" y="22" width="300" height="12" rx="6" fill="rgba(15,23,42,0.06)"/>
-        <!-- Edit mode toggle -->
-        <rect x="576" y="18" width="100" height="20" rx="10" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
-        <circle cx="666" cy="28" r="8" fill="rgba(245,158,11,0.8)"/>
-        <rect x="586" y="23" width="50" height="5" rx="2.5" fill="rgba(217,119,6,0.5)"/>
-        <!-- Hero section with inline edit indicator -->
-        <rect x="36" y="58" width="648" height="80" rx="10" fill="rgba(30,41,59,0.9)"/>
-        <rect x="36" y="58" width="648" height="80" rx="10" fill="none" stroke="rgba(245,158,11,0.6)" stroke-width="2" stroke-dasharray="6,3"/>
-        <rect x="52" y="74" width="120" height="10" rx="4" fill="rgba(255,255,255,0.25)"/>
-        <rect x="52" y="90" width="200" height="18" rx="4" fill="rgba(255,255,255,0.15)"/>
-        <rect x="52" y="114" width="80" height="12" rx="4" fill="rgba(245,158,11,0.5)"/>
-        <rect x="642" y="62" width="36" height="20" rx="6" fill="rgba(245,158,11,0.9)"/>
-        <rect x="648" y="69" width="16" height="4" rx="2" fill="#fff"/>
-        <rect x="648" y="75" width="10" height="4" rx="2" fill="#fff"/>
-        <!-- Member grid -->
-        <rect x="36" y="152" width="200" height="110" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <circle cx="86" cy="186" r="22" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
-        <rect x="116" y="175" width="80" height="7" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="116" y="188" width="56" height="5" rx="2.5" fill="rgba(245,158,11,0.3)"/>
-        <rect x="116" y="200" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <!-- Crown badge -->
-        <polygon points="46,226 52,212 60,222 68,208 76,218 82,208 88,218 94,212 100,226" fill="rgba(245,158,11,0.25)" stroke="rgba(217,119,6,0.4)" stroke-width="1"/>
-        <rect x="46" y="228" width="54" height="18" rx="4" fill="rgba(245,158,11,0.15)"/>
-        <rect x="52" y="234" width="42" height="5" rx="2.5" fill="rgba(217,119,6,0.3)"/>
-        <rect x="118" y="224" width="100" height="8" rx="4" fill="rgba(30,41,59,0.08)"/>
-        <rect x="118" y="224" width="65" height="8" rx="4" fill="rgba(245,158,11,0.4)"/>
-        <rect x="118" y="238" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-        <!-- Leaderboard -->
-        <rect x="248" y="152" width="200" height="110" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="262" y="164" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="262" y="180" width="16" height="16" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="284" y="183" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="390" y="183" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-        <rect x="262" y="202" width="16" height="16" rx="4" fill="rgba(226,232,240,0.5)"/>
-        <rect x="284" y="205" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="390" y="205" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-        <rect x="262" y="224" width="16" height="16" rx="4" fill="rgba(180,120,60,0.25)"/>
-        <rect x="284" y="227" width="76" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="390" y="227" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-        <rect x="262" y="244" width="172" height="8" rx="4" fill="rgba(245,158,11,0.1)"/>
-        <rect x="262" y="244" width="110" height="8" rx="4" fill="rgba(245,158,11,0.35)"/>
-        <!-- Ride stats -->
-        <rect x="460" y="152" width="224" height="110" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="474" y="164" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="474" y="184" width="20" height="48" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="500" y="196" width="20" height="36" rx="4" fill="rgba(245,158,11,0.45)"/>
-        <rect x="526" y="190" width="20" height="42" rx="4" fill="rgba(245,158,11,0.35)"/>
-        <rect x="552" y="178" width="20" height="54" rx="4" fill="rgba(245,158,11,0.5)"/>
-        <rect x="578" y="172" width="20" height="60" rx="4" fill="rgba(217,119,6,0.55)"/>
-        <rect x="604" y="182" width="20" height="50" rx="4" fill="rgba(245,158,11,0.45)"/>
-        <rect x="630" y="176" width="20" height="56" rx="4" fill="rgba(217,119,6,0.5)"/>
-        <!-- Recently promoted -->
-        <rect x="36" y="276" width="648" height="74" rx="10" fill="rgba(255,251,235,0.8)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-        <rect x="52" y="290" width="120" height="6" rx="3" fill="rgba(217,119,6,0.3)"/>
-        <circle cx="70" cy="322" r="16" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
-        <rect x="94" y="314" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="94" y="324" width="40" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
-        <circle cx="186" cy="322" r="16" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
-        <rect x="210" y="314" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="210" y="324" width="40" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
-        <circle cx="302" cy="322" r="16" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
-        <rect x="326" y="314" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="326" y="324" width="40" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
-      </svg>
+    <div class="cs-visual" style="padding:0;background:transparent;border:none">
+      <img
+        src="/assets/images/knight-ryders-solution.png"
+        alt="The Knight Ryders — community platform architecture with inline CMS, member profiles, badges and migration"
+        style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.15)"
+        loading="lazy"
+      />
     </div>
 
     <div class="cs-features">
