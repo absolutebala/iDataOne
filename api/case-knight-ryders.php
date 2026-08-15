@@ -120,7 +120,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · Custom CMS · Community Platform</div>
     <h1 class="cs-hero-title">The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%</h1>
     <p class="cs-hero-sub">How we rebuilt a 460-member Honda CB350 riding club from a static blog into a fully custom community platform — with an inline CMS, live member profiles, gamification and zero separate admin pages.</p>
     <div class="cs-hero-stats">

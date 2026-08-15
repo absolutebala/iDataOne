@@ -111,7 +111,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div class="cs-hero-left">
-      <div class="cs-badge">Digital Products · Telecom Infrastructure</div>
       <h1 class="cs-hero-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</h1>
       <p class="cs-hero-sub">How we designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Indus Towers across multiple regions and roles.</p>
       <div class="cs-hero-stats">

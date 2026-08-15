@@ -397,7 +397,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
-        style="width:100%;height:auto;display:block"
+        style="width:80%;height:auto;display:block;margin:0 auto"
         loading="lazy"
       />
     </div>

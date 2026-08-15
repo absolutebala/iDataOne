@@ -109,7 +109,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div class="cs-hero-left">
-      <div class="cs-badge">Digital Products · SaaS · Conversational AI</div>
       <h1 class="cs-hero-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</h1>
       <p class="cs-hero-sub">How we designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.</p>
       <div class="cs-hero-stats">

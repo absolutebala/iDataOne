@@ -106,7 +106,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · Consumer Mobile App</div>
     <h1 class="cs-hero-title">Building an AI-Powered Family Meal Planning App</h1>
     <p class="cs-hero-sub">How we designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by AI and built for everyday use.</p>
     <div class="cs-hero-stats">

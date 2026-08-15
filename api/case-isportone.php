@@ -108,7 +108,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">Digital Products · Sports Technology</div>
     <h1 class="cs-hero-title">Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere</h1>
     <p class="cs-hero-sub">How we're designing a professional network for sport — where competitive and recreational athletes alike build a permanent career record, clubs manage their communities, and parents follow their children's sporting journey safely.</p>
     <div class="cs-hero-stats">

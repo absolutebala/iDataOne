@@ -40,7 +40,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 /* ── Hero ── */
 .hero{
-  min-height:60vh;
+  min-height:100vh;
   display:flex;
   align-items:center;
   padding:100px 0 60px;
@@ -190,7 +190,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag">Case Studies</div>
       <h1 class="hero-h1">Real Results.<br><em>Real Impact.</em></h1>
       <p class="hero-sub">Explore how we have helped businesses build smarter, move faster and grow with confidence.</p>
     </div>
@@ -349,23 +348,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- Digital: aiDesker SaaS Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#f0f9ff,#e0f2fe)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(14,165,233,0.06)"/>
-            <rect x="28" y="56" width="104" height="44" rx="6" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
-            <circle cx="48" cy="78" r="12" fill="rgba(14,165,233,0.2)"/>
-            <rect x="68" y="68" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="68" y="80" width="40" height="10" rx="3" fill="rgba(14,165,233,0.3)"/>
-            <rect x="148" y="56" width="104" height="44" rx="6" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="156" y="66" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="156" y="78" width="68" height="12" rx="4" fill="rgba(99,102,241,0.25)"/>
-            <rect x="28" y="112" width="224" height="42" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="170" y="120" width="68" height="10" rx="4" fill="rgba(14,165,233,0.2)"/>
-            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="170" y="136" width="68" height="10" rx="4" fill="rgba(20,184,166,0.25)"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0d0020;padding:0;overflow:hidden">
+          <img src="/assets/images/aidesker-hero.png" alt="aiDesker" style="width:100%;height:180px;object-fit:cover;object-position:center top;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>

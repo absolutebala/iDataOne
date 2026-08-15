@@ -337,7 +337,7 @@ body{
             <div class="service-pill" onclick="selectService(this,'AI Solutions')">AI Solutions</div>
             <div class="service-pill" onclick="selectService(this,'Data Intelligence')">Data Intelligence</div>
             <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
-            <div class="service-pill" onclick="selectService(this,'Others')">Others</div>
+            
           </div>
           <div class="service-pills" id="svc-products" style="display:none">
             <div class="service-pill" onclick="selectService(this,'MealMate')">MealMate</div>
