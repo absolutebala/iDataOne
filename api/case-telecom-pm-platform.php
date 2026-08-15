@@ -56,7 +56,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-stat{text-align:left}
 .cs-stat-num{font-size:26px;font-weight:800;letter-spacing:-1.5px;color:#0f172a;line-height:1.2}
 .cs-stat-num span{background:linear-gradient(90deg,#0d9488,#14b8a6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cs-hero-image img{width:100%;height:auto;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,0.12);border:1px solid rgba(0,0,0,0.06)}
+.cs-hero-image img{width:100%;height:auto;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.2),0 8px 24px rgba(0,0,0,0.15);transition:transform 0.4s ease}.cs-hero-image img:hover{transform:translateY(-4px)}
 .cs-stat-label{font-size:12px;color:#94a3b8;margin-top:4px}
 .cs-section{padding:80px 32px}
 .cs-inner{max-width:1140px;margin:0 auto}
@@ -121,7 +121,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-image">
-      <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Platform">
+      <img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS — 2,200+ projects tracked across 50+ vendors">
     </div>
   </div>
 </section>
@@ -144,7 +144,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We designed and built a comprehensive, role-based project management platform from the ground up — covering the complete operational and financial lifecycle of telecom infrastructure projects.</p>
 
     <div class="cs-visual" style="padding:0;background:#f0f4f8">
-      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard" style="width:100%;height:auto;display:block;border-radius:20px"/>
+      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12)"/>
     </div>
 
     <div class="cs-features">
