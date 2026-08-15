@@ -67,7 +67,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .head-title{font-size:13px;color:#0891b2;font-weight:600;margin-bottom:8px}
 .head-bio{font-size:13px;color:#64748b;line-height:1.65}
 .ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.ai-card{padding:24px 20px;background:#fff;border:1px solid rgba(245,197,24,0.2);border-radius:18px;transition:border-color 0.3s,transform 0.3s;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+.ai-card{padding:20px;background:#fff;border:1px solid rgba(245,197,24,0.2);border-radius:14px;transition:border-color 0.3s,transform 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
 .ai-card:hover{border-color:rgba(245,197,24,0.5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
 .ai-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(245,197,24,0.08));border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}.ai-icon svg{width:22px;height:22px;fill:none;stroke:url(#aiGrad);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .ai-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;color:#b45309;margin-bottom:2px}
@@ -241,15 +241,16 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
     <p style="font-size:14px;color:#64748b;margin-bottom:40px">Senior human leadership + specialised AI capability. End to end.</p>
-    <div class="team-grid">
-      <div class="team-head-card">
-        <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top">
-        <div class="head-badge">Delivery Head</div>
-        <div class="head-name">Bala Kandaswamy</div>
-        <div class="head-title">Software Delivery Leader · 20+ Years</div>
-        <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
-      </div>
-      <div class="ai-grid">
+    <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden">
+      <div class="team-grid" style="padding:32px;gap:0">
+        <div class="team-head-card" style="border-right:1px solid rgba(8,145,178,0.12);padding-right:32px;border-radius:0;background:transparent;border-top:none;border-bottom:none;border-left:none">
+          <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy — Delivery Head, iDataOne" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top">
+          <div class="head-badge">Delivery Head</div>
+          <div class="head-name">Bala Kandaswamy</div>
+          <div class="head-title">Software Delivery Leader · 20+ Years</div>
+          <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
+        </div>
+        <div style="padding-left:32px"><div class="ai-grid" style="grid-template-columns:1fr 1fr;gap:16px">
       <?php foreach([
         ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
         ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
@@ -344,11 +345,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <!-- WORKFLOW -->
 <section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px">
   <div class="inner">
-    <div style="text-align:center;margin-bottom:40px">
-      <div class="eyebrow" style="color:#00d4ff">How We Deliver</div>
-      <div class="bar" style="margin:12px auto 0"></div>
-      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
-    </div>
+
     <div>
       <img
         src="/assets/images/our-process.png"

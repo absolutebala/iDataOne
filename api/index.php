@@ -514,7 +514,7 @@ text-transform:uppercase;
 .cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
 .cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
 .cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.7;margin-bottom:36px}
+.cl-sub{font-size:15px;color:#ffffff;line-height:1.7;margin-bottom:36px;font-weight:500}
 .cl-trust{display:flex;flex-direction:column;gap:0}
 .cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:none}
 .cl-trust-item:first-child{border-top:none}
