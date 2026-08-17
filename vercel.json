@@ -79,10 +79,6 @@
       "destination": "/api/mealmate.php"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
-    },
-    {
       "source": "/robots.txt",
       "destination": "/robots.txt"
     },
@@ -117,26 +113,6 @@
     {
       "source": "/case-studies",
       "destination": "/api/case-studies.php"
-    },
-    {
-      "source": "/isportone",
-      "destination": "/api/isportone.php"
-    },
-    {
-      "source": "/infra360PMS",
-      "destination": "/api/infra360PMS.php"
-    },
-    {
-      "source": "/about",
-      "destination": "/api/about.php"
-    },
-    {
-      "source": "/case-study/emr-global-field-engineers",
-      "destination": "/api/case-emr-global.php"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/api/index.php"
     }
   ]
 }
