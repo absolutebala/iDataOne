@@ -177,7 +177,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div>
-      <div class="cs-badge">Digital · Data · SAP Integration</div>
       <h1 class="cs-hero-title">Bridging SAP to the Field — A Real-Time Service Platform for EMR Global</h1>
       <p class="cs-hero-sub">How iDataOne built a SAP-integrated web and mobile field service platform for EMR Global — a 50-year-old transformer equipment manufacturer — connecting back-office data directly to field engineers in real time, while eliminating WhatsApp as the coordination layer.</p>
       <div class="cs-hero-stats">
@@ -188,10 +187,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <div class="cs-hero-placeholder">
-        <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg>
-        <p>Hero image coming soon</p>
-      </div>
+      <img src="/assets/images/emr-hero.png" alt="EMR Global field engineer updating a SAP-integrated service ticket on site" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>
@@ -358,19 +354,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><path d="<?= $f[0] ?>"/></svg></div>
         <div>
-          <div class="cs-feature-title"><?= $f[0] === 'M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2' ? '' : '' ?></div>
           <div class="cs-feature-title"><?= $f[1] ?></div>
           <div class="cs-feature-desc"><?= $f[2] ?></div>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
-    <!-- Solution placeholder -->
-    <div style="margin-top:48px;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(13,148,136,0.1)">
-      <div style="background:linear-gradient(135deg,#f0fdfa,#e6fffa);padding:48px;text-align:center">
-        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#0d9488;margin-bottom:8px">Solution Architecture</div>
-        <div style="font-size:13px;color:#94a3b8">Diagram coming soon</div>
-      </div>
+    <!-- Solution architecture -->
+    <div style="margin-top:48px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#0d9488;margin-bottom:14px">Solution Architecture</div>
+      <img src="/assets/images/emr-solution.png" alt="EMR Global field service platform architecture — two-way SAP integration, web admin portal, React Native mobile app, SLA tracking and service history" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
     </div>
   </div>
 </section>
@@ -488,6 +481,43 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <a href="/contact" class="cs-cta-btn">Talk to Our Team <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </div>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+
+  window.hzOpen=function(src,alt){
+    clearTimeout(closeTimer);
+    im.src=src; im.alt=alt||'';
+    ov.style.display='flex';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        ov.style.background='rgba(0,0,0,0.85)';
+        im.style.transform='scale(1)';
+        im.style.opacity='1';
+      });
+    });
+  };
+
+  window.hzClose=function(){
+    ov.style.background='rgba(0,0,0,0)';
+    im.style.transform='scale(0.85)';
+    im.style.opacity='0';
+    clearTimeout(closeTimer);
+    closeTimer=setTimeout(function(){ ov.style.display='none'; },320);
+  };
+
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') window.hzClose();
+  });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 </body>

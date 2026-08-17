@@ -228,54 +228,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <div class="cases-wrap">
   <div class="cases-inner">
 
-    <!-- Featured: AI Agents -->
-    <div class="case-item" data-cat="ai">
-      <div class="featured-card">
-        <div class="featured-visual" style="background:linear-gradient(135deg,#1e1b4b,#312e81)">
-          <svg viewBox="0 0 480 360" width="480" height="360" xmlns="http://www.w3.org/2000/svg">
-            <rect x="140" y="120" width="200" height="120" rx="20" fill="rgba(124,58,237,0.2)" stroke="rgba(167,139,250,0.4)" stroke-width="1.5"/>
-            <circle cx="240" cy="170" r="28" fill="rgba(124,58,237,0.25)" stroke="rgba(167,139,250,0.5)" stroke-width="1.5"/>
-            <circle cx="240" cy="170" r="12" fill="rgba(167,139,250,0.5)"/>
-            <rect x="180" y="207" width="120" height="6" rx="3" fill="rgba(167,139,250,0.25)"/>
-            <rect x="200" y="218" width="80" height="4" rx="2" fill="rgba(167,139,250,0.15)"/>
-            <rect x="20" y="80" width="100" height="54" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
-            <rect x="30" y="94" width="50" height="5" rx="2.5" fill="rgba(167,139,250,0.3)"/>
-            <rect x="30" y="104" width="72" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-            <line x1="120" y1="107" x2="140" y2="155" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <rect x="20" y="190" width="100" height="54" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
-            <rect x="30" y="204" width="50" height="5" rx="2.5" fill="rgba(167,139,250,0.3)"/>
-            <rect x="30" y="214" width="72" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-            <line x1="120" y1="217" x2="140" y2="195" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <rect x="360" y="80" width="100" height="54" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.3)" stroke-width="1"/>
-            <rect x="370" y="94" width="50" height="5" rx="2.5" fill="rgba(52,211,153,0.4)"/>
-            <rect x="370" y="104" width="72" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-            <line x1="340" y1="155" x2="360" y2="107" stroke="rgba(52,211,153,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <rect x="360" y="190" width="100" height="54" rx="12" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
-            <rect x="370" y="204" width="50" height="5" rx="2.5" fill="rgba(245,158,11,0.4)"/>
-            <rect x="370" y="214" width="72" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-            <line x1="340" y1="195" x2="360" y2="217" stroke="rgba(245,158,11,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-            <!-- Floating badge -->
-            <rect x="150" y="280" width="180" height="40" rx="20" fill="rgba(255,255,255,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
-            <circle cx="170" cy="300" r="8" fill="rgba(52,211,153,0.3)"/>
-            <rect x="186" y="293" width="80" height="5" rx="2.5" fill="rgba(255,255,255,0.25)"/>
-            <rect x="186" y="302" width="56" height="4" rx="2" fill="rgba(52,211,153,0.3)"/>
-          </svg>
-        </div>
-        <div class="featured-body">
-          <div class="case-category cat-ai">AI & Automation</div>
-          <div class="case-metric metric-ai">80%</div>
-          <div class="case-metric-label">of customer queries handled autonomously</div>
-          <div class="case-title">Deploying AI Agents That Handle 80% of Customer Queries</div>
-          <div class="case-desc">We built and deployed intelligent AI agents for a retail brand that autonomously handled 80% of support queries, reducing response time from hours to seconds and cutting support costs significantly.</div>
-          <div class="case-tags">
-            <span class="case-tag">AI Agents</span>
-            <span class="case-tag">Retail</span>
-            <span class="case-tag">Support Automation</span>
-          </div>
-          <a href="/contact" class="case-cta violet">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-    </div>
 
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
@@ -638,11 +590,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- Digital: EMR Global -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/emr-global-field-engineers'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#f0fdfa,#ccfbf1);display:flex;align-items:center;justify-content:center;min-height:180px">
-          <div style="text-align:center;padding:20px">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg>
-            <div style="font-size:11px;color:#0d9488;margin-top:8px;font-weight:600;letter-spacing:1px">IMAGE COMING SOON</div>
-          </div>
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/emr-hero.png" alt="EMR Global — SAP-integrated field service platform" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>

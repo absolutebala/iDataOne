@@ -203,6 +203,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 
+      <div class="story-card" onclick="location.href='/case-study/emr-global-field-engineers'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">SAP Integration · Field Service</div>
+          <div class="story-title">EMR Global — Bridging SAP to the Field with a Real-Time Service Platform</div>
+          <div class="story-desc">We built a SAP-integrated web portal and React Native mobile app for a 50-year-old transformer equipment manufacturer — pulling customer and product data from SAP into every ticket, and writing 50+ field engineers' updates straight back to SAP in real time.</div>
+          <a href="/case-study/emr-global-field-engineers" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual" style="padding:0;overflow:hidden;border-radius:12px;background:#0a0f1e">
+          <img src="/assets/images/emr-hero.png" alt="EMR Global — SAP-integrated field service platform" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
+        </div>
+      </div>
+
+
       <div class="story-card" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
         <div>
           <div class="story-tag">Telecom Infrastructure</div>
