@@ -177,22 +177,26 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-section">
   <div class="cs-inner">
     <div class="cs-tag">The Challenge</div>
-    <h2 class="cs-h2">50 Years of Expertise, Zero Digital Operations</h2>
+    <h2 class="cs-h2">A Growing Operation That Needed the Right Digital Backbone</h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
       <div>
-        <p class="cs-p">EMR Global has been manufacturing precision transformer equipment — On-Load Tap Changers, Motor Drive Units, Smart Breathers and Protective Relays — for over 50 years. Their products are deployed in power infrastructure across multiple countries, requiring specialist field engineers for installation, commissioning and ongoing servicing.</p>
-        <p class="cs-p">Despite this operational complexity, their entire field service operation ran through WhatsApp. Service requests arrived via messages, tickets were assigned in group chats, status updates were shared informally, and there was no structured record of what was assigned, to whom, or what the outcome was.</p>
-        <p class="cs-p">For management, this meant zero visibility into the field. For engineers, it meant missed tickets, duplicated work and no formal closure process. For customers, it meant unpredictable response times and no accountability trail.</p>
+        <p class="cs-p">EMR Global has spent over five decades building precision transformer equipment — On-Load Tap Changers, Motor Drive Units, Smart Breathers and Protective Relays — trusted by power infrastructure projects across multiple countries. As their field operation grew, so did the coordination demands that come with it: more engineers, more sites, more products requiring specialist commissioning and servicing.</p>
+        <p class="cs-p">Like many manufacturers who scale quickly, their field service coordination had outgrown the tools they were using. Service requests, engineer assignments and status updates were being managed through WhatsApp — a practical starting point, but one that had reached its limits as the volume and complexity of field operations increased.</p>
+        <p class="cs-p">Without a dedicated system, management had limited visibility into open tickets and field status. Engineers worked hard but without a structured platform to support them — no formal assignment process, no closure trail and no shared view of what was happening across the team at any given time.</p>
+        <div style="margin-top:24px;padding:20px 24px;border-left:3px solid #0d9488;background:rgba(13,148,136,0.04);border-radius:0 12px 12px 0">
+          <div style="font-size:13px;font-weight:700;color:#0d9488;margin-bottom:6px">The brief</div>
+          <div style="font-size:14px;color:#475569;line-height:1.7">EMR Global approached iDataOne to build a purpose-built field service platform — replacing informal coordination with a structured, real-time digital operation that could scale with their growth.</div>
+        </div>
       </div>
       <div>
         <?php
         $problems = [
-          ['M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z','No ticket system — all coordination on WhatsApp groups'],
-          ['M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 0 0 1 1h3m10-11l2 2m-2-2v10a1 1 0 0 0-1 1h-3m-6 0a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1m4-6h.01','Management had no real-time visibility into field operations'],
-          ['M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','No audit trail — ticket history, outcomes and closures unrecorded'],
-          ['M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2','Engineers working across multiple countries with no unified workflow'],
-          ['M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','SLA tracking impossible — no timestamps, no structured data'],
-          ['M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 0-2 2h-2a2 2 0 0 0-2-2z','No data on service patterns, engineer performance or product issues'],
+          ['M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2','Service requests were tracked informally across group chats'],
+          ['M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7z','No structured assignment process for incoming tickets'],
+          ['M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 0-2 2h-2a2 2 0 0 0-2-2z','Management visibility into field status was limited'],
+          ['M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0','No service history or closure record per ticket'],
+          ['M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM12 6v6l4 2','Response time tracking was not possible without a system'],
+          ['M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 0 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064','Engineers across multiple countries had no unified workflow'],
         ];
         ?>
         <div class="cs-features">
