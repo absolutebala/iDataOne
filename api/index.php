@@ -1440,31 +1440,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="20" width="220" height="200" rx="20" fill="rgba(255,241,242,0.7)" stroke="rgba(244,63,94,0.2)" stroke-width="1.5"/>
-            <rect x="20" y="20" width="220" height="36" rx="20" fill="rgba(244,63,94,0.1)"/>
-            <rect x="20" y="42" width="220" height="14" fill="rgba(244,63,94,0.1)"/>
-            <circle cx="90" cy="37" r="8" fill="rgba(244,63,94,0.25)"/>
-            <circle cx="110" cy="37" r="8" fill="rgba(20,184,166,0.25)"/>
-            <circle cx="130" cy="37" r="8" fill="rgba(245,158,11,0.25)"/>
-            <rect x="36" y="72" width="188" height="7" rx="3.5" fill="rgba(244,63,94,0.2)"/>
-            <rect x="36" y="90" width="86" height="56" rx="10" fill="rgba(255,255,255,0.8)" stroke="rgba(244,63,94,0.18)" stroke-width="1"/>
-            <rect x="43" y="98" width="40" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-            <rect x="43" y="107" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="43" y="116" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <rect x="43" y="128" width="32" height="10" rx="5" fill="rgba(244,63,94,0.2)"/>
-            <rect x="130" y="90" width="94" height="56" rx="10" fill="rgba(255,255,255,0.8)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-            <rect x="137" y="98" width="40" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-            <rect x="137" y="107" width="74" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="137" y="116" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <rect x="137" y="128" width="32" height="10" rx="5" fill="rgba(20,184,166,0.2)"/>
-            <rect x="36" y="158" width="188" height="48" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(244,63,94,0.12)" stroke-width="1"/>
-            <rect x="44" y="166" width="60" height="4" rx="2" fill="rgba(244,63,94,0.18)"/>
-            <rect x="44" y="175" width="160" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="44" y="184" width="130" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-            <rect x="44" y="193" width="100" height="4" rx="2" fill="rgba(15,23,42,0.04)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(244,63,94,0.15)">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>

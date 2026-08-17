@@ -125,7 +125,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="banner">
   <div class="banner-inner">
     <div>
-      <div class="banner-tag">iSportOne · Sports Technology</div>
       <h1 class="banner-h1">Your sport.<br>Your story. <em>Forever.</em></h1>
       <p class="banner-sub">Record every match. Build your career profile. Connect with your sports community — for life. For every athlete, from weekend warriors to state champions.</p>
       <div class="banner-btns">
@@ -134,56 +133,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <svg viewBox="0 0 480 380" width="480" height="380" xmlns="http://www.w3.org/2000/svg">
-        <!-- Profile card -->
-        <rect x="20" y="20" width="220" height="280" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(244,63,94,0.18)" stroke-width="1.5"/>
-        <circle cx="130" cy="86" r="34" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.25)" stroke-width="1.5"/>
-        <circle cx="130" cy="74" r="13" fill="rgba(244,63,94,0.2)"/>
-        <path d="M104 102 Q130 84 156 102" fill="rgba(244,63,94,0.15)"/>
-        <rect x="70" y="132" width="120" height="9" rx="4.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="90" y="148" width="80" height="6" rx="3" fill="rgba(244,63,94,0.2)"/>
-        <rect x="36" y="172" width="80" height="46" rx="8" fill="rgba(255,241,242,0.8)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-        <rect x="46" y="182" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="46" y="194" width="50" height="12" rx="3" fill="rgba(244,63,94,0.3)"/>
-        <rect x="144" y="172" width="80" height="46" rx="8" fill="rgba(255,241,242,0.8)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-        <rect x="154" y="182" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="154" y="194" width="50" height="12" rx="3" fill="rgba(244,63,94,0.3)"/>
-        <rect x="36" y="232" width="188" height="40" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="46" y="242" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="46" y="252" width="40" height="4" rx="2" fill="rgba(99,102,241,0.2)"/>
-        <rect x="36" y="262" width="100" height="0" fill="none"/>
-        <!-- Stats panel -->
-        <rect x="256" y="20" width="204" height="120" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.18)" stroke-width="1.5"/>
-        <rect x="272" y="36" width="80" height="8" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="272" y="56" width="56" height="36" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-        <rect x="280" y="64" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="280" y="74" width="36" height="9" rx="3" fill="rgba(99,102,241,0.3)"/>
-        <rect x="336" y="56" width="56" height="36" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-        <rect x="344" y="64" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="344" y="74" width="36" height="9" rx="3" fill="rgba(20,184,166,0.3)"/>
-        <rect x="400" y="56" width="44" height="36" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-        <rect x="408" y="64" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="408" y="74" width="28" height="9" rx="3" fill="rgba(245,158,11,0.3)"/>
-        <rect x="272" y="104" width="172" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="272" y="114" width="140" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-        <!-- Activity feed -->
-        <rect x="256" y="156" width="204" height="144" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(244,63,94,0.18)" stroke-width="1.5"/>
-        <rect x="272" y="172" width="70" height="8" rx="4" fill="rgba(244,63,94,0.25)"/>
-        <circle cx="280" cy="202" r="11" fill="rgba(244,63,94,0.15)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
-        <rect x="300" y="196" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="300" y="206" width="70" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-        <circle cx="280" cy="234" r="11" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
-        <rect x="300" y="228" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="300" y="238" width="70" height="4" rx="2" fill="rgba(99,102,241,0.2)"/>
-        <circle cx="280" cy="266" r="11" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.25)" stroke-width="1"/>
-        <rect x="300" y="260" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="300" y="270" width="70" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-        <!-- Floating badge -->
-        <rect x="50" y="320" width="180" height="40" rx="20" fill="rgba(255,255,255,0.96)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-        <circle cx="70" cy="340" r="8" fill="rgba(244,63,94,0.2)"/>
-        <rect x="86" y="334" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="86" y="343" width="56" height="4" rx="2" fill="rgba(244,63,94,0.3)"/>
-      </svg>
+      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in;transition:transform 0.4s ease" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>
@@ -220,6 +170,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="section-tag">The Solution</div>
     <h2 class="section-title">A Platform That Adapts to Every Athlete</h2>
     <p class="section-sub">One profile structure that serves a state-level competitive swimmer and a recreational badminton player equally well.</p>
+    <div style="margin-bottom:48px">
+      <img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+    </div>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-num">01</div>
@@ -304,6 +257,43 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
   </div>
 </section>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+
+  window.hzOpen=function(src,alt){
+    clearTimeout(closeTimer);
+    im.src=src; im.alt=alt||'';
+    ov.style.display='flex';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        ov.style.background='rgba(0,0,0,0.85)';
+        im.style.transform='scale(1)';
+        im.style.opacity='1';
+      });
+    });
+  };
+
+  window.hzClose=function(){
+    ov.style.background='rgba(0,0,0,0)';
+    im.style.transform='scale(0.85)';
+    im.style.opacity='0';
+    clearTimeout(closeTimer);
+    closeTimer=setTimeout(function(){ ov.style.display='none'; },320);
+  };
+
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') window.hzClose();
+  });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 

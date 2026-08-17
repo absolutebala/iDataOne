@@ -390,20 +390,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="products-grid">
 
       <div class="product-card">
-        <div class="product-card-img rose">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="12" width="160" height="116" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-            <rect x="20" y="12" width="160" height="28" rx="12" fill="rgba(244,63,94,0.08)"/>
-            <rect x="20" y="28" width="160" height="12" fill="rgba(244,63,94,0.08)"/>
-            <circle cx="60" cy="26" r="5" fill="rgba(244,63,94,0.3)"/>
-            <circle cx="74" cy="26" r="5" fill="rgba(245,158,11,0.3)"/>
-            <circle cx="88" cy="26" r="5" fill="rgba(20,184,166,0.3)"/>
-            <rect x="32" y="50" width="64" height="10" rx="5" fill="rgba(244,63,94,0.2)"/>
-            <rect x="32" y="68" width="136" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <rect x="32" y="78" width="110" height="5" rx="2.5" fill="rgba(15,23,42,0.05)"/>
-            <rect x="32" y="92" width="52" height="22" rx="8" fill="rgba(244,63,94,0.12)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-            <rect x="92" y="92" width="52" height="22" rx="8" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-          </svg>
+        <div class="product-card-img" style="padding:0">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div class="product-card-body">
           <div class="product-badge badge-soon">In Development</div>

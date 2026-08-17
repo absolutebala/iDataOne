@@ -290,20 +290,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="section-sub">Products we built using the same AI expertise we bring to every client project.</p>
     <div class="products-grid">
       <div class="product-card">
-        <div class="product-card-img violet">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="20" width="160" height="100" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="20" y="20" width="160" height="28" rx="12" fill="rgba(124,58,237,0.08)"/>
-            <rect x="20" y="36" width="160" height="12" fill="rgba(124,58,237,0.08)"/>
-            <circle cx="60" cy="34" r="5" fill="rgba(124,58,237,0.25)"/>
-            <circle cx="74" cy="34" r="5" fill="rgba(99,102,241,0.2)"/>
-            <circle cx="88" cy="34" r="5" fill="rgba(139,92,246,0.2)"/>
-            <rect x="32" y="58" width="136" height="5" rx="2.5" fill="rgba(124,58,237,0.15)"/>
-            <rect x="32" y="70" width="136" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="32" y="80" width="100" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-            <rect x="32" y="94" width="56" height="18" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-            <rect x="96" y="94" width="56" height="18" rx="8" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-          </svg>
+        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:100%;height:160px;object-fit:cover;display:block"/>
         </div>
         <div class="product-card-body">
           <div class="product-card-title">iSportOne</div>
