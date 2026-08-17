@@ -645,10 +645,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           </div>
         </div>
         <div class="case-card-body">
-          <div class="case-card-cats"><span class="case-cat digital">Digital</span><span class="case-cat data">Data</span></div>
-          <div class="case-card-title">EMR Global — Field Service App</div>
-          <div class="case-card-desc">Replaced WhatsApp coordination with a structured web and mobile field service platform for 50+ engineers across multiple countries.</div>
-          <div class="case-card-link">View Case Study <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">50+</div>
+          <div class="case-metric-label">field engineers on the platform</div>
+          <div class="case-title">EMR Global — Field Service App That Replaced WhatsApp</div>
+          <div class="case-desc">Structured web and mobile field service platform for a 50-year-old transformer equipment manufacturer, replacing informal WhatsApp coordination entirely.</div>
+          <div class="case-tags"><span class="case-tag">Field Service</span><span class="case-tag">Mobile App</span><span class="case-tag">React Native</span></div>
+          <a href="/case-study/emr-global-field-engineers" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
     </div><!-- /cases-grid -->

@@ -39,6 +39,10 @@
   },
   "rewrites": [
     {
+      "source": "/case-study/emr-global-field-engineers",
+      "destination": "/api/case-emr-global.php"
+    },
+    {
       "has": [
         {
           "type": "host",
@@ -63,10 +67,6 @@
     {
       "source": "/about",
       "destination": "/api/about.php"
-    },
-    {
-      "source": "/case-study/emr-global-field-engineers",
-      "destination": "/api/case-emr-global.php"
     },
     {
       "has": [
