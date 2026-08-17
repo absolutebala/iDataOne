@@ -273,7 +273,22 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
             <span class="case-tag">Support Automation</span>
           </div>
           <a href="/contact" class="case-cta violet">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
+
+        <!-- EMR Global -->
+        <div class="case-card" data-cat="digital" onclick="location.href='/case-study/emr-global-field-engineers'" style="cursor:pointer">
+          <div class="case-card-visual" style="background:linear-gradient(135deg,#f0fdfa,#ccfbf1);display:flex;align-items:center;justify-content:center;min-height:180px">
+            <div style="text-align:center;padding:20px">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8 6h8M8 10h8M8 14h4"/></svg>
+              <div style="font-size:11px;color:#0d9488;margin-top:8px;font-weight:600;letter-spacing:1px">IMAGE COMING SOON</div>
+            </div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-card-cats"><span class="case-cat digital">Digital</span><span class="case-cat data">Data</span></div>
+            <div class="case-card-title">EMR Global — Field Service App</div>
+            <div class="case-card-desc">Replaced WhatsApp coordination with a structured web and mobile field service platform for 50+ engineers across multiple countries.</div>
+            <div class="case-card-link">View Case Study <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+        </div>        </div>
       </div>
     </div>
 
