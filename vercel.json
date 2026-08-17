@@ -113,6 +113,10 @@
     {
       "source": "/case-studies",
       "destination": "/api/case-studies.php"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.php"
     }
   ]
 }
