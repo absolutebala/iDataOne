@@ -1191,40 +1191,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="200" height="140" rx="12" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.25)" stroke-width="1.5"/>
-            <rect x="10" y="10" width="200" height="28" rx="12" fill="rgba(20,184,166,0.12)"/>
-            <rect x="10" y="28" width="200" height="10" fill="rgba(20,184,166,0.12)"/>
-            <circle cx="26" cy="24" r="4" fill="rgba(244,63,94,0.5)"/>
-            <circle cx="40" cy="24" r="4" fill="rgba(245,158,11,0.5)"/>
-            <circle cx="54" cy="24" r="4" fill="rgba(20,184,166,0.5)"/>
-            <rect x="70" y="17" width="100" height="14" rx="7" fill="rgba(255,255,255,0.7)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="24" y="50" width="80" height="8" rx="4" fill="rgba(20,184,166,0.3)"/>
-            <rect x="24" y="66" width="160" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="24" y="76" width="140" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="24" y="86" width="120" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="24" y="100" width="50" height="36" rx="8" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
-            <rect x="82" y="100" width="50" height="36" rx="8" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-            <rect x="140" y="100" width="50" height="36" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="160" y="80" width="76" height="140" rx="14" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.3)" stroke-width="1.5"/>
-            <rect x="166" y="95" width="64" height="110" rx="6" fill="rgba(240,253,250,0.8)"/>
-            <rect x="185" y="85" width="26" height="6" rx="3" fill="rgba(20,184,166,0.2)"/>
-            <rect x="172" y="102" width="52" height="7" rx="3" fill="rgba(20,184,166,0.35)"/>
-            <rect x="172" y="114" width="52" height="4" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="172" y="122" width="40" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="172" y="134" width="24" height="16" rx="6" fill="rgba(20,184,166,0.3)"/>
-            <rect x="200" y="134" width="24" height="16" rx="6" fill="rgba(99,102,241,0.2)"/>
-            <rect x="172" y="158" width="52" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="172" y="166" width="44" height="4" rx="2" fill="rgba(15,23,42,0.05)"/>
-            <circle cx="186" cy="194" r="3" fill="rgba(20,184,166,0.5)"/>
-            <circle cx="198" cy="194" r="3" fill="rgba(15,23,42,0.1)"/>
-            <circle cx="210" cy="194" r="3" fill="rgba(15,23,42,0.1)"/>
-            <rect x="0" y="160" width="100" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
-            <circle cx="14" cy="174" r="5" fill="rgba(20,184,166,0.4)"/>
-            <rect x="24" y="169" width="50" height="4" rx="2" fill="rgba(15,23,42,0.15)"/>
-            <rect x="24" y="177" width="36" height="3" rx="1.5" fill="rgba(20,184,166,0.3)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(20,184,166,0.15)">
+          <img src="/assets/images/digital-hero-visual.png" alt="Build Digital Products — iDataOne" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
@@ -1249,35 +1217,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="100" width="56" height="32" rx="10" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
-            <text x="38" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="600">Input</text>
-            <line x1="66" y1="116" x2="90" y2="116" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <polygon points="90,112 98,116 90,120" fill="rgba(124,58,237,0.4)"/>
-            <rect x="98" y="90" width="64" height="52" rx="14" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.4)" stroke-width="1.5"/>
-            <text x="130" y="112" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="700">LLM</text>
-            <text x="130" y="126" text-anchor="middle" font-size="9" fill="#7c3aed" font-family="Inter">Model</text>
-            <circle cx="130" cy="138" r="3" fill="rgba(124,58,237,0.3)"/>
-            <line x1="162" y1="116" x2="186" y2="116" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <polygon points="186,112 194,116 186,120" fill="rgba(124,58,237,0.4)"/>
-            <rect x="194" y="100" width="56" height="32" rx="10" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
-            <text x="222" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Inter" font-weight="600">Output</text>
-            <rect x="98" y="160" width="60" height="24" rx="8" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
-            <text x="128" y="176" text-anchor="middle" font-size="9" fill="#0d9488" font-family="Inter" font-weight="600">Automate</text>
-            <rect x="166" y="160" width="60" height="24" rx="8" fill="rgba(255,251,235,0.9)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
-            <text x="196" y="176" text-anchor="middle" font-size="9" fill="#d97706" font-family="Inter" font-weight="600">Analyse</text>
-            <line x1="130" y1="142" x2="128" y2="160" stroke="rgba(124,58,237,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
-            <line x1="130" y1="142" x2="196" y2="160" stroke="rgba(124,58,237,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
-            <circle cx="80" cy="60" r="4" fill="rgba(124,58,237,0.2)"/>
-            <circle cx="180" cy="50" r="6" fill="rgba(124,58,237,0.12)"/>
-            <circle cx="220" cy="70" r="3" fill="rgba(124,58,237,0.15)"/>
-            <circle cx="40" cy="70" r="5" fill="rgba(124,58,237,0.1)"/>
-            <rect x="20" y="190" width="110" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
-            <circle cx="34" cy="204" r="5" fill="rgba(124,58,237,0.3)"/>
-            <rect x="44" y="199" width="60" height="4" rx="2" fill="rgba(15,23,42,0.12)"/>
-            <rect x="44" y="207" width="42" height="3" rx="1.5" fill="rgba(124,58,237,0.25)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(124,58,237,0.15)">
+          <img src="/assets/images/ai-hero-visual.png" alt="Enable AI &amp; Automation — iDataOne" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
@@ -1302,36 +1243,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="20" width="220" height="160" rx="14" fill="rgba(255,251,235,0.7)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5"/>
-            <rect x="10" y="20" width="220" height="26" rx="14" fill="rgba(245,158,11,0.12)"/>
-            <rect x="10" y="34" width="220" height="12" fill="rgba(245,158,11,0.12)"/>
-            <rect x="20" y="27" width="60" height="6" rx="3" fill="rgba(217,119,6,0.4)"/>
-            <rect x="20" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="84" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="148" y="56" width="58" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="26" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="26" y="72" width="40" height="8" rx="3" fill="rgba(217,119,6,0.4)"/>
-            <rect x="90" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="90" y="72" width="40" height="8" rx="3" fill="rgba(20,184,166,0.4)"/>
-            <rect x="154" y="62" width="28" height="5" rx="2" fill="rgba(15,23,42,0.1)"/>
-            <rect x="154" y="72" width="40" height="8" rx="3" fill="rgba(99,102,241,0.4)"/>
-            <rect x="20" y="100" width="140" height="68" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
-            <rect x="30" y="130" width="12" height="28" rx="3" fill="rgba(245,158,11,0.5)"/>
-            <rect x="48" y="118" width="12" height="40" rx="3" fill="rgba(245,158,11,0.65)"/>
-            <rect x="66" y="122" width="12" height="36" rx="3" fill="rgba(245,158,11,0.45)"/>
-            <rect x="84" y="112" width="12" height="46" rx="3" fill="rgba(245,158,11,0.75)"/>
-            <rect x="102" y="108" width="12" height="50" rx="3" fill="rgba(217,119,6,0.8)"/>
-            <rect x="120" y="116" width="12" height="42" rx="3" fill="rgba(245,158,11,0.6)"/>
-            <rect x="168" y="100" width="52" height="68" rx="8" fill="rgba(255,255,255,0.8)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
-            <polyline points="174,155 182,145 190,148 198,136 206,130 214,134" stroke="rgba(217,119,6,0.7)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="206" cy="130" r="3" fill="rgba(217,119,6,0.9)"/>
-            <rect x="40" y="185" width="130" height="28" rx="14" fill="rgba(255,255,255,0.95)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
-            <circle cx="54" cy="199" r="5" fill="rgba(245,158,11,0.4)"/>
-            <rect x="64" y="194" width="70" height="4" rx="2" fill="rgba(15,23,42,0.12)"/>
-            <rect x="64" y="202" width="50" height="3" rx="1.5" fill="rgba(217,119,6,0.3)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(245,158,11,0.15)">
+          <img src="/assets/images/data-hero-visual.png" alt="Transform Data into Decisions — iDataOne" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
@@ -1466,24 +1379,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="30" width="180" height="48" rx="16" fill="rgba(240,249,255,0.9)" stroke="rgba(14,165,233,0.2)" stroke-width="1.5"/>
-            <rect x="32" y="42" width="120" height="6" rx="3" fill="rgba(15,23,42,0.12)"/>
-            <rect x="32" y="54" width="90" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <circle cx="186" cy="54" r="10" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
-            <rect x="60" y="100" width="180" height="48" rx="16" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.25)" stroke-width="1.5"/>
-            <rect x="72" y="112" width="130" height="6" rx="3" fill="rgba(14,165,233,0.3)"/>
-            <rect x="72" y="124" width="100" height="5" rx="2.5" fill="rgba(14,165,233,0.2)"/>
-            <circle cx="56" cy="124" r="10" fill="rgba(14,165,233,0.2)" stroke="rgba(14,165,233,0.25)" stroke-width="1"/>
-            <rect x="20" y="166" width="180" height="48" rx="16" fill="rgba(240,249,255,0.9)" stroke="rgba(14,165,233,0.2)" stroke-width="1.5"/>
-            <rect x="32" y="178" width="100" height="6" rx="3" fill="rgba(15,23,42,0.12)"/>
-            <rect x="32" y="190" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <circle cx="186" cy="190" r="10" fill="rgba(14,165,233,0.15)" stroke="rgba(14,165,233,0.2)" stroke-width="1"/>
-            <circle cx="120" cy="86" r="5" fill="rgba(14,165,233,0.2)"/>
-            <circle cx="132" cy="86" r="5" fill="rgba(14,165,233,0.15)"/>
-            <circle cx="144" cy="86" r="5" fill="rgba(14,165,233,0.1)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(14,165,233,0.15)">
+          <img src="/assets/images/aidesker-hero.png" alt="aiDesker — AI-powered customer service agents" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
