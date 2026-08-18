@@ -281,40 +281,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 
-<!-- Digital: aiDesker SaaS Platform -->
-      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:#0d0020;padding:0;overflow:hidden">
-          <img src="/assets/images/aidesker-hero.png" alt="aiDesker" style="width:100%;height:180px;object-fit:cover;object-position:center top;display:block"/>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">1-Line</div>
-          <div class="case-metric-label">embed to go live on any site</div>
-          <div class="case-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</div>
-          <div class="case-desc">We designed and built aiDesker, a full-stack SaaS platform with per-tenant data isolation, Stripe billing, a super admin layer and a one-line embeddable widget.</div>
-          <div class="case-tags"><span class="case-tag">SaaS</span><span class="case-tag">Multi-Tenant</span><span class="case-tag">Embeddable Widget</span></div>
-          <a href="/case-study/aidesker" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-
-
 <!-- AI: aiDesker Conversational AI -->
       <div class="case-card" data-cat="ai" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="60" y="50" width="160" height="60" rx="16" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)" stroke-width="1.5"/>
-            <circle cx="140" cy="75" r="16" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="75" r="6" fill="rgba(124,58,237,0.35)"/>
-            <rect x="85" y="97" width="110" height="5" rx="2.5" fill="rgba(124,58,237,0.2)"/>
-            <rect x="20" y="62" width="30" height="38" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-            <rect x="26" y="70" width="18" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
-            <rect x="26" y="78" width="14" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="230" y="62" width="30" height="38" rx="8" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.25)" stroke-width="1"/>
-            <rect x="236" y="70" width="18" height="4" rx="2" fill="rgba(20,184,166,0.3)"/>
-            <rect x="236" y="78" width="14" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-            <rect x="60" y="126" width="68" height="24" rx="8" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
-            <rect x="152" y="126" width="68" height="24" rx="8" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0d0020;padding:0;overflow:hidden">
+          <img src="/assets/images/aidesker-hero.png" alt="aiDesker — knowledge-grounded AI chat assistant" style="width:100%;height:180px;object-fit:cover;object-position:center top;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-ai">AI &amp; Automation</div>
