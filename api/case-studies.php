@@ -232,6 +232,38 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <!-- Grid of remaining cases -->
     <div class="cases-grid" id="cases-grid">
 
+<!-- Digital: EMR Global -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/emr-global-field-engineers'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/emr-hero.png" alt="EMR Global — SAP-integrated field service platform" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">50+</div>
+          <div class="case-metric-label">field engineers on the platform</div>
+          <div class="case-title">EMR Global — Field Service App That Replaced WhatsApp</div>
+          <div class="case-desc">Structured web and mobile field service platform for a 50-year-old transformer equipment manufacturer, replacing informal WhatsApp coordination entirely.</div>
+          <div class="case-tags"><span class="case-tag">Field Service</span><span class="case-tag">Mobile App</span><span class="case-tag">React Native</span></div>
+          <a href="/case-study/emr-global-field-engineers" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
+        <div class="case-card-visual" style="padding:0;overflow:hidden">
+          <img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-digital">Digital Products</div>
+          <div class="case-metric metric-digital">2,200+</div>
+          <div class="case-metric-label">projects tracked across 50+ vendors</div>
+          <div class="case-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</div>
+          <div class="case-desc">We designed and built a full-stack project, vendor and financial management platform for a vendor of Indus Towers that unified telecom infrastructure operations across multiple regions and roles.</div>
+          <div class="case-tags"><span class="case-tag">Telecom</span><span class="case-tag">Project Management</span><span class="case-tag">Vendor Management</span></div>
+          <a href="/case-study/telecom-pm-platform" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+
 <!-- Digital: Knight Ryders -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/knight-ryders'" style="cursor:pointer">
         <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
@@ -248,35 +280,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-<!-- Digital: Infra360 PMS -->
-      <div class="case-card" data-cat="digital" onclick="location.href='/infra360PMS'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.07)"/>
-            <rect x="28" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="38" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="38" y="78" width="66" height="12" rx="4" fill="rgba(99,102,241,0.3)"/>
-            <rect x="134" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
-            <rect x="144" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="144" y="78" width="66" height="12" rx="4" fill="rgba(20,184,166,0.3)"/>
-            <rect x="28" y="112" width="224" height="42" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="170" y="120" width="68" height="9" rx="4" fill="rgba(99,102,241,0.2)"/>
-            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="170" y="136" width="68" height="9" rx="4" fill="rgba(245,158,11,0.2)"/>
-          </svg>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">6</div>
-          <div class="case-metric-label">roles, one platform, every trade</div>
-          <div class="case-title">Building a Project Management Platform for Infrastructure Contractors</div>
-          <div class="case-desc">We built Infra360 PMS — tracking PO to close-out across telecom, solar and civil sites, with material tracking, GST/TDS automation and live dashboards.</div>
-          <div class="case-tags"><span class="case-tag">Infrastructure</span><span class="case-tag">Multi-Trade</span><span class="case-tag">PMS</span></div>
-          <a href="/infra360PMS" class="case-cta">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
 
 <!-- Digital: aiDesker SaaS Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
@@ -293,6 +296,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <a href="/case-study/aidesker" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
+
 
 <!-- AI: aiDesker Conversational AI -->
       <div class="case-card" data-cat="ai" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
@@ -324,20 +328,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 
-      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/telecom-pm-platform'" style="cursor:pointer">
-        <div class="case-card-visual" style="padding:0;overflow:hidden">
-          <img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS" style="width:100%;height:200px;object-fit:cover;object-position:center top;display:block"/>
-        </div>
-        <div class="case-card-body">
-          <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">2,200+</div>
-          <div class="case-metric-label">projects tracked across 50+ vendors</div>
-          <div class="case-title">Building a Telecom Infrastructure Project Management Platform for Venus Energy</div>
-          <div class="case-desc">We designed and built a full-stack project, vendor and financial management platform for a vendor of Indus Towers that unified telecom infrastructure operations across multiple regions and roles.</div>
-          <div class="case-tags"><span class="case-tag">Telecom</span><span class="case-tag">Project Management</span><span class="case-tag">Vendor Management</span></div>
-          <a href="/case-study/telecom-pm-platform" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
 
 <!-- Digital: Enterprise Risk Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
@@ -380,6 +370,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
 <!-- Data: Risk Intelligence Dashboard -->
+
 <!-- Digital: iSportOne -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/isportone'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fff1f2,#ffe4e6)">
@@ -407,6 +398,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <a href="/case-study/isportone" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
+
 
       <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
@@ -454,6 +446,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
+
       <!-- Digital: MealMate -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
@@ -484,6 +477,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
       <!-- Digital: Legacy -->
+
             <!-- AI: LLM -->
       <div class="case-card" data-cat="ai">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe)">
@@ -518,6 +512,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <a href="/contact" class="case-cta violet">Discuss a Similar Project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
+
 
       <!-- AI: Automation -->
       <div class="case-card" data-cat="ai">
@@ -557,6 +552,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
 
             <!-- Data: Unified -->
+
             <!-- Data: Predictions -->
       <div class="case-card" data-cat="data" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
@@ -588,21 +584,38 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       
       
 
-<!-- Digital: EMR Global -->
-      <div class="case-card" data-cat="digital" onclick="location.href='/case-study/emr-global-field-engineers'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
-          <img src="/assets/images/emr-hero.png" alt="EMR Global — SAP-integrated field service platform" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
+
+<!-- Digital: Infra360 PMS -->
+      <div class="case-card" data-cat="digital" onclick="location.href='/infra360PMS'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
+          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.07)"/>
+            <rect x="28" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+            <rect x="38" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="38" y="78" width="66" height="12" rx="4" fill="rgba(99,102,241,0.3)"/>
+            <rect x="134" y="58" width="96" height="42" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
+            <rect x="144" y="68" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
+            <rect x="144" y="78" width="66" height="12" rx="4" fill="rgba(20,184,166,0.3)"/>
+            <rect x="28" y="112" width="224" height="42" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
+            <rect x="38" y="122" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
+            <rect x="170" y="120" width="68" height="9" rx="4" fill="rgba(99,102,241,0.2)"/>
+            <rect x="38" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.06)"/>
+            <rect x="170" y="136" width="68" height="9" rx="4" fill="rgba(245,158,11,0.2)"/>
+          </svg>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
-          <div class="case-metric metric-digital">50+</div>
-          <div class="case-metric-label">field engineers on the platform</div>
-          <div class="case-title">EMR Global — Field Service App That Replaced WhatsApp</div>
-          <div class="case-desc">Structured web and mobile field service platform for a 50-year-old transformer equipment manufacturer, replacing informal WhatsApp coordination entirely.</div>
-          <div class="case-tags"><span class="case-tag">Field Service</span><span class="case-tag">Mobile App</span><span class="case-tag">React Native</span></div>
-          <a href="/case-study/emr-global-field-engineers" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="case-metric metric-digital">6</div>
+          <div class="case-metric-label">roles, one platform, every trade</div>
+          <div class="case-title">Building a Project Management Platform for Infrastructure Contractors</div>
+          <div class="case-desc">We built Infra360 PMS — tracking PO to close-out across telecom, solar and civil sites, with material tracking, GST/TDS automation and live dashboards.</div>
+          <div class="case-tags"><span class="case-tag">Infrastructure</span><span class="case-tag">Multi-Trade</span><span class="case-tag">PMS</span></div>
+          <a href="/infra360PMS" class="case-cta">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
+
+
     </div><!-- /cases-grid -->
 
     <div class="no-results" id="no-results">No case studies found for this category.</div>
