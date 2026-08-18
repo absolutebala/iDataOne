@@ -163,21 +163,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We built aiDesker, a conversational AI platform that grounds every response in a business's own knowledge base, captures leads mid-conversation, and runs on the business's own AI key.</div>
           <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="18" width="120" height="32" rx="10" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.18)" stroke-width="1"/>
-            <rect x="24" y="26" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="24" y="35" width="50" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <circle cx="126" cy="34" r="7" fill="rgba(124,58,237,0.15)"/>
-            <rect x="24" y="60" width="120" height="32" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
-            <rect x="34" y="68" width="80" height="5" rx="2.5" fill="rgba(124,58,237,0.35)"/>
-            <rect x="34" y="77" width="60" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
-            <circle cx="28" cy="76" r="7" fill="rgba(124,58,237,0.2)"/>
-            <circle cx="68" cy="52" r="3" fill="rgba(124,58,237,0.2)"/>
-            <circle cx="80" cy="52" r="3" fill="rgba(124,58,237,0.15)"/>
-            <circle cx="92" cy="52" r="3" fill="rgba(124,58,237,0.1)"/>
-          </svg>
+        <div class="story-visual" style="background:#0d0020;padding:0;overflow:hidden;border-radius:12px">
+          <img src="/assets/images/aidesker-hero.png" alt="aiDesker — knowledge-grounded AI chat assistant" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center top;display:block">
         </div>
       </div>
 
