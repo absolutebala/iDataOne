@@ -47,7 +47,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(244,63,94,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(251,113,133,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#fff1f2 45%,#ffe4e6 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(244,63,94,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(251,113,133,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cs-hero-img{display:flex;align-items:center;justify-content:center}
+.cs-hero-img img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);transition:transform 0.4s ease;cursor:zoom-in}
+.cs-hero-img img:hover{transform:translateY(-4px)}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#f43f5e;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:560px}
@@ -92,6 +95,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-cta-btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:linear-gradient(90deg,#f43f5e,#fb7185);color:#fff;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:opacity 0.2s;flex-shrink:0}
 .cs-cta-btn:hover{opacity:0.9}
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-img{display:none}
   .cs-hero-stats{gap:24px}
   .cs-grid{grid-template-columns:1fr}
   .cs-features{grid-template-columns:1fr}
@@ -108,16 +113,18 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <h1 class="cs-hero-title">Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere</h1>
-    <p class="cs-hero-sub">How we're designing a professional network for sport — where competitive and recreational athletes alike build a permanent career record, clubs manage their communities, and parents follow their children's sporting journey safely.</p>
-    <div class="cs-hero-stats">
-      <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles — Athlete, Parent, Coach, Club Admin</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>3</span></div><div class="cs-stat-label">Revenue Streams</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>All Ages</span></div><div class="cs-stat-label">Junior to Veteran</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>Global</span></div><div class="cs-stat-label">All Sports, All Countries</div></div>
+    <div>
+      <h1 class="cs-hero-title">Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere</h1>
+      <p class="cs-hero-sub">How we're designing a professional network for sport — where competitive and recreational athletes alike build a permanent career record, clubs manage their communities, and parents follow their children's sporting journey safely.</p>
+      <div class="cs-hero-stats">
+        <div class="cs-stat"><div class="cs-stat-num"><span>4</span></div><div class="cs-stat-label">User Roles — Athlete, Parent, Coach, Club Admin</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>3</span></div><div class="cs-stat-label">Revenue Streams</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>All Ages</span></div><div class="cs-stat-label">Junior to Veteran</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>Global</span></div><div class="cs-stat-label">All Sports, All Countries</div></div>
+      </div>
     </div>
-    <div style="margin-top:48px">
-      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+    <div class="cs-hero-img">
+      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>

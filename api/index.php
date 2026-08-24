@@ -1293,39 +1293,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus">
-          <svg viewBox="0 0 260 240" width="260" height="240" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="20" width="240" height="170" rx="14" fill="rgba(238,242,255,0.7)" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"/>
-            <rect x="10" y="20" width="240" height="28" rx="14" fill="rgba(99,102,241,0.1)"/>
-            <rect x="10" y="36" width="240" height="12" fill="rgba(99,102,241,0.1)"/>
-            <rect x="22" y="27" width="70" height="6" rx="3" fill="rgba(79,70,229,0.3)"/>
-            <rect x="22" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="30" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="30" y="74" width="36" height="8" rx="3" fill="rgba(79,70,229,0.3)"/>
-            <rect x="82" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="90" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="90" y="74" width="36" height="8" rx="3" fill="rgba(20,184,166,0.3)"/>
-            <rect x="142" y="58" width="52" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="150" y="65" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="150" y="74" width="36" height="8" rx="3" fill="rgba(245,158,11,0.3)"/>
-            <rect x="202" y="58" width="38" height="30" rx="6" fill="rgba(255,255,255,0.8)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-            <rect x="208" y="65" width="22" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="208" y="74" width="26" height="8" rx="3" fill="rgba(244,63,94,0.25)"/>
-            <rect x="22" y="100" width="134" height="78" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.12)" stroke-width="1"/>
-            <rect x="32" y="110" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="32" y="122" width="114" height="1" fill="rgba(226,232,240,0.8)"/>
-            <rect x="32" y="130" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="110" y="128" width="36" height="8" rx="3" fill="rgba(20,184,166,0.2)"/>
-            <rect x="32" y="144" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="110" y="142" width="36" height="8" rx="3" fill="rgba(245,158,11,0.2)"/>
-            <rect x="32" y="158" width="60" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="110" y="156" width="36" height="8" rx="3" fill="rgba(244,63,94,0.18)"/>
-            <rect x="164" y="100" width="76" height="78" rx="8" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.12)" stroke-width="1"/>
-            <rect x="172" y="110" width="44" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-            <rect x="172" y="130" width="16" height="36" rx="4" fill="rgba(99,102,241,0.3)"/>
-            <rect x="192" y="122" width="16" height="44" rx="4" fill="rgba(99,102,241,0.45)"/>
-            <rect x="212" y="128" width="16" height="38" rx="4" fill="rgba(99,102,241,0.35)"/>
-          </svg>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(99,102,241,0.15)">
+          <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — infrastructure project management platform" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
