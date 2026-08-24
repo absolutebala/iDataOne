@@ -343,20 +343,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- Digital: iSportOne -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/isportone'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#fff1f2,#ffe4e6)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(244,63,94,0.06)"/>
-            <circle cx="70" cy="80" r="26" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
-            <circle cx="70" cy="70" r="10" fill="rgba(244,63,94,0.2)"/>
-            <rect x="46" y="116" width="48" height="8" rx="4" fill="rgba(15,23,42,0.08)"/>
-            <rect x="120" y="56" width="124" height="36" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="130" y="66" width="60" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
-            <rect x="130" y="78" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-            <rect x="120" y="100" width="124" height="36" rx="8" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-            <rect x="130" y="110" width="60" height="5" rx="2.5" fill="rgba(20,184,166,0.25)"/>
-            <rect x="130" y="122" width="80" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>

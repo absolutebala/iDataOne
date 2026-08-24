@@ -116,6 +116,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <div class="cs-stat"><div class="cs-stat-num"><span>All Ages</span></div><div class="cs-stat-label">Junior to Veteran</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>Global</span></div><div class="cs-stat-label">All Sports, All Countries</div></div>
     </div>
+    <div style="margin-top:48px">
+      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+    </div>
   </div>
 </section>
 
@@ -137,59 +140,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Platform That Adapts to Every Athlete, Not the Other Way Around</h2>
     <p class="cs-p">We're designing iSportOne as a single adaptive platform — one profile structure that serves a state-level competitive swimmer and a recreational badminton player with friends equally well, without forcing either into the wrong mold.</p>
 
-    <div class="cs-visual">
-      <svg viewBox="0 0 720 380" width="720" height="380" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="10" width="320" height="360" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(244,63,94,0.18)" stroke-width="1.5"/>
-        <circle cx="180" cy="80" r="36" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.25)" stroke-width="1.5"/>
-        <circle cx="180" cy="68" r="14" fill="rgba(244,63,94,0.2)"/>
-        <path d="M150 100 Q180 80 210 100" fill="rgba(244,63,94,0.15)"/>
-        <rect x="100" y="130" width="160" height="10" rx="5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="120" y="148" width="120" height="6" rx="3" fill="rgba(244,63,94,0.2)"/>
-        <rect x="40" y="170" width="120" height="48" rx="8" fill="rgba(255,241,242,0.8)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-        <rect x="50" y="180" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="50" y="190" width="60" height="10" rx="3" fill="rgba(244,63,94,0.3)"/>
-        <rect x="200" y="170" width="120" height="48" rx="8" fill="rgba(255,241,242,0.8)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-        <rect x="210" y="180" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="210" y="190" width="60" height="10" rx="3" fill="rgba(244,63,94,0.3)"/>
-        <rect x="40" y="232" width="280" height="36" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="50" y="242" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="50" y="252" width="40" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-        <rect x="40" y="280" width="280" height="36" rx="8" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="50" y="290" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="50" y="300" width="40" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-        <rect x="370" y="10" width="330" height="170" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.18)" stroke-width="1.5"/>
-        <rect x="386" y="26" width="80" height="8" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="386" y="44" width="60" height="40" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-        <rect x="394" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="394" y="62" width="40" height="8" rx="3" fill="rgba(99,102,241,0.3)"/>
-        <rect x="456" y="44" width="60" height="40" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-        <rect x="464" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="464" y="62" width="40" height="8" rx="3" fill="rgba(20,184,166,0.3)"/>
-        <rect x="526" y="44" width="60" height="40" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-        <rect x="534" y="52" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="534" y="62" width="40" height="8" rx="3" fill="rgba(245,158,11,0.3)"/>
-        <rect x="386" y="96" width="298" height="64" rx="8" fill="rgba(248,250,252,0.9)"/>
-        <circle cx="406" cy="116" r="10" fill="rgba(99,102,241,0.2)"/>
-        <rect x="424" y="110" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="424" y="120" width="140" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <circle cx="406" cy="144" r="10" fill="rgba(20,184,166,0.2)"/>
-        <rect x="424" y="138" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="424" y="148" width="140" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-        <rect x="370" y="196" width="330" height="174" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(244,63,94,0.18)" stroke-width="1.5"/>
-        <rect x="386" y="212" width="90" height="8" rx="4" fill="rgba(244,63,94,0.25)"/>
-        <circle cx="396" cy="244" r="14" fill="rgba(244,63,94,0.15)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
-        <rect x="420" y="238" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="420" y="248" width="70" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-        <rect x="540" y="232" width="60" height="22" rx="11" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-        <circle cx="396" cy="284" r="14" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
-        <rect x="420" y="278" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="420" y="288" width="70" height="4" rx="2" fill="rgba(99,102,241,0.2)"/>
-        <rect x="540" y="272" width="60" height="22" rx="11" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-        <circle cx="396" cy="324" r="14" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.25)" stroke-width="1"/>
-        <rect x="420" y="318" width="100" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="420" y="328" width="70" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-        <rect x="540" y="312" width="60" height="22" rx="11" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-      </svg>
+    <div class="cs-visual" style="padding:0;background:none;border:none">
+      <img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
     </div>
 
     <div class="cs-features">
@@ -281,6 +233,43 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+
+  window.hzOpen=function(src,alt){
+    clearTimeout(closeTimer);
+    im.src=src; im.alt=alt||'';
+    ov.style.display='flex';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        ov.style.background='rgba(0,0,0,0.85)';
+        im.style.transform='scale(1)';
+        im.style.opacity='1';
+      });
+    });
+  };
+
+  window.hzClose=function(){
+    ov.style.background='rgba(0,0,0,0)';
+    im.style.transform='scale(0.85)';
+    im.style.opacity='0';
+    clearTimeout(closeTimer);
+    closeTimer=setTimeout(function(){ ov.style.display='none'; },320);
+  };
+
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') window.hzClose();
+  });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 

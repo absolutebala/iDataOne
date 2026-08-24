@@ -793,7 +793,6 @@ letter-spacing:0.3px;
   .hp-btm{display:none!important}
   html{scroll-snap-type:y mandatory}
   .screen{scroll-snap-align:start}  .dots{display:none}
-  .site-logo{display:none}
   /* Top nav on mobile */
   .top-nav{height:56px;padding:0 20px;gap:16px}
   .top-nav .site-logo{position:static}

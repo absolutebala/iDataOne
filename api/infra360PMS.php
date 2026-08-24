@@ -124,12 +124,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="banner">
   <div class="banner-inner">
     <div>
-      <div class="live-badge"><span class="live-dot"></span> Live</div>
-      <div class="banner-eyebrow">Infra360 PMS · Infrastructure Project Management</div>
       <h1 class="banner-h1">Every site.<br>Every rupee.<br><em>Accounted for.</em></h1>
       <p class="banner-sub">Track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out. Built for infrastructure contractors running multiple trades at once.</p>
       <div class="banner-btns">
-        <a href="https://infra360.idataone.com/login" target="_blank" class="btn-primary">Request a Demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="https://infra360.idataone.com/login" target="_blank" class="btn-primary">Demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="/case-study/telecom-pm-platform" class="btn-secondary">See How It Works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
@@ -333,7 +331,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <p class="cta-sub">See Infra360 PMS running on real project data — telecom, solar and civil, side by side.</p>
     </div>
     <div class="cta-right">
-      <a href="https://infra360.idataone.com/login" target="_blank" class="btn-cta">Request a Demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://infra360.idataone.com/login" target="_blank" class="btn-cta">Demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>

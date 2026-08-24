@@ -263,20 +263,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We're designing a sports professional network combining a lifelong sports passport, adaptive profiles, club management and safe-by-design parental controls — for athletes of every level, globally.</div>
           <a href="/case-study/isportone" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <circle cx="48" cy="40" r="16" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
-            <circle cx="48" cy="34" r="6" fill="rgba(244,63,94,0.2)"/>
-            <rect x="30" y="60" width="36" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-            <rect x="34" y="70" width="28" height="5" rx="2.5" fill="rgba(244,63,94,0.2)"/>
-            <rect x="90" y="24" width="54" height="22" rx="6" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="96" y="31" width="30" height="4" rx="2" fill="rgba(99,102,241,0.25)"/>
-            <rect x="90" y="52" width="54" height="22" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-            <rect x="96" y="59" width="30" height="4" rx="2" fill="rgba(20,184,166,0.25)"/>
-            <rect x="16" y="88" width="128" height="16" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="24" y="93" width="50" height="5" rx="2.5" fill="rgba(244,63,94,0.2)"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
       </div>
 
