@@ -162,8 +162,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking, department-level breakdowns and automated compliance scoring across 8 risk categories.</div>
           <a href="/case-study/risk-dashboard" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
-          <img src="/assets/images/risk-platform-hero.png" alt="Real-Time Risk Intelligence Dashboard for an enterprise FMCG company" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;align-self:stretch">
+          <img src="/assets/images/risk-platform-hero.png" alt="Real-Time Risk Intelligence Dashboard for an enterprise FMCG company" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
 
 

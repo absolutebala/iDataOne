@@ -267,34 +267,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
-        <div>
-          <div class="story-tag">SaaS · Multi-Tenant Platform</div>
-          <div class="story-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</div>
-          <div class="story-desc">We designed and built aiDesker, a full-stack SaaS platform with per-tenant data isolation, Stripe billing, a super admin layer and a one-line embeddable widget any business can drop onto their site.</div>
-          <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="16" width="60" height="40" rx="6" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.18)" stroke-width="1"/>
-            <circle cx="30" cy="30" r="7" fill="rgba(14,165,233,0.2)"/>
-            <rect x="42" y="26" width="26" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="42" y="34" width="20" height="4" rx="2" fill="rgba(14,165,233,0.25)"/>
-            <rect x="22" y="46" width="44" height="6" rx="3" fill="rgba(14,165,233,0.3)"/>
-            <rect x="84" y="16" width="60" height="40" rx="6" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="92" y="24" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="92" y="34" width="44" height="8" rx="3" fill="rgba(99,102,241,0.25)"/>
-            <rect x="16" y="64" width="128" height="40" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="24" y="72" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="100" y="70" width="36" height="8" rx="3" fill="rgba(14,165,233,0.2)"/>
-            <rect x="24" y="84" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="100" y="82" width="36" height="8" rx="3" fill="rgba(20,184,166,0.25)"/>
-            <rect x="24" y="94" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="100" y="92" width="36" height="8" rx="3" fill="rgba(245,158,11,0.2)"/>
-          </svg>
-        </div>
-      </div>
 
 
     </div>
