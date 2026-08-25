@@ -5,26 +5,26 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Automating Finance Operations Saving 300+ Hours Monthly | iDataOne</title>
-<meta name="description" content="How iDataOne automated invoice processing, reconciliation and reporting for a finance team — including AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items — saving 300+ hours a month.">
-<meta name="keywords" content="finance automation case study, invoice processing automation, AI document extraction, PDF data extraction, STN SRN automation, reconciliation automation, iDataOne">
+<title>Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne</title>
+<meta name="description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
+<meta name="keywords" content="Infra360 PMS finance automation, invoice processing automation, AI document extraction, PDF data extraction, STN SRN automation, reconciliation automation, iDataOne">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Automating Finance Operations Saving 300+ Hours Monthly | iDataOne">
-<meta property="og:description" content="How iDataOne automated invoice processing, reconciliation and reporting for a finance team — including AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items — saving 300+ hours a month.">
+<meta property="og:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
+<meta property="og:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
 <meta property="og:url" content="https://idataone.com/case-study/finance-automation">
 <meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Automating Finance Operations Saving 300+ Hours Monthly | iDataOne">
-<meta name="twitter:description" content="How iDataOne automated invoice processing, reconciliation and reporting for a finance team — including AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items — saving 300+ hours a month.">
+<meta name="twitter:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
+<meta name="twitter:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Automating Finance Operations Saving 300+ Hours Monthly",
-  "description": "How iDataOne automated invoice processing, reconciliation and reporting workflows for a finance team, and built AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items.",
+  "headline": "Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly",
+  "description": "How iDataOne extended Infra360 PMS with a finance automation module — invoice processing, reconciliation and reporting workflows, plus AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
   "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
   "url": "https://idataone.com/case-study/finance-automation",
@@ -145,8 +145,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
+    <div class="cs-badge">A Module Inside Infra360 PMS</div>
     <h1 class="cs-hero-title">Automating Finance Operations Saving 300+ Hours Monthly</h1>
-    <p class="cs-hero-sub">How we automated invoice processing, reconciliation and reporting for a finance team — and built AI document extraction that reads a PDF or image and creates the project and material entries by itself.</p>
+    <p class="cs-hero-sub">How we extended <a href="/infra360PMS" style="color:#059669;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(5,150,105,0.35)">Infra360 PMS</a>, our infrastructure project management platform, with a finance automation module — automating invoice processing, reconciliation and reporting, and adding AI document extraction that reads a PDF or image and creates the project and material entries by itself.</p>
     <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>300+</span></div><div class="cs-stat-label">Hours Saved Every Month</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>Zero</span></div><div class="cs-stat-label">Manual Entry Errors</div></div>
@@ -160,9 +161,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-section">
   <div class="cs-inner">
     <div class="cs-tag">The Challenge</div>
-    <h2 class="cs-h2">Every Invoice and Material Document Meant Hours of Manual Data Entry</h2>
-    <p class="cs-p">The finance team was manually keying in invoices, delivery challans and purchase orders line by line — re-typing vendor details, quantities and amounts into spreadsheets and internal systems before anything could be reconciled or reported on. Every project's STN (Stock Transfer Note) and SRN (Stock Receipt Note) items had to be entered by hand from paper or scanned documents, which was slow and left plenty of room for typos and mismatched figures.</p>
-    <p class="cs-p">Reconciliation and monthly reporting compounded the problem — someone still had to cross-check invoices against POs and stitch together numbers from multiple sources before the books were closed. It was adding up to well over 300 hours of manual work every month, with errors that were expensive to trace back and fix.</p>
+    <h2 class="cs-h2">Inside Infra360 PMS, Finance Work Was Still Manual</h2>
+    <p class="cs-p">Infra360 PMS already tracked infrastructure projects end to end — from PO award through material movement to close-out. But the finance side of that workflow was still manual: the finance team was keying in invoices, delivery challans and purchase orders line by line into the platform, re-typing vendor details, quantities and amounts before anything could be reconciled or reported on. Every project's STN (Stock Transfer Note) and SRN (Stock Receipt Note) items had to be entered by hand from paper or scanned documents, which was slow and left plenty of room for typos and mismatched figures.</p>
+    <p class="cs-p">Reconciliation and monthly reporting compounded the problem — someone still had to cross-check invoices against POs already in the system and stitch together numbers from multiple projects before the books were closed. It was adding up to well over 300 hours of manual work every month, with errors that were expensive to trace back and fix.</p>
   </div>
 </section>
 
@@ -170,8 +171,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-section cs-alt">
   <div class="cs-inner">
     <div class="cs-tag">The Solution</div>
-    <h2 class="cs-h2">AI-Powered Document Extraction, End-to-End Automation</h2>
-    <p class="cs-p">We automated the finance team's invoice processing, reconciliation and reporting workflows end to end — then went a step further and built an AI extraction layer that turns a single uploaded document into a fully created record in the system.</p>
+    <h2 class="cs-h2">A Finance Automation Module, Built Into Infra360 PMS</h2>
+    <p class="cs-p">Rather than a separate tool, we built the automation directly into Infra360 PMS — automating the finance team's invoice processing, reconciliation and reporting workflows on top of the existing project and material data. Then we went a step further and added an AI extraction layer that turns a single uploaded document into a fully created project or STN/SRN record inside the platform, no separate app or re-entry required.</p>
 
     <div class="cs-visual">
       <div class="cs-flow">
@@ -187,7 +188,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="cs-flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
         <div class="cs-flow-step">
           <div class="cs-flow-step-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-          <div class="cs-flow-step-label">Project &amp;<br>STN/SRN Created</div>
+          <div class="cs-flow-step-label">Created in<br>Infra360 PMS</div>
         </div>
         <div class="cs-flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
         <div class="cs-flow-step">
@@ -200,23 +201,23 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="cs-features">
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-        <div><div class="cs-feature-title">AI Document Extraction</div><div class="cs-feature-desc">Upload any invoice, delivery challan or PO as a PDF or photo — the AI reads and structures every field automatically.</div></div>
+        <div><div class="cs-feature-title">AI Document Extraction</div><div class="cs-feature-desc">Inside Infra360 PMS, upload any invoice, delivery challan or PO as a PDF or photo — the AI reads and structures every field automatically.</div></div>
       </div>
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <div><div class="cs-feature-title">Automatic Project Creation</div><div class="cs-feature-desc">Extracted details are used to create the project record directly — no re-typing from the source document.</div></div>
+        <div><div class="cs-feature-title">Automatic Project Creation</div><div class="cs-feature-desc">Extracted details are used to create the project record directly in the platform — no re-typing from the source document.</div></div>
       </div>
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg></div>
-        <div><div class="cs-feature-title">Auto STN / SRN Item Entry</div><div class="cs-feature-desc">Material line items are parsed straight into Stock Transfer Notes and Stock Receipt Notes, matched to the right project.</div></div>
+        <div><div class="cs-feature-title">Auto STN / SRN Item Entry</div><div class="cs-feature-desc">Material line items are parsed straight into Infra360 PMS's Stock Transfer Notes and Stock Receipt Notes, matched to the right project.</div></div>
       </div>
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <div><div class="cs-feature-title">Automated Reconciliation</div><div class="cs-feature-desc">Invoices are matched against purchase orders automatically, flagging mismatches instead of relying on manual cross-checks.</div></div>
+        <div><div class="cs-feature-title">Automated Reconciliation</div><div class="cs-feature-desc">Invoices are matched against purchase orders already in the platform, flagging mismatches instead of relying on manual cross-checks.</div></div>
       </div>
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <div><div class="cs-feature-title">Automated Reporting</div><div class="cs-feature-desc">Monthly finance reports are generated directly from processed data — no manual consolidation across spreadsheets.</div></div>
+        <div><div class="cs-feature-title">Automated Reporting</div><div class="cs-feature-desc">Monthly finance reports are generated directly from Infra360 PMS's project and billing data — no manual consolidation across spreadsheets.</div></div>
       </div>
       <div class="cs-feature">
         <div class="cs-feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -230,8 +231,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-section">
   <div class="cs-inner">
     <div class="cs-tag">The Results</div>
-    <h2 class="cs-h2">From Manual Re-Keying to Upload-and-Done</h2>
-    <p class="cs-p">Finance staff now upload a document and the system takes over — projects and material entries appear automatically, invoices reconcile against POs without manual checking, and monthly reports are ready without spreadsheet consolidation. What used to take days each month now happens continuously in the background.</p>
+    <h2 class="cs-h2">From Manual Re-Keying to Upload-and-Done, Inside Infra360 PMS</h2>
+    <p class="cs-p">Finance staff now upload a document straight into Infra360 PMS and the platform takes over — projects and material entries appear automatically, invoices reconcile against POs without manual checking, and monthly reports are ready without spreadsheet consolidation. What used to take days each month now happens continuously in the background, without ever leaving the platform they already work in.</p>
     <div class="cs-results">
       <div class="cs-result"><div class="cs-result-num">300+</div><div class="cs-result-label">Hours saved<br>every month</div></div>
       <div class="cs-result"><div class="cs-result-num">100%</div><div class="cs-result-label">Elimination of<br>manual entry errors</div></div>
@@ -240,8 +241,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
 
     <div class="cs-quote">
-      <div class="cs-quote-text">"We used to spend days every month keying in invoices and material documents. Now we just upload them — the project and STN/SRN items are already there, with zero errors to chase down."</div>
-      <div class="cs-quote-author">— Finance Team Lead</div>
+      <div class="cs-quote-text">"We used to spend days every month keying invoices and material documents into Infra360 PMS. Now we just upload them — the project and STN/SRN items are already there, with zero errors to chase down."</div>
+      <div class="cs-quote-author">— Finance Team Lead, Infra360 PMS User</div>
     </div>
   </div>
 </section>
@@ -259,8 +260,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
       <div class="cs-grid-card">
         <div class="cs-grid-icon" style="background:#f0fdf4;border:1px solid rgba(20,184,166,0.15)"><svg viewBox="0 0 24 24" stroke="#0d9488"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg></div>
-        <div class="cs-grid-title">Workflow Automation</div>
-        <div class="cs-grid-desc">Extracted data flows straight into project creation and STN/SRN records, removing every manual hand-off in the process.</div>
+        <div class="cs-grid-title">Built as an Infra360 PMS Module</div>
+        <div class="cs-grid-desc">Extracted data flows straight into Infra360 PMS's own project and STN/SRN records — no separate app, database or hand-off to manage.</div>
       </div>
       <div class="cs-grid-card">
         <div class="cs-grid-icon" style="background:#fffbeb;border:1px solid rgba(245,158,11,0.15)"><svg viewBox="0 0 24 24" stroke="#d97706"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
@@ -281,7 +282,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-cta-card">
     <div class="cs-cta-left">
       <h3 class="cs-cta-h3">Want to Automate <em>Your Finance Ops?</em></h3>
-      <p class="cs-cta-sub">Let's discuss how we can build one for your team.</p>
+      <p class="cs-cta-sub">Whether it's inside an existing platform like Infra360 PMS or a new one, let's discuss how we can build it for your team.</p>
     </div>
     <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
