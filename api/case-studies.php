@@ -366,6 +366,22 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
+      <!-- AI: Finance Automation -->
+      <div class="case-card" data-cat="ai" onclick="location.href='/case-study/finance-automation'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/finance-automation-hero.png" alt="Automating finance operations inside Infra360 PMS — AI document extraction, reconciliation and reporting" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-ai">AI &amp; Automation</div>
+          <div class="case-metric metric-ai">300+</div>
+          <div class="case-metric-label">hours saved every month</div>
+          <div class="case-title">Automating Finance Operations Saving 300+ Hours Monthly</div>
+          <div class="case-desc">We automated invoice processing, reconciliation and reporting inside Infra360 PMS, and added AI document extraction that reads a PDF or image to auto-create projects and STN/SRN items.</div>
+          <div class="case-tags"><span class="case-tag">Finance</span><span class="case-tag">AI Extraction</span><span class="case-tag">Automation</span></div>
+          <a href="/case-study/finance-automation" class="case-cta violet">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
     </div><!-- /cases-grid -->
 
     <div class="no-results" id="no-results">No case studies found for this category.</div>

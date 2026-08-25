@@ -49,7 +49,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(5,150,105,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(16,185,129,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#ecfdf5 45%,#d1fae5 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(5,150,105,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(16,185,129,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cs-hero-img{display:flex;align-items:center;justify-content:center}
+.cs-hero-img img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(5,150,105,0.18),0 8px 24px rgba(15,23,42,0.12);transition:transform 0.4s ease;cursor:zoom-in}
+.cs-hero-img img:hover{transform:translateY(-4px)}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#059669;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px;max-width:800px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:600px}
@@ -126,6 +129,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-back svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-img{display:none}
   .cs-hero-stats{flex-wrap:wrap;gap:24px}
   .cs-grid{grid-template-columns:1fr}
   .cs-features{grid-template-columns:1fr}
@@ -145,14 +150,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <div class="cs-badge">A Module Inside Infra360 PMS</div>
-    <h1 class="cs-hero-title">Automating Finance Operations Saving 300+ Hours Monthly</h1>
-    <p class="cs-hero-sub">How we extended <a href="/infra360PMS" style="color:#059669;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(5,150,105,0.35)">Infra360 PMS</a>, our infrastructure project management platform, with a finance automation module — automating invoice processing, reconciliation and reporting, and adding AI document extraction that reads a PDF or image and creates the project and material entries by itself.</p>
-    <div class="cs-hero-stats">
-      <div class="cs-stat"><div class="cs-stat-num"><span>300+</span></div><div class="cs-stat-label">Hours Saved Every Month</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>Zero</span></div><div class="cs-stat-label">Manual Entry Errors</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>PDF &amp; Image</span></div><div class="cs-stat-label">AI Document Extraction</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>Auto</span></div><div class="cs-stat-label">STN / SRN Item Creation</div></div>
+    <div>
+      <div class="cs-badge">A Module Inside Infra360 PMS</div>
+      <h1 class="cs-hero-title">Automating Finance Operations Saving 300+ Hours Monthly</h1>
+      <p class="cs-hero-sub">How we extended <a href="/infra360PMS" style="color:#059669;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(5,150,105,0.35)">Infra360 PMS</a>, our infrastructure project management platform, with a finance automation module — automating invoice processing, reconciliation and reporting, and adding AI document extraction that reads a PDF or image and creates the project and material entries by itself.</p>
+      <div class="cs-hero-stats">
+        <div class="cs-stat"><div class="cs-stat-num"><span>300+</span></div><div class="cs-stat-label">Hours Saved Every Month</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>Zero</span></div><div class="cs-stat-label">Manual Entry Errors</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>PDF &amp; Image</span></div><div class="cs-stat-label">AI Document Extraction</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>Auto</span></div><div class="cs-stat-label">STN / SRN Item Creation</div></div>
+      </div>
+    </div>
+    <div class="cs-hero-img">
+      <img src="/assets/images/finance-automation-hero.png" alt="AI document extraction inside Infra360 PMS — invoice processing, reconciliation and reporting automated, saving 300+ hours a month" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>
@@ -174,28 +184,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Finance Automation Module, Built Into Infra360 PMS</h2>
     <p class="cs-p">Rather than a separate tool, we built the automation directly into Infra360 PMS — automating the finance team's invoice processing, reconciliation and reporting workflows on top of the existing project and material data. Then we went a step further and added an AI extraction layer that turns a single uploaded document into a fully created project or STN/SRN record inside the platform, no separate app or re-entry required.</p>
 
-    <div class="cs-visual">
-      <div class="cs-flow">
-        <div class="cs-flow-step">
-          <div class="cs-flow-step-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-          <div class="cs-flow-step-label">Upload PDF<br>or Image</div>
-        </div>
-        <div class="cs-flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cs-flow-step">
-          <div class="cs-flow-step-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v10l7 4"/><path d="M18 3l3 3"/></svg></div>
-          <div class="cs-flow-step-label">AI Extracts<br>All Fields</div>
-        </div>
-        <div class="cs-flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cs-flow-step">
-          <div class="cs-flow-step-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-          <div class="cs-flow-step-label">Created in<br>Infra360 PMS</div>
-        </div>
-        <div class="cs-flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        <div class="cs-flow-step">
-          <div class="cs-flow-step-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <div class="cs-flow-step-label">Reconciled &amp;<br>Reported</div>
-        </div>
-      </div>
+    <div class="cs-visual" style="padding:0;background:none;border:none">
+      <img src="/assets/images/finance-automation-architecture.png" alt="Finance automation architecture inside Infra360 PMS — document input, AI document extraction, project creation, STN/SRN entry, automated reconciliation and reporting" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(5,150,105,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
     </div>
 
     <div class="cs-features">
@@ -287,6 +277,21 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+  window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 
