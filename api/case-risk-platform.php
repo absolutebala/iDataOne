@@ -49,7 +49,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 10% 30%,rgba(99,102,241,0.1),transparent 45%),radial-gradient(ellipse at 90% 10%,rgba(124,58,237,0.08),transparent 40%),linear-gradient(135deg,#f8fafc 0%,#eef2ff 45%,#ede9fe 100%)}
 .cs-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(99,102,241,0.15),transparent 55%),radial-gradient(ellipse at 80% 30%,rgba(124,58,237,0.12),transparent 50%);pointer-events:none}
 .cs-hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+.cs-hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cs-hero-img{display:flex;align-items:center;justify-content:center}
+.cs-hero-img img{width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);transition:transform 0.4s ease;cursor:zoom-in}
+.cs-hero-img img:hover{transform:translateY(-4px)}
 .cs-badge{display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#4f46e5;margin-bottom:24px}
 .cs-hero-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-2px;line-height:1.1;color:#0f172a;margin-bottom:20px}
 .cs-hero-sub{font-size:16px;color:#64748b;line-height:1.75;margin-bottom:36px;max-width:560px}
@@ -117,6 +120,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cs-back svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 @media(max-width:768px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-img{display:none}
   .cs-hero-stats{flex-wrap:wrap;gap:24px}
   .cs-grid{grid-template-columns:1fr}
   .cs-features{grid-template-columns:1fr}
@@ -133,13 +138,18 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- Hero -->
 <section class="cs-hero">
   <div class="cs-hero-inner">
-    <h1 class="cs-hero-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</h1>
-    <p class="cs-hero-sub">How we designed and built a full-stack risk assessment platform that unified compliance workflows, real-time monitoring and team collaboration across an entire enterprise.</p>
-    <div class="cs-hero-stats">
-      <div class="cs-stat"><div class="cs-stat-num"><span>8</span></div><div class="cs-stat-label">Risk Categories</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>124</span></div><div class="cs-stat-label">Risks Tracked</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>3</span></div><div class="cs-stat-label">User Roles</div></div>
-      <div class="cs-stat"><div class="cs-stat-num"><span>5×5</span></div><div class="cs-stat-label">Severity Matrix</div></div>
+    <div>
+      <h1 class="cs-hero-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</h1>
+      <p class="cs-hero-sub">How we designed and built a full-stack risk assessment platform that unified compliance workflows, real-time monitoring and team collaboration across an entire enterprise.</p>
+      <div class="cs-hero-stats">
+        <div class="cs-stat"><div class="cs-stat-num"><span>8</span></div><div class="cs-stat-label">Risk Categories</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>124</span></div><div class="cs-stat-label">Risks Tracked</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>3</span></div><div class="cs-stat-label">User Roles</div></div>
+        <div class="cs-stat"><div class="cs-stat-num"><span>5×5</span></div><div class="cs-stat-label">Severity Matrix</div></div>
+      </div>
+    </div>
+    <div class="cs-hero-img">
+      <img src="/assets/images/risk-platform-hero.png" alt="Enterprise Risk & Compliance Platform — risk assessment, review and monitoring dashboard for an FMCG leader" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>
@@ -161,103 +171,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="cs-h2">A Purpose-Built Risk Assessment Platform</h2>
     <p class="cs-p">We designed and built a comprehensive, role-based risk management platform from the ground up — covering the full lifecycle from risk identification through assessment, mitigation, review and reporting.</p>
 
-    <div class="cs-visual">
-      <svg viewBox="0 0 720 420" width="720" height="420" xmlns="http://www.w3.org/2000/svg">
-        <!-- Dashboard frame -->
-        <rect x="20" y="10" width="680" height="400" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.15)" stroke-width="1.5"/>
-        <rect x="20" y="10" width="680" height="40" rx="16" fill="rgba(99,102,241,0.06)"/>
-        <rect x="20" y="34" width="680" height="16" fill="rgba(99,102,241,0.06)"/>
-        <!-- Top bar -->
-        <rect x="36" y="22" width="80" height="10" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <circle cx="672" cy="30" r="10" fill="rgba(99,102,241,0.1)"/>
-        <!-- Sidebar -->
-        <rect x="20" y="50" width="120" height="360" fill="rgba(248,250,252,0.9)"/>
-        <rect x="36" y="66" width="88" height="8" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <rect x="36" y="86" width="72" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-        <rect x="36" y="100" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="114" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="128" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="142" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <rect x="36" y="156" width="72" height="6" rx="3" fill="rgba(15,23,42,0.06)"/>
-        <!-- Metric cards -->
-        <rect x="152" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="162" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="162" y="82" width="60" height="14" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="162" y="102" width="30" height="5" rx="2.5" fill="rgba(20,184,166,0.35)"/>
-        <rect x="264" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-        <rect x="274" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="274" y="82" width="60" height="14" rx="4" fill="rgba(244,63,94,0.3)"/>
-        <rect x="274" y="102" width="30" height="5" rx="2.5" fill="rgba(244,63,94,0.25)"/>
-        <rect x="376" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-        <rect x="386" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="386" y="82" width="60" height="14" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="386" y="102" width="30" height="5" rx="2.5" fill="rgba(245,158,11,0.25)"/>
-        <rect x="488" y="62" width="100" height="56" rx="10" fill="#fff" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-        <rect x="498" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="498" y="82" width="60" height="14" rx="4" fill="rgba(20,184,166,0.3)"/>
-        <rect x="498" y="102" width="30" height="5" rx="2.5" fill="rgba(20,184,166,0.25)"/>
-        <rect x="600" y="62" width="88" height="56" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="610" y="72" width="40" height="5" rx="2.5" fill="rgba(15,23,42,0.08)"/>
-        <rect x="610" y="82" width="50" height="14" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <!-- 5x5 Matrix -->
-        <rect x="152" y="132" width="240" height="180" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="162" y="142" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="170" y="160" width="28" height="28" rx="4" fill="rgba(20,184,166,0.15)"/>
-        <rect x="202" y="160" width="28" height="28" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="234" y="160" width="28" height="28" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="266" y="160" width="28" height="28" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="298" y="160" width="28" height="28" rx="4" fill="rgba(244,63,94,0.3)"/>
-        <rect x="170" y="192" width="28" height="28" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="202" y="192" width="28" height="28" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="234" y="192" width="28" height="28" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="266" y="192" width="28" height="28" rx="4" fill="rgba(244,63,94,0.3)"/>
-        <rect x="298" y="192" width="28" height="28" rx="4" fill="rgba(244,63,94,0.4)"/>
-        <rect x="170" y="224" width="28" height="28" rx="4" fill="rgba(245,158,11,0.15)"/>
-        <rect x="202" y="224" width="28" height="28" rx="4" fill="rgba(245,158,11,0.25)"/>
-        <rect x="234" y="224" width="28" height="28" rx="4" fill="rgba(244,63,94,0.25)"/>
-        <rect x="266" y="224" width="28" height="28" rx="4" fill="rgba(244,63,94,0.35)"/>
-        <rect x="298" y="224" width="28" height="28" rx="4" fill="rgba(244,63,94,0.5)"/>
-        <rect x="170" y="256" width="28" height="28" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="202" y="256" width="28" height="28" rx="4" fill="rgba(244,63,94,0.25)"/>
-        <rect x="234" y="256" width="28" height="28" rx="4" fill="rgba(244,63,94,0.35)"/>
-        <rect x="266" y="256" width="28" height="28" rx="4" fill="rgba(244,63,94,0.45)"/>
-        <rect x="298" y="256" width="28" height="28" rx="4" fill="rgba(124,58,237,0.5)"/>
-        <!-- Risk circles on matrix -->
-        <circle cx="248" cy="206" r="6" fill="rgba(244,63,94,0.7)"/>
-        <circle cx="312" cy="270" r="5" fill="rgba(124,58,237,0.7)"/>
-        <circle cx="280" cy="238" r="5" fill="rgba(244,63,94,0.6)"/>
-        <circle cx="216" cy="174" r="6" fill="rgba(245,158,11,0.6)"/>
-        <!-- Chart area -->
-        <rect x="404" y="132" width="284" height="180" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="414" y="142" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="420" y="270" width="16" height="28" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="442" y="252" width="16" height="46" rx="4" fill="rgba(99,102,241,0.35)"/>
-        <rect x="464" y="240" width="16" height="58" rx="4" fill="rgba(99,102,241,0.3)"/>
-        <rect x="486" y="228" width="16" height="70" rx="4" fill="rgba(99,102,241,0.4)"/>
-        <rect x="508" y="216" width="16" height="82" rx="4" fill="rgba(99,102,241,0.5)"/>
-        <rect x="530" y="224" width="16" height="74" rx="4" fill="rgba(99,102,241,0.45)"/>
-        <rect x="552" y="232" width="16" height="66" rx="4" fill="rgba(99,102,241,0.35)"/>
-        <rect x="574" y="220" width="16" height="78" rx="4" fill="rgba(99,102,241,0.5)"/>
-        <rect x="596" y="208" width="16" height="90" rx="4" fill="rgba(99,102,241,0.55)"/>
-        <rect x="618" y="200" width="16" height="98" rx="4" fill="rgba(99,102,241,0.6)"/>
-        <!-- Table -->
-        <rect x="152" y="326" width="536" height="74" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="162" y="336" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="162" y="346" width="516" height="1" fill="rgba(226,232,240,0.8)"/>
-        <rect x="162" y="354" width="120" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="310" y="354" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="400" y="352" width="40" height="8" rx="4" fill="rgba(244,63,94,0.15)"/>
-        <rect x="470" y="354" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="560" y="354" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="368" width="120" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="310" y="368" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="400" y="366" width="40" height="8" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="470" y="368" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="560" y="368" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="162" y="382" width="120" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="310" y="382" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="400" y="380" width="40" height="8" rx="4" fill="rgba(20,184,166,0.2)"/>
-      </svg>
+    <div class="cs-visual" style="padding:0;background:none;border:none">
+      <img src="/assets/images/risk-platform-architecture.png" alt="Enterprise Risk & Compliance Platform architecture — role-based access, 5x5 risk severity matrix, complete risk register, team communication log, real-time dashboard, review and approval workflow" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
     </div>
 
     <div class="cs-features">
@@ -349,6 +264,21 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+  window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 

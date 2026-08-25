@@ -238,24 +238,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We designed and built a full-stack risk assessment platform with a 5x5 severity matrix, real-time dashboards, role-based workflows and threaded communication — deployed across multiple departments.</div>
           <a href="/case-study/risk-platform" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(99,102,241,0.08)"/>
-            <rect x="16" y="34" width="32" height="24" rx="5" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-            <rect x="54" y="34" width="32" height="24" rx="5" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="92" y="34" width="32" height="24" rx="5" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-            <rect x="130" y="34" width="18" height="24" rx="5" fill="rgba(244,63,94,0.1)" stroke="rgba(244,63,94,0.2)" stroke-width="1"/>
-            <rect x="16" y="66" width="60" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="20" y="72" width="24" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <rect x="20" y="80" width="20" height="6" rx="2" fill="rgba(99,102,241,0.2)"/>
-            <rect x="20" y="90" width="20" height="6" rx="2" fill="rgba(20,184,166,0.2)"/>
-            <rect x="44" y="80" width="20" height="6" rx="2" fill="rgba(245,158,11,0.2)"/>
-            <rect x="44" y="90" width="20" height="6" rx="2" fill="rgba(244,63,94,0.15)"/>
-            <rect x="84" y="66" width="64" height="38" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="90" y="72" width="30" height="3" rx="1.5" fill="rgba(15,23,42,0.08)"/>
-            <polyline points="90,96 100,88 110,91 120,84 130,80 140,83" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
+          <img src="/assets/images/risk-platform-hero.png" alt="Enterprise Risk & Compliance Platform for an FMCG leader" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
       </div>
 

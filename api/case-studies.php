@@ -301,32 +301,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <!-- Digital: Enterprise Risk Platform -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/risk-platform'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="16" y="16" width="248" height="28" rx="12" fill="rgba(99,102,241,0.06)"/>
-            <rect x="28" y="56" width="56" height="40" rx="6" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="34" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="34" y="72" width="40" height="10" rx="3" fill="rgba(99,102,241,0.25)"/>
-            <rect x="90" y="56" width="56" height="40" rx="6" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-            <rect x="96" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="96" y="72" width="40" height="10" rx="3" fill="rgba(20,184,166,0.25)"/>
-            <rect x="152" y="56" width="56" height="40" rx="6" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-            <rect x="158" y="64" width="30" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="158" y="72" width="40" height="10" rx="3" fill="rgba(245,158,11,0.25)"/>
-            <rect x="214" y="56" width="40" height="40" rx="6" fill="rgba(244,63,94,0.08)" stroke="rgba(244,63,94,0.15)" stroke-width="1"/>
-            <rect x="220" y="64" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="220" y="72" width="28" height="10" rx="3" fill="rgba(244,63,94,0.2)"/>
-            <rect x="28" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <polyline points="36,140 52,130 68,134 84,124 100,118 116,122 130,114" stroke="rgba(99,102,241,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <rect x="148" y="108" width="110" height="44" rx="6" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="156" y="122" width="10" height="22" rx="3" fill="rgba(99,102,241,0.25)"/>
-            <rect x="170" y="116" width="10" height="28" rx="3" fill="rgba(20,184,166,0.3)"/>
-            <rect x="184" y="120" width="10" height="24" rx="3" fill="rgba(245,158,11,0.3)"/>
-            <rect x="198" y="112" width="10" height="32" rx="3" fill="rgba(99,102,241,0.35)"/>
-            <rect x="212" y="118" width="10" height="26" rx="3" fill="rgba(244,63,94,0.25)"/>
-            <rect x="226" y="114" width="10" height="30" rx="3" fill="rgba(99,102,241,0.4)"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/risk-platform-hero.png" alt="Enterprise Risk & Compliance Platform for an FMCG leader" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
