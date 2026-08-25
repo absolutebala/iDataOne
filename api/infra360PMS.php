@@ -132,79 +132,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <svg viewBox="0 0 480 380" width="480" height="380" xmlns="http://www.w3.org/2000/svg">
-        <!-- Main dashboard frame -->
-        <rect x="20" y="10" width="440" height="300" rx="16" fill="rgba(255,255,255,0.95)" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"/>
-        <rect x="20" y="10" width="440" height="36" rx="16" fill="rgba(99,102,241,0.08)"/>
-        <rect x="20" y="32" width="440" height="14" fill="rgba(99,102,241,0.08)"/>
-        <rect x="36" y="22" width="80" height="8" rx="4" fill="rgba(79,70,229,0.3)"/>
-        <!-- KPI cards -->
-        <rect x="36" y="60" width="90" height="52" rx="10" fill="#fff" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-        <rect x="46" y="70" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="46" y="80" width="60" height="14" rx="4" fill="rgba(99,102,241,0.25)"/>
-        <rect x="46" y="100" width="28" height="4" rx="2" fill="rgba(20,184,166,0.3)"/>
-        <rect x="136" y="60" width="90" height="52" rx="10" fill="#fff" stroke="rgba(245,158,11,0.18)" stroke-width="1"/>
-        <rect x="146" y="70" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="146" y="80" width="60" height="14" rx="4" fill="rgba(245,158,11,0.3)"/>
-        <rect x="146" y="100" width="28" height="4" rx="2" fill="rgba(245,158,11,0.25)"/>
-        <rect x="236" y="60" width="90" height="52" rx="10" fill="#fff" stroke="rgba(244,63,94,0.18)" stroke-width="1"/>
-        <rect x="246" y="70" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="246" y="80" width="60" height="14" rx="4" fill="rgba(244,63,94,0.3)"/>
-        <rect x="246" y="100" width="28" height="4" rx="2" fill="rgba(244,63,94,0.2)"/>
-        <rect x="336" y="60" width="108" height="52" rx="10" fill="#fff" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
-        <rect x="346" y="70" width="40" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-        <rect x="346" y="80" width="68" height="14" rx="4" fill="rgba(20,184,166,0.3)"/>
-        <rect x="346" y="100" width="28" height="4" rx="2" fill="rgba(20,184,166,0.3)"/>
-        <!-- Table -->
-        <rect x="36" y="126" width="240" height="168" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="48" y="138" width="80" height="6" rx="3" fill="rgba(15,23,42,0.1)"/>
-        <rect x="48" y="152" width="216" height="1" fill="rgba(226,232,240,0.8)"/>
-        <rect x="48" y="162" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="160" width="36" height="9" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="210" y="162" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="180" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="178" width="36" height="9" rx="4" fill="rgba(245,158,11,0.2)"/>
-        <rect x="210" y="180" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="198" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="196" width="36" height="9" rx="4" fill="rgba(244,63,94,0.15)"/>
-        <rect x="210" y="198" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="216" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="214" width="36" height="9" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="210" y="216" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="234" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="232" width="36" height="9" rx="4" fill="rgba(99,102,241,0.2)"/>
-        <rect x="210" y="234" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="252" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="250" width="36" height="9" rx="4" fill="rgba(245,158,11,0.18)"/>
-        <rect x="210" y="252" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="48" y="270" width="70" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <rect x="148" y="268" width="36" height="9" rx="4" fill="rgba(20,184,166,0.2)"/>
-        <rect x="210" y="270" width="36" height="5" rx="2.5" fill="rgba(15,23,42,0.07)"/>
-        <!-- Bar chart -->
-        <rect x="286" y="126" width="158" height="90" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="298" y="138" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="298" y="186" width="16" height="20" rx="3" fill="rgba(99,102,241,0.3)"/>
-        <rect x="318" y="172" width="16" height="34" rx="3" fill="rgba(99,102,241,0.45)"/>
-        <rect x="338" y="178" width="16" height="28" rx="3" fill="rgba(99,102,241,0.35)"/>
-        <rect x="358" y="164" width="16" height="42" rx="3" fill="rgba(99,102,241,0.5)"/>
-        <rect x="378" y="156" width="16" height="50" rx="3" fill="rgba(79,70,229,0.55)"/>
-        <rect x="398" y="170" width="16" height="36" rx="3" fill="rgba(99,102,241,0.45)"/>
-        <!-- Trend line -->
-        <rect x="286" y="226" width="158" height="68" rx="10" fill="#fff" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-        <rect x="298" y="236" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <polyline points="298,278 318,268 338,272 358,260 378,252 398,256 418,244 434,240" stroke="rgba(99,102,241,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <polygon points="298,278 318,268 338,272 358,260 378,252 398,256 418,244 434,240 434,286 298,286" fill="rgba(99,102,241,0.05)"/>
-        <!-- Floating trade badges -->
-        <rect x="40" y="330" width="100" height="28" rx="14" fill="rgba(255,255,255,0.96)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
-        <circle cx="56" cy="344" r="7" fill="rgba(99,102,241,0.2)"/>
-        <rect x="68" y="340" width="60" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="155" y="330" width="90" height="28" rx="14" fill="rgba(255,255,255,0.96)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-        <circle cx="171" cy="344" r="7" fill="rgba(245,158,11,0.2)"/>
-        <rect x="183" y="340" width="50" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-        <rect x="260" y="330" width="80" height="28" rx="14" fill="rgba(255,255,255,0.96)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-        <circle cx="276" cy="344" r="7" fill="rgba(20,184,166,0.2)"/>
-        <rect x="288" y="340" width="42" height="5" rx="2.5" fill="rgba(15,23,42,0.1)"/>
-      </svg>
+      <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — every site, every rupee, accounted for" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
     </div>
   </div>
 </section>
@@ -241,6 +169,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="section-tag">The Solution</div>
     <h2 class="section-title">One System for Every Trade</h2>
     <p class="section-sub">The same rigour for a tower-erection crew and a solar installation team — without forcing either into the wrong workflow.</p>
+    <div style="padding:0;background:#f0f4f8;border-radius:20px;overflow:hidden;margin-bottom:48px">
+      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — architecture and dashboard for infrastructure project management" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+    </div>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-num">01</div>
@@ -335,6 +266,21 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
   </div>
 </section>
+
+<!-- Hover zoom lightbox -->
+<div id="hz-overlay" onclick="hzClose()" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);align-items:center;justify-content:center;transition:background 0.3s ease;cursor:zoom-out">
+  <img id="hz-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:92vw;max-height:90vh;border-radius:16px;box-shadow:0 32px 120px rgba(0,0,0,0.7);transform:scale(0.85);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;object-fit:contain;cursor:default"/>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('hz-overlay');
+  var im=document.getElementById('hz-img');
+  var closeTimer=null;
+  window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
+})();
+</script>
 
 <?php include __DIR__ . '/_footer.php'; ?>
 
