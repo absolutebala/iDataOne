@@ -69,7 +69,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .ai-card{padding:20px;background:#fff;border:1px solid rgba(245,197,24,0.2);border-radius:14px;transition:border-color 0.3s,transform 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
 .ai-card:hover{border-color:rgba(245,197,24,0.5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
-.ai-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(245,197,24,0.08));border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}.ai-icon svg{width:22px;height:22px;fill:none;stroke:url(#aiGrad);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ai-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(245,197,24,0.08));border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}.ai-icon svg{width:22px;height:22px;fill:none;stroke:url(#aiGrad);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ai-icon img{border-radius:14px}
 .ai-name{font-size:17px;font-weight:800;letter-spacing:-0.5px;color:#b45309;margin-bottom:2px}
 .ai-role{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:8px}
 .ai-desc{font-size:12px;color:#64748b;line-height:1.6}
@@ -252,23 +252,14 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
       <!-- Right: 2x2 AI grid -->
       <div style="padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start">
         <?php foreach([
-          ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.'],
-          ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.'],
-          ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.'],
-          ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.'],
+          ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.','ai-pixel.jpg'],
+          ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.','ai-forge.jpg'],
+          ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.','ai-insight.jpg'],
+          ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.','ai-sentinel.jpg'],
         ] as $m): ?>
         <div class="ai-card">
-          <div class="ai-icon">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs><linearGradient id="bg<?= $m[0] ?>" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#f5c518"/></linearGradient></defs>
-              <ellipse cx="16" cy="15" rx="7" ry="8" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M9 15c-3 0-4.5 1.3-4.5 3.5S7 22 9 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M23 15c3 0 4.5 1.3 4.5 3.5S25 22 23 22" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M12 10c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.6" stroke-linecap="round"/>
-              <circle cx="13" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
-              <circle cx="19" cy="15" r="1.2" fill="url(#bg<?= $m[0] ?>)"/>
-              <path d="M14 19v3M18 19v3M14 22h4" stroke="url(#bg<?= $m[0] ?>)" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+          <div class="ai-icon" style="padding:0;overflow:hidden">
+            <img src="/assets/images/<?= $m[3] ?>" alt="<?= $m[0] ?> — <?= $m[1] ?>" style="width:100%;height:100%;object-fit:cover;display:block">
           </div>
           <div class="ai-name"><?= $m[0] ?></div>
           <div class="ai-role"><?= $m[1] ?></div>
