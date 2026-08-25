@@ -154,7 +154,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="section-tag">Success Stories</div>
     <h2 class="section-title">Data Intelligence. Real Clarity.</h2>
     <p class="section-sub">Businesses that unified their data and unlocked real competitive advantage.</p>
-    <div class="stories-grid">
+    <div class="stories-grid" style="grid-template-columns:1fr;max-width:760px;margin:0 auto">
       <div class="story-card" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div>
           <div class="story-tag">Risk Analytics</div>
@@ -165,94 +165,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;align-self:stretch">
           <img src="/assets/images/risk-platform-hero.png" alt="Real-Time Risk Intelligence Dashboard for an enterprise FMCG company" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
-
-
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Unified Data</div>
-          <div class="story-title">Unifying Data Across 12 Systems for a Retail Chain</div>
-          <div class="story-desc">We unified data from 12 disconnected systems into a single trusted data layer, giving leadership a real-time view of operations across all locations for the first time.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <circle cx="80" cy="60" r="18" fill="rgba(217,119,6,0.12)" stroke="rgba(217,119,6,0.3)" stroke-width="1.5"/>
-            <circle cx="80" cy="60" r="6" fill="rgba(217,119,6,0.3)"/>
-            <line x1="20" y1="25" x2="65" y2="52" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <line x1="80" y1="18" x2="80" y2="42" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <line x1="140" y1="25" x2="95" y2="52" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <line x1="20" y1="95" x2="65" y2="68" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <line x1="80" y1="102" x2="80" y2="78" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <line x1="140" y1="95" x2="95" y2="68" stroke="rgba(217,119,6,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-            <circle cx="20" cy="22" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="80" cy="15" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="22" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="20" cy="98" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="80" cy="105" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="98" r="8" fill="rgba(245,158,11,0.2)" stroke="rgba(217,119,6,0.25)" stroke-width="1"/>
-          </svg>
-        </div>
       </div>
-
-
-      <div class="story-card">
-        <div>
-          <div class="story-tag">BI & Analytics</div>
-          <div class="story-title">Delivering BI Platform That Drives 40% Faster Decisions</div>
-          <div class="story-desc">We built a full business intelligence platform for a logistics company, enabling data-driven decisions across procurement, operations and customer service — 40% faster.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="18" width="60" height="82" rx="6" fill="rgba(255,251,235,0.8)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-            <rect x="22" y="26" width="48" height="4" rx="2" fill="rgba(217,119,6,0.2)"/>
-            <rect x="22" y="34" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="44" width="48" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="52" width="36" height="4" rx="2" fill="rgba(217,119,6,0.15)"/>
-            <rect x="22" y="62" width="48" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="70" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="80" width="48" height="4" rx="2" fill="rgba(217,119,6,0.15)"/>
-            <rect x="84" y="18" width="68" height="40" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-            <polyline points="90,50 100,40 110,43 120,36 130,30 140,34 148,28" stroke="rgba(217,119,6,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <polygon points="90,50 100,40 110,43 120,36 130,30 140,34 148,28 148,52 90,52" fill="rgba(217,119,6,0.05)"/>
-            <rect x="84" y="66" width="32" height="32" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-            <circle cx="100" cy="82" r="10" fill="none" stroke="rgba(217,119,6,0.15)" stroke-width="5"/>
-            <circle cx="100" cy="82" r="10" fill="none" stroke="rgba(217,119,6,0.55)" stroke-width="5" stroke-dasharray="32 31" stroke-dashoffset="15"/>
-            <rect x="122" y="66" width="30" height="32" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.12)" stroke-width="1"/>
-            <rect x="127" y="82" width="6" height="10" rx="2" fill="rgba(217,119,6,0.4)"/>
-            <rect x="136" y="76" width="6" height="16" rx="2" fill="rgba(217,119,6,0.6)"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="story-card">
-        <div>
-          <div class="story-tag">Predictions</div>
-          <div class="story-title">Predictive Analytics That Reduced Inventory Waste by 45%</div>
-          <div class="story-desc">We built a predictive analytics model for a manufacturing client that forecasted demand with 92% accuracy, reducing overstock and waste by 45% in the first quarter.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="20" width="128" height="72" rx="6" fill="rgba(255,251,235,0.6)"/>
-            <polyline points="20,80 36,68 52,72 68,58 84,50 100,54" stroke="rgba(217,119,6,0.7)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <polyline points="100,54 116,44 132,38 140,34" stroke="rgba(217,119,6,0.35)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,3"/>
-            <polygon points="20,80 36,68 52,72 68,58 84,50 100,54 100,84 20,84" fill="rgba(217,119,6,0.06)"/>
-            <line x1="100" y1="20" x2="100" y2="92" stroke="rgba(217,119,6,0.2)" stroke-width="1" stroke-dasharray="3,3"/>
-            <rect x="104" y="24" width="36" height="16" rx="5" fill="rgba(255,251,235,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
-            <rect x="108" y="29" width="28" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
-            <circle cx="100" cy="54" r="4" fill="rgba(217,119,6,0.7)"/>
-            <rect x="16" y="96" width="128" height="8" rx="2" fill="rgba(217,119,6,0.06)"/>
-            <rect x="16" y="96" width="80" height="8" rx="2" fill="rgba(217,119,6,0.15)"/>
-          </svg>
-        </div>
-      </div>
-
-
-
     </div>
   </div>
 </section>
