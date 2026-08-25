@@ -262,22 +262,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by GPT-4o-mini.</div>
           <a href="/case-study/mealmate" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="58" y="14" width="44" height="92" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
-            <rect x="64" y="24" width="32" height="8" rx="3" fill="rgba(245,158,11,0.15)" stroke="rgba(217,119,6,0.18)" stroke-width="1"/>
-            <circle cx="71" cy="28" r="2.5" fill="rgba(217,119,6,0.3)"/>
-            <rect x="64" y="36" width="32" height="16" rx="3" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="68" y="40" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.3)"/>
-            <rect x="68" y="46" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.07)"/>
-            <rect x="64" y="56" width="32" height="16" rx="3" fill="rgba(245,158,11,0.08)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="68" y="60" width="14" height="3" rx="1.5" fill="rgba(217,119,6,0.25)"/>
-            <rect x="64" y="78" width="32" height="9" rx="4.5" fill="rgba(217,119,6,0.7)"/>
-            <circle cx="24" cy="35" r="11" fill="rgba(217,119,6,0.1)" stroke="rgba(217,119,6,0.22)" stroke-width="1"/>
-            <circle cx="24" cy="55" r="9" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <circle cx="130" cy="40" r="10" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.22)" stroke-width="1"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
+          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
       </div>
 

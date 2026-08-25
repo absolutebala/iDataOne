@@ -383,21 +383,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
       <!-- Digital: MealMate -->
       <div class="case-card" data-cat="digital" onclick="location.href='/case-study/mealmate'" style="cursor:pointer">
-        <div class="case-card-visual" style="background:linear-gradient(135deg,#fffbeb,#fef3c7)">
-          <svg viewBox="0 0 280 180" width="280" height="180" xmlns="http://www.w3.org/2000/svg">
-            <rect x="16" y="16" width="248" height="148" rx="12" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="100" y="26" width="80" height="128" rx="14" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
-            <rect x="112" y="42" width="56" height="14" rx="5" fill="rgba(245,158,11,0.15)" stroke="rgba(217,119,6,0.18)" stroke-width="1"/>
-            <rect x="112" y="62" width="56" height="28" rx="5" fill="#fff" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="120" y="70" width="24" height="4" rx="2" fill="rgba(217,119,6,0.3)"/>
-            <rect x="120" y="78" width="36" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="112" y="96" width="56" height="28" rx="5" fill="rgba(245,158,11,0.08)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="120" y="104" width="24" height="4" rx="2" fill="rgba(217,119,6,0.25)"/>
-            <rect x="112" y="130" width="56" height="14" rx="7" fill="rgba(217,119,6,0.7)"/>
-            <circle cx="50" cy="55" r="18" fill="rgba(217,119,6,0.1)" stroke="rgba(217,119,6,0.22)" stroke-width="1"/>
-            <circle cx="50" cy="90" r="14" fill="rgba(20,184,166,0.1)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <circle cx="226" cy="65" r="16" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.22)" stroke-width="1"/>
-          </svg>
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:200px;object-fit:cover;object-position:center center;display:block"/>
         </div>
         <div class="case-card-body">
           <div class="case-category cat-digital">Digital Products</div>
