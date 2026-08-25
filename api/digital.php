@@ -147,6 +147,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .process-step:last-child{padding-bottom:0}
   .step-icon{margin:0;flex-shrink:0}
   .step-title{margin-bottom:6px}
+  .process-img-wrap{width:100%!important}
+  .process-img-desktop{display:none!important}
+  .process-img-mobile{display:block!important}
   .products-grid{grid-template-columns:1fr}
   .cta-card{grid-template-columns:1fr;padding:28px 24px}
   .cta-btns{align-items:flex-start}
@@ -359,11 +362,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="section-inner">
     <div class="section-tag">Our Process</div>
     <h2 class="section-title">From Idea To Scale</h2>
-    <div style="margin-top:40px;width:80%;margin-left:auto;margin-right:auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.25)">
+    <div class="process-img-wrap" style="margin-top:40px;width:80%;margin-left:auto;margin-right:auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.25)">
       <img
+        class="process-img-desktop"
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
         style="width:100%;height:auto;display:block"
+        loading="lazy"
+      />
+      <img
+        class="process-img-mobile"
+        src="/assets/images/our-process-mobile.png"
+        alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
+        style="width:100%;height:auto;display:none"
         loading="lazy"
       />
     </div>
