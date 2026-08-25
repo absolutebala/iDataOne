@@ -11,6 +11,7 @@ $allowed = [
     'isportone'           => __DIR__ . '/case-isportone.php',
     'mealmate'            => __DIR__ . '/case-mealmate.php',
     'aidesker'            => __DIR__ . '/case-aidesker.php',
+    'finance-automation'  => __DIR__ . '/case-finance-automation.php',
 ];
 
 if (isset($allowed[$slug]) && file_exists($allowed[$slug])) {
