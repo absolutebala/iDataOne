@@ -77,21 +77,34 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .plus-bar em{color:#f5c518;font-style:normal}
 
 /* ── COMPARISON ── */
-.compare-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
-.ccard{border-radius:20px;padding:32px}
-.ccard-old{background:#f8fafc;border:1px solid rgba(226,232,240,0.8)}
-.ccard-new{background:#f0f9ff;border:1px solid rgba(0,212,255,0.25);position:relative;overflow:hidden}
-.ccard-new::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,212,255,0.07),transparent 60%);pointer-events:none}
-.ctitle{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
-.ccard-old .ctitle{color:#94a3b8}
-.ccard-new .ctitle{color:#00d4ff}
-.citem{display:flex;gap:10px;margin-bottom:12px;font-size:13px;color:#475569;line-height:1.5;align-items:flex-start}
-.citem-x::before{content:"—";color:rgba(255,255,255,0.18);flex-shrink:0}
-.citem-ok::before{content:"✓";color:#00d4ff;font-weight:700;flex-shrink:0}
-.csave{margin-top:24px;padding:24px;background:linear-gradient(135deg,#0a0f1e,#130e24);border:1px solid rgba(0,212,255,0.2);border-radius:16px;text-align:center;position:relative;z-index:1}
-.csave-n{font-size:36px;font-weight:900;letter-spacing:-2px;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.csave-l{font-size:12px;color:rgba(255,255,255,0.6);margin-top:4px}
-.cfootnote{font-size:11px;color:#94a3b8;font-style:italic;margin-top:10px;text-align:center}
+.diff-wrap{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch;margin-top:40px}
+.diff-card{border-radius:20px;padding:32px 36px}
+.diff-old{background:#f8fafc;border:1px solid rgba(226,232,240,0.8)}
+.diff-new{background:linear-gradient(135deg,#0a2530,#0a1f2e 55%,#0d1b2e);border:1px solid rgba(0,212,255,0.25);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.diff-new::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0%,rgba(0,212,255,0.1),transparent 60%);pointer-events:none}
+.diff-title{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;position:relative;z-index:1}
+.diff-old .diff-title{color:#94a3b8}
+.diff-new .diff-title{color:#5eead4}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;position:relative;z-index:1}
+.diff-item{display:flex;align-items:center;gap:10px;font-size:13.5px;line-height:1.4}
+.diff-old .diff-item{color:#334155}
+.diff-new .diff-item{color:rgba(255,255,255,0.92)}
+.diff-item svg{width:19px;height:19px;flex-shrink:0;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.diff-old .diff-item svg{stroke:#94a3b8}
+.diff-new .diff-item svg{stroke:#5eead4}
+.diff-arrow{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid rgba(226,232,240,0.8);display:flex;align-items:center;justify-content:center;color:#0f172a;box-shadow:0 4px 14px rgba(0,0,0,0.1);flex-shrink:0;align-self:center}
+.diff-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.diff-stat{position:relative;z-index:1;text-align:right;flex-shrink:0}
+.diff-stat-up{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:2px}
+.diff-stat-pct{font-size:clamp(44px,5vw,64px);font-weight:900;letter-spacing:-2.5px;line-height:1;background:linear-gradient(135deg,#5eead4,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.diff-stat-label{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-top:6px}
+.diff-stats-row{margin-top:20px;background:linear-gradient(135deg,#0a2530,#0a1f2e);border:1px solid rgba(0,212,255,0.15);border-radius:20px;display:grid;grid-template-columns:1fr 1fr 1fr;padding:30px 24px}
+.diff-stat-item{display:flex;align-items:center;gap:16px;justify-content:center;border-right:1px solid rgba(255,255,255,0.1);padding:0 16px}
+.diff-stat-item:last-child{border-right:none}
+.diff-stat-item svg{width:34px;height:34px;flex-shrink:0;fill:none;stroke:url(#diffGrad);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.diff-stat-num{font-size:26px;font-weight:900;letter-spacing:-1px;background:linear-gradient(135deg,#5eead4,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.diff-stat-txt{font-size:12px;font-weight:600;letter-spacing:0.3px;color:rgba(255,255,255,0.85);text-transform:uppercase;line-height:1.4}
+.cfootnote{font-size:11px;color:#94a3b8;font-style:italic;margin-top:16px;text-align:center}
 
 /* ── WORKFLOW ── */
 .wf-title{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.5px;margin-bottom:48px;text-align:center;color:#0f172a}
@@ -156,7 +169,13 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   .team-grid{grid-template-columns:1fr}
   .team-head-card{text-align:center}
   .avatar{margin:0 auto}
-  .compare-wrap{grid-template-columns:1fr}
+  .diff-wrap{grid-template-columns:1fr}
+  .diff-arrow{transform:rotate(90deg);margin:4px auto}
+  .diff-new{flex-direction:column;align-items:stretch;text-align:left}
+  .diff-stat{text-align:left}
+  .diff-stats-row{grid-template-columns:1fr;gap:20px}
+  .diff-stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:20px}
+  .diff-stat-item:last-child{border-bottom:none;padding-bottom:0}
   .wf-steps{grid-template-columns:1fr 1fr}
   .stats-bar{grid-template-columns:1fr 1fr}
 }
@@ -238,7 +257,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 <section class="section" style="background:#ffffff">
   <div class="inner">
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
-    <p style="font-size:14px;color:#64748b;margin-bottom:32px">Senior human leadership + specialised AI capability. End to end.</p>
+    <p style="font-size:14px;color:#64748b;margin-bottom:32px">Senior ownership where it matters. AI capability where it accelerates.</p>
     <!-- Outer box -->
     <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:1fr 1fr">
       <!-- Left: Bala -->
@@ -310,25 +329,51 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div class="eyebrow">The Difference</div>
     <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:0;color:#0f172a">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
-    <div class="compare-wrap">
-      <div class="ccard ccard-old">
-        <div class="ctitle">Traditional Model</div>
-        <?php foreach(['Large specialist teams','Management layers','Long coordination cycles','High resource overhead','Slower iteration'] as $i): ?>
-        <div class="citem citem-x"><?= $i ?></div>
-        <?php endforeach; ?>
-      </div>
-      <div class="ccard ccard-new">
-        <div class="ctitle">iDataOne Model</div>
-        <?php foreach(['Senior Delivery Head on every project','4 specialised AI team members','Lean, focused team structure','AI-accelerated execution throughout','Faster delivery cycles'] as $i): ?>
-        <div class="citem citem-ok"><?= $i ?></div>
-        <?php endforeach; ?>
-        <div class="csave">
-          <div class="csave-n">Up to 70%</div>
-          <div class="csave-l">lower development cost</div>
+    <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="diffGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5eead4"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs></svg>
+    <div class="diff-wrap">
+      <div class="diff-card diff-old">
+        <div class="diff-title">Traditional Model</div>
+        <div class="diff-grid">
+          <div class="diff-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Higher overhead</div>
+          <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Large teams</div>
+          <div class="diff-item"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M8.6 7.6 10 16M15.4 7.6 14 16"/></svg>Coordination layers</div>
+          <div class="diff-item"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Coordination layers</div>
+          <div class="diff-item"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Manual development effort</div>
         </div>
-        <div class="cfootnote">*Varies by scope, complexity, stack and delivery model.</div>
+      </div>
+      <div class="diff-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      <div class="diff-card diff-new">
+        <div>
+          <div class="diff-title">iDataOne AI-Engineered Model</div>
+          <div class="diff-grid" style="grid-template-columns:1fr">
+            <div class="diff-item"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>Leaner execution</div>
+            <div class="diff-item"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>AI-assisted engineering</div>
+            <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Senior oversight</div>
+            <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Automated / accelerated execution</div>
+          </div>
+        </div>
+        <div class="diff-stat">
+          <div class="diff-stat-up">Up To</div>
+          <div class="diff-stat-pct">70%</div>
+          <div class="diff-stat-label">Lower Development Cost</div>
+        </div>
       </div>
     </div>
+    <div class="diff-stats-row">
+      <div class="diff-stat-item">
+        <svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        <div><div class="diff-stat-num">5×</div><div class="diff-stat-txt">Faster AI-Assisted<br>Delivery</div></div>
+      </div>
+      <div class="diff-stat-item">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M9 14.5l2 2 3-4" transform="translate(0,3)"/></svg>
+        <div><div class="diff-stat-num">20+</div><div class="diff-stat-txt">Years Delivery<br>Experience</div></div>
+      </div>
+      <div class="diff-stat-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M9.5 13.5 7 22l5-3 5 3-2.5-8.5"/><path d="M9.5 8l1.7 1.7L15 6"/></svg>
+        <div><div class="diff-stat-num">No Compromise</div><div class="diff-stat-txt">On Quality</div></div>
+      </div>
+    </div>
+    <div class="cfootnote">*Varies by scope, complexity, stack and delivery model.</div>
   </div>
 </section>
 
