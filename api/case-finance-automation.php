@@ -151,7 +151,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div>
-      <div class="cs-badge">A Module Inside Infra360 PMS</div>
       <h1 class="cs-hero-title">Automating Finance Operations Saving 300+ Hours Monthly</h1>
       <p class="cs-hero-sub">How we extended <a href="/infra360PMS" style="color:#059669;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(5,150,105,0.35)">Infra360 PMS</a>, our infrastructure project management platform, with a finance automation module — automating invoice processing, reconciliation and reporting, and adding AI document extraction that reads a PDF or image and creates the project and material entries by itself.</p>
       <div class="cs-hero-stats">

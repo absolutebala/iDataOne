@@ -791,6 +791,7 @@ letter-spacing:0.3px;
   .screen{position:relative;opacity:1!important;transform:none!important;pointer-events:auto!important;min-height:100vh;padding:80px 8px 60px}
   .container{padding:20px 16px!important}
   .hp-btm{display:none!important}
+  .hero-explore-btn{display:none!important}
   html{scroll-snap-type:y mandatory}
   .screen{scroll-snap-align:start}  .dots{display:none}
   /* Top nav on mobile */
@@ -1151,7 +1152,7 @@ letter-spacing:0.3px;
 <h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
 <p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
 <div style="display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap">
-  <div onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s,transform 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
+  <div class="hero-explore-btn" onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s,transform 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
   <a href="/case-studies" style="padding:13px 28px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.6);color:#f5c518;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none">CASE STUDIES →</a>
 </div>
 </div>

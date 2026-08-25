@@ -162,39 +162,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="story-desc">We built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking, department-level breakdowns and automated compliance scoring across 8 risk categories.</div>
           <a href="/case-study/risk-dashboard" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="8" y="8" width="144" height="18" rx="8" fill="rgba(217,119,6,0.08)"/>
-            <rect x="16" y="34" width="128" height="34" rx="5" fill="rgba(255,251,235,0.6)"/>
-            <rect x="22" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.4)"/>
-            <rect x="28" y="40" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="34" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="40" y="40" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="46" y="40" width="4" height="4" rx="1" fill="rgba(244,63,94,0.4)"/>
-            <rect x="22" y="48" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="28" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="34" y="48" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="40" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
-            <rect x="46" y="48" width="4" height="4" rx="1" fill="rgba(244,63,94,0.5)"/>
-            <rect x="22" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.2)"/>
-            <rect x="28" y="56" width="4" height="4" rx="1" fill="rgba(20,184,166,0.3)"/>
-            <rect x="34" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.3)"/>
-            <rect x="40" y="56" width="4" height="4" rx="1" fill="rgba(245,158,11,0.4)"/>
-            <rect x="46" y="56" width="4" height="4" rx="1" fill="rgba(244,63,94,0.3)"/>
-            <rect x="70" y="38" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="70" y="46" width="60" height="8" rx="3" fill="rgba(217,119,6,0.25)"/>
-            <rect x="70" y="58" width="40" height="3" rx="1.5" fill="rgba(15,23,42,0.06)"/>
-            <rect x="16" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <polyline points="22,96 32,88 42,91 52,82 62,78 68,80" stroke="rgba(217,119,6,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <rect x="84" y="76" width="60" height="28" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="90" y="82" width="8" height="16" rx="2" fill="rgba(217,119,6,0.3)"/>
-            <rect x="102" y="88" width="8" height="10" rx="2" fill="rgba(217,119,6,0.45)"/>
-            <rect x="114" y="84" width="8" height="14" rx="2" fill="rgba(217,119,6,0.35)"/>
-            <rect x="126" y="80" width="8" height="18" rx="2" fill="rgba(217,119,6,0.55)"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e">
+          <img src="/assets/images/risk-platform-hero.png" alt="Real-Time Risk Intelligence Dashboard for an enterprise FMCG company" style="width:100%;height:140px;object-fit:cover;object-position:center center;display:block"/>
         </div>
-      </div>
 
 
       <div class="story-card">
@@ -306,27 +276,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="section-sub">Products we built using the same data intelligence expertise we bring to every client.</p>
     <div class="products-grid">
       <div class="product-card">
-        <div class="product-card-img amber">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" y="10" width="176" height="120" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="12" y="10" width="176" height="22" rx="10" fill="rgba(217,119,6,0.08)"/>
-            <rect x="22" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="78" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="134" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(217,119,6,0.15)" stroke-width="1"/>
-            <rect x="28" y="48" width="26" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="28" y="56" width="36" height="8" rx="3" fill="rgba(217,119,6,0.3)"/>
-            <rect x="22" y="78" width="162" height="42" rx="6" fill="rgba(255,255,255,0.7)"/>
-            <rect x="30" y="106" width="10" height="8" rx="2" fill="rgba(217,119,6,0.4)"/>
-            <rect x="44" y="99" width="10" height="15" rx="2" fill="rgba(217,119,6,0.55)"/>
-            <rect x="58" y="102" width="10" height="12" rx="2" fill="rgba(217,119,6,0.4)"/>
-            <rect x="72" y="95" width="10" height="19" rx="2" fill="rgba(217,119,6,0.65)"/>
-            <rect x="86" y="90" width="10" height="24" rx="2" fill="rgba(217,119,6,0.7)"/>
-          </svg>
+        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:160px;object-fit:cover;display:block">
         </div>
         <div class="product-card-body">
-          <div class="product-card-title">DatInsights</div>
-          <div class="product-card-desc">Unified business intelligence platform. One view of all your data with real-time dashboards, predictive analytics and actionable insights.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="product-card-title">MealMate</div>
+          <div class="product-card-desc">AI-powered family meal planning. Personalised, health-aware meal suggestions for every member of the family — built for everyday use.</div>
+          <a href="/case-study/mealmate" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
       <div class="product-card">
@@ -346,7 +302,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="product-card-body">
           <div class="product-card-title">aiDesker</div>
           <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/aidesker" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
     </div>

@@ -168,64 +168,15 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-      <div class="story-card">
-        <div>
-          <div class="story-tag">LLM Integration</div>
-          <div class="story-title">Integrating LLMs Into a Legal Document Processing Platform</div>
-          <div class="story-desc">We integrated large language models into a legal SaaS platform, automating document review and contract analysis, cutting processing time by 75%.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="16" width="60" height="76" rx="6" fill="rgba(245,243,255,0.8)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
-            <rect x="22" y="24" width="48" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="22" y="32" width="48" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="40" width="40" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="48" width="48" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="56" width="36" height="4" rx="2" fill="rgba(124,58,237,0.2)"/>
-            <rect x="22" y="64" width="48" height="4" rx="2" fill="rgba(124,58,237,0.15)"/>
-            <rect x="22" y="72" width="44" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="22" y="80" width="48" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <rect x="86" y="40" width="66" height="52" rx="10" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1.5"/>
-            <circle cx="119" cy="60" r="14" fill="rgba(124,58,237,0.12)"/>
-            <circle cx="119" cy="60" r="6" fill="rgba(124,58,237,0.25)"/>
-            <rect x="92" y="80" width="54" height="4" rx="2" fill="rgba(124,58,237,0.15)"/>
-            <line x1="76" y1="65" x2="86" y2="65" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <polygon points="84,62 90,65 84,68" fill="rgba(124,58,237,0.3)"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="story-card">
+      <div class="story-card" onclick="location.href='/case-study/finance-automation'" style="cursor:pointer">
         <div>
           <div class="story-tag">Automation</div>
           <div class="story-title">Automating Finance Operations Saving 300+ Hours Monthly</div>
           <div class="story-desc">We automated invoice processing, reconciliation and reporting workflows for a finance team, saving over 300 hours per month and eliminating manual errors.</div>
-          <a href="/contact" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/finance-automation" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="20" width="36" height="36" rx="8" fill="rgba(245,243,255,0.9)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
-            <rect x="22" y="28" width="24" height="4" rx="2" fill="rgba(124,58,237,0.25)"/>
-            <rect x="22" y="36" width="20" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="22" y="44" width="24" height="4" rx="2" fill="rgba(15,23,42,0.06)"/>
-            <line x1="52" y1="38" x2="64" y2="38" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <polygon points="62,35 68,38 62,41" fill="rgba(124,58,237,0.3)"/>
-            <rect x="68" y="20" width="36" height="36" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
-            <circle cx="86" cy="38" r="10" fill="rgba(124,58,237,0.15)"/>
-            <circle cx="86" cy="38" r="4" fill="rgba(124,58,237,0.3)"/>
-            <line x1="104" y1="38" x2="116" y2="38" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <polygon points="114,35 120,38 114,41" fill="rgba(124,58,237,0.3)"/>
-            <rect x="120" y="20" width="32" height="36" rx="8" fill="rgba(240,253,250,0.9)" stroke="rgba(20,184,166,0.2)" stroke-width="1"/>
-            <rect x="126" y="30" width="20" height="4" rx="2" fill="rgba(20,184,166,0.3)"/>
-            <rect x="126" y="38" width="16" height="4" rx="2" fill="rgba(20,184,166,0.2)"/>
-            <rect x="16" y="72" width="128" height="28" rx="8" fill="rgba(240,253,250,0.5)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
-            <rect x="24" y="80" width="60" height="5" rx="2.5" fill="rgba(20,184,166,0.25)"/>
-            <rect x="24" y="89" width="80" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <circle cx="132" cy="86" r="6" fill="rgba(20,184,166,0.2)"/>
-          </svg>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;border-radius:12px">
+          <img src="/assets/images/finance-automation-hero.png" alt="Automating finance operations inside Infra360 PMS" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center center;display:block">
         </div>
       </div>
 
@@ -280,25 +231,17 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="product-card-body">
           <div class="product-card-title">aiDesker</div>
           <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/aidesker" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-card-img sky">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" y="10" width="176" height="120" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="12" y="10" width="176" height="22" rx="10" fill="rgba(14,165,233,0.08)"/>
-            <rect x="22" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="78" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="134" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(14,165,233,0.15)" stroke-width="1"/>
-            <rect x="22" y="78" width="162" height="42" rx="6" fill="rgba(255,255,255,0.7)"/>
-            <polyline points="30,110 46,96 62,100 78,88 94,82 110,86 126,74 142,78 158,66 174,70" stroke="rgba(14,165,233,0.6)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:160px;object-fit:cover;display:block">
         </div>
         <div class="product-card-body">
-          <div class="product-card-title">DatInsights</div>
-          <div class="product-card-desc">Unified business intelligence with AI-powered analytics. One view of all your data, with predictions and actionable insights.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="product-card-title">MealMate</div>
+          <div class="product-card-desc">AI-powered family meal planning. Personalised, health-aware meal suggestions for every member of the family — built for everyday use.</div>
+          <a href="/case-study/mealmate" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
     </div>

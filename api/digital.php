@@ -267,32 +267,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
       </div>
 
-
-      <div class="story-card" onclick="location.href='/infra360PMS'" style="cursor:pointer">
-        <div>
-          <div class="story-tag">Infrastructure · Multi-Trade</div>
-          <div class="story-title">Building a Project Management Platform for Infrastructure Contractors</div>
-          <div class="story-desc">We built Infra360 PMS — a full-stack platform tracking PO to close-out across telecom, solar and civil sites, with STN/SRN material tracking, GST/TDS automation and live dashboards.</div>
-          <a href="/infra360PMS" class="story-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="story-visual">
-          <svg viewBox="0 0 160 120" width="160" height="120" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="8" width="144" height="104" rx="8" fill="rgba(255,255,255,0.8)"/>
-            <rect x="16" y="16" width="128" height="18" rx="5" fill="rgba(238,242,255,0.9)" stroke="rgba(99,102,241,0.18)" stroke-width="1"/>
-            <rect x="22" y="21" width="40" height="5" rx="2.5" fill="rgba(99,102,241,0.25)"/>
-            <rect x="16" y="40" width="60" height="36" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
-            <rect x="22" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="22" y="57" width="44" height="10" rx="3" fill="rgba(99,102,241,0.3)"/>
-            <rect x="84" y="40" width="60" height="36" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(20,184,166,0.15)" stroke-width="1"/>
-            <rect x="90" y="48" width="28" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="90" y="57" width="44" height="10" rx="3" fill="rgba(20,184,166,0.3)"/>
-            <rect x="16" y="82" width="128" height="22" rx="5" fill="rgba(248,250,252,0.9)" stroke="rgba(226,232,240,0.8)" stroke-width="1"/>
-            <rect x="24" y="90" width="40" height="4" rx="2" fill="rgba(15,23,42,0.07)"/>
-            <rect x="104" y="88" width="28" height="8" rx="3" fill="rgba(99,102,241,0.2)"/>
-          </svg>
-        </div>
-      </div>
-
       <div class="story-card" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
         <div>
           <div class="story-tag">SaaS · Multi-Tenant Platform</div>
@@ -378,37 +352,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="product-badge badge-soon">Coming Soon</div>
           <div class="product-card-title">aiDesker</div>
           <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/aidesker" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-card-img emerald">
-          <svg viewBox="0 0 200 140" width="200" height="140" xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" y="10" width="176" height="120" rx="10" fill="rgba(255,255,255,0.7)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
-            <rect x="12" y="10" width="176" height="22" rx="10" fill="rgba(16,185,129,0.08)"/>
-            <rect x="12" y="20" width="176" height="12" fill="rgba(16,185,129,0.08)"/>
-            <rect x="22" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
-            <rect x="78" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
-            <rect x="134" y="40" width="50" height="28" rx="6" fill="rgba(255,255,255,0.9)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
-            <rect x="28" y="47" width="24" height="4" rx="2" fill="rgba(15,23,42,0.08)"/>
-            <rect x="28" y="55" width="36" height="7" rx="3" fill="rgba(16,185,129,0.3)"/>
-            <rect x="22" y="78" width="100" height="42" rx="6" fill="rgba(255,255,255,0.8)"/>
-            <rect x="30" y="104" width="8" height="12" rx="2" fill="rgba(16,185,129,0.4)"/>
-            <rect x="42" y="96" width="8" height="20" rx="2" fill="rgba(16,185,129,0.55)"/>
-            <rect x="54" y="100" width="8" height="16" rx="2" fill="rgba(16,185,129,0.4)"/>
-            <rect x="66" y="92" width="8" height="24" rx="2" fill="rgba(16,185,129,0.65)"/>
-            <rect x="78" y="88" width="8" height="28" rx="2" fill="rgba(5,150,105,0.7)"/>
-            <rect x="130" y="78" width="42" height="42" rx="6" fill="rgba(255,255,255,0.8)"/>
-            <polyline points="136,110 144,100 152,104 160,94 168,90" stroke="rgba(5,150,105,0.6)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="168" cy="90" r="3" fill="rgba(5,150,105,0.7)"/>
-          </svg>
+        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div class="product-card-body">
-          <div class="product-badge badge-soon">Coming Soon</div>
-          <div class="product-card-title">DatInsights</div>
-          <div class="product-card-desc">One view of all your data. Unified business intelligence platform with real-time dashboards, predictive analytics and actionable insights.</div>
-          <a href="/contact" class="product-card-link">Get Early Access <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <div class="product-badge badge-soon">In Development</div>
+          <div class="product-card-title">MealMate</div>
+          <div class="product-card-desc">AI-powered family meal planning. Personalised, health-aware meal suggestions for every member of the family — built for everyday use.</div>
+          <a href="/case-study/mealmate" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
