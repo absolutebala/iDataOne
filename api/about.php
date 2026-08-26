@@ -241,10 +241,21 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   </div>
 </section>
 
+<!-- STATS -->
+<section class="section" style="background:#0e0c18;padding:0" style="padding:0">
+  <div class="inner">
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num">70%</div><div class="stat-label">Lower development cost*</div></div>
+      <div class="stat"><div class="stat-num">5×</div><div class="stat-label">Faster AI-assisted delivery</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years delivery leadership</div></div>
+      <div class="stat"><div class="stat-num">1+4</div><div class="stat-label">Human + AI specialist team</div></div>
+    </div>
+  </div>
+</section>
+
 <!-- COMPARISON -->
 <section class="section" style="background:#ffffff">
   <div class="inner">
-    <div class="bar"></div>
     <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
     <p style="font-size:14px;color:#64748b;margin-bottom:0">Senior ownership where it matters. AI capability where it accelerates.</p>
     <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="diffGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5eead4"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs></svg>
@@ -292,18 +303,6 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
       </div>
     </div>
     <div class="cfootnote">*Varies by scope, complexity, stack and delivery model.</div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="section" style="background:#0e0c18;padding:0" style="padding:0">
-  <div class="inner">
-    <div class="stats-bar">
-      <div class="stat"><div class="stat-num">70%</div><div class="stat-label">Lower development cost*</div></div>
-      <div class="stat"><div class="stat-num">5×</div><div class="stat-label">Faster AI-assisted delivery</div></div>
-      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years delivery leadership</div></div>
-      <div class="stat"><div class="stat-num">1+4</div><div class="stat-label">Human + AI specialist team</div></div>
-    </div>
   </div>
 </section>
 
