@@ -94,7 +94,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .diff-new .diff-item svg{stroke:#5eead4}
 .diff-arrow{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid rgba(226,232,240,0.8);display:flex;align-items:center;justify-content:center;color:#0f172a;box-shadow:0 4px 14px rgba(0,0,0,0.1);flex-shrink:0;align-self:center}
 .diff-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.diff-stat{position:relative;z-index:1;text-align:right;flex-shrink:0}
+.diff-stat{position:relative;z-index:1;text-align:right;flex-shrink:0;margin-left:auto}
 .diff-stat-up{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:2px}
 .diff-stat-pct{font-size:clamp(44px,5vw,64px);font-weight:900;letter-spacing:-2.5px;line-height:1;background:linear-gradient(135deg,#5eead4,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .diff-stat-label{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-top:6px}
@@ -172,7 +172,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   .diff-wrap{grid-template-columns:1fr}
   .diff-arrow{transform:rotate(90deg);margin:4px auto}
   .diff-new{flex-direction:column;align-items:stretch;text-align:left}
-  .diff-stat{text-align:left}
+  .diff-stat{text-align:left;margin-left:0}
   .diff-stats-row{grid-template-columns:1fr;gap:20px}
   .diff-stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:20px}
   .diff-stat-item:last-child{border-bottom:none;padding-bottom:0}
