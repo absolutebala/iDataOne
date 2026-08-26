@@ -241,94 +241,12 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   </div>
 </section>
 
-<!-- STATS -->
-<section class="section" style="background:#0e0c18;padding:0" style="padding:0">
-  <div class="inner">
-    <div class="stats-bar">
-      <div class="stat"><div class="stat-num">70%</div><div class="stat-label">Lower development cost*</div></div>
-      <div class="stat"><div class="stat-num">5×</div><div class="stat-label">Faster AI-assisted delivery</div></div>
-      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years delivery leadership</div></div>
-      <div class="stat"><div class="stat-num">1+4</div><div class="stat-label">Human + AI specialist team</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section class="section" style="background:#ffffff">
-  <div class="inner">
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
-    <p style="font-size:14px;color:#64748b;margin-bottom:32px">Senior ownership where it matters. AI capability where it accelerates.</p>
-    <!-- Outer box -->
-    <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:1fr 1fr">
-      <!-- Left: Bala -->
-      <div style="padding:40px;display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid rgba(8,145,178,0.1)">
-        <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top;margin-bottom:20px">
-        <div class="head-badge">Delivery Head</div>
-        <div class="head-name">Bala Kandaswamy</div>
-        <div class="head-title">Software Delivery Leader · 20+ Years</div>
-        <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
-      </div>
-      <!-- Right: 2x2 AI grid -->
-      <div style="padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start">
-        <?php foreach([
-          ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.','ai-pixel.jpg'],
-          ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.','ai-forge.jpg'],
-          ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.','ai-insight.jpg'],
-          ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.','ai-sentinel.jpg'],
-        ] as $m): ?>
-        <div class="ai-card">
-          <div class="ai-icon" style="padding:0;overflow:hidden">
-            <img src="/assets/images/<?= $m[3] ?>" alt="<?= $m[0] ?> — <?= $m[1] ?>" style="width:100%;height:100%;object-fit:cover;display:block">
-          </div>
-          <div class="ai-name"><?= $m[0] ?></div>
-          <div class="ai-role"><?= $m[1] ?></div>
-          <div class="ai-desc"><?= $m[2] ?></div>
-        </div>
-        <?php endforeach; ?>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CASE STUDIES -->
-<section class="section" style="background:#f0f9ff">
-  <div class="inner">
-<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
-    <p style="font-size:14px;color:#64748b;margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
-    <div class="cs-list">
-      <?php
-      $cases = [
-        ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','80% less maintenance — custom inline CMS replacing WordPress for a 460-member riding club.'],
-        ['digital','#00d4ff','/case-study/telecom-pm-platform','Infrastructure PMS','Telecom project management platform for Venus Energy — PO to close-out, multi-trade, live dashboards.'],
-        ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','aiDesker — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
-        ['ai','#a855f7','/case-study/aidesker','Conversational AI','Knowledge-grounded AI chat assistant with lead capture, BYO-key and real-time CRM sync.'],
-        ['digital','#00d4ff','/case-study/risk-platform','Enterprise Platform','Risk &amp; Compliance platform for an FMCG leader — 5×5 matrix, dashboards and workflow automation.'],
-        ['data','#f5c518','/case-study/risk-dashboard','Data Intelligence','Real-time risk intelligence dashboard — live metrics, drill-down and cross-system data integration.'],
-        ['digital','#00d4ff','/case-study/isportone','Sports Platform','iSportOne — a lifelong sports passport for athletes with profiles, stats and club management.'],
-        ['digital','#00d4ff','/case-study/mealmate','Mobile App','MealMate — AI-powered family meal planning app on React Native, GPT-4o-mini powered.'],
-        ['digital','#f59e0b','/infra360PMS','Product Launch','Infra360 PMS — live infrastructure project management product for telecom and civil contractors.'],
-      ];
-      foreach($cases as $i => [$cat,$col,$url,$label,$desc]): ?>
-      <a href="<?= $url ?>" class="cs-item" style="--c:<?= $col ?>">
-        <div class="cs-item-num"><?= str_pad($i+1,2,'0','0') ?></div>
-        <div class="cs-item-label"><?= $label ?></div>
-        <div class="cs-item-desc"><?= $desc ?></div>
-        <div class="cs-item-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-      </a>
-      <?php endforeach; ?>
-    </div>
-    <div style="text-align:center;margin-top:36px">
-      <a href="/case-studies" class="btn-p" style="display:inline-flex">View All Case Studies <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
-  </div>
-</section>
-
 <!-- COMPARISON -->
 <section class="section" style="background:#ffffff">
   <div class="inner">
-    <div class="eyebrow">The Difference</div>
     <div class="bar"></div>
-    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:0;color:#0f172a">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">Enterprise Capability.<br>Without Enterprise Overhead.</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:0">Senior ownership where it matters. AI capability where it accelerates.</p>
     <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="diffGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5eead4"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs></svg>
     <div class="diff-wrap">
       <div class="diff-card diff-old">
@@ -377,13 +295,97 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   </div>
 </section>
 
+<!-- STATS -->
+<section class="section" style="background:#0e0c18;padding:0" style="padding:0">
+  <div class="inner">
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num">70%</div><div class="stat-label">Lower development cost*</div></div>
+      <div class="stat"><div class="stat-num">5×</div><div class="stat-label">Faster AI-assisted delivery</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years delivery leadership</div></div>
+      <div class="stat"><div class="stat-num">1+4</div><div class="stat-label">Human + AI specialist team</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section" style="background:#f0f9ff">
+  <div class="inner">
+<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">What We've Built</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:40px">A selection of products and platforms delivered across Digital, AI and Data.</p>
+    <div class="cs-list">
+      <?php
+      $cases = [
+        ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','80% less maintenance — custom inline CMS replacing WordPress for a 460-member riding club.'],
+        ['digital','#00d4ff','/case-study/telecom-pm-platform','Infrastructure PMS','Telecom project management platform for Venus Energy — PO to close-out, multi-trade, live dashboards.'],
+        ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','aiDesker — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
+        ['ai','#a855f7','/case-study/aidesker','Conversational AI','Knowledge-grounded AI chat assistant with lead capture, BYO-key and real-time CRM sync.'],
+        ['digital','#00d4ff','/case-study/risk-platform','Enterprise Platform','Risk &amp; Compliance platform for an FMCG leader — 5×5 matrix, dashboards and workflow automation.'],
+        ['data','#f5c518','/case-study/risk-dashboard','Data Intelligence','Real-time risk intelligence dashboard — live metrics, drill-down and cross-system data integration.'],
+        ['digital','#00d4ff','/case-study/isportone','Sports Platform','iSportOne — a lifelong sports passport for athletes with profiles, stats and club management.'],
+        ['digital','#00d4ff','/case-study/mealmate','Mobile App','MealMate — AI-powered family meal planning app on React Native, GPT-4o-mini powered.'],
+        ['digital','#f59e0b','/infra360PMS','Product Launch','Infra360 PMS — live infrastructure project management product for telecom and civil contractors.'],
+      ];
+      foreach($cases as $i => [$cat,$col,$url,$label,$desc]): ?>
+      <a href="<?= $url ?>" class="cs-item" style="--c:<?= $col ?>">
+        <div class="cs-item-num"><?= str_pad($i+1,2,'0','0') ?></div>
+        <div class="cs-item-label"><?= $label ?></div>
+        <div class="cs-item-desc"><?= $desc ?></div>
+        <div class="cs-item-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="/case-studies" class="btn-p" style="display:inline-flex">View All Case Studies <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<?php if (false): // TEAM section hidden per request ?>
+<!-- TEAM -->
+<section class="section" style="background:#ffffff">
+  <div class="inner">
+    <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;margin-bottom:8px;color:#0f172a">One Delivery Head.<br>Four AI Specialists.</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:32px">Senior ownership where it matters. AI capability where it accelerates.</p>
+    <!-- Outer box -->
+    <div style="background:#f0f9ff;border:1px solid rgba(8,145,178,0.15);border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.06);overflow:hidden;display:grid;grid-template-columns:1fr 1fr">
+      <!-- Left: Bala -->
+      <div style="padding:40px;display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid rgba(8,145,178,0.1)">
+        <img src="/assets/images/bala-kandaswamy.jpg" alt="Bala Kandaswamy" class="avatar" style="width:100px;height:100px;object-fit:cover;object-position:center top;margin-bottom:20px">
+        <div class="head-badge">Delivery Head</div>
+        <div class="head-name">Bala Kandaswamy</div>
+        <div class="head-title">Software Delivery Leader · 20+ Years</div>
+        <div class="head-bio">Architecture, customer alignment, quality and accountability — human-led on every project. Not outsourced. Not automated away.</div>
+      </div>
+      <!-- Right: 2x2 AI grid -->
+      <div style="padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start">
+        <?php foreach([
+          ['Pixel','Digital Experience','UI/UX, design systems, user journeys and prototypes.','ai-pixel.jpg'],
+          ['Forge','Software Engineering','Full-stack, APIs, cloud-native and AI-powered development.','ai-forge.jpg'],
+          ['Insight','Business Transformation','Requirements, product thinking and business-to-tech translation.','ai-insight.jpg'],
+          ['Sentinel','Cloud Platform','DevOps, Kubernetes, CI/CD, security and scalability.','ai-sentinel.jpg'],
+        ] as $m): ?>
+        <div class="ai-card">
+          <div class="ai-icon" style="padding:0;overflow:hidden">
+            <img src="/assets/images/<?= $m[3] ?>" alt="<?= $m[0] ?> — <?= $m[1] ?>" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div class="ai-name"><?= $m[0] ?></div>
+          <div class="ai-role"><?= $m[1] ?></div>
+          <div class="ai-desc"><?= $m[2] ?></div>
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
 <!-- WORKFLOW -->
-<section style="background:linear-gradient(135deg,#0e0c18 0%,#130e24 50%,#0e0c18 100%);padding:88px 32px">
+<section style="background:#ffffff;padding:88px 32px">
   <div class="inner">
     <div style="text-align:center;margin-bottom:40px">
-<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#fff;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
+<h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#0f172a;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#b45309,#0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
     </div>
-    <div style="width:80%;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.4)">
+    <div style="width:80%;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 12px 36px rgba(15,23,42,0.12);border:1px solid rgba(226,232,240,0.9)">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
