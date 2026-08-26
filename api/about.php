@@ -154,7 +154,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .cs-item-arrow{color:var(--c);opacity:0;transition:opacity 0.2s;align-self:flex-end}
 .cs-item:hover .cs-item-arrow{opacity:0.8}
 @media(max-width:900px){.cs-list{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:600px){.cs-list{grid-template-columns:1fr 1fr}.cs-item-desc{display:none}}
+@media(max-width:600px){.cs-list{grid-template-columns:1fr}.cs-item-desc{display:block}}
 
 @media(max-width:1024px){
   .ai-grid{grid-template-columns:1fr 1fr}
@@ -178,6 +178,9 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   .diff-stat-item:last-child{border-bottom:none;padding-bottom:0}
   .wf-steps{grid-template-columns:1fr 1fr}
   .stats-bar{grid-template-columns:1fr 1fr}
+  .process-img-wrap{width:100%!important}
+  .process-img-desktop{display:none!important}
+  .process-img-mobile{display:block!important}
 }
 @media(max-width:480px){
   .ai-grid{grid-template-columns:1fr}
@@ -384,12 +387,20 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
     <div style="text-align:center;margin-bottom:40px">
 <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-2px;color:#0f172a;margin-top:16px">AI-Assisted. <span style="background:linear-gradient(90deg,#b45309,#0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Every Step.</span></h2>
     </div>
-    <div style="width:80%;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 12px 36px rgba(15,23,42,0.12);border:1px solid rgba(226,232,240,0.9)">
+    <div style="width:80%;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 12px 36px rgba(15,23,42,0.12);border:1px solid rgba(226,232,240,0.9)" class="process-img-wrap">
       <img
         src="/assets/images/our-process.png"
         alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
         style="width:100%;height:auto;display:block"
         loading="lazy"
+        class="process-img-desktop"
+      />
+      <img
+        src="/assets/images/our-process-mobile.png"
+        alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
+        style="width:100%;height:auto;display:none"
+        loading="lazy"
+        class="process-img-mobile"
       />
     </div>
   </div>
