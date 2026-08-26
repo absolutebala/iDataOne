@@ -144,9 +144,9 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 
 /* Case Studies list */
 .cs-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.cs-item{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:16px;border:1px solid rgba(226,232,240,0.8);background:#fff;text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.25s;cursor:pointer;position:relative;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
-.cs-item::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--c);opacity:0;transition:opacity 0.25s}
-.cs-item:hover{background:#fff;border-color:var(--c);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
+.cs-item{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:16px;border:1px solid color-mix(in srgb,var(--c) 38%,rgba(226,232,240,0.8));background:#fff;text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.25s,box-shadow 0.25s;cursor:pointer;position:relative;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+.cs-item::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--c);opacity:1;transition:opacity 0.25s}
+.cs-item:hover{background:#fff;border-color:var(--c);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.12)}
 .cs-item:hover::before{opacity:1}
 .cs-item-num{font-size:10px;font-weight:700;color:var(--c);letter-spacing:1.5px;opacity:0.7}
 .cs-item-label{font-size:13px;font-weight:700;color:#0f172a;line-height:1.35;flex:1}
