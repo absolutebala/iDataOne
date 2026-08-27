@@ -13,12 +13,12 @@
 <meta property="og:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
 <meta property="og:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
 <meta property="og:url" content="https://idataone.com/case-study/finance-automation">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-finance-automation.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
 <meta name="twitter:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-finance-automation.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

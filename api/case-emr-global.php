@@ -15,11 +15,11 @@
 <meta property="og:title" content="EMR Global — SAP-Integrated Field Service Platform | iDataOne">
 <meta property="og:description" content="How iDataOne built a real-time SAP-integrated field service platform bridging back-office data with field engineers — eliminating WhatsApp coordination for a global transformer manufacturer.">
 <meta property="og:url" content="https://idataone.com/case-study/emr-global-field-engineers">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-emr-global.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="EMR Global — SAP-Integrated Field Service Platform | iDataOne">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-emr-global.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

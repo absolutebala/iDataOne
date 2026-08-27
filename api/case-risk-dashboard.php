@@ -13,12 +13,12 @@
 <meta property="og:title" content="Case Study: Real-Time Risk Intelligence Dashboard for FMCG | iDataOne">
 <meta property="og:description" content="How iDataOne built a real-time risk intelligence dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring for an enterprise FMCG company.">
 <meta property="og:url" content="https://idataone.com/case-study/risk-dashboard">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-risk-dashboard.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Real-Time Risk Intelligence Dashboard for FMCG | iDataOne">
 <meta name="twitter:description" content="How iDataOne built a real-time risk intelligence dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring for an enterprise FMCG company.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-risk-dashboard.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

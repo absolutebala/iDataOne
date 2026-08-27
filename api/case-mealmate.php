@@ -14,12 +14,12 @@
 <meta property="og:title" content="Case Study: AI-Powered Family Meal Planning App | iDataOne">
 <meta property="og:description" content="How iDataOne built MealMate, an AI-powered React Native app that delivers health-aware, personalised meal suggestions for every member of a family.">
 <meta property="og:url" content="https://idataone.com/case-study/mealmate">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-mealmate.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: AI-Powered Family Meal Planning App | iDataOne">
 <meta name="twitter:description" content="How iDataOne built MealMate, an AI-powered React Native app that delivers health-aware, personalised meal suggestions for every member of a family.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-mealmate.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

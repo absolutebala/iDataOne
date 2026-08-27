@@ -14,12 +14,12 @@
 <meta property="og:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
 <meta property="og:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
 <meta property="og:url" content="https://idataone.com/case-study/knight-ryders">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-knight-ryders.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
 <meta name="twitter:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-knight-ryders.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

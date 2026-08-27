@@ -14,12 +14,12 @@
 <meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
 <meta property="og:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
 <meta property="og:url" content="https://idataone.com/case-study/aidesker">
-<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
 <meta name="twitter:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
