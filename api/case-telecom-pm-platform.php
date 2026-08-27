@@ -15,12 +15,12 @@
 <meta property="og:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
 <meta property="og:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
 <meta property="og:url" content="https://idataone.com/case-study/telecom-pm-platform">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
 <meta name="twitter:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

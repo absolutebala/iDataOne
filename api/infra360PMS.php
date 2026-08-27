@@ -14,12 +14,12 @@
 <meta property="og:title" content="Infra360 PMS — Every Site. Every Rupee. Accounted For.">
 <meta property="og:description" content="Track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out. Built for infrastructure contractors.">
 <meta property="og:url" content="https://idataone.com/infra360PMS">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Infra360 PMS — Every Site. Every Rupee. Accounted For.">
 <meta name="twitter:description" content="Track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

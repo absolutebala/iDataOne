@@ -14,11 +14,11 @@
 <meta property="og:title" content="About iDataOne | Human-Led, AI-Powered Software Delivery">
 <meta property="og:description" content="Human-led. AI-powered. Enterprise-ready. Up to 70% lower development cost.">
 <meta property="og:url" content="https://idataone.com/about">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="About iDataOne | Human-Led, AI-Powered Software Delivery">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AboutPage","name":"About iDataOne","url":"https://idataone.com/about","description":"iDataOne builds AI-first digital products and enterprise software using a human-led, AI-powered delivery model.","publisher":{"@type":"Organization","name":"iDataOne","url":"https://idataone.com"}}
 </script>

@@ -13,12 +13,12 @@
 <meta property="og:title" content="AI Integration & Automation Services | iDataOne — Build. Transform. Scale.">
 <meta property="og:description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.">
 <meta property="og:url" content="https://idataone.com/ai">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Integration & Automation Services | iDataOne — Build. Transform. Scale.">
 <meta name="twitter:description" content="From AI agents to intelligent workflows, iDataOne integrates AI into your products and operations to improve efficiency, enhance decision-making, and drive business growth.">
-<meta name="twitter:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

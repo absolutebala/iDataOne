@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta property="og:description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://idataone.com/">
-<meta property="og:image" content="https://idataone.com/assets/images/iDataOneLogoFinal.png">
+<meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="iDataOne | Build. Transform. Scale. — AI-First Products & Data Intelligence">
 <meta name="twitter:description" content="Build scalable digital products, integrate AI automation, and turn fragmented data into business intelligence. iDataOne — Built for the AI era.">
