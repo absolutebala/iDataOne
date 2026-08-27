@@ -183,7 +183,7 @@ width:100%;
 }
 
 .logo{
-width:270px;
+width:243px;
 max-width:80%;
 margin-bottom:45px;
 display:none;
@@ -582,7 +582,7 @@ transform:scale(1.4);
 
 /* Top-left logo */
 .site-logo{position:fixed;top:22px;left:32px;z-index:100;transition:opacity 0.4s,transform 0.4s}
-.site-logo img{height:40px;width:auto;opacity:0.92}
+.site-logo img{height:36px;width:auto;opacity:0.92}
 .site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
 /* Top nav */
 .top-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;padding:0 32px;gap:40px;z-index:99;transition:opacity 0.4s}
@@ -797,10 +797,10 @@ letter-spacing:0.3px;
   /* Top nav on mobile */
   .top-nav{height:56px;padding:0 20px;gap:16px}
   .top-nav .site-logo{position:static}
-  .top-nav .site-logo img{height:32px}
+  .top-nav .site-logo img{height:29px}
   .top-nav-links{display:none}
   /* Hero screen */
-  .logo{max-width:200px}
+  .logo{max-width:180px}
   h1{font-size:clamp(28px,8vw,48px);letter-spacing:-1.5px}
   .explore{display:none!important}
   /* Capabilities & Products */
