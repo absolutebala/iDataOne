@@ -600,7 +600,7 @@ transform:scale(1.4);
 .top-nav-links a.active{color:#00d4ff;font-weight:600}
 
 /* Tamil signature */
-.tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;line-height:1;letter-spacing:0;transition:opacity 0.3s,transform 0.3s;cursor:default;user-select:none;background:linear-gradient(135deg,#01dcf0,#017ef6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0.75}
+.tamil-sig{position:fixed;bottom:18px;right:28px;z-index:100;font-size:42px;line-height:1;letter-spacing:0;transition:opacity 0.3s,transform 0.3s;cursor:default;user-select:none;background:linear-gradient(135deg,#4f9bff,#0b71f9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0.75}
 .tamil-sig:hover{opacity:1;transform:scale(1.15)}
 
 /* Footer */
