@@ -661,5 +661,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--light);
   <div class="footer-copy">© <?php echo date('Y'); ?> iDataOne. All rights reserved. MealMate is coming soon.</div>
 </footer>
 
+<script src="https://nivochat.idataone.com/widget.js?id=837d7fc7-cd93-437c-957d-9a7dbbab4214" async></script>
+
 </body>
 </html>
