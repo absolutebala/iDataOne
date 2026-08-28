@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
 <meta name="description" content="iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence. Build. Transform. Scale.">
-<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Infra360 PMS, iSportOne, aiDesker">
+<meta name="keywords" content="AI-first products, custom software development, AI automation, data intelligence, LLM integration, AI agents, business intelligence, digital transformation, web apps, mobile apps, SaaS platforms, Infra360 PMS, iSportOne, NivoChat">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/">
@@ -183,7 +183,7 @@ width:100%;
 }
 
 .logo{
-width:243px;
+width:219px;
 max-width:80%;
 margin-bottom:45px;
 display:none;
@@ -582,7 +582,7 @@ transform:scale(1.4);
 
 /* Top-left logo */
 .site-logo{position:fixed;top:22px;left:32px;z-index:100;transition:opacity 0.4s,transform 0.4s}
-.site-logo img{height:36px;width:auto;opacity:0.92}
+.site-logo img{height:32px;width:auto;opacity:0.92}
 .site-logo.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
 /* Top nav */
 .top-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;padding:0 32px;gap:40px;z-index:99;transition:opacity 0.4s}
@@ -809,10 +809,10 @@ letter-spacing:0.3px;
   /* Top nav on mobile */
   .top-nav{height:56px;padding:0 20px;gap:16px}
   .top-nav .site-logo{position:static}
-  .top-nav .site-logo img{height:29px}
+  .top-nav .site-logo img{height:26px}
   .top-nav-links{display:none}
   /* Hero screen */
-  .logo{max-width:180px}
+  .logo{max-width:162px}
   h1{font-size:clamp(28px,8vw,48px);letter-spacing:-1.5px}
   .explore{display:none!important}
   /* Capabilities & Products */
@@ -1158,14 +1158,14 @@ letter-spacing:0.3px;
   <h3>iSportOne — Lifelong Sports Passport</h3>
   <p>Your sport. Your story. Forever. Record every match, build your career profile, and connect with your sports community for life. A professional network for athletes of every level. In Development.</p>
 
-  <h3>aiDesker — AI Customer Service Agents</h3>
+  <h3>NivoChat — AI Customer Service Agents</h3>
   <p>Always on. Always intelligent. AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock. Coming Soon.</p>
 
   <h3>DatInsights — Business Intelligence Platform</h3>
   <p>One view of all your data. Unified business intelligence platform that brings all your data sources together. Real-time dashboards, predictive analytics and actionable insights. Coming Soon.</p>
 
   <h2>Contact iDataOne — Book a Free Discovery Call</h2>
-  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Infra360 PMS, iSportOne, aiDesker.</p>
+  <p>Let's build something intelligent. Tell us about your project and we will get back to you within 24 hours. Free 30-minute discovery call. No commitment, just a conversation. Email: info@idataone.com. Services: Custom Software Development, AI Solutions, Data Intelligence, Infra360 PMS, iSportOne, NivoChat.</p>
 
 </div>
 
@@ -1300,13 +1300,41 @@ letter-spacing:0.3px;
 
 <div class="cap-carousel">
   <div class="cap-tabs">
-    <div class="cap-tab t-teal active" onclick="prodTab(0,this)">01 Infra360</div>
-    <div class="cap-tab" onclick="prodTab(1,this)">02 iSportOne</div>
-    <div class="cap-tab" onclick="prodTab(2,this)">03 aiDesker</div>
+    <div class="cap-tab t-teal active" onclick="prodTab(0,this)">01 NivoChat</div>
+    <div class="cap-tab" onclick="prodTab(1,this)">02 Infra360</div>
+    <div class="cap-tab" onclick="prodTab(2,this)">03 iSportOne</div>
   </div>
   <div class="cap-slides" id="prod-slides">
 
     <div class="cap-slide active">
+      <div class="cap-card sky">
+        <div class="cap-left">
+          <div class="cap-card-title">NivoChat</div>
+          <div class="cap-card-outcome">Always on. Always intelligent.</div>
+          <div class="cap-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
+          <ul class="cap-checklist">
+            <li>24/7 AI Agents</li><li>Lead Qualification</li>
+            <li>Auto Responses</li><li>CRM Integration</li>
+          </ul>
+          <div style="margin-bottom:14px">
+            <a href="https://nivochat.idataone.com/" target="_blank" rel="noopener" style="display:inline-block;padding:6px 14px;border-radius:999px;background:#f0f9ff;color:#0ea5e9;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none" onclick="event.stopPropagation()">Explore →</a>
+          </div>
+          <div class="cap-footer">
+            <div class="cap-pips"><div class="cap-pip active-sky"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
+            <div class="cap-nav">
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <span class="cap-nav-count">01 / 03</span>
+              <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(14,165,233,0.15)">
+          <img src="/assets/images/aidesker-hero.png" alt="NivoChat — AI-powered customer service agents" style="width:260px;height:240px;object-fit:cover;display:block">
+        </div>
+      </div>
+    </div>
+
+    <div class="cap-slide">
       <div class="cap-card indigo" onclick="window.location.href='/infra360PMS'" style="cursor:pointer">
         <div class="cap-left">
           <div class="cap-card-title">Infra360 PMS</div>
@@ -1318,10 +1346,10 @@ letter-spacing:0.3px;
           </ul>
           <a href="/infra360PMS" class="cap-explore violet" onclick="event.stopPropagation()">Explore Infra360 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip active-violet"></div><div class="cap-pip"></div><div class="cap-pip"></div></div>
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-violet"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
               <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-              <span class="cap-nav-count">01 / 03</span>
+              <span class="cap-nav-count">02 / 03</span>
               <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
             </div>
           </div>
@@ -1346,33 +1374,7 @@ letter-spacing:0.3px;
             <a href="/isportone" style="display:inline-block;padding:6px 14px;border-radius:999px;background:#fff1f2;color:#f43f5e;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none">Learn More →</a>
           </div>
                     <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-rose"></div><div class="cap-pip"></div></div>
-            <div class="cap-nav">
-              <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-              <span class="cap-nav-count">02 / 03</span>
-              <button class="cap-nav-btn" onclick="event.stopPropagation();prodNext()"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-            </div>
-          </div>
-        </div>
-        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(244,63,94,0.15)">
-          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:260px;height:240px;object-fit:cover;display:block">
-        </div>
-      </div>
-    </div>
-
-    <div class="cap-slide">
-      <div class="cap-card sky">
-        <div class="cap-left">
-          <div class="cap-card-title">aiDesker</div>
-          <div class="cap-card-outcome">Always on. Always intelligent.</div>
-          <div class="cap-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
-          <ul class="cap-checklist">
-            <li>24/7 AI Agents</li><li>Lead Qualification</li>
-            <li>Auto Responses</li><li>CRM Integration</li>
-          </ul>
-          <div style="margin-bottom:16px"><span style="display:inline-block;padding:6px 14px;border-radius:999px;background:#f0f9ff;color:#0ea5e9;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Coming Soon</span></div>
-          <div class="cap-footer">
-            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-sky"></div></div>
+            <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip"></div><div class="cap-pip active-rose"></div></div>
             <div class="cap-nav">
               <button class="cap-nav-btn" onclick="event.stopPropagation();prodPrev()"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
               <span class="cap-nav-count">03 / 03</span>
@@ -1380,8 +1382,8 @@ letter-spacing:0.3px;
             </div>
           </div>
         </div>
-        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(14,165,233,0.15)">
-          <img src="/assets/images/aidesker-hero.png" alt="aiDesker — AI-powered customer service agents" style="width:260px;height:240px;object-fit:cover;display:block">
+        <div class="cap-illus" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 48px rgba(244,63,94,0.15)">
+          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:260px;height:240px;object-fit:cover;display:block">
         </div>
       </div>
     </div>
@@ -1477,7 +1479,7 @@ letter-spacing:0.3px;
       <div class="service-pills" id="svc-products" style="display:none">
         <div class="service-pill" onclick="selectService(this,'Infra360 PMS')">Infra360 PMS</div>
         <div class="service-pill" onclick="selectService(this,'iSportOne')">iSportOne</div>
-        <div class="service-pill" onclick="selectService(this,'aiDesker')">aiDesker</div>
+        <div class="service-pill" onclick="selectService(this,'NivoChat')">NivoChat</div>
       </div>
     </div>
 

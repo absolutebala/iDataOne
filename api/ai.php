@@ -160,11 +160,11 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div>
           <div class="story-tag">Conversational AI</div>
           <div class="story-title">Building a Knowledge-Grounded AI Chat Assistant Businesses Can Embed in One Line</div>
-          <div class="story-desc">We built aiDesker, a conversational AI platform that grounds every response in a business's own knowledge base, captures leads mid-conversation, and runs on the business's own AI key.</div>
+          <div class="story-desc">We built NivoChat, a conversational AI platform that grounds every response in a business's own knowledge base, captures leads mid-conversation, and runs on the business's own AI key.</div>
           <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual" style="background:#0d0020;padding:0;overflow:hidden;border-radius:12px">
-          <img src="/assets/images/aidesker-hero.png" alt="aiDesker — knowledge-grounded AI chat assistant" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center top;display:block">
+          <img src="/assets/images/aidesker-hero.png" alt="NivoChat — knowledge-grounded AI chat assistant" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center top;display:block">
         </div>
       </div>
 
@@ -226,10 +226,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
       <div class="product-card">
         <div class="product-card-img" style="background:#0d0020;padding:0;overflow:hidden">
-          <img src="/assets/images/aidesker-hero.png" alt="aiDesker" style="width:100%;height:160px;object-fit:cover;object-position:center top;display:block"/>
+          <img src="/assets/images/aidesker-hero.png" alt="NivoChat" style="width:100%;height:160px;object-fit:cover;object-position:center top;display:block"/>
         </div>
         <div class="product-card-body">
-          <div class="product-card-title">aiDesker</div>
+          <div class="product-card-title">NivoChat</div>
           <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
           <a href="/case-study/aidesker" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>

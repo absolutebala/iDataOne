@@ -3,7 +3,7 @@
 .site-footer .footer-inner{max-width:1140px;margin:0 auto}
 .site-footer .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
 .site-footer .footer-logo{margin-bottom:12px}
-.site-footer .footer-logo img{height:32px;opacity:1;filter:none}
+.site-footer .footer-logo img{height:29px;opacity:1;filter:none}
 .site-footer .footer-tagline{font-size:12.5px;color:rgba(0,212,255,0.45);line-height:1.65}
 .site-footer .footer-col-title{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#f5c518;margin-bottom:16px;opacity:0.85}
 .site-footer .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}

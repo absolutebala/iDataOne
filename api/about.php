@@ -319,7 +319,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
       $cases = [
         ['digital','#00d4ff','/case-study/knight-ryders','Community Platform','80% less maintenance — custom inline CMS replacing WordPress for a 460-member riding club.'],
         ['digital','#00d4ff','/case-study/telecom-pm-platform','Infrastructure PMS','Telecom project management platform for Venus Energy — PO to close-out, multi-trade, live dashboards.'],
-        ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','aiDesker — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
+        ['digital','#00d4ff','/case-study/aidesker','SaaS Platform','NivoChat — multi-tenant AI chat SaaS with Stripe billing, knowledge base and one-line embed.'],
         ['ai','#a855f7','/case-study/aidesker','Conversational AI','Knowledge-grounded AI chat assistant with lead capture, BYO-key and real-time CRM sync.'],
         ['digital','#00d4ff','/case-study/risk-platform','Enterprise Platform','Risk &amp; Compliance platform for an FMCG leader — 5×5 matrix, dashboards and workflow automation.'],
         ['data','#f5c518','/case-study/risk-dashboard','Data Intelligence','Real-time risk intelligence dashboard — live metrics, drill-down and cross-system data integration.'],

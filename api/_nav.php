@@ -3,7 +3,7 @@
 @view-transition{navigation:auto}
 .site-nav{position:fixed;top:0;left:0;right:0;height:68px;display:flex;align-items:center;gap:40px;padding:0 32px;z-index:100;background:rgba(10,15,30,0.95);backdrop-filter:blur(12px);border-bottom:0.5px solid rgba(0,212,255,0.12)}
 .site-nav .nav-logo{text-decoration:none;flex-shrink:0;min-width:160px}
-.site-nav .nav-logo img{height:36px;width:auto;opacity:1}
+.site-nav .nav-logo img{height:32px;width:auto;opacity:1}
 .site-nav .nav-links{display:flex;gap:28px;align-items:center}
 .site-nav .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.82);text-decoration:none;transition:color 0.2s;cursor:default}
 .site-nav .nav-links a[href]{cursor:pointer}

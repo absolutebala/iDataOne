@@ -4,28 +4,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne</title>
-<meta name="description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
-<meta name="keywords" content="multi-tenant SaaS platform, AI chat widget, embeddable chatbot, conversational AI platform, knowledge-grounded chatbot, Next.js Supabase SaaS, aiDesker, iDataOne">
+<title>Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne</title>
+<meta name="description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<meta name="keywords" content="multi-tenant SaaS platform, AI chat widget, embeddable chatbot, conversational AI platform, knowledge-grounded chatbot, Next.js Supabase SaaS, NivoChat, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/aidesker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
-<meta property="og:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne">
+<meta property="og:description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
 <meta property="og:url" content="https://idataone.com/case-study/aidesker">
 <meta property="og:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Multi-Tenant AI Chat Platform — aiDesker | iDataOne">
-<meta name="twitter:description" content="How iDataOne built aiDesker, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<meta name="twitter:title" content="Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne">
+<meta name="twitter:description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line",
-  "description": "How iDataOne designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
+  "description": "How iDataOne designed and built NivoChat — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
   "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
   "url": "https://idataone.com/case-study/aidesker",
@@ -110,7 +110,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-hero-inner">
     <div class="cs-hero-left">
       <h1 class="cs-hero-title">Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line</h1>
-      <p class="cs-hero-sub">How we designed and built aiDesker — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.</p>
+      <p class="cs-hero-sub">How we designed and built NivoChat — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.</p>
       <div class="cs-hero-stats">
       <div class="cs-stat"><div class="cs-stat-num"><span>1-Line</span></div><div class="cs-stat-label">Embed to go live</div></div>
       <div class="cs-stat"><div class="cs-stat-num"><span>2</span></div><div class="cs-stat-label">AI providers supported</div></div>
@@ -120,7 +120,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="cs-hero-img">
       <img
         src="/assets/images/aidesker-hero.png"
-        alt="aiDesker — AI chat platform with CRM, Lead Capture, Instant Integration and AI providers"
+        alt="NivoChat — AI chat platform with CRM, Lead Capture, Instant Integration and AI providers"
         loading="eager"
         style="cursor:zoom-in"
         onmouseover="hzOpen(this.src,this.alt)"
@@ -144,12 +144,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-inner">
     <div class="cs-tag">The Solution</div>
     <h2 class="cs-h2">A Purpose-Built, Multi-Tenant Conversational AI Platform</h2>
-    <p class="cs-p">We built aiDesker from the ground up — a tenant-isolated SaaS platform covering the full lifecycle from knowledge ingestion to embedded widget, lead capture, CRM sync and platform-wide administration.</p>
+    <p class="cs-p">We built NivoChat from the ground up — a tenant-isolated SaaS platform covering the full lifecycle from knowledge ingestion to embedded widget, lead capture, CRM sync and platform-wide administration.</p>
 
     <div class="cs-visual" style="padding:0;background:transparent;border:none">
       <img
         src="/assets/images/aidesker-solution.png"
-        alt="aiDesker architecture — AI Model Layer, Knowledge Base, Multi-Tenant, Embeddable Widget, Lead Capture, CRM Automation"
+        alt="NivoChat architecture — AI Model Layer, Knowledge Base, Multi-Tenant, Embeddable Widget, Lead Capture, CRM Automation"
         style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(109,40,217,0.15),0 8px 24px rgba(0,0,0,0.1)"
         loading="lazy"
        style="cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
@@ -201,7 +201,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-inner">
     <div class="cs-tag">The Results</div>
     <h2 class="cs-h2">From a Blank Page to a Live, Self-Serve AI Chat Product</h2>
-    <p class="cs-p">aiDesker reached production as a complete self-serve platform — a business can register, configure its knowledge base, paste an AI key and have a grounded assistant live on its site, while the operator manages every tenant from a single admin console.</p>
+    <p class="cs-p">NivoChat reached production as a complete self-serve platform — a business can register, configure its knowledge base, paste an AI key and have a grounded assistant live on its site, while the operator manages every tenant from a single admin console.</p>
     <div class="cs-results">
       <div class="cs-result"><div class="cs-result-num">Live</div><div class="cs-result-label">In production</div></div>
       <div class="cs-result"><div class="cs-result-num">3</div><div class="cs-result-label">Self-serve plan tiers</div></div>
