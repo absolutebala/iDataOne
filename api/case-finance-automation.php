@@ -161,7 +161,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <img src="/assets/images/finance-automation-hero.png" alt="AI document extraction inside Infra360 PMS — invoice processing, reconciliation and reporting automated, saving 300+ hours a month" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/finance-automation-hero.png" alt="AI document extraction inside Infra360 PMS — invoice processing, reconciliation and reporting automated, saving 300+ hours a month" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -184,7 +184,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">Rather than a separate tool, we built the automation directly into Infra360 PMS — automating the finance team's invoice processing, reconciliation and reporting workflows on top of the existing project and material data. Then we went a step further and added an AI extraction layer that turns a single uploaded document into a fully created project or STN/SRN record inside the platform, no separate app or re-entry required.</p>
 
     <div class="cs-visual" style="padding:0;background:none;border:none">
-      <img src="/assets/images/finance-automation-architecture.png" alt="Finance automation architecture inside Infra360 PMS — document input, AI document extraction, project creation, STN/SRN entry, automated reconciliation and reporting" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(5,150,105,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/finance-automation-architecture.png" alt="Finance automation architecture inside Infra360 PMS — document input, AI document extraction, project creation, STN/SRN entry, automated reconciliation and reporting" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(5,150,105,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -287,6 +287,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   var im=document.getElementById('hz-img');
   var closeTimer=null;
   window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
   window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
 })();

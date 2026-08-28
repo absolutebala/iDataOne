@@ -133,13 +133,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
     </div>
     <div class="cs-hero-img">
-      <img
+      <span class="hz-wrap"><img
         src="/assets/images/knight-ryders-hero.png"
         alt="The Knight Ryders — Honda CB350 riding community digital platform with member profiles, badges and leaderboard"
         loading="eager"
         style="cursor:zoom-in"
-        onmouseover="hzOpen(this.src,this.alt)"
-      />
+        onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"
+      /><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -183,12 +183,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We rebuilt the site from the ground up on a modern stack — Next.js, Supabase and Vercel — replacing the WordPress backend entirely while preserving the club's SEO equity and existing content through a careful, verified migration.</p>
 
     <div class="cs-visual" style="padding:0;background:transparent;border:none">
-      <img
+      <span class="hz-wrap"><img
         src="/assets/images/knight-ryders-solution.png"
         alt="The Knight Ryders — community platform architecture with inline CMS, member profiles, badges and migration"
         style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.15)"
         loading="lazy"
-       style="cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
+       style="cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"/><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -317,6 +317,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

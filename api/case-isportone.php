@@ -124,7 +124,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -148,7 +148,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We're designing iSportOne as a single adaptive platform — one profile structure that serves a state-level competitive swimmer and a recreational badminton player with friends equally well, without forcing either into the wrong mold.</p>
 
     <div class="cs-visual" style="padding:0;background:none;border:none">
-      <img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -263,6 +263,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

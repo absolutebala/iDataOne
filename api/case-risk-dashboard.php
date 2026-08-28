@@ -119,7 +119,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <img src="/assets/images/risk-platform-hero.png" alt="Real-time risk intelligence dashboard — risk assessment, review and monitoring for an enterprise FMCG company" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/risk-platform-hero.png" alt="Real-time risk intelligence dashboard — risk assessment, review and monitoring for an enterprise FMCG company" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -142,7 +142,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We built a comprehensive analytics dashboard that transforms raw risk data into visual intelligence — giving every stakeholder from department users to senior leadership exactly the view they need.</p>
 
     <div class="cs-visual" style="padding:0;background:none;border:none">
-      <img src="/assets/images/risk-platform-architecture.png" alt="Risk intelligence dashboard architecture — role-based access, 5x5 risk severity matrix, complete risk register, team communication log, real-time dashboard, review and approval workflow" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/risk-platform-architecture.png" alt="Risk intelligence dashboard architecture — role-based access, 5x5 risk severity matrix, complete risk register, team communication log, real-time dashboard, review and approval workflow" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -245,6 +245,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   var im=document.getElementById('hz-img');
   var closeTimer=null;
   window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
   window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
 })();

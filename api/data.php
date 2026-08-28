@@ -136,14 +136,14 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <img
+      <span class="hz-wrap"><img
         src="/assets/images/data-hero-visual.png"
         alt="iDataOne Data Intelligence — Business Intelligence, Real-Time Analytics, Predictive Analytics and Actionable Insights"
         style="width:100%;height:auto;display:block;border-radius:24px;box-shadow:0 24px 64px rgba(180,120,0,0.18),0 8px 24px rgba(0,0,0,0.1);transition:transform 0.4s ease,box-shadow 0.4s ease"
         loading="eager"
-        onmouseover="hzOpen(this.src,this.alt);this.style.transform='translateY(-4px)'"
+        onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this);this.style.transform='translateY(-4px)'"
         onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 24px 64px rgba(180,120,0,0.18),0 8px 24px rgba(0,0,0,0.1)'"
-      />
+      /><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -263,6 +263,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

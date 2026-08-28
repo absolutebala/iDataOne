@@ -133,7 +133,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in;transition:transform 0.4s ease" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/isportone-hero.png" alt="iSportOne — a lifelong sports identity connecting an athlete's stats, achievements, teams, coaches and career history, forever" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in;transition:transform 0.4s ease" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -171,7 +171,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">A Platform That Adapts to Every Athlete</h2>
     <p class="section-sub">One profile structure that serves a state-level competitive swimmer and a recreational badminton player equally well.</p>
     <div style="margin-bottom:48px">
-      <img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/isportone-solution.png" alt="iSportOne platform architecture — lifelong sports passport, adaptive profile system, activity linking and tagging, safe-by-design parental controls, three-zone community feed, club pages" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(244,63,94,0.15),0 8px 24px rgba(15,23,42,0.1);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
     <div class="features-grid">
       <div class="feature-card">
@@ -280,6 +280,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

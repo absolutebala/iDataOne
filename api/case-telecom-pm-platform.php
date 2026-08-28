@@ -121,7 +121,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-image">
-      <img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS — 2,200+ projects tracked across 50+ vendors" style="cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/telecom-pm-hero.png" alt="Telecom Infrastructure PMS — 2,200+ projects tracked across 50+ vendors" style="cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -144,7 +144,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We designed and built a comprehensive, role-based project management platform from the ground up — covering the complete operational and financial lifecycle of telecom infrastructure projects.</p>
 
     <div class="cs-visual" style="padding:0;background:#f0f4f8">
-      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
+      <span class="hz-wrap"><img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"/><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -268,6 +268,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

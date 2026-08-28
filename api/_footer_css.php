@@ -24,4 +24,8 @@
 .footer-whatsapp-label{font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:rgba(255,255,255,0.4)}
 .footer-whatsapp-number{font-size:13px;font-weight:700;color:#fff;letter-spacing:0.2px;white-space:nowrap}
 @media(max-width:768px){.site-footer .footer-top{grid-template-columns:1fr 1fr}.site-footer .footer-bottom{flex-direction:column;gap:14px;align-items:flex-start}.site-footer .footer-phone{margin-left:0;padding-left:0;border-left:none}}
+.hz-wrap{display:block;position:relative}
+.hz-icon{position:absolute;bottom:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(15,23,42,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2;opacity:0;transition:opacity 0.25s ease}
+.hz-wrap:hover .hz-icon,.hz-wrap.hz-show-icon .hz-icon{opacity:1}
+.hz-icon svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
 </style>

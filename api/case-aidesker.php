@@ -118,13 +118,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
     </div>
     <div class="cs-hero-img">
-      <img
+      <span class="hz-wrap"><img
         src="/assets/images/aidesker-hero.png"
         alt="NivoChat — AI chat platform with CRM, Lead Capture, Instant Integration and AI providers"
         loading="eager"
         style="cursor:zoom-in"
-        onmouseover="hzOpen(this.src,this.alt)"
-      />
+        onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"
+      /><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -147,12 +147,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We built NivoChat from the ground up — a tenant-isolated SaaS platform covering the full lifecycle from knowledge ingestion to embedded widget, lead capture, CRM sync and platform-wide administration.</p>
 
     <div class="cs-visual" style="padding:0;background:transparent;border:none">
-      <img
+      <span class="hz-wrap"><img
         src="/assets/images/aidesker-solution.png"
         alt="NivoChat architecture — AI Model Layer, Knowledge Base, Multi-Tenant, Embeddable Widget, Lead Capture, CRM Automation"
         style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(109,40,217,0.15),0 8px 24px rgba(0,0,0,0.1)"
         loading="lazy"
-       style="cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
+       style="cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"/><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">
@@ -293,6 +293,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';

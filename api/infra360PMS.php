@@ -132,7 +132,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="banner-illus">
-      <img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — every site, every rupee, accounted for" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/telecom-pm-hero.png" alt="Infra360 PMS — every site, every rupee, accounted for" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -170,7 +170,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <h2 class="section-title">One System for Every Trade</h2>
     <p class="section-sub">The same rigour for a tower-erection crew and a solar installation team — without forcing either into the wrong workflow.</p>
     <div style="padding:0;background:#f0f4f8;border-radius:20px;overflow:hidden;margin-bottom:48px">
-      <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — architecture and dashboard for infrastructure project management" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — architecture and dashboard for infrastructure project management" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
     <div class="features-grid">
       <div class="feature-card">
@@ -277,6 +277,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   var im=document.getElementById('hz-img');
   var closeTimer=null;
   window.hzOpen=function(src,alt){ clearTimeout(closeTimer); im.src=src; im.alt=alt||''; ov.style.display='flex'; requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.style.background='rgba(0,0,0,0.85)'; im.style.transform='scale(1)'; im.style.opacity='1'; }); }); };
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
   window.hzClose=function(){ ov.style.background='rgba(0,0,0,0)'; im.style.transform='scale(0.85)'; im.style.opacity='0'; clearTimeout(closeTimer); closeTimer=setTimeout(function(){ ov.style.display='none'; },320); };
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.hzClose(); });
 })();

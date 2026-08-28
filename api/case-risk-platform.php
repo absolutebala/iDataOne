@@ -149,7 +149,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <img src="/assets/images/risk-platform-hero.png" alt="Enterprise Risk & Compliance Platform — risk assessment, review and monitoring dashboard for an FMCG leader" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/risk-platform-hero.png" alt="Enterprise Risk & Compliance Platform — risk assessment, review and monitoring dashboard for an FMCG leader" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -172,7 +172,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="cs-p">We designed and built a comprehensive, role-based risk management platform from the ground up — covering the full lifecycle from risk identification through assessment, mitigation, review and reporting.</p>
 
     <div class="cs-visual" style="padding:0;background:none;border:none">
-      <img src="/assets/images/risk-platform-architecture.png" alt="Enterprise Risk & Compliance Platform architecture — role-based access, 5x5 risk severity matrix, complete risk register, team communication log, real-time dashboard, review and approval workflow" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/risk-platform-architecture.png" alt="Enterprise Risk & Compliance Platform architecture — role-based access, 5x5 risk severity matrix, complete risk register, team communication log, real-time dashboard, review and approval workflow" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(99,102,241,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
 
     <div class="cs-features">

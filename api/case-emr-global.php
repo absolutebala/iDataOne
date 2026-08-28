@@ -187,7 +187,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
     </div>
     <div class="cs-hero-img">
-      <img src="/assets/images/emr-hero.png" alt="EMR Global field engineer updating a SAP-integrated service ticket on site" onmouseover="hzOpen(this.src,this.alt)">
+      <span class="hz-wrap"><img src="/assets/images/emr-hero.png" alt="EMR Global field engineer updating a SAP-integrated service ticket on site" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -363,7 +363,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <!-- Solution architecture -->
     <div style="margin-top:48px">
       <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#0d9488;margin-bottom:14px">Solution Architecture</div>
-      <img src="/assets/images/emr-solution.png" alt="EMR Global field service platform architecture — two-way SAP integration, web admin portal, React Native mobile app, SLA tracking and service history" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onmouseover="hzOpen(this.src,this.alt)"/>
+      <span class="hz-wrap"><img src="/assets/images/emr-solution.png" alt="EMR Global field service platform architecture — two-way SAP integration, web admin portal, React Native mobile app, SLA tracking and service history" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.15),0 8px 24px rgba(0,0,0,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"/><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
     </div>
   </div>
 </section>
@@ -504,6 +504,8 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       });
     });
   };
+
+  window.hzHover=function(el){ if(el.dataset.hzSeen) return; el.dataset.hzSeen='1'; window.hzOpen(el.src,el.alt); };
 
   window.hzClose=function(){
     ov.style.background='rgba(0,0,0,0)';
