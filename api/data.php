@@ -182,46 +182,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   </div>
 </section>
 
-<!-- Products -->
-<section class="section products">
-  <div class="section-inner">
-    <h2 class="section-title">Data-Powered Products</h2>
-    <p class="section-sub">Products we built using the same data intelligence expertise we bring to every client.</p>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
-          <img src="/assets/images/mealmate-hero.png" alt="MealMate — AI-powered family meal planning app" style="width:100%;height:160px;object-fit:cover;display:block">
-        </div>
-        <div class="product-card-body">
-          <div class="product-card-title">MealMate</div>
-          <div class="product-card-desc">AI-powered family meal planning. Personalised, health-aware meal suggestions for every member of the family — built for everyday use.</div>
-          <a href="/case-study/mealmate" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-card-img" style="background:#0a0f1e;padding:0;overflow:hidden">
-          <img src="/assets/images/isportone-hero.png" alt="iSportOne — your lifelong sports identity" style="width:100%;height:160px;object-fit:cover;display:block"/>
-        </div>
-        <div class="product-card-body">
-          <div class="product-card-title">iSportOne</div>
-          <div class="product-card-desc">Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
-          <a href="/isportone" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card">
-                <div class="product-card-img" style="background:#0d0020;padding:0;overflow:hidden">
-          <img src="/assets/images/aidesker-hero.png" alt="NivoChat" style="width:100%;height:160px;object-fit:cover;object-position:center top;display:block"/>
-        </div>
-        <div class="product-card-body">
-          <div class="product-card-title">NivoChat</div>
-          <div class="product-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
-          <a href="/case-study/aidesker" class="product-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="cta-section">
   <div class="cta-card">

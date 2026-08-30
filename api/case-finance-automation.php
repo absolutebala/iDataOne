@@ -273,7 +273,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <h3 class="cs-cta-h3">Want to Automate <em>Your Finance Ops?</em></h3>
       <p class="cs-cta-sub">Whether it's inside an existing platform like Infra360 PMS or a new one, let's discuss how we can build it for your team.</p>
     </div>
-    <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div style="position:relative;z-index:1;display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0">
+      <a href="https://infra360.idataone.com/" target="_blank" rel="noopener" class="cs-cta-btn" style="background:#fff;color:#0f172a">Sign Up on Infra360 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/contact" class="cs-cta-btn">Book a Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
   </div>
 </section>
 

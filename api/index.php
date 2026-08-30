@@ -46,6 +46,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
         error_log("Resend API failed (homepage) - Status: {$status}, cURL Error: {$curl_err}, Response: {$response}");
     }
 }
+
+// Any path other than the homepage itself that falls through to here is unknown — show a real 404.
+$__reqPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/');
+if ($__reqPath === '') { $__reqPath = '/'; }
+if ($__reqPath !== '/') {
+    http_response_code(404);
+    include __DIR__ . '/404.php';
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -307,6 +316,16 @@ font-size:14px;
 .why-num{font-size:10px;font-weight:700;letter-spacing:2px;color:#a5b4fc;min-width:24px;padding-top:4px}
 .why-title{font-size:16px;font-weight:700;color:#0f172a;letter-spacing:-0.3px;margin-bottom:6px}
 .why-desc{font-size:13px;color:#64748b;line-height:1.6}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;max-width:1140px}
+.testi-card{background:#fff;border-radius:20px;padding:32px 28px;text-align:left;box-shadow:0 20px 48px rgba(0,0,0,0.18);display:flex;flex-direction:column;gap:16px}
+.testi-quote{font-size:14.5px;line-height:1.7;color:#334155}
+.testi-stars{display:flex;gap:3px}
+.testi-stars svg{width:14px;height:14px;fill:#f5c518}
+.testi-person{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:8px;border-top:1px solid rgba(226,232,240,0.8)}
+.testi-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#0891b2,#00d4ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0}
+.testi-name{font-size:13px;font-weight:700;color:#0f172a}
+.testi-role{font-size:11.5px;color:#94a3b8}
+@media(max-width:900px){.testi-grid{grid-template-columns:1fr}}
 .why-bottom{display:flex;justify-content:flex-end;margin-top:28px}
 .why-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#f5c518;cursor:pointer;transition:gap 0.25s,opacity 0.25s;opacity:0.9}
 .why-cta:hover{gap:16px;opacity:1}
@@ -509,26 +528,22 @@ text-transform:uppercase;
 .product:hover .product-arrow svg{stroke:#fff}
 
 /* Contact — conversion focused */
-.contact-inner{position:relative;z-index:2;width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
-.contact-left{text-align:left}
-.cl-label{font-size:14px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#00d4ff;margin-bottom:20px}
-.cl-heading{font-size:44px;font-weight:700;letter-spacing:-2px;line-height:1.1;color:#ffffff;margin-bottom:12px}
-.cl-heading em{font-style:normal;background:linear-gradient(90deg,#f5c518,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.cl-sub{font-size:15px;color:#ffffff;line-height:1.7;margin-bottom:36px;font-weight:500}
+.contact-inner{position:relative;z-index:2;width:100%;max-width:1020px;display:grid;grid-template-columns:0.85fr 1.15fr;gap:0;align-items:stretch;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:28px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.35)}
+.contact-left{text-align:left;padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.cl-label{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#00d4ff;margin-bottom:18px}
+.cl-heading{font-size:clamp(26px,3vw,34px);font-weight:800;letter-spacing:-1.2px;line-height:1.15;color:#ffffff;margin-bottom:12px}
+.cl-heading em{font-style:normal;color:#00d4ff}
+.cl-sub{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:28px;font-weight:400}
 .cl-trust{display:flex;flex-direction:column;gap:0}
-.cl-trust-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:none}
+.cl-trust-item{display:flex;align-items:flex-start;gap:13px;padding:11px 0;border-bottom:none}
 .cl-trust-item:first-child{border-top:none}
-.cl-trust-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cl-trust-icon svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.ti-indigo{background:#eef2ff;border:1px solid rgba(99,102,241,0.15)}
-.ti-indigo svg{stroke:#4f46e5}
-.ti-teal{background:#f0fdfa;border:1px solid rgba(20,184,166,0.15)}
-.ti-teal svg{stroke:#0d9488}
-.ti-amber{background:#fffbeb;border:1px solid rgba(245,158,11,0.15)}
-.ti-amber svg{stroke:#d97706}
-.cl-trust-title{font-size:14px;font-weight:600;color:rgba(255,255,255,0.88);margin-bottom:2px}
-.cl-trust-desc{font-size:12.5px;color:rgba(0,212,255,0.55);line-height:1.5}
-.contact-right{background:#ffffff;border:1px solid rgba(226,232,240,0.9);border-radius:24px;padding:40px 36px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.cl-trust-icon{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.16)}
+.cl-trust-icon svg{width:14px;height:14px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ti-indigo,.ti-teal,.ti-amber{background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.16)}
+.ti-indigo svg,.ti-teal svg,.ti-amber svg{stroke:#00d4ff}
+.cl-trust-title{font-size:12.5px;font-weight:600;color:rgba(255,255,255,0.8);margin-bottom:2px}
+.cl-trust-desc{font-size:11px;color:rgba(255,255,255,0.4);line-height:1.5}
+.contact-right{background:#ffffff;padding:44px 40px}
 .form-top{margin-bottom:24px}
 .form-top-title{font-size:18px;font-weight:700;color:#0f172a;letter-spacing:-0.4px;margin-bottom:4px}
 .form-top-sub{font-size:13px;color:#94a3b8}
@@ -542,7 +557,7 @@ text-transform:uppercase;
 .service-section{margin-bottom:16px}
 .service-section label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#94a3b8;display:block;margin-bottom:10px}
 .service-pills{display:flex;gap:7px;flex-wrap:wrap}
-.service-pill{padding:7px 13px;border-radius:8px;border:1px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#0d9488;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
+.service-pill{padding:7px 13px;border-radius:8px;border:1px solid rgba(0,212,255,0.25);background:transparent;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;color:#0891b2;cursor:pointer;transition:all 0.2s;user-select:none;letter-spacing:0.2px}
 .service-pill:hover{border-color:#00d4ff;color:#00d4ff;background:rgba(0,212,255,0.06)}
 .service-pill.active{border-color:#00d4ff;background:#00d4ff;color:#0a0f1e}
 .svc-type-tab{padding:6px 16px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(0,212,255,0.3);background:transparent;color:rgba(0,212,255,0.7);transition:all 0.2s}
@@ -871,7 +886,9 @@ letter-spacing:0.3px;
   <a href="/digital">Digital</a>
   <a href="/ai">AI</a>
   <a href="/data">Data</a>
+  <a href="/products">Products</a>
   <a href="/case-studies">Case Studies</a>
+  <a href="/about">About</a>
   <a href="/contact" class="active">Contact</a>
   <a href="https://wa.me/916385155341" target="_blank" rel="noopener" class="mob-menu-whatsapp">
     <span class="nav-whatsapp-icon"><svg viewBox="0 0 24 24"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4c-4.34 0-7.87 3.53-7.87 7.87 0 1.39.36 2.74 1.05 3.93L4 20l4.3-1.13c1.15.63 2.45.96 3.75.96h0c4.34 0 7.87-3.53 7.87-7.87 0-2.1-.82-4.08-2.32-5.64zM12.05 18.4h0c-1.15 0-2.28-.31-3.27-.89l-.23-.14-2.44.64.65-2.38-.15-.24a6.4 6.4 0 0 1-.98-3.4c0-3.54 2.88-6.42 6.42-6.42a6.38 6.38 0 0 1 6.42 6.42c0 3.54-2.88 6.41-6.42 6.41zm3.52-4.8c-.19-.1-1.14-.56-1.32-.62-.18-.07-.31-.1-.44.1-.13.19-.5.62-.62.75-.11.13-.23.14-.42.05-.19-.1-.82-.3-1.56-.96-.58-.51-.97-1.15-1.08-1.34-.11-.19-.01-.3.09-.39.09-.09.19-.23.29-.35.1-.12.13-.19.19-.32.06-.13.03-.24-.02-.34-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34h-.38c-.13 0-.34.05-.52.24-.18.19-.68.66-.68 1.62 0 .95.7 1.87.79 2 .1.13 1.37 2.09 3.32 2.93.46.2.83.32 1.11.41.47.15.89.13 1.23.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.83.11-.92-.05-.09-.18-.14-.37-.24z"/></svg></span>
@@ -885,13 +902,15 @@ letter-spacing:0.3px;
 <!-- Top nav bar -->
 <div class="top-nav hidden" id="top-nav">
   <div class="site-logo large" id="site-logo">
-    <img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+    <a href="/" style="display:block;line-height:0"><img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms"></a>
   </div>
   <div class="top-nav-links" id="topNavLinks">
     <a href="/digital">Digital</a>
     <a href="/ai">AI</a>
     <a href="/data">Data</a>
+    <a href="/products">Products</a>
     <a href="/case-studies">Case Studies</a>
+    <a href="/about">About</a>
     <a href="/contact">Contact</a>
   </div>
   <a href="https://wa.me/916385155341" target="_blank" rel="noopener" class="nav-whatsapp">
@@ -905,7 +924,7 @@ letter-spacing:0.3px;
 
 <!-- Hero logo (screen 1 only) -->
 <div class="site-logo" id="hero-logo">
-  <img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms">
+  <a href="/" style="display:block;line-height:0"><img src="/assets/images/iDataOneLogoFinal.png" alt="iDataOne - AI-First Products & Intelligent Data Platforms"></a>
 </div>
 
 <!-- Background illustration layer -->
@@ -1335,7 +1354,7 @@ letter-spacing:0.3px;
     </div>
 
     <div class="cap-slide">
-      <div class="cap-card indigo" onclick="window.location.href='/infra360PMS'" style="cursor:pointer">
+      <div class="cap-card indigo" onclick="window.open('https://infra360.idataone.com/','_blank')" style="cursor:pointer">
         <div class="cap-left">
           <div class="cap-card-title">Infra360 PMS</div>
           <div class="cap-card-outcome">Every site. Every rupee. Accounted for.</div>
@@ -1344,7 +1363,7 @@ letter-spacing:0.3px;
             <li>PO to Close-Out</li><li>STN/SRN Tracking</li>
             <li>GST/TDS Automation</li><li>Live Dashboards</li>
           </ul>
-          <a href="/infra360PMS" class="cap-explore violet" onclick="event.stopPropagation()">Explore Infra360 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="https://infra360.idataone.com/" target="_blank" rel="noopener" class="cap-explore violet" onclick="event.stopPropagation()">Explore Infra360 <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <div class="cap-footer">
             <div class="cap-pips"><div class="cap-pip"></div><div class="cap-pip active-violet"></div><div class="cap-pip"></div></div>
             <div class="cap-nav">
@@ -1393,7 +1412,7 @@ letter-spacing:0.3px;
 </div>
 
 <div class="why-bottom" style="margin-top:20px">
-  <div class="why-cta" onclick="showScreen(3)">
+  <div class="why-cta" onclick="showScreen(4)">
     Build Something Intelligent
     <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </div>
@@ -1401,7 +1420,72 @@ letter-spacing:0.3px;
 </div>
 </section>
 
-<!-- 3: Contact -->
+<!-- 3: Testimonials -->
+<section class="screen">
+<div class="container">
+<h2>What Our <span class="highlight">Clients Say</span></h2>
+<p>Real feedback from the businesses we've built for.</p>
+<div class="testi-grid">
+
+  <div class="testi-card">
+    <div class="testi-stars">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+    </div>
+    <p class="testi-quote">"iDataOne rebuilt our field service platform with two-way SAP integration that just works. Our engineers update tickets on site and the office sees it in real time — no more chasing paperwork."</p>
+    <div class="testi-person">
+      <div class="testi-avatar">E</div>
+      <div>
+        <div class="testi-name">EMR Global</div>
+        <div class="testi-role">Field Service &amp; SAP Integration</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-card">
+    <div class="testi-stars">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+    </div>
+    <p class="testi-quote">"Infra360 PMS gave us live visibility into every purchase order and site payment across our telecom and solar projects. What used to take days of reconciliation now shows up on a dashboard instantly."</p>
+    <div class="testi-person">
+      <div class="testi-avatar">V</div>
+      <div>
+        <div class="testi-name">Venus Energy</div>
+        <div class="testi-role">Infrastructure Project Management</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-card">
+    <div class="testi-stars">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+    </div>
+    <p class="testi-quote">"We replaced WordPress with a custom inline CMS that our own team can manage without a developer. Maintenance dropped by 80% and updates that took days now take minutes."</p>
+    <div class="testi-person">
+      <div class="testi-avatar">K</div>
+      <div>
+        <div class="testi-name">The Knight Ryders</div>
+        <div class="testi-role">Community Platform, 460+ Members</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+<!-- 4: Contact -->
 <section class="screen">
 <div class="container">
 <div class="contact-inner">
@@ -1511,6 +1595,7 @@ letter-spacing:0.3px;
 <div class="dot"></div>
 <div class="dot"></div>
 <div class="dot"></div>
+<div class="dot"></div>
 </div>
 
 <footer class="footer"></footer>
@@ -1567,14 +1652,14 @@ function selectService(el, val) {
 }
 const screens = document.querySelectorAll('.screen');
 const dots    = document.querySelectorAll('.dot');
-let current   = <?php echo (!empty($form_success) || !empty($form_error)) ? '3' : '0'; ?>;
+let current   = <?php echo (!empty($form_success) || !empty($form_error)) ? '4' : '0'; ?>;
 let locked    = false;
 
 <?php if (!empty($form_success) || !empty($form_error)): ?>
 screens.forEach(s => s.classList.remove('active'));
-screens[3].classList.add('active');
+screens[4].classList.add('active');
 dots.forEach(d => d.classList.remove('active'));
-dots[3].classList.add('active');
+dots[4].classList.add('active');
 <?php endif; ?>
 
 const topNav   = document.getElementById('top-nav');
