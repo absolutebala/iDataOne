@@ -86,9 +86,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="p-grid">
 
     <div class="p-card">
-      <div class="p-card-img">
+      <div class="p-card-img" style="background:#020617">
         <span class="p-card-badge badge-live">Live</span>
-        <img src="/assets/images/product-nivochat.jpg" alt="NivoChat — AI conversation layer for websites">
+        <img src="/assets/images/product-nivochat.jpg" alt="NivoChat — AI conversation layer for websites" style="object-fit:contain">
       </div>
       <div class="p-card-body">
         <div class="p-card-tag">Conversational AI</div>
@@ -99,9 +99,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
 
     <div class="p-card">
-      <div class="p-card-img">
+      <div class="p-card-img" style="background:#eaf1fc">
         <span class="p-card-badge badge-live">Live</span>
-        <img src="/assets/images/product-infra360.jpg" alt="Infra360 PMS — infrastructure project management platform">
+        <img src="/assets/images/product-infra360.jpg" alt="Infra360 PMS — infrastructure project management platform" style="object-fit:contain">
       </div>
       <div class="p-card-body">
         <div class="p-card-tag">Project Management</div>
