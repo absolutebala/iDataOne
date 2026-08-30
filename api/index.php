@@ -52,14 +52,14 @@ $__reqPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/
 if ($__reqPath === '') { $__reqPath = '/'; }
 if ($__reqPath !== '/') {
     http_response_code(404);
-    include __DIR__ . '/404.php';
+    include __DIR__ . '/../includes/404.php';
     exit;
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include __DIR__ . '/_gtm_head.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iDataOne | Build. Transform. Scale. — AI-First Products, Automation & Data Intelligence</title>
@@ -873,7 +873,7 @@ letter-spacing:0.3px;
 </style>
 </head>
 <body>
-<?php include __DIR__ . '/_gtm_body.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_body.php'; ?>
 
 <div class="nav-progress" id="navProgress"></div>
 

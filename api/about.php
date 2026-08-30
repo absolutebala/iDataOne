@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include __DIR__ . '/_gtm_head.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About iDataOne | Human-Led, AI-Powered Software Delivery</title>
@@ -23,7 +23,7 @@
 {"@context":"https://schema.org","@type":"AboutPage","name":"About iDataOne","url":"https://idataone.com/about","description":"iDataOne builds AI-first digital products and enterprise software using a human-led, AI-powered delivery model.","publisher":{"@type":"Organization","name":"iDataOne","url":"https://idataone.com"}}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<?php include __DIR__ . '/_footer_css.php'; ?>
+<?php include __DIR__ . '/../includes/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:hidden;padding-top:68px}
@@ -189,8 +189,8 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 </style>
 </head>
 <body>
-<?php include __DIR__ . '/_gtm_body.php'; ?>
-<?php $current_page = 'about'; include __DIR__ . '/_nav.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_body.php'; ?>
+<?php $current_page = 'about'; include __DIR__ . '/../includes/_nav.php'; ?>
 
 <!-- HERO -->
 <section class="hero">
@@ -422,6 +422,6 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   </div>
 </section>
 
-<?php include __DIR__ . '/_footer.php'; ?>
+<?php include __DIR__ . '/../includes/_footer.php'; ?>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include __DIR__ . '/_gtm_head.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Product Development | iDataOne — Build. Transform. Scale.</title>
@@ -155,13 +155,13 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .cta-btns{align-items:flex-start}
 }
 </style>
-<?php include __DIR__ . '/_footer_css.php'; ?>
+<?php include __DIR__ . '/../includes/_footer_css.php'; ?>
 </head>
 <body>
-<?php include __DIR__ . '/_gtm_body.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_body.php'; ?>
 
 <!-- ── Nav ── -->
-<?php $current_page = 'digital'; include __DIR__ . '/_nav.php'; ?>
+<?php $current_page = 'digital'; include __DIR__ . '/../includes/_nav.php'; ?>
 
 <!-- ── Banner ── -->
 <section class="banner">
@@ -313,7 +313,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </section>
 
 <!-- ── Footer ── -->
-<?php include __DIR__ . '/_footer.php'; ?>
+<?php include __DIR__ . '/../includes/_footer.php'; ?>
 
 </body>
 </html>

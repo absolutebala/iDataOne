@@ -34,7 +34,7 @@
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<?php include __DIR__ . '/_footer_css.php'; ?>
+<?php include __DIR__ . '/../includes/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hidden;padding-top:68px}
@@ -118,7 +118,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </head>
 <body>
 
-<?php $current_page = ''; include __DIR__ . '/_nav.php'; ?>
+<?php $current_page = ''; include __DIR__ . '/../includes/_nav.php'; ?>
 
 <!-- Banner -->
 <section class="banner">
@@ -283,7 +283,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 })();
 </script>
 
-<?php include __DIR__ . '/_footer.php'; ?>
+<?php include __DIR__ . '/../includes/_footer.php'; ?>
 
 </body>
 </html>

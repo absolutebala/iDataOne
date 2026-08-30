@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include __DIR__ . '/_gtm_head.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Case Studies — Real Results. Real Impact. | iDataOne</title>
@@ -32,7 +32,7 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-studies">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<?php include __DIR__ . '/_footer_css.php'; ?>
+<?php include __DIR__ . '/../includes/_footer_css.php'; ?>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -182,9 +182,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 </style>
 </head>
 <body>
-<?php include __DIR__ . '/_gtm_body.php'; ?>
+<?php include __DIR__ . '/../includes/_gtm_body.php'; ?>
 
-<?php $current_page = 'cases'; include __DIR__ . '/_nav.php'; ?>
+<?php $current_page = 'cases'; include __DIR__ . '/../includes/_nav.php'; ?>
 
 <!-- ── Hero ── -->
 <section class="hero">
@@ -421,7 +421,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   </div>
 </section>
 
-<?php include __DIR__ . '/_footer.php'; ?>
+<?php include __DIR__ . '/../includes/_footer.php'; ?>
 
 <script>
 function filterCases(cat, btn) {
