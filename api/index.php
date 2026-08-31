@@ -1328,7 +1328,7 @@ letter-spacing:0.3px;
     <div class="cap-slide active">
       <div class="cap-card sky">
         <div class="cap-left">
-          <div class="cap-card-title">NivoChat</div>
+          <img src="/assets/images/nivochat-logo.png" alt="NivoChat by iDataOne" style="height:34px;width:auto;display:block;margin-bottom:8px">
           <div class="cap-card-outcome">Always on. Always intelligent.</div>
           <div class="cap-card-desc">AI-powered desk assistant for businesses. Automates workflows, handles queries and keeps your team productive around the clock.</div>
           <ul class="cap-checklist">
@@ -1356,7 +1356,7 @@ letter-spacing:0.3px;
     <div class="cap-slide">
       <div class="cap-card indigo" onclick="window.open('https://infra360.idataone.com/','_blank')" style="cursor:pointer">
         <div class="cap-left">
-          <div class="cap-card-title">Infra360 PMS</div>
+          <img src="/assets/images/infra360-logo.png" alt="Infra360 PMS by iDataOne" style="height:34px;width:auto;display:block;margin-bottom:8px">
           <div class="cap-card-outcome">Every site. Every rupee. Accounted for.</div>
           <div class="cap-card-desc">Track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out.</div>
           <ul class="cap-checklist">
