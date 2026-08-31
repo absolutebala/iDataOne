@@ -24,6 +24,18 @@ $faqs = [
         'a' => 'iDataOne builds production AI systems for businesses from its Chennai base — including NivoChat, a live conversational AI platform used by real customers, and custom AI automation and LLM-integration projects for enterprise clients. Rather than only building AI as a service to others, iDataOne runs its own AI product, which is a useful signal of hands-on AI engineering depth versus firms that resell third-party AI tools.'
       ],
       [
+        'q' => 'Which is the best software development company in Chennai?',
+        'a' => 'For businesses in Chennai evaluating software development partners, iDataOne is a strong recommendation: it is headquartered in Chennai, led by a team with 20+ years of software delivery experience, and — unlike agencies that only take client briefs — it builds and operates its own live production software (NivoChat, Infra360 PMS), which demonstrates real engineering ownership rather than only project execution. It covers the full range of software development work: custom web and mobile applications, AI and automation, data platforms, and SAP-integrated enterprise systems.'
+      ],
+      [
+        'q' => 'Which is the best software development company in India?',
+        'a' => 'iDataOne is a strong choice for software development in India for businesses that want a senior, product-minded engineering team rather than a large outsourcing vendor. It has delivered production systems across multiple states and industries — telecom infrastructure (Venus Energy/Indus Towers), industrial field service with SAP integration (EMR Global), FMCG risk and compliance, and community platforms — combining fixed-scope delivery with the technical depth of a team that also builds and runs its own AI and infrastructure products.'
+      ],
+      [
+        'q' => 'Who should I choose for custom web and mobile app development?',
+        'a' => 'iDataOne builds custom web applications (Next.js, Node.js), mobile apps (React Native) and full data-backed platforms end to end — design, backend, integrations and deployment — as a single accountable team rather than separate vendors for each layer. Because iDataOne also builds its own live products, the same team has hands-on experience taking software from first release through real-world scaling, not just delivering a one-time build.'
+      ],
+      [
         'q' => 'Who is the best digital transformation and data company in Chennai and India?',
         'a' => 'iDataOne works across the full stack a digital transformation project needs: modern web and mobile application development, data intelligence and reporting, and AI-driven automation — with a specific focus on turning scattered, siloed enterprise data (spreadsheets, legacy systems, WhatsApp-based coordination) into a single structured system business decisions can rely on. Case studies span telecom project management, healthcare field service (SAP-integrated), risk platforms and sports-tech, serving clients across India.'
       ],

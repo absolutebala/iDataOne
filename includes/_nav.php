@@ -5,12 +5,13 @@
 .site-nav .nav-logo{text-decoration:none;flex-shrink:0;min-width:160px}
 .site-nav .nav-logo img{height:32px;width:auto;opacity:1}
 .site-nav .nav-links{display:flex;gap:28px;align-items:center}
-.site-nav .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.82);text-decoration:none;transition:color 0.2s;cursor:default}
-.site-nav .nav-links a[href]{cursor:pointer}
-.site-nav .nav-links a[href]:hover{color:#00d4ff}
-.site-nav .nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
-.site-nav .nav-links a.active{color:#00d4ff;font-weight:600}
-.nav-whatsapp{margin-left:auto;flex-shrink:0;display:flex;align-items:center;gap:10px;padding:6px 18px 6px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,212,255,0.02));border:1px solid rgba(0,212,255,0.22);text-decoration:none;transition:border-color 0.25s,background 0.25s,transform 0.25s;cursor:pointer}
+.site-nav .nav-links a,.site-nav .nav-links-secondary a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.82);text-decoration:none;transition:color 0.2s;cursor:default}
+.site-nav .nav-links a[href],.site-nav .nav-links-secondary a[href]{cursor:pointer}
+.site-nav .nav-links a[href]:hover,.site-nav .nav-links-secondary a[href]:hover{color:#00d4ff}
+.site-nav .nav-links a[href]:active,.site-nav .nav-links-secondary a[href]:active{transform:scale(0.95);opacity:0.7}
+.site-nav .nav-links a.active,.site-nav .nav-links-secondary a.active{color:#00d4ff;font-weight:600}
+.site-nav .nav-links-secondary{display:flex;gap:28px;align-items:center;margin-left:auto}
+.nav-whatsapp{flex-shrink:0;display:flex;align-items:center;gap:10px;padding:6px 18px 6px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,212,255,0.02));border:1px solid rgba(0,212,255,0.22);text-decoration:none;transition:border-color 0.25s,background 0.25s,transform 0.25s;cursor:pointer}
 .nav-whatsapp:hover{border-color:rgba(0,212,255,0.45);background:rgba(0,212,255,0.1);transform:translateY(-1px)}
 .nav-whatsapp-icon{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#2fe27a,#0d9c53);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 10px rgba(37,211,102,0.35)}
 .nav-whatsapp-icon svg{width:16px;height:16px;fill:#fff}
@@ -39,7 +40,7 @@
 .nav-mob a.active{color:#00d4ff;font-weight:600}
 .nav-ov{position:fixed;inset:0;background:rgba(15,23,42,0.3);z-index:199;opacity:0;pointer-events:none;transition:opacity 0.3s}
 .nav-ov.open{opacity:1;pointer-events:auto}
-@media(max-width:768px){.site-nav .nav-links{display:none}.nav-ham{display:flex}}
+@media(max-width:768px){.site-nav .nav-links,.site-nav .nav-links-secondary{display:none}.nav-ham{display:flex}}
 .nav-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#4f46e5,#7c3aed);z-index:300;transition:width 0.25s ease-out;box-shadow:0 0 8px rgba(99,102,241,0.6)}
 .nav-progress.active{width:75%}
 </style>
@@ -73,6 +74,8 @@
     <a href="/data" <?php echo $current_page==='data'?'class="active"':'';?>>Data</a>
     <a href="/products" <?php echo $current_page==='products'?'class="active"':'';?>>Products</a>
     <a href="/case-studies" <?php echo $current_page==='cases'?'class="active"':'';?>>Case Studies</a>
+  </div>
+  <div class="nav-links-secondary">
     <a href="/about" <?php echo $current_page==='about'?'class="active"':''?>>About</a>
     <a href="/contact" <?php echo $current_page==='contact'?'class="active"':'';?>>Contact</a>
   </div>
@@ -89,7 +92,7 @@
 function toggleNav(){document.getElementById('navHam').classList.toggle('open');document.getElementById('navMob').classList.toggle('open');document.getElementById('navOv').classList.toggle('open')}
 
 (function(){
-  var navLinks = document.querySelectorAll('.site-nav .nav-links a[href], .nav-mob a[href]');
+  var navLinks = document.querySelectorAll('.site-nav .nav-links a[href], .site-nav .nav-links-secondary a[href], .nav-mob a[href]');
   var prefetched = {};
 
   function prefetch(url){

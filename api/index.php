@@ -606,14 +606,15 @@ transform:scale(1.4);
 .top-nav-links{display:flex;gap:28px;align-items:center}
 .nav-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#4f46e5,#7c3aed);z-index:300;transition:width 0.25s ease-out;box-shadow:0 0 8px rgba(99,102,241,0.6)}
 .nav-progress.active{width:75%}
-.top-nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
-.top-nav-links a:not([href]){cursor:default}
-.top-nav-links a:not([href]):hover{color:rgba(255,255,255,0.82)}
-.top-nav-links a[href]{cursor:pointer;color:rgba(255,255,255,0.82)}
-.top-nav-links a[href]:hover{color:#00d4ff}
-.top-nav-links a[href]:active{transform:scale(0.95);opacity:0.7}
-.top-nav-links a.active{color:#00d4ff;font-weight:600}
-.nav-whatsapp{margin-left:auto;flex-shrink:0;display:flex;align-items:center;gap:10px;padding:6px 18px 6px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,212,255,0.02));border:1px solid rgba(0,212,255,0.22);text-decoration:none;transition:border-color 0.25s,background 0.25s,transform 0.25s;cursor:pointer}
+.top-nav-links a,.top-nav-links-secondary a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);text-decoration:none;letter-spacing:0.2px;transition:color 0.2s}
+.top-nav-links a:not([href]),.top-nav-links-secondary a:not([href]){cursor:default}
+.top-nav-links a:not([href]):hover,.top-nav-links-secondary a:not([href]):hover{color:rgba(255,255,255,0.82)}
+.top-nav-links a[href],.top-nav-links-secondary a[href]{cursor:pointer;color:rgba(255,255,255,0.82)}
+.top-nav-links a[href]:hover,.top-nav-links-secondary a[href]:hover{color:#00d4ff}
+.top-nav-links a[href]:active,.top-nav-links-secondary a[href]:active{transform:scale(0.95);opacity:0.7}
+.top-nav-links a.active,.top-nav-links-secondary a.active{color:#00d4ff;font-weight:600}
+.top-nav-links-secondary{display:flex;gap:28px;align-items:center;margin-left:auto}
+.nav-whatsapp{flex-shrink:0;display:flex;align-items:center;gap:10px;padding:6px 18px 6px 8px;border-radius:999px;background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,212,255,0.02));border:1px solid rgba(0,212,255,0.22);text-decoration:none;transition:border-color 0.25s,background 0.25s,transform 0.25s;cursor:pointer}
 .nav-whatsapp:hover{border-color:rgba(0,212,255,0.45);background:rgba(0,212,255,0.1);transform:translateY(-1px)}
 .nav-whatsapp-icon{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#2fe27a,#0d9c53);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 10px rgba(37,211,102,0.35)}
 .nav-whatsapp-icon svg{width:16px;height:16px;fill:#fff}
@@ -825,7 +826,7 @@ letter-spacing:0.3px;
   .top-nav{height:56px;padding:0 20px;gap:16px}
   .top-nav .site-logo{position:static}
   .top-nav .site-logo img{height:26px}
-  .top-nav-links{display:none}
+  .top-nav-links,.top-nav-links-secondary{display:none}
   /* Hero screen */
   .logo{max-width:162px}
   h1{font-size:clamp(28px,8vw,48px);letter-spacing:-1.5px}
@@ -910,6 +911,8 @@ letter-spacing:0.3px;
     <a href="/data">Data</a>
     <a href="/products">Products</a>
     <a href="/case-studies">Case Studies</a>
+  </div>
+  <div class="top-nav-links-secondary">
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
   </div>
@@ -1735,7 +1738,7 @@ function toggleMenu() {
 }
 
 (function(){
-  var navLinks = document.querySelectorAll('#topNavLinks a[href], .mob-menu a[href]');
+  var navLinks = document.querySelectorAll('#topNavLinks a[href], .top-nav-links-secondary a[href], .mob-menu a[href]');
   var prefetched = {};
 
   function prefetch(url){
