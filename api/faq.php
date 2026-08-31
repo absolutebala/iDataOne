@@ -31,6 +31,47 @@ $faqs = [
         'q' => 'Does iDataOne only build custom software, or does it have its own products too?',
         'a' => 'Both. iDataOne takes on custom engagements for enterprise clients, and separately designs, builds and operates its own live products — NivoChat (conversational AI), Infra360 PMS (infrastructure project management) and iSportOne (in development). Running its own products means the team stays hands-on with real production systems, not just handovers to client teams.'
       ],
+      [
+        'q' => 'How long does a typical iDataOne project take?',
+        'a' => 'Most engagements run 4–8 weeks from scoping to launch, depending on complexity. The exact timeline is agreed up front as part of the fixed-scope proposal — before development starts, both sides know what "done" looks like and roughly when it will ship, rather than an open-ended estimate that slips.'
+      ],
+      [
+        'q' => 'What engagement models does iDataOne offer — fixed price, retainer, or dedicated team?',
+        'a' => 'All three, depending on what the work needs. Most new projects start as fixed-scope engagements with a defined deliverable and price. After launch, clients typically move to an ongoing monthly retainer for support and incremental feature work. For businesses that need continuous, larger-scale development, iDataOne can also provide a dedicated team or individual developer embedded with the client on an ongoing basis.'
+      ],
+      [
+        'q' => 'Which industries and verticals does iDataOne serve?',
+        'a' => 'iDataOne has delivered production systems across engineering-heavy infrastructure (telecom, solar, civil project management), industrial manufacturing and field service (SAP-integrated platforms), FMCG risk and compliance, community and membership platforms, and sports technology. The common thread is replacing scattered spreadsheets, WhatsApp coordination and legacy systems with a single structured platform the business can run decisions on.'
+      ],
+      [
+        'q' => 'How does iDataOne handle data security and confidentiality on client projects?',
+        'a' => 'Client engagements are covered by NDAs as standard practice, and all code, data and intellectual property produced for a client belongs to that client — iDataOne does not retain or reuse it. Development follows secure practices such as least-privilege access, encrypted data in transit, and role-based access control within the applications it builds.'
+      ],
+      [
+        'q' => 'How is iDataOne different from a large IT services company or systems integrator?',
+        'a' => 'Large SI firms typically staff projects with layered teams and bill by the hour, which makes cost and delivery time hard to predict. iDataOne runs as a small, senior team that scopes work as a fixed deliverable, stays hands-on from first call to post-launch support, and — because it also builds and runs its own products — brings direct product-engineering experience rather than only project-delivery experience.'
+      ],
+      [
+        'q' => 'Should I build a custom platform, or use an existing product like Infra360 PMS?',
+        'a' => 'If your requirements closely match what an existing iDataOne product already does — for example, infrastructure project and vendor management — starting from Infra360 PMS and configuring or extending it is faster and cheaper than a ground-up build. A fully custom platform makes more sense when the workflow, data model or integrations (like a SAP connection) are specific enough that an existing product would need to be reshaped more than extended. iDataOne can advise which approach fits during the discovery call.'
+      ],
+    ],
+  ],
+  'proof' => [
+    'title' => 'Proven Track Record',
+    'items' => [
+      [
+        'q' => 'Has iDataOne built infrastructure or telecom project management software before?',
+        'a' => 'Yes — iDataOne built a full-stack project, vendor and financial management platform for Venus Energy Pvt. Ltd., a vendor for Indus Towers, unifying telecom infrastructure operations across multiple regions and roles. That platform is the foundation behind Infra360 PMS. Read the <a href="/case-study/telecom-pm-platform" style="color:#0d9488;font-weight:600">full case study</a>.'
+      ],
+      [
+        'q' => 'Has iDataOne built community or membership platforms before?',
+        'a' => 'Yes — for The Knight Ryders, a 460-member riding club, iDataOne replaced a static WordPress blog with a fully custom community platform featuring an inline CMS, live member profiles and gamification, cutting ongoing content-maintenance time by roughly 80%. Read the <a href="/case-study/knight-ryders" style="color:#0d9488;font-weight:600">full case study</a>.'
+      ],
+      [
+        'q' => 'Has iDataOne built risk or compliance platforms for enterprise clients?',
+        'a' => 'Yes — for an FMCG enterprise client, iDataOne built a full-stack risk assessment and compliance platform with a 5x5 severity matrix and role-based workflows, plus a companion real-time risk intelligence dashboard with 12-month trend tracking and automated compliance scoring. Read the <a href="/case-study/risk-platform" style="color:#0d9488;font-weight:600">risk platform case study</a>.'
+      ],
     ],
   ],
   'nivochat' => [
@@ -52,6 +93,10 @@ $faqs = [
         'q' => 'Is NivoChat live, and can I try it?',
         'a' => 'Yes, NivoChat is a live product used in production. It can be explored directly at nivochat.idataone.com, or a business can request a discovery call through iDataOne\'s contact page to discuss a deployment trained on their own content.'
       ],
+      [
+        'q' => 'How long does it take to set up NivoChat for my business?',
+        'a' => 'Setup involves training NivoChat on your business content — services, FAQs and common customer questions — and configuring lead capture and handoff to your team. The exact time depends on how much content there is to train on, but it\'s designed to go live in far less time than building a custom chatbot from scratch. This is discussed and scoped on the initial discovery call.'
+      ],
     ],
   ],
   'infra360' => [
@@ -72,6 +117,10 @@ $faqs = [
       [
         'q' => 'Is Infra360 PMS a live product, and how can I see a demo?',
         'a' => 'Yes, Infra360 PMS is live and in active use. It can be explored at infra360.idataone.com, or a business can request a walkthrough via iDataOne\'s contact page.'
+      ],
+      [
+        'q' => 'How does a company onboard onto Infra360 PMS?',
+        'a' => 'Onboarding starts with a walkthrough call to map your existing purchase orders, vendors and site structure onto Infra360 PMS. Existing data is imported rather than re-entered from scratch, and the iDataOne team — the same team that built and runs the product — is available to guide setup and configure it to your workflow rather than leaving you with a generic tool.'
       ],
     ],
   ],
