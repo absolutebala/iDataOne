@@ -888,6 +888,7 @@ letter-spacing:0.3px;
   <a href="/data">Data</a>
   <a href="/products">Products</a>
   <a href="/case-studies">Case Studies</a>
+  <a href="/faq">FAQ</a>
   <a href="/about">About</a>
   <a href="/contact" class="active">Contact</a>
   <a href="https://wa.me/916385155341" target="_blank" rel="noopener" class="mob-menu-whatsapp">
@@ -910,6 +911,7 @@ letter-spacing:0.3px;
     <a href="/data">Data</a>
     <a href="/products">Products</a>
     <a href="/case-studies">Case Studies</a>
+    <a href="/faq">FAQ</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
   </div>

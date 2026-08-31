@@ -54,6 +54,7 @@
   <a href="/data" <?php echo $current_page==='data'?'class="active"':'';?>>Data</a>
   <a href="/products" <?php echo $current_page==='products'?'class="active"':'';?>>Products</a>
   <a href="/case-studies" <?php echo $current_page==='cases'?'class="active"':'';?>>Case Studies</a>
+  <a href="/faq" <?php echo $current_page==='faq'?'class="active"':'';?>>FAQ</a>
   <a href="/about" <?php echo $current_page==='about'?'class="active"':''?>>About</a>
   <a href="/contact" <?php echo $current_page==='contact'?'class="active"':'';?>>Contact</a>
   <a href="https://wa.me/916385155341" target="_blank" rel="noopener" class="nav-mob-whatsapp">
@@ -73,6 +74,7 @@
     <a href="/data" <?php echo $current_page==='data'?'class="active"':'';?>>Data</a>
     <a href="/products" <?php echo $current_page==='products'?'class="active"':'';?>>Products</a>
     <a href="/case-studies" <?php echo $current_page==='cases'?'class="active"':'';?>>Case Studies</a>
+    <a href="/faq" <?php echo $current_page==='faq'?'class="active"':'';?>>FAQ</a>
     <a href="/about" <?php echo $current_page==='about'?'class="active"':''?>>About</a>
     <a href="/contact" <?php echo $current_page==='contact'?'class="active"':'';?>>Contact</a>
   </div>

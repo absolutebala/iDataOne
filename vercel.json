@@ -21,10 +21,10 @@
     "api/case-studies.php": {
       "runtime": "vercel-php@0.9.0"
     },
-    "api/isportone.php": {
+    "api/page.php": {
       "runtime": "vercel-php@0.9.0"
     },
-    "api/infra360PMS.php": {
+    "api/faq.php": {
       "runtime": "vercel-php@0.9.0"
     },
     "api/case-study.php": {
@@ -54,11 +54,15 @@
     },
     {
       "source": "/isportone",
-      "destination": "/api/isportone.php"
+      "destination": "/api/page.php"
     },
     {
       "source": "/infra360PMS",
-      "destination": "/api/infra360PMS.php"
+      "destination": "/api/page.php"
+    },
+    {
+      "source": "/faq",
+      "destination": "/api/faq.php"
     },
     {
       "source": "/about",
