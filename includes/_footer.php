@@ -34,6 +34,7 @@
         <div class="footer-col-title">Company</div>
         <ul class="footer-links">
           <li><a href="/about">About</a></li>
+          <li><a href="/faq">FAQ</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/mealmate/privacy.html">Privacy Policy</a></li>
           <li><a href="mailto:info@idataone.com">info@idataone.com</a></li>
