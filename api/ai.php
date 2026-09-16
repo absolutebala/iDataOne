@@ -156,12 +156,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <p class="section-sub">Businesses that embedded AI into their operations and saw measurable impact.</p>
     <div class="stories-grid">
 
-      <div class="story-card" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
+      <div class="story-card" onclick="location.href='/case-study/nivochat'" style="cursor:pointer">
         <div>
           <div class="story-tag">Conversational AI</div>
           <div class="story-title">Building a Knowledge-Grounded AI Chat Assistant Businesses Can Embed in One Line</div>
           <div class="story-desc">We built NivoChat, a conversational AI platform that grounds every response in a business's own knowledge base, captures leads mid-conversation, and runs on the business's own AI key.</div>
-          <a href="/case-study/aidesker" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/nivochat" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual" style="background:#0d0020;padding:0;overflow:hidden;border-radius:12px">
           <img src="/assets/images/aidesker-hero.png" alt="NivoChat — knowledge-grounded AI chat assistant" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center top;display:block">

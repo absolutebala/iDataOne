@@ -10,7 +10,7 @@ $allowed = [
     'telecom-pm-platform'         => __DIR__ . '/../includes/case-telecom-pm-platform.php',
     'isportone'                   => __DIR__ . '/../includes/case-isportone.php',
     'mealmate'                    => __DIR__ . '/../includes/case-mealmate.php',
-    'aidesker'                    => __DIR__ . '/../includes/case-aidesker.php',
+    'nivochat'                    => __DIR__ . '/../includes/case-nivochat.php',
     'finance-automation'          => __DIR__ . '/../includes/case-finance-automation.php',
     'emr-global-field-engineers'  => __DIR__ . '/../includes/case-emr-global.php',
 ];

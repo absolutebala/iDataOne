@@ -9,11 +9,11 @@
 <meta name="keywords" content="multi-tenant SaaS platform, AI chat widget, embeddable chatbot, conversational AI platform, knowledge-grounded chatbot, Next.js Supabase SaaS, NivoChat, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="canonical" href="https://idataone.com/case-study/aidesker">
+<link rel="canonical" href="https://idataone.com/case-study/nivochat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne">
 <meta property="og:description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
-<meta property="og:url" content="https://idataone.com/case-study/aidesker">
+<meta property="og:url" content="https://idataone.com/case-study/nivochat">
 <meta property="og:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
@@ -28,8 +28,8 @@
   "description": "How iDataOne designed and built NivoChat — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
   "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
   "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
-  "url": "https://idataone.com/case-study/aidesker",
-  "mainEntityOfPage": "https://idataone.com/case-study/aidesker",
+  "url": "https://idataone.com/case-study/nivochat",
+  "mainEntityOfPage": "https://idataone.com/case-study/nivochat",
   "about": [
     {"@type": "Thing", "name": "Multi-Tenant SaaS Platform"},
     {"@type": "Thing", "name": "Conversational AI"},

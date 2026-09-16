@@ -282,7 +282,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 
 <!-- AI: NivoChat Conversational AI -->
-      <div class="case-card" data-cat="ai" onclick="location.href='/case-study/aidesker'" style="cursor:pointer">
+      <div class="case-card" data-cat="ai" onclick="location.href='/case-study/nivochat'" style="cursor:pointer">
         <div class="case-card-visual" style="background:#0d0020;padding:0;overflow:hidden">
           <img src="/assets/images/aidesker-hero.png" alt="NivoChat — knowledge-grounded AI chat assistant" style="width:100%;height:180px;object-fit:cover;object-position:center top;display:block"/>
         </div>
@@ -293,7 +293,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-title">Building a Knowledge-Grounded AI Chat Assistant Businesses Can Embed in One Line</div>
           <div class="case-desc">We built NivoChat, a conversational AI platform that grounds every response in a business's own knowledge base and captures leads mid-conversation.</div>
           <div class="case-tags"><span class="case-tag">Conversational AI</span><span class="case-tag">Lead Capture</span><span class="case-tag">RAG</span></div>
-          <a href="/case-study/aidesker" class="case-cta violet">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/case-study/nivochat" class="case-cta violet">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 
