@@ -10,7 +10,8 @@
   "description": "iDataOne is an AI, data and digital engineering company that helps enterprises turn scattered data and manual processes into working software — covering custom software development, AI solutions, data intelligence and digital transformation for engineering-heavy verticals such as civil, telecom and solar infrastructure.",
   "founder": {
     "@type": "Person",
-    "name": "Bala Kandaswamy"
+    "name": "Bala Kandaswamy",
+    "description": "Bala Kandaswamy founded iDataOne as his second startup, following a successful exit from Contus Tech."
   },
   "address": {
     "@type": "PostalAddress",
