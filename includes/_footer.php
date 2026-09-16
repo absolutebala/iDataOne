@@ -19,7 +19,6 @@
           <li><a href="/ai">AI Solutions</a></li>
           <li><a href="/data">Data Intelligence</a></li>
           <li><a>Custom Software</a></li>
-          <li><a href="/industries/telecom">Telecom Solutions</a></li>
         </ul>
       </div>
       <div>
@@ -29,6 +28,12 @@
           <li><a href="/isportone">iSportOne</a></li>
           <li><a href="https://nivochat.idataone.com/" target="_blank" rel="noopener">NivoChat</a></li>
           <li><a href="/products#datinsights">DatInsights</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="/industries/telecom">Telecom</a></li>
         </ul>
       </div>
       <div>

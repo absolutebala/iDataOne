@@ -1,7 +1,7 @@
 <style>
 .site-footer{background:#070b18;padding:56px 32px 32px;margin-top:0;border-top:1px solid rgba(0,212,255,0.1)}
 .site-footer .footer-inner{max-width:1140px;margin:0 auto}
-.site-footer .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.site-footer .footer-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:36px;margin-bottom:48px}
 .site-footer .footer-logo{margin-bottom:12px}
 .site-footer .footer-logo img{height:29px;opacity:1;filter:none}
 .site-footer .footer-tagline{font-size:12.5px;color:rgba(0,212,255,0.45);line-height:1.65}
@@ -23,6 +23,7 @@
 .footer-whatsapp-text{display:flex;flex-direction:column;line-height:1.2}
 .footer-whatsapp-label{font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:rgba(255,255,255,0.4)}
 .footer-whatsapp-number{font-size:13px;font-weight:700;color:#fff;letter-spacing:0.2px;white-space:nowrap}
+@media(max-width:900px){.site-footer .footer-top{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:768px){.site-footer .footer-top{grid-template-columns:1fr 1fr}.site-footer .footer-bottom{flex-direction:column;gap:14px;align-items:flex-start}.site-footer .footer-phone{margin-left:0;padding-left:0;border-left:none}}
 .hz-wrap{display:block;position:relative}
 .hz-icon{position:absolute;bottom:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(15,23,42,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2;opacity:0;transition:opacity 0.25s ease}
