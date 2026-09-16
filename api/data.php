@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Data Intelligence & Analytics",
-  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "provider": {"@id": "https://idataone.com/#organization"},
   "description": "Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions.",
   "serviceType": "Data Intelligence",
   "areaServed": "Worldwide",
@@ -118,6 +118,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .btn-cta-secondary svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:768px){.site-nav .nav-links{display:none}.banner-inner{grid-template-columns:1fr}.banner-illus{display:flex;align-items:center;justify-content:center}.stories-grid{grid-template-columns:1fr}.story-card{grid-template-columns:1fr}.story-visual{display:none}.process-steps{flex-direction:column;gap:0;align-items:stretch}.process-steps::before{display:none}.process-step{display:flex;align-items:flex-start;text-align:left;gap:16px;padding:0 0 28px 0;position:relative}.process-step::before{content:"";position:absolute;left:23px;top:48px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(99,102,241,0.3),rgba(124,58,237,0.1))}.process-step:last-child::before{display:none}.process-step:last-child{padding-bottom:0}.step-icon{margin:0;flex-shrink:0}.step-title{margin-bottom:6px}.process-img-wrap{width:100%!important}.process-img-desktop{display:none!important}.process-img-mobile{display:block!important}.products-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-btns{align-items:flex-start}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Data Intelligence", "item": "https://idataone.com/data"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

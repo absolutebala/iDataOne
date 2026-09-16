@@ -25,10 +25,22 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "EMR Global — SAP-Integrated Field Service Platform",
+  "image": "https://idataone.com/assets/images/og-emr-global.png",
   "description": "How iDataOne built a real-time SAP-integrated field service platform for EMR Global, bridging back-office data with field engineers and eliminating WhatsApp coordination.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/emr-global-field-engineers"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "EMR Global — SAP-Integrated Field Service Platform", "item": "https://idataone.com/case-study/emr-global-field-engineers"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

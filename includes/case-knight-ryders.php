@@ -26,9 +26,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%",
+  "image": "https://idataone.com/assets/images/og-knight-ryders.png",
   "description": "How iDataOne rebuilt a 460-member Honda CB350 riding club from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/knight-ryders",
   "mainEntityOfPage": "https://idataone.com/case-study/knight-ryders",
   "about": [
@@ -37,6 +38,17 @@
     {"@type": "Thing", "name": "WordPress Migration"}
   ],
   "keywords": "custom CMS, community platform, WordPress migration, inline editing, gamification, Next.js, Supabase"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%", "item": "https://idataone.com/case-study/knight-ryders"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

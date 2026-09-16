@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
   "name": "Contact iDataOne",
   "url": "https://idataone.com/contact",
   "description": "Book a free discovery call with iDataOne. We review every enquiry personally and respond within 24 hours.",
-  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "email": "info@idataone.com"}
+  "provider": {"@id": "https://idataone.com/#organization"}
 }
 </script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -168,6 +168,16 @@ body{
   .contact-wrap{padding:28px 16px}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://idataone.com/contact"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

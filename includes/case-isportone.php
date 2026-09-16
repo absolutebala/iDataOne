@@ -26,9 +26,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere",
+  "image": "https://idataone.com/assets/images/og-isportone.png",
   "description": "How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/isportone",
   "mainEntityOfPage": "https://idataone.com/case-study/isportone",
   "about": [
@@ -37,6 +38,17 @@
     {"@type": "Thing", "name": "Club Management Software"}
   ],
   "keywords": "sports passport platform, athlete career record, club management, sports social network, product design"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere", "item": "https://idataone.com/case-study/isportone"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

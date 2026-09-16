@@ -222,6 +222,16 @@ details.f-item[open] .f-plus{transform:rotate(45deg)}
 
 @media(max-width:600px){.f-wrap{padding:24px 20px 80px}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://idataone.com/faq"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

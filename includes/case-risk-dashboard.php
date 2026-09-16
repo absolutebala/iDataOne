@@ -24,9 +24,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company",
+  "image": "https://idataone.com/assets/images/og-risk-dashboard.png",
   "description": "How iDataOne built a real-time risk analytics dashboard with severity matrix visualisation, 12-month trend tracking and automated compliance scoring.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/risk-dashboard",
   "mainEntityOfPage": "https://idataone.com/case-study/risk-dashboard",
   "about": [
@@ -35,6 +36,17 @@
     {"@type": "Thing", "name": "FMCG Industry"}
   ],
   "keywords": "risk dashboard, data intelligence, FMCG compliance, real-time analytics, business intelligence"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company", "item": "https://idataone.com/case-study/risk-dashboard"}
+  ]
 }
 </script>
 <link rel="icon" type="image/png" href="/favicon.png">

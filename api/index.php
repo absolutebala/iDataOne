@@ -79,61 +79,13 @@ if ($__reqPath !== '/') {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "WebSite",
+  "@id": "https://idataone.com/#website",
   "name": "iDataOne",
   "url": "https://idataone.com",
-  "logo": "https://idataone.com/assets/images/iDataOneLogoFinal.png",
   "description": "iDataOne builds AI-first digital products, integrates intelligent automation, and transforms fragmented data into actionable business intelligence.",
-  "slogan": "Build. Transform. Scale.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "info@idataone.com",
-    "contactType": "customer service",
-    "availableLanguage": "English"
-  },
-  "knowsAbout": [
-    "Custom Software Development",
-    "AI Integration",
-    "LLM Integration",
-    "AI Agents",
-    "Data Intelligence",
-    "Business Intelligence",
-    "Web Application Development",
-    "Mobile App Development",
-    "SaaS Platforms",
-    "Digital Transformation"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "iDataOne Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Build Digital Products",
-          "description": "From idea to production, we build scalable software products tailored precisely to your business needs within your budget. Web apps, mobile apps, SaaS platforms and enterprise applications."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Enable AI & Automation",
-          "description": "From AI agents to intelligent workflows, we integrate AI into products and operations to improve efficiency, enhance decision-making, and drive business growth."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Transform Data into Decisions",
-          "description": "Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions."
-        }
-      }
-    ]
-  },
-  "sameAs": []
+  "publisher": { "@id": "https://idataone.com/#organization" },
+  "inLanguage": "en"
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">

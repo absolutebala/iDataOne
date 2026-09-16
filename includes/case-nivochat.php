@@ -26,9 +26,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line",
+  "image": "https://idataone.com/assets/images/og-aidesker.png",
   "description": "How iDataOne designed and built NivoChat — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/nivochat",
   "mainEntityOfPage": "https://idataone.com/case-study/nivochat",
   "about": [
@@ -37,6 +38,17 @@
     {"@type": "Thing", "name": "Embeddable Chat Widget"}
   ],
   "keywords": "multi-tenant SaaS, AI chat platform, embeddable widget, knowledge-grounded AI, lead capture, Next.js, Supabase"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line", "item": "https://idataone.com/case-study/nivochat"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

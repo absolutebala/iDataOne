@@ -24,9 +24,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly",
+  "image": "https://idataone.com/assets/images/og-finance-automation.png",
   "description": "How iDataOne extended Infra360 PMS with a finance automation module — invoice processing, reconciliation and reporting workflows, plus AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/finance-automation",
   "mainEntityOfPage": "https://idataone.com/case-study/finance-automation",
   "about": [
@@ -35,6 +36,17 @@
     {"@type": "Thing", "name": "Invoice Reconciliation"}
   ],
   "keywords": "finance automation, invoice processing, AI document extraction, STN SRN automation, reconciliation, reporting automation"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly", "item": "https://idataone.com/case-study/finance-automation"}
+  ]
 }
 </script>
 <link rel="icon" type="image/png" href="/favicon.png">

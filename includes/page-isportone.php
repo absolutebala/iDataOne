@@ -24,11 +24,14 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://idataone.com/#isportone",
   "name": "iSportOne",
   "applicationCategory": "SportsApplication",
   "operatingSystem": "Web, iOS, Android",
   "description": "iSportOne is the professional network for sport — a lifelong sports passport, community feed and club management platform for athletes, parents, coaches and clubs.",
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
+  "brand": {"@id": "https://idataone.com/#organization"},
+  "manufacturer": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/isportone"
 }
 </script>
@@ -115,6 +118,17 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .roles-grid{grid-template-columns:1fr}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://idataone.com/products"},
+    {"@type": "ListItem", "position": 3, "name": "iSportOne", "item": "https://idataone.com/isportone"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/_gtm_body.php'; ?>

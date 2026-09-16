@@ -26,9 +26,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building an AI-Powered Family Meal Planning App",
+  "image": "https://idataone.com/assets/images/og-mealmate.png",
   "description": "How iDataOne designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by AI and built for everyday use.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/mealmate",
   "mainEntityOfPage": "https://idataone.com/case-study/mealmate",
   "about": [
@@ -37,6 +38,17 @@
     {"@type": "Thing", "name": "Family Health Technology"}
   ],
   "keywords": "AI meal planning app, React Native, GPT-4o-mini, family nutrition, Supabase mobile app"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Building an AI-Powered Family Meal Planning App", "item": "https://idataone.com/case-study/mealmate"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

@@ -26,7 +26,7 @@
   "name": "Case Studies — iDataOne",
   "url": "https://idataone.com/case-studies",
   "description": "Real results from businesses that built with iDataOne. Digital products, AI integration and data intelligence case studies.",
-  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"}
+  "provider": {"@id": "https://idataone.com/#organization"}
 }
 </script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -180,6 +180,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .bcta-right{gap:10px}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

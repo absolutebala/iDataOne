@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="About iDataOne | Human-Led, AI-Powered Software Delivery">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AboutPage","name":"About iDataOne","url":"https://idataone.com/about","description":"iDataOne builds AI-first digital products and enterprise software using a human-led, AI-powered delivery model.","publisher":{"@type":"Organization","name":"iDataOne","url":"https://idataone.com"}}
+{"@context":"https://schema.org","@type":"AboutPage","name":"About iDataOne","url":"https://idataone.com/about","description":"iDataOne builds AI-first digital products and enterprise software using a human-led, AI-powered delivery model.","publisher":{"@id":"https://idataone.com/#organization"}}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <?php include __DIR__ . '/../includes/_footer_css.php'; ?>
@@ -187,6 +187,16 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   .wf-steps{grid-template-columns:1fr}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "About", "item": "https://idataone.com/about"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

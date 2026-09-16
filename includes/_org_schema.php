@@ -51,6 +51,39 @@
     { "@type": "Offer", "itemOffered": { "@id": "https://idataone.com/#infra360pms" } },
     { "@type": "Offer", "itemOffered": { "@id": "https://idataone.com/#isportone" } },
     { "@type": "Offer", "itemOffered": { "@id": "https://idataone.com/#datinsights" } }
-  ]
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "iDataOne Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Build Digital Products",
+          "url": "https://idataone.com/digital",
+          "description": "From idea to production, we build scalable software products tailored precisely to your business needs within your budget. Web apps, mobile apps, SaaS platforms and enterprise applications."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enable AI & Automation",
+          "url": "https://idataone.com/ai",
+          "description": "From AI agents to intelligent workflows, we integrate AI into products and operations to improve efficiency, enhance decision-making, and drive business growth."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Transform Data into Decisions",
+          "url": "https://idataone.com/data",
+          "description": "Unify fragmented data into a trusted intelligence layer that delivers actionable insights and enables faster, better business decisions."
+        }
+      }
+    ]
+  }
 }
 </script>

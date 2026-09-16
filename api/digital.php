@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Digital Product Development",
-  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "provider": {"@id": "https://idataone.com/#organization"},
   "description": "From web apps to enterprise platforms, iDataOne designs and builds scalable digital products tailored to your business needs within your budget.",
   "serviceType": "Custom Software Development",
   "areaServed": "Worldwide",
@@ -156,6 +156,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 }
 </style>
 <?php include __DIR__ . '/../includes/_footer_css.php'; ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Digital Products", "item": "https://idataone.com/digital"}
+  ]
+}
+</script>
 </head>
 <body>
 <?php include __DIR__ . '/../includes/_gtm_body.php'; ?>

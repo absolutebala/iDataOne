@@ -25,12 +25,16 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://idataone.com/#infra360pms",
   "name": "Infra360 PMS",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "description": "Infra360 PMS helps infrastructure contractors track every purchase order, material movement and payment across telecom, solar and civil sites — from award to close-out.",
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
+  "brand": {"@id": "https://idataone.com/#organization"},
+  "manufacturer": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/infra360PMS",
+  "sameAs": "https://infra360.idataone.com/",
   "offers": {"@type": "Offer", "availability": "https://schema.org/InStock"}
 }
 </script>
@@ -116,6 +120,17 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 }
 @media(max-width:500px){.roles-grid{grid-template-columns:1fr}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://idataone.com/products"},
+    {"@type": "ListItem", "position": 3, "name": "Infra360 PMS", "item": "https://idataone.com/infra360PMS"}
+  ]
+}
+</script>
 </head>
 <body>
 

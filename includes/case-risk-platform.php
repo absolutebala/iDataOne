@@ -24,9 +24,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building an Enterprise Risk & Compliance Platform for an FMCG Leader",
+  "image": "https://idataone.com/assets/images/og-risk-platform.png",
   "description": "How iDataOne built a full-stack enterprise risk assessment platform with real-time dashboards, 5x5 severity matrix, role-based workflows and threaded communication.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/risk-platform",
   "mainEntityOfPage": "https://idataone.com/case-study/risk-platform",
   "about": [
@@ -35,6 +36,17 @@
     {"@type": "Thing", "name": "FMCG Industry"}
   ],
   "keywords": "enterprise risk platform, compliance software, FMCG, risk assessment, real-time dashboard"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Building an Enterprise Risk & Compliance Platform for an FMCG Leader", "item": "https://idataone.com/case-study/risk-platform"}
+  ]
 }
 </script>
 <link rel="icon" type="image/png" href="/favicon.png">

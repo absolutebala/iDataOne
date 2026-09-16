@@ -26,9 +26,10 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building a Telecom Infrastructure Project Management Platform for Venus Energy",
+  "image": "https://idataone.com/assets/images/og-telecom-pm-platform.png",
   "description": "How iDataOne designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.",
-  "author": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"},
-  "publisher": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com", "logo": {"@type": "ImageObject", "url": "https://idataone.com/assets/images/iDataOneLogoFinal.png"}},
+  "author": {"@id": "https://idataone.com/#organization"},
+  "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/telecom-pm-platform",
   "mainEntityOfPage": "https://idataone.com/case-study/telecom-pm-platform",
   "about": [
@@ -38,6 +39,17 @@
     {"@type": "Organization", "name": "Indus Towers"}
   ],
   "keywords": "telecom project management, vendor management, PO tracking, infrastructure operations, Next.js, Supabase"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://idataone.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://idataone.com/case-studies"},
+    {"@type": "ListItem", "position": 3, "name": "Building a Telecom Infrastructure Project Management Platform for Venus Energy", "item": "https://idataone.com/case-study/telecom-pm-platform"}
+  ]
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
