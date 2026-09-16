@@ -11,7 +11,13 @@
   "founder": {
     "@type": "Person",
     "name": "Bala Kandaswamy",
-    "description": "Bala Kandaswamy founded iDataOne as his second startup, following a successful exit from Contus Tech."
+    "description": "Bala Kandaswamy founded iDataOne as his second startup, following a successful exit from Contus Tech.",
+    "sameAs": ["https://linkedin.com/in/balakandaswamy"],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Contus Tech",
+      "sameAs": "https://www.linkedin.com/company/contustech/"
+    }
   },
   "address": {
     "@type": "PostalAddress",

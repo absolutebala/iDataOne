@@ -243,7 +243,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   <div class="hero-inner">
     <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
     <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
-    <p style="font-size:12.5px;color:rgba(255,255,255,0.4);margin-top:-14px;margin-bottom:20px;font-style:italic">Founded by Bala Kandaswamy — his second startup after a successful exit from Contus Tech.</p>
+    <p style="font-size:12.5px;color:rgba(255,255,255,0.4);margin-top:-14px;margin-bottom:20px;font-style:italic">Founded by <a href="https://linkedin.com/in/balakandaswamy" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6);text-decoration:underline">Bala Kandaswamy</a> — his second startup after a successful exit from <a href="https://www.linkedin.com/company/contustech/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6);text-decoration:underline">Contus Tech</a>.</p>
     <div class="hero-img-wrap">
       <img src="/assets/images/team-hero.png" alt="iDataOne delivery team — Bala Kandaswamy (Delivery Head) with AI specialists Pixel, Forge, Insight and Sentinel" class="hero-img" loading="eager"/>
       <div class="hero-img-fade"></div>
