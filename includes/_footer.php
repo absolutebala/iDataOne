@@ -19,6 +19,7 @@
           <li><a href="/ai">AI Solutions</a></li>
           <li><a href="/data">Data Intelligence</a></li>
           <li><a>Custom Software</a></li>
+          <li><a href="/industries/telecom">Telecom Solutions</a></li>
         </ul>
       </div>
       <div>

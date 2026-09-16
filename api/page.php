@@ -3,8 +3,9 @@
 $path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
 $allowed = [
-    'isportone'   => __DIR__ . '/../includes/page-isportone.php',
-    'infra360PMS' => __DIR__ . '/../includes/page-infra360pms.php',
+    'isportone'          => __DIR__ . '/../includes/page-isportone.php',
+    'infra360PMS'        => __DIR__ . '/../includes/page-infra360pms.php',
+    'industries/telecom' => __DIR__ . '/../includes/industry-telecom.php',
 ];
 
 if (isset($allowed[$path]) && file_exists($allowed[$path])) {

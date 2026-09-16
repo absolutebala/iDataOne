@@ -79,6 +79,10 @@
       "destination": "/api/page.php"
     },
     {
+      "source": "/industries/:slug",
+      "destination": "/api/page.php"
+    },
+    {
       "source": "/faq",
       "destination": "/api/faq.php"
     },
