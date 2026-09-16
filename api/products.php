@@ -5,19 +5,19 @@
 <?php include __DIR__ . '/../includes/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products — NivoChat, Infra360 PMS &amp; iSportOne | iDataOne</title>
-<meta name="description" content="Explore iDataOne's own products: NivoChat, an AI conversation layer for websites; Infra360 PMS, infrastructure project management; and iSportOne, a lifelong sports identity platform.">
-<meta name="keywords" content="NivoChat, Infra360 PMS, iSportOne, iDataOne products, AI chat platform, infrastructure project management software, sports profile app">
+<title>Products — NivoChat, Infra360 PMS, iSportOne &amp; DatInsights | iDataOne</title>
+<meta name="description" content="Explore iDataOne's own products: NivoChat, an AI conversation layer for websites; Infra360 PMS, infrastructure project management; iSportOne, a lifelong sports identity platform; and DatInsights, a real-time decision-intelligence dashboard.">
+<meta name="keywords" content="NivoChat, Infra360 PMS, iSportOne, DatInsights, iDataOne products, AI chat platform, infrastructure project management software, sports profile app, decision intelligence dashboard">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Products — NivoChat, Infra360 PMS &amp; iSportOne | iDataOne">
-<meta property="og:description" content="Explore iDataOne's own products: NivoChat, Infra360 PMS and iSportOne.">
+<meta property="og:title" content="Products — NivoChat, Infra360 PMS, iSportOne &amp; DatInsights | iDataOne">
+<meta property="og:description" content="Explore iDataOne's own products: NivoChat, Infra360 PMS, iSportOne and DatInsights.">
 <meta property="og:url" content="https://idataone.com/products">
 <meta property="og:image" content="https://idataone.com/assets/images/og-image.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Products — NivoChat, Infra360 PMS &amp; iSportOne | iDataOne">
-<meta name="twitter:description" content="Explore iDataOne's own products: NivoChat, Infra360 PMS and iSportOne.">
+<meta name="twitter:title" content="Products — NivoChat, Infra360 PMS, iSportOne &amp; DatInsights | iDataOne">
+<meta name="twitter:description" content="Explore iDataOne's own products: NivoChat, Infra360 PMS, iSportOne and DatInsights.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-image.png">
 <script type="application/ld+json">
 {
@@ -25,10 +25,11 @@
   "@type": "CollectionPage",
   "name": "Products — iDataOne",
   "url": "https://idataone.com/products",
-  "description": "iDataOne's own products: NivoChat, Infra360 PMS and iSportOne.",
-  "provider": {"@type": "Organization", "name": "iDataOne", "url": "https://idataone.com"}
+  "description": "iDataOne's own products: NivoChat, Infra360 PMS, iSportOne and DatInsights.",
+  "provider": {"@id": "https://idataone.com/#organization"}
 }
 </script>
+<?php include __DIR__ . '/../includes/_product_schemas.php'; ?>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/products">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -46,7 +47,11 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 /* Grid */
 .p-wrap{max-width:1140px;margin:0 auto;padding:48px 32px 100px}
-.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.p-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.p-card-img.p-card-img-icon{background:linear-gradient(135deg,#0f172a 0%,#0891b2 100%);display:flex;align-items:center;justify-content:center}
+.p-card-img-icon svg{width:56px;height:56px;stroke:#fff;stroke-width:1.5;fill:none;opacity:0.9}
+.cta-cyan{background:#0891b2;color:#fff}
+.cta-cyan svg{stroke:#fff}
 .p-card{border:1px solid rgba(226,232,240,0.9);border-radius:22px;overflow:hidden;background:#fff;transition:box-shadow 0.3s,transform 0.3s;display:flex;flex-direction:column}
 .p-card:hover{box-shadow:0 24px 56px rgba(15,23,42,0.1);transform:translateY(-4px)}
 .p-card-img{height:190px;position:relative;overflow:hidden}
@@ -120,6 +125,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="p-card-title">iSportOne</div>
         <div class="p-card-desc">Your sport. Your story. Forever. Record every match, build your career profile and connect with your sports community — for life.</div>
         <a href="/isportone" class="p-card-cta cta-rose">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="p-card" id="datinsights">
+      <div class="p-card-img p-card-img-icon">
+        <span class="p-card-badge badge-dev">Coming Soon</span>
+        <svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg>
+      </div>
+      <div class="p-card-body">
+        <div class="p-card-tag">Decision Intelligence</div>
+        <div class="p-card-title">DatInsights</div>
+        <div class="p-card-desc">Real-time decision-making dashboards that unify scattered data from across your platforms — employee, project and financial data — to surface why outcomes are happening, from profitability to resourcing to client change requests.</div>
+        <a href="/contact" class="p-card-cta cta-cyan">Get Notified <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       </div>
     </div>
 

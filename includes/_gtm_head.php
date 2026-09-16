@@ -5,3 +5,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T998Q8V6');</script>
 <!-- End Google Tag Manager -->
+<?php include __DIR__ . '/_org_schema.php'; ?>

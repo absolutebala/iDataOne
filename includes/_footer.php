@@ -27,7 +27,7 @@
           <li><a href="/infra360PMS">Infra360 PMS</a></li>
           <li><a href="/isportone">iSportOne</a></li>
           <li><a href="https://nivochat.idataone.com/" target="_blank" rel="noopener">NivoChat</a></li>
-          <li><a>DatInsights</a></li>
+          <li><a href="/products#datinsights">DatInsights</a></li>
         </ul>
       </div>
       <div>
