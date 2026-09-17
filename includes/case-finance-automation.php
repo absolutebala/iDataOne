@@ -5,19 +5,19 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne</title>
-<meta name="description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
+<title>Finance & Document Automation Software | iDataOne</title>
+<meta name="description" content="How iDataOne built a finance and document automation module inside Infra360 PMS for an infrastructure company, saving 300+ hours of manual work every month.">
 <meta name="keywords" content="Infra360 PMS finance automation, invoice processing automation, AI document extraction, PDF data extraction, STN SRN automation, reconciliation automation, iDataOne">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
-<meta property="og:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
+<meta property="og:title" content="Finance & Document Automation Software | iDataOne">
+<meta property="og:description" content="How iDataOne built a finance and document automation module inside Infra360 PMS for an infrastructure company, saving 300+ hours of manual work every month.">
 <meta property="og:url" content="https://idataone.com/case-study/finance-automation">
 <meta property="og:image" content="https://idataone.com/assets/images/og-finance-automation.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly | iDataOne">
-<meta name="twitter:description" content="How iDataOne built an AI-powered finance and document automation module inside Infra360 PMS — reading PDFs and images to auto-create projects and STN/SRN items, automating invoice reconciliation and reporting — saving 300+ hours a month.">
+<meta name="twitter:title" content="Finance & Document Automation Software | iDataOne">
+<meta name="twitter:description" content="How iDataOne built a finance and document automation module inside Infra360 PMS for an infrastructure company, saving 300+ hours of manual work every month.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-finance-automation.png">
 <script type="application/ld+json">
 {
@@ -25,7 +25,7 @@
   "@type": "Article",
   "headline": "Automating Finance Operations in Infra360 PMS, Saving 300+ Hours Monthly",
   "image": "https://idataone.com/assets/images/og-finance-automation.png",
-  "description": "How iDataOne extended Infra360 PMS with a finance automation module — invoice processing, reconciliation and reporting workflows, plus AI document extraction that reads PDFs and images to auto-create projects and STN/SRN items.",
+  "description": "How iDataOne built a finance and document automation module inside Infra360 PMS for an infrastructure company — invoice processing, reconciliation and reporting workflows, plus AI document extraction — saving 300+ hours a month.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/finance-automation",

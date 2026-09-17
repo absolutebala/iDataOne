@@ -5,21 +5,21 @@
 <?php include __DIR__ . '/_org_schema.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: AI-Powered Family Meal Planning App | iDataOne</title>
-<meta name="description" content="How iDataOne built MealMate, an AI-powered React Native app that delivers health-aware, personalised meal suggestions for every member of a family.">
+<title>AI-Powered Meal Planning App Development | iDataOne</title>
+<meta name="description" content="How iDataOne built MealMate, an AI-powered app that delivers personalised, health-aware meal plans for every member of a family.">
 <meta name="keywords" content="family meal planning app, AI meal suggestions, React Native app, health-aware nutrition app, Supabase mobile app, GPT-4 meal planner, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/mealmate">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: AI-Powered Family Meal Planning App | iDataOne">
-<meta property="og:description" content="How iDataOne built MealMate, an AI-powered React Native app that delivers health-aware, personalised meal suggestions for every member of a family.">
+<meta property="og:title" content="AI-Powered Meal Planning App Development | iDataOne">
+<meta property="og:description" content="How iDataOne built MealMate, an AI-powered app that delivers personalised, health-aware meal plans for every member of a family.">
 <meta property="og:url" content="https://idataone.com/case-study/mealmate">
 <meta property="og:image" content="https://idataone.com/assets/images/og-mealmate.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: AI-Powered Family Meal Planning App | iDataOne">
-<meta name="twitter:description" content="How iDataOne built MealMate, an AI-powered React Native app that delivers health-aware, personalised meal suggestions for every member of a family.">
+<meta name="twitter:title" content="AI-Powered Meal Planning App Development | iDataOne">
+<meta name="twitter:description" content="How iDataOne built MealMate, an AI-powered app that delivers personalised, health-aware meal plans for every member of a family.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-mealmate.png">
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "Building an AI-Powered Family Meal Planning App",
   "image": "https://idataone.com/assets/images/og-mealmate.png",
-  "description": "How iDataOne designed and built MealMate, a React Native app that delivers personalised, health-aware meal suggestions for every member of a family — powered by AI and built for everyday use.",
+  "description": "How iDataOne built MealMate, an AI-powered app that delivers personalised, health-aware meal plans for every member of a family, built for everyday use.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/mealmate",

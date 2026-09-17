@@ -5,21 +5,21 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: A Lifelong Sports Passport Platform for Athletes of Every Level | iDataOne</title>
-<meta name="description" content="How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs — globally.">
+<title>Sports Passport & Athlete Management Software | iDataOne</title>
+<meta name="description" content="How iDataOne is building iSportOne, a sports passport and club management platform for athletes, parents, coaches and clubs worldwide.">
 <meta name="keywords" content="sports platform development, sports passport app, athlete profile platform, club management software, sports social network, sports tech product design, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/isportone">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: A Lifelong Sports Passport Platform for Athletes of Every Level | iDataOne">
-<meta property="og:description" content="How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs — globally.">
+<meta property="og:title" content="Sports Passport & Athlete Management Software | iDataOne">
+<meta property="og:description" content="How iDataOne is building iSportOne, a sports passport and club management platform for athletes, parents, coaches and clubs worldwide.">
 <meta property="og:url" content="https://idataone.com/case-study/isportone">
 <meta property="og:image" content="https://idataone.com/assets/images/og-isportone.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: A Lifelong Sports Passport Platform for Athletes of Every Level | iDataOne">
-<meta name="twitter:description" content="How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs — globally.">
+<meta name="twitter:title" content="Sports Passport & Athlete Management Software | iDataOne">
+<meta name="twitter:description" content="How iDataOne is building iSportOne, a sports passport and club management platform for athletes, parents, coaches and clubs worldwide.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-isportone.png">
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "Building iSportOne: A Lifelong Sports Passport for Every Athlete, Everywhere",
   "image": "https://idataone.com/assets/images/og-isportone.png",
-  "description": "How iDataOne is designing iSportOne, a sports professional network combining a lifelong sports passport, community feed, and club management platform for athletes, parents, coaches, and clubs.",
+  "description": "How iDataOne is building iSportOne, a sports passport and club management platform for athletes, parents, coaches and clubs worldwide.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/isportone",

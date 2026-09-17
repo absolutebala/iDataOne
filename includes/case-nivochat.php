@@ -5,21 +5,21 @@
 <?php include __DIR__ . '/_org_schema.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne</title>
-<meta name="description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<title>AI Chat Platform Development for Businesses | iDataOne</title>
+<meta name="description" content="How iDataOne built NivoChat, an AI chat platform that lets businesses deploy a knowledge-grounded assistant on their website in one line of embed code.">
 <meta name="keywords" content="multi-tenant SaaS platform, AI chat widget, embeddable chatbot, conversational AI platform, knowledge-grounded chatbot, Next.js Supabase SaaS, NivoChat, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/nivochat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne">
-<meta property="og:description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<meta property="og:title" content="AI Chat Platform Development for Businesses | iDataOne">
+<meta property="og:description" content="How iDataOne built NivoChat, an AI chat platform that lets businesses deploy a knowledge-grounded assistant on their website in one line of embed code.">
 <meta property="og:url" content="https://idataone.com/case-study/nivochat">
 <meta property="og:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Multi-Tenant AI Chat Platform — NivoChat | iDataOne">
-<meta name="twitter:description" content="How iDataOne built NivoChat, a full-stack multi-tenant SaaS platform that lets businesses deploy a knowledge-grounded AI chat assistant on their website in one line of embed code.">
+<meta name="twitter:title" content="AI Chat Platform Development for Businesses | iDataOne">
+<meta name="twitter:description" content="How iDataOne built NivoChat, an AI chat platform that lets businesses deploy a knowledge-grounded assistant on their website in one line of embed code.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-aidesker.png">
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "Building a Multi-Tenant AI Chat Platform Any Business Can Embed in One Line",
   "image": "https://idataone.com/assets/images/og-aidesker.png",
-  "description": "How iDataOne designed and built NivoChat — a full-stack SaaS platform that lets businesses deploy an intelligent, knowledge-grounded chat assistant on their website, powered by their own AI key, with per-tenant data isolation, lead capture and a complete admin layer.",
+  "description": "How iDataOne built NivoChat, an AI chat platform that lets businesses deploy a knowledge-grounded assistant on their website, with per-tenant data isolation, lead capture and a complete admin layer.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/nivochat",

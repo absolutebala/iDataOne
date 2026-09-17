@@ -5,21 +5,21 @@
 <?php include __DIR__ . '/_org_schema.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne</title>
+<title>Custom CMS Development for Community Platforms | iDataOne</title>
 <meta name="description" content="How iDataOne replaced The Knight Ryders' WordPress site with a custom inline CMS that cut content update and maintenance time by 80%, while adding live member profiles and gamification.">
 <meta name="keywords" content="custom CMS development, community platform, WordPress migration, Next.js Supabase, inline editing, gamification platform, riding club website, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/knight-ryders">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
-<meta property="og:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
+<meta property="og:title" content="Custom CMS Development for Community Platforms | iDataOne">
+<meta property="og:description" content="How iDataOne replaced a 460-member riding club's WordPress blog with a custom CMS platform, cutting content update and maintenance time by 80%.">
 <meta property="og:url" content="https://idataone.com/case-study/knight-ryders">
 <meta property="og:image" content="https://idataone.com/assets/images/og-knight-ryders.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: The Knight Ryders — Custom CMS That Cut Maintenance Time by 80% | iDataOne">
-<meta name="twitter:description" content="How iDataOne rebuilt The Knight Ryders from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.">
+<meta name="twitter:title" content="Custom CMS Development for Community Platforms | iDataOne">
+<meta name="twitter:description" content="How iDataOne replaced a 460-member riding club's WordPress blog with a custom CMS platform, cutting content update and maintenance time by 80%.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-knight-ryders.png">
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "The Knight Ryders — Custom CMS That Cut Maintenance Time by 80%",
   "image": "https://idataone.com/assets/images/og-knight-ryders.png",
-  "description": "How iDataOne rebuilt a 460-member Honda CB350 riding club from a WordPress blog into a fully custom community platform with inline CMS, gamification and live member profiles.",
+  "description": "How iDataOne replaced a 460-member Honda CB350 riding club's WordPress blog with a custom CMS platform, cutting content update and maintenance time by 80%.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/knight-ryders",

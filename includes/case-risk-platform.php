@@ -5,19 +5,19 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Enterprise Risk & Compliance Platform for FMCG | iDataOne</title>
-<meta name="description" content="How iDataOne built a full-stack enterprise risk assessment and compliance platform with real-time dashboards, 5x5 severity matrix and role-based workflows for an FMCG leader.">
+<title>Enterprise Risk & Compliance Management Software | iDataOne</title>
+<meta name="description" content="How iDataOne built a risk assessment and compliance platform for an FMCG company tracking 124 risks across 8 categories with a 5x5 severity matrix.">
 <meta name="keywords" content="enterprise risk platform case study, compliance platform development, risk assessment software, FMCG compliance, custom risk management platform, iDataOne">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Enterprise Risk & Compliance Platform for FMCG | iDataOne">
-<meta property="og:description" content="How iDataOne built a full-stack enterprise risk assessment and compliance platform with real-time dashboards, 5x5 severity matrix and role-based workflows for an FMCG leader.">
+<meta property="og:title" content="Enterprise Risk & Compliance Management Software | iDataOne">
+<meta property="og:description" content="How iDataOne built a risk assessment and compliance platform for an FMCG company tracking 124 risks across 8 categories with a 5x5 severity matrix.">
 <meta property="og:url" content="https://idataone.com/case-study/risk-platform">
 <meta property="og:image" content="https://idataone.com/assets/images/og-risk-platform.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Enterprise Risk & Compliance Platform for FMCG | iDataOne">
-<meta name="twitter:description" content="How iDataOne built a full-stack enterprise risk assessment and compliance platform with real-time dashboards, 5x5 severity matrix and role-based workflows for an FMCG leader.">
+<meta name="twitter:title" content="Enterprise Risk & Compliance Management Software | iDataOne">
+<meta name="twitter:description" content="How iDataOne built a risk assessment and compliance platform for an FMCG company tracking 124 risks across 8 categories with a 5x5 severity matrix.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-risk-platform.png">
 <script type="application/ld+json">
 {
@@ -25,7 +25,7 @@
   "@type": "Article",
   "headline": "Building an Enterprise Risk & Compliance Platform for an FMCG Leader",
   "image": "https://idataone.com/assets/images/og-risk-platform.png",
-  "description": "How iDataOne built a full-stack enterprise risk assessment platform with real-time dashboards, 5x5 severity matrix, role-based workflows and threaded communication.",
+  "description": "How iDataOne built a risk assessment and compliance platform for an FMCG company tracking 124 risks across 8 categories with a 5x5 severity matrix.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/risk-platform",

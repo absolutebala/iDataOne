@@ -5,21 +5,21 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: Telecom Infrastructure Project Management Platform | iDataOne</title>
-<meta name="description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy, a vendor for Indus Towers, across multiple regions and roles.">
+<title>Telecom Infrastructure Project Management Software | iDataOne</title>
+<meta name="description" content="How iDataOne built a project, vendor and financial management platform for a telecom infrastructure company managing 2,200+ projects across multiple regions and roles.">
 <meta name="keywords" content="telecom project management software, vendor management platform, infrastructure project tracking, telecom PMS, PO tracking software, Indus Towers vendor, Next.js Supabase platform, iDataOne">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/telecom-pm-platform">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
-<meta property="og:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
+<meta property="og:title" content="Telecom Infrastructure Project Management Software | iDataOne">
+<meta property="og:description" content="How iDataOne built a project, vendor and financial management platform for a telecom infrastructure company managing 2,200+ projects.">
 <meta property="og:url" content="https://idataone.com/case-study/telecom-pm-platform">
 <meta property="og:image" content="https://idataone.com/assets/images/og-telecom-pm-platform.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Study: Telecom Infrastructure Project Management Platform | iDataOne">
-<meta name="twitter:description" content="How iDataOne built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations for Venus Energy.">
+<meta name="twitter:title" content="Telecom Infrastructure Project Management Software | iDataOne">
+<meta name="twitter:description" content="How iDataOne built a project, vendor and financial management platform for a telecom infrastructure company managing 2,200+ projects.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-telecom-pm-platform.png">
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Article",
   "headline": "Building a Telecom Infrastructure Project Management Platform for Venus Energy",
   "image": "https://idataone.com/assets/images/og-telecom-pm-platform.png",
-  "description": "How iDataOne designed and built a full-stack project, vendor and financial management platform that unified telecom infrastructure operations across multiple regions and roles.",
+  "description": "How iDataOne built a project, vendor and financial management platform for a telecom infrastructure company managing 2,200+ projects across multiple regions and roles.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/telecom-pm-platform",

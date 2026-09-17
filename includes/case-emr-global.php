@@ -5,20 +5,20 @@
 <?php include __DIR__ . '/_gtm_head.php'; ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study: EMR Global — SAP-Integrated Field Service Platform | iDataOne</title>
-<meta name="description" content="How iDataOne built a SAP-integrated field service platform for EMR Global — bridging SAP with field engineers in real time, eliminating WhatsApp coordination across a 50+ engineer global operation.">
+<title>SAP-Integrated Field Service Software | iDataOne</title>
+<meta name="description" content="How iDataOne built a SAP-integrated field service platform for a 50-year-old manufacturing company, connecting 50+ field engineers to SAP in real time.">
 <meta name="keywords" content="SAP integration, field service management, React Native mobile app, Next.js, real-time sync, transformer manufacturer, service ticket management, iDataOne case study">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="canonical" href="https://idataone.com/case-study/emr-global-field-engineers">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EMR Global — SAP-Integrated Field Service Platform | iDataOne">
-<meta property="og:description" content="How iDataOne built a real-time SAP-integrated field service platform bridging back-office data with field engineers — eliminating WhatsApp coordination for a global transformer manufacturer.">
+<meta property="og:title" content="SAP-Integrated Field Service Software | iDataOne">
+<meta property="og:description" content="How iDataOne built a SAP-integrated field service platform for a 50-year-old manufacturing company, connecting 50+ field engineers to SAP in real time.">
 <meta property="og:url" content="https://idataone.com/case-study/emr-global-field-engineers">
 <meta property="og:image" content="https://idataone.com/assets/images/og-emr-global.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="EMR Global — SAP-Integrated Field Service Platform | iDataOne">
+<meta name="twitter:title" content="SAP-Integrated Field Service Software | iDataOne">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-emr-global.png">
 <script type="application/ld+json">
 {
@@ -26,7 +26,7 @@
   "@type": "Article",
   "headline": "EMR Global — SAP-Integrated Field Service Platform",
   "image": "https://idataone.com/assets/images/og-emr-global.png",
-  "description": "How iDataOne built a real-time SAP-integrated field service platform for EMR Global, bridging back-office data with field engineers and eliminating WhatsApp coordination.",
+  "description": "How iDataOne built a SAP-integrated field service platform for a 50-year-old manufacturing company, connecting 50+ field engineers to SAP in real time.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/emr-global-field-engineers"
