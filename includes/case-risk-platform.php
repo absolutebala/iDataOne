@@ -151,6 +151,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div>
+      <a href="/industries/fmcg" class="cs-badge" style="text-decoration:none">FMCG Industry Solutions</a>
       <h1 class="cs-hero-title">Building an Enterprise Risk & Compliance Platform for an FMCG Leader</h1>
       <p class="cs-hero-sub">How we designed and built a full-stack risk assessment platform that unified compliance workflows, real-time monitoring and team collaboration across an entire enterprise.</p>
       <div class="cs-hero-stats">

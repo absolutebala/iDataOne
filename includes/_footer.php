@@ -34,6 +34,10 @@
         <div class="footer-col-title">Industries</div>
         <ul class="footer-links">
           <li><a href="/industries/telecom">Telecom</a></li>
+          <li><a href="/industries/solar">Solar</a></li>
+          <li><a href="/industries/manufacturing">Manufacturing</a></li>
+          <li><a href="/industries/enterprise">Enterprise</a></li>
+          <li><a href="/industries/fmcg">FMCG</a></li>
         </ul>
       </div>
       <div>

@@ -189,6 +189,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div>
+      <a href="/industries/manufacturing" class="cs-badge" style="text-decoration:none">Manufacturing Industry Solutions</a>
       <h1 class="cs-hero-title">Bridging SAP to the Field — A Real-Time Service Platform for EMR Global</h1>
       <p class="cs-hero-sub">How iDataOne built a SAP-integrated web and mobile field service platform for EMR Global — a 50-year-old transformer equipment manufacturer — connecting back-office data directly to field engineers in real time, while eliminating WhatsApp as the coordination layer.</p>
       <div class="cs-hero-stats">

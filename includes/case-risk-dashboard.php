@@ -121,6 +121,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cs-hero">
   <div class="cs-hero-inner">
     <div>
+      <a href="/industries/fmcg" class="cs-badge" style="text-decoration:none">FMCG Industry Solutions</a>
       <h1 class="cs-hero-title">Real-Time Risk Intelligence Dashboard for an Enterprise FMCG Company</h1>
       <p class="cs-hero-sub">How we turned fragmented risk data into a unified intelligence layer with real-time visualisation, trend analytics and automated compliance scoring.</p>
       <div class="cs-hero-stats">
