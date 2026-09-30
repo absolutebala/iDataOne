@@ -223,31 +223,31 @@ a{-webkit-tap-highlight-color:transparent}
 .form-head{text-align:center;margin-bottom:36px}
 .form-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#5eead4;margin-bottom:12px}
 .form-title{font-size:clamp(24px,3vw,32px);font-weight:800;letter-spacing:-1px;color:#fff}
-.form-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:36px 32px}
+.form-card{background:#ffffff;border:1px solid rgba(15,23,42,0.08);border-radius:20px;padding:36px 32px;box-shadow:0 24px 64px rgba(0,0,0,0.35)}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .ffield{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
-.ffield label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(0,212,255,0.55)}
+.ffield label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#0891b2}
 .ffield input,.ffield select,.ffield textarea{
   width:100%;padding:11px 0;border:none;
-  border-bottom:1px solid rgba(0,212,255,0.22);
+  border-bottom:1px solid rgba(15,23,42,0.15);
   background:transparent;
   font-family:'Inter',sans-serif;font-size:14.5px;
-  color:#fff;outline:none;
+  color:#0f172a;outline:none;
   transition:border-color 0.25s;
   -webkit-appearance:none;
 }
-.ffield select{cursor:pointer;color:rgba(255,255,255,0.85)}
-.ffield select option{background:#0d1535;color:#fff}
-.ffield input::placeholder,.ffield textarea::placeholder{color:rgba(255,255,255,0.32);font-size:13.5px}
-.ffield input:focus,.ffield select:focus,.ffield textarea:focus{border-bottom-color:#00d4ff}
+.ffield select{cursor:pointer;color:#0f172a}
+.ffield select option{background:#ffffff;color:#0f172a}
+.ffield input::placeholder,.ffield textarea::placeholder{color:#94a3b8;font-size:13.5px}
+.ffield input:focus,.ffield select:focus,.ffield textarea:focus{border-bottom-color:#0891b2}
 .ffield textarea{resize:none}
 .form-submit{width:100%;padding:17px 24px;border-radius:12px;border:none;background:linear-gradient(90deg,#0891b2,#00d4ff);color:#0a0f1e;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:opacity 0.2s,transform 0.2s;margin-top:6px}
 .form-submit:hover{opacity:0.92;transform:translateY(-1px)}
 .form-submit svg{width:14px;height:14px;stroke:#0a0f1e;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.form-privacy{text-align:center;font-size:12px;color:rgba(255,255,255,0.4);margin-top:16px}
+.form-privacy{text-align:center;font-size:12px;color:#94a3b8;margin-top:16px}
 .form-msg{margin-bottom:18px;text-align:center;font-size:13.5px;font-weight:500;padding:12px 16px;border-radius:10px}
-.form-msg.success{background:rgba(0,212,255,0.1);color:#7eefff;border:1px solid rgba(0,212,255,0.2)}
-.form-msg.error{background:rgba(244,63,94,0.1);color:#fca5a5;border:1px solid rgba(244,63,94,0.2)}
+.form-msg.success{background:rgba(8,145,178,0.08);color:#0891b2;border:1px solid rgba(8,145,178,0.2)}
+.form-msg.error{background:rgba(244,63,94,0.08);color:#e11d48;border:1px solid rgba(244,63,94,0.2)}
 @media(max-width:640px){.form-row-2{grid-template-columns:1fr}.form-wrap{padding:56px 20px}.form-card{padding:28px 22px}}
 
 @media(max-width:900px){
