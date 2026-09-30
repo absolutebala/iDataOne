@@ -538,6 +538,21 @@ a{-webkit-tap-highlight-color:transparent}
     <div class="form-card">
       <?php if ($form_success): ?>
       <div class="form-msg success">✓ Thanks! We'll be in touch within 24 hours.</div>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+          'event': 'lead_form_submit',
+          'form_name': 'ai_product_development_landing',
+          'form_location': '/ai-product-development'
+        });
+        /* Google tag (gtag.js) event */
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion_event_submit_lead_form', {
+            'form_name': 'ai_product_development_landing',
+            'form_location': '/ai-product-development'
+          });
+        }
+      </script>
       <?php elseif ($form_error): ?>
       <div class="form-msg error">Something went wrong. Please email info@idataone.com directly.</div>
       <?php endif; ?>
