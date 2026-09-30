@@ -10,6 +10,7 @@ $allowed = [
     'industries/fmcg'         => __DIR__ . '/../includes/industry-fmcg.php',
     'industries/solar'        => __DIR__ . '/../includes/industry-solar.php',
     'industries/enterprise'   => __DIR__ . '/../includes/industry-enterprise.php',
+    'ai-product-development'  => __DIR__ . '/../includes/page-ai-product-development.php',
 ];
 
 if (isset($allowed[$path]) && file_exists($allowed[$path])) {

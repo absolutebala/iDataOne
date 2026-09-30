@@ -83,6 +83,10 @@
       "destination": "/api/page.php"
     },
     {
+      "source": "/ai-product-development",
+      "destination": "/api/page.php"
+    },
+    {
       "source": "/faq",
       "destination": "/api/faq.php"
     },
