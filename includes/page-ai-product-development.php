@@ -182,43 +182,32 @@ a{-webkit-tap-highlight-color:transparent}
 .sec-sub{font-size:14.5px;color:var(--muted);max-width:540px;line-height:1.65;margin:12px auto 0}
 .sec-head.left .sec-sub{max-width:340px;margin:0}
 
-/* ── Cards grid (What We Build / AI capability) ── */
-.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-strong);border:1px solid var(--line-strong);border-radius:20px;overflow:hidden}
-.card{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column;gap:10px}
-.card-icon{width:38px;height:38px;border-radius:10px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
-.card-icon svg{width:17px;height:17px;stroke:var(--signal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card-title{font-size:15.5px;font-weight:700;color:var(--ink)}
+/* ── Colour cards (What We Build) ── */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent, var(--signal));border-radius:14px;padding:28px 26px;display:flex;flex-direction:column;gap:10px;transition:transform 0.15s,border-color 0.15s}
+.card:hover{transform:translateY(-3px)}
+.card-title{font-size:16px;font-weight:700;color:var(--accent, var(--ink))}
 .card-desc{font-size:13px;color:var(--muted);line-height:1.65}
 @media(max-width:900px){.cards-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.cards-grid{grid-template-columns:1fr}}
 
-/* ── Industry list ── */
-.industry-list{border-top:1px solid var(--line-strong)}
-.industry-row{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;transition:background 0.15s}
-.industry-row:hover{background:var(--paper-2)}
-.industry-name{font-size:16.5px;font-weight:700;color:var(--ink);min-width:220px}
-.industry-desc{font-size:13.5px;color:var(--muted);flex:1}
-.industry-arrow{width:15px;height:15px;stroke:var(--signal);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-@media(max-width:700px){.industry-row{flex-direction:column;align-items:flex-start;gap:6px}.industry-name{min-width:0}}
+/* ── Industry tiles (no description) ── */
+.industry-tiles{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.industry-tile{display:inline-flex;align-items:center;gap:10px;padding:18px 28px;border-radius:999px;border:1px solid var(--line-strong);background:var(--paper);text-decoration:none;color:var(--ink);font-size:15.5px;font-weight:700;transition:background 0.15s,border-color 0.15s,transform 0.15s}
+.industry-tile:hover{background:var(--paper-2);border-color:var(--signal);transform:translateY(-2px)}
+.industry-tile svg{width:14px;height:14px;stroke:var(--signal);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+@media(max-width:640px){.industry-tiles{gap:10px}.industry-tile{padding:14px 20px;font-size:14px;flex:1 1 calc(50% - 10px);justify-content:center}}
 
-/* ── Proof grid (case studies) ── */
-.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-strong);border:1px solid var(--line-strong);border-radius:20px;overflow:hidden}
-.proof-mini{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column;gap:10px}
-.proof-mini-tag{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--signal)}
-.proof-mini-title{font-size:16px;font-weight:700;color:var(--ink);line-height:1.4}
-.proof-mini-desc{font-size:13px;color:var(--muted);line-height:1.6;flex:1}
-.proof-mini-link{font-size:12.5px;font-weight:700;color:var(--signal-2);text-decoration:none}
-.proof-mini-link:hover{text-decoration:underline}
-@media(max-width:760px){.proof-grid{grid-template-columns:1fr}}
-
-/* ── Spec rows (Why iDataOne / Process) ── */
-.spec-rows{border-top:1px solid var(--line-strong)}
-.spec-row{display:grid;grid-template-columns:56px 260px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:background 0.15s}
-.spec-row:hover{background:var(--paper-2)}
-.spec-row-num{font-size:14px;font-weight:800;color:var(--signal)}
-.spec-row-title{font-size:16.5px;font-weight:700;color:var(--ink)}
-.spec-row-desc{font-size:13.5px;color:var(--muted);line-height:1.7}
-@media(max-width:760px){.spec-row{grid-template-columns:36px 1fr;grid-template-areas:"n t" ". d"}.spec-row-num{grid-area:n}.spec-row-title{grid-area:t}.spec-row-desc{grid-area:d}}
+/* ── Proof rows (case studies, editorial layout) ── */
+.proof-rows{border-top:1px solid var(--line-strong)}
+.proof-row{display:grid;grid-template-columns:280px 1fr auto;gap:28px;align-items:center;padding:30px 8px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;transition:background 0.15s}
+.proof-row:hover{background:var(--paper-2)}
+.proof-row-tag{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent, var(--signal))}
+.proof-row-title{font-size:18px;font-weight:700;color:var(--ink);margin-top:6px;line-height:1.3}
+.proof-row-desc{font-size:13.5px;color:var(--muted);line-height:1.65}
+.proof-row-link{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--accent, var(--signal-2));white-space:nowrap}
+.proof-row-link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:760px){.proof-row{grid-template-columns:1fr;gap:10px}.proof-row-link{margin-top:4px}}
 
 /* ── CTA ── */
 .cta{padding:80px 32px;background:linear-gradient(135deg,#050d1a,#0d1535);border-bottom:none;text-align:center}
@@ -230,7 +219,7 @@ a{-webkit-tap-highlight-color:transparent}
 
 /* ── Lead form ── */
 .form-sec{padding:0;background:linear-gradient(135deg,#0a0f1e 0%,#0d1535 60%,#0a0f1e 100%)}
-.form-wrap{max-width:600px;margin:0 auto;padding:80px 32px}
+.form-wrap{max-width:900px;margin:0 auto;padding:80px 32px}
 .form-head{text-align:center;margin-bottom:36px}
 .form-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#5eead4;margin-bottom:12px}
 .form-title{font-size:clamp(24px,3vw,32px);font-weight:800;letter-spacing:-1px;color:#fff}
@@ -313,33 +302,27 @@ a{-webkit-tap-highlight-color:transparent}
       <p class="sec-sub">We combine product engineering, AI and data capabilities to build software that solves real business problems.</p>
     </div>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+      <div class="card" style="--accent:#00d4ff">
         <div class="card-title">AI-Powered Products</div>
         <div class="card-desc">Build products with AI at the core — from intelligent assistants and agents to AI-powered workflows and decision systems.</div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+      <div class="card" style="--accent:#f5c518">
         <div class="card-title">SaaS Platforms</div>
         <div class="card-desc">Design and build scalable multi-tenant SaaS products with authentication, billing, administration, integrations and analytics.</div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+      <div class="card" style="--accent:#5eead4">
         <div class="card-title">Enterprise Applications</div>
         <div class="card-desc">Replace fragmented processes and legacy workflows with secure, scalable business applications.</div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div>
+      <div class="card" style="--accent:#818cf8">
         <div class="card-title">AI Automation</div>
         <div class="card-desc">Automate repetitive processes using AI, intelligent workflows and document processing.</div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18.4 8.6 13 14l-3-3-4.5 4.5"/></svg></div>
+      <div class="card" style="--accent:#34d399">
         <div class="card-title">Data Platforms</div>
         <div class="card-desc">Turn fragmented business data into unified, actionable intelligence.</div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/><circle cx="6" cy="6" r="0.8" fill="var(--signal)"/></svg></div>
+      <div class="card" style="--accent:#f472b6">
         <div class="card-title">Mobile &amp; Web Products</div>
         <div class="card-desc">Build modern web and mobile applications from concept through production.</div>
       </div>
@@ -347,50 +330,7 @@ a{-webkit-tap-highlight-color:transparent}
   </div>
 </section>
 
-<!-- 4. AI capability -->
-<section class="sec" style="background:var(--paper-2)">
-  <div class="sec-inner">
-    <div class="sec-head">
-      <div class="sec-num eyebrow-label">AI Capability</div>
-      <h2 class="sec-title">AI That Does More Than Chat</h2>
-      <p class="sec-sub">We build AI into products and business workflows where it creates measurable value.</p>
-    </div>
-    <div class="cards-grid" style="background:var(--line-strong)">
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16v0M16 16v0"/></svg></div>
-        <div class="card-title">AI Agents</div>
-        <div class="card-desc">Intelligent agents that interact with users, systems and business workflows.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"/></svg></div>
-        <div class="card-title">LLM Integration</div>
-        <div class="card-desc">Integrate leading language models into your products securely and effectively.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-        <div class="card-title">Knowledge-Grounded AI</div>
-        <div class="card-desc">Connect AI to your business knowledge, documents and data.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-        <div class="card-title">Intelligent Automation</div>
-        <div class="card-desc">Reduce manual work through AI-powered workflows.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
-        <div class="card-title">AI Features</div>
-        <div class="card-desc">Add practical AI capabilities to existing software products.</div>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
-        <div class="card-title">AI Data Intelligence</div>
-        <div class="card-desc">Turn business data into insights, predictions and decisions.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 5. Industry section -->
+<!-- 4. Industry section -->
 <section class="sec">
   <div class="sec-inner">
     <div class="sec-head">
@@ -398,150 +338,64 @@ a{-webkit-tap-highlight-color:transparent}
       <h2 class="sec-title">AI &amp; Software Built Around Your Industry</h2>
       <p class="sec-sub">Your business isn't generic. Your software shouldn't be either.</p>
     </div>
-    <div class="industry-list">
-      <a href="/industries/telecom" class="industry-row">
-        <div class="industry-name">Telecom &amp; Infrastructure</div>
-        <div class="industry-desc">Project management, field operations, financial workflows and live dashboards.</div>
-        <svg class="industry-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/case-study/finance-automation" class="industry-row">
-        <div class="industry-name">Finance</div>
-        <div class="industry-desc">Document processing, reconciliation, automation and intelligent reporting.</div>
-        <svg class="industry-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/industries/manufacturing" class="industry-row">
-        <div class="industry-name">Manufacturing</div>
-        <div class="industry-desc">Field service, ERP/SAP integration, operational workflows and data intelligence.</div>
-        <svg class="industry-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/industries/enterprise" class="industry-row">
-        <div class="industry-name">Enterprise</div>
-        <div class="industry-desc">Risk, compliance, workflow automation and business intelligence.</div>
-        <svg class="industry-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="/industries/fmcg" class="industry-row">
-        <div class="industry-name">FMCG</div>
-        <div class="industry-desc">Risk intelligence, analytics, compliance and operational visibility.</div>
-        <svg class="industry-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
+    <div class="industry-tiles">
+      <a href="/industries/telecom" class="industry-tile">Telecom &amp; Infrastructure <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/case-study/finance-automation" class="industry-tile">Finance <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/industries/manufacturing" class="industry-tile">Manufacturing <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/industries/enterprise" class="industry-tile">Enterprise <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="/industries/fmcg" class="industry-tile">FMCG <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- 6. Proof / Case studies -->
+<!-- 5. Proof / Case studies -->
 <section class="sec" style="background:var(--paper-2)">
   <div class="sec-inner">
     <div class="sec-head">
       <div class="sec-num eyebrow-label">Proof, Not Promises</div>
       <h2 class="sec-title">Real Products. Real Business Problems.</h2>
     </div>
-    <div class="proof-grid">
-      <div class="proof-mini">
-        <div class="proof-mini-tag">NivoChat</div>
-        <div class="proof-mini-title">Knowledge-Grounded AI Customer Assistant</div>
-        <div class="proof-mini-desc">A multi-tenant AI platform that lets businesses deploy intelligent, knowledge-grounded assistants with lead capture, CRM integration and AI provider flexibility.</div>
-        <a href="/case-study/nivochat" class="proof-mini-link">View Case Study →</a>
-      </div>
-      <div class="proof-mini">
-        <div class="proof-mini-tag">Infra360 PMS</div>
-        <div class="proof-mini-title">Telecom Infrastructure Project Management</div>
-        <div class="proof-mini-desc">A platform bringing project, vendor, purchase order, material and financial workflows together with live operational visibility.</div>
-        <a href="/case-study/telecom-pm-platform" class="proof-mini-link">View Case Study →</a>
-      </div>
-      <div class="proof-mini">
-        <div class="proof-mini-tag">Finance Automation</div>
-        <div class="proof-mini-title">300+ Hours Saved Every Month</div>
-        <div class="proof-mini-desc">AI-powered document extraction, invoice processing, reconciliation and reporting integrated into Infra360 PMS.</div>
-        <a href="/case-study/finance-automation" class="proof-mini-link">View Case Study →</a>
-      </div>
-      <div class="proof-mini">
-        <div class="proof-mini-tag">EMR Global</div>
-        <div class="proof-mini-title">SAP-Integrated Field Service Platform</div>
-        <div class="proof-mini-desc">Web and mobile software connecting field engineers with SAP-backed business operations in real time.</div>
-        <a href="/case-study/emr-global-field-engineers" class="proof-mini-link">View Case Study →</a>
-      </div>
+    <div class="proof-rows">
+      <a href="/case-study/nivochat" class="proof-row" style="--accent:#00d4ff">
+        <div>
+          <div class="proof-row-tag">NivoChat</div>
+          <div class="proof-row-title">Knowledge-Grounded AI Customer Assistant</div>
+        </div>
+        <div class="proof-row-desc">A multi-tenant AI platform that lets businesses deploy intelligent, knowledge-grounded assistants with lead capture, CRM integration and AI provider flexibility.</div>
+        <span class="proof-row-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="/case-study/telecom-pm-platform" class="proof-row" style="--accent:#f5c518">
+        <div>
+          <div class="proof-row-tag">Infra360 PMS</div>
+          <div class="proof-row-title">Telecom Infrastructure Project Management</div>
+        </div>
+        <div class="proof-row-desc">A platform bringing project, vendor, purchase order, material and financial workflows together with live operational visibility.</div>
+        <span class="proof-row-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="/case-study/finance-automation" class="proof-row" style="--accent:#34d399">
+        <div>
+          <div class="proof-row-tag">Finance Automation</div>
+          <div class="proof-row-title">300+ Hours Saved Every Month</div>
+        </div>
+        <div class="proof-row-desc">AI-powered document extraction, invoice processing, reconciliation and reporting integrated into Infra360 PMS.</div>
+        <span class="proof-row-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="/case-study/emr-global-field-engineers" class="proof-row" style="--accent:#818cf8">
+        <div>
+          <div class="proof-row-tag">EMR Global</div>
+          <div class="proof-row-title">SAP-Integrated Field Service Platform</div>
+        </div>
+        <div class="proof-row-desc">Web and mobile software connecting field engineers with SAP-backed business operations in real time.</div>
+        <span class="proof-row-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- 7. Why iDataOne -->
-<section class="sec">
-  <div class="sec-inner">
-    <div class="sec-head">
-      <div class="sec-num eyebrow-label">Why iDataOne</div>
-      <h2 class="sec-title">Enterprise Capability. Without Enterprise Overhead.</h2>
-    </div>
-    <div class="spec-rows">
-      <div class="spec-row">
-        <div class="spec-row-num">01</div>
-        <div class="spec-row-title">Senior Ownership</div>
-        <div class="spec-row-desc">Your project stays under senior engineering and product oversight.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">02</div>
-        <div class="spec-row-title">AI-Assisted Engineering</div>
-        <div class="spec-row-desc">AI is integrated into the development process to accelerate research, coding, testing and delivery.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">03</div>
-        <div class="spec-row-title">Product Mindset</div>
-        <div class="spec-row-desc">We don't just deliver software. We build and operate our own products.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">04</div>
-        <div class="spec-row-title">One Engineering Team</div>
-        <div class="spec-row-desc">Product, frontend, backend, AI, data and infrastructure capabilities working together.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">05</div>
-        <div class="spec-row-title">Fixed-Scope Delivery</div>
-        <div class="spec-row-desc">Clear requirements, timeline and cost before development begins.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 8. Process -->
-<section class="sec" style="background:var(--paper-2)">
-  <div class="sec-inner">
-    <div class="sec-head">
-      <div class="sec-num eyebrow-label">Our Process</div>
-      <h2 class="sec-title">From Idea to Scale</h2>
-    </div>
-    <div class="spec-rows">
-      <div class="spec-row">
-        <div class="spec-row-num">01</div>
-        <div class="spec-row-title">Tell Us Your Idea</div>
-        <div class="spec-row-desc">Explain the business problem, product idea or existing system.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">02</div>
-        <div class="spec-row-title">Turn It Into a Plan</div>
-        <div class="spec-row-desc">We define the product, architecture, technology and delivery approach.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">03</div>
-        <div class="spec-row-title">Build the MVP</div>
-        <div class="spec-row-desc">Build, test and iterate quickly with AI-assisted engineering.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">04</div>
-        <div class="spec-row-title">Launch</div>
-        <div class="spec-row-desc">Deploy, measure and improve with your team.</div>
-      </div>
-      <div class="spec-row">
-        <div class="spec-row-num">05</div>
-        <div class="spec-row-title">Evolve</div>
-        <div class="spec-row-desc">Add capabilities, integrate systems and scale as your business grows.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 9. Final CTA -->
+<!-- 6. Final CTA -->
 <section class="cta">
   <div class="cta-inner">
-    <h2 class="cta-h">Have an AI Product in Mind?</h2>
+    <h2 class="cta-h">Have a Product in Mind?</h2>
     <p class="cta-p">Tell us what you're trying to build. We'll help you define the right product, technology and delivery approach.</p>
     <div class="cta-btns">
       <a href="#lead-form" class="btn-solid">Book a Free 30-Minute Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -550,7 +404,7 @@ a{-webkit-tap-highlight-color:transparent}
   </div>
 </section>
 
-<!-- 10. Lead form -->
+<!-- 7. Lead form -->
 <section class="form-sec" id="lead-form">
   <div class="form-wrap">
     <div class="form-head">
