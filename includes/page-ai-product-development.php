@@ -271,7 +271,6 @@ a{-webkit-tap-highlight-color:transparent}
       <a href="/case-studies" class="btn-outline">View Our Work</a>
     </div>
     <div class="hero-trust">
-      <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>No commitment</span>
       <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Response within 24 hours</span>
       <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Talk directly with our team</span>
     </div>
@@ -400,7 +399,7 @@ a{-webkit-tap-highlight-color:transparent}
     <div class="cta-btns">
       <a href="#lead-form" class="btn-solid">Book a Free 30-Minute Discovery Call <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
-    <div class="cta-note">No commitment. No sales pressure. Response within 24 hours.</div>
+    <div class="cta-note">No sales pressure. Response within 24 hours.</div>
   </div>
 </section>
 
