@@ -107,22 +107,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['form_submit'])) {
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ink:#0f172a;
-  --muted:#64748b;
-  --paper:#ffffff;
-  --paper-2:#f8fafc;
-  --line:rgba(226,232,240,0.9);
-  --line-strong:rgba(148,163,184,0.45);
-  --signal:#0d9488;
-  --signal-2:#0891b2;
+  --ink:#ffffff;
+  --muted:rgba(255,255,255,0.62);
+  --paper:rgba(255,255,255,0.035);
+  --paper-2:rgba(255,255,255,0.02);
+  --line:rgba(255,255,255,0.12);
+  --line-strong:rgba(255,255,255,0.18);
+  --signal:#00d4ff;
+  --signal-2:#f5c518;
 }
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden;padding-top:68px}
+html,body{height:auto}
+body{
+  font-family:'Inter',sans-serif;color:var(--ink);overflow-x:hidden;padding-top:68px;
+  background:
+    radial-gradient(ellipse at 80% 10%, rgba(0,212,255,0.12), transparent 40%),
+    radial-gradient(ellipse at 20% 80%, rgba(0,180,220,0.08), transparent 40%),
+    radial-gradient(ellipse at 60% 50%, rgba(245,197,24,0.06), transparent 45%),
+    linear-gradient(135deg,#0a0f1e 0%,#0d1535 50%,#0a0f1e 100%);
+  background-attachment:fixed;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.05) 1px, transparent 1px);
+  background-size:80px 80px;
+  pointer-events:none;
+  z-index:0;
+}
+body>*{position:relative;z-index:1}
 .eyebrow-label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--signal)}
-.grad-text{background:linear-gradient(90deg,var(--signal),var(--signal-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.grad-text{background:linear-gradient(90deg,var(--signal-2),var(--signal));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 a{-webkit-tap-highlight-color:transparent}
 
 /* ── Hero (centered, conversion-first) ── */
-.hero{border-bottom:1px solid var(--line-strong);position:relative;background:radial-gradient(ellipse at 50% 0%,rgba(13,148,136,0.07),transparent 55%)}
+.hero{border-bottom:1px solid var(--line-strong);position:relative}
 .hero-inner{max-width:820px;margin:0 auto;padding:76px 32px 64px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .hero-h1{font-size:clamp(32px,4.6vw,52px);font-weight:800;letter-spacing:-1.5px;line-height:1.1;color:var(--ink);margin:20px 0 20px}
 .hero-sub{font-size:16.5px;color:var(--muted);line-height:1.75;max-width:600px;margin-bottom:36px}
@@ -163,7 +185,7 @@ a{-webkit-tap-highlight-color:transparent}
 /* ── Cards grid (What We Build / AI capability) ── */
 .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-strong);border:1px solid var(--line-strong);border-radius:20px;overflow:hidden}
 .card{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column;gap:10px}
-.card-icon{width:38px;height:38px;border-radius:10px;background:rgba(13,148,136,0.08);border:1px solid rgba(13,148,136,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
+.card-icon{width:38px;height:38px;border-radius:10px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
 .card-icon svg{width:17px;height:17px;stroke:var(--signal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .card-title{font-size:15.5px;font-weight:700;color:var(--ink)}
 .card-desc{font-size:13px;color:var(--muted);line-height:1.65}
