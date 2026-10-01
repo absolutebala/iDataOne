@@ -212,8 +212,8 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);ove
     </div>
     <div class="hero-right">
       <div class="hero-shot">
-        <div class="hero-shot-tag"><span class="dot"></span>Live Deployment</div>
-        <img src="/assets/images/emr-solution.png" alt="EMR Global field service platform architecture — two-way SAP integration, web admin portal, mobile app">
+        <div class="hero-shot-tag"><span class="dot"></span>EMR Global</div>
+        <img src="/assets/images/manufacturing-emr-infographic.png" alt="iDataOne for EMR Global — SAP-integrated field service platform connecting the plant, SAP and field engineers: SAP-integrated ticketing, mobile app, real-time dashboards, SLA tracking, two-way SAP write-back and predictive analytics">
       </div>
     </div>
   </div>
