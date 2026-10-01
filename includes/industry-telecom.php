@@ -199,8 +199,8 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);ove
     </div>
     <div class="hero-right">
       <div class="hero-shot">
-        <div class="hero-shot-tag"><span class="dot"></span>Live Deployment</div>
-        <img src="/assets/images/telecom-pm-dashboard.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Dashboard, live deployment">
+        <div class="hero-shot-tag"><span class="dot"></span>Infra360 PMS</div>
+        <img src="/assets/images/telecom-infra360-infographic.png" alt="Infra360 PMS — Telecom Infrastructure Project Management Platform: project management, vendor management, material tracking (STN/SRN) and financial tracking">
       </div>
     </div>
   </div>
