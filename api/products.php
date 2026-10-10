@@ -92,8 +92,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <?php $current_page = 'products'; include __DIR__ . '/../includes/_nav.php'; ?>
 
 <section class="p-hero">
-  <h1 class="p-hero-h1">Our Products</h1>
-  <p class="p-hero-sub">Live software built and maintained by iDataOne.</p>
 </section>
 
 <div class="p-wrap">
