@@ -47,19 +47,19 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 /* Grid */
 .p-wrap{max-width:1140px;margin:0 auto;padding:48px 32px 100px}
-.p-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.p-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
 .p-card-img.p-card-img-icon{background:linear-gradient(135deg,#0f172a 0%,#0891b2 100%);display:flex;align-items:center;justify-content:center}
 .p-card-img-icon svg{width:56px;height:56px;stroke:#fff;stroke-width:1.5;fill:none;opacity:0.9}
 .cta-cyan{background:#0891b2;color:#fff}
 .cta-cyan svg{stroke:#fff}
 .p-card{border:1px solid rgba(226,232,240,0.9);border-radius:22px;overflow:hidden;background:#fff;transition:box-shadow 0.3s,transform 0.3s;display:flex;flex-direction:column}
 .p-card:hover{box-shadow:0 24px 56px rgba(15,23,42,0.1);transform:translateY(-4px)}
-.p-card-img{height:190px;position:relative;overflow:hidden}
+.p-card-img{height:240px;position:relative;overflow:hidden}
 .p-card-img img{width:100%;height:100%;object-fit:cover;display:block}
 .p-card-badge{position:absolute;top:14px;left:14px;padding:4px 12px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;backdrop-filter:blur(6px)}
 .badge-live{background:rgba(16,185,129,0.15);color:#059669;border:1px solid rgba(16,185,129,0.3)}
 .badge-dev{background:rgba(255,255,255,0.85);color:#64748b;border:1px solid rgba(226,232,240,0.9)}
-.p-card-body{padding:26px 24px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.p-card-body{padding:32px 30px 34px;display:flex;flex-direction:column;gap:10px;flex:1}
 .p-card-title{font-size:19px;font-weight:700;color:#0f172a;letter-spacing:-0.3px}
 .p-card-tag{font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1px}
 .p-card-desc{font-size:13.5px;color:#64748b;line-height:1.65;flex:1}
@@ -73,7 +73,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cta-rose{background:#fff1f2;color:#e11d48;border:1px solid rgba(244,63,94,0.25)}
 .cta-rose svg{stroke:#e11d48}
 
-@media(max-width:900px){.p-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.p-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
