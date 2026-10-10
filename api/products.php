@@ -91,10 +91,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <?php $current_page = 'products'; include __DIR__ . '/../includes/_nav.php'; ?>
 
-<section class="p-hero">
-</section>
 
-<div class="p-wrap">
+
+
+<div class="p-wrap" style="padding-top:80px">
   <div class="p-grid">
 
     <div class="p-card">
