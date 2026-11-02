@@ -60,6 +60,26 @@
       "has": [
         {
           "type": "host",
+          "value": "merashop.idataone.com"
+        }
+      ],
+      "source": "/privacy",
+      "destination": "/merashop/privacy.html"
+    },
+    {
+      "has": [
+        {
+          "type": "host",
+          "value": "merashop.idataone.com"
+        }
+      ],
+      "source": "/(.*)",
+      "destination": "/merashop/privacy.html"
+    },
+    {
+      "has": [
+        {
+          "type": "host",
           "value": "mealmate.idataone.com"
         }
       ],
