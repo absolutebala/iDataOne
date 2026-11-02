@@ -73,6 +73,16 @@
           "value": "merashop.idataone.com"
         }
       ],
+      "source": "/web/pay",
+      "destination": "/merashop/web/pay.html"
+    },
+    {
+      "has": [
+        {
+          "type": "host",
+          "value": "merashop.idataone.com"
+        }
+      ],
       "source": "/(.*)",
       "destination": "/merashop/privacy.html"
     },

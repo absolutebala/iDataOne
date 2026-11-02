@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Pay · Mera Shop</title>
+<style>
+  :root { --green: #1A7F45; --green-dark: #13603A; --text: #16181D; --muted: #5C6370; --border: #E6E8EC; --bg: #F5F6F8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Noto Sans Tamil", "Noto Sans", sans-serif; background: var(--bg); color: var(--text); }
+  main { max-width: 420px; margin: 0 auto; padding: 24px 16px 40px; }
+  .card { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 24px 20px; text-align: center; }
+  .shop { font-size: 18px; font-weight: 700; }
+  .amount { font-size: 44px; font-weight: 800; margin: 10px 0 4px; letter-spacing: -1px; }
+  .note { color: var(--muted); font-size: 14px; min-height: 18px; }
+  a.btn, button.btn { display: block; width: 100%; padding: 16px; border-radius: 12px; font-size: 18px; font-weight: 800; text-decoration: none; border: 0; cursor: pointer; margin-top: 12px; }
+  .primary { background: var(--green); color: #fff; }
+  .primary:active { background: var(--green-dark); }
+  .apps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+  .apps a { display: block; padding: 12px 4px; border: 1px solid var(--border); border-radius: 10px; color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600; background: #fff; }
+  .upi { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .upi b { color: var(--text); user-select: all; }
+  .secondary { background: #fff; color: var(--text); border: 1px solid var(--border) !important; font-size: 15px; padding: 12px; }
+  .ta { display: block; font-size: 13px; font-weight: 500; opacity: .9; margin-top: 2px; }
+  .err { color: #E5484D; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card" id="card">
+    <div class="shop" id="shop"></div>
+    <div class="amount" id="amount"></div>
+    <div class="note" id="note"></div>
+
+    <a class="btn primary" id="pay">Pay now<span class="ta">இப்போது செலுத்தவும்</span></a>
+    <div class="apps">
+      <a id="gpay">Google Pay</a>
+      <a id="phonepe">PhonePe</a>
+      <a id="paytm">Paytm</a>
+    </div>
+
+    <div class="upi">UPI ID: <b id="vpa"></b></div>
+    <button class="btn secondary" id="copy">Copy UPI ID</button>
+  </div>
+  <footer>Mera Shop</footer>
+</main>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var pa = (q.get('pa') || '').trim();
+    var pn = (q.get('pn') || 'Shop').slice(0, 60);
+    var am = (q.get('am') || '').replace(/[^0-9.]/g, '');
+    var tn = (q.get('tn') || '').slice(0, 60);
+    var $ = function (id) { return document.getElementById(id); };
+
+    if (!/^[\w.\-]{2,256}@[a-zA-Z][a-zA-Z0-9]{1,64}$/.test(pa)) {
+      $('card').innerHTML = '<p class="err">This payment link is not valid. Please ask the shop for a new one.</p>';
+      return;
+    }
+
+    var amount = am && Number(am) > 0 ? Number(am) : null;
+    $('shop').textContent = pn;
+    $('amount').textContent = amount ? '₹' + amount.toLocaleString('en-IN', { maximumFractionDigits: 2 }) : '';
+    $('note').textContent = tn;
+    $('vpa').textContent = pa;
+
+    var params = new URLSearchParams({ pa: pa, pn: pn, cu: 'INR' });
+    if (amount) params.set('am', amount.toFixed(2));
+    if (tn) params.set('tn', tn);
+    var qs = params.toString();
+
+    $('pay').href = 'upi://pay?' + qs;
+    $('gpay').href = 'tez://upi/pay?' + qs;
+    $('phonepe').href = 'phonepe://pay?' + qs;
+    $('paytm').href = 'paytmmp://pay?' + qs;
+
+    $('copy').onclick = function () {
+      var done = function () { $('copy').textContent = 'Copied ✓'; };
+      if (navigator.clipboard) navigator.clipboard.writeText(pa).then(done, done);
+      else done();
+    };
+  })();
+</script>
+</body>
+</html>
