@@ -95,6 +95,21 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .step-icon svg{width:22px;height:22px;fill:none;stroke:#818cf8;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .step-title{font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:8px}
 .step-desc{font-size:12.5px;color:rgba(255,255,255,0.45);line-height:1.65}
+/* Process track */
+.proc-track{margin-top:56px;position:relative}
+.proc-line{position:absolute;top:52px;left:72px;right:72px;height:1px;background:rgba(99,102,241,0.2)}
+.proc-steps{display:flex;align-items:flex-start;gap:8px}
+.proc-step{flex:1;display:flex;flex-direction:column;align-items:center;position:relative}
+.proc-num{font-size:11px;font-weight:800;letter-spacing:2px;color:rgba(99,102,241,0.6);margin-bottom:12px}
+.proc-dot{width:10px;height:10px;border-radius:50%;background:#1e1b4b;border:2px solid rgba(99,102,241,0.5);margin-bottom:20px;position:relative;z-index:1}
+.proc-dot--accent{background:#4f46e5;border-color:#818cf8;box-shadow:0 0 0 4px rgba(99,102,241,0.15)}
+.proc-body{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.proc-icon{width:48px;height:48px;border-radius:12px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.proc-icon svg{width:20px;height:20px;fill:none;stroke:#818cf8;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.proc-icon--accent{background:rgba(99,102,241,0.2);border-color:rgba(99,102,241,0.5)}
+.proc-icon--accent svg{stroke:#a5b4fc}
+.proc-title{font-size:13px;font-weight:700;color:#f1f5f9;line-height:1.3}
+.proc-desc{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.6}
 
 /* ── Products ── */
 .products{background:#f8fafc}
@@ -147,9 +162,16 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .process-step:last-child{padding-bottom:0}
   .step-icon{margin:0;flex-shrink:0}
   .step-title{margin-bottom:6px}
-  .process-img-wrap{width:100%!important}
-  .process-img-desktop{display:none!important}
-  .process-img-mobile{display:block!important}
+  .proc-steps{flex-direction:column;gap:0}
+  .proc-line{display:none}
+  .proc-step{flex-direction:row;align-items:flex-start;gap:0;padding-bottom:28px;position:relative}
+  .proc-step::after{content:"";position:absolute;left:51px;top:72px;bottom:0;width:1px;background:rgba(99,102,241,0.25)}
+  .proc-step:last-child::after{display:none}
+  .proc-num{writing-mode:horizontal-tb;transform:none;margin-bottom:0;margin-right:0;width:44px;padding-top:4px;flex-shrink:0}
+  .proc-dot{margin:0;position:absolute;left:46px;top:16px;width:12px;height:12px}
+  .proc-body{flex-direction:row;gap:14px;text-align:left;padding-left:28px}
+  .proc-icon{flex-shrink:0;margin-bottom:0}
+  .proc-step--mid .proc-body{flex-direction:row}
   .products-grid{grid-template-columns:1fr}
   .cta-card{grid-template-columns:1fr;padding:28px 24px}
   .cta-btns{align-items:flex-start}
@@ -288,21 +310,61 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="section-inner">
     <div class="section-tag">Our Process</div>
     <h2 class="section-title">From Idea To Scale</h2>
-    <div class="process-img-wrap" style="margin-top:40px;width:80%;margin-left:auto;margin-right:auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.25)">
-      <img
-        class="process-img-desktop"
-        src="/assets/images/our-process.png"
-        alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
-        style="width:100%;height:auto;display:block"
-        loading="lazy"
-      />
-      <img
-        class="process-img-mobile"
-        src="/assets/images/our-process-mobile.png"
-        alt="iDataOne Process — Tell us your Idea, We turn it into a plan, Build MVP Fast, Approve & Launch, Evolve"
-        style="width:100%;height:auto;display:none"
-        loading="lazy"
-      />
+    <div class="proc-track">
+      <div class="proc-line"></div>
+      <div class="proc-steps">
+
+        <div class="proc-step">
+          <div class="proc-num">01</div>
+          <div class="proc-dot"></div>
+          <div class="proc-body">
+            <div class="proc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div class="proc-title">Tell us your idea</div>
+            <div class="proc-desc">Share your vision or business problem. No detailed document needed.</div>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">02</div>
+          <div class="proc-dot"></div>
+          <div class="proc-body">
+            <div class="proc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div class="proc-title">We turn it into a plan</div>
+            <div class="proc-desc">Define scope, architecture, user flows, and an initial feature roadmap.</div>
+          </div>
+        </div>
+
+        <div class="proc-step proc-step--mid">
+          <div class="proc-num">03</div>
+          <div class="proc-dot proc-dot--accent"></div>
+          <div class="proc-body">
+            <div class="proc-icon proc-icon--accent"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="6" height="14" rx="1"/><rect x="9" y="3" width="6" height="18" rx="1"/><rect x="16" y="10" width="6" height="11" rx="1"/></svg></div>
+            <div class="proc-title">Build MVP Fast</div>
+            <div class="proc-desc">Turn the approved plan into a usable, core-featured product quickly.</div>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">04</div>
+          <div class="proc-dot"></div>
+          <div class="proc-body">
+            <div class="proc-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="proc-title">Approve &amp; Launch</div>
+            <div class="proc-desc">Gather feedback, obtain approval, and release the validated product.</div>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">05</div>
+          <div class="proc-dot"></div>
+          <div class="proc-body">
+            <div class="proc-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <div class="proc-title">Evolve</div>
+            <div class="proc-desc">Analyze data, gather feedback, and iteratively improve features.</div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
