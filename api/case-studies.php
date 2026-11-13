@@ -229,7 +229,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-tag">Case Studies</div>
       <h1 class="hero-h1">Real Results.<br><em>Real Impact.</em></h1>
       <p class="hero-sub">From startups to enterprises — explore how iDataOne has helped businesses build smarter products, integrate AI and turn data into decisions.</p>
       <div class="hero-stats">
