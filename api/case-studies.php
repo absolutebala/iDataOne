@@ -263,14 +263,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       <div class="collage-img ci-3"><img src="/assets/images/risk-platform-hero.png" alt="Risk Platform"/></div>
       <div class="collage-img ci-4"><img src="/assets/images/emr-hero.png" alt="EMR Global"/></div>
       <div class="collage-img ci-5"><img src="/assets/images/mealmate-hero.png" alt="MealMate"/></div>
-      <div class="collage-badge badge-top">
-        <div class="cb-num">300+</div>
-        <div class="cb-label">Hours saved / month</div>
-      </div>
-      <div class="collage-badge badge-bottom">
-        <div class="cb-num">2,200+</div>
-        <div class="cb-label">Projects tracked</div>
-      </div>
     </div>
   </div>
 </section>
