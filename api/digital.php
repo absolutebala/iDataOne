@@ -322,7 +322,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Process ── -->
 <section class="section process">
   <div class="section-inner">
-    <div class="section-tag">Our Process</div>
     <h2 class="section-title">From Idea To Scale</h2>
     <div class="proc-track">
       <div class="proc-line"></div>
@@ -332,7 +331,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="proc-num">01</div>
           <div class="proc-dot"></div>
           <div class="proc-body">
-            <div class="proc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div class="proc-icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 4 12.9V17H8v-2.1A7 7 0 0 1 12 2z"/></svg></div>
             <div class="proc-title">Tell us your idea</div>
             <div class="proc-desc">Share your vision or business problem. No detailed document needed.</div>
           </div>
@@ -387,7 +386,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="cta-section">
   <div class="cta-card">
     <div class="cta-card-left">
-      <div class="cta-icon"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
       <h2 class="cta-heading">Ready To Build Something <em>Intelligent?</em></h2>
       <p class="cta-sub">Whether you're launching a startup, modernising an enterprise platform, or building a SaaS product — we can help you get there.</p>
     </div>
