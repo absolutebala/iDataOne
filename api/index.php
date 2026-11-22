@@ -1155,8 +1155,8 @@ letter-spacing:0.3px;
 <section class="screen active">
 <div class="container">
 <img src="/assets/images/iDataOneLogoFinal.png" class="logo" alt="iDataOne Logo">
-<h1>Engineering <span class="highlight">AI-First Products</span><br>and Intelligent Data Platforms</h1>
-<p>We help businesses build digital products powered by unified data,<br>automation, and AI-driven insights.</p>
+<h1>Your Business Matters.<br><span class="highlight">Your Success Comes First.</span></h1>
+<p>We design, build and scale digital products, AI-powered solutions and intelligent data platforms that solve real business challenges and deliver measurable value.</p>
 <div style="display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap">
   <div class="hero-explore-btn" onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s,transform 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
   <a href="/case-studies" style="padding:13px 28px;border-radius:12px;border:1.5px solid rgba(245,197,24,0.6);color:#f5c518;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none">CASE STUDIES →</a>
