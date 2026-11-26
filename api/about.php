@@ -36,21 +36,22 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 
 /* ── HERO ── */
 .hero{min-height:calc(100vh - 68px);display:flex;align-items:center;padding:72px 32px 64px;position:relative;overflow:hidden;
-  background:radial-gradient(ellipse at 75% 30%,rgba(0,212,255,0.1),transparent 50%),radial-gradient(ellipse at 20% 70%,rgba(245,197,24,0.07),transparent 45%),linear-gradient(135deg,#0a0f1e 0%,#0d1535 60%,#0a0f1e 100%)}
-.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+  background:radial-gradient(ellipse at 75% 25%,rgba(13,148,136,0.10),transparent 50%),radial-gradient(ellipse at 20% 70%,rgba(245,197,24,0.10),transparent 45%),linear-gradient(145deg,#f0faf5 0%,#e1f4ea 35%,#d5efe2 60%,#ecf8f2 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.035) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:28px}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;margin-bottom:16px;color:#ffffff}
-.hero-sub{font-size:18px;font-weight:500;color:rgba(255,255,255,0.65);margin-bottom:28px;letter-spacing:-0.2px}
+.hero-h1{font-size:clamp(44px,6vw,80px);font-weight:900;letter-spacing:-4px;line-height:1.0;margin-bottom:16px;color:#0f172a}
+.hero .gold{background:linear-gradient(90deg,#d97706,#0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:18px;font-weight:500;color:#475569;margin-bottom:28px;letter-spacing:-0.2px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:52px}
 .btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#0891b2;color:#fff;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#f5c518;color:#0a0f1e;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-o:hover{opacity:0.9;transform:translateY(-1px)}
-.hero-img{width:100%;border-radius:20px;display:block;border:1px solid rgba(0,212,255,0.15);box-shadow:0 32px 80px rgba(0,0,0,0.5);position:relative}
+.hero-img{width:100%;border-radius:20px;display:block;border:6px solid #fff;box-shadow:0 30px 70px rgba(15,23,42,0.18),0 8px 24px rgba(15,23,42,0.08);position:relative}
 .hero-img-wrap{position:relative;width:100%}
-.hero-img-fade{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(transparent,#0e0c18);border-radius:0 0 20px 20px;pointer-events:none}
+.hero-img-fade{display:none}
 
 /* ── STATS BAR ── */
 .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:0;padding:40px 32px}
@@ -243,7 +244,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   <div class="hero-inner">
     <h1 class="hero-h1">Build More.<br><span class="gold">Spend Less.</span></h1>
     <p class="hero-sub">Human-led. AI-powered. Enterprise-ready.</p>
-    <p style="font-size:12.5px;color:rgba(255,255,255,0.4);margin-top:-14px;margin-bottom:20px;font-style:italic">Founded by <a href="https://linkedin.com/in/balakandaswamy" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6);text-decoration:underline">Bala Kandaswamy</a> — his second startup after a successful exit from <a href="https://www.linkedin.com/company/contustech/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6);text-decoration:underline">Contus Tech</a>.</p>
+    <p style="font-size:12.5px;color:#64748b;margin-top:-14px;margin-bottom:20px;font-style:italic">Founded by <a href="https://linkedin.com/in/balakandaswamy" target="_blank" rel="noopener" style="color:#0f766e;text-decoration:underline">Bala Kandaswamy</a> — his second startup after a successful exit from <a href="https://www.linkedin.com/company/contustech/" target="_blank" rel="noopener" style="color:#0f766e;text-decoration:underline">Contus Tech</a>.</p>
     <div class="hero-img-wrap">
       <img src="/assets/images/team-hero.png" alt="iDataOne delivery team — Bala Kandaswamy (Delivery Head) with AI specialists Pixel, Forge, Insight and Sentinel" class="hero-img" loading="eager"/>
       <div class="hero-img-fade"></div>
