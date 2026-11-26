@@ -75,22 +75,32 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .stat-item:nth-child(4) .stat-num{background:linear-gradient(90deg,#db2777,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-label{font-size:11px;color:#64748b;letter-spacing:0.3px;line-height:1.4}
 
-/* ── Collage ── */
-.hero-collage{position:relative;height:540px;width:100%;max-width:540px;justify-self:end}
-.collage-img{position:absolute;display:flex;flex-direction:column;background:#fff;padding:8px 8px 0;border-radius:18px;border:1px solid rgba(15,23,42,0.06);box-shadow:0 18px 44px rgba(15,23,42,0.14),0 4px 12px rgba(15,23,42,0.06);transition:transform 0.4s ease,box-shadow 0.4s ease;text-decoration:none}
-.collage-img img{width:100%;flex:1;min-height:0;object-fit:cover;object-position:center top;display:block;border-radius:12px}
-.collage-cap{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 4px 10px;font-size:12px;font-weight:600;color:#0f172a;white-space:nowrap}
-.collage-cap span{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:999px}
-.ci-1{width:256px;height:240px;top:0;left:0;transform:rotate(-2deg)}
-.ci-2{width:256px;height:240px;top:44px;right:0;transform:rotate(1.5deg)}
-.ci-3{width:256px;height:240px;top:262px;left:0;transform:rotate(1.5deg)}
-.ci-4{width:256px;height:240px;top:300px;right:0;transform:rotate(-2deg)}
-.collage-badge{position:absolute;z-index:10;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(15,23,42,0.08);border-radius:12px;padding:10px 16px;white-space:nowrap}
-.badge-top{top:120px;left:-10px}
-.badge-bottom{bottom:60px;right:-10px}
-.cb-num{font-size:22px;font-weight:800;letter-spacing:-1px;background:linear-gradient(90deg,#34d399,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
-.cb-label{font-size:11px;color:#64748b;margin-top:2px}
-.collage-img:hover{transform:rotate(0deg) scale(1.04)!important;z-index:6;box-shadow:0 24px 56px rgba(15,23,42,0.2)}
+/* ── Hero panel ── */
+.hero-panel{position:relative;width:100%;max-width:500px;justify-self:end;padding:48px 0 96px}
+.hp-card{position:relative;z-index:2;background:rgba(255,255,255,0.86);backdrop-filter:blur(14px);border:1px solid rgba(15,23,42,0.07);border-radius:24px;box-shadow:0 30px 70px rgba(76,29,149,0.12),0 8px 24px rgba(15,23,42,0.06);padding:24px}
+.hp-head{display:flex;align-items:center;gap:10px;margin-bottom:16px;min-height:28px}
+.hp-title{font-size:13px;font-weight:700;color:#0f172a;letter-spacing:-0.1px}
+.hp-chip{font-size:11px;font-weight:600;color:#4f46e5;background:#eef2ff;border-radius:999px;padding:4px 10px}
+.hp-row{display:flex;align-items:center;gap:14px;padding:13px 4px;border-top:1px solid rgba(15,23,42,0.06);text-decoration:none;color:inherit;border-radius:12px;transition:background 0.2s}
+.hp-row:hover{background:rgba(99,102,241,0.05)}
+.hp-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.hp-icon svg{width:18px;height:18px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hp-name{flex:1;min-width:0}
+.hp-name b{display:block;font-size:13.5px;font-weight:600;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hp-name span{font-size:11.5px;color:#64748b}
+.hp-metric{text-align:right}
+.hp-metric b{display:block;font-size:18px;font-weight:800;letter-spacing:-0.5px;color:#0f172a;line-height:1.1}
+.hp-metric span{font-size:11px;color:#64748b}
+.hp-float{position:absolute;z-index:3;background:#fff;border:1px solid rgba(15,23,42,0.07);border-radius:18px;box-shadow:0 18px 40px rgba(15,23,42,0.10);padding:14px 16px}
+.hp-f1{top:0;right:-44px;width:200px}
+.hp-f2{bottom:0;left:-48px;width:240px}
+.hp-flabel{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#94a3b8;margin-bottom:8px}
+.hp-tags{display:flex;flex-wrap:wrap;gap:5px}
+.hp-tags span{font-size:11px;font-weight:500;color:#334155;background:#f1f5f9;border-radius:999px;padding:3px 9px}
+.hp-bar{display:grid;grid-template-columns:52px 1fr 18px;align-items:center;gap:8px;font-size:11.5px;color:#334155;margin-top:6px}
+.hp-bar i{display:block;height:6px;border-radius:999px;background:#f1f5f9;overflow:hidden}
+.hp-bar i em{display:block;height:100%;border-radius:999px}
+.hp-bar b{font-weight:700;color:#0f172a;text-align:right}
 
 /* ── Filter tabs ── */
 .filter-wrap{background:#fff;position:sticky;top:68px;z-index:50;border-bottom:1px solid rgba(226,232,240,0.8);padding:0 32px}
@@ -188,7 +198,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   .cases-grid{grid-template-columns:1fr 1fr}
   .bottom-cta-card{grid-template-columns:1fr;padding:40px}
   .hero-inner{grid-template-columns:1fr;gap:40px}
-  .hero-collage{display:none}
+  .hero-panel{display:none}
   .hero-stats{border-radius:16px}
   .stat-item{padding:16px 12px}
   .stat-num{font-size:26px}
@@ -257,11 +267,45 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     </div>
 
     <!-- Photo collage -->
-    <div class="hero-collage">
-      <a href="/case-study/telecom-pm-platform" class="collage-img ci-1"><img src="/assets/images/telecom-pm-hero.png" alt="Telecom PM Platform case study"/><div class="collage-cap">Telecom PM Platform<span style="background:#eef2ff;color:#4f46e5">Digital</span></div></a>
-      <a href="/case-study/nivochat" class="collage-img ci-2"><img src="/assets/images/aidesker-hero.png" alt="NivoChat case study"/><div class="collage-cap">NivoChat<span style="background:#f5f3ff;color:#7c3aed">AI</span></div></a>
-      <a href="/case-study/production-control-tower" class="collage-img ci-3"><img src="/assets/images/production-tower-hero.png" alt="Production Control Tower case study"/><div class="collage-cap">Production Control Tower<span style="background:#fffbeb;color:#b45309">Data</span></div></a>
-      <a href="/case-study/emr-global-field-engineers" class="collage-img ci-4"><img src="/assets/images/emr-hero.png" alt="EMR Global case study"/><div class="collage-cap">EMR Global<span style="background:#eef2ff;color:#4f46e5">Digital</span></div></a>
+    <div class="hero-panel" aria-label="Case study highlights">
+      <div class="hp-float hp-f1">
+        <div class="hp-flabel">Industries served</div>
+        <div class="hp-tags"><span>Telecom</span><span>Manufacturing</span><span>FMCG</span><span>Finance</span><span>Sports</span></div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-head"><span class="hp-title">Delivered outcomes</span><span class="hp-chip">15 case studies</span></div>
+        <a class="hp-row" href="/case-study/telecom-pm-platform">
+          <span class="hp-icon" style="background:#eef2ff"><svg viewBox="0 0 24 24" stroke="#4f46e5"><path d="M12 2v20M5 9l7-7 7 7M8 22l4-6 4 6"/></svg></span>
+          <span class="hp-name"><b>Telecom PM Platform</b><span>Telecom · Digital Product</span></span>
+          <span class="hp-metric"><b>2,200+</b><span>projects tracked</span></span>
+        </a>
+        <a class="hp-row" href="/case-study/finance-automation">
+          <span class="hp-icon" style="background:#f5f3ff"><svg viewBox="0 0 24 24" stroke="#7c3aed"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></span>
+          <span class="hp-name"><b>Finance Automation</b><span>Finance · AI &amp; Automation</span></span>
+          <span class="hp-metric"><b>300+</b><span>hours saved / month</span></span>
+        </a>
+        <a class="hp-row" href="/case-study/risk-dashboard">
+          <span class="hp-icon" style="background:#fffbeb"><svg viewBox="0 0 24 24" stroke="#d97706"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></span>
+          <span class="hp-name"><b>Risk Intelligence Dashboard</b><span>FMCG · Data Intelligence</span></span>
+          <span class="hp-metric"><b>124</b><span>risks tracked live</span></span>
+        </a>
+        <a class="hp-row" href="/case-study/production-control-tower">
+          <span class="hp-icon" style="background:#fffbeb"><svg viewBox="0 0 24 24" stroke="#d97706"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/></svg></span>
+          <span class="hp-name"><b>Production Control Tower</b><span>Manufacturing · Data Intelligence</span></span>
+          <span class="hp-metric"><b>7</b><span>departments, one view</span></span>
+        </a>
+        <a class="hp-row" href="/case-study/emr-global-field-engineers">
+          <span class="hp-icon" style="background:#eef2ff"><svg viewBox="0 0 24 24" stroke="#4f46e5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg></span>
+          <span class="hp-name"><b>EMR Global Field Service</b><span>Manufacturing · Digital Product</span></span>
+          <span class="hp-metric"><b>50+</b><span>field engineers</span></span>
+        </a>
+      </div>
+      <div class="hp-float hp-f2">
+        <div class="hp-flabel">Case studies by practice</div>
+        <div class="hp-bar">Digital<i><em style="width:100%;background:#4f46e5"></em></i><b>7</b></div>
+        <div class="hp-bar">AI<i><em style="width:71%;background:#c084fc"></em></i><b>5</b></div>
+        <div class="hp-bar">Data<i><em style="width:43%;background:#d97706"></em></i><b>3</b></div>
+      </div>
     </div>
   </div>
 </section>
