@@ -254,12 +254,12 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="stat-accent"></div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">4</div>
+          <div class="stat-num">2</div>
           <div class="stat-label">AI &amp; Automation</div>
           <div class="stat-accent"></div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">3</div>
+          <div class="stat-num">2</div>
           <div class="stat-label">Data Intelligence</div>
           <div class="stat-accent"></div>
         </div>
@@ -273,7 +273,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div class="hp-tags"><span>Telecom</span><span>Manufacturing</span><span>FMCG</span><span>Finance</span><span>Sports</span></div>
       </div>
       <div class="hp-card">
-        <div class="hp-head"><span class="hp-title">Delivered outcomes</span><span class="hp-chip">15 case studies</span></div>
+        <div class="hp-head"><span class="hp-title">Delivered outcomes</span><span class="hp-chip">10 case studies</span></div>
         <a class="hp-row" href="/case-study/telecom-pm-platform">
           <span class="hp-icon" style="background:#eef2ff"><svg viewBox="0 0 24 24" stroke="#4f46e5"><path d="M12 2v20M5 9l7-7 7 7M8 22l4-6 4 6"/></svg></span>
           <span class="hp-name"><b>Telecom PM Platform</b><span>Telecom · Digital Product</span></span>
@@ -302,9 +302,9 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
       </div>
       <div class="hp-float hp-f2">
         <div class="hp-flabel">Case studies by practice</div>
-        <div class="hp-bar">Digital<i><em style="width:100%;background:#4f46e5"></em></i><b>7</b></div>
-        <div class="hp-bar">AI<i><em style="width:71%;background:#c084fc"></em></i><b>5</b></div>
-        <div class="hp-bar">Data<i><em style="width:43%;background:#d97706"></em></i><b>3</b></div>
+        <div class="hp-bar">Digital<i><em style="width:100%;background:#4f46e5"></em></i><b>6</b></div>
+        <div class="hp-bar">AI<i><em style="width:33%;background:#c084fc"></em></i><b>2</b></div>
+        <div class="hp-bar">Data<i><em style="width:33%;background:#d97706"></em></i><b>2</b></div>
       </div>
     </div>
   </div>
@@ -313,10 +313,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">15</span></button>
-    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">7</span></button>
-    <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">5</span></button>
-    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">3</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">10</span></button>
+    <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">6</span></button>
+    <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">2</span></button>
+    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
   </div>
 </div>
 

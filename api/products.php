@@ -78,7 +78,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .ps{max-width:1140px;margin:0 auto;padding:72px 32px 100px}
 .ps-head{text-align:center;max-width:640px;margin:0 auto 28px}
 .ps-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#047857;margin-bottom:12px}
-.ps-h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;letter-spacing:-1.4px;color:#0f172a;line-height:1.15;margin-bottom:12px}
+.ps-h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;letter-spacing:-1.4px;color:#0f172a;line-height:1.15;margin-bottom:0}
 .ps-lead{font-size:15px;color:#64748b;line-height:1.7}
 .ps-jump{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 auto 64px}
 .ps-jump a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(15,23,42,0.1);background:#fff;font-size:13px;font-weight:600;color:#0f172a;text-decoration:none;transition:border-color 0.2s,box-shadow 0.2s}
@@ -188,7 +188,6 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <section class="pb">
   <div class="pb-inner">
     <div>
-      <div class="pb-tag">Our Products</div>
       <h1 class="pb-h1">Products We Build.<br><em>And Run Ourselves.</em></h1>
       <p class="pb-sub">Beyond client work, we design, ship and operate our own platforms — AI chat, infrastructure project management, sports identity and decision intelligence.</p>
       <div class="pb-ctas">
@@ -232,9 +231,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 <div class="ps" id="products">
   <div class="ps-head">
-    <div class="ps-tag">The Product Suite</div>
     <h2 class="ps-h2">Four products, each solving one real problem</h2>
-    <p class="ps-lead">Pick a product to see what it does, who it is for and how to get started.</p>
   </div>
   <nav class="ps-jump" aria-label="Jump to a product"><a href="#nivochat"><i style="background:#10b981"></i>NivoChat <small>Live</small></a><a href="#infra360"><i style="background:#10b981"></i>Infra360 PMS <small>Live</small></a><a href="#isportone"><i style="background:#94a3b8"></i>iSportOne <small>In development</small></a><a href="#datinsights"><i style="background:#22d3ee"></i>DatInsights <small>Coming soon</small></a></nav>
   <section class="ps-row" id="nivochat" aria-labelledby="nivochat-name">
