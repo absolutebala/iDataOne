@@ -76,20 +76,21 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .stat-label{font-size:11px;color:#64748b;letter-spacing:0.3px;line-height:1.4}
 
 /* ── Collage ── */
-.hero-collage{position:relative;height:500px}
-.collage-img{position:absolute;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(15,23,42,0.2);transition:transform 0.4s ease}
-.collage-img img{width:100%;height:100%;object-fit:cover;display:block}
-.ci-1{width:220px;height:270px;top:0;left:30px;transform:rotate(-3deg)}
-.ci-2{width:200px;height:150px;top:0;right:0;transform:rotate(2.5deg)}
-.ci-3{width:180px;height:220px;top:170px;right:20px;transform:rotate(-2deg)}
-.ci-4{width:230px;height:160px;bottom:0;left:0;transform:rotate(2deg)}
-.ci-5{width:160px;height:170px;bottom:20px;left:200px;transform:rotate(-1.5deg)}
+.hero-collage{position:relative;height:540px;width:100%;max-width:540px;justify-self:end}
+.collage-img{position:absolute;display:flex;flex-direction:column;background:#fff;padding:8px 8px 0;border-radius:18px;border:1px solid rgba(15,23,42,0.06);box-shadow:0 18px 44px rgba(15,23,42,0.14),0 4px 12px rgba(15,23,42,0.06);transition:transform 0.4s ease,box-shadow 0.4s ease;text-decoration:none}
+.collage-img img{width:100%;flex:1;min-height:0;object-fit:cover;object-position:center top;display:block;border-radius:12px}
+.collage-cap{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 4px 10px;font-size:12px;font-weight:600;color:#0f172a;white-space:nowrap}
+.collage-cap span{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:999px}
+.ci-1{width:256px;height:240px;top:0;left:0;transform:rotate(-2deg)}
+.ci-2{width:256px;height:240px;top:44px;right:0;transform:rotate(1.5deg)}
+.ci-3{width:256px;height:240px;top:262px;left:0;transform:rotate(1.5deg)}
+.ci-4{width:256px;height:240px;top:300px;right:0;transform:rotate(-2deg)}
 .collage-badge{position:absolute;z-index:10;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid rgba(15,23,42,0.08);border-radius:12px;padding:10px 16px;white-space:nowrap}
 .badge-top{top:120px;left:-10px}
 .badge-bottom{bottom:60px;right:-10px}
 .cb-num{font-size:22px;font-weight:800;letter-spacing:-1px;background:linear-gradient(90deg,#34d399,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
 .cb-label{font-size:11px;color:#64748b;margin-top:2px}
-.collage-img:hover{transform:rotate(0deg) scale(1.03)!important;z-index:5}
+.collage-img:hover{transform:rotate(0deg) scale(1.04)!important;z-index:6;box-shadow:0 24px 56px rgba(15,23,42,0.2)}
 
 /* ── Filter tabs ── */
 .filter-wrap{background:#fff;position:sticky;top:68px;z-index:50;border-bottom:1px solid rgba(226,232,240,0.8);padding:0 32px}
@@ -257,11 +258,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
     <!-- Photo collage -->
     <div class="hero-collage">
-      <div class="collage-img ci-1"><img src="/assets/images/telecom-pm-hero.png" alt="Telecom PM Platform"/></div>
-      <div class="collage-img ci-2"><img src="/assets/images/knight-ryders-hero.png" alt="Knight Ryders"/></div>
-      <div class="collage-img ci-3"><img src="/assets/images/risk-platform-hero.png" alt="Risk Platform"/></div>
-      <div class="collage-img ci-4"><img src="/assets/images/emr-hero.png" alt="EMR Global"/></div>
-      <div class="collage-img ci-5"><img src="/assets/images/mealmate-hero.png" alt="MealMate"/></div>
+      <a href="/case-study/telecom-pm-platform" class="collage-img ci-1"><img src="/assets/images/telecom-pm-hero.png" alt="Telecom PM Platform case study"/><div class="collage-cap">Telecom PM Platform<span style="background:#eef2ff;color:#4f46e5">Digital</span></div></a>
+      <a href="/case-study/nivochat" class="collage-img ci-2"><img src="/assets/images/aidesker-hero.png" alt="NivoChat case study"/><div class="collage-cap">NivoChat<span style="background:#f5f3ff;color:#7c3aed">AI</span></div></a>
+      <a href="/case-study/production-control-tower" class="collage-img ci-3"><img src="/assets/images/production-tower-hero.png" alt="Production Control Tower case study"/><div class="collage-cap">Production Control Tower<span style="background:#fffbeb;color:#b45309">Data</span></div></a>
+      <a href="/case-study/emr-global-field-engineers" class="collage-img ci-4"><img src="/assets/images/emr-hero.png" alt="EMR Global case study"/><div class="collage-cap">EMR Global<span style="background:#eef2ff;color:#4f46e5">Digital</span></div></a>
     </div>
   </div>
 </section>
