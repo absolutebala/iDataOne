@@ -74,6 +74,47 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 .cta-rose svg{stroke:#e11d48}
 
 @media(max-width:640px){.p-grid{grid-template-columns:1fr}}
+/* Banner */
+.pb{position:relative;overflow:hidden;padding:88px 32px 84px;background:radial-gradient(ellipse at 15% 40%,rgba(16,185,129,0.10),transparent 50%),radial-gradient(ellipse at 85% 20%,rgba(8,145,178,0.08),transparent 45%),linear-gradient(145deg,#f1fbf6 0%,#e2f5ec 35%,#d6f0e4 60%,#eef9f4 100%)}
+.pb::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.pb-inner{position:relative;z-index:1;max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.pb-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#047857;padding:6px 14px;border-radius:999px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.22);margin-bottom:22px}
+.pb-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:#10b981}
+.pb-h1{font-size:clamp(36px,4.6vw,58px);font-weight:800;letter-spacing:-2.2px;line-height:1.05;color:#0f172a;margin-bottom:18px}
+.pb-h1 em{font-style:normal;background:linear-gradient(90deg,#059669,#0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.pb-sub{font-size:16px;color:#475569;line-height:1.75;max-width:480px;margin-bottom:30px}
+.pb-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.pb-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
+.pb-btn:hover{transform:translateY(-1px)}
+.pb-btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.pb-btn-p{background:#0f172a;color:#fff;box-shadow:0 10px 24px rgba(15,23,42,0.18)}
+.pb-btn-s{background:#fff;color:#0f172a;border:1px solid rgba(15,23,42,0.12)}
+.pb-stats{display:flex;border:1px solid rgba(15,23,42,0.08);border-radius:18px;background:rgba(255,255,255,0.7);overflow:hidden;max-width:460px}
+.pb-stat{flex:1;padding:18px 16px;text-align:center;border-right:1px solid rgba(15,23,42,0.07)}
+.pb-stat:last-child{border-right:0}
+.pb-stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-1px;color:#0f172a;line-height:1}
+.pb-stat span{font-size:11.5px;color:#64748b}
+.pb-panel{position:relative;max-width:480px;justify-self:end;width:100%}
+.pb-card{background:rgba(255,255,255,0.88);backdrop-filter:blur(14px);border:1px solid rgba(15,23,42,0.07);border-radius:24px;box-shadow:0 30px 70px rgba(4,120,87,0.12),0 8px 24px rgba(15,23,42,0.06);padding:22px}
+.pb-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;padding:0 4px}
+.pb-head b{font-size:13px;color:#0f172a}
+.pb-head span{font-size:11px;font-weight:600;color:#047857;background:#ecfdf5;border-radius:999px;padding:4px 10px}
+.pb-row{display:flex;align-items:center;gap:14px;padding:14px 6px;border-top:1px solid rgba(15,23,42,0.06);text-decoration:none;color:inherit;border-radius:12px;transition:background 0.2s}
+.pb-row:hover{background:rgba(16,185,129,0.06)}
+.pb-ic{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.pb-ic svg{width:20px;height:20px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pb-nm{flex:1;min-width:0}
+.pb-nm b{display:block;font-size:14px;font-weight:700;color:#0f172a}
+.pb-nm span{font-size:12px;color:#64748b}
+.pb-st{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.st-live{background:#ecfdf5;color:#047857}
+.st-dev{background:#f1f5f9;color:#475569}
+.st-soon{background:#ecfeff;color:#0e7490}
+.pb-float{position:absolute;right:-36px;bottom:-30px;background:#fff;border:1px solid rgba(15,23,42,0.07);border-radius:16px;box-shadow:0 18px 40px rgba(15,23,42,0.1);padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:12px;color:#334155}
+.pb-float i{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 4px rgba(16,185,129,0.15)}
+.pb-float b{color:#0f172a}
+@media(max-width:900px){.pb-inner{grid-template-columns:1fr;gap:40px}.pb-panel{justify-self:stretch;max-width:none}.pb-float{display:none}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -94,7 +135,52 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 
 
 
-<div class="p-wrap" style="padding-top:80px">
+<section class="pb">
+  <div class="pb-inner">
+    <div>
+      <div class="pb-tag">Our Products</div>
+      <h1 class="pb-h1">Products We Build.<br><em>And Run Ourselves.</em></h1>
+      <p class="pb-sub">Beyond client work, we design, ship and operate our own platforms — AI chat, infrastructure project management, sports identity and decision intelligence.</p>
+      <div class="pb-ctas">
+        <a href="#products" class="pb-btn pb-btn-p">Explore Products <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="/contact" class="pb-btn pb-btn-s">Build Yours With Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="pb-stats">
+        <div class="pb-stat"><b>4</b><span>Products</span></div>
+        <div class="pb-stat"><b>2</b><span>Live today</span></div>
+        <div class="pb-stat"><b>2</b><span>In the pipeline</span></div>
+      </div>
+    </div>
+    <div class="pb-panel" aria-label="iDataOne products">
+      <div class="pb-card">
+        <div class="pb-head"><b>iDataOne product suite</b><span>2 live</span></div>
+        <a class="pb-row" href="https://nivochat.idataone.com/" target="_blank" rel="noopener">
+          <span class="pb-ic" style="background:#e0f2fe"><svg viewBox="0 0 24 24" stroke="#0284c7"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></span>
+          <span class="pb-nm"><b>NivoChat</b><span>Conversational AI</span></span>
+          <span class="pb-st st-live">Live</span>
+        </a>
+        <a class="pb-row" href="https://infra360.idataone.com/" target="_blank" rel="noopener">
+          <span class="pb-ic" style="background:#eef2ff"><svg viewBox="0 0 24 24" stroke="#4f46e5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></span>
+          <span class="pb-nm"><b>Infra360 PMS</b><span>Project Management</span></span>
+          <span class="pb-st st-live">Live</span>
+        </a>
+        <a class="pb-row" href="/isportone">
+          <span class="pb-ic" style="background:#fff1f2"><svg viewBox="0 0 24 24" stroke="#e11d48"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18M3 12h18M5.6 5.6c3.5 2.5 9.3 2.5 12.8 0M5.6 18.4c3.5-2.5 9.3-2.5 12.8 0"/></svg></span>
+          <span class="pb-nm"><b>iSportOne</b><span>Sports Platform</span></span>
+          <span class="pb-st st-dev">In Development</span>
+        </a>
+        <a class="pb-row" href="#datinsights">
+          <span class="pb-ic" style="background:#ecfeff"><svg viewBox="0 0 24 24" stroke="#0891b2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></span>
+          <span class="pb-nm"><b>DatInsights</b><span>Decision Intelligence</span></span>
+          <span class="pb-st st-soon">Coming Soon</span>
+        </a>
+      </div>
+      <div class="pb-float"><i></i><span><b>NivoChat</b> &amp; <b>Infra360</b> in production</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="p-wrap" id="products" style="padding-top:64px;scroll-margin-top:80px">
   <div class="p-grid">
 
     <div class="p-card">
