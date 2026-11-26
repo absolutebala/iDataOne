@@ -6,18 +6,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Production Control Tower for Manufacturing | iDataOne</title>
-<meta name="description" content="How iDataOne designed a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
+<meta name="description" content="How iDataOne built a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
 <meta name="keywords" content="production tracking case study, manufacturing control tower, SAP production dashboard, IoT shop floor monitoring, order tracking across departments, iDataOne">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Production Control Tower for Manufacturing | iDataOne">
-<meta property="og:description" content="How iDataOne designed a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
+<meta property="og:description" content="How iDataOne built a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
 <meta property="og:url" content="https://idataone.com/case-study/production-control-tower">
 <meta property="og:image" content="https://idataone.com/assets/images/og-production-tower.png">
 <meta property="og:site_name" content="iDataOne">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Production Control Tower for Manufacturing | iDataOne">
-<meta name="twitter:description" content="How iDataOne designed a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
+<meta name="twitter:description" content="How iDataOne built a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.">
 <meta name="twitter:image" content="https://idataone.com/assets/images/og-production-tower.png">
 <script type="application/ld+json">
 {
@@ -25,7 +25,7 @@
   "@type": "Article",
   "headline": "Production Control Tower for a Manufacturing Engineering Company",
   "image": "https://idataone.com/assets/images/og-production-tower.png",
-  "description": "How iDataOne designed a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.",
+  "description": "How iDataOne built a production control tower that unites SAP, IoT and department-head updates into one live view of every order across every department.",
   "author": {"@id": "https://idataone.com/#organization"},
   "publisher": {"@id": "https://idataone.com/#organization"},
   "url": "https://idataone.com/case-study/production-control-tower",
@@ -123,7 +123,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div>
       <a href="/industries/manufacturing" class="cs-badge" style="text-decoration:none">Manufacturing Industry Solutions</a>
       <h1 class="cs-hero-title">Production Control Tower for a Manufacturing Engineering Company</h1>
-      <p class="cs-hero-sub">How we designed a live production control tower that unites SAP, IoT and department-head inputs, so leadership sees where every order stands in every department and acts before deliveries slip.</p>
+      <p class="cs-hero-sub">How we built a live production control tower that unites SAP, IoT and department-head inputs — so leadership sees where every order stands in every department and acts before deliveries slip.</p>
       <div class="cs-hero-stats">
         <div class="cs-stat"><div class="cs-stat-num"><span>7</span></div><div class="cs-stat-label">Departments</div></div>
         <div class="cs-stat"><div class="cs-stat-num"><span>3</span></div><div class="cs-stat-label">Data Sources</div></div>
@@ -152,7 +152,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-inner">
     <div class="cs-tag">The Solution</div>
     <h2 class="cs-h2">One Live Control Tower for Every Order</h2>
-    <p class="cs-p">We designed a production control tower that combines SAP transactions, live machine data and structured shift updates from every department head — turning them into one view of every order across every department, with the forecasts and actions needed to keep deliveries on time.</p>
+    <p class="cs-p">We built a production control tower that combines SAP transactions, live machine data and structured shift updates from every department head — turning them into one view of every order across every department, with the forecasts and actions needed to keep deliveries on time.</p>
 
     <div class="cs-visual" style="padding:0;background:none;border:none">
       <span class="hz-wrap"><img src="/assets/images/production-tower-architecture.png" alt="Production control tower architecture — SAP, IoT and department head app feeding a unified order model, six modules and actions such as alerts, approvals and recovery plans" style="width:100%;height:auto;display:block;border-radius:20px;box-shadow:0 24px 64px rgba(13,148,136,0.18),0 8px 24px rgba(15,23,42,0.12);cursor:zoom-in" onclick="hzOpen(this.src,this.alt)" onmouseover="hzHover(this)"><span class="hz-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span></span>
@@ -192,7 +192,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
   <div class="cs-inner">
     <div class="cs-tag">The Impact</div>
     <h2 class="cs-h2">From End-of-Day Reports to a Live Control Tower</h2>
-    <p class="cs-p">The control tower is designed to replace end-of-day spreadsheets and status calls with one live view. Instead of discovering delays at dispatch, leadership sees them in the department where they start — with the reason, the owner and the recovery options in one place.</p>
+    <p class="cs-p">With the control tower, end-of-day spreadsheets and status calls give way to one live view. Leadership sees a delay in the department where it starts — not at dispatch — with the reason, the owner and the recovery options in one place.</p>
     <div class="cs-results">
       <div class="cs-result"><div class="cs-result-num">Live</div><div class="cs-result-label">Order status across<br>every department</div></div>
       <div class="cs-result"><div class="cs-result-num">Every Shift</div><div class="cs-result-label">Challenges captured from<br>each department head</div></div>

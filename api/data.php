@@ -192,7 +192,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         <div>
           <div class="story-tag">Production Analytics</div>
           <div class="story-title">Production Control Tower for a Manufacturing Engineering Company</div>
-          <div class="story-desc">We designed a live control tower that unites SAP, IoT and department-head updates — tracking every order across 7 departments with handoffs, ETA forecasts, wastage and capacity planning.</div>
+          <div class="story-desc">We built a live control tower that unites SAP, IoT and department-head updates — tracking every order across 7 departments with handoffs, ETA forecasts, wastage and capacity planning.</div>
           <a href="/case-study/production-control-tower" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
         <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;align-self:stretch">
