@@ -36,7 +36,7 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 
 /* ── HERO ── */
 .hero{min-height:calc(100vh - 68px);display:flex;align-items:center;padding:72px 32px 64px;position:relative;overflow:hidden;
-  background:radial-gradient(ellipse at 75% 25%,rgba(13,148,136,0.10),transparent 50%),radial-gradient(ellipse at 20% 70%,rgba(245,197,24,0.10),transparent 45%),linear-gradient(145deg,#f0faf5 0%,#e1f4ea 35%,#d5efe2 60%,#ecf8f2 100%)}
+  background:radial-gradient(ellipse at 50% 70%,rgba(155,185,211,0.45),transparent 60%),radial-gradient(ellipse at 15% 20%,rgba(245,197,24,0.06),transparent 45%),linear-gradient(180deg,#f4f7fb 0%,#e4ecf4 45%,#d3dfeb 100%)}
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,0.035) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .hero-inner{max-width:1140px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;border:1px solid rgba(0,212,255,0.2);background:rgba(0,212,255,0.06);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#00d4ff;margin-bottom:28px}
@@ -49,8 +49,8 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
 .btn-p:hover{opacity:0.9;transform:translateY(-1px)}
 .btn-o{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:#f5c518;color:#0a0f1e;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
 .btn-o:hover{opacity:0.9;transform:translateY(-1px)}
-.hero-img{width:100%;border-radius:20px;display:block;border:6px solid #fff;box-shadow:0 30px 70px rgba(15,23,42,0.18),0 8px 24px rgba(15,23,42,0.08);position:relative}
-.hero-img-wrap{position:relative;width:100%}
+.hero-img{width:100%;display:block;position:relative;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 14%,#000 86%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 12%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 14%,#000 86%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 12%,#000 80%,transparent 100%);mask-composite:intersect}
+.hero-img-wrap{position:relative;width:100%;max-width:1180px;margin:-8px auto 0}
 .hero-img-fade{display:none}
 
 /* ── STATS BAR ── */
