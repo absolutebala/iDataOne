@@ -269,10 +269,10 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
 <!-- ── Filters ── -->
 <div class="filter-wrap">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">14</span></button>
+    <button class="filter-btn active" onclick="filterCases('all',this)">All <span class="filter-count">15</span></button>
     <button class="filter-btn" onclick="filterCases('digital',this)">Digital Products <span class="filter-count">7</span></button>
     <button class="filter-btn" onclick="filterCases('ai',this)">AI & Automation <span class="filter-count">5</span></button>
-    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">2</span></button>
+    <button class="filter-btn" onclick="filterCases('data',this)">Data Intelligence <span class="filter-count">3</span></button>
   </div>
 </div>
 
@@ -382,6 +382,22 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
           <div class="case-desc">We're designing a sports professional network combining a lifelong sports passport, adaptive profiles, club management and safe-by-design parental controls — for athletes of every level.</div>
           <div class="case-tags"><span class="case-tag">Sports Tech</span><span class="case-tag">Product Design</span><span class="case-tag">Social Platform</span></div>
           <a href="/case-study/isportone" class="case-cta">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+
+      <div class="case-card" data-cat="data" onclick="location.href='/case-study/production-control-tower'" style="cursor:pointer">
+        <div class="case-card-visual" style="background:#0a0f1e;padding:0;overflow:hidden">
+          <img src="/assets/images/production-tower-hero.png" alt="Production Control Tower for a manufacturing engineering company" style="width:100%;height:200px;object-fit:cover;object-position:left top;display:block"/>
+        </div>
+        <div class="case-card-body">
+          <div class="case-category cat-data">Data Intelligence</div>
+          <div class="case-metric metric-data">7</div>
+          <div class="case-metric-label">departments in one live order view</div>
+          <div class="case-title">Production Control Tower for a Manufacturing Engineering Company</div>
+          <div class="case-desc">We designed a control tower that unites SAP, IoT and department-head updates to track every order across departments — with handoffs, ETA forecasts, wastage and capacity planning.</div>
+          <div class="case-tags"><span class="case-tag">Production Analytics</span><span class="case-tag">SAP + IoT</span><span class="case-tag">Manufacturing</span></div>
+          <a href="/case-study/production-control-tower" class="case-cta amber">View Full Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
 

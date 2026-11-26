@@ -176,7 +176,7 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
     <div class="section-tag">Success Stories</div>
     <h2 class="section-title">Data Intelligence. Real Clarity.</h2>
     <p class="section-sub">Businesses that unified their data and unlocked real competitive advantage.</p>
-    <div class="stories-grid" style="grid-template-columns:1fr;max-width:760px;margin:0 auto">
+    <div class="stories-grid">
       <div class="story-card" onclick="location.href='/case-study/risk-dashboard'" style="cursor:pointer">
         <div>
           <div class="story-tag">Risk Analytics</div>
@@ -186,6 +186,17 @@ body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;overflow-x:hid
         </div>
         <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;align-self:stretch">
           <img src="/assets/images/risk-platform-hero.png" alt="Real-Time Risk Intelligence Dashboard for an enterprise FMCG company" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:center center;display:block"/>
+        </div>
+      </div>
+      <div class="story-card" onclick="location.href='/case-study/production-control-tower'" style="cursor:pointer">
+        <div>
+          <div class="story-tag">Production Analytics</div>
+          <div class="story-title">Production Control Tower for a Manufacturing Engineering Company</div>
+          <div class="story-desc">We designed a live control tower that unites SAP, IoT and department-head updates — tracking every order across 7 departments with handoffs, ETA forecasts, wastage and capacity planning.</div>
+          <a href="/case-study/production-control-tower" class="story-link">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="story-visual" style="padding:0;overflow:hidden;background:#0a0f1e;align-self:stretch">
+          <img src="/assets/images/production-tower-hero.png" alt="Production control tower for a manufacturing engineering company" style="width:100%;height:100%;min-height:140px;object-fit:cover;object-position:left center;display:block"/>
         </div>
       </div>
     </div>

@@ -43,6 +43,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://idataone.com/case-study/production-control-tower</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://idataone.com/case-study/risk-dashboard</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>

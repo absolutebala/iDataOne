@@ -7,6 +7,7 @@ $allowed = [
     'knight-ryders'               => __DIR__ . '/../includes/case-knight-ryders.php',
     'risk-platform'               => __DIR__ . '/../includes/case-risk-platform.php',
     'risk-dashboard'              => __DIR__ . '/../includes/case-risk-dashboard.php',
+    'production-control-tower'    => __DIR__ . '/../includes/case-production-control-tower.php',
     'telecom-pm-platform'         => __DIR__ . '/../includes/case-telecom-pm-platform.php',
     'isportone'                   => __DIR__ . '/../includes/case-isportone.php',
     'mealmate'                    => __DIR__ . '/../includes/case-mealmate.php',
