@@ -418,6 +418,36 @@ body{font-family:'Inter',sans-serif;background:#ffffff;color:#0f172a;overflow-x:
   </div>
 </section>
 
+<!-- EVENTS & ENGAGEMENTS -->
+<section style="background:#f8f7f4;padding:72px 32px 80px">
+  <div class="inner">
+    <div style="margin-bottom:36px">
+      <div style="display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b45309;margin-bottom:14px">
+        <span style="display:block;width:20px;height:2px;background:#b45309;border-radius:2px"></span>Events &amp; Engagements
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,3.5vw,42px);font-weight:700;line-height:1.15;color:#0f172a;text-wrap:balance;margin-bottom:12px">Where Ideas Meet, <span style="background:linear-gradient(135deg,#b45309,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Connections Are Made</span></h2>
+      <p style="color:#64748b;font-size:15px;max-width:520px;line-height:1.65">From GITEX Global to leadership summits, product launches and community meetups — we show up, connect and grow.</p>
+    </div>
+    <!-- Row 1: 3 landscape -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_gitex_group.jpg" alt="GITEX Global" style="width:100%;height:260px;object-fit:cover;object-position:top;display:block"></div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_confroom.jpg" alt="Team Meetup" style="width:100%;height:260px;object-fit:cover;object-position:top;display:block"></div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_launch.jpg" alt="Product Launch" style="width:100%;height:260px;object-fit:cover;object-position:top;display:block"></div>
+    </div>
+    <!-- Row 2: 2 wide -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:14px">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_lounge.jpg" alt="Investor Meet" style="width:100%;height:300px;object-fit:cover;object-position:top;display:block"></div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_awards.jpg" alt="Awards Night" style="width:100%;height:300px;object-fit:cover;object-position:top;display:block"></div>
+    </div>
+    <!-- Row 3: 3 smaller -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_gitex2.jpg" alt="GITEX — aiDesker" style="width:100%;height:220px;object-fit:cover;object-position:top;display:block"></div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_sproutz.jpg" alt="Community Meetup" style="width:100%;height:220px;object-fit:cover;object-position:top;display:block"></div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10)"><img src="/assets/images/events/ev_hotel.jpg" alt="Partner Connect" style="width:100%;height:220px;object-fit:cover;object-position:top;display:block"></div>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section style="background:linear-gradient(135deg,#050d1a,#0d1535);padding:96px 32px;border-top:1px solid rgba(0,212,255,0.15)">
   <div class="inner">
