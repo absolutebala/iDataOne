@@ -152,9 +152,9 @@ filter:drop-shadow(0px 15px 40px rgba(99,102,241,0.12)) drop-shadow(0px 10px 20p
 }
 
 h1{
-font-size:58px;
-line-height:1.12;
-letter-spacing:-2px;
+font-size:clamp(32px,4vw,44px);
+line-height:1.15;
+letter-spacing:-1.5px;
 color:#fff;
 margin-bottom:24px;
 font-weight:700;
