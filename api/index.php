@@ -1155,7 +1155,7 @@ letter-spacing:0.3px;
 <section class="screen active">
 <div class="container">
 <img src="/assets/images/iDataOneLogoFinal.png" class="logo" alt="iDataOne Logo">
-<h1>Transforming Enterprise Data<br><span class="highlight">Into Business Advantage</span></h1>
+<h1>Transforming Enterprise Challenges<br><span class="highlight">Into Business Advantage</span></h1>
 <p>We design, build and scale applications, AI-powered solutions and intelligent data platforms that solve real business challenges and deliver measurable value.</p>
 <div style="display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap">
   <div class="hero-explore-btn" onclick="showScreen(1)" style="padding:13px 28px;border-radius:12px;background:#00d4ff;color:#0a0f1e;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:opacity 0.2s,transform 0.2s;display:inline-flex;align-items:center;gap:8px">EXPLORE ↓</div>
